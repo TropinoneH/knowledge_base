@@ -4,9 +4,7 @@
 sudo update-alternatives --config x-terminal-emulator
 ```
 
-上面那个好像是没有作用的
-
-需要用下面这个：
+这个是用于更改x-terminal-emulator这个的选项，但是默认打开的终端不是在这里打开的，而是下面的这两行命令更改：
 
 ```shell
 gsettings set org.gnome.desktop.default-applications.terminal exec $(which terminal)
@@ -22,7 +20,7 @@ gsettings set org.gnome.desktop.default-applications.terminal exec-arg "-x"
 使用下面指令更改默认终端（注意需要重启）：
 
 ```shell
-sudo chsh -s $(which shell)
+sudo chsh -s $(which <shell>)
 ```
 
-shell是终端的名字，如`zsh`,`sh`,`bash`等等
+`<shell>`是终端的名字，如`zsh`,`sh`,`bash`等等
