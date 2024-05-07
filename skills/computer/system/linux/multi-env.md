@@ -22,8 +22,26 @@ sudo update-alternatives --install "/usr/local/cuda" "cuda" "<path/to/cuda/folde
 
 # Java
 
-和上面类似的，也是可以通过`sudo update-alternatives --config java`
+首先先下载对应版本的java包，通常是使用`wget`来下载。
 
-安装也是类似的，使用`sudo update-alternatives --install "/etc/alternatives/java" "java" "<path/to/java/folder>" <priority>`进行配置
+解压安装包，然后将解压后的文件夹移动到`/usr/lib/jvm/java-xx-openjdk-amd64`文件夹下，其中`xx`表示版本号。
 
-一般java安装位置在`/usr/lib/jvm/java-xx-openjdk-amd64`这个文件夹的位置
+然后通过`update-alternatives`来设置默认的java对应的版本：
+
+```shell
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/bin/jvm/java-xx-openjdk-amd64/bin/java" <priority>
+```
+
+其中，`<priority>`需要替换成优先级，优先级越高，auto模式就会优先调用。
+
+# update-alternatives
+
+使用参数`--install`时接受三个参数
+
+第一个参数表示目标软连接的位置（相当于将你自己的版本直接存在了`<path>`里面）
+
+第二个参数用于后续快捷调整版本（相当于label）
+
+第三个参数是用于替换的位置，只需要在zshrc里面引用这个位置就可以直接通过`sudo update-alternatives --config <label>`进行选择版本
+
+但是这个只是创建了一个软连接，而不是直接修改默认配置
