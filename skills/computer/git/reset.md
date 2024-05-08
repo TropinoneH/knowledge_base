@@ -13,3 +13,7 @@ use `git commit --fixup <commit>` to make a fixup commit, which is a new commit 
 # reset only one file
 
 use `git checkout <commit> <path/to/file>` to roll back the `<path/to/file>` to the state in `<commit>`(hash code of commit)
+
+# amend commit
+
+use `git commit --amend` to amend a change you just change. you can use `git commit --amend -m "..."` to commit some amend message, or just simply `git commit --amend --no-edit` without changing commit message, which will replace the incomplete commit.
