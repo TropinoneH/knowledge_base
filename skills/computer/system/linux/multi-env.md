@@ -34,6 +34,27 @@ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/bin/jvm/java-xx-
 
 其中，`<priority>`需要替换成优先级，优先级越高，auto模式就会优先调用。
 
+## In arch linux
+
+使用`pacman`作为包管理工具，可以直接下载对应版本的`java`：
+
+```shell
+sudo pacman -S jdk8-openjdk
+# or use java 17
+sudo pacman -S jdk17-openjdk
+```
+
+安装多个版本的java可以使用自带的`archlinux-java`进行环境管理。
+
+```shell
+# use status for checking current java environment
+archlinux-java status
+# set current java environment
+archlinux-java set <Java-env>
+# unset current java environment
+archlinux-java unset
+```
+
 # update-alternatives
 
 使用参数`--install`时接受三个参数
