@@ -1,0 +1,91 @@
+一. shader 渲染管线
+
+1. 渲染管线
+shader是图形可编程方案的程序片段
+渲染管线是一种计算机从数据到最终图形成像的形象描述
+=>材质是商品,shader是方法,贴图是材料
+
+2. shader语法(vertex and fragment shaders)
+
+2.1 Shaderlab基本结构
+shader "name"{
+    [properties]
+    SubShaders
+    [FallBack]
+}
+//这是表面shader的初始状态
+Shader "Custom/NewSurfaceShader"
+{
+    Properties
+    {
+        _Color ("Color", Color) = (1,1,1,1)
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _Glossiness ("Smoothness", Range(0,1)) = 0.5
+        _Metallic ("Metallic", Range(0,1)) = 0.0
+    }
+    SubShader
+    {
+        Tags { "RenderType"="Opaque" }
+        LOD 200
+
+        CGPROGRAM
+        // Physically based Standard lighting model, and enable shadows on all light types
+        #pragma surface surf Standard fullforwardshadows
+
+        // Use shader model 3.0 target, to get nicer looking lighting
+        #pragma target 3.0
+
+        sampler2D _MainTex;
+
+        struct Input
+        {
+            float2 uv_MainTex;
+        };
+
+        half _Glossiness;
+        half _Metallic;
+        fixed4 _Color;
+
+        // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
+        // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
+        // #pragma instancing_options assumeuniformscaling
+        UNITY_INSTANCING_BUFFER_START(Props)
+            // put more per-instance properties here
+        UNITY_INSTANCING_BUFFER_END(Props)
+
+        void surf (Input IN, inout SurfaceOutputStandard o)
+        {
+            // Albedo comes from a texture tinted by color
+            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+            o.Albedo = c.rgb;
+            // Metallic and smoothness come from slider variables
+            o.Metallic = _Metallic;
+            o.Smoothness = _Glossiness;
+            o.Alpha = c.a;
+        }
+        ENDCG
+    }
+    FallBack "Diffuse"
+}
+
+shader的properties提供可视的属性,放到检查器面板中
+shader中可以且至少有一个SubShader,可以有多个SubShader,而显卡只会选择一个SubShader来执行.写多个SubShader的原因是防止这一种算法不能被所有的硬件支持.SubShader首先要判定当前硬件能否被支持,然后再去判定.
+如果所有的SubShader都不能被执行,那么直接回跳转到FallBack(回滚)
+[properties]和[fallback]可以没有
+
+unity内建的shader:
+Unlit 只是一个纹理,不被任何光照影响,常常用于UI
+VertextLit 顶点光照
+Diffuse 漫反射
+Normal mapped 法线贴图,比漫反射更昂贵,增加了一个或多个更多纹理(法线贴图)和几个着色器结构(顶点数量不太多,用于弥补细节)
+Specular 镜面高光,有反射,常用语模拟金属
+Normal Mapped Specular 高光法线贴图
+Parallax Normal mapped 视差法线贴图.视差:视觉的差异(立体化?).当法线贴图表现物体细节储存在纹理中,但是这个纹理是不能变的.如果旋转这个贴图的物体时,由于视角的偏差,贴图必然要发生变化,那么必须用到视差.
+Parallax Normal Mapped Specular 视差高光法线贴图
+
+Custom Editor:定制检查器面板中的UI样式(下拉框,滑动条,文本框,等等)
+
+
+
+
+

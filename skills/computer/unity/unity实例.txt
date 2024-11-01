@@ -1,0 +1,246 @@
+一、查找所有带有Enemy脚本的物体并找出HP最低的一个物体
+1、Enemy脚本
+public class Enemy : MonoBehaviour
+{
+    public float HP;//这里不用初始化，只需要在unity里面显示出来，在unity里更改即可
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+2、Demo01脚本（随便挂在任意物体上，用于查找Enemy）
+public class Demo01 : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Debug.Log(Time.time);
+    }
+
+    private void OnGUI()
+    {
+        if (GUILayout.Button("Button")) //创建一个按钮(在最左上角)
+        {
+            print("ok");  //如果点击了,就打印一个ok
+            float hp = 100000;
+            Enemy[] obj = FindObjectsOfType<Enemy>();//查找到所有Enemy
+            //不能使用Object[] obj = Object.FindObjectsOfType<Enemy>()；因为会不能使用HP
+            Enemy ene = obj[0];//初始化
+            foreach (var item in obj)
+            {
+                if (item.HP < hp)
+                {
+                    ene = item;
+                    hp = item.HP;
+                }
+                Debug.Log(item.name);
+            }
+            Debug.Log(ene.name + hp);
+            if(ene.GetComponent<MeshRenderer>().material.color == Color.red)
+            {
+                //如果红了就删除
+                ene.gameObject.SetActive(false);
+                Destroy(ene);
+            }
+            else
+            {
+                // 如果没红就标红
+                ene.GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+        }
+    }
+}
+
+二、创建一个光源
+    private void OnGUI()
+    {
+        if(GUILayout.Button("foreach -- transform"))
+        {
+            foreach(Transform child in this.transform)
+            {
+                Debug.Log(child.name);
+            }
+        }
+    }
+
+三、xyz三方向移动
+    private void OnGUI()
+    {
+        if (GUILayout.Button("x+"))
+        {
+            float xx = this.transform.position.x + 5;
+            this.transform.position = new Vector3(xx, 0, 0);
+            //Debug.Log("x"+xx);
+        }
+        if (GUILayout.Button("x-"))
+        {
+            float xx = this.transform.position.x - 5;
+            this.transform.position = new Vector3(xx, 0, 0);
+            //Debug.Log("x"+xx);
+        }
+        if (GUILayout.Button("y+"))
+        {
+            float yy = this.transform.position.y + 5;
+            this.transform.position = new Vector3(0, yy, 0);
+            //Debug.Log("y"+yy);
+        }
+        if (GUILayout.Button("y-"))
+        {
+            float yy = this.transform.position.y - 5;
+            this.transform.position = new Vector3(0, yy, 0);
+            //Debug.Log("y"+yy);
+        }
+        if (GUILayout.Button("z+"))
+        {
+            float zz = transform.position.z + 5;
+            this.transform.position = new Vector3(0, 0, zz);
+            //Debug.Log("z" + zz);
+        }
+        if (GUILayout.Button("z-"))
+        {
+            float zz = this.transform.position.z - 5;
+            this.transform.position = new Vector3(0, 0, zz);
+            //Debug.Log("z" + zz);
+        }
+    }
+
+四、改变颜色
+float r = (float)100 / (float)255;
+float g = (float)100 / (float)255;
+float b = (float)100 / (float)255;
+Color color = new Color(r,g,b,1);//这个1是代表透明度
+this.GetComponent<MeshRenderer>().material.color = color;
+
+五、获取所有组件
+        if (GUILayout.Button("allComponent"))
+        {
+            //获取物体的所有组件
+            var allComponent = this.GetComponents<Component>();
+            foreach (var item in allComponent)
+            {
+                Debug.Log(item.GetType());
+            }
+        }
+
+六、获取后代组件并从自身开始查找
+        if (GUILayout.Button("getComponentInChildren"))
+        {
+            //获取后代物体的所有组件，并从自身开始查找
+            var allComponent = this.GetComponentsInChildren<Component>();
+            foreach (var item in allComponent)
+            {
+                Debug.Log(item.name);
+            }
+        }
+
+七、找未知层级的子物体
+1、新建一个脚本transformHelper，并把脚本继承自MonoBehavior去掉
+public class transformHelper
+{
+    /// <summary>
+    /// 在所有层级里查找物体
+    /// </summary>
+    /// <param name="parentTF">父物体</param>
+    /// <param name="childName">孩子的名称</param>
+    /// <returns></returns>
+    public static Transform findChild(Transform parentTF,string childName)
+    {
+        Transform ChildTF = parentTF.Find(childName);
+        if(ChildTF != null)
+        {
+            return ChildTF;
+        }
+
+        int count = parentTF.childCount;
+        for(int i = 0; i < count; i++)
+        {
+            ChildTF = findChild(parentTF.GetChild(i), childName);
+            if(ChildTF != null)
+            {
+                return ChildTF;
+            }
+        }
+
+        return null;
+    }
+
+}
+2、在想要调用的物体上挂的脚本上写上
+Transform childTF = transformHelper.findChild(parentTF,childName);
+然后就可以调用这个函数了。
+
+八、time倒计时
+1、创建countdown类（脚本）
+using UnityEngine.UI;//想要调用Text就得包含这个类
+public int second;
+private float nextTime = 1;
+Text tt;
+private void Timer1()
+{
+    if(Time.time >= nextTime)
+    {
+        second--;
+        tt.text = string.Format("{0:d2}:{1:d2}",second/60,second%60);
+        nextTime = Time.time + 1;
+    }
+}
+private float totalTime;
+private void Timer2()
+{
+    totalTime += Time.deltaTime;
+    if(totalTime >= 1)
+    {
+        second--;
+        tt.text = string.Format("{0:d2}:{1:d2}",second/60,second%60);
+        totalTime = 0;
+    }
+}
+private void Update()
+{
+    timer1();//法一
+    timer2();//法二
+}
+private void timer3()
+{
+    second--;
+    tt.text = string.Format("{0:d2}:{1:d2}",second/60,second%60);
+}
+private void Start()
+{
+    InvokeRepeating("timer3",1,1);//法三
+}
+//法一因为nextTime 的值在最开始判断时一定小于Time.time，所以会直接执行
+//法二是先等到时间再做
+//法三适合做隔固定时间重复执行的方法，较简单（但不适合重复时间不一样的时候）
+
+九、鼠标（光标）事件
+首先物体需要有碰撞器（Collider Box）
+OnMouseEnter鼠标移入
+OnMouseOver鼠标经过
+OnMouseExit鼠标推出
+OnMouseDown鼠标按下
+OnMouseUp鼠标抬起
+//这些都是函数名，类似QT的事件
+
+十、鼠标点击时检测是否点到物体身上
+Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+RaycastHit hit;
+bool isCollider = Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("MapCube"));
+if(isCollider)
+    {...}
+在if里面写如果点击到物体身上执行的操作。hit.point是射线投放的位置
+
