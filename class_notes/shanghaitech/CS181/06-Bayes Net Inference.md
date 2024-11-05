@@ -20,6 +20,8 @@ P(B|+j,+m)\propto_B P(B,+j,+m)\\
 =P(B)\sum_eP(e)\sum_aP(a|B,e)P(+j|a)P(+m|a)
 $$
 
+但是有一个问题. 在计算$P(a|B,e)$的时候, $P(a|B,e)$不是一个正常的实数, 而是一系列与$B,e$有关的值. 所以在计算的时候, 需要把他们当成一个多元的变量, 称作`factor`
+
 ### operation
 
 1. Join Factors
