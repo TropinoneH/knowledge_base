@@ -79,7 +79,7 @@
 
    至于`webstorm`: 默认安装了prettier插件 `Ctrl+Shift+Alt+P`快速格式化(`IDE`原生的是`Ctrl+Shift+L`)
 
-   `npm install prettier`
+   `npm install -D prettier`
 
 创建`.prettierrc`文件, 写入以下规则:
 

@@ -1,5 +1,3 @@
-[项目](file://D:\files\html\react\redux-toolkit-study)
-
 [教程视频](https://www.bilibili.com/video/BV1Y94y1S7QT?p=1)
 
 这个项目尝试全程使用`yarn`作为包管理工具
