@@ -69,6 +69,14 @@ export const {increment, decrement} = countSlice.actions
 
 # 使用
 
+需要给`<App >`添加`Provider`
+
+```react
+<Provider store={store}>
+    <App />
+</Provider>
+```
+
 在需要的地方引入:
 
 ```tsx
