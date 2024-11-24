@@ -46,7 +46,7 @@ $\text{P(Traffic, Umbrella, Rain)=P(Rain)P(Traffic|Rain)P(Umbrella|Traffic,Rain)
 
 - $n$个变量
 - 最大的domain是$d$
-- 最大的父节点数量是$p$
+- 最大的父节点数量是$k$
 
 $\Rightarrow$ 全联合概率密度分布是$O(d^n)$
 

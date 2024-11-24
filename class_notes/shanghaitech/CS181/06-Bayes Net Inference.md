@@ -1,6 +1,6 @@
 # Bayes Net: Exact Inference
 
-## Variable Elimition
+## Variable Elimination
 
 ![image-20241101102722592](./06-Bayes%20Net%20Inference.assets/image-20241101102722592.png)
 $$
@@ -30,7 +30,7 @@ $$
 
    ![image-20241101105401855](./06-Bayes%20Net%20Inference.assets/image-20241101105401855.png)
 
-2. Variable Elimition
+2. Variable Elimination
 
    将隐变量求和, 消除
 
@@ -41,7 +41,7 @@ $$
 - 从local CPT开始
 - 选择一个隐变量$H$
   - 将所有提到$H$的factor进行join
-  - 对$H$进行求和(sum elimition)
+  - 对$H$进行求和(sum elimination)
 - 重复, 直到只剩下$Q$和$E_1,\cdots,E_n$
 
 e.g.
@@ -83,7 +83,7 @@ Z-->D
 
 消除顺序不同则参数量不同
 
-不存在一种最小的复杂度对于一个Bayes Network Variable Elimition. 这个和图的结构有关
+不存在一种最小的复杂度对于一个Bayes Network Variable Elimination. 这个和图的结构有关
 
 ## Message Passing and General Graphs
 
@@ -209,7 +209,7 @@ a[Shape]-->b[Color]
 
 假设$P(x)$很小, 那么很难采样$P(x)$. 我们可以自己设计一个$Q(x)$分布, 然后根据$Q(x)$进行采样, 最终使用$\frac{P(x)}{Q(x)}$作为权重
 
-选取$Q(x)$对算法的影响很大. 最好的$Q(x)$应该是$Q(x)\propto\abs{f(x)}P(x)$
+选取$Q(x)$对算法的影响很大. 最好的$Q(x)$应该是$Q(x)\propto|f(x)|P(x)$
 
 ## Gibbs Sample
 
@@ -218,7 +218,7 @@ a[Shape]-->b[Color]
 但是注意有Markov Blanket阻断其他变量的信息流通, 那么我们其实只需要关注:
 $$
 X_i'\sim P(X_i|X_1,\cdots,X_n)=P(X_i|\text{Markov Parent}(X_i))\\
-=\alpha P(X_i|U_1,\cdots,U_m)\prod_jP(Y_j|\text{Parent}(Y_j))
+=P(X_i|U_1,\cdots,U_m)\prod_jP(Y_j|\text{Parent}(Y_j))
 $$
 ![image-20241101115117540](./06-Bayes%20Net%20Inference.assets/image-20241101115117540.png)
 
