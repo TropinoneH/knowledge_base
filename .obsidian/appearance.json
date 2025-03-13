@@ -1,0 +1,12 @@
+{
+  "cssTheme": "Catppuccin",
+  "accentColor": "#1ee7f6",
+  "interfaceFontFamily": "CodeNewRoman Nerd Font Mono",
+  "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
+  "textFontFamily": "CodeNewRoman Nerd Font Mono",
+  "baseFontSizeAction": true,
+  "baseFontSize": 19,
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "showRibbon": true
+}

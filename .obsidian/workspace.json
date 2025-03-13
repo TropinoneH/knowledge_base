@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "9abac74c9782d9ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2fb9f45af93cd0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15a489f5ee9a7c42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/shanghaitech/CS110.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CS110"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "02435a3d793b3744",
+    "type": "split",
+    "children": [
+      {
+        "id": "92b0b97a02cf09b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e87140d09247ee1e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "63468d51d904aaa0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8068b92d2fe623a8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f5c31da48e8e3648",
+    "type": "split",
+    "children": [
+      {
+        "id": "627941b01e20f9ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98029cd553bbe051",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "adf465e484c5fc8e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "knowledge/shanghaitech/CS110.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CS110"
+            }
+          },
+          {
+            "id": "af8dba5f99f05037",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "db975beb598981f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "585632462ac861be",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "knowledge/shanghaitech/CS110.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CS110"
+            }
+          },
+          {
+            "id": "7f115078f248c6d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "knowledge/paper/OpenVLA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from OpenVLA"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ee8c002877942ed2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ecd5aca8cbd1ac6",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "knowledge/shanghaitech/CS110.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of CS110"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "af8dba5f99f05037",
+  "lastOpenFiles": [
+    "knowledge/shanghaitech/assets/image-20240516094052454.png",
+    "knowledge/shanghaitech/assets/image-20240418082937850.png",
+    "knowledge/shanghaitech/assets/image-20240611082022427.png",
+    "knowledge/shanghaitech/assets/image-20240409084503129.png",
+    "knowledge/shanghaitech/assets/image-20240604084744379.png",
+    "knowledge/shanghaitech/assets/image-20240523084416218.png",
+    "knowledge/shanghaitech/assets/image-20240604082256001.png",
+    "knowledge/shanghaitech/assets/image-20240528083713877.png",
+    "knowledge/shanghaitech/assets/image-20240516095107078.png",
+    "knowledge/shanghaitech/assets/image-20240409091659197.png",
+    "knowledge/shanghaitech/assets/image-20240409083025746.png",
+    "knowledge/shanghaitech/CS101.md",
+    "knowledge/shanghaitech/assets",
+    "knowledge/shanghaitech/CS110.md",
+    "knowledge/paper/RT-1.md",
+    "knowledge/shanghaitech",
+    "knowledge/paper/Transformer.md",
+    "markdown.md",
+    "[[.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/paper/RT-2.md",
+    "knowledge/paper/BehavioralCloning.md",
+    "images",
+    "Attention is all you need.md",
+    "obsidian.md",
+    "knowledge/paper",
+    "knowledge",
+    "knowledge.md",
+    "2025-03-14 Paper.md",
+    "2025-03-14 paper.md",
+    "2025-03-14 Eldenring.md",
+    "欢迎.md"
+  ]
+}
