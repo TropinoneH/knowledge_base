@@ -3,5 +3,9 @@
   "showLineNumber": false,
   "trashOption": "system",
   "showInlineTitle": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "assets",
+  "vimMode": false
 }

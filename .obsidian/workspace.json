@@ -4,25 +4,137 @@
     "type": "split",
     "children": [
       {
-        "id": "b2fb9f45af93cd0a",
+        "id": "d1879cc485a8bee7",
         "type": "tabs",
         "children": [
           {
-            "id": "15a489f5ee9a7c42",
+            "id": "b524a1b891477ab7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/CS110.md",
+                "file": "pre/2025-3-18.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "CS110"
+              "title": "2025-3-18"
             }
           }
         ]
+      },
+      {
+        "id": "1059491a1f3681b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54be761f6079e8cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/OpenVLA.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "OpenVLA"
+            }
+          },
+          {
+            "id": "dd852792eddea778",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/RT-1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RT-1"
+            }
+          },
+          {
+            "id": "9d83950d26068b3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/RT-2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RT-2"
+            }
+          },
+          {
+            "id": "475a230208cb3f54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/pi0.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "pi0"
+            }
+          }
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,13 +222,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS110.md",
+                "file": "pre/2025-3-18.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CS110"
+              "title": "Outline of 2025-3-18"
             }
           },
           {
@@ -130,43 +242,24 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
-        "id": "db975beb598981f6",
+        "id": "66ad83ba982953ad",
         "type": "tabs",
         "children": [
           {
-            "id": "585632462ac861be",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "knowledge/shanghaitech/CS110.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for CS110"
-            }
-          },
-          {
-            "id": "7f115078f248c6d8",
+            "id": "7ac93c7df2c9ce41",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge/paper/OpenVLA.md",
+                "file": "pre/2025-3-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from OpenVLA"
+              "title": "Outgoing links from 2025-3-18"
             }
           }
         ]
@@ -181,7 +274,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS110.md",
+                "file": "pre/2025-3-18.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,7 +302,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of CS110"
+              "title": "Graph of 2025-3-18"
             }
           }
         ]
@@ -225,42 +318,93 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "15a489f5ee9a7c42",
+  "floating": {
+    "id": "79a2e4730213bdf8",
+    "type": "floating",
+    "children": [
+      {
+        "id": "adb7652c2d1af218",
+        "type": "window",
+        "children": [
+          {
+            "id": "9990ecd508ab0229",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "417dd35735421a72",
+                "type": "leaf",
+                "state": {
+                  "type": "reveal-preview-view",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Slide Preview"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 7,
+        "y": 43,
+        "width": 1522,
+        "height": 910,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "417dd35735421a72",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/CS101.md",
-    "knowledge/paper/OpenVLA.md",
-    "knowledge/shanghaitech/CS110.md",
-    "knowledge/shanghaitech/assets/image-20240516094052454.png",
-    "knowledge/shanghaitech/assets/image-20240418082937850.png",
-    "knowledge/shanghaitech/assets/image-20240611082022427.png",
-    "knowledge/shanghaitech/assets/image-20240409084503129.png",
-    "knowledge/shanghaitech/assets/image-20240604084744379.png",
-    "knowledge/shanghaitech/assets/image-20240523084416218.png",
-    "knowledge/shanghaitech/assets/image-20240604082256001.png",
-    "knowledge/shanghaitech/assets/image-20240528083713877.png",
-    "knowledge/shanghaitech/assets/image-20240516095107078.png",
-    "knowledge/shanghaitech/assets/image-20240409091659197.png",
-    "knowledge/shanghaitech/assets",
-    "knowledge/paper/RT-1.md",
-    "knowledge/shanghaitech",
-    "knowledge/paper/Transformer.md",
-    "markdown.md",
-    "[[.md",
-    "knowledge/paper/LoRA.md",
+    "export/2025-3-18/assets/Pasted image 20250318024222.png",
+    "export/2025-3-18/assets/Pasted image 20250317231436.png",
+    "export/2025-3-18/assets",
+    "export/2025-3-18/plugin/chalkboard/README.md",
+    "export/2025-3-18/plugin/chalkboard/_style.css",
+    "export/2025-3-18/plugin/chalkboard/img/blackboard.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-black.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-blue.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-green.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-orange.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-purple.png",
+    "export/2025-3-18/plugin/chalkboard/img/boardmarker-red.png",
+    "export/2025-3-18/plugin/chalkboard/img/whiteboard.png",
+    "export/2025-3-18/plugin/chalkboard/img/sponge.png",
+    "export/2025-3-18/plugin/chalkboard/style.css",
+    "export/2025-3-18/plugin/chalkboard/plugin.js",
+    "export/2025-3-18/plugin/chalkboard/plugin (copy).js",
+    "export/2025-3-18/plugin/chalkboard/img",
+    "export/2025-3-18/plugin/chalkboard",
+    "export/2025-3-18/plugin/chart/plugin.js",
+    "export/2025-3-18/plugin/chart/chart.min.js",
+    "export/2025-3-18/plugin/chart/README.md",
+    "export/2025-3-18/plugin/chart",
+    "export/2025-3-18/plugin/customcontrols/README.md",
+    "export/2025-3-18/plugin/menu/CONTRIBUTING.md",
+    "export/2025-3-18/plugin/menu/README.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/RDT-1B.md",
+    "pre/2025-3-18.md",
+    "knowledge/paper/DiT.md",
     "knowledge/paper/RT-2.md",
-    "knowledge/paper/BehavioralCloning.md",
-    "images",
-    "Attention is all you need.md",
-    "obsidian.md",
-    "knowledge/paper",
-    "knowledge",
-    "knowledge.md",
-    "2025-03-14 Paper.md",
-    "2025-03-14 paper.md",
-    "2025-03-14 Eldenring.md",
-    "欢迎.md"
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/OpenVLA.md",
+    "pre/css/custom.css.md",
+    "knowledge/Linear Algebra.md",
+    "knowledge/paper/Diffusion.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
+    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
+    "knowledge/shanghaitech/SI152/Ch2.Geometry_of_Linear_Programming.md",
+    "knowledge/shanghaitech/CS101.md",
+    "knowledge/shanghaitech/CS110.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/shanghaitech/SI100B.md",
+    "knowledge/shanghaitech/SI120.md",
+    "Untitled.canvas",
+    "knowledge/paper/Transformer.md"
   ]
 }

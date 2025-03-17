@@ -3,6 +3,7 @@ tags:
   - paper
   - EmbodiedAI
   - LLM
+  - VLA
 aliases:
   - "OpenVLA: An Open-Source Vision-Language-Action Model"
 ---
@@ -34,7 +35,7 @@ VLA: 直接对VLM进行fine-tune生成actions. 直接将robot action control融�
 
 VLM有三个组成部分. 分别是visual encoder(将image inputs映射成"image patch embeddings"), projector, LLM backbone
 
-使用Prismatic-7B, visual encoder(600M param, 两部分, SigLIP+DINOv2(更强的空间推理, 有助于robot), 生成的特征向量拼接), projector(2-layer MLP), LLM(Llama 2)
+使用Prismatic-7B, visual encoder(600M param, 两部分, SigLIP+DINOv2(更强的空间推理, 有助于robot, 生成的特征向量拼接), projector(2-layer MLP), LLM(Llama 2)
 
 ### OpenVLA
 

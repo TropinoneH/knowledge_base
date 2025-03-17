@@ -75,9 +75,9 @@ Robot Transformer 1(RT-1), 将一系列的short sequence of images和自然语�
 
 ```mermaid
 graph TB
-a[Textural Instruction]-->|FiLM|b[word embedding vector]
+a[Textural Instruction]-->|Universal Sentence Encoder|b[word embedding vector]
 c[images]-->|ImageNet|d[features]
-b-->e(affine transform)
+b-->|FiLM|e(affine transform)
 d-->e
 e-->|Tokenizer|f[Token]
 f-->|Transformer|g[output Tokens]
@@ -109,7 +109,7 @@ RT-1执行闭环控制, 3 Hz的频率执行动作
 
 然后这8个tokens和history中的其他image的tokens连接, 形成48个tokens, 并添加[[Transformer#Positional Encoding]], 然后给Transformer Block. Transformer是Decoder-only的, 有8-layer transformer block.
 
-**action tokenization**
+**action tokenization** ^298e80
 
 将每个动作维度离散化成256个bin. 一共有11个维度. 对于每一个变量, we map the target to one of the 256 bins, where the bins are uniformly distributed within the bounds of each variable. ==Have Question Here==
 

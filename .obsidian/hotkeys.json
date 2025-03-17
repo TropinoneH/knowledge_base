@@ -106,5 +106,13 @@
       "key": "ArrowDown"
     }
   ],
-  "editor:delete-paragraph": []
+  "editor:delete-paragraph": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "'"
+    }
+  ]
 }
