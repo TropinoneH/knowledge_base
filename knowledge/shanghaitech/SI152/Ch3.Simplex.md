@@ -14,7 +14,7 @@ aliases:
 >
 > 假设$\mathbf x$是polyhedron $P$的一个元素. 假设$\mathbf d\in\mathbb R^n$满足$\mathbf x+\theta\mathbf d\in P$, $\theta$是一个正标量, 那么我们称$\mathbf d$为**可行方向(feasible direction)**
 
-我们假设$\mathbf x$是线性规划的basic feasible solution([[Ch2.Geometry_of_Linear_Programming#Correspondence of bases and basic solutions]]), 设$B(1),\cdots,B(m)$是basic variable的索引, 设basic matrix $\mathbf B=\begin{bmatrix}\vert&\cdots&\vert\\A_{B(1)}&\cdots&A_{B(m)}\\\vert&\cdots&\vert\end{bmatrix}$. 特别的, 对于nonbasic variable有$x_i=0$, 对于basic variables有$\mathbf x_B=(x_{B(1)},\cdots,x_{B(m)})$, 满足$\mathbf x_B=\mathbf B^{-1}\mathbf b$
+我们假设$\mathbf x$是线性规划的[[Ch2.Geometry_of_Linear_Programming#Correspondence of bases and basic solutions|basic feasible solution]], 设$B(1),\cdots,B(m)$是basic variable的索引, 设basic matrix $\mathbf B=\begin{bmatrix}\vert&\cdots&\vert\\A_{B(1)}&\cdots&A_{B(m)}\\\vert&\cdots&\vert\end{bmatrix}$. 特别的, 对于nonbasic variable有$x_i=0$, 对于basic variables有$\mathbf x_B=(x_{B(1)},\cdots,x_{B(m)})$, 满足$\mathbf x_B=\mathbf B^{-1}\mathbf b$
 
 我们考虑通过一个nonbasic variable($x_j=0$), 并将其数值增加到positive value $\theta$, 同时保持其他的nonbasic variable仍为$0$, 从而将$\mathbf x\to\mathbf x+\theta\mathbf d$. 此时从代数上而言, $d_j=1$而其他nonbasic variable对应的$d_i=0$, 而basic variable对应的变量$\mathbf d_B=(d_{B(1)},\cdots,d_{B(m)})$. 
 

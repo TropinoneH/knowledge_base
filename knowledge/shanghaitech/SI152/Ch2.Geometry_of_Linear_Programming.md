@@ -18,7 +18,7 @@ aliases:
 >     - $\{\mathbf x\in\mathbb R^n|\mathbf a^\top \mathbf x=b\}$称为**超平面(hyperplane)**
 >     - $\{\mathbf x\in\mathbb R^n|\mathbf a^\top \mathbf x\geq b\}$称为**半空间(halfspace)**
 
-之前的feasible set([[Ch1.Introduction_of_Linear_Programming#Variants of the linear programming problems]])中有提到可以将所有的约束规约成$\mathbf{Ax}\geq\mathbf b$的形式, 那么我们可以把Polyhedron看成一个feasible set. 相似的, 我们可以将$\{\mathbf x\in\mathbb R^n|\mathbf {Ax}=\mathbf b,\mathbf x\geq0\}$当成Polyhedron的标准形式
+之前的[[Ch1.Introduction_of_Linear_Programming#Variants of the linear programming problems|feasible set]]中有提到可以将所有的约束规约成$\mathbf{Ax}\geq\mathbf b$的形式, 那么我们可以把Polyhedron看成一个feasible set. 相似的, 我们可以将$\{\mathbf x\in\mathbb R^n|\mathbf {Ax}=\mathbf b,\mathbf x\geq0\}$当成Polyhedron的标准形式
 
 超平面hyperplane可以看成是有界(bounded)的半空间.
 
@@ -123,7 +123,7 @@ $$
 >     - 列$A_{B(1)},\cdots,A_{B(m)}$是linear independent的
 >     - 如果$i\neq B(1),\cdots,B(m)$, 那么$x_i=0$
 
-那么对于[[Ch1.Introduction_of_Linear_Programming#Standard form]]的Polyhedron可以用这个方式求解:
+那么对于[[Ch1.Introduction_of_Linear_Programming#Standard form|Standard Form]]的Polyhedron可以用这个方式求解:
 
 1. 找$m$个linear independent column: $\mathbf A_{B(1)},\cdots,\mathbf A_{B(m)}$
 2. 令$x_i=0,\forall i\neq B(1),\cdots,B(m)$
@@ -156,7 +156,7 @@ $$
 
 > [!tip] Theorem
 >
-> 假设有非空Polyhedron $P=\{\mathbf x|\mathbf {Ax}=\mathbf b,\mathbf x\geq0\}$, $\mathbf A\in\mathbb R^{m\times n}$, 有$\mathbf a_1^\top,\cdots,\mathbf a_m^\top$是$\mathbf A$的行向量. 假设$\rank{\mathbf A}=k<m$且行$\mathbf a_{i_1}^\top,\cdots,\mathbf a_{i_k}^\top$是linear independent的. 假设有一个Polyhedron $Q=\{\mathbf x|\mathbf a_{i_1}^\top\mathbf x=b_{i_1},\cdots,\mathbf a_{i_k}^\top\mathbf x=b_{i_k},\mathbf x\geq0\}$, 那么可以认为$P=Q$
+> 假设有非空Polyhedron $P=\{\mathbf x|\mathbf {Ax}=\mathbf b,\mathbf x\geq0\}$, $\mathbf A\in\mathbb R^{m\times n}$, 有$\mathbf a_1^\top,\cdots,\mathbf a_m^\top$是$\mathbf A$的行向量. 假设$\text{rank}{\mathbf A}=k<m$且行$\mathbf a_{i_1}^\top,\cdots,\mathbf a_{i_k}^\top$是linear independent的. 假设有一个Polyhedron $Q=\{\mathbf x|\mathbf a_{i_1}^\top\mathbf x=b_{i_1},\cdots,\mathbf a_{i_k}^\top\mathbf x=b_{i_k},\mathbf x\geq0\}$, 那么可以认为$P=Q$
 
 注意, Q其实是标准形式的, 可以写成$Q=\{\mathbf x|\mathbf {Dx}=\mathbf f,\mathbf x\geq0\}$, 其中$\mathbf D\in\mathbb R^{k\times n}$是$\mathbf A$的一个子矩阵, $\mathbf f\in\mathbb R^k$是$\mathbf b$的$k$维子向量.
 

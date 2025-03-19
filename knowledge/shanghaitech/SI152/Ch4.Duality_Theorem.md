@@ -56,7 +56,7 @@ $$
 | -------------- | ------------------------------------ | ------------------------------------ | ------------ |
 | constrains     | $\matrix{\geq b_i\\\leq b_i\\=b_i}$  | $\matrix{\geq0\\\leq0\\\text{free}}$ | variables    |
 | variables      | $\matrix{\geq0\\\leq0\\\text{free}}$ | $\matrix{\leq c_j\\\geq c_j\\=c_j}$  | constrains   |
-对于特殊形式, 可以使用矩阵表示(e.g. [[Ch2.Geometry_of_Linear_Programming#Polyhedra in standard form]]):
+对于特殊形式, 可以使用矩阵表示(e.g. [[Ch1.Introduction_of_Linear_Programming#Standard form|Standard form]]):
 $$
 \matrix{
 \matrix{\min&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf {Ax}=\mathbf b\\&\mathbf x\geq0}&\quad&
