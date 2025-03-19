@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d1879cc485a8bee7",
+        "id": "1059491a1f3681b3",
         "type": "tabs",
         "children": [
           {
-            "id": "b524a1b891477ab7",
+            "id": "535a2423337dc398",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pre/2025-3-18.md",
+                "file": "knowledge/paper/roco.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,113 +28,28 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-3-18"
+              "title": "roco"
             }
           }
         ]
       },
       {
-        "id": "1059491a1f3681b3",
+        "id": "147d3afe0ebd811d",
         "type": "tabs",
         "children": [
           {
-            "id": "54be761f6079e8cf",
+            "id": "22598176aa30eb97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "knowledge/paper/OpenVLA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf"
               },
-              "icon": "lucide-file",
-              "title": "OpenVLA"
-            }
-          },
-          {
-            "id": "dd852792eddea778",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/RT-1.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "RT-1"
-            }
-          },
-          {
-            "id": "9d83950d26068b3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/RT-2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "RT-2"
-            }
-          },
-          {
-            "id": "475a230208cb3f54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/pi0.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "pi0"
+              "icon": "lucide-file-text",
+              "title": "RoCo Dialectic Multi-Robot Collaboration with Lar"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -222,23 +137,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pre/2025-3-18.md",
+                "file": "knowledge/paper/roco.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-3-18"
-            }
-          },
-          {
-            "id": "af8dba5f99f05037",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of roco"
             }
           }
         ],
@@ -254,15 +159,35 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pre/2025-3-18.md",
+                "file": "knowledge/paper/pi0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-3-18"
+              "title": "Outgoing links from pi0"
+            }
+          },
+          {
+            "id": "73ea48f3780c114c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "knowledge/paper/roco.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for roco"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ee8c002877942ed2",
@@ -274,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "pre/2025-3-18.md",
+                "file": "knowledge/paper/roco.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -302,7 +227,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2025-3-18"
+              "title": "Graph of roco"
             }
           }
         ]
@@ -322,89 +247,53 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "floating": {
-    "id": "79a2e4730213bdf8",
-    "type": "floating",
-    "children": [
-      {
-        "id": "adb7652c2d1af218",
-        "type": "window",
-        "children": [
-          {
-            "id": "9990ecd508ab0229",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "417dd35735421a72",
-                "type": "leaf",
-                "state": {
-                  "type": "reveal-preview-view",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "Slide Preview"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 7,
-        "y": 43,
-        "width": 1522,
-        "height": 910,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "417dd35735421a72",
+  "active": "535a2423337dc398",
   "lastOpenFiles": [
+    "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
+    "knowledge/paper/roco.md",
+    "knowledge/paper/Transformer.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/paper/Diffusion.md",
+    "knowledge/paper/DiT.md",
+    "knowledge/paper/FlowMatching.md",
+    "knowledge/paper/RDT-1B.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/RT-2.md",
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/PDFS/pi0.pdf",
+    "knowledge/paper/PDFS/RT-2.pdf",
+    "knowledge/paper/PDFS/RT-1.pdf",
+    "knowledge/paper/PDFS/RDT-1B：A DIFFUSION FOUNDATION MODEL FOR BIMANUAL MANIPULATION.pdf",
+    "knowledge/paper/PDFS/OpenVLA：An Open-Source Vision-Language-Action Model.pdf",
+    "knowledge/paper/PDFS/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.pdf",
+    "knowledge/paper/PDFS/BiLSTM-CRF_note.pdf",
+    "knowledge/paper/PDFS/2411.17130_TechCoach.pdf",
+    "knowledge/paper/PDFS/2410.07093v2_LaMP.pdf",
+    "assets/Pasted image 20250319210113.png",
+    "knowledge/shanghaitech/SI100B.md",
+    "pre/2025-3-18.md",
+    "assets/Pasted image 20250318212123.png",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
+    "knowledge/shanghaitech/SI152/Ch2.Geometry_of_Linear_Programming.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
+    "knowledge/Linear Algebra.md",
     "export/2025-3-18/assets/Pasted image 20250318024222.png",
     "export/2025-3-18/assets/Pasted image 20250317231436.png",
-    "export/2025-3-18/assets",
     "export/2025-3-18/plugin/chalkboard/README.md",
-    "export/2025-3-18/plugin/chalkboard/_style.css",
     "export/2025-3-18/plugin/chalkboard/img/blackboard.png",
     "export/2025-3-18/plugin/chalkboard/img/boardmarker-black.png",
     "export/2025-3-18/plugin/chalkboard/img/boardmarker-blue.png",
     "export/2025-3-18/plugin/chalkboard/img/boardmarker-green.png",
     "export/2025-3-18/plugin/chalkboard/img/boardmarker-orange.png",
     "export/2025-3-18/plugin/chalkboard/img/boardmarker-purple.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-red.png",
-    "export/2025-3-18/plugin/chalkboard/img/whiteboard.png",
-    "export/2025-3-18/plugin/chalkboard/img/sponge.png",
-    "export/2025-3-18/plugin/chalkboard/style.css",
-    "export/2025-3-18/plugin/chalkboard/plugin.js",
-    "export/2025-3-18/plugin/chalkboard/plugin (copy).js",
-    "export/2025-3-18/plugin/chalkboard/img",
-    "export/2025-3-18/plugin/chalkboard",
-    "export/2025-3-18/plugin/chart/plugin.js",
-    "export/2025-3-18/plugin/chart/chart.min.js",
     "export/2025-3-18/plugin/chart/README.md",
-    "export/2025-3-18/plugin/chart",
     "export/2025-3-18/plugin/customcontrols/README.md",
     "export/2025-3-18/plugin/menu/CONTRIBUTING.md",
     "export/2025-3-18/plugin/menu/README.md",
-    "knowledge/paper/pi0.md",
-    "knowledge/paper/RDT-1B.md",
-    "pre/2025-3-18.md",
-    "knowledge/paper/DiT.md",
-    "knowledge/paper/RT-2.md",
-    "knowledge/paper/RT-1.md",
-    "knowledge/paper/OpenVLA.md",
     "pre/css/custom.css.md",
-    "knowledge/Linear Algebra.md",
-    "knowledge/paper/Diffusion.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
-    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
-    "knowledge/shanghaitech/SI152/Ch2.Geometry_of_Linear_Programming.md",
     "knowledge/shanghaitech/CS101.md",
-    "knowledge/shanghaitech/CS110.md",
-    "knowledge/paper/LoRA.md",
-    "knowledge/shanghaitech/SI100B.md",
-    "knowledge/shanghaitech/SI120.md",
-    "Untitled.canvas",
-    "knowledge/paper/Transformer.md"
+    "Untitled.canvas"
   ]
 }
