@@ -4,6 +4,7 @@ tags:
   - algorithm
   - diffusion
   - paper
+  - python
 ---
 # Diffusion
 

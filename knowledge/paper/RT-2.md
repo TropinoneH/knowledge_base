@@ -7,6 +7,7 @@ tags:
 aliases:
   - "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
 ---
+[[RT-2.pdf]]
 # RT-2
 
 end-to-end训练. 使用chain of thought可以使 RT-2 执行多阶段inference, 例如确定哪个物体可以作为临时的锤子(e.g. a rock)

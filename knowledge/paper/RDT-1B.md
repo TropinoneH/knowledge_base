@@ -6,11 +6,12 @@ tags:
 aliases:
   - "RDT-1B: A Diffusion Foundation Model For Bimanual Manipulation"
 ---
+[[RDT-1B：A DIFFUSION FOUNDATION MODEL FOR BIMANUAL MANIPULATION.pdf]]
 # RDT-1B
 
 针对双手的操作, 提出Robotics [[Diffusion]] [[Transformer]] model.
 
-基于Diffusion模型表示多模态, 通过Transformer模型来处理多模态输入的"heterogeneity"(==Have Question Here==)并捕捉robotic data的non-linear,high-frequent的特性. 引入Physically Interpretable Unified Action Space, 解决数据缺少的问题.
+基于Diffusion模型表示多模态, 通过Transformer模型来处理多模态输入的"heterogeneity"(不同的robot有不同的input格式, 不同的action space)并捕捉robotic data的non-linear,high-frequent的特性. 引入Physically Interpretable Unified Action Space, 解决数据缺少的问题.
 
 ## Introduce
 

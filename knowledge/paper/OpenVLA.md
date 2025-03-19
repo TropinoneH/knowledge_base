@@ -7,6 +7,7 @@ tags:
 aliases:
   - "OpenVLA: An Open-Source Vision-Language-Action Model"
 ---
+[[OpenVLA：An Open-Source Vision-Language-Action Model.pdf]]
 # OpenVLA
 
 7B-parameter vision-language-action model, [[Transformer]]

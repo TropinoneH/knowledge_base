@@ -5,6 +5,7 @@ tags:
 aliases:
   - "RT-1: Robotics Transformer for Real-world Control at Scale"
 ---
+[[RT-1.pdf]]
 # RT-1
 
 希望能够找到一个泛化能力强, 能吸收大量知识的模型架构.
@@ -107,7 +108,7 @@ RT-1执行闭环控制, 3 Hz的频率执行动作
 
 **transformer**
 
-然后这8个tokens和history中的其他image的tokens连接, 形成48个tokens, 并添加[[Transformer#Positional Encoding]], 然后给Transformer Block. Transformer是Decoder-only的, 有8-layer transformer block.
+然后这8个tokens和history中的其他image的tokens连接, 形成48个tokens, 并添加[[Transformer#Positional Encoding|Position Encoding]], 然后给Transformer Block. Transformer是Decoder-only的, 有8-layer transformer block.
 
 **action tokenization** ^298e80
 
