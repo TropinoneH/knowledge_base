@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1059491a1f3681b3",
+        "id": "2cce342bbf35ee44",
         "type": "tabs",
         "children": [
           {
-            "id": "535a2423337dc398",
+            "id": "854332692c702abf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/roco.md",
+                "file": "pre/2025-4-17.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,25 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "roco"
-            }
-          }
-        ]
-      },
-      {
-        "id": "147d3afe0ebd811d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "22598176aa30eb97",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "RoCo Dialectic Multi-Robot Collaboration with Lar"
+              "title": "2025-4-17"
             }
           }
         ]
@@ -69,7 +51,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -137,13 +119,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/roco.md",
+                "file": "pre/2025-4-17.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of roco"
+              "title": "Outline of 2025-4-17"
             }
           }
         ],
@@ -159,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge/paper/pi0.md",
+                "file": "knowledge/shanghaitech/CS181/HMM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from pi0"
+              "title": "Outgoing links from HMM"
             }
           },
           {
@@ -173,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/roco.md",
+                "file": "pre/2025-4-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +165,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for roco"
+              "title": "Backlinks for 2025-4-17"
             }
           }
         ],
@@ -199,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/roco.md",
+                "file": "pre/2025-4-17.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,12 +204,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.6666666666666666,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of roco"
+              "title": "Graph of 2025-4-17"
             }
           }
         ]
@@ -244,56 +226,58 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "535a2423337dc398",
+  "active": "854332692c702abf",
   "lastOpenFiles": [
-    "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
-    "knowledge/paper/roco.md",
-    "knowledge/paper/Transformer.md",
-    "knowledge/paper/LoRA.md",
+    "git-name.sh",
+    "assets/Pasted image 20250417152142.png",
+    "assets/Pasted image 20250417144909.png",
+    "pre/2025-3-18.md",
+    "pre/2025-4-9.md",
+    "pre/2025-4-17.md",
+    "knowledge/paper/survey-MLLM-CoT.md",
+    "knowledge/skills/python/torch.md",
     "knowledge/paper/Diffusion.md",
-    "knowledge/paper/DiT.md",
-    "knowledge/paper/FlowMatching.md",
-    "knowledge/paper/RDT-1B.md",
-    "knowledge/paper/pi0.md",
-    "knowledge/paper/OpenVLA.md",
-    "knowledge/paper/RT-2.md",
-    "knowledge/paper/RT-1.md",
+    "knowledge/paper/A-MEM.md",
+    "knowledge/paper/CoT.md",
+    "knowledge/shanghaitech/SI152/Ch5.convex.md",
+    "pre",
     "knowledge/paper/PDFS/pi0.pdf",
+    "knowledge/paper/PDFS/gemini robotics.pdf",
+    "knowledge/paper/PDFS/aloha_unleashed.pdf",
+    "knowledge/paper/PDFS/Scalable_Multi-Robot_Cooperation_for_Multi-Goal_Tasks_Using_Reinforcement_Learning.pdf",
+    "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
     "knowledge/paper/PDFS/RT-2.pdf",
     "knowledge/paper/PDFS/RT-1.pdf",
     "knowledge/paper/PDFS/RDT-1B：A DIFFUSION FOUNDATION MODEL FOR BIMANUAL MANIPULATION.pdf",
-    "knowledge/paper/PDFS/OpenVLA：An Open-Source Vision-Language-Action Model.pdf",
-    "knowledge/paper/PDFS/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.pdf",
-    "knowledge/paper/PDFS/BiLSTM-CRF_note.pdf",
-    "knowledge/paper/PDFS/2411.17130_TechCoach.pdf",
-    "knowledge/paper/PDFS/2410.07093v2_LaMP.pdf",
-    "assets/Pasted image 20250319210113.png",
-    "knowledge/shanghaitech/SI100B.md",
-    "pre/2025-3-18.md",
+    "knowledge/paper/PDFS/Preserving and combining knowledge in \nrobotic lifelong reinforcement learning.pdf",
+    "knowledge/paper/roco.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/Transformer.md",
+    "knowledge/paper/RT-2.md",
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/RDT-1B.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/paper/Legion.md",
+    "knowledge/paper/FlowMatching.md",
+    "knowledge/paper/DiT.md",
     "assets/Pasted image 20250318212123.png",
-    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "knowledge/shanghaitech/SI152/Ch2.Geometry_of_Linear_Programming.md",
+    "assets/Pasted image 20250416040808.png",
+    "assets/Pasted image 20250415175933.png",
+    "assets/Pasted image 20250408142002.png",
+    "assets/Pasted image 20250318024222.png",
+    "assets/Pasted image 20250415175845.png",
+    "assets/Pasted image 20250416042256.png",
+    "assets/Pasted image 20250407233941.png",
     "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
-    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
-    "knowledge/Linear Algebra.md",
-    "export/2025-3-18/assets/Pasted image 20250318024222.png",
-    "export/2025-3-18/assets/Pasted image 20250317231436.png",
-    "export/2025-3-18/plugin/chalkboard/README.md",
-    "export/2025-3-18/plugin/chalkboard/img/blackboard.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-black.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-blue.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-green.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-orange.png",
-    "export/2025-3-18/plugin/chalkboard/img/boardmarker-purple.png",
-    "export/2025-3-18/plugin/chart/README.md",
-    "export/2025-3-18/plugin/customcontrols/README.md",
-    "export/2025-3-18/plugin/menu/CONTRIBUTING.md",
-    "export/2025-3-18/plugin/menu/README.md",
-    "pre/css/custom.css.md",
-    "knowledge/shanghaitech/CS101.md",
+    "knowledge/skills/rust/Variable.md",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
+    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+    "knowledge/skills/rust/Syntax.md",
     "Untitled.canvas"
   ]
 }

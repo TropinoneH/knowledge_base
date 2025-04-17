@@ -7,5 +7,6 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "assets",
-  "vimMode": false
+  "vimMode": true,
+  "newLinkFormat": "shortest"
 }

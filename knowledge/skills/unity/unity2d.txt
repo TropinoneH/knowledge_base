@@ -1,0 +1,17 @@
+1、2D精灵
+类似于3D的GameObject，用于显示
+1.1 
+1.1.1翻转显示图片
+SpriteRenderer renderer = this.gameObject.GetComponent<SpriteRenderer>();
+renderer.filpY = true;//翻转Y轴
+renderer.filpX = true;//翻转X轴
+
+2、Vector
+API直接求长度：
+Vector2 v;//Vector3也可以
+float length = v.magnitude;
+标准化：Normalize，变成单位向量
+注意:2D中头部的指向是Y轴方向
+
+3.ToString
+.ToString()的参数可以加"F3",表示保留三位小数

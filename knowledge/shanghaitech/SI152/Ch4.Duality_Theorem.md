@@ -75,7 +75,7 @@ $$
 \min & x_1 + 2x_2 + 3x_3 & \max & 5p_1 + 6p_2 + 4p_3 \\
 \text{subject to} & -x_1 + 3x_2 = 5 & \text{subject to} & p_1 \text{ free} \\
 & 2x_1 - x_2 + 3x_3 \geq 6 & & p_2 \geq 0 \\
-& & x_3 \leq 4 & p_3 \leq 0 \\
+& x_3 \leq 4 & & p_3 \leq 0 \\
 & x_1 \geq 0 & & -p_1 + 2p_2 \leq 1 \\
 & x_2 \leq 0 & & 3p_1 - p_2 \geq 2 \\
 & x_3 \text{ free}, & & 3p_2 + p_3 = 3. \\
@@ -97,32 +97,94 @@ $$
 
 ## The Duality Theorem
 
-弱对偶定理: $\mathbf c^\top\mathbf x\geq\mathbf p^\top\mathbf b$
-强对偶定理: 如果primal problem和dual problem中有一个有解, 则另一个问题也有解, 且最优值相等.
+> [!tip] Theorem
+> 弱对偶定理: $\mathbf c^\top\mathbf x\geq\mathbf p^\top\mathbf b$, 其中$\mathbf x$是原始问题可行解, $\mathbf p$是对偶问题可行解
 
-设$\mathbf x^*$是primal的optimal solution, $\mathbf p^*$是dual的optimal solution, 则:
-$$\mathbf p^*=(\mathbf c_B^\top\mathbf B^{-1})^\top$$
+> [!tip] Corollary
+> 1. 如果$\mathbf c^\top\mathbf x=\mathbf p^\top\mathbf b$, 那么$\mathbf x$是原始问题最优解, $\mathbf p$是对偶问题最优解
+> 2. 如果原始问题最优成本为$+\infty$, 那么对偶问题无解
+> 3. 如果对偶问题最优成本为$-\infty$, 那么原始问题无解
+
+> [!tip] Theorem
+> 强对偶定理:
+> 1. 如果primal problem和dual problem中有一个有解, 则另一个问题也有解, 且最优值相等.
+> 2. 设$\mathbf x^*$是primal的optimal solution, $\mathbf B$是primal的optimal basis, $\mathbf p^*$是dual的optimal solution, 则:
+>    $$\mathbf p^*=(\mathbf c_B^\top\mathbf B^{-1})^\top$$
 
 primal problem --> dual problem --> introduce relax variable, turn to standard form --> simplex solve
 
 primal problem的simplex解出来的松弛变量对应的$r^\top_i$的值就是dual problem solution.
 
-单纯形法: 
+对偶单纯形法: 
+- 适用范围: 需要同时满足两个条件, 使普通单纯形法无法使用
+  1. 将$\geq$乘$-1$转成$\leq$之后, 导致$b$列有负值
+  2. 同时, 在$r^\top$行全部大于0
+- 求解流程: 实现类似[[Ch3.Simplex#实现|Simplex]], 但是改了
 
-实现类似[[Ch3.Simplex#实现]], 但是改了
+  我们一般将non basic variable组成一个basis, 因为他们是Identity Matrix(见initial tableau)
+  1. 转换成Dual problem
+  2. 将primal problem的$\geq0$的constrains乘$-1$, 然后写出initial simplex tableau
+  3. 选择一个basic variable, 作为enter basis(Bland Rule)
+     选取方法: 对于$\bar b_i\geq0$的, 选择第$i$个变量$x_i$.
+  4. 选择一个non-basis variable, 作为exit basis
+     选取方法: 
+     - 如果这一列都是positive or zero, 那么停止, 最值无界
+     - 找到比值最小的一个: $p=\mathop{\arg\min}\limits_j\{\frac{r^\top_j}{-u_{jq}}|u_{jq}<0,j=1,\cdots,m\}$
+     - 注意, 如果有比值相等的情况, 使用字典序找到最小的那一个.
+  5. 消元(或者说叫做转轴)
+  6. 重复上述操作, 直到$\mathbf r^\top$没有negative为止.
 
+e.g.
+$$\begin{aligned}
+\min \quad & 12x_1 +16x_2 +15x_3 \\
+\text{s.t.} \quad
+& 2x_1 + 4x_2 \geq2, \\
+& 2x_1+5x_3\geq3, \\
+& x_i \geq 0,\quad i=1,2,3.
+\end{aligned}$$
+Turn into standard form, with $\leq$ constrains:
+$$\begin{aligned}
+\min \quad & 12x_1 +16x_2 +15x_3 \\
+\text{s.t.} \quad
+& -2x_1 - 4x_2+x_4 =-2, \\
+& -2x_1-5x_3+x_5=-3, \\
+& x_i \geq 0,\quad i=1,2,3,4,5.
+\end{aligned}$$
+generate initial simplex table:
+$$\begin{array}{c|ccccc|c}
+ & x_1 & x_2 & x_3 & x_4 & x_5 & \mathbf B^{-1}\mathbf b\\
+\hline
+x_4 & -2 & -4 & 0 & 1 & 0 & -2 \\
+x_5 & -2 & 0 & \boxed{-5} & 0 & 1 & -3 \\
+\hline
+r^\top & 12 & 16 & 15 & 0 & 0 & 0 \\
+\end{array}$$
+> [!tip]
+> 选择这个是因为:
+> 1. 找$\mathbf B^{-1}\mathbf b$的最小负数, 选择$-3$对应的$x_5$
+> 2. 找$\frac{r^\top_j}{-u_{jq}}$最小的一项, 选择$\min(6,,3)=3$, 选择$x_5$为exit basis, $x_3$为enter basis, $-5$是对应的值
 
-求解流程:
+The second simplex table:
+$$\begin{array}{c|ccccc|c}
+ & x_1 & x_2 & x_3 & x_4 & x_5 & \mathbf B^{-1}\mathbf b\\
+\hline
+x_4 & \boxed{-2} & -4 & 0 & 1 & 0 & -2 \\
+x_3 & \frac25 & 0 & 1 & 0 & -\frac15 & \frac35 \\
+\hline
+r^\top & 6 & 16 & 0 & 0 & 3 & -9 \\
+\end{array}$$
+> [!tip]
+> 选择这个是因为:
+> 1. $\mathbf B^{-1}\mathbf b<0$只有一个
+> 2. 选择$\min(3,4,)=3$, 选择$x_4$为exit basis, $x_1$为enter basis, $-2$是对应的值
 
-我们一般将non basic variable组成一个basis, 因为他们是Identity Matrix(见initial tableau)
-1. 转换成Dual problem
-2. 将primal problem的$\geq0$的constrains乘$-1$, 然后写出initial simplex tableau
-3. 选择一个basic variable, 作为enter basis(Bland Rule)
-   选取方法: 对于$\bar b_i\geq0$的, 选择第$i$个变量$x_i$.
-4. 选择一个non-basis variable, 作为exit basis
-   选取方法: 
-   - 如果这一列都是positive or zero, 那么停止, 最值无界
-   - 找到比值最小的一个: $p=\mathop{\arg\min}\limits_j\{\frac{\bar b_j}{-u_{jq}}|u_{jq}<0,j=1,\cdots,m\}$
-   - 注意, 如果有比值相等的情况, 使用字典序找到最小的那一个.
-5. 消元(或者说叫做转轴)
-6. 重复上述操作, 直到$\mathbf r^\top$没有negative为止.
+The third simplex table:
+$$\begin{array}{c|ccccc|c}
+ & x_1 & x_2 & x_3 & x_4 & x_5 & \mathbf B^{-1}\mathbf b\\
+\hline
+x_1 & 1 & 2 & 0 & -\frac12 & 0 & 1 \\
+x_3 & 0 & -\frac45 & 1 & \frac15 & -\frac15 & \frac15 \\
+\hline
+r^\top & 0 & 4 & 0 & 3 & 3 & -15 \\
+\end{array}$$
+Therefore, $(x_1,x_2,x_3,x_4,x_5)^\top=(1,0,\frac15,0,0)^\top$, the optimal cost is $15$.

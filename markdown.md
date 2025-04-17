@@ -211,4 +211,4 @@ we can simple use html element in markdown.
 
 ## Use other framework
 
-you can simple use `<script>` block to import other framework such as `Vuetify`, `ElementUI` or others.
+you can simple use `<script>` block to import other framework such as [[Vuetify]], [[ElementUI]] or others.

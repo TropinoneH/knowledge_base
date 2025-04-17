@@ -1,0 +1,531 @@
+零.unity
+0.1快捷键
+Ctrl+ shift + c打开控制台
+
+一.脚本
+1.1语法结构
+文件名必须和类名一致
+写好的脚本必须附加到物体上执行
+附加到游戏物体的脚本类必须从MonoBehaviour类继承
+using 命名空间;
+public class 类名 : MonoBehaviour
+{
+    void 方法名()
+    {
+        Debug.Log("显示调试信息");
+        print("本质上就是Debug");
+    }
+}
+1.2unity内部界面
+在右上角,有三个下拉框,后两个选中Layers,2by3即可显示界面//unity01-02
+
+1.2.1Project界面
+用于存放游戏资源,包括脚本,脚本也是游戏资源
+脚本放在新建一个Scripts里面,然后里面放上子文件夹,用于分别存放不同类型的脚本
+然后在最右侧有一个Inspector->右键文件夹->Create->C# Script->改文件名
+然后就可以在最右边的Inspector界面里面看到文件代码的预览
+注意不能直接改脚本名,最好是删了重新改,因为需要脚本名(就是脚本的文件名)需要和类名一致.
+然后当你编写完成后直接把脚本往Untitled里的物体上拖拽即可把脚本挂在物体身上.
+选中物体->最右侧的一栏界面皆可以找到所有与这个物体相关的属性,包括脚本编写的.
+
+1.3物体的属性
+注意,脚本控制的是对象,而不是这个类
+所以需要对这个对象(物体)的属性进行编辑
+这个物体是一个对象,是GameObject类的对象
+
+1.3.1Transform属性(变换组件)
+Position位置   Rotation旋转   Scale缩放
+
+1.3.2Camera组件(摄像机,眼睛)
+对象,观察
+
+1.3.3Audio Listener声音
+
+1.3.4游戏对象
+1.3.4.1创建
+在SimpleScene中右键->创建空对象即可创建出一个对象,然后如果想要让脚本挂到这个对象上,直接把脚本拖过去即可.一个对象上可以挂多个脚本,多个脚本可以是相同的脚本.
+在这个物体上有一个数组,存放着所有物体上的组件(挂上去的脚本和本身的性质),但是这个数组存放的是一个引用,需要用.来调用.
+一个脚本是写的是一个类,但是脚本挂到物体上之后就变成了一个组件.这个组件就存放在物体的数组中.
+
+1.5改变unity的创建一个脚本的模板
+桌面找到unity图标->右键->属性->打开文件位置->找到unity所在文件夹中的Data文件夹->Resources文件夹->ScriptTemplates(脚本模板)文件->81-C# Script-NewBehaviourScript.cs.txt->右键->打开方式->vs(反正就是差不多那个名字)->找到81-C# Script-NewBehaviourScript.cs.txt->改模板即可
+模板:
+// *****************************************
+//
+//文件名(File Name):             #SCRIPTNAME#.cs
+//
+//作者(Author):                  #AuthorName#
+//
+//创建时间(CreateTime);          #CreateTime#
+//
+// *****************************************
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+///<summary>
+///
+///</summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+//TODO here:
+}
+#ROOTNAMESPACEEND#
+
+1.6脚本生命周期
+一个脚本(类)开始工作到最后销毁的过程
+学习内容:方法的名称,方法调用的时机,方法的适用性
+类似信号和槽的机制,不过只是已经关联在一起了.
+(也称作必然事件,消息)
+单线程执行生命周期
+
+1.6.1干预时机(相当于事件的发生)
+1.6.1.1在开始时
+Awake:当物体载入时,立即被执行一次;常用于在游戏开始之前进行初始化,可以判断当满足某种条件执行此脚本,常用于初始化
+OnEnable:当可用时,每当脚本对象启动时调用
+Start:开始,物体载入且脚本对象启动时被调用一次,常用于数据或游戏逻辑初始化,执行时机晚于Awake
+如果这个含有Awake的脚本挂在了多个物体身上,那就先把Awake都执行一遍,在把Start执行一遍.
+Awake的执行顺序与他们所附属的游戏物体的顺序无关,但是可以改,只是不推荐改.
+Directional Light先执行,Main Camera再执行.(unity5,unity4是先Main Camera,再Directional Light)
+如果实在想要该顺序,可以一个放在Awake里面,一个放在Start里面.
+一般而言,把初始化放在Start中,如果实在不行再把初始化放在Awake中.
+对于一个被禁用的物体(在检查器一栏把钩选掉),Awake和Start都不执行.但是假如说只是禁用了脚本,还是会执行Awake,但是Start不执行.(他妈的为什么禁用了脚本还能执行脚本内容)
+注意也就是说,Awake是在物体创建时立即执行,而Start是在脚本启用时才执行.
+可以在Awake中this.enabled = false;可以禁用这个物体,顺便把Start给禁用了
+
+1.6.1.2在物理阶段
+设置更新频率:Edit菜单->Project Setting->Timer ->Fixed Timestep值,默认为0.02秒(50帧)(不建议改)
+函数:
+FixedUpdate:脚本启动后,固定时间被调用,适用于对游戏对象做物理操作,例如移动,旋转等.是固定的,不会受到渲染的影响(渲染时间不固定,因为每帧的渲染量不同,电脑的性能也不同).但是很多还是要在Update中执行,是渲染执行,每渲染一次执行一次,执行间隔不固定(1.6.1.4).
+通常是移动放到FixedUpdate中,Update里放地图更新,但是为了代码的简洁性,都放到Update中.
+OnCollusionXXX:当满足碰撞条件时被调用
+OnTirggerXXX:当满足触发条件时被调用
+
+1.6.1.3输入
+必须要有Box Collider碰撞器才能被接收到
+OnMouseEnter:当鼠标移入时,鼠标移动到当前的Collider时被调用
+OnMouseOver:当鼠标经过当前的Collider时被调用
+OnMouseExit:当鼠标离开当前的Collider时被调用
+OnMouseDown:当鼠标在当前的Collider按下时被调用(只能是左键)
+OnMouseUp:当鼠标在当前的Collider释放时被调用(左键)
+
+1.6.1.4游戏逻辑:
+Update:脚本启用后,每一次渲染场景时被调用,频率与设备的性能以及渲染量有关.适用性:手游,限帧,帧数低画质低因为设备差,常用于处理游戏逻辑(更新地图等);
+LateUpdate:延迟更新,在Update函数调用后接着被执行,适用于跟随逻辑(比如说相机跟随着物体移动,但是实际还是看需求)
+
+1.6.1.5场景渲染
+必须有Mesh Renderer
+当一个特效不被看见时可以不渲染,作为优化,可以提高游戏体验;或者做隐身提醒等
+OnBecameVisible:当Mesh Renderer在任何相机上可见时被调用
+OnBecameInvisible:当Mesh Renderer在任何相机上都不可见时被调用
+
+1.6.1.6结束阶段
+OnDisable:当不可用时,对象变为不可用或附属游戏对象非激活状态时被调用
+OnDestroy:当脚本或附属的游戏对象被销毁时调用此函数
+OnApplicationQuit:当应用程序退出时被调用
+
+1.7与C#类的不同
+C#:字段,属性,构造函数,方法//注意这里的属性不是指类变量,而是指这个变量只读只写还是什么其他权限
+//而属性必须和字段(就是类变量)的类型是相同的,语法:
+//private int a;//这个是字段
+//public int Num{
+//get{return a;}//这个是可读
+//set{a=value;}//这个是可写
+//}
+//调用方法:
+//和字段的调用相同,最好是直接调用属性而非字段本身,这样能让程序更加强壮
+小写字段(private等),
+unity中:如果想要在unity界面中直接更改这个变量的值,那么就必须声明称public的值.
+如果在unity编辑器中改了变量的值,然后在访问这个值,那么这个值就一定是unity编辑器中改的值.(因为改的是变量的值,而调用或访问这个值都是通过对象访问的)
+注意,unity中不能使用属性(继承了MonoBehaviour类之后),直接写字段和方法就行
+属性在编辑器中显示不出来,其实也可以显示出来,只是非常麻烦,不如不写.
+也不写构造函数,构造函数常用于值的初始化,但是编译器会直接崩了,这些初始化只能在Awake或Start函数中初始化.原因:不能在子线程中访问主线程成员:unity中每次运行要创建出来物体,但是一个场景中object太多,unity就把这些物体的初始化放到了子线程中,而任何语言就是不能跨线程调用.
+=>最好别在脚本中调用构造函数
+
+1.7.1特性
+字段[SerializeField]作用:在编译器中显示字段,并可以修改(加在private前面)
+加上[HideInInspector]就不能在编辑器中看到,更不能在编辑器中修改.目的是可以在其他类中调用方法或属性,但是不显示给编辑器.
+如果直接加上private,那么在编辑器中不可见;而加上public,在编辑器中可见,且可编辑
+字段[Range(左值,右值)],作用是在编辑器中规定值的范围
+注意,特性要写在声明变量的语句的上一行,而下一行的属性不在被特性所影响
+
+1.7.2构造函数和Awake与Start
+构造函数是在这一个物体被创建时调用的,但是这个物体不一定只创建了一次.
+使用Debug.Log()可知,每一次开始运行,对于一个物体被创建了两次,游戏结束后又是一次(写在构造函数中然后看调用次数),也就是说这一个构造函数被调用了三次,所以肯定不能用来初始化.
+可以用来初始化的是public Lifecycle(){}这个是专门用来初始化的.(不要再脚本里面写构造函数,只写这个就行.)
+Debug.Log("");//就是在编辑器中创建一个对象,用于生成对话,但是实际开发后这个对象并不存在
+
+1.8断点调试
+在vs中设置断点,在unity中play,启动,或直接在vs中点击附加到unity
+详细参见01-08
+
+二.API
+2.1常用API
+只记名字,然后通过手册来找
+
+2.1.1Component
+2.1.1.1变量
+只能用tag和transform
+其他调用方法:
+this.GetComponent<MeshRenderer>().material.color = ... 
+//在编辑器中找到MeshRenderer,想要改某一个属性,那么找到从大到小的所有路径,输入.
+//如,想要改color,在编辑器中color是在material(材质)中,那么直接.material.color即可
+
+2.1.1.2function函数
+GetComponent<type> 如果游戏对象有附加type类组件,那么返回它,如果没有,返回空
+ComponentTag 这个游戏对象是否被附加了标签
+GetComponents<type> 返回对象身上的type组件(返回一个数组,可以使用var arr来接收,var直接是一个虚类型,可以自动转换),如果想要返回所有组件,那么直接type=Component
+GetComponentInChildren<type> 使用dfs(深搜)返回对象身上的组件或子对象
+GetComponentInParent<type> 同上,找父组件
+object名字.CompareTag("标签名");//如果相同返回true,似乎是比"=="要好
+Component类提供的功能：查找组件，在当前物体的后代、前辈中查找。
+
+2.1.2Transform
+2.1.2.1变量(成员)
+transform.position:三维向量,物体位置
+//绝对的位置(相对于世界原点的位置),也叫世界坐标
+transform.localPosition:相对于父物体的位置
+//注意编辑器中的position是localPosition,是相对的位置
+transform.localScale:相对于父物体的缩放.
+transform.lossyScale:物体与模型的缩放比例,就是自身缩放比例乘上父物体的缩放比例.
+//如,父物体localScale=(1,3,1),当前物体localScale=(1,2,1),那么lossyScale为(1,6,1),lossyScale只读
+
+2.1.2.2方法(函数)
+foreach(Transform child in transform){
+	print(child.name);
+}//可以输出所有的一级子控件的变换组件所附属的对象名
+Translate : 移动变换组件在translation的方向和距离
+//如,this.transform.Translate(x,y,z);向xyz轴移动xyz距离,注意这里的移动是自身的方向(自身坐标系的轴)
+//this.transform.Translate(x,t,z,Space.World);向世界的xyz轴移动xyz距离
+Rotate:旋转变换组件
+//如,this.transform.Rotate(x,y,z,Space....);沿着xyz轴旋转xyz度,Space后可加Self或World
+RotateAround:围绕着旋转,必须写入三个参数,否则会显示否决的
+//如:this.transform.RotateAround(Vector3.zero,Vector3.up,1);
+//第一个参数是围绕的坐标,第二个是围绕的轴,第三个参数是旋转的角度
+//Vector3.zero是(0,0,0),世界的零点;Vector3.up是y轴(向上的),1是转的度数
+//Vector3.forward是z轴,Vector3.right是x轴,Vector3.back是逆时针
+root:获取根物体(最高节点),返回Transform类的变量
+parent:获取父物体(也是返回Transform类)
+SetParent(Transform类的变量);设置父物体
+//可以Transform tf;
+//this.transform.SetParent(tf,bool);
+//然后只需要在编辑器界面把父物体拖到tf成员的后面就行
+//注意,这里拖动的是物体,但是实际上装进来的是Transform类
+//bool可不写,默认是true(坐标还是世界坐标),如果是false,那么坐标相对值就变成了与父对象的相对坐标
+parent:返回父物体,注意,这个最好只用于读取
+find(名字):根据名字查找物体,名字指子物体名称,返回一个变换组件(只能是一级子物体)
+//想要找未知层级的子物体，看unity实例.txt 七
+//找孙子:"子物体名称/孙子物体名称",路径不能发生改变才能用
+childCount:获取孩子的数量(没有小括号)
+GetChild(i):根据索引获取孩子(不能是孙子),标号为i(从0开始)
+DetachChildren:解除所有孩子,相当于是把所有子对象扔了(不要孩子了)
+//解除父物体(不要爹了):SetParent(null)即可
+
+2.1.3GameObject
+2.1.3.1变量
+场景里面的变量(Hierarchy面板(2x3的第一个面板)里面所有的变量)
+activeInHierarchy场景中的对象是否激活(可设置)(但一般不这么干,找函数SetActive)
+activeSelf:该游戏对象的局部激活状态(只读)(local)(在检查器版面最上面左边有一个复选框,选上就是true)
+//设置物体启用禁用：this.gameObject.SetActive();
+//禁用一个物体,两种,一种是取消了他自己的钩,还有一种是父物体的钩取消了
+//第一个是实际是否激活(要看父物体的),第二个是那个钩有没有选上
+tag:对象标签
+
+2.1.3.2函数
+AddComponent<>():是一个函数，只能作用域gameObject类的变量身上。想要添加光源，可以如下：
+//GameObject lightGO = new GameObject();
+//Light light = lightGO.AddComponent<Light>();
+//light.color = Color.red;//红光
+//light.type = LightType.Point;//点光源
+//只有这样才能成功创建出一个光源.
+Find():根据名称找物体，慎用，因为子物体太多了。
+//transform.Find()可以用，因为不会太多
+FindGameObjectsWithTag:获取所有使用该标签的物体，返回一个GameObject[]数组
+FindWithTag:返回一个单独的物体。
+//根据标签查找性能更好
+Destroy():删除物体
+DontDestroyOnLoad(transform.gameObject);在场景切换时不删除该物体
+//在Awake中使用，那个物体不想清除就给那个物体挂上这个脚本
+//根据类型查找对象；注意：这个找的不是GameObject，而是Object，两者有所不同
+Object[] obj = Object.FindObjectsOfType<类名>(true);
+//有true的话会找到所有的对象，包括未激活的。不加或false不会找未激活的对象
+
+
+2.1.4Object
+2.1.4.1变量
+name:返回所属物体的名字
+注意：这个Object返回的是一个引用，所以可以直接修改。
+如：在Start中Transform _myTransform = GetComponent<Transform>();
+然后直接后面调用_myTransform.position = new Vector3(x,y,z);等成员即可
+☆注意GetComponent在调用时会消耗性能，所以尽量不要再Update里面调用。要在Start中存到自己的成员变量中在使用。
+☆优化性能：减少Update里面的操作.
+
+2.1.4.2方法
+FindObjectsOfType<类名>()//返回一个物体，也可以用一个类名的变量接受
+//如：
+//Object obj = FindObjectsOfType<类名>();
+//类名 enemy = FindObjectsOfType<类名>();
+
+
+2.1.5Time
+2.1.5.1变量
+time ：从游戏开始过去的时间（以秒计，但是返回值是个float的小数，与调用的函数有关）
+timeScale ：时间缩放，默认值是1，减缓可以变成0.01或其他，加速可以是2,3,4等等。为0时直接暂停。只会影响FixedUpdate，不会影响Update。但是有了deltaTime，还是会影响。因为deltaTime会受到timeScale的影响。
+//有时会要求某些物体暂停，另一些物体不受影响，那么可以用这个来写（必须得在Update里写）
+//还得不能用timeScale，需要用unscaledDeltaTime
+//还有fixedDeltaTime，专门在FixedUpdate里面用，只是为了更严谨，在卡顿时也执行操作
+//realtimeSinceStartup是实际运行时间，不计暂停和卡顿，和unscaledTime类似
+
+2.1.5.2方法
+Invoke（“执行函数的名字”，开始执行的时间）;//这个其实是MonoBehavior类里的，延时执行
+InvokeRepeating("执行函数的名字",开始执行的时间,循环时间);//循环执行函数
+CancelInvoke("函数名"); // CancelInvoke()不加函数名就全部取消执行
+IsInvoking("函数名");//判断这一个方法有没有被执行，不加参数就判断所有方法有没有被执行
+eg: 
+private void timer(){...}
+private void Start(){Invoke("timer",1);InvokeRepaeting("timer",1,1);}
+
+
+2.1.6小知识：预制件
+当一个东西需要在场景里面多次使用时，使用预制件。
+方法：从Hierarchy里拖拽到Project里面即可。然后想用时直接将Project里面的预制件拖到Hierarchy里面即可使用。
+这样得到的组件里面包含所有的脚本、属性等一切。
+想要对预制件更改：一是直接在Project里面直接改预制件，二是在Hierarchy里面改完之后找到<检查器>的最上面，找到<覆盖>下拉框，选择应用即可。
+（提高开发效率）
+
+
+2.2旧版的UI界面的按钮
+private void OnGUI()
+{
+    if (GUILayout.Button("Button")) //创建一个按钮(在最左上角)
+    {
+        print("ok");                             //如果点击了,就打印一个ok
+    }
+}
+//这个脚本挂在对象上按钮才会出现,而且不是出现在物体上,是出现在整个屏幕的左上角
+//可以通过写GUI.Button(new Rect(左上角x,左上角y,宽度,高度),"显示的文字");来调整位置
+
+GUILayout.RepeatButton("显示的文字");一直按住可以一直执行,Button只执行一帧
+
+
+2.3新版本的GUI
+2.3.1Text
+右键->UI->文本，创建出一个Text类
+想要在脚本中调用text，首先要using UnityEngine.UI;然后再写代码。
+找到创建的Text对象：
+Text tt;
+tt = FindObjectOfType<Text>();//只有一个Text类时
+tt.text = "";//改显示内容
+tt.color = Color.red;//改显示内容的颜色
+
+
+2.4animation动画
+2.4.1.1老式动画的创建
+1、找到窗口菜单->动画->动画,或者直接ctrl+6打开动画对话框
+2、选中想要添加动画的物体，在检查器里最下方找到添加组件，搜素找到动画，添加
+3、在动画对话框（就是第一步打开的那个）里面，点击创建，保存下来动画文件
+4、在动画对话框的左侧选择添加属性，然后将想要在动画中变换的组件添加上。
+5、点击红色的录制按钮，选择关键帧（必须用他给的左右按钮选中，不能手动点击关键帧），然后在想要变换的组件的属性上修改。可以点击动画的播放查看效果
+6、编辑完成后，找到刚刚添加组件的物体（步骤二），将动画拖进里面的Animation框里，选上Play Automatically，就可以自动播放动画了。 
+//动画对话框里面的时间如1:20是第1秒第20帧
+
+2.4.1.2从脚本中找到动画
+private Animation anim;
+anim = GetComponent<Animation>();
+
+2.4.2变量
+animation.isPlaying 是否有任意动画在播放
+animation["name"].speed 播放速度，1是正常速度
+//倒放：animation["name"].speed = -1;即可
+animation["name"].length 动画的总长度
+animation["name"].time 播放时间
+animation["name"].wrapMode 播放模式
+//Default 无 Once 只播一次 Loop 循环 Ping Pong 从头到尾再从尾到头播放 
+//Clame Forever只播一次，然后永远固定住不再播放
+
+2.4.3方法
+//都需要用animation.方法名
+IsPlaying("name") 名为name的动画是否在播放
+CrossFade("name") 在一定时间内淡入播放名为name的动画，一般用于人物动画之间的切换
+Play("name") 不带有任何混合的播放名为name的动画(较为生硬)
+PlayQueued("name") 按队列播放动画(放在队列末尾)
+//如果用两个Play，会导致第一个动画还没播完，只要有Play就会播放第二个动画，CrossFade也是
+//用PlayQueued的话就不会这样，只会播完第一个再播第二个。
+
+2.5 physic物理参数
+2.5.1碰撞器
+2.5.1.1方法
+作为触发器时,触发的第一帧调用:
+void OnTriggerEnter(Collider other){}
+在函数中：
+other就是该物体的碰撞器组件，可以直接调用它的成员属性。
+作为碰撞器时，碰撞的第一帧调用：
+void OnColliisionEnter(Collider collider){}
+在函数中：
+注意：collider不是该物体的碰撞组件，需要.collider才能获取到碰撞组件
+collider.collider.GetComponent<Type>();//获取碰撞的物体身上的其他组件
+//注意一定是两个collider，因为第一个collider（函数的参数）不是碰撞器组件
+事件参数类：
+ContactPoint cp = collider.contacts[0]; //获取第一个接触点
+//cp.point 接触点的世界坐标  cp.normal 接触面法线
+
+//注意，碰撞的两个物体碰撞速度很快时，触发器会崩掉（检测不到，因为是0.02秒检测一次）
+//解决方法：换一种方法：射线检测
+//射线检测是：在物体到某条件时，做一次检测：
+//if(Physics.Raycast(起点坐标,方向,受击物体的信息,距离,检测的层);
+//eg:  RaycastHit hit; 
+//if(Physics.Raycast(this.transform.position,this.transform.forward,out hit,100,mask))//{Debug.Log("HIt!");}
+//注意：mask最好是public出来的一个LayerMask变量，在检查器里面选择需要的图层
+//this.transform.forward是z轴方向，注意是否射线方向投错了
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+N.小技巧
+N.1 Vector3.Distance的性能优化
+Vector3.Distance有一个开方的过程,有性能损耗,所以可以用(pos1 - pos2).sqrMagnitude < (float数)来判断，sqrMagnitude是平方的意思。
+N.2 GetComponent 的性能优化
+在Update里面尽量不要GetComponent，因为会消耗很多性能。
+应该在Start()中GetComponent然后存到一个本类的成员变量中，然后直接调这个成员即可。因为Unity里面组件的调用都是引用调用，所以修改成员变量就是修改原来的组件。
+N.3 如果想要继承的子类所挂载的物体上必须有某一个组件
+在父类最外面的上面加上[RequireComponent(typeof(组件类))]即可。
+N.4 快捷键
+Q:手型工具
+W:移动
+E:旋转
+R:缩放
+T:矩形工具
+Y:旋转缩放移动
+N.5 Json数据储存与读取
+//filePath = Application.dataPath + "/文件夹名称" + "/文件名.json"
+N.5.1 储存（已知文件地址为filePath）
+string saveJsonStr = JsonMapper.ToJson(任意数据类型);//这里一般是GameObject型
+//例如，这里使用Save save = new Save();的save
+StreamWriter sw = new StreamWriter(filePath);
+sw.Write(saveJsonStr);
+sw.Close();
+N.5.2 读取（已知文件地址为filePath）
+if(File.Exists(filePath))
+{
+    StreamReader sr = new StreamReader(filePath);
+    string jsonStr = sr.ReadToEnd();
+    sr.Close;
+    Save save = JsonMapper.ToObject(jsonStr);
+}
+else
+{
+//TODO：如果文件不存在
+}
+N.6 vs2019 
+快捷键：ctrl r + ctrl m：快速将选中的内容形成新的方法
