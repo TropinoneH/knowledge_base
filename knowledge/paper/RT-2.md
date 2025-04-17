@@ -4,13 +4,14 @@ tags:
   - EmbodiedAI
   - LLM
   - VLA
+  - DL
 aliases:
   - "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
 ---
 [[RT-2.pdf]]
 # RT-2
 
-end-to-end训练. 使用chain of thought可以使 RT-2 执行多阶段inference, 例如确定哪个物体可以作为临时的锤子(e.g. a rock)
+end-to-end训练. 使用[[CoT|chain of thought]]可以使 RT-2 执行多阶段inference, 例如确定哪个物体可以作为临时的锤子(e.g. a rock)
 ## Intro
 
 training set中的visual-action只占一半左右, 因为要防止LLM忘记之前学到的VLM的内容. 只在固定的情境中输出robot action.

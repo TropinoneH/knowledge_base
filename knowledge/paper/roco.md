@@ -3,6 +3,7 @@ tags:
   - EmbodiedAI
   - paper
   - LLM
+  - DL
 aliases:
   - RoCo Dialectic Multi-Robot Collaboration with Lar
 ---
@@ -42,6 +43,8 @@ RoCoBench:
 ![[Pasted image 20250319210113.png]]
 
 ### Multi-Agent Dialog via LLMS
+
+使用[[Transformer]] based LLM进行生成对话和action.
 
 需要通信协调agents非对称的observation space
 

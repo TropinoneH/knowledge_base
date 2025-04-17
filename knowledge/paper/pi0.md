@@ -4,6 +4,8 @@ tags:
   - LLM
   - EmbodiedAI
   - VLA
+  - RL
+  - DL
 aliases:
   - "pi0: A Vision-Language-Action Flow Model for General Robot Control"
 ---

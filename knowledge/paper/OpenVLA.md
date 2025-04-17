@@ -4,6 +4,7 @@ tags:
   - EmbodiedAI
   - LLM
   - VLA
+  - DL
 aliases:
   - "OpenVLA: An Open-Source Vision-Language-Action Model"
 ---

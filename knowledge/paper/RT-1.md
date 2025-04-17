@@ -2,6 +2,8 @@
 tags:
   - paper
   - EmbodiedAI
+  - DL
+  - RL
 aliases:
   - "RT-1: Robotics Transformer for Real-world Control at Scale"
 ---

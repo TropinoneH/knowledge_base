@@ -3,6 +3,7 @@ tags:
   - tutorial
   - LLM
   - paper
+  - DL
 aliases:
   - Attention is all you need
 ---
@@ -19,6 +20,7 @@ the paper is: [Attention is all you need](https://arxiv.org/abs/1706.03762)
 - 在大型状态空间上的操作(代码执行)可能变得简单
 - 无需压缩或者简化数据库
 
+使用[[torch]]训练
 ## 定义
 
 $$

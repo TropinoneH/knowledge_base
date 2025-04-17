@@ -3,6 +3,7 @@ tags:
   - paper
   - EmbodiedAI
   - diffusion
+  - DL
 aliases:
   - "RDT-1B: A Diffusion Foundation Model For Bimanual Manipulation"
 ---

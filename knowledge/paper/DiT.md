@@ -5,6 +5,7 @@ tags:
   - paper
   - tutorial
   - python
+  - DL
 aliases:
   - Scalable Diffusion Models with Transformers
 ---
@@ -69,7 +70,7 @@ aliases:
 
 ## Code Implementation
 
-DiT Block:
+DiT Block based on [[torch]]:
 
 ```python
 class AdaLNZero(nn.Module):
