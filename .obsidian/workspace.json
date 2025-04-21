@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/ToRL.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ToRL"
+              "title": "08-MDP"
             }
           }
         ],
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "_\\max",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +109,8 @@
               "title": "Plugin no longer active"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -144,13 +145,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/ToRL.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ToRL"
+              "title": "Outline of 08-MDP"
             }
           }
         ],
@@ -180,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/ToRL.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +191,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ToRL"
+              "title": "Backlinks for 08-MDP"
             }
           }
         ],
@@ -206,7 +207,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/ToRL.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,7 +235,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ToRL"
+              "title": "Graph of 08-MDP"
             }
           }
         ]
@@ -257,8 +258,11 @@
   },
   "active": "2b53ca23d65b5898",
   "lastOpenFiles": [
-    "Untitled.md",
+    "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
+    "knowledge/shanghaitech/SI152/Ch5.convex.md",
     "knowledge/paper/ToRL.md",
+    "index.md",
+    "Untitled.md",
     "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
     "knowledge/skills/rust/gtk-rs.md",
     "knowledge/skills/web/Vue/nuxt+vue3.md",
@@ -272,7 +276,6 @@
     "knowledge/shanghaitech/CS181/HMM.md",
     "knowledge/shanghaitech/CS181/01-Search.md",
     "knowledge/shanghaitech/CS181/02-CSP.md",
-    "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/shanghaitech/CS181/06-BayesInference.md",
     "knowledge/shanghaitech/CS181/07-ProbabilisticTemporalModel.md",
@@ -287,12 +290,10 @@
     "assets/image-20241120112645100.png",
     "assets/image-20241120114612136.png",
     "assets/image-20241120114526529.png",
-    "knowledge/shanghaitech/SI152/Ch5.convex.md",
     "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-MLLM-CoT.md",
     "knowledge/paper/LaRe.md",
     "knowledge/paper/MAYE.md",
-    "knowledge/paper/L2R.md",
     "knowledge/paper/PDFS/2503.23383v1_ToRL.pdf",
     "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
     "knowledge/paper/PDFS/2504.02587v2_MAYE.pdf",

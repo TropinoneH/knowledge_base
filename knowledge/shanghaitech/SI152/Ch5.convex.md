@@ -141,7 +141,7 @@ Stationary Point:
 > [!tip] Theorem
 > 1. 如果一个stationary point $\mathbf x$, 对于其neighborhood $\mathcal B\subset\mathbb R^n$, 满足$f(\mathbf y)\geq f(\mathbf x),\forall\mathbf y\in\mathcal B$, 那么$\mathbf x$是local minimization
 > 2. 如果一个stationary point $\mathbf x$, 有$\forall\mathbf y\in\text{dom}f$, 满足$f(\mathbf y)\geq f(\mathbf x)$, 那么$\mathbf x$是global minimization
-> 3. 如果一个stationary point $\mathbf x$, 对于其neighborhood $\mathcal B\subset\mathbb R^n$, 满足$f(\mathbf z)\leq f(\mathbf x)\leq f(\mathbf y),\mathbf{y,z}\in\mathcal B$, 并且$\lambda_\min(\nabla^2f(\mathbf x))leq0$ 那么称$\mathbf x$为Saddle point
+> 3. 如果一个stationary point $\mathbf x$, 对于其neighborhood $\mathcal B\subset\mathbb R^n$, 满足$f(\mathbf z)\leq f(\mathbf x)\leq f(\mathbf y),\mathbf{y,z}\in\mathcal B$, 并且$\lambda_\min(\nabla^2f(\mathbf x))\leq0$ 那么称$\mathbf x$为Saddle point
 
 
 ## Convex Optimization Problem
