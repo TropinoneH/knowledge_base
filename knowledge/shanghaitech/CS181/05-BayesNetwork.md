@@ -176,7 +176,7 @@ Bayes Network和Markov Network编码了同样的分布
 
 可以认为BN和MN是带有概率的拓展PL
 
-## CRF Conditional Random Field
+## [[CRF]] Conditional Random Field
 
 生成式模型: 建模一个分布: $P(X_1, X_2,\cdots, X_n)$
 

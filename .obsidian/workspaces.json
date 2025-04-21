@@ -316,7 +316,7 @@
       "active": "bb0842b87f4cd163",
       "mtime": "2025-04-08T19:26:46+08:00"
     },
-    "note": {
+    "paper": {
       "main": {
         "id": "9abac74c9782d9ac",
         "type": "split",
@@ -326,12 +326,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "77d217cb6c11ba8b",
+                "id": "854332692c702abf",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/shanghaitech/CS181/HMM.md",
+                    "file": "knowledge/paper/ToRL.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -346,7 +346,49 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "HMM"
+                  "title": "ToRL"
+                }
+              },
+              {
+                "id": "dad8bc478b386efe",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/LaRe.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "LaRe"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ca6bcbc7aeab32c9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "69d70a48901870f0",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2503.23383v1_ToRL.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2503.23383v1_ToRL"
                 }
               }
             ]
@@ -381,7 +423,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "[\"aliases\"]",
+                    "query": "lare",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -390,6 +432,231 @@
                   },
                   "icon": "lucide-search",
                   "title": "Search"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "f5c31da48e8e3648",
+        "type": "split",
+        "children": [
+          {
+            "id": "627941b01e20f9ac",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "98029cd553bbe051",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "adf465e484c5fc8e",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "knowledge/paper/ToRL.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of ToRL"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "66ad83ba982953ad",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7ac93c7df2c9ce41",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "knowledge/shanghaitech/CS181/HMM.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from HMM"
+                }
+              },
+              {
+                "id": "73ea48f3780c114c",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "knowledge/paper/ToRL.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for ToRL"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "ee8c002877942ed2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4ecd5aca8cbd1ac6",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "knowledge/paper/ToRL.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.6666666666666666,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of ToRL"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "workspaces:Manage workspace layouts": false,
+          "obsidian-git:Open Git source control": false,
+          "obsidian-advanced-slides:Show Slide Preview": false
+        }
+      },
+      "active": "854332692c702abf",
+      "mtime": "2025-04-22T02:02:43+08:00"
+    },
+    "note": {
+      "main": {
+        "id": "9abac74c9782d9ac",
+        "type": "split",
+        "children": [
+          {
+            "id": "2cce342bbf35ee44",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2b502c8c00f122f1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ch5.convex"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "02435a3d793b3744",
+        "type": "split",
+        "children": [
+          {
+            "id": "92b0b97a02cf09b1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e87140d09247ee1e",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": true
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "63468d51d904aaa0",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "搜索"
                 }
               },
               {
@@ -437,13 +704,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/shanghaitech/CS181/HMM.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of HMM"
+                  "title": "Outline of Ch5.convex"
                 }
               }
             ],
@@ -473,7 +740,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/shanghaitech/CS181/HMM.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -483,7 +750,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for HMM"
+                  "title": "Backlinks for Ch5.convex"
                 }
               }
             ],
@@ -499,7 +766,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/shanghaitech/CS181/HMM.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -527,7 +794,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of HMM"
+                  "title": "Graph of Ch5.convex"
                 }
               }
             ]
@@ -543,13 +810,13 @@
           "canvas:Create new canvas": false,
           "templates:Insert template": false,
           "command-palette:Open command palette": false,
+          "workspaces:Manage workspace layouts": false,
           "obsidian-git:Open Git source control": false,
-          "obsidian-advanced-slides:Show Slide Preview": false,
-          "workspaces:Manage workspace layouts": false
+          "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "77d217cb6c11ba8b",
-      "mtime": "2025-04-08T21:21:54+08:00"
+      "active": "2b502c8c00f122f1",
+      "mtime": "2025-04-22T00:17:57+08:00"
     }
   },
   "active": "note"

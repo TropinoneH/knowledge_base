@@ -1,0 +1,8 @@
+.cm-link .cm-underline,
+.cm-hmd-internal-link .cm-underline {
+    pointer-events: none;
+}
+
+.cm-hmd-internal-link.cm-link-alias .cm-underline {
+    pointer-events: auto;
+}

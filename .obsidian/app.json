@@ -8,5 +8,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "assets",
   "vimMode": true,
-  "newLinkFormat": "shortest"
+  "newLinkFormat": "shortest",
+  "foldIndent": true
 }

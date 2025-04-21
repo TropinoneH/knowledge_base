@@ -29,7 +29,7 @@ Stationarity Assumption: 所有时间步上, 有相同的转移模型
 
 Markov Assumption: $X_{t+1}\perp\!\!\!\perp X_0,X_1,\cdots,X_{t-1}|X_t$, 即每一个变量之和自己的上一时刻的状态相关, 与过去的state无关
 
-> [!note] example
+> [!example]
 > Weather Predict
 > 
 > ![image-20241115104504578](image-20241115104504578.png)
@@ -48,7 +48,7 @@ Markov Assumption: $X_{t+1}\perp\!\!\!\perp X_0,X_1,\cdots,X_{t-1}|X_t$, 即每�
 
 但是并不是所有的Markov Chain都有Stationary Distribution
 
-> [!note] example
+> [!example]
 > Weather
 >
 > ![image-20241115105514279](image-20241115105514279.png)
@@ -124,7 +124,8 @@ $$
 
 变量消除: $\sum_{X_t}$
 
-> e.g. Weather
+> [!example]
+> Weather
 >
 > ![image-20241115112936865](image-20241115112936865.png)
 >

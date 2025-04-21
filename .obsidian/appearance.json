@@ -8,5 +8,8 @@
   "baseFontSize": 20,
   "nativeMenus": false,
   "showViewHeader": true,
-  "showRibbon": false
+  "showRibbon": false,
+  "enabledCssSnippets": [
+    "link"
+  ]
 }
