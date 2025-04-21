@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markdown.md",
+                "file": "knowledge/paper/ToRL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "markdown"
+              "title": "ToRL"
             }
           }
         ],
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "crf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -144,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown.md",
+                "file": "knowledge/paper/ToRL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of markdown"
+              "title": "Outline of ToRL"
             }
           }
         ],
@@ -180,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "markdown.md",
+                "file": "knowledge/paper/ToRL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for markdown"
+              "title": "Backlinks for ToRL"
             }
           }
         ],
@@ -206,7 +206,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "markdown.md",
+                "file": "knowledge/paper/ToRL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,7 +234,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of markdown"
+              "title": "Graph of ToRL"
             }
           }
         ]
@@ -257,6 +257,14 @@
   },
   "active": "2b53ca23d65b5898",
   "lastOpenFiles": [
+    "Untitled.md",
+    "knowledge/paper/ToRL.md",
+    "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
+    "knowledge/skills/rust/gtk-rs.md",
+    "knowledge/skills/web/Vue/nuxt+vue3.md",
+    "knowledge/skills/web/SpringBoot.md",
+    "knowledge/skills/web/fastapi/websocket.md",
+    "markdown.md",
     "pre/2025-4-17.md",
     "knowledge/Linear Algebra.md",
     "knowledge/shanghaitech/CS181/CRF.md",
@@ -266,7 +274,6 @@
     "knowledge/shanghaitech/CS181/02-CSP.md",
     "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
-    "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
     "knowledge/shanghaitech/CS181/06-BayesInference.md",
     "knowledge/shanghaitech/CS181/07-ProbabilisticTemporalModel.md",
     "knowledge/shanghaitech/CS181/08-MDP.md",
@@ -281,24 +288,17 @@
     "assets/image-20241120114612136.png",
     "assets/image-20241120114526529.png",
     "knowledge/shanghaitech/SI152/Ch5.convex.md",
-    "knowledge/paper/ToRL.md",
     "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-MLLM-CoT.md",
     "knowledge/paper/LaRe.md",
     "knowledge/paper/MAYE.md",
     "knowledge/paper/L2R.md",
     "knowledge/paper/PDFS/2503.23383v1_ToRL.pdf",
-    "knowledge/paper/roco.md",
     "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
-    "knowledge/paper/().md",
-    "knowledge/paper/RT-2.md",
     "knowledge/paper/PDFS/2504.02587v2_MAYE.pdf",
     "knowledge/paper/PDFS/2405.17013v1_MotionLLM.pdf",
-    "knowledge/skills/python/platformio.md",
-    "knowledge/paper/Transformer.md",
     "knowledge/paper/PDFS/gemini robotics.pdf",
     "knowledge/paper/PDFS/2412.11120v2_LaRe.pdf",
-    "knowledge/paper/FlowMatching.md",
     "knowledge/paper/PDFS/Rethinking RL Scaling for Vision 2504.02587v2_MAYE.pdf",
     "knowledge/paper/PDFS/2306.08647v2_L2R.pdf",
     "knowledge/paper/PDFS/League++.pdf",

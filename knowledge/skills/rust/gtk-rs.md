@@ -64,7 +64,7 @@ we can simply create a widget by code below:
 ```rust
 use gtk::{Application, ApplicationWindow, glib, prelude::*};
 
-const APP_ID: &str = "com.TropinoneH.simpleWidget";
+const APP_ID: &str = "io.eniverz.simpleWidget";
 
 fn main() -> glib::ExitCode {
     let app = Application::builder().application_id(APP_ID).build();
@@ -252,7 +252,7 @@ use gtk::{
     prelude::*,
 };
 
-const APP_ID: &str = "com.TropinoneH.simpleWidget";
+const APP_ID: &str = "io.eniverz.simpleWidget";
 
 fn main() -> glib::ExitCode {
     let app = Application::builder().application_id(APP_ID).build();

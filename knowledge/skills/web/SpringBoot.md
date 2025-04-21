@@ -790,7 +790,7 @@ public MybatisPlusInterceptor mybatisPlusInterceptor() {
 private static void generator(){
         FastAutoGenerator.create("url", "username", "password")
                 .globalConfig(builder -> {
-                    builder.author("Tropinone") // 设置作者
+                    builder.author("eniverz") // 设置作者
                             .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .outputDir("D:\\files\\html\\graduation album for web\\springboot\\src\\main\\java\\"); // 指定输出目录

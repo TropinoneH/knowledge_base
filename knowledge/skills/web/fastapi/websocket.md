@@ -67,7 +67,7 @@ export default () => {
     })
 
     useEffect(() => {
-        if (readyState === WebSocket.OPEN) sendMessage("TropinoneH")
+        if (readyState === WebSocket.OPEN) sendMessage("eniverz")
     }, [readyState, sendMessage])
 
     useEffect(() => {

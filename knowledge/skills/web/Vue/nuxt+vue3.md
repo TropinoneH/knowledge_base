@@ -13,7 +13,7 @@ create-nuxt-app v2.15.0
 ✨  Generating Nuxt.js project in .
 ? Project name study_nuxt
 ? Project description my first nuxt project, study SSR
-? Author name Tropinone
+? Author name eniverz
 ? Choose programming language JavaScript
 ? Choose the package manager Npm
 ? Choose UI framework Vuetify.js # 可以不选,后面再安装
