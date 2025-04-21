@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/Linear Algebra.md",
+                "file": "markdown.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linear Algebra"
+              "title": "markdown"
             }
           }
         ],
@@ -144,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/Linear Algebra.md",
+                "file": "markdown.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Linear Algebra"
+              "title": "Outline of markdown"
             }
           }
         ],
@@ -180,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/Linear Algebra.md",
+                "file": "markdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Linear Algebra"
+              "title": "Backlinks for markdown"
             }
           }
         ],
@@ -206,7 +206,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/Linear Algebra.md",
+                "file": "markdown.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,7 +234,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Linear Algebra"
+              "title": "Graph of markdown"
             }
           }
         ]
@@ -257,6 +257,8 @@
   },
   "active": "2b53ca23d65b5898",
   "lastOpenFiles": [
+    "pre/2025-4-17.md",
+    "knowledge/Linear Algebra.md",
     "knowledge/shanghaitech/CS181/CRF.md",
     "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "knowledge/shanghaitech/CS181/HMM.md",
@@ -301,8 +303,6 @@
     "knowledge/paper/PDFS/2306.08647v2_L2R.pdf",
     "knowledge/paper/PDFS/League++.pdf",
     "knowledge/paper/PDFS/2302.05206v1_HIR.pdf",
-    "markdown.md",
-    "pre/2025-3-18.md",
     "Untitled.canvas"
   ]
 }

@@ -40,22 +40,44 @@ block quote:
 > this is a tip block
 
 > [!info]
-> this is info block
+> this is a info block
+
+> [!tldr]
+> too long; don't read
+
+> [!todo]
+> this is a todo block
 
 > [!warning]
-> this is warning block
+> this is a warning block
 
 > [!error]
-> this is error block
+> this is a error block
 
 > [!success]
-> this is success block
+> this is a success block
+
+> [!bug]
+> this is a bug block
 
 > [!fail]
-> this is fail block
+> this is a fail block
+
+> [!example]
+> this is a example block
 
 > [!Custom] Custom Title
-> this is custom block with custom title
+> this is a custom block with custom title
+
+block quote with auto collapse:
+
+```markdown
+> [!note]- collapse / expand
+> use `-` after `[!note]` to make the quote auto collapse
+```
+
+> [!note]- collapse / expand
+> use `-` after `[!note]` to make the quote auto collapse
 
 ## Title
 
