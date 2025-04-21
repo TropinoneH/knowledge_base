@@ -34,7 +34,7 @@ $$PRSS(f;\lambda)=\sum_{i=1}^N(y_i-f(x_i))^2+\lambda\int[f''(x)]^2dx$$
   $$P(X=1)=\frac1n\frac12+(1-\frac1n)\frac{\alpha_1}{\alpha_1+\alpha_0}$$
 - 第二种算法:
   $$P(X=1)=\frac{\alpha_1+\beta_1}{\alpha_1+\beta_1+\alpha_0+\beta_0}$$
-  $$\hat\theta^\mbox{MLE}=\frac{\alpha_1}{\alpha_1+\alpha_0}$$
+  $$\hat\theta^\text{MLE}=\frac{\alpha_1}{\alpha_1+\alpha_0}$$
 
 $\alpha_1$是投出$X=1$的次数，$\alpha_0$是投出$X=0$的次数。而$\beta$是修正值。
 
@@ -62,7 +62,7 @@ $$Pr(W=w|G=g,H=h)=\frac{Pr(W=w,G=g,H=h)}{\sum_{w}Pr(G=g,H=h,W=w)}$$
 
 对于多输入的$X_i$向量：对每一个$x_{ij}\in X_i$，计算$\theta_{ijk}=P(X_i=x_{ij}|Y=y_k)$
 
-然后对$X^\mbox{new}$进行分类：$$Y^\mbox{new}=\arg\max_{y_k}P(Y=y_k)\prod_iP(X_i^\mbox{new}|Y=y_k)=\arg\max_{y_k}\pi_k\prod_i\theta_{ijk}$$
+然后对$X^\text{new}$进行分类：$$Y^\text{new}=\arg\max_{y_k}P(Y=y_k)\prod_iP(X_i^\text{new}|Y=y_k)=\arg\max_{y_k}\pi_k\prod_i\theta_{ijk}$$
 目标函数：
 $$l(\theta,\pi)=\ln Pr(D,\theta,\pi)=\ln((x_0,y_0),\cdots,(x_n,y_n))$$
 $$=\sum_{i=1}^n\ln Pr(x_i,y_i|\theta,\pi)=\sum_{i=1}^n\ln Pr(x_i|y_i,\theta)Pr(y_i|\pi)$$
@@ -205,7 +205,7 @@ $$P(S=1)=\sum_{t,l,w,r}P(S=1,T=t,L=l,R=r,W=w)$$
 $$\ell(\theta)=\max_\theta\mathbb{E}[\ln P_\theta(x)]=\max_\theta\mathbb{E}[\ln\int p(x,z)dx]$$
 估计下界：
 $$\ln P_\theta(x)=\ln\int p_\theta(x,z)dx=\ln\int q(z)\frac{p_\theta(x,z)}{q(z)}dx$$
-$$=\ln\mathbb{E}_{q(z)}\left[\frac{p_\theta(x,z)}{q(z)}\right]\geq\mathbb E_{q(z)}\left[\ln p_\theta(x,z)-\ln q(z)\right]\mbox{（吉森不等式）}$$
+$$=\ln\mathbb{E}_{q(z)}\left[\frac{p_\theta(x,z)}{q(z)}\right]\geq\mathbb E_{q(z)}\left[\ln p_\theta(x,z)-\ln q(z)\right]\text{（吉森不等式）}$$
 取最小值时，等式成立，即
 $$\min_\theta\ln P_\theta(x)=\mathbb E_{p_\theta(z|x)}\left[\ln\frac{P_{\theta'}(x,z)}{\sum_zP_\theta(x,z)}\right]$$
 使用Expectation Maximization（MLE）进行估计

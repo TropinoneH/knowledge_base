@@ -126,7 +126,6 @@ A[Hard edge] -->B(Round edge)
 
 sequence diagrams:
 ```mermaid
-%% Example of sequence diagram
   sequenceDiagram
     Alice->>Bob: Hello Bob, how are you?
     alt is sick

@@ -76,13 +76,13 @@ $N_k$表示前k个最近的元素。
 
 ## 条件概率公式展开
 
-期望: $E[x]=\sum_xxP(X=x)\text{， 当x是非连续变量；}E(x)=\int xP(X=x)\mathbf{d}x\mbox{ ，当x是连续变量}$
+期望: $E[x]=\sum_xxP(X=x)\text{， 当x是非连续变量；}E(x)=\int xP(X=x)\mathbf{d}x\text{ ，当x是连续变量}$
 
 损失函数：$L(X,f(X))=(Y-f(X))^2$，也写作$L_2$。还有一个$L_1=|Y-f(X)|$也是损失函数。第一类损失函数比第二类的优点：第一类鲁棒性更好，面对误差或者错误标注的数据能更好的抵抗
 
 EPE, Excepted prediction error, 描述$y$与$\hat y$之间的差异:
 $$EPE(f)=E(Y-F(X))^2=\int(y-f(x))^2Pr(dx,dy)$$
-$$\mbox{Since }Pr(X,Y)=Pr(Y|X)Pr(X),\mbox{EPE can also be written as}$$
+$$\text{Since }Pr(X,Y)=Pr(Y|X)Pr(X),\text{EPE can also be written as}$$
 $$EPE(f)=E_XE_{Y|X}([Y-f(X)]^2|X)$$
 所以说，可以通过找EPE的最小值来进行寻找合适的参数，如：
 $$f(x)=\text{arg}\min_{c}E_{Y|X}([Y-c]^2|X=x)$$
@@ -113,7 +113,7 @@ Covariance，$\mathbf{Cov}(X,Y)=E[(X-E[X])^TT(Y-E[Y])]=Var+Bias^2$，是方差�
 
 - $L(k,l)$是错误把$g_k$里的内容估计成$g_l$中内容所付出的代价。
 
-所以，我们有了一个0-1损失方程：$L(k,l)=1-\delta_{kl},\delta_{kl}=1\mbox{ if and only if k == l}$
+所以，我们有了一个0-1损失方程：$L(k,l)=1-\delta_{kl},\delta_{kl}=1\text{ if and only if k == l}$
 $$EPE=E_X\sum_{k=1}^KL[g_k,\hat G(X)]Pr(g_k|X)$$
 $$\hat G(X)=argmin_{g\in G}\sum_{k=1}^KL(g_k,g)Pr(g_k|X=x)$$
 $$\text{Or simply, }\hat G(x)=argmax_{g\in G}Pr(g|X=x)$$
@@ -146,15 +146,15 @@ $$\text{Or simply, }\hat G(x)=argmax_{g\in G}Pr(g|X=x)$$
 1. 数据集：$(x_i,y_i)$的数值对，在$(p+1)$维中。有以下函数(ground-truth): $y_i=f(x_i)+\varepsilon_i,f:\mathbb R^p\rightarrow\mathbb R$
 2. 目标：找到一个对于$f(x)$的好的逼近。给定训练样本集$\tau$
 
-$$\mbox{给定参数集合$\theta$，那么对于线性模型，有}f(x)=x^T\beta$$
-$$\mbox{而$\theta=\beta$，其中这两个可以是scalar，也可以是vector或matrix}$$
+$$\text{给定参数集合$\theta$，那么对于线性模型，有}f(x)=x^T\beta$$
+$$\text{而$\theta=\beta$，其中这两个可以是scalar，也可以是vector或matrix}$$
 $$f_\theta(x)=\sum_{k=1}^Kh_k(x)\theta_k$$
-$$h_k\mbox{：一个函数，可以将非线性的输入转换成线性的输入}$$
+$$h_k\text{：一个函数，可以将非线性的输入转换成线性的输入}$$
 如：有$x_1,x_2$两个轴，组成的样本集的分界线是一个圆。那么可以令
-$$h_k(x_1,x_2)=\sqrt{x_1^2+x_2^2}\mbox{转换成一个线性的问题}$$
+$$h_k(x_1,x_2)=\sqrt{x_1^2+x_2^2}\text{转换成一个线性的问题}$$
 $h_k$的例子:
-$$h_k(x)=x_1x_2^2\mbox{(Polynomial expansion)},h_k(x)=\cos(x_1)\mbox{(Trigonometric expansion)}$$
-$$h_k(x)=\frac1{1+\exp(-x^T\beta_k)}\mbox{(Sigmoid expansion)}$$
+$$h_k(x)=x_1x_2^2\text{(Polynomial expansion)},h_k(x)=\cos(x_1)\text{(Trigonometric expansion)}$$
+$$h_k(x)=\frac1{1+\exp(-x^T\beta_k)}\text{(Sigmoid expansion)}$$
 
 然后利用$RSS$进行拟合$\theta$：
 $$
@@ -230,24 +230,24 @@ $X^TX+\lambda I$一定是满秩的：$X^TX+\lambda I=(UVU^T)^T(UVU^T)+\lambda I=
 
 ### 岭回归 Ridge Regression
 
-$$\hat\beta^\mbox{ridge}=\arg\min_\beta\left\{\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta_j)^2+\lambda\sum_{j=1}^p\beta_j^2\right\}$$
+$$\hat\beta^\text{ridge}=\arg\min_\beta\left\{\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta_j)^2+\lambda\sum_{j=1}^p\beta_j^2\right\}$$
 
 注意正则化不包含$\beta_0$截距
 
 另一种表示方式：
-$$\hat\beta^\mbox{ridge}=\arg\min_\beta||Y-\beta_0-X\beta||_2^2\mbox{，subject to }||\beta||_2^2\leq t$$
+$$\hat\beta^\text{ridge}=\arg\min_\beta||Y-\beta_0-X\beta||_2^2\text{，subject to }||\beta||_2^2\leq t$$
 $$PRSS(\lambda,\beta)=(y-X\beta)^T(y-X\beta)+\lambda\beta^T\beta$$
-$$\frac{\partial PRSS(\lambda,\beta)}{\partial\beta}=-2X^Ty+2(X^TX+\lambda I)\beta=0\Rightarrow\hat\beta^\mbox{ridge}=(X^TX+\lambda I)^{-1}X^Ty$$
+$$\frac{\partial PRSS(\lambda,\beta)}{\partial\beta}=-2X^Ty+2(X^TX+\lambda I)\beta=0\Rightarrow\hat\beta^\text{ridge}=(X^TX+\lambda I)^{-1}X^Ty$$
 与最小二乘法对比：
-$$X\beta^\mbox{ls}=(X^TX)^{-1}X^Ty=\sum_{j=1}^pu_ju^T_jy$$
-$$X\beta^\mbox{ridge}=(X^TX+\lambda I)^{-1}X^Ty=\sum_{j=1}^p\frac{d_j^2}{d_j^2+\lambda}u^T_jy$$
+$$X\beta^\text{ls}=(X^TX)^{-1}X^Ty=\sum_{j=1}^pu_ju^T_jy$$
+$$X\beta^\text{ridge}=(X^TX+\lambda I)^{-1}X^Ty=\sum_{j=1}^p\frac{d_j^2}{d_j^2+\lambda}u^T_jy$$
 其中，$X^TX$进行SVD分解之后的结果是$UDU^T$，$u$属于$U$，$d$属于$D$
 
 有效自由度（表示复杂度的一种方法）：
 $$df(\lambda)=\sum_{j=1}^p\frac{d_j^2}{d_j^2+\lambda}u^T_jy$$
 假设训练样本集的输入是一个$p$维的：
-$$\lambda\rightarrow0\Rightarrow df(\lambda)\rightarrow p\mbox{，相当于没有正则化}$$
-$$\lambda\rightarrow\infty\Rightarrow df(\lambda)\rightarrow0\mbox{，正则化惩罚过强，不在关心Loss函数，导致原来的模型极端简单}$$
+$$\lambda\rightarrow0\Rightarrow df(\lambda)\rightarrow p\text{，相当于没有正则化}$$
+$$\lambda\rightarrow\infty\Rightarrow df(\lambda)\rightarrow0\text{，正则化惩罚过强，不在关心Loss函数，导致原来的模型极端简单}$$
 
 ### Lasso回归
 
@@ -258,19 +258,19 @@ $$\lambda\rightarrow\infty\Rightarrow df(\lambda)\rightarrow0\mbox{，正则化�
 使用零范数的时候称为“最佳子集回归”，best subset regression。
 
 但是零范数是一个非凸曲线，无法使用求导来进行分析最小值。包括所有$p$范数($0<p<1$)都是非凸的。那么距离零范数最近的一个最小的凸曲线的范数是一范数。（注意，在一范数的顶点位置还是不能求导，因为不连续）。所以Lasso回归使用了一范数
-$$\hat\beta^\mbox{lasso}=\arg\min_\beta\left\{\frac12\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta|j)^2+\lambda|\beta_j|\right\}$$
+$$\hat\beta^\text{lasso}=\arg\min_\beta\left\{\frac12\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta|j)^2+\lambda|\beta_j|\right\}$$
 $$=\arg\min_\beta\left\{\frac12||Y-\beta-X\beta||_2^2+\lambda||\beta||_1\right\}$$
 
 #### 与最小二乘法对比
 
-$$\hat\beta^\mbox{ridge}=\frac1{1+\lambda}\hat\beta^\mbox{ls}$$
-$$\hat\beta^\mbox{lasso}_j=sign(\hat\beta^\mbox{ls}_j)(|\hat\beta_j^\mbox{ls}|-\lambda)_+$$
+$$\hat\beta^\text{ridge}=\frac1{1+\lambda}\hat\beta^\text{ls}$$
+$$\hat\beta^\text{lasso}_j=sign(\hat\beta^\text{ls}_j)(|\hat\beta_j^\text{ls}|-\lambda)_+$$
 
 ### MAP
 
 $$\hat\beta^{MAP}=\arg\max_\beta Pr(y|X,\beta)Pr(\beta)$$
-$$Pr(\beta)\mbox{是由岭回归或者Lasso回归计算的，}Pr(y|X,\beta)\mbox{是最小二乘法计算的}$$
-$$ridge:Pr(\beta)=N(\beta|0,\frac1\lambda I_p)\mbox{，高斯分布}$$
+$$Pr(\beta)\text{是由岭回归或者Lasso回归计算的，}Pr(y|X,\beta)\text{是最小二乘法计算的}$$
+$$ridge:Pr(\beta)=N(\beta|0,\frac1\lambda I_p)\text{，高斯分布}$$
 $$lasso:Pr(\beta)=\frac\lambda2e^{-\lambda||\beta||_1}$$
 
 ## 简单分类器
@@ -282,8 +282,8 @@ $$lasso:Pr(\beta)=\frac\lambda2e^{-\lambda||\beta||_1}$$
 拟合函数需要满足
 $$\hat f(x)=\hat B^T\left(\begin{array}{c}1\\x\end{array}\right)=\left(\begin{array}{c}\hat f_1(x)\\\hat f_2(x)\\\vdots\\\hat f_K(x)\end{array}\right)\in\mathbb R^K$$
 对x的分类：$\hat G(X)=\arg\max_{k\in g}\hat f_k(x)$，相当于是寻找可能性最大的那个类别$k$，或者等效写作：
-$$\hat G(x)=\arg\min_{k\in g}||\hat f(x)-t_k||_2^2\mbox{，$t_k$是类别标号，即寻找相关性最强，类别最近的一个}$$
-$$\hat G(x)=\arg\max_{k\in g}Pr(G=k|X=x)\mbox{，后验概率}$$
+$$\hat G(x)=\arg\min_{k\in g}||\hat f(x)-t_k||_2^2\text{，$t_k$是类别标号，即寻找相关性最强，类别最近的一个}$$
+$$\hat G(x)=\arg\max_{k\in g}Pr(G=k|X=x)\text{，后验概率}$$
 如果是简单的线性回归去拟合，可能会导致掩盖掉某些类。具体情况查看L5-p14
 
 所以需要把线性回归拓展到非线性空间：加上一些二次项或者更高次的项然后再进行回归，最后把回归的结果映射回线性空间，得到一个非线性的分界线
@@ -294,17 +294,17 @@ $$\hat G(x)=\arg\max_{k\in g}Pr(G=k|X=x)\mbox{，后验概率}$$
 $$Pr(G=k|X=x)=\frac{Pr(X=x|G=k)Pr(G=k)}{Pr(X=x)}=\frac{Pr(X=x|G=k)Pr(G=k)}{\sum_{l=1}^KPr(X=x|G=l)Pr(G=l)}$$
 $$f_k(x)=Pr(X=x|G=k)$$
 $$\pi_k=Pr(G=k)$$
-$$\mbox{类别分布}=\Pi_{k=1}^K\pi_k^{\mathbb1_{x=k}}$$
+$$\text{类别分布}=\Pi_{k=1}^K\pi_k^{\mathbb1_{x=k}}$$
 $$\mathbb1_{x=k}=\left\{\begin{array}{cc}1&x=k\\0&x\neq k\end{array}\right.$$
 边界（概率相等的地方）：
 $$\{x|Pr(G=k|X=x)=Pr(G=l|X=x)\}$$
 $$\Rightarrow \frac{\Pr(G=k|X=x)}{Pr(G=l|X=x)}=1\Rightarrow\ln\frac{Pr(X=x|G=k)Pr(G=k)}{Pr(X=x|G=l)Pr(G=l)}=0$$
-$$\Rightarrow\mbox{LDA：}\beta^TX+\beta_0=0$$
+$$\Rightarrow\text{LDA：}\beta^TX+\beta_0=0$$
 $$Pr(G=k|X=x)=\frac{f_k(x)\pi_k}{\sum_{l=1}^Kf_l(x)\pi_l}$$
 对于高维高斯分布的LDA:
 $$f_k(x)=\frac1{(2\pi)^\frac p2|\Sigma_k|^\frac12}\exp(-\frac12(x-\mu_k)^T\Sigma_k^{-1}(x-\mu_k))$$
 我们做一个假设：对于所有的$\Sigma_k=\Sigma$，即任意的$\Sigma_k$都相等。这里的$\Sigma_k$是$k$分类的方差（$\sigma^2_k$）
-$$\mbox{Logit：}\ln\frac{Pr(G=k|X=x)}{Pr(G=l|X=x)}=\ln\frac{f_k(x)}{f_l(x)}+\ln\frac{\pi_k}{\pi_l}$$
+$$\text{Logit：}\ln\frac{Pr(G=k|X=x)}{Pr(G=l|X=x)}=\ln\frac{f_k(x)}{f_l(x)}+\ln\frac{\pi_k}{\pi_l}$$
 $$=\ln\frac{\pi_k}{\pi_l}-\frac12(\mu_k+\mu_l)^T\Sigma^{-1}(\mu_k-\mu_l)+x^T\Sigma^{-1}(\mu_k-\mu_l)$$
 $$
 \Rightarrow\hat\pi_k=\frac{N_k}{N},\hat\mu_k=\sum_{g_i=k}\frac{x_i}{N_k},\hat\Sigma=\sum_{k=1}^K\sum_{g_i=k}\frac{(x_i-\hat\mu_k)(x_i-\hat\mu_k)^T}{N-K}
@@ -326,7 +326,7 @@ $$\hat\mu_3=\frac12(x_2+x_6)=\left(\matrix{0.75\\0.75}\right)$$
 $$\hat\Sigma=\frac{\left(\matrix{0.005&-0.005\\-0.005&0.005}\right)+\left(\matrix{0.02&-0.02\\-0.02&0.02}\right)+\left(\matrix{0.005&-0.005\\-0.005&0.005}\right)}{6-3}=\left(\matrix{0.01&-0.01\\-0.01&0.01}\right)$$
 $$\ln\frac{Pr(G=1|X=x)}{Pr(G=2|X=x)}=\ln\frac{\hat\pi_1}{\hat\pi_2}-\frac12(\hat\mu_1+\hat\mu_2)^T\hat\Sigma^{-1}_\lambda(\mu_1-\mu_2)+x^T\hat\Sigma^{-1}_\lambda(\hat\mu_1-\hat\mu_2)$$
 $$=0.1875-(x_1,x_2)\left(\matrix{0.25\\0.25}\right)=0$$
-$$\Rightarrow\mbox{边界为}\{(x_1,x_2)|x_1+x_2=0.75\}\mbox{，其中}\hat\Sigma_\lambda=\hat\Sigma+\lambda I,\lambda=1$$
+$$\Rightarrow\text{边界为}\{(x_1,x_2)|x_1+x_2=0.75\}\text{，其中}\hat\Sigma_\lambda=\hat\Sigma+\lambda I,\lambda=1$$
 定义线性判别函数为$\delta_k(x)=x^T\Sigma^{-1}\mu_k-\frac12\mu_k^T\Sigma^{-1}\mu_k+\ln\pi_k$
 
 在$x$点，哪一个类的$\delta_k(x)$大，这个点就是哪一类的。当$\delta_k(x)=\delta_l(x)$的时候，说明这个点事$l$类和$k$类的边界线上
@@ -384,14 +384,14 @@ $$S=\{(x_1,y_1),(x_2,y_2),\cdots,(x_m,y_m)\}$$
 $D_t$是$\{x_1,\cdots,x_m\}$这些点的权重，$\alpha$是每一个分类器在投票里面所占权重
 Run $A$ on $D_t$ producing
 $$h_t:X\rightarrow\{-1,1\}$$
-$$\epsilon_t=P_{x_i\sim D_t}(h_t(x_i)\neq y_i)=\frac1M\sum_{n=1}^M\mathbb1[h_t(x_i)\neq y_i]\mbox{，即错误分类的概率}$$
-$$H_{\mbox{final}}(x)=\mathbf{sign}(\sum_t\alpha_th_t(x))$$
+$$\epsilon_t=P_{x_i\sim D_t}(h_t(x_i)\neq y_i)=\frac1M\sum_{n=1}^M\mathbb1[h_t(x_i)\neq y_i]\text{，即错误分类的概率}$$
+$$H_{\text{final}}(x)=\mathbf{sign}(\sum_t\alpha_th_t(x))$$
 计算流程：
-$$\mbox{初始化：}D_1(i)=\frac1m$$
+$$\text{初始化：}D_1(i)=\frac1m$$
 $$\epsilon_t=\frac1m\sum_{n=1}^m\mathbb1[h_t(x_i)\neq y_i]$$
 $$\alpha_t=\frac12\ln\left(\frac{1-\epsilon_t}{\epsilon_t}\right)$$
 $$Z_t=2\sqrt{\epsilon_t(1-\epsilon_t)}$$
-$$D_{t+1}(i)=\left\{\begin{matrix}\frac{D_t(i)}{Z_t}e^{-\alpha_t}&\mbox{分类正确，减少该点权重，更注意分类错误的点}\\\frac{D_t(i)}{Z_t}e^{\alpha_t}&\mbox{分类错误，提高权重}\end{matrix}\right.$$
+$$D_{t+1}(i)=\left\{\begin{matrix}\frac{D_t(i)}{Z_t}e^{-\alpha_t}&\text{分类正确，减少该点权重，更注意分类错误的点}\\\frac{D_t(i)}{Z_t}e^{\alpha_t}&\text{分类错误，提高权重}\end{matrix}\right.$$
 
 训练次数为$T=O(\frac1{\gamma^2}\ln\frac1\epsilon)$
 
@@ -504,10 +504,10 @@ Generative Model中的高斯混合模型（Gaussian Mixture Model）
 找到内积$XX^T$才能使用（$d\times n$的矩阵，至少结果需要是一个$d\times d$的矩阵）
 
 常用kernel：
-$$\mbox{Linear: }K(x,z)=x\cdot z$$
-$$\mbox{Polynomial: }K(x,z)=(x\cdot z)^d\mbox{ or }K(x,z)=(x\cdot z+1)^d$$
-$$\mbox{Gaussian: }K(x,z)=\exp\left[-\frac{||x-z||^2}{2\sigma^2}\right]\mbox{，$\sigma$是超参数}$$
-$$\mbox{Laplace: }K(x,z)=\exp\left[-\frac{||x-z||}{2\sigma^2}\right]$$
+$$\text{Linear: }K(x,z)=x\cdot z$$
+$$\text{Polynomial: }K(x,z)=(x\cdot z)^d\text{ or }K(x,z)=(x\cdot z+1)^d$$
+$$\text{Gaussian: }K(x,z)=\exp\left[-\frac{||x-z||^2}{2\sigma^2}\right]\text{，$\sigma$是超参数}$$
+$$\text{Laplace: }K(x,z)=\exp\left[-\frac{||x-z||}{2\sigma^2}\right]$$
 直接对内积使用核函数，可以将原本是时间复杂度极大的矩阵乘法降低为$O(n)$
 
 核函数可以相加可以相乘，所以可以根据这点直接构建一个新的核函数（称为多核学习）
