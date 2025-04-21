@@ -26,11 +26,13 @@ jobs:
           node-version: 22
       - name: clone quartz
         run: git clone https://github.com/jackyzha0/quartz.git ../quartz
-      - name: use mathjax
-        run: sed -i "s/katex/mathjax/g" ../quartz/quartz.config.ts
-      - name: test
-        run: cat ../quartz/quartz.config.ts
-      - name: remove default quartz
+      - name: configure logo
+        run: sed -i "s/pageTitle:\ \"Quartz 4\"/pageTitle:\ \"Knowledge Base\"/g" ../quartz/quartz.config.ts
+      - name: configure base url
+        run: sed -i "s/baseUrl:\ \".*\"/baseUrl:\ \"eniverz.github.io\/notes\"/g" ../quartz/quartz.config.ts
+      - name: configure graph view
+        run: sed -i "s/Component\.Graph()/Component.Graph({globalGraph:{showTags:true,fontSize:1.5},localGraph:{showTags:false,fontSize:1.5}})/g" ../quartz/quartz.layout.ts
+      - name: setup content
         run: cp -r ./ ../quartz/content
       - name: Install Dependencies
         run: cd ../quartz && npm ci
