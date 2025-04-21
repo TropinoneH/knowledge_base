@@ -20,30 +20,44 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: quartz
+          path: .
+      - uses: actions/checkout@v4
+        with:
           fetch-depth: 0 # Fetch all history for git info
+          path: content
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: clone quartz
-        run: git clone https://github.com/jackyzha0/quartz.git ../quartz
-      - name: configure logo
-        run: sed -i "s/pageTitle:\ \"Quartz 4\"/pageTitle:\ \"Knowledge Base\"/g" ../quartz/quartz.config.ts
-      - name: configure base url
-        run: sed -i "s/baseUrl:\ \".*\"/baseUrl:\ \"eniverz.github.io\/notes\"/g" ../quartz/quartz.config.ts
-      - name: configure graph view
-        run: sed -i "s/Component\.Graph()/Component.Graph({globalGraph:{showTags:true,fontSize:1.5},localGraph:{showTags:false,fontSize:1.5}})/g" ../quartz/quartz.layout.ts
-      - name: setup content
-        run: cp -r ./ ../quartz/content
+          cache: 'pnpm'
+      - name: get pnpm cache
+        id: pnpm-cache-path
+        run: |
+          echo "dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - name: cache node_modules
+        uses: actions/cache@v4
+        id: cache-node-modules
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            **/node_modules
+            ~/.npm
+            ${{ steps.pnpm-cache-path.outputs.dir }}
+          key: ${{ runner.os }}-build-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Install Dependencies
-        run: cd ../quartz && npm ci
+        run: pnpm i
       - name: Build Quartz
-        run: cd ../quartz && npx quartz build
-      - name: test
-        run: ls ../quartz/public
+        run: npx quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ../quartz/public
+          path: public
  
   deploy:
     needs: build

@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/LaRe.md",
+                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "LaRe"
+              "title": "Ch1.Introduction_of_Linear_Programming"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\#",
+                "query": "\\\\",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +133,8 @@
               "title": "Plugin no longer active"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -168,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/SI120.md",
+                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SI120"
+              "title": "Outline of Ch1.Introduction_of_Linear_Programming"
             }
           }
         ],
@@ -204,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/SI120.md",
+                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +215,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SI120"
+              "title": "Backlinks for Ch1.Introduction_of_Linear_Programming"
             }
           }
         ],
@@ -230,7 +231,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/SI120.md",
+                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,7 +259,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of SI120"
+              "title": "Graph of Ch1.Introduction_of_Linear_Programming"
             }
           }
         ]
@@ -279,35 +280,35 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "2b53ca23d65b5898",
+  "active": "9fbdd473ce8a8d58",
   "lastOpenFiles": [
-    "knowledge/paper/LaRe.md",
     "knowledge/shanghaitech/SI120.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/CS181/09-RL.md",
+    "knowledge/shanghaitech/CS181/07-ProbabilisticTemporalModel.md",
+    "knowledge/shanghaitech/CS181/06-BayesInference.md",
+    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+    "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
+    "knowledge/shanghaitech/CS182/Fit.md",
+    "knowledge/skills/web/SpringBoot.md",
+    "knowledge/skills/web/Vue/Vue.md",
+    "knowledge/paper/LaRe.md",
     "markdown.md",
     "knowledge/shanghaitech/SI152/Ch5.convex.md",
     "index.md",
     "Untitled.canvas",
-    "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/shanghaitech/CS110.md",
-    "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/shanghaitech/CS181/02-CSP.md",
-    "knowledge/skills/web/SpringBoot.md",
-    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "knowledge/paper/Legion.md",
     "pre/2025-4-9.md",
     "knowledge/shanghaitech/CS181/08-MDP.md",
     "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
     "knowledge/paper/ToRL.md",
     "Untitled.md",
-    "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
     "knowledge/skills/rust/gtk-rs.md",
     "knowledge/skills/web/Vue/nuxt+vue3.md",
     "knowledge/skills/web/fastapi/websocket.md",
     "pre/2025-4-17.md",
-    "knowledge/Linear Algebra.md",
-    "knowledge/shanghaitech/CS181/CRF.md",
-    "knowledge/shanghaitech/CS181/HMM.md",
-    "knowledge/shanghaitech/CS181/01-Search.md",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
     "assets/image-20241127111706878.png",
