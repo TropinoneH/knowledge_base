@@ -38,6 +38,8 @@ const config: QuartzConfig = {
           tertiary: "#40A02B",
           highlight: "#ACB0BE22",
           textHighlight: "#DF8E1D88",
+          explorerText: "#ACB0BE",
+          explorerHighlight: "#7287FD",
         },
         darkMode: {
           light: "#1E1E2E",
@@ -49,6 +51,8 @@ const config: QuartzConfig = {
           tertiary: "#A6E3A1",
           highlight: "#9399B222",
           textHighlight: "#F9E2AF88",
+          explorerText: "#585B70",
+          explorerHighlight: "#B4BEFE", // #CBA6F7 mauve(light: #8839EF) as alternative
         },
       },
     },

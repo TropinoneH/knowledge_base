@@ -97,7 +97,7 @@ button.desktop-explorer {
   text-align: left;
   cursor: pointer;
   padding: 0;
-  color: var(--dark);
+  color: var(--explorerText);
   display: flex;
   align-items: center;
 
@@ -121,13 +121,13 @@ button.desktop-explorer {
     overscroll-behavior: contain;
 
     & li > a {
-      color: var(--dark);
+      color: var(--explorerText);
       opacity: 0.75;
       pointer-events: all;
 
       &.active {
         opacity: 1;
-        color: var(--tertiary);
+        color: var(--explorerHighlight);
       }
     }
   }
@@ -166,11 +166,11 @@ button.desktop-explorer {
   }
 
   & div > a:hover {
-    color: var(--tertiary);
+    color: var(--explorerHighlight);
   }
 
   & div > button {
-    color: var(--dark);
+    color: var(--explorerText);
     background-color: transparent;
     border: none;
     text-align: left;
@@ -207,7 +207,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 }
 
 .folder-icon:hover {
-  color: var(--tertiary);
+  color: var(--explorerHighlight);
 }
 
 .explorer {

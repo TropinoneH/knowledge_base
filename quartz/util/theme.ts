@@ -8,6 +8,9 @@ export interface ColorScheme {
   tertiary: string
   highlight: string
   textHighlight: string
+
+  explorerText: string
+  explorerHighlight: string
 }
 
 interface Colors {
@@ -146,6 +149,9 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
 
+  --explorerText: ${theme.colors.lightMode.explorerText};
+  --explorerHighlight: ${theme.colors.lightMode.explorerHighlight};
+
   --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --bodyFont: "${getFontSpecificationName(theme.typography.body)}", ${DEFAULT_SANS_SERIF};
@@ -162,6 +168,9 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.darkMode.tertiary};
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
+
+  --explorerText: ${theme.colors.darkMode.explorerText};
+  --explorerHighlight: ${theme.colors.darkMode.explorerHighlight};
 }
 `
 }
