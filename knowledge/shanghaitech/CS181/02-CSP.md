@@ -235,7 +235,7 @@ $O(d^n)\Rightarrow O(nd^2)$
 3. 给该变量赋值使最小化冲突的值
 
 preformance:
-$$R=\frac{\#constraints}{\#variables}$$
+$$R=\frac{\# constraints}{\# variables}$$
 
 $R$很大或者很小的时候都很快
 

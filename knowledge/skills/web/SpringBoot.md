@@ -471,7 +471,7 @@ public interface Constants {
 
 ```yaml
 mybatis:
-  mapper-locations: classpath:mapper/*.xml #扫描所有xml文件
+  mapper-locations: classpath:mapper/*.xml # 扫描所有xml文件
 ```
 
 注意,这里的classpath指的是resources文件夹,所以这个的`:`后面没有空格,否则会报错.
@@ -730,7 +730,7 @@ public MybatisPlusInterceptor mybatisPlusInterceptor() {
 > 修改方法:把那里的mybatis改成mybatis-plus即可
 >
 > mybatis-plus:
->   mapper-locations: classpath:mapper/*.xml \#扫描所有xml文件
+>   mapper-locations: classpath:mapper/*.xml \# 扫描所有xml文件
 
 #### 2.mapper层
 

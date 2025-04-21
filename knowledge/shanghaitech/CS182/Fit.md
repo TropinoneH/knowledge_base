@@ -42,7 +42,7 @@ aliases:
 
 #### 残差
 
-- N: \#observations 观测量(样本空间)
+- N: \# observations 观测量(样本空间)
 - minimize the residual sum of squares:
   $$RSS(\beta)=\sum_{i=1}^N(y_i-x_i^T)^2$$
   向量(矩阵):

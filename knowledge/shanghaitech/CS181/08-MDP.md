@@ -39,7 +39,7 @@ $0<\gamma<1$有助于防止无限循环, 有助于算法收敛
 > 防止无限循环的方法:
 >
 > 1. 设置discounting factor<1
->    $$U([r_0,\cdots,r_\infty])=\sum_{t=0}^\infty\gamma^tr_t\leq \frac{R_\max}{1-\gamma}\text{(Sum of Geometric Sequence)}$$
+>    $$U([r_0,\cdots,r_\infty])=\sum_{t=0}^\infty\gamma^tr_t\leq \frac{R_\text{max}}{1-\gamma}\text{(Sum of Geometric Sequence)}$$
 > 2. 设置最多轮数, 设置最大搜索深度
 > 3. 设置aborting state. 如果一个状态进去就出不来, 就设置这个状态为停止状态, 表示这个状态没必要再搜索
 

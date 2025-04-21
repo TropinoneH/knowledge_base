@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "05-BayesNetwork"
+              "title": "Fit"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "08-MDP"
+              "title": "Ch5.convex"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "_\\max",
+                "query": "\\#",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -145,17 +144,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08-MDP"
+              "title": "Outline of Fit"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "66ad83ba982953ad",
@@ -181,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +189,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 08-MDP"
+              "title": "Backlinks for Fit"
             }
           }
         ],
@@ -207,7 +205,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -235,7 +233,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 08-MDP"
+              "title": "Graph of Fit"
             }
           }
         ]
@@ -256,30 +254,34 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "2b53ca23d65b5898",
+  "active": "2b502c8c00f122f1",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
+    "knowledge/shanghaitech/CS110.md",
+    "knowledge/shanghaitech/CS181/09-RL.md",
+    "knowledge/shanghaitech/CS181/02-CSP.md",
+    "knowledge/skills/web/SpringBoot.md",
+    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "knowledge/shanghaitech/SI152/Ch5.convex.md",
+    "knowledge/paper/Legion.md",
+    "pre/2025-4-9.md",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
+    "knowledge/shanghaitech/SI120.md",
+    "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
     "knowledge/paper/ToRL.md",
     "index.md",
     "Untitled.md",
     "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
     "knowledge/skills/rust/gtk-rs.md",
     "knowledge/skills/web/Vue/nuxt+vue3.md",
-    "knowledge/skills/web/SpringBoot.md",
     "knowledge/skills/web/fastapi/websocket.md",
     "markdown.md",
     "pre/2025-4-17.md",
     "knowledge/Linear Algebra.md",
     "knowledge/shanghaitech/CS181/CRF.md",
-    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "knowledge/shanghaitech/CS181/HMM.md",
     "knowledge/shanghaitech/CS181/01-Search.md",
-    "knowledge/shanghaitech/CS181/02-CSP.md",
-    "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/shanghaitech/CS181/06-BayesInference.md",
     "knowledge/shanghaitech/CS181/07-ProbabilisticTemporalModel.md",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
     "assets/image-20241127111706878.png",
@@ -290,10 +292,6 @@
     "assets/image-20241120112645100.png",
     "assets/image-20241120114612136.png",
     "assets/image-20241120114526529.png",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "knowledge/paper/survey-MLLM-CoT.md",
-    "knowledge/paper/LaRe.md",
-    "knowledge/paper/MAYE.md",
     "knowledge/paper/PDFS/2503.23383v1_ToRL.pdf",
     "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
     "knowledge/paper/PDFS/2504.02587v2_MAYE.pdf",

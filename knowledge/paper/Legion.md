@@ -127,5 +127,5 @@ $$FT_i=\frac1{i-1}\sum_{k=1}^{i-1}P_k(\Delta k)\text{ : 训练前i个任务的�
 $$FT=\frac1{N-1}\sum_{i=2}^NFT_i$$表示从早期任务获取的知识有助于提升后续的任务的成功率
 
 Improvement of few-shot knowledge recall:
-$$f=\frac1{T\times P_\max}\left(\int^{T_j}_{t_j}P(t)dt-\int^{T_i}_{t_i}P(t)dt\right)$$
-$P_\max$表示成功率的最大值, 这里是$1.0$. $t$和$T$分别表示在training step $j>i$的上下界.
+$$f=\frac1{T\times P_\text{max}}\left(\int^{T_j}_{t_j}P(t)dt-\int^{T_i}_{t_i}P(t)dt\right)$$
+$P_\text{max}$表示成功率的最大值, 这里是$1.0$. $t$和$T$分别表示在training step $j>i$的上下界.
