@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                "file": "knowledge/shanghaitech/SI120.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch5.convex"
+              "title": "SI120"
+            }
+          },
+          {
+            "id": "9fbdd473ce8a8d58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/LaRe.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "LaRe"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -143,16 +168,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/shanghaitech/SI120.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of SI120"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "66ad83ba982953ad",
@@ -178,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/shanghaitech/SI120.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +214,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for SI120"
             }
           }
         ],
@@ -204,7 +230,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/shanghaitech/SI120.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,7 +258,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of index"
+              "title": "Graph of SI120"
             }
           }
         ]
@@ -253,21 +279,23 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "2b502c8c00f122f1",
+  "active": "2b53ca23d65b5898",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "knowledge/paper/LaRe.md",
+    "knowledge/shanghaitech/SI120.md",
+    "markdown.md",
+    "knowledge/shanghaitech/SI152/Ch5.convex.md",
     "index.md",
+    "Untitled.canvas",
     "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/shanghaitech/CS110.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/shanghaitech/CS181/02-CSP.md",
     "knowledge/skills/web/SpringBoot.md",
     "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
-    "knowledge/shanghaitech/SI152/Ch5.convex.md",
     "knowledge/paper/Legion.md",
     "pre/2025-4-9.md",
     "knowledge/shanghaitech/CS181/08-MDP.md",
-    "knowledge/shanghaitech/SI120.md",
     "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
     "knowledge/paper/ToRL.md",
     "Untitled.md",
@@ -275,7 +303,6 @@
     "knowledge/skills/rust/gtk-rs.md",
     "knowledge/skills/web/Vue/nuxt+vue3.md",
     "knowledge/skills/web/fastapi/websocket.md",
-    "markdown.md",
     "pre/2025-4-17.md",
     "knowledge/Linear Algebra.md",
     "knowledge/shanghaitech/CS181/CRF.md",
