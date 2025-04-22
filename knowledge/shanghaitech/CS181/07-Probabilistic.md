@@ -110,10 +110,8 @@ Joint Distribution of HMM: $P(X_0,\cdots,X_T,E_1,\cdots,E_T)=P(X_0)\prod_tP(X_t|
 Filtering: infer current state given all evidence
 
 目标: 用迭代的方式求解Filtering
-$$
-P(X_{t+1}|E_{1:t+1})=P(X_{t+1}|E_{1:t},E_{t+1})=\alpha P(E_{t+1}|X_{t+1},E_{1:t})P(X_{t+1}|E_{1:t})\\
-=\alpha P(E_{t+1}|x_{t+1})\sum_{X_t}P(X_t|E_{1:t})P(X_{t+1}|X_{t})
-$$
+$$P(X_{t+1}|E_{1:t+1})=P(X_{t+1}|E_{1:t},E_{t+1})=\alpha P(E_{t+1}|X_{t+1},E_{1:t})P(X_{t+1}|E_{1:t})$$
+$$=\alpha P(E_{t+1}|x_{t+1})\sum_{X_t}P(X_t|E_{1:t})P(X_{t+1}|X_{t})$$
 其中$\alpha=\frac1{P(E_{t+1}|E_{1:t})}$是正则化项. 因为已经观测到了$E_{t+1}$和$E_{1:t}$, 所以$\alpha$是一个常量, 不影响概率分布. 因此可以直接写成一个正则化项的形式
 
 ![image-20241115112452684](image-20241115112452684.png)
@@ -144,10 +142,8 @@ weight的乘积与这个path的路径的概率成正比: $P(X_0)\prod_tP(X_t|X_{
 计算新的state: $P(X_{t+1}|E_{1:t+1})=\sum_{X_{0:t}}P(X_{0:t+1}|E_{1:t+1})$, 类似BFS
 
 使用动态规划的思想: 保存每一个state的概率, 便于计算(用空间换时间, 不用记忆化需要时间$O(T^{|X|})$, 用记忆化搜索之后时间为$O(|X|^2T)$):
-$$
-f_{1:t+1}=\mathbf{Forward}(f_{1:t},E_{t+1})\\
-=\alpha P(E_{t+1}|X_{t+1})\sum_{X_t}P(X_{t+1}|X_{t})f_{1:t}[X_t]
-$$
+$$f_{1:t+1}=\mathbf{Forward}(f_{1:t},E_{t+1})$$
+$$=\alpha P(E_{t+1}|X_{t+1})\sum_{X_t}P(X_{t+1}|X_{t})f_{1:t}[X_t]$$
 
 #### Most Likely Explanation
 
@@ -169,11 +165,8 @@ $$
   $f_{1:t+1}=\alpha P(E_{t+1}|X_{t+1})\sum_{X_t}P(X_{t+1}|X_t)f_{1:t}[X_t]$
 
 ![image-20241115122912579](image-20241115122912579.png)
-$$
-m_{1:1}(\text{sun})=0.2\times\max(\underline{0.9\times0.5},0.3\times0.5)=0.09\\
-m_{1:1}(\text{rain})=0.9\times\max(0.1\times0.5, \underline{0.7\times0.5})=0.315\\
-\cdots\cdots
-$$
+$$m_{1:1}(\text{sun})=0.2\times\max(\underline{0.9\times0.5},0.3\times0.5)=0.09$$
+$$m_{1:1}(\text{rain})=0.9\times\max(0.1\times0.5, \underline{0.7\times0.5})=0.315$$$$\cdots\cdots$$
 ![image-20241115123130870](image-20241115123130870.png)
 
 时间复杂度: $O(|X|^2T)$

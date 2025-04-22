@@ -24,7 +24,7 @@ Transformer模型: 高容量
 
 ### Robot learning
 
-目标是从视觉中学习解决language-conditioned任务的robot policies.
+类似于[[09-RL|RL]]目标是从视觉中学习解决language-conditioned任务的robot policies.
 
 考虑顺序决策环境(sequential decision-making environment):
 - timestamp $t=0$: policy $\pi$ receive language instruction $i$ and initial image observation $x_0$.
@@ -39,7 +39,6 @@ target是 学一个$\pi$能够maximize average reward, in expectation over distr
 ### Transformer
 
 [[Transformer]]
-
 ### Imitation Learning
 
 假设有一个可访问的dataset $\mathcal D=\{(i^{(n)},\{x_t^{(n)},a_t^{(n)}\}_{t=0}^{T^{(n)}})\}_{n=0}^N$, 其中所有的episode都是success的($r=1$). 

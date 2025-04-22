@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch1.Introduction_of_Linear_Programming"
+              "title": "08-MDP"
             }
           }
         ],
@@ -112,8 +112,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\\\",
-                "matchingCase": false,
+                "query": "RL",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -133,8 +133,7 @@
               "title": "Plugin no longer active"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ch1.Introduction_of_Linear_Programming"
+              "title": "Outline of 08-MDP"
             }
           }
         ],
@@ -205,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -215,7 +214,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ch1.Introduction_of_Linear_Programming"
+              "title": "Backlinks for 08-MDP"
             }
           }
         ],
@@ -231,7 +230,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -259,7 +258,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Ch1.Introduction_of_Linear_Programming"
+              "title": "Graph of 08-MDP"
             }
           }
         ]
@@ -282,33 +281,33 @@
   },
   "active": "9fbdd473ce8a8d58",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/SI120.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
-    "knowledge/shanghaitech/CS181/07-ProbabilisticTemporalModel.md",
+    "knowledge/paper/ToRL.md",
+    "knowledge/paper/roco.md",
+    "knowledge/paper/RDT-1B.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/MAYE.md",
+    "knowledge/paper/Legion.md",
+    "knowledge/paper/LaRe.md",
+    "knowledge/paper/L2R.md",
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/RT-2.md",
+    "knowledge/paper/survey-LLM-for-RL.md",
+    "knowledge/shanghaitech/CS181/01-Search.md",
+    "pre/2025-4-9.md",
+    "pre/2025-3-18.md",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
+    "knowledge/shanghaitech/CS181/07-Probabilistic.md",
     "knowledge/shanghaitech/CS181/06-BayesInference.md",
     "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/SI120.md",
     "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
     "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/skills/web/SpringBoot.md",
     "knowledge/skills/web/Vue/Vue.md",
-    "knowledge/paper/LaRe.md",
-    "markdown.md",
-    "knowledge/shanghaitech/SI152/Ch5.convex.md",
-    "index.md",
     "Untitled.canvas",
-    "knowledge/shanghaitech/CS110.md",
-    "knowledge/shanghaitech/CS181/02-CSP.md",
-    "knowledge/paper/Legion.md",
-    "pre/2025-4-9.md",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
-    "knowledge/shanghaitech/CS181/03-AdversarialSearch.md",
-    "knowledge/paper/ToRL.md",
-    "Untitled.md",
-    "knowledge/skills/rust/gtk-rs.md",
-    "knowledge/skills/web/Vue/nuxt+vue3.md",
-    "knowledge/skills/web/fastapi/websocket.md",
-    "pre/2025-4-17.md",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
     "assets/image-20241127111706878.png",

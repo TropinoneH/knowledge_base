@@ -13,8 +13,7 @@ aliases:
 > [!paper]-
 > ![[2503.23383v1_ToRL.pdf]]
 
-一个from-scratch的RL训练, 允许模型通过广泛的探索找到最佳的工具利用策略
-
+一个from-scratch的[[09-RL|RL]]训练, 允许模型通过广泛的探索找到最佳的工具利用策略
 ## Dataset
 
 数学奥赛级别的问题

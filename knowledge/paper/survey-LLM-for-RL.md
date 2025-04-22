@@ -7,7 +7,7 @@ tags:
 aliases:
   - survey of LLM aided RL
 ---
-# LLM generate reward for RL
+# LLM generate reward for [[09-RL|RL]]
 
 > [!paper]- LaRe
 > ![[LaRe]]

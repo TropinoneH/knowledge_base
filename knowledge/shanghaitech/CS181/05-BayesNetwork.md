@@ -189,10 +189,8 @@ Bayes Network和Markov Network编码了同样的分布
 
 
 CRF的概率:
-$$
-P(y|x)=\frac1{Z(x)}\prod_C\psi_C(y_C,x)\\
-Z(X)=\sum_y\prod_C\psi_C(y_C,x)
-$$
+$$P(y|x)=\frac1{Z(x)}\prod_C\psi_C(y_C,x)$$
+$$Z(X)=\sum_y\prod_C\psi_C(y_C,x)$$
 applications:
 
 - NLP

@@ -14,7 +14,7 @@ aliases:
 > ![[2306.08647v2_L2R.pdf]]
 
 
-使用LLM定义reward parameter
+使用LLM定义reward parameter以增强[[09-RL|RL]]
 
 ## Method
 

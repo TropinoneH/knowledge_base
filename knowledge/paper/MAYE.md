@@ -12,7 +12,7 @@ aliases:
 > [!paper]-
 > ![[2504.02587v2_MAYE.pdf]]
 
-RL 增强 LLM 推理能力
+[[09-RL|RL]] 增强 LLM 推理能力
 
 ## Preparation
 ### Data

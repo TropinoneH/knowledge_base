@@ -6,11 +6,12 @@ tags:
 aliases:
   - Artificial Intelligence - Markov Decision Process
 ---
+前置: [[05-BayesNetwork]], [[06-BayesInference]], [[07-Probabilistic]]
 # Markov Decision Process
 
 ![image-20241120105206785](image-20241120105206785.png)
 
-是Non-deterministic的搜索算法
+是Non-deterministic的[[01-Search|搜索算法]]
 
 假定了下一时刻的状态只和当前事态的状态和当前时刻的action有关, 与之前的状态和动作无关
 $$P(S_{t+1}=s'|S_t=s_t,A_t=a_t,s_{t-1}=s_{t-1},\cdots,S_0=s_0)=P(S_{t+1}=s'|S_t=s_t,A_t=a_t)$$

@@ -42,7 +42,7 @@
 
     如果时间序列上(横向)的system state是离散的, 每一个隐变量的取值是离散的: HMM; 如果是连续, 那么判断是否是线性的. 其中一个线性的代表是Kalman Filter, 非线性的代表是Partide Filter
 
-# [[07-ProbabilisticTemporalModel#HMM - Hidden Markov Model|Hidden Markov Model]]
+# [[07-Probabilistic#HMM - Hidden Markov Model|Hidden Markov Model]]
 
 ## HMM
 

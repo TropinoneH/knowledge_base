@@ -191,7 +191,7 @@ a[Shape]-->b[Color]
 > 正确性推导
 > - $S_{Likelihood Sample}(z,e)=\prod_iP(z_i|\text{Parent}(z_i))$
 > - $w(z,e)=\prod_iP(e_i|\text{Parent}(e_i))$
-> - $\Rightarrow S_{LikelihoodSample}(z,e)\cdot w(z,e)=\prod_iP(z_i|\text{Parent}(z_i))\prod_iP(e_i|\text{Parent}(e_i))\\=P(z,e)$
+> - $\Rightarrow S_{LikelihoodSample}(z,e)\cdot w(z,e)=\prod_iP(z_i|\text{Parent}(z_i))\prod_iP(e_i|\text{Parent}(e_i))=P(z,e)$
 
 ### Importance Sample
 

@@ -13,13 +13,13 @@ aliases:
 > [!paper]-
 > ![[2412.11120v2_LaRe.pdf]]
 
-通过从LLM中整合和任务相关的先验 来获取 语义上interpretable latent reward, 从而增强reward decomposition
+通过从LLM中整合和任务相关的先验 来获取 语义上interpretable latent reward, 从而增强reward decomposition, 以获取更好的[[09-RL|RL]]
 
 ## Preliminary
 
 MPD可以定义为$\mathcal M=\langle S,A,\gamma,p,r\rangle$, 其中$S$是state space, $A$是action space, $\gamma$是discount factor(用于reward随时间步衰减), $P(s'|s,a)$是environment state transition distribution. 目标是找到policy $\pi:S\mapsto A$满足最大化reward $J(\pi)=\mathbb E\left[\sum_{t=1}^T\gamma^tr(s_t,\pi(s_t))|s_0\sim\eta,s_{t+1}\sim P(\cdots|s_t,\pi(s_t)\right]$
 
-对于episodic RL, expected episodic reward是$J_{ep}(\pi)=\mathbb E\left[R(\tau)|s_0\sim\eta,a_t\sim\pi(\cdot|s_t),\tau=\langle s_0,a_0,\cdots,s_T\rangle\right]$
+对于episodic [[09-RL|RL]], expected episodic reward是$J_{ep}(\pi)=\mathbb E\left[R(\tau)|s_0\sim\eta,a_t\sim\pi(\cdot|s_t),\tau=\langle s_0,a_0,\cdots,s_T\rangle\right]$
 
 通常的一个假设是decomposition of the episodic reward: $R(\tau)=\sum_{t=1}^Tr(s_t,a_t)$
 

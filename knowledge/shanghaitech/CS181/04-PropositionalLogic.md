@@ -244,10 +244,8 @@ e.g.
 
 ### Resolution(Inference Rule)
 
-$$
-\frac{l_1\vee\cdots\vee l_k,\qquad m_1\vee\cdots\vee m_n}{(l_2\vee\cdots\vee l_k\vee m_2\vee\cdots\vee m_n)\theta}\\\\
-\text{where }\mathbf{Unify}(l_1,\neg m_1)=\theta
-$$
+$$\frac{l_1\vee\cdots\vee l_k,\qquad m_1\vee\cdots\vee m_n}{(l_2\vee\cdots\vee l_k\vee m_2\vee\cdots\vee m_n)\theta}$$
+$$\text{where }\mathbf{Unify}(l_1,\neg m_1)=\theta$$
 
 > [!tip] example
 > $$\frac{\neg\text{Rich}(x)\vee\text{Unhappy(x)}\qquad\text{Rich(Ken)}}{\text{Unhappy(Ken)}}$$
