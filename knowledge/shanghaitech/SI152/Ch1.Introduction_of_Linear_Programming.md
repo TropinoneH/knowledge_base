@@ -8,7 +8,7 @@ aliases:
 ---
 # Preliminaries
 
-[[Linear Algebra]]
+[[LinearAlgebra]]
 
 > [!tip] Theorem
 >

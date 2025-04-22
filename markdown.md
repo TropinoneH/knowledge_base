@@ -39,6 +39,9 @@ block quote:
 > [!tip]
 > this is a tip block
 
+> [!hint]
+> this is a hint block
+
 > [!info]
 > this is a info block
 
@@ -51,11 +54,11 @@ block quote:
 > [!warning]
 > this is a warning block
 
-> [!error]
-> this is a error block
-
 > [!success]
 > this is a success block
+
+> [!error]
+> this is a error block
 
 > [!bug]
 > this is a bug block

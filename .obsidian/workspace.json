@@ -30,57 +30,8 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "2b53ca23d65b5898",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/shanghaitech/SI120.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "SI120"
-            }
-          },
-          {
-            "id": "9fbdd473ce8a8d58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "08-MDP"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,13 +119,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08-MDP"
+              "title": "Outline of index"
             }
           }
         ],
@@ -204,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +165,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 08-MDP"
+              "title": "Backlinks for index"
             }
           }
         ],
@@ -230,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,7 +209,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 08-MDP"
+              "title": "Graph of index"
             }
           }
         ]
@@ -279,8 +230,15 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "9fbdd473ce8a8d58",
+  "active": "2b502c8c00f122f1",
   "lastOpenFiles": [
+    "knowledge/shanghaitech/LinearAlgebra.md",
+    "knowledge/shanghaitech/Linaer.md",
+    "index.md",
+    "obsidian.md",
+    "markdown.md",
+    "knowledge/shanghaitech/SI120.md",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/paper/ToRL.md",
     "knowledge/paper/roco.md",
@@ -297,16 +255,9 @@
     "knowledge/shanghaitech/CS181/01-Search.md",
     "pre/2025-4-9.md",
     "pre/2025-3-18.md",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
     "knowledge/shanghaitech/CS181/07-Probabilistic.md",
     "knowledge/shanghaitech/CS181/06-BayesInference.md",
     "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
-    "knowledge/shanghaitech/SI120.md",
-    "knowledge/shanghaitech/CS181/04-PropositionalLogic.md",
-    "knowledge/shanghaitech/CS182/Fit.md",
-    "knowledge/skills/web/SpringBoot.md",
-    "knowledge/skills/web/Vue/Vue.md",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
