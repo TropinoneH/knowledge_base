@@ -15,7 +15,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "pre/2025-4-9.md",
+                    "file": "pre/2025-4-22.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -30,7 +30,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-4-9"
+                  "title": "2025-4-22"
+                }
+              },
+              {
+                "id": "2711bb3ccd9ecd30",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "pre/2025-3-18.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-3-18"
                 }
               }
             ]
@@ -40,12 +64,60 @@
             "type": "tabs",
             "children": [
               {
+                "id": "1ac8972317329b48",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/survey-LLM-for-RL.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "survey-LLM-for-RL"
+                }
+              },
+              {
+                "id": "f31dfc68d1df6991",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/L2R.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "L2R"
+                }
+              },
+              {
                 "id": "34d580ea898bd045",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/paper/CoT.md",
+                    "file": "knowledge/paper/LaRe.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -60,16 +132,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "CoT"
+                  "title": "LaRe"
                 }
               },
               {
-                "id": "6a66d1cf9aaf2b77",
+                "id": "29ae244cc85ae611",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/paper/A-MEM.md",
+                    "file": "knowledge/paper/MAYE.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -84,16 +156,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "A-MEM"
+                  "title": "MAYE"
                 }
               },
               {
-                "id": "bb0842b87f4cd163",
+                "id": "28e6fbd2e248173e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/paper/Legion.md",
+                    "file": "knowledge/paper/ToRL.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -108,11 +180,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Legion"
+                  "title": "ToRL"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical"
@@ -161,8 +232,8 @@
                 "state": {
                   "type": "bookmarks",
                   "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
+                  "icon": "lucide-file",
+                  "title": "Plugin no longer active"
                 }
               }
             ]
@@ -313,8 +384,43 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "bb0842b87f4cd163",
-      "mtime": "2025-04-08T19:26:46+08:00"
+      "floating": {
+        "id": "b32d141885675592",
+        "type": "floating",
+        "children": [
+          {
+            "id": "aba436a459f69c7d",
+            "type": "window",
+            "children": [
+              {
+                "id": "8261089c7755530d",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "12a81fa5957cd758",
+                    "type": "leaf",
+                    "state": {
+                      "type": "reveal-preview-view",
+                      "state": {},
+                      "icon": "lucide-file",
+                      "title": "Slide Preview"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical",
+            "x": 7,
+            "y": 51,
+            "width": 1522,
+            "height": 902,
+            "maximize": false,
+            "zoom": 0
+          }
+        ]
+      },
+      "active": "77d217cb6c11ba8b",
+      "mtime": "2025-04-22T20:58:12+08:00"
     },
     "paper": {
       "main": {
@@ -819,5 +925,5 @@
       "mtime": "2025-04-22T00:17:57+08:00"
     }
   },
-  "active": "note"
+  "active": "pre"
 }

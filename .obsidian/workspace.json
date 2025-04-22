@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2cce342bbf35ee44",
+        "id": "cd13b5f3cb7d504a",
         "type": "tabs",
         "children": [
           {
-            "id": "2b502c8c00f122f1",
+            "id": "77d217cb6c11ba8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "pre/2025-4-22.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,157 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "2025-4-22"
+            }
+          },
+          {
+            "id": "2711bb3ccd9ecd30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pre/2025-3-18.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-3-18"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0e6f76c581b79570",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ac8972317329b48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/survey-LLM-for-RL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "survey-LLM-for-RL"
+            }
+          },
+          {
+            "id": "f31dfc68d1df6991",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/L2R.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "L2R"
+            }
+          },
+          {
+            "id": "34d580ea898bd045",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/LaRe.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "LaRe"
+            }
+          },
+          {
+            "id": "29ae244cc85ae611",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/MAYE.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MAYE"
+            }
+          },
+          {
+            "id": "28e6fbd2e248173e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/ToRL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ToRL"
             }
           }
         ]
@@ -63,8 +213,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RL",
-                "matchingCase": true,
+                "query": "[\"aliases\"]",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -88,7 +238,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f5c31da48e8e3648",
@@ -119,13 +270,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/paper/Legion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Legion"
             }
           }
         ],
@@ -141,12 +292,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/HMM.md",
+                "file": "knowledge/paper/Legion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from HMM"
+              "title": "Outgoing links from gtk-rs"
             }
           },
           {
@@ -155,7 +306,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/paper/Legion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +316,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for Legion"
             }
           }
         ],
@@ -181,7 +332,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "index.md",
+                "file": "knowledge/paper/Legion.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,14 +360,15 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of index"
+              "title": "Graph of Legion"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,39 +377,76 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2b502c8c00f122f1",
+  "floating": {
+    "id": "b32d141885675592",
+    "type": "floating",
+    "children": [
+      {
+        "id": "aba436a459f69c7d",
+        "type": "window",
+        "children": [
+          {
+            "id": "8261089c7755530d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "12a81fa5957cd758",
+                "type": "leaf",
+                "state": {
+                  "type": "reveal-preview-view",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Slide Preview"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 7,
+        "y": 51,
+        "width": 1522,
+        "height": 902,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "77d217cb6c11ba8b",
   "lastOpenFiles": [
+    "knowledge/paper/PDFS/2302.00270v3_InternalReward.pdf",
+    "knowledge/paper/PDFS/1705.05363v1_CuriosityDrivenRL.pdf",
+    "knowledge/paper/survey-LLM-for-RL.md",
+    "pre/2025-4-22.md",
+    "knowledge/paper/ToRL.md",
+    "knowledge/paper/MAYE.md",
+    "knowledge/paper/LaRe.md",
+    "knowledge/paper/L2R.md",
+    "pre/2025-3-18.md",
+    "pre/2025-4-9.md",
+    "knowledge/paper/CoT.md",
+    "knowledge/paper/A-MEM.md",
+    "knowledge/paper/Legion.md",
+    "pre/2025-4-17.md",
+    "knowledge/paper/survey-cognition-engineer.md",
+    "knowledge/paper/PDFS/Cognition Engineering.pdf",
+    "index.md",
     "knowledge/shanghaitech/LinearAlgebra.md",
     "knowledge/shanghaitech/Linaer.md",
-    "index.md",
     "obsidian.md",
     "markdown.md",
     "knowledge/shanghaitech/SI120.md",
     "knowledge/shanghaitech/CS181/08-MDP.md",
     "knowledge/shanghaitech/CS181/09-RL.md",
-    "knowledge/paper/ToRL.md",
     "knowledge/paper/roco.md",
     "knowledge/paper/RDT-1B.md",
     "knowledge/paper/pi0.md",
     "knowledge/paper/OpenVLA.md",
-    "knowledge/paper/MAYE.md",
-    "knowledge/paper/Legion.md",
-    "knowledge/paper/LaRe.md",
-    "knowledge/paper/L2R.md",
-    "knowledge/paper/RT-1.md",
-    "knowledge/paper/RT-2.md",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "knowledge/shanghaitech/CS181/01-Search.md",
-    "pre/2025-4-9.md",
-    "pre/2025-3-18.md",
-    "knowledge/shanghaitech/CS181/07-Probabilistic.md",
-    "knowledge/shanghaitech/CS181/06-BayesInference.md",
-    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
@@ -276,8 +465,6 @@
     "knowledge/paper/PDFS/gemini robotics.pdf",
     "knowledge/paper/PDFS/2412.11120v2_LaRe.pdf",
     "knowledge/paper/PDFS/Rethinking RL Scaling for Vision 2504.02587v2_MAYE.pdf",
-    "knowledge/paper/PDFS/2306.08647v2_L2R.pdf",
-    "knowledge/paper/PDFS/League++.pdf",
-    "knowledge/paper/PDFS/2302.05206v1_HIR.pdf"
+    "knowledge/paper/PDFS/2306.08647v2_L2R.pdf"
   ]
 }

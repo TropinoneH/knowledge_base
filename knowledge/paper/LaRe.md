@@ -52,7 +52,7 @@ $$
 \text{3:}\quad&\text{总结得出improved response $\xi\gets\mathcal M(task,role,\xi_1,\cdots,\xi_n)$}\\
 \text{4:}\quad&\text{验证latent reward encode functino $\phi$: $err\gets\textbf{verify}(\phi,\bar s);\xi\gets\mathcal M(task, role,\xi_{1:n},err)$. 相当于是错误反馈}\\
 \text{5:}\quad&\textbf{For $episode=1$ To $\mathcal N^\text{max}$}\\
-\text{6:}\quad&\quad\quad\text{使用当前policy采样一个轨迹$tau$}\\
+\text{6:}\quad&\quad\quad\text{使用当前policy采样一个轨迹$\tau$}\\
 \text{7:}\quad&\quad\quad\text{$\mathcal B\gets\mathcal B\cup\{r\}$}\\
 \text{8:}\quad&\quad\quad\text{从replay pool $\mathcal B$中采样一个batch $B=\{\tau_i\}_{i=1}^{|B|}$}\\
 \text{9:}\quad&\quad\quad\text{评估latent reward. 使用Loss: }\quad\mathcal L_{\text{RD}}^\phi(\psi)=\mathcal E_{r\sim D}\left[\left(R(\tau)-\sum_{t=1}^Tf_\psi(\phi(s_t,a_t)\right)\right]\\
@@ -62,7 +62,7 @@ $$
 $$
 
 
-2. 使用LLM生成response, 类似[[CoT]]的方法
-3. 总结生成的回复, 生成总结. 根据总结生成代码, 这个代码是计算latent reward的一个函数. 调用这个函数并传入`observation, action`即可计算得出`eval_factors`. `eval_factors`指的是一个list, 里面存放所有的reward
-4. 验证latent reward是否是合理的, 能否运行
-5. 训练一个decoder. 这个decoder相当于是一个加权求和的Linear Layer.
+1. 使用LLM生成response, 类似[[CoT]]的方法
+2. 总结生成的回复, 生成总结. 根据总结生成代码, 这个代码是计算latent reward的一个函数. 调用这个函数并传入`observation, action`即可计算得出`eval_factors`. `eval_factors`指的是一个list, 里面存放所有的reward
+3. 验证latent reward是否是合理的, 能否运行
+4. 训练一个decoder. 这个decoder相当于是一个加权求和的Linear Layer.
