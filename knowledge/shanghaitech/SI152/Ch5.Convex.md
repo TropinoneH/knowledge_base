@@ -193,5 +193,83 @@ convex problem: assume $P\in\mathbb S^n_+\succeq0$, convex quadratic objective f
 
 ### SOCP(Second-Order Cone Programming)
 
+$$\begin{matrix}
+\text{minimize}&\mathbf f^\top\mathbf x\\
+\text{subject to}&\|\mathbf A_i\mathbf x+\mathbf b_i\|\leq\mathbf c_i^\top\mathbf x+\mathbf d_i&i=1,\cdots,m\\
+&\mathbf{Fx}=\mathbf g
+\end{matrix}$$
 
+convex problem: linear objective and [[#First and Second Order Condition|second-order]] cone constraints
+- 如果$\mathbf A_i$是行向量, 那么会退化成[[#LP(Linear Programming)]]
+- 如果$\mathbf c_i=0$, 那么会退化成[[#QCQP(Quadratically Constrained QP)]]
+
+### Generalized Inequality Constraints
+
+$$\begin{matrix}
+\text{minimize}&f_0(\mathbf x)\\
+\text{subject to}&\mathbf f_i(\mathbf x)\preceq_{K_i}\mathbf 0&i=1,\cdots,m\\
+&\mathbf {Ax}=\mathbf b
+\end{matrix}$$
+其中, $f_0$是convex objective function, $\mathbf f_i$是[[#Convexity w.r.t. Generalized Inequalities|K-Convex]]的
+
+**Conic Form Problem**
+$$\begin{matrix}
+\text{minimize}&\mathbf c^\top\mathbf x\\
+\text{subject to}&\mathbf {Fx}+\mathbf g\preceq\mathbf 0\\
+&\mathbf{Ax}=\mathbf b
+\end{matrix}$$
+### SDP(Semidefinite Problem)
+
+$$\begin{matrix}
+\text{minimize}&\mathbf c^\top\mathbf x\\
+\text{subject to}&x_1\mathbf F_1+\cdots+x_n\mathbf F_n\preceq\mathbf G\\
+&\mathbf{Ax}=\mathbf b
+\end{matrix}$$
+convex problem: linear objective function and linear matrix inequality(LMI) constraints
+
+注意到多个LMI可以写成一个LMI, 因此有:
+- [[#LP(Linear Programming)]] and equivalent [[#SDP(Semidefinite Problem)]]:
+  $$\begin{matrix}\text{minimize}&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf{Ax}\preceq\mathbf b\end{matrix}\quad\quad\equiv\quad\quad\begin{matrix}\text{minimize}&\mathbf c^\top\mathbf x\\\text{subject to}&\text{diag}(\mathbf{Ax}-\mathbf b)\preceq\mathbf 0\end{matrix}$$
+- [[#SOCP(Second-Order Cone Programming)]] and equivalent [[#SDP(Semidefinite Problem)]]:
+  $$\begin{matrix}\text{minimize}&\mathbf f^\top\mathbf x\\\text{subject to}&\|\mathbf A_i\mathbf x+\mathbf b_i\|\leq\mathbf c^\top_i\mathbf x+\mathbf d_i&i=1,\cdots,m\end{matrix}$$
+  $$\equiv\begin{matrix}\text{minimize}&\mathbf f^\top\mathbf x\\\text{subject to}&\begin{bmatrix}(\mathbf c^\top_i\mathbf x+\mathbf d_i)\mathbf I&\mathbf A_i\mathbf x+\mathbf b_i\\\mathbf A_i\mathbf x+\mathbf b_i&c^\top_i\mathbf x+\mathbf d_i\end{bmatrix}\preceq\mathbf0&i=1,\cdots,m\end{matrix}$$
+
+**Eigenvalue minimization**:
+$$\begin{matrix}\text{minimize}&\lambda_\max(\mathbf A(\mathbf x))\end{matrix}$$
+其中, $\lambda_\max$指的是$\mathbf A(\mathbf x)=\mathbf A_0+\mathbf x_1\mathbf A_1+\cdots+\mathbf x_n\mathbf A_n$的最大的特征值, 因此有$\lambda_\max(\mathbf A(\mathbf x))\leq t\Leftrightarrow\mathbf A(\mathbf x)\preceq t\mathbf I$
+
+因此, 可以转成等效SDP:
+$$\begin{matrix}\text{minimize}&t\\\text{subject to}&\mathbf A(\mathbf x)\preceq t\mathbf I\end{matrix}$$
+# Lagrangian
+
+$$\begin{matrix}\text{minimize}&f_0(\mathbf x)\\\text{subject to}&f_i(\mathbf x)\leq0&i=1,\cdots,m\\&h_i(\mathbf x)=0&i=1,\cdots,n\end{matrix}$$
+
+定义Lagrangian方程为:
+$$\mathcal L(\mathbf x,\mathbf\lambda,\mathbf\nu)=f_0(\mathbf x)+\sum\lambda_if_i(\mathbf x)+\sum\nu_ih_i(\mathbf x)$$
+### Lagrangian Dual Function
+
+> [!tip] Theorem
+> 下界:
+> $$f_0(\widetilde{\mathbf x})\geq\mathcal L(\widetilde{\mathbf x},\mathbf\lambda,\mathbf\nu)\geq\inf_{x\in\mathcal D}\mathcal L(x,\mathbf\lambda,\mathbf\nu)=g(\mathbf\lambda,\mathbf\nu)$$
+
+拉格朗日对偶优化问题:
+$$\begin{matrix}\mathop{\text{minimize}}\limits_{\mathbf\lambda}&g(\mathbf\lambda,\mathbf\nu)\\\text{subject to}&\mathbf\lambda\succeq\mathbf 0\end{matrix}$$
 ## KKT Condition
+
+**primal feasibility**
+
+原始条件可行:
+$$\begin{matrix}f_i(\mathbf x)]\leq0,i=1,\cdots,m\\h_i(\mathbf x)=0,i=1,\cdots,n\end{matrix}$$
+
+**dual feasibility**
+
+对偶的Lagrangian multiplier非负:
+$$\mathbf\lambda\succeq\mathbf0$$
+
+**complementary slackness**
+
+$$\lambda_if_i(\mathbf x^*)=0,i=1\cdots,m$$
+
+**zero gradient for Lagrangian with respect to x**
+
+$$\nabla_\mathbf xf_0(\mathbf x)+\sum\nabla_\mathbf x\lambda_if_i(\mathbf x)+\sum\nabla_\mathbf x\nu_ih_i(\mathbf x)=0$$
