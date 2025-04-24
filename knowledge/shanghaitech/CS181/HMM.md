@@ -162,13 +162,13 @@ $$=\sum_{i=1}^Nb_i(o_1)\pi_i\beta_1(i)$$
 and
 ![[Bayes#D-separate]]
 
-$$\beta_t(j)=p(o_{t+1},\cdots,o_T|i_t=q_j,\lambda)$$
-$$=\sum_{i=1}^Np(o_{t+1},\cdots,o_T,q_{t+1}=q_i|i_t=q_j,\lambda)$$
-$$=\sum_{i=1}^Np(o_{t+1},\cdots,o_T|i_{t+1}=q_i,i_t=q_j,\lambda)p(i_{t+1}=q_i|i_t=q_j,\lambda)$$
-$$=\sum_{i=1}^Np(o_{t+1},\cdots,o_T|i_{t+1}=q_i,\lambda)a_{ji}\ \ \ \ \text{考虑D-seperated第一种情况,$i_t$在给定$i_{t+1}$时条件独立}$$
-$$=\sum_{i=1}^Np(o_{t+1}|o_{t+2},\cdots,o_T,i_{t+1}=q_i,\lambda)p(o_{t+2},\cdots,o_T|i_{t+1}=q_i,\lambda)a_{ji}$$
-$$=\sum_{i=1}^Np(o_{t+1}|i_{t+1}=q_i)\beta_{t+1}(i)a_{ji}\ \ \ \ \text{使用观测独立假设}$$
-$$=\sum_{i=1}^Nb_i(o_{t+1})a_{ji}\beta_{t+1}(i)$$
+$$\begin{aligned}\beta_t(j)=p(o_{t+1},\cdots,o_T|i_t=q_j,\lambda)\\
+&=\sum_{i=1}^Np(o_{t+1},\cdots,o_T,q_{t+1}=q_i|i_t=q_j,\lambda)\\
+&=\sum_{i=1}^Np(o_{t+1},\cdots,o_T|i_{t+1}=q_i,i_t=q_j,\lambda)p(i_{t+1}=q_i|i_t=q_j,\lambda)\\
+&=\sum_{i=1}^Np(o_{t+1},\cdots,o_T|i_{t+1}=q_i,\lambda)a_{ji}\ \ \ \ \text{考虑D-seperated第一种情况,$i_t$在给定$i_{t+1}$时条件独立}\\
+&=\sum_{i=1}^Np(o_{t+1}|o_{t+2},\cdots,o_T,i_{t+1}=q_i,\lambda)p(o_{t+2},\cdots,o_T|i_{t+1}=q_i,\lambda)a_{ji}\\
+&=\sum_{i=1}^Np(o_{t+1}|i_{t+1}=q_i)\beta_{t+1}(i)a_{ji}\ \ \ \ \text{使用观测独立假设}\\
+&=\sum_{i=1}^Nb_i(o_{t+1})a_{ji}\beta_{t+1}(i)\end{aligned}$$
 
 ## Learning
 
@@ -188,19 +188,23 @@ $$=\mathop{\arg\max}_\lambda\sum_{I}\log p(O,I|\lambda)p(O,I|\lambda^{(t)})$$
 
 将原始的Evalution带入表达式:
 $$
-Q(\lambda,\lambda^{(t)})=\sum_I\log(\pi(i_1)\prod_{t=2}^Ta_{i_{t-1}i_{t}}\prod_{t=1}^Tb_{i_t}(o_t))p(O,I|\lambda^{(t)})\\
-=\sum_I\left[\left(\log\pi_{i_1}+\log\sum_{t=1}^Ta_{i_{t-1}i_t}+\log\sum_{t=1}^Tb_{i_1}(o_t)\right)p(O,I|\lambda^{(t)})\right]\\
+\begin{aligned}
+Q(\lambda,\lambda^{(t)})&=\sum_I\log(\pi(i_1)\prod_{t=2}^Ta_{i_{t-1}i_{t}}\prod_{t=1}^Tb_{i_t}(o_t))p(O,I|\lambda^{(t)})\\
+&=\sum_I\left[\left(\log\pi_{i_1}+\log\sum_{t=1}^Ta_{i_{t-1}i_t}+\log\sum_{t=1}^Tb_{i_1}(o_t)\right)p(O,I|\lambda^{(t)})\right]\\
 \\
-\pi^{(t+1)}=\mathop{\arg\max}_\pi Q(\lambda,\lambda^{(t)}))=\sum_{i_1}\cdots\sum_{i_T}\left(\log\pi_{i_1}p(O,i_1,\cdots,i_T|\lambda^{(t)}))\right)\\
-=\mathop{\arg\max}_\pi\sum_{i_1}\left(\log\pi_{i_1}p(O,i_1|\lambda^{(t)})\right)\ \text{s.t.}\sum_{i}\pi_{i}=1\\
+\pi^{(t+1)}&=\mathop{\arg\max}_\pi Q(\lambda,\lambda^{(t)}))=\sum_{i_1}\cdots\sum_{i_T}\left(\log\pi_{i_1}p(O,i_1,\cdots,i_T|\lambda^{(t)}))\right)\\
+&=\mathop{\arg\max}_\pi\sum_{i_1}\left(\log\pi_{i_1}p(O,i_1|\lambda^{(t)})\right)\ \text{s.t.}\sum_{i}\pi_{i}=1\\
+\end{aligned}
 $$
 应用拉格朗日乘子法:
 $$
-\mathcal{L}(\pi,\eta)=\sum_{i=1}^N\log\pi_ip(O,i_1=q_i|\lambda^{(t)})+\eta(\sum_{i=1}^N\pi_i-1)\\
-\frac{\partial\mathcal{L}}{\partial\pi_i}=\frac{1}{\pi_i}p(O,i_1=q_i|\lambda^{(t)})+\eta=0\ \ \ \ (1)\\
-\Rightarrow\ \ \ \sum_{i=1}^N\left[p(O,i_1=q_i|\lambda^{(t)})+\pi_i\eta\right]=0\ \ \ \Leftrightarrow\ \ \ p(O|\lambda^{(t)})+\eta=0\ \ \Leftrightarrow\ \ \ \eta=-p(O|\lambda^{(t)})\\
-\text{代入(1), 得: }p(O,i_1=q_i|\lambda^{(t)})+\eta\pi_i=p(O,i_1=q_i|\lambda^{(t)})-\pi_ip(O|\lambda^{(t)})=0\\
-\Rightarrow \pi_i^{(t+1)}=\frac{p(O,i_1=q_i|\lambda^{(t)})}{p(O|\lambda^{(t)})}
+\begin{aligned}
+\mathcal{L}(\pi,\eta)&=\sum_{i=1}^N\log\pi_ip(O,i_1=q_i|\lambda^{(t)})+\eta(\sum_{i=1}^N\pi_i-1)\\
+&\frac{\partial\mathcal{L}}{\partial\pi_i}=\frac{1}{\pi_i}p(O,i_1=q_i|\lambda^{(t)})+\eta=0\ \ \ \ (1)\\
+\Rightarrow&\sum_{i=1}^N\left[p(O,i_1=q_i|\lambda^{(t)})+\pi_i\eta\right]=0\ \ \ \Leftrightarrow\ \ \ p(O|\lambda^{(t)})+\eta=0\ \ \Leftrightarrow\ \ \ \eta=-p(O|\lambda^{(t)})\\
+\text{代入(1), 得: }&p(O,i_1=q_i|\lambda^{(t)})+\eta\pi_i=p(O,i_1=q_i|\lambda^{(t)})-\pi_ip(O|\lambda^{(t)})=0\\
+\Rightarrow&\pi_i^{(t+1)}=\frac{p(O,i_1=q_i|\lambda^{(t)})}{p(O|\lambda^{(t)})}
+\end{aligned}
 $$
 关于$A^{(t+1)}$和$B^{(t+1)}$的推导过程是类似的, 这里不做推导.
 
@@ -215,10 +219,8 @@ $\hat I=\arg\max_I p(I|O,\lambda)$
 > 假设路径的长度是$\frac1p$, 那么我们的目的就是找到最短路径. 这样就能最大化概率
 
 定义
-$$
-\delta_t(i)=\max_{i_1,\cdots,i_{t-1}} p(o_1,\cdots,o_t,i_1,\cdots,i_{t-1},i_t=q_i|\lambda)\\
-\text{意义是达到$t$时刻的时候, 选择$q_i$作为system state的概率的最大值}\\
-$$
+$$\delta_t(i)=\max_{i_1,\cdots,i_{t-1}} p(o_1,\cdots,o_t,i_1,\cdots,i_{t-1},i_t=q_i|\lambda)$$
+意义是达到$t$时刻的时候, 选择$q_i$作为system state的概率的最大值
 
 状态转移方程为:
 
@@ -244,7 +246,7 @@ $$
 
 这个可以做online learning在线学习
 
-$p(z_1|x_1)\rightarrow p(z_2|x_1,x_2)\rightarrow\cdots\rightarrow p(z_t|x_1,\cdots,x_t)\rightarrow\cdots$
+$$p(z_1|x_1)\rightarrow p(z_2|x_1,x_2)\rightarrow\cdots\rightarrow p(z_t|x_1,\cdots,x_t)\rightarrow\cdots$$
 
 每进来一个数据就可以做一次filtering, 是可以做online的
 $$
@@ -264,9 +266,11 @@ $$
 
 称作*前向后向算法*
 $$
-p(z_t|x_{1:T})=\frac{p(z_t,x_{1:T})}{p(x_{1:T})}=\frac{p(z_t,x_{1:T})}{\sum_{z_t}p(x_{1:T},z_t)}\\
-p(x_{1:T},z_t)=p(x_{1:t},x_{t+1:T},z_t)=p(x_{t+1:T}|x_{1:t},z_t)p(x_{1:t},z_t)=p(x_{t+1:T}|z_t)\alpha_t(z_t)=\beta_t(z_t)\alpha_t(z_t)\\
-\Rightarrow p(z_t|x_{1:T})\propto p(z_t,x_{1:T})=\beta_t(z_t)\alpha_t(z_t)
+\begin{aligned}
+p(z_t|x_{1:T})&=\frac{p(z_t,x_{1:T})}{p(x_{1:T})}=\frac{p(z_t,x_{1:T})}{\sum_{z_t}p(x_{1:T},z_t)}\\
+p(x_{1:T},z_t)&=p(x_{1:t},x_{t+1:T},z_t)=p(x_{t+1:T}|x_{1:t},z_t)p(x_{1:t},z_t)=p(x_{t+1:T}|z_t)\alpha_t(z_t)=\beta_t(z_t)\alpha_t(z_t)\\
+\Rightarrow&p(z_t|x_{1:T})\propto p(z_t,x_{1:T})=\beta_t(z_t)\alpha_t(z_t)
+\end{aligned}
 $$
 中间的$p(x_{t+1:T}|x_{1:t},z_t)=p(x_{t+1:T}|z_t)$化简用到了[D-separator](###后向传播)
 
@@ -278,8 +282,17 @@ p(x_{t+1},\cdots|x_1,\cdots,x_t)
 $$
 
 在给定前$t$时刻的观测值$x_1,\cdots,x_t$之后, 预测后面一个或者多个隐变量或者观测值的过程
+
+马尔可夫齐次假设和filtering问题:
 $$
-p(z_{t+1}|x_{1:t})=\sum_{z_t}p(z_{t+1},z_t|x_{1:t})=\sum_{z_t}p(z_{t+1}|z_t,x_{1:t})p(z_t|x_{1:t})=\sum_{z_t}p(z_{t+1}|z_t)\alpha_t(z_t)\text{(这里是马尔可夫齐次假设和filtering问题)}\\
-p(x_{t+1}|x_{1:t})=\sum_{z_{t+1}}p(x_{t+1},z_{t+1}|x_{1:t})=\sum_{z_{t+1}}p(x_{t+1}|z_{t+1},x_{1:t})p(z_{t+1}|x_{1:t})=\sum_{z_{t+1}}\left[p(x_{t+1}|z_{t+1})\sum_{z_t}p(z_{t+1}|z_t)\alpha_t(z_t)\right]\\
-\text{这里是观测独立假设和上面刚刚求解的预测}
+\begin{aligned}
+p(z_{t+1}|x_{1:t})&=\sum_{z_t}p(z_{t+1},z_t|x_{1:t})\\&=\sum_{z_t}p(z_{t+1}|z_t,x_{1:t})p(z_t|x_{1:t})\\&=\sum_{z_t}p(z_{t+1}|z_t)\alpha_t(z_t)
+\end{aligned}$$
+
+观测独立假设和上面刚刚求解的预测:
 $$
+\begin{aligned}
+p(x_{t+1}|x_{1:t})&=\sum_{z_{t+1}}p(x_{t+1},z_{t+1}|x_{1:t})\\&=\sum_{z_{t+1}}p(x_{t+1}|z_{t+1},x_{1:t})p(z_{t+1}|x_{1:t})\\&=\sum_{z_{t+1}}\left[p(x_{t+1}|z_{t+1})\sum_{z_t}p(z_{t+1}|z_t)\alpha_t(z_t)\right]
+\end{aligned}
+$$
+

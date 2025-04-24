@@ -79,8 +79,7 @@
               "title": "Ch7.SubGradient"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "TODO",
+                "query": "second order",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ch7.SubGradient"
+              "title": "Outline of Ch5.Convex"
             }
           }
         ],
@@ -204,7 +203,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +213,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ch7.SubGradient"
+              "title": "Backlinks for Ch5.Convex"
             }
           }
         ],
@@ -230,7 +229,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,7 +257,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Ch7.SubGradient"
+              "title": "Graph of Ch5.Convex"
             }
           }
         ]
@@ -279,14 +278,15 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "325fd4aa60c06bde",
+  "active": "e09a1f55fc88205e",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/CS182/Bayes.md",
-    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
     "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
     "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
     "knowledge/shanghaitech/CS182/Fit.md",
+    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "markdown.md",
+    "knowledge/shanghaitech/CS182/Bayes.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
     "knowledge/skills/web/Vue/nuxt+vue3.md",
     "knowledge/shanghaitech/SI100B.md",
     "knowledge/shanghaitech/CS110.md",
@@ -309,7 +309,6 @@
     "knowledge/paper/survey-cognition-engineer.md",
     "knowledge/paper/PDFS/Cognition Engineering.pdf",
     "index.md",
-    "knowledge/shanghaitech/LinearAlgebra.md",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",

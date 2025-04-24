@@ -190,8 +190,8 @@ $$l(\theta|\tau)=\sum_{i=1}^N\log Pr_\theta(x_i,y_i)=\sum_{i=1}^N\log Pr_\theta(
 
 单变量的求解：
 $$\hat\beta_0,\hat\beta=\text {argmin}_{\beta_0,\beta}\sum_{i=1}^N(y_i-\beta_0-\beta x_i)^2$$
-$$\hat\beta=\frac{\sum_{i=1}^N(x_i-\bar x)(y_i-\bar y)}{\sum_{i=1}^N(x_i-\bar x)^2}\\
-\hat\beta_0=\bar y-\hat\beta\bar x$$
+$$\hat\beta=\frac{\sum_{i=1}^N(x_i-\bar x)(y_i-\bar y)}{\sum_{i=1}^N(x_i-\bar x)^2}$$
+$$\hat\beta_0=\bar y-\hat\beta\bar x$$
 但是求解单变量的时候，尽量是从$\beta_0$入手，为了以后求解正则化项作保障。正则化项不能包含$\beta_0$，因为$\beta_0$只是斜率，与自变量没有任何关系，惩罚这个项没有任何意义。
 
 对于多变量，$X=(X_1,X_2,\cdots,X_p)^T$

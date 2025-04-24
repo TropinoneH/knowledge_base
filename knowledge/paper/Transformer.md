@@ -247,11 +247,9 @@ utils.show_heatmaps(attention.attention_weights.reshape(1, 1, 2, 10), x_label="K
 
 when queries $q$ and keys $k$ are vectors of different dimensions, we can either use a matrix to address the mismatch via $q^TMk$, or we can use additive attention as scoring function.
 
-$$
-q\in\mathbb R^q\\
+$$\begin{matrix}q\in\mathbb R^q\\
 k\in\mathbb R^k\\
-a(q,k)=w_v^T\tanh(W_qq+W_kk)\in\mathbb R
-$$
+a(q,k)=w_v^T\tanh(W_qq+W_kk)\in\mathbb R\end{matrix}$$
 
 where $W_q\in\mathbb R^{h\times q}$, $W_k\in\mathbb R^{h\times k}$, and $w_v\in\mathbb R^{h}$
 

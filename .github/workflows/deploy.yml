@@ -34,22 +34,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
-      - name: get pnpm cache
-        id: pnpm-cache-path
-        run: |
-          echo "dir=$(pnpm store path)" >> $GITHUB_OUTPUT
-      - name: cache node_modules
-        uses: actions/cache@v4
-        id: cache-node-modules
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: |
-            **/node_modules
-            ~/.npm
-            ${{ steps.pnpm-cache-path.outputs.dir }}
-          key: ${{ runner.os }}-build-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Install Dependencies
         run: pnpm i
       - name: Build Quartz
