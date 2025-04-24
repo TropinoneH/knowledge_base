@@ -410,7 +410,7 @@ $$\Rightarrow\left\{\begin{matrix}\alpha_i\geq0\\y_if(\vec x_i)-1\geq0\\\alpha_i
 
 [SMO](https://en.wikipedia.org/wiki/Sequential_minimal_optimization)相关简介
 
-详情参见[[Ch5.convex]] %% TODO: 需要更改成正确的link %%
+详情参见[[Ch5.Convex#KKT Condition]]
 
 #### 半监督SVM
 

@@ -183,7 +183,8 @@
                   "title": "ToRL"
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -384,43 +385,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "floating": {
-        "id": "b32d141885675592",
-        "type": "floating",
-        "children": [
-          {
-            "id": "aba436a459f69c7d",
-            "type": "window",
-            "children": [
-              {
-                "id": "8261089c7755530d",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "12a81fa5957cd758",
-                    "type": "leaf",
-                    "state": {
-                      "type": "reveal-preview-view",
-                      "state": {},
-                      "icon": "lucide-file",
-                      "title": "Slide Preview"
-                    }
-                  }
-                ]
-              }
-            ],
-            "direction": "vertical",
-            "x": 7,
-            "y": 51,
-            "width": 1522,
-            "height": 902,
-            "maximize": false,
-            "zoom": 0
-          }
-        ]
-      },
       "active": "77d217cb6c11ba8b",
-      "mtime": "2025-04-22T20:58:12+08:00"
+      "mtime": "2025-04-23T10:03:51+08:00"
     },
     "paper": {
       "main": {
@@ -699,12 +665,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "2b502c8c00f122f1",
+                "id": "e09a1f55fc88205e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -719,7 +685,55 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Ch5.convex"
+                  "title": "Ch5.Convex"
+                }
+              },
+              {
+                "id": "8382ac117c53ea43",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ch6.Gradient"
+                }
+              },
+              {
+                "id": "325fd4aa60c06bde",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ch7.SubGradient"
                 }
               }
             ]
@@ -754,7 +768,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": "TODO",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -762,7 +776,7 @@
                     "sortOrder": "alphabetical"
                   },
                   "icon": "lucide-search",
-                  "title": "搜索"
+                  "title": "Search"
                 }
               },
               {
@@ -771,8 +785,8 @@
                 "state": {
                   "type": "bookmarks",
                   "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
+                  "icon": "lucide-file",
+                  "title": "Plugin no longer active"
                 }
               }
             ]
@@ -810,13 +824,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of Ch5.convex"
+                  "title": "Outline of Ch5.Convex"
                 }
               }
             ],
@@ -846,7 +860,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -856,7 +870,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Ch5.convex"
+                  "title": "Backlinks for Ch5.Convex"
                 }
               }
             ],
@@ -872,7 +886,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.convex.md",
+                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -900,7 +914,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Ch5.convex"
+                  "title": "Graph of Ch5.Convex"
                 }
               }
             ]
@@ -921,9 +935,9 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "2b502c8c00f122f1",
-      "mtime": "2025-04-22T00:17:57+08:00"
+      "active": "e09a1f55fc88205e",
+      "mtime": "2025-04-24T14:30:17+08:00"
     }
   },
-  "active": "pre"
+  "active": "note"
 }

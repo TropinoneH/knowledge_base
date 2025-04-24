@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cd13b5f3cb7d504a",
+        "id": "2cce342bbf35ee44",
         "type": "tabs",
         "children": [
           {
-            "id": "77d217cb6c11ba8b",
+            "id": "e09a1f55fc88205e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pre/2025-4-22.md",
+                "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-4-22"
+              "title": "Ch5.Convex"
             }
           },
           {
-            "id": "2711bb3ccd9ecd30",
+            "id": "8382ac117c53ea43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pre/2025-3-18.md",
+                "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,136 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-3-18"
+              "title": "Ch6.Gradient"
+            }
+          },
+          {
+            "id": "325fd4aa60c06bde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ch7.SubGradient"
             }
           }
-        ]
-      },
-      {
-        "id": "0e6f76c581b79570",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1ac8972317329b48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/survey-LLM-for-RL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "survey-LLM-for-RL"
-            }
-          },
-          {
-            "id": "f31dfc68d1df6991",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/L2R.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "L2R"
-            }
-          },
-          {
-            "id": "34d580ea898bd045",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/LaRe.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "LaRe"
-            }
-          },
-          {
-            "id": "29ae244cc85ae611",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/MAYE.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "MAYE"
-            }
-          },
-          {
-            "id": "28e6fbd2e248173e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/ToRL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ToRL"
-            }
-          }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"aliases\"]",
+                "query": "TODO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -238,8 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f5c31da48e8e3648",
@@ -270,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/Legion.md",
+                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Legion"
+              "title": "Outline of Ch7.SubGradient"
             }
           }
         ],
@@ -292,12 +190,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge/paper/Legion.md",
+                "file": "knowledge/shanghaitech/CS181/HMM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from gtk-rs"
+              "title": "Outgoing links from HMM"
             }
           },
           {
@@ -306,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/Legion.md",
+                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +214,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Legion"
+              "title": "Backlinks for Ch7.SubGradient"
             }
           }
         ],
@@ -332,7 +230,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/Legion.md",
+                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -360,15 +258,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Legion"
+              "title": "Graph of Ch7.SubGradient"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -377,56 +274,32 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "workspaces:Manage workspace layouts": false
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "floating": {
-    "id": "b32d141885675592",
-    "type": "floating",
-    "children": [
-      {
-        "id": "aba436a459f69c7d",
-        "type": "window",
-        "children": [
-          {
-            "id": "8261089c7755530d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "12a81fa5957cd758",
-                "type": "leaf",
-                "state": {
-                  "type": "reveal-preview-view",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "Slide Preview"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 7,
-        "y": 51,
-        "width": 1522,
-        "height": 902,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "77d217cb6c11ba8b",
+  "active": "325fd4aa60c06bde",
   "lastOpenFiles": [
-    "knowledge/paper/PDFS/2302.00270v3_InternalReward.pdf",
-    "knowledge/paper/PDFS/1705.05363v1_CuriosityDrivenRL.pdf",
-    "knowledge/paper/survey-LLM-for-RL.md",
+    "knowledge/shanghaitech/CS182/Bayes.md",
+    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+    "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/CS182/Fit.md",
+    "knowledge/skills/web/Vue/nuxt+vue3.md",
+    "knowledge/shanghaitech/SI100B.md",
+    "knowledge/shanghaitech/CS110.md",
+    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
     "pre/2025-4-22.md",
     "knowledge/paper/ToRL.md",
     "knowledge/paper/MAYE.md",
     "knowledge/paper/LaRe.md",
     "knowledge/paper/L2R.md",
+    "knowledge/paper/PDFS/2302.00270v3_InternalReward.pdf",
+    "knowledge/paper/PDFS/1705.05363v1_CuriosityDrivenRL.pdf",
+    "knowledge/paper/survey-LLM-for-RL.md",
     "pre/2025-3-18.md",
     "pre/2025-4-9.md",
     "knowledge/paper/CoT.md",
@@ -437,16 +310,6 @@
     "knowledge/paper/PDFS/Cognition Engineering.pdf",
     "index.md",
     "knowledge/shanghaitech/LinearAlgebra.md",
-    "knowledge/shanghaitech/Linaer.md",
-    "obsidian.md",
-    "markdown.md",
-    "knowledge/shanghaitech/SI120.md",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
-    "knowledge/shanghaitech/CS181/09-RL.md",
-    "knowledge/paper/roco.md",
-    "knowledge/paper/RDT-1B.md",
-    "knowledge/paper/pi0.md",
-    "knowledge/paper/OpenVLA.md",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
@@ -464,7 +327,6 @@
     "knowledge/paper/PDFS/2405.17013v1_MotionLLM.pdf",
     "knowledge/paper/PDFS/gemini robotics.pdf",
     "knowledge/paper/PDFS/2412.11120v2_LaRe.pdf",
-    "knowledge/paper/PDFS/Rethinking RL Scaling for Vision 2504.02587v2_MAYE.pdf",
-    "knowledge/paper/PDFS/2306.08647v2_L2R.pdf"
+    "knowledge/paper/PDFS/Rethinking RL Scaling for Vision 2504.02587v2_MAYE.pdf"
   ]
 }
