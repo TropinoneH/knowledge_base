@@ -1,4 +1,4 @@
-import remarkMath from "remark-math"
+import remarkMath from "./math"
 import rehypeKatex from "rehype-katex"
 import rehypeMathjax from "rehype-mathjax/svg"
 //@ts-ignore

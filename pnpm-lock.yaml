@@ -77,12 +77,18 @@ importers:
       mdast-util-find-and-replace:
         specifier: ^3.0.2
         version: 3.0.2
+      mdast-util-math:
+        specifier: ^3.0.0
+        version: 3.0.0
       mdast-util-to-hast:
         specifier: ^13.2.0
         version: 13.2.0
       mdast-util-to-string:
         specifier: ^4.0.0
         version: 4.0.0
+      micromark-util-symbol:
+        specifier: ^2.0.1
+        version: 2.0.1
       micromorph:
         specifier: ^0.4.5
         version: 0.4.5
@@ -207,6 +213,9 @@ importers:
       '@types/js-yaml':
         specifier: ^4.0.9
         version: 4.0.9
+      '@types/mdast':
+        specifier: ^4.0.0
+        version: 4.0.4
       '@types/node':
         specifier: ^22.14.1
         version: 22.14.1
@@ -225,6 +234,9 @@ importers:
       esbuild:
         specifier: ^0.25.2
         version: 0.25.2
+      micromark-util-types:
+        specifier: ^2.0.2
+        version: 2.0.2
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
