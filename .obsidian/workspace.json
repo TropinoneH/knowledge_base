@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8382ac117c53ea43",
+            "id": "854332692c702abf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+                "file": "knowledge/paper/grape.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch6.Gradient"
+              "title": "grape"
             }
           },
           {
-            "id": "325fd4aa60c06bde",
+            "id": "a4dc7eb6fd72a368",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
+                "file": "knowledge/paper/LESR.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,78 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch7.SubGradient"
+              "title": "LESR"
+            }
+          },
+          {
+            "id": "cfc917e6679bc69d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/GraspNet-1B.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "GraspNet-1B"
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "ca6bcbc7aeab32c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1f3d5620cd96d91",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2411.19309v2_GRAPE"
+            }
+          },
+          {
+            "id": "69d70a48901870f0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/2407.13237v1_LESR.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2407.13237v1_LESR"
+            }
+          },
+          {
+            "id": "c69a340e69320a5b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "1912.13470_GraspNet-1B"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +155,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "wide",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,16 +164,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "8068b92d2fe623a8",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
             }
           }
         ]
@@ -143,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+                "file": "knowledge/paper/LESR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ch6.Gradient"
+              "title": "Outline of LESR"
             }
           }
         ],
@@ -179,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+                "file": "knowledge/paper/LESR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +247,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ch6.Gradient"
+              "title": "Backlinks for LESR"
             }
           }
         ],
@@ -205,7 +263,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
+                "file": "knowledge/paper/LESR.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,7 +291,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Ch6.Gradient"
+              "title": "Graph of LESR"
             }
           }
         ]
@@ -254,54 +312,53 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "8382ac117c53ea43",
+  "active": "a4dc7eb6fd72a368",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
-    "knowledge/shanghaitech/SI152/Ch6.Gradient.md",
-    "knowledge/shanghaitech/SI152/Ch7.SubGradient.md",
-    "knowledge/shanghaitech/CS182/Fit.md",
-    "markdown.md",
-    "knowledge/shanghaitech/CS182/Bayes.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
-    "knowledge/skills/web/Vue/nuxt+vue3.md",
-    "knowledge/shanghaitech/SI100B.md",
-    "knowledge/shanghaitech/CS110.md",
-    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
-    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "pre/2025-4-22.md",
-    "knowledge/paper/ToRL.md",
-    "knowledge/paper/MAYE.md",
+    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
+    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
+    "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
+    "knowledge/paper/grape.md",
+    "knowledge/paper/AnyGrasp.md",
+    "knowledge/paper/LESR.md",
     "knowledge/paper/LaRe.md",
+    "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
+    "knowledge/paper/PDFS/Planning with Goal-Conditioned Policies.pdf",
+    "knowledge/paper/PDFS/Scaling Goal-based Exploration via Pruning Proto-goals.pdf",
+    "knowledge/paper/PDFS/Learning Goal-Conditioned Representations for Language Reward Models.pdf",
+    "knowledge/paper/GraspNet-1B.md",
+    "knowledge/shanghaitech/CS182/Fit.md",
+    "assets/Pasted image 20250509180051.png",
+    "assets/Pasted image 20250509180022.png",
+    "knowledge/paper/PDFS/Hamster.pdf",
+    "knowledge/paper/RDT-1B.md",
+    "knowledge/paper/RT-2.md",
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/OpenVLA.md",
+    "pre/2025-04-17.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/LucidSim.md",
     "knowledge/paper/L2R.md",
-    "knowledge/paper/PDFS/2302.00270v3_InternalReward.pdf",
-    "knowledge/paper/PDFS/1705.05363v1_CuriosityDrivenRL.pdf",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "pre/2025-3-18.md",
-    "pre/2025-4-9.md",
-    "knowledge/paper/CoT.md",
-    "knowledge/paper/A-MEM.md",
     "knowledge/paper/Legion.md",
-    "pre/2025-4-17.md",
+    "knowledge/paper/CoT.md",
+    "knowledge/paper/roco.md",
+    "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-cognition-engineer.md",
-    "knowledge/paper/PDFS/Cognition Engineering.pdf",
-    "index.md",
+    "knowledge/paper/MAYE.md",
+    "pre/2025-04-29.md",
+    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
+    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
+    "knowledge/shanghaitech/SI152/Ch8.ProximalGradient.md",
+    "assets/Pasted image 20250506162641.png",
+    "assets/Pasted image 20250506150835.png",
+    "knowledge/paper/PDFS/2403.12014v2_EnvGen.pdf",
+    "pre/img.png",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
     "assets/image-20241127111706878.png",
     "assets/image-20241122121529933.png",
-    "assets/image-20241127112752051.png",
-    "assets/image-20241120114126136.png",
-    "assets/image-20241120105206785.png",
-    "assets/image-20241120112645100.png",
-    "assets/image-20241120114612136.png",
-    "assets/image-20241120114526529.png",
-    "knowledge/paper/PDFS/2503.23383v1_ToRL.pdf",
-    "knowledge/paper/PDFS/RoCo Dialectic Multi-Robot Collaboration with Lar.pdf",
-    "knowledge/paper/PDFS/2504.02587v2_MAYE.pdf",
-    "knowledge/paper/PDFS/2405.17013v1_MotionLLM.pdf",
-    "knowledge/paper/PDFS/gemini robotics.pdf",
-    "knowledge/paper/PDFS/2412.11120v2_LaRe.pdf",
-    "knowledge/paper/PDFS/Rethinking RL Scaling for Vision 2504.02587v2_MAYE.pdf"
+    "assets/image-20241127112752051.png"
   ]
 }
