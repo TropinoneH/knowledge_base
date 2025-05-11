@@ -7,7 +7,7 @@ tags:
 
 ## Inline Style
 
-this is `code block`
+this is `inline code block`
 
 this is ==highlight==
 
@@ -33,8 +33,7 @@ for file, _, _ in os.walk(os.getcwd()):
 
 block quote:
 
-> this is default block quote
-> without any theme
+> this is default block quote without any theme
 
 > [!tip]
 > this is a tip block
@@ -68,6 +67,9 @@ block quote:
 
 > [!example]
 > this is a example block
+
+> [!question]
+> this is a question block
 
 > [!Custom] Custom Title
 > this is a custom block with custom title
