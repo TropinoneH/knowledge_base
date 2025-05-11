@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2cce342bbf35ee44",
+        "id": "2d37c3063bfff5ad",
         "type": "tabs",
         "children": [
           {
-            "id": "854332692c702abf",
+            "id": "964e12226a669b99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/grape.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,102 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "grape"
-            }
-          },
-          {
-            "id": "a4dc7eb6fd72a368",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/LESR.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "LESR"
-            }
-          },
-          {
-            "id": "cfc917e6679bc69d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/GraspNet-1B.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "GraspNet-1B"
+              "title": "Fit"
             }
           }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "ca6bcbc7aeab32c9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b1f3d5620cd96d91",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2411.19309v2_GRAPE"
-            }
-          },
-          {
-            "id": "69d70a48901870f0",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/2407.13237v1_LESR.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2407.13237v1_LESR"
-            }
-          },
-          {
-            "id": "c69a340e69320a5b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "1912.13470_GraspNet-1B"
-            }
-          }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,8 +73,19 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "8068b92d2fe623a8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,13 +120,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/LESR.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LESR"
+              "title": "Outline of Fit"
             }
           }
         ],
@@ -237,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/LESR.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +166,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for LESR"
+              "title": "Backlinks for Fit"
             }
           }
         ],
@@ -263,7 +182,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/LESR.md",
+                "file": "knowledge/shanghaitech/CS182/Fit.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -291,7 +210,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of LESR"
+              "title": "Graph of Fit"
             }
           }
         ]
@@ -312,22 +231,26 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "a4dc7eb6fd72a368",
+  "active": "964e12226a669b99",
   "lastOpenFiles": [
+    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
+    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
+    "knowledge/shanghaitech/CS182/Fit.md",
+    "pre/2025-04-29.md",
+    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "knowledge/paper/LESR.md",
     "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
     "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
     "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
     "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
     "knowledge/paper/grape.md",
     "knowledge/paper/AnyGrasp.md",
-    "knowledge/paper/LESR.md",
     "knowledge/paper/LaRe.md",
     "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
     "knowledge/paper/PDFS/Planning with Goal-Conditioned Policies.pdf",
     "knowledge/paper/PDFS/Scaling Goal-based Exploration via Pruning Proto-goals.pdf",
     "knowledge/paper/PDFS/Learning Goal-Conditioned Representations for Language Reward Models.pdf",
     "knowledge/paper/GraspNet-1B.md",
-    "knowledge/shanghaitech/CS182/Fit.md",
     "assets/Pasted image 20250509180051.png",
     "assets/Pasted image 20250509180022.png",
     "knowledge/paper/PDFS/Hamster.pdf",
@@ -345,9 +268,6 @@
     "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-cognition-engineer.md",
     "knowledge/paper/MAYE.md",
-    "pre/2025-04-29.md",
-    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
-    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
     "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
     "knowledge/shanghaitech/SI152/Ch8.ProximalGradient.md",
     "assets/Pasted image 20250506162641.png",

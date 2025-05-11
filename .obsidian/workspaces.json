@@ -422,12 +422,12 @@
                 }
               },
               {
-                "id": "f98e57b41535bef2",
+                "id": "a4dc7eb6fd72a368",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "pre/2025-04-29.md",
+                    "file": "knowledge/paper/LESR.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -442,7 +442,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-04-29"
+                  "title": "LESR"
+                }
+              },
+              {
+                "id": "cfc917e6679bc69d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/GraspNet-1B.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "GraspNet-1B"
                 }
               }
             ],
@@ -453,7 +477,7 @@
             "type": "tabs",
             "children": [
               {
-                "id": "69d70a48901870f0",
+                "id": "b1f3d5620cd96d91",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -463,8 +487,33 @@
                   "icon": "lucide-file-text",
                   "title": "2411.19309v2_GRAPE"
                 }
+              },
+              {
+                "id": "69d70a48901870f0",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2407.13237v1_LESR.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2407.13237v1_LESR"
+                }
+              },
+              {
+                "id": "c69a340e69320a5b",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "1912.13470_GraspNet-1B"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -496,7 +545,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "lare",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -542,13 +591,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+                    "file": "knowledge/paper/LESR.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 2411.19309v2_GRAPE"
+                  "title": "Outline of LESR"
                 }
               }
             ],
@@ -578,7 +627,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+                    "file": "knowledge/paper/LESR.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -588,7 +637,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for 2411.19309v2_GRAPE"
+                  "title": "Backlinks for LESR"
                 }
               }
             ],
@@ -604,7 +653,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+                    "file": "knowledge/paper/LESR.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -632,7 +681,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of 2411.19309v2_GRAPE"
+                  "title": "Graph of LESR"
                 }
               }
             ]
@@ -653,8 +702,8 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "69d70a48901870f0",
-      "mtime": "2025-05-05T22:37:39+08:00"
+      "active": "a4dc7eb6fd72a368",
+      "mtime": "2025-05-11T23:11:12+08:00"
     },
     "note": {
       "main": {
@@ -892,5 +941,5 @@
       "mtime": "2025-05-07T18:00:58+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }

@@ -320,12 +320,12 @@ $$
 | $x_6^T$ | 0.7   | 0.8   | 3    |
 
 $$\hat\pi_1=\hat\pi_2=\hat\pi_3=\frac13$$
-$$\hat\mu_1=\frac12(x_1+x_5)=\frac12\left(\matrix{0.2\\0.3}\right)+\frac12\left(\matrix{0.3\\0.2}\right)=\left(\matrix{0.25\\0.25}\right)$$
-$$\hat\mu_2=\frac12(x_3+x_4)=\left(\matrix{0.5\\0.5}\right)$$
-$$\hat\mu_3=\frac12(x_2+x_6)=\left(\matrix{0.75\\0.75}\right)$$
-$$\hat\Sigma=\frac{\left(\matrix{0.005&-0.005\\-0.005&0.005}\right)+\left(\matrix{0.02&-0.02\\-0.02&0.02}\right)+\left(\matrix{0.005&-0.005\\-0.005&0.005}\right)}{6-3}=\left(\matrix{0.01&-0.01\\-0.01&0.01}\right)$$
+$$\hat\mu_1=\frac12(x_1+x_5)=\frac12\left(\begin{matrix}0.2\\0.3\end{matrix}\right)+\frac12\left(\begin{matrix}0.3\\0.2\end{matrix}\right)=\left(\begin{matrix}0.25\\0.25\end{matrix}\right)$$
+$$\hat\mu_2=\frac12(x_3+x_4)=\left(\begin{matrix}0.5\\0.5\end{matrix}\right)$$
+$$\hat\mu_3=\frac12(x_2+x_6)=\left(\begin{matrix}0.75\\0.75\end{matrix}\right)$$
+$$\hat\Sigma=\frac{\left(\begin{matrix}0.005&-0.005\\-0.005&0.005\end{matrix}\right)+\left(\begin{matrix}0.02&-0.02\\-0.02&0.02\end{matrix}\right)+\left(\begin{matrix}0.005&-0.005\\-0.005&0.005\end{matrix}\right)}{6-3}=\left(\begin{matrix}0.01&-0.01\\-0.01&0.01\end{matrix}\right)$$
 $$\ln\frac{Pr(G=1|X=x)}{Pr(G=2|X=x)}=\ln\frac{\hat\pi_1}{\hat\pi_2}-\frac12(\hat\mu_1+\hat\mu_2)^T\hat\Sigma^{-1}_\lambda(\mu_1-\mu_2)+x^T\hat\Sigma^{-1}_\lambda(\hat\mu_1-\hat\mu_2)$$
-$$=0.1875-(x_1,x_2)\left(\matrix{0.25\\0.25}\right)=0$$
+$$=0.1875-(x_1,x_2)\left(\begin{matrix}0.25\\0.25\end{matrix}\right)=0$$
 $$\Rightarrow\text{边界为}\{(x_1,x_2)|x_1+x_2=0.75\}\text{，其中}\hat\Sigma_\lambda=\hat\Sigma+\lambda I,\lambda=1$$
 定义线性判别函数为$\delta_k(x)=x^T\Sigma^{-1}\mu_k-\frac12\mu_k^T\Sigma^{-1}\mu_k+\ln\pi_k$
 

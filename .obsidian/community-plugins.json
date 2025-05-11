@@ -8,5 +8,7 @@
   "obsidian-advanced-slides",
   "global-proxy",
   "settings-search",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "global-search-and-replace",
+  "obsidian-regex-replace"
 ]

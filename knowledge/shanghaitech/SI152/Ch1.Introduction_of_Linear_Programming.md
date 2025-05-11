@@ -27,14 +27,14 @@ aliases:
 
 线性规划的一般形式:
 $$
-\matrix{
+\begin{matrix}
 \text{minimize}&2x_1&-&x_2&+&4x_3\\
 \text{subject to}&x_1&+&x_2&&&+&x_4&\leq&2\\
 &&&3x_2&-&x_3&&&=&5\\
 &&&&&x_3&+&x_4&\geq&3\\
 &x_1&&&&&&&\geq&0\\
 &&&&&x_3&&&\geq&0
-}
+\end{matrix}
 $$
 其中, $x_i,i\in\{1,2,3,4\}$是变量, 是用于最小化方程$2x_1-x_2+4x_3$的变量, 但是同时需要满足**subject to**的约束条件(线性方程或者线性不等式的集合).
 
@@ -44,14 +44,14 @@ $$
 
 于是我们可以把线性规划写成如下形式:
 $$
-\matrix{
+\begin{matrix}
 \text{minimize}&\mathbf c^\top \mathbf x\\
 \text{subject to}&\mathbf a_1\mathbf x&\leq&\mathbf b_1\\
 &\mathbf a_2\mathbf x&\geq& b_2\\
 &\mathbf a_3\mathbf x&=&b_3\\
 &x_{j_1}&\geq&0&j_1\in\mathbf N_1\\
 &x_{j_2}&\leq&0&j_2\in\mathbf N_2
-}
+\end{matrix}
 $$
 其中, $a_1,a_2,a_3$是系数矩阵, $b_1,b_2,b_3$是向量. $N_1,N_2$是两个集合, 表示需要满足约束的$x_i$的index
 
@@ -71,13 +71,13 @@ $$
 $$
 因此我们的线性规划的形式转换为:
 $$
-\matrix{\text{minimize}&\mathbf c^\top x\\\text{subject to}&\mathbf {Ax}&\geq&\mathbf b}
+\begin{matrix}\text{minimize}&\mathbf c^\top x\\\text{subject to}&\mathbf {Ax}&\geq&\mathbf b\end{matrix}
 $$
 
 ### Standard form
 
 $$
-\matrix{\text{minimize}&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf{Ax}&=&\mathbf b\\&\mathbf x&\geq&0}
+\begin{matrix}\text{minimize}&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf{Ax}&=&\mathbf b\\&\mathbf x&\geq&0\end{matrix}
 $$
 
 我们可以认为约束条件是一个线性组合: $\mathbf{Ax}=\sum_i\mathbf A_ix_i=\mathbf b$.
@@ -123,7 +123,7 @@ $$
 
 我们可以把一个目标函数为分段线性函数的线性规划规约成一个标准形式的线性规划:
 $$
-\matrix{\text{minimize}&\max(\mathbf c_i^\top\mathbf x+d_i)\\\text{subject to}&\mathbf {Ax}&\geq&b}\ \ \ \Rightarrow\ \matrix{\text{minimize}&z\\\text{subject to}&z&\geq&\mathbf c_i^\top\mathbf x+d_i\\&\mathbf {Ax}&\geq&\mathbf b}
+\begin{matrix}\text{minimize}&\max(\mathbf c_i^\top\mathbf x+d_i)\\\text{subject to}&\mathbf {Ax}&\geq&b\end{matrix}\ \ \ \Rightarrow\ \begin{matrix}\text{minimize}&z\\\text{subject to}&z&\geq&\mathbf c_i^\top\mathbf x+d_i\\&\mathbf {Ax}&\geq&\mathbf b\end{matrix}
 $$
 其中, 决定变量为$z$和$\mathbf x$
 

@@ -1,0 +1,10 @@
+{
+  "findText": "\\\\matrix\\{(.*)\\}",
+  "replaceText": "\\begin{matrix}$1\\end{matrix}",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

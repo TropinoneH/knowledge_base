@@ -37,37 +37,38 @@ $$\begin{matrix}\min&\mathbf c^\top\mathbf x-\mathbf p^\top(\mathbf b-\mathbf {A
 令$g(\mathbf p)$为relax problem的optimal solution, 有
 $$g(\mathbf p)=\min_{\mathbf x\geq0}\left[\mathbf c^\top\mathbf x+\mathbf p^\top(\mathbf b-\mathbf {Ax})\right]\leq\mathbf c^\top\mathbf x^*+\mathbf p^\top(\mathbf b-\mathbf {Ax^*})=\mathbf c^\top\mathbf x^*$$
 其中$\mathbf x^*$是primal problem的optimal solution. 因此我们可以认为$g(\mathbf p)$给定了原始问题的cost function的lower bound. 于是我们只需要求解$g(\mathbf p)$的最大值即可:
-$$\matrix{\max&g(\mathbf p)\\\text{subject to}&\text{No Constrains}}$$
+$$\begin{matrix}\max&g(\mathbf p)\\\text{subject to}&\text{No Constrains}\end{matrix}$$
 
 我们注意到$g(\mathbf p)=min_{\mathbf x\geq0}\left[\mathbf c^\top\mathbf x+\mathbf p^\top(\mathbf b-\mathbf {Ax})\right]=\mathbf p^\top\mathbf b+\min\limits_{\mathbf x\geq0}(\mathbf c^\top-\mathbf p^\top\mathbf {A})\mathbf x$, 其中:
-$$\min_{\mathbf x\geq0}(\mathbf c^\top-\mathbf p^\top\mathbf A)\mathbf x=\left\{\matrix{\mathbf 0,&\text{if }\mathbf c^\top\mathbf x+\mathbf p^\top(\mathbf b-\mathbf {Ax})\geq\mathbf0^\top\\-\infty,&\text{otherwise}}\right.$$
+$$\min_{\mathbf x\geq0}(\mathbf c^\top-\mathbf p^\top\mathbf A)\mathbf x=\left\{\begin{matrix}\mathbf 0,&\text{if }\mathbf c^\top\mathbf x+\mathbf p^\top(\mathbf b-\mathbf {Ax})\geq\mathbf0^\top\\-\infty,&\text{otherwise}\end{matrix}\right.$$
 我们在最大化$g(\mathbf p)$的时候, 只需要考虑不等于$-\infty$的值, 因此dual problem和如下linear programming没有区别:
-$$\matrix{\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A\leq\mathbf c^\top}$$
+$$\begin{matrix}\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A\leq\mathbf c^\top\end{matrix}$$
 
 因此我们得到了dual problem的一般形式:
 $$
-\matrix{
-\matrix{\min&\mathbf c^\top\mathbf x\\\text{subject to}&a_ix\geq b_i&i\in M_1\\&a_ix\leq b_i&i\in M_2\\&a_ix=b_i&i\in M_3\\&x_j\geq0&j\in N_1\\&x_j\leq0&j\in N_2\\&x_j\text{ free}&j\in N_3}&\quad&
-\matrix{\max&\mathbf p^\top\mathbf b\\\text{subject to}&p_i\geq0&i\in M_1\\&p_i\leq0&i\in M_2\\&p_i\text{ free}&i\in M_3\\&\mathbf p^\top\mathbf A_j\leq c_j&j\in N_1\\&\mathbf p^\top\mathbf A_j\geq c_j&j\in N_2\\&\mathbf p^\top\mathbf A=c_j&j\in N_3}
-}
+\begin{matrix}
+\begin{matrix}\min&\mathbf c^\top\mathbf x\\\text{subject to}&a_ix\geq b_i&i\in M_1\\&a_ix\leq b_i&i\in M_2\\&a_ix=b_i&i\in M_3\\&x_j\geq0&j\in N_1\\&x_j\leq0&j\in N_2\\&x_j\text{ free}&j\in N_3\end{matrix}&\quad&
+\begin{matrix}\max&\mathbf p^\top\mathbf b\\\text{subject to}&p_i\geq0&i\in M_1\\&p_i\leq0&i\in M_2\\&p_i\text{ free}&i\in M_3\\&\mathbf p^\top\mathbf A_j\leq c_j&j\in N_1\\&\mathbf p^\top\mathbf A_j\geq c_j&j\in N_2\\&\mathbf p^\top\mathbf A=c_j&j\in N_3\end{matrix}
+\end{matrix}
 $$
 
-| primal problem | minimize                             | maximize                             | dual problem |
-| -------------- | ------------------------------------ | ------------------------------------ | ------------ |
-| constrains     | $\matrix{\geq b_i\\\leq b_i\\=b_i}$  | $\matrix{\geq0\\\leq0\\\text{free}}$ | variables    |
-| variables      | $\matrix{\geq0\\\leq0\\\text{free}}$ | $\matrix{\leq c_j\\\geq c_j\\=c_j}$  | constrains   |
+| primal problem | minimize                                              | maximize                                              | dual problem |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------- | ------------ |
+| constrains     | $\begin{matrix}\geq b_i\\\leq b_i\\=b_i\end{matrix}$  | $\begin{matrix}\geq0\\\leq0\\\text{free}\end{matrix}$ | variables    |
+| variables      | $\begin{matrix}\geq0\\\leq0\\\text{free}\end{matrix}$ | $\begin{matrix}\leq c_j\\\geq c_j\\=c_j\end{matrix}$  | constrains   |
+|                |                                                       |                                                       |              |
 对于特殊形式, 可以使用矩阵表示(e.g. [[Ch1.Introduction_of_Linear_Programming#Standard form|Standard form]]):
 $$
-\matrix{
-\matrix{\min&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf {Ax}=\mathbf b\\&\mathbf x\geq0}&\quad&
-\matrix{\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A\leq\mathbf c^\top\\\text{}}
-}
+\begin{matrix}
+\begin{matrix}\min&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf {Ax}=\mathbf b\\&\mathbf x\geq0\end{matrix}&\quad&
+\begin{matrix}\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A\leq\mathbf c^\top\\\text{}\end{matrix}
+\end{matrix}
 $$
 $$
-\matrix{
-\matrix{\min&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf {Ax}\geq\mathbf b\\&\text{}}&\quad&
-\matrix{\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A=\mathbf c^\top\\&\mathbf p\geq0}
-}
+\begin{matrix}
+\begin{matrix}\min&\mathbf c^\top\mathbf x\\\text{subject to}&\mathbf {Ax}\geq\mathbf b\\&\text{}\end{matrix}&\quad&
+\begin{matrix}\max&\mathbf p^\top\mathbf b\\\text{subject to}&\mathbf p^\top\mathbf A=\mathbf c^\top\\&\mathbf p\geq0\end{matrix}
+\end{matrix}
 $$
 e.g.
 $$
@@ -107,8 +108,8 @@ $$
 
 > [!tip] Theorem
 > 强对偶定理:
-> 1. 如果primal problem和dual problem中有一个有解, 则另一个问题也有解, 且最优值相等.
-> 2. 设$\mathbf x^*$是primal的optimal solution, $\mathbf B$是primal的optimal basis, $\mathbf p^*$是dual的optimal solution, 则:
+> 4. 如果primal problem和dual problem中有一个有解, 则另一个问题也有解, 且最优值相等.
+> 5. 设$\mathbf x^*$是primal的optimal solution, $\mathbf B$是primal的optimal basis, $\mathbf p^*$是dual的optimal solution, 则:
 >    $$\mathbf p^*=(\mathbf c_B^\top\mathbf B^{-1})^\top$$
 
 primal problem --> dual problem --> introduce relax variable, turn to standard form --> simplex solve
