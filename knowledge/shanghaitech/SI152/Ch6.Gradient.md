@@ -11,6 +11,41 @@ aliases:
 $$\begin{matrix}\min&f(\mathbf x)\\\text{subject to}&\mathbf x\in\mathbb R^n\end{matrix}$$
 其中$f$可微
 
+## Convergence Rate
+
+计算方法:
+
+假设给定[[Ch1.Introduction_of_Linear_Programming#Piecewise linear convex objective functions|objective function]]能够转换成一个序列$r_k$, 计算极限
+$$q=\lim_{k\to\infty}\frac{r_{k+1}}{r_k}$$
+
+convergence rate就是$q$.
+
+### Convergence Type
+
+- $q=0$: superlinearly
+- $0<q<1$: linearly
+- $q=1$: sublinearly
+- $q>1$: non-convergence
+
+> [!example] Convergence Rate of [[#Quadratic Minimization]]
+> 
+> 假设$\lambda_1(\mathbf Q)$是$\mathbf Q$的最大的eigenvalue, $\lambda_n(\mathbf Q)$是最小eigenvalue, 那么可以认为:
+> $$r=\frac{\lambda_1(\mathbf Q)}{\lambda_n(\mathbf Q)}=\frac{\max_x\lambda_1(\nabla^2f(\mathbf x))}{\min_x\lambda_n(\nabla^2f(\mathbf x))}$$
+> 
+> $\eta_t\equiv\eta=\frac{2}{\lambda_1(\mathbf Q)+\lambda_n(\mathbf Q)}$, 那么
+> $$\|\mathbf x^t-\mathbf x^*\|_2\leq\left(\frac{\lambda_1(\mathbf Q)-\lambda_n(\mathbf Q)}{\lambda_1(\mathbf Q)+\lambda_n(\mathbf Q)}\right)^t\|\mathbf x^0-\mathbf x^*\|_2=\varepsilon$$
+> Convergence Analysis:
+> $$\begin{aligned}1.&\|\mathbf x^t-\mathbf x^*\|_2\leq\varepsilon\\2.&\|f(\mathbf x^t)-f(\mathbf x^*)\|_2\leq\varepsilon\\3.&\|\nabla f(\mathbf x)\|_2\leq\varepsilon\end{aligned}$$
+> Convergence Rate:
+> 1. sublinear: $T>\frac{1}{\varepsilon^k},o(\frac{1}{\varepsilon^k})$
+> 2. linear: $T>\log\frac{1}{\varepsilon}, o(\log\frac{1}{\varepsilon})$
+> 3. quadratic(super linear): $T>\log(\log\frac{1}{\varepsilon}),o(\log(\log\frac{1}{\varepsilon}))$
+> 
+> Iteration Function:
+> 4. sublinear: $\|\mathbf x^t-\mathbf x^*\|_2\leq\frac{1}{t^{\frac{1}{k}}}\|\mathbf x^0-\mathbf x^*\|_2$
+> 5. linear: $\|\mathbf x^t-\mathbf x^*\|_2\leq\|\mathbf x^{q-1}-\mathbf x^*\|_2\Rightarrow\|\mathbf x^t-\mathbf x^*\|_2\leq q^t\|\mathbf x^0-\mathbf x^*\|_2$
+> 6. quadratic: $\|\mathbf x^t-\mathbf x^*\|_2\leqq\|\mathbf x^{q-1}-\mathbf x^*\|^2_2$
+> 
 ## Iterative descend algorithm
 
 从$x_0$开始, 构造序列$\{\mathbf x^t\}$满足$f(\mathbf x^{t+1})<f(\mathbf x^t),t=0,1,\cdots$
@@ -46,27 +81,6 @@ $$
 \Rightarrow&\eta\equiv\eta_t=\frac{2}{\lambda_1(\mathbf Q)+\lambda_n(\mathbf Q)}
 \end{aligned}
 $$
-
-> [!note]
-> # Convergence Rate
-> 
-> 假设$\lambda_1(\mathbf Q)$是$\mathbf Q$的最大的eigenvalue, $\lambda_n(\mathbf Q)$是最小eigenvalue, 那么可以认为:
-> $$r=\frac{\lambda_1(\mathbf Q)}{\lambda_n(\mathbf Q)}=\frac{\max_x\lambda_1(\nabla^2f(\mathbf x))}{\min_x\lambda_n(\nabla^2f(\mathbf x))}$$
-> 
-> $\eta_t\equiv\eta=\frac{2}{\lambda_1(\mathbf Q)+\lambda_n(\mathbf Q)}$, 那么
-> $$\|\mathbf x^t-\mathbf x^*\|_2\leq\left(\frac{\lambda_1(\mathbf Q)-\lambda_n(\mathbf Q)}{\lambda_1(\mathbf Q)+\lambda_n(\mathbf Q)}\right)^t\|\mathbf x^0-\mathbf x^*\|_2=\varepsilon$$
-> Convergence Analysis:
-> $$\begin{aligned}1.&\|\mathbf x^t-\mathbf x^*\|_2\leq\varepsilon\\2.&\|f(\mathbf x^t)-f(\mathbf x^*)\|_2\leq\varepsilon\\3.&\|\nabla f(\mathbf x)\|_2\leq\varepsilon\end{aligned}$$
-> Convergence Rate:
-> 1. sublinear: $T>\frac{1}{\varepsilon^k},o(\frac{1}{\varepsilon^k})$
-> 2. linear: $T>\log\frac{1}{\varepsilon}, o(\log\frac{1}{\varepsilon})$
-> 3. quadratic(super linear): $T>\log(\log\frac{1}{\varepsilon}),o(\log(\log\frac{1}{\varepsilon}))$
-> 
-> Iteration Function:
-> 4. sublinear: $\|\mathbf x^t-\mathbf x^*\|_2\leq\frac{1}{t^{\frac{1}{k}}}\|\mathbf x^0-\mathbf x^*\|_2$
-> 5. linear: $\|\mathbf x^t-\mathbf x^*\|_2\leq\|\mathbf x^{q-1}-\mathbf x^*\|_2\Rightarrow\|\mathbf x^t-\mathbf x^*\|_2\leq q^t\|\mathbf x^0-\mathbf x^*\|_2$
-> 6. quadratic: $\|\mathbf x^t-\mathbf x^*\|_2\leqq\|\mathbf x^{q-1}-\mathbf x^*\|^2_2$
-> 
 
 ### Exact Line Search
 
@@ -124,18 +138,25 @@ $$f(\mathbf x^t)-f(\mathbf x^*)\leq(1-\frac{\mu}{L})^t(f(\mathbf x^0)-f(\mathbf 
 
 ### Over-parameterized linear regression
 
-%% TODO %%
+over-parameterize: model dimension > sample size
+
+定义
+$$f(x)=\frac12\sum_{i=1}^m(\mathbf a_i^\top\mathbf x-y_i)^2=\frac12(\mathbf {AX}-\mathbf Y)^2$$
+有
+$$\nabla f(x)=0\Leftrightarrow\mathbf X=(\mathbf A^\top\mathbf A)^{-1}\mathbf A^\top\mathbf Y$$
+$$\nabla^2f(x)=\sum_{i=1}^m\mathbf a_i\mathbf a_i^\top$$
+认为如果$\mathbf A=[\mathbf a_1,\cdots,\mathbf a_m]^\top\in\mathbf R^{m\times n}$, 其rank为$m$, 且满足step size $\eta_t\equiv\eta=\frac1{\lambda_{\text{max}}(\mathbf{AA}^\top)}$, 有:
+$$f(\mathbf x^t)-f(\mathbf x^*)\leq\left(1-\frac{\lambda_{\text{min}}(\mathbf{AA}^\top)}{\lambda_{\text{max}}(\mathbf{AA}^\top)}\right)^t(f(\mathbf x^0)-f(\mathbf x^*)),\forall t$$
 
 ## Convex and Smooth Problem
+
+### L-smooth
 
 majorization-minimization
 
 > [!tip] Theorem
-> 如果是$L$-smooth的, 那么有: $\eta=\frac{1}{L}$
-> $$f(\mathbf x^{t+1}-\mathbf x^t)\leq-\frac{1}{2L}\|\nabla f(\mathbf x^t)\|_2^2$$
-
-> [!tip] Theorem
-> 如果是convex且$L$-smooth的, 那么有: $\eta=\frac{1}{L}$
+> 如果是$L$-smooth的, 且有: $\eta=\frac{1}{L}$
+> $$f(\mathbf x^{t+1})\leq f(\mathbf x^t)-\frac{1}{2L}\|\nabla f(\mathbf x^t)\|_2^2$$
 > $$\|\mathbf x^t-\mathbf x^*\|\leq\|\mathbf x^{t-1}-\mathbf x^*\|-\frac{1}{L^2}\|\nabla f(\mathbf x^{t-1})\|_2^2$$
 > $$f(\mathbf x^t)-f(\mathbf x^*)\leq\frac{2L\|\mathbf x^0-\mathbf x^*\|}{t}$$
 
@@ -145,20 +166,57 @@ majorization-minimization
 > - for general: $$\min_{0\leq k<t}\|\nabla f(\mathbf x^k)\|_2\leq\sqrt{\frac{2L(f(\mathbf x^0)-f(\mathbf x^*))}{t}}$$
 > - for convex: $$\min_{\frac{t}{2}\leq k<t}\|\nabla f(\mathbf x^k)\|_2=\frac{4L\|\mathbf x^0-\mathbf x^*\|_2}{t}$$
 
-
 # Gradient methods for Constrained Problems
 
-Frank-Wolfe algorithm:
+## Frank-Wolfe algorithm
 1. $\mathbf y^t:=\mathop{\arg\min}_{x\in\mathcal C}\langle\nabla f(\mathbf x^t),\mathbf x^t\rangle$
 2. $\mathbf x^{t+1}=(1-\eta_t)\mathbf x^t+\eta_t\mathbf y^t$
 
 over a convex set: $f(x^t)+\langle\nabla f(x^t),x-x^t\rangle$. 步长类似[[#Exact Line Search]]: $\eta_t=\frac{2}{t+2}$
 
 对于non-convex:
+$$\begin{matrix}\text{minimize}&-\mathbf x^\top\mathbf{Qx}\\\text{subject to}&\|\mathbf x\|_2\leq1\end{matrix}$$
+有:
+$$\begin{aligned}\mathbf y^t&=\mathop{\arg\min}_{\mathbf x:\|\mathbf x\|_2\leq1}\langle\nabla f(\mathbf x^t),\mathbf x\rangle=-\frac{\nabla f(\mathbf x^t)}{\|\nabla f(\mathbf x^t)\|_2}=\frac{\mathbf{Qx}^t}{\|\mathbf{Qx}^t\|_2}\\\Rightarrow\mathbf x^{t+1}&=(1-\eta_t)\mathbf x^t+\eta_t\frac{\mathbf{Qx}^t}{\|\mathbf{Qx}^t\|_2}\end{aligned}$$
 
-%% TODO %%
+### Convergence
 
+> [!tip] Theorem
+> 假设$f$是convex的, 且是[[#L-smooth]]的, 假设有$\eta_t=\frac{2}{t+2}$, 那么有:
+> $$f(\mathbf x^t)-f(\mathbf x^*)\leq\frac{2Ld_{\mathcal C}^2}{t+2}$$
+> 其中$d_{\mathcal C}=\sup_{\mathbf x,\mathbf y\in\mathcal C}\|\mathbf x-\mathbf y\|_2$
+
+对于compact约束集合, 效率可以达到 $\varepsilon$-accuracy, 在$O(\frac1\varepsilon)$个迭代中
+
+> [!example]
+> 假设有集合$\mathcal C$是$\mu$-convex的, 假设$\forall\lambda\in[0,1]$, $\forall x,z\in\mathcal C$, 定义$\mathcal B(\mathbf a,r):=\{\mathbf y | \|\mathbf y-\mathbf a\|_2\leq r\}$, 那么有:
+> $$\mathcal B(\lambda\mathbf x+(1-\lambda)\mathbf z,\frac{\mu}{2}\lambda(1-\lambda)\|\mathbf x-\mathbf z\|_2^2)\in\mathcal C$$
+
+> [!tip] Theorem
+> 假设$f$是convex and L-smooth的, 假设$\mathcal C$是$\mu$-strongly convex的, 那么$0\leq c\leq\|\nabla f(\mathbf x)\|_2,\forall x\in\mathcal C$
 ## Projected Gradient Method
 
-%% TODO %%
+将一个在集合外的点映射到集合中
 
+> [!note] Definition
+> Euclidean projection(quadratic minimization):
+> $$\mathcal P_C(\mathbf x):=\mathop{\arg\min}_{\mathbf z\in C}\|\mathbf x-\mathbf z\|_2^2$$
+
+循环:
+$$\mathbf x^{t+1}=\mathcal P_C(\mathbf x^t-\eta_t\nabla f(\mathbf x^t))$$
+
+> [!tip] Theorem
+> 假设有集合$\mathcal C$是close且[[Ch5.Convex#Convex Set|convex]]的, 那么有:
+> $$(\mathbf x-\mathcal P_{\mathcal C}(\mathbf x))^\top(\mathbf z-\mathcal P_{\mathcal C}(\mathbf x))\leq0,\quad\forall\mathbf z\in\mathcal C$$
+
+![[Pasted image 20250506150835.png]]
+
+从上图可知, 有$-\nabla f(\mathbf x^t)^\top(\mathbf x^{t+1}-\mathbf x^t)\geq0$, 即$\mathbf x^{t+1}-\mathbf x^t$和最速下降的方向是正相关的
+
+## Strongly Convex
+
+> [!tip] Theorem
+> 假设$\mathbf x^*\in\text{int}(\mathcal C)$, 假设$f$是$\mu$-strongly convex且L-smooth的. 令$\eta_t=\frac{2}{\mu+L},\kappa=\frac{L}{\mu}$, 有
+> $$\|\mathbf x^t-\mathbf x^*\|_2\leq\left(\frac{\kappa-1}{\kappa+1}\right)^t\|\mathbf x_0-\mathbf x^*\|_2$$
+
+一些其他情况参见[[#Smooth problem]]

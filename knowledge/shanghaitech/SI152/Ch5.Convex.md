@@ -122,18 +122,18 @@ $$\forall \mathbf x,\mathbf y\in\text{dom}\mathbf f,0\leq\theta\leq1,\mathbf f(\
 
 # Convex Problem
 
-standard form: 
+[[Ch1.Introduction_of_Linear_Programming#Standard form|Standard form]]: 
 $$\begin{matrix}\text{minimize}&f_0(x)\\\text{subject to}&f_i(x)\leq0&i=1,\cdots,m\\&h_i(x)=0&i=1,\cdots,p\end{matrix}$$
-feasibility:
+[[Ch2.Geometry_of_Linear_Programming#Extreme points, vertices, and basic feasible solution|feasibility]]:
 - 如果一个点$x\in\text{dom}f$满足所有的constraints, 那么称这个点是feasible的. 否则是infeasible
 - 如果一个问题, 至少有一个点是feasible的, 那么称该问题为feasible的. 否则是infeasible
 
-optimal value:
+[[Ch2.Geometry_of_Linear_Programming#Optimality of extreme points|optimal]]:
 $$p^*=\inf\{f_0(x)|f_i(x)\leq0,i=1,\cdots,m,\quad h_i(x)=0,i=1,\cdots,p\}$$
 - 如果问题是infeasible的, 那么$p^*=\infty$
 - 如果问题是无边界的(unbounded below), 那么$p^*=-\infty$
 
-Stationary Point:
+### Stationary Point
 
 > [!info] Definition
 > 如果$\nabla f(\mathbf x)=0$, 那么称$\mathbf x$为stationary point
@@ -172,7 +172,7 @@ $$f(x)=\frac{p(x)}{q(x)}\Leftrightarrow\phi_t(x)=p(x)-tq(x)$$
 for $t\geq0$, $\phi_t(x)$ is convex in $x$
 $\frac{p(x)}{q(x)}\leq t$ if and only if $\phi_t(x)\leq0$
 
-### Some Other Solver
+## Some Other Solver
 
 ### LP(Linear Programming)
 

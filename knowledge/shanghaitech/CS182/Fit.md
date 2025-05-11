@@ -49,7 +49,7 @@ aliases:
   $$RSS(\beta)=(\vec y-\mathbf X\vec \beta)^T(\vec y-\mathbf X\vec \beta)=||\vec y-\mathbf X\vec \beta||_2^2$$
   $||\vec y-\mathbf B\vec \beta||$是范数, 关于$\beta$的函数, 是一个抛物面.
   > [!tip]
-  > 范数: $||a||_2=\sqrt{a^Ta}, \forall a\in\mathbb R^{p\times1}$
+  > 范数: $$||a||_2=\sqrt{a^Ta}, \forall a\in\mathbb R^{p\times1}$$
 
 要找到最小值点, 需要求导数:
 $$RSS(\beta)=(y-X\beta)^T(y-X\beta)=y^Ty-X^T\beta^Ty-y^TX\beta+\beta^TX^TX\beta$$

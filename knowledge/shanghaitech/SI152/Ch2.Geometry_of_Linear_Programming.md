@@ -111,8 +111,6 @@ $$
 
 ## Polyhedra in standard form
 
-^6795b2
-
 假设Polyhedron $P=\{\mathbf x\in\mathbb R^n|\mathbf {Ax}=\mathbf b,\mathbf x\geq0\}$, 其中$\mathbf A\in\mathbb R^{m\times n}$, $m$是行数, 表示equality约束的个数. 假设$\mathbf A$的$m$行都是linear independent的, 由于每一行都是$n$维的, 我们可以认为说$m\leq n$(为了保证线性独立). 那么我们可以说当$P$非空时, 可以丢弃$A$的线性相关行的冗余约束.
 
 对于任何的basic solution, 都有$n$个linear independent active constrains. 此外, 如果要满足约束$\mathbf {Ax}=\mathbf b$, 那么这提供了$m$个active constrains. 由于我们假设了$m\leq n$并且这$m$个约束都是linear independent的, 我们还需要$n-m$个与$\mathbf {Ax}=\mathbf b$提供的$m$个约束也独立的线性约束. 因此我们会选择$n-m$个变量$x_i$创建等式$x_i=0$, 即满足约束$\mathbf x\geq0$. 为了让$x_i=0$也是linear independent, 我们对$x_i$的选择是有特定方案的.
