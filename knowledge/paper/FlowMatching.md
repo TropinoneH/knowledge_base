@@ -9,7 +9,9 @@ tags:
 aliases:
   - Flow Matching for Generative Modeling
 ---
-[[2210.02747v2_FlowMatching.pdf]]
+
+> [!paper]-
+> ![[2210.02747v2_FlowMatching.pdf]]
 
 [Github Project](https://github.com/lebellig/flow-matching)
 # Flow Matching

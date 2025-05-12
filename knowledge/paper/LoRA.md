@@ -7,7 +7,9 @@ tags:
 aliases:
   - "LoRA: Low-Rank Adaptation of Large Language Models"
 ---
-[[2106.09685v2_LoRA.pdf]]
+
+> [!paper]-
+> ![[2106.09685v2_LoRA.pdf]]
 
 # Lora
 

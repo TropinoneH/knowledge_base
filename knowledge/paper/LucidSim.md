@@ -8,11 +8,10 @@ tags:
 aliases:
   - Learning Visual Parkour from Generated Images
 ---
-> [!paper]-
-> ![[2411.00083v1_LucidSim.pdf]]
-
 # Lucid Sim
 
+> [!paper]-
+> ![[2411.00083v1_LucidSim.pdf]]
 ## Introduce
 
 使用mujoco渲染深度图像和semantic masks, 给controlnet. 然后从已知场景几何图形和camera pose的变化中计算真实的dense optical flow, 用于生成continuous and consistency的frames

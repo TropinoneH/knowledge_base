@@ -9,6 +9,9 @@ aliases:
 ---
 # GraspNet-1B
 
+> [!paper]-
+> ![[1912.13470_GraspNet-1B.pdf]]
+
 问题:
 1. 抓取的表示方法不同
 2. 抓取数据少, 标注稀疏

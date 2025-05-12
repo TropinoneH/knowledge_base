@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/Hamster.md",
+                "file": "knowledge/paper/A-MEM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hamster"
+              "title": "A-MEM"
             }
           }
         ]
@@ -127,13 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/Hamster.md",
+                "file": "knowledge/paper/A-MEM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hamster"
+              "title": "Outline of A-MEM"
             }
           }
         ],
@@ -163,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/Hamster.md",
+                "file": "knowledge/paper/A-MEM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Hamster"
+              "title": "Backlinks for A-MEM"
             }
           }
         ],
@@ -189,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/Hamster.md",
+                "file": "knowledge/paper/A-MEM.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +217,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Hamster"
+              "title": "Graph of A-MEM"
             }
           }
         ]
@@ -240,14 +240,26 @@
   },
   "active": "a4dc7eb6fd72a368",
   "lastOpenFiles": [
-    "knowledge/paper/PDFS/Hamster.pdf",
-    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
-    "knowledge/paper/Hamster.md",
-    "knowledge/paper/LESR.md",
-    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+    "knowledge/paper/AnyGrasp.md",
+    "knowledge/paper/CoT.md",
+    "knowledge/paper/Diffusion.md",
+    "knowledge/paper/DiT.md",
+    "knowledge/paper/FlowMatching.md",
     "knowledge/paper/grape.md",
-    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
     "knowledge/paper/GraspNet-1B.md",
+    "knowledge/paper/Hamster.md",
+    "knowledge/paper/L2R.md",
+    "knowledge/paper/LaRe.md",
+    "knowledge/paper/Legion.md",
+    "knowledge/paper/LESR.md",
+    "knowledge/paper/LucidSim.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/paper/PDFS/Preserving and combining knowledge in robotic lifelong reinforcement learning.pdf",
+    "knowledge/paper/PDFS/Hamster.pdf",
+    "knowledge/paper/A-MEM.md",
+    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
+    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
     "assets/Pasted image 20250512210559.png",
     "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
@@ -255,8 +267,6 @@
     "pre/2025-04-29.md",
     "knowledge/shanghaitech/SI152/Ch5.Convex.md",
     "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
-    "knowledge/paper/AnyGrasp.md",
-    "knowledge/paper/LaRe.md",
     "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
     "knowledge/paper/PDFS/Planning with Goal-Conditioned Policies.pdf",
     "knowledge/paper/PDFS/Scaling Goal-based Exploration via Pruning Proto-goals.pdf",
@@ -269,17 +279,8 @@
     "knowledge/paper/OpenVLA.md",
     "pre/2025-04-17.md",
     "knowledge/paper/pi0.md",
-    "knowledge/paper/LucidSim.md",
-    "knowledge/paper/L2R.md",
-    "knowledge/paper/Legion.md",
-    "knowledge/paper/CoT.md",
-    "knowledge/paper/roco.md",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "knowledge/paper/survey-cognition-engineer.md",
-    "knowledge/paper/MAYE.md",
     "assets/Pasted image 20250506162641.png",
     "assets/Pasted image 20250506150835.png",
-    "knowledge/paper/PDFS/2403.12014v2_EnvGen.pdf",
     "pre/img.png",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",

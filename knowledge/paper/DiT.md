@@ -9,7 +9,9 @@ tags:
 aliases:
   - Scalable Diffusion Models with Transformers
 ---
-[[2212.09748v2_DiT.pdf]]
+
+> [!paper]-
+> [[2212.09748v2_DiT.pdf]]
 
 [github project](https://github.com/facebookresearch/DiT)
 # DiT

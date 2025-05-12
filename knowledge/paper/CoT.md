@@ -14,7 +14,8 @@ aliases:
 
 # Auto CoT
 
-[[2210.03493v1_AutoCoT.pdf]]
+> [!paper]-
+> ![[2210.03493v1_AutoCoT.pdf]]
 
 ## Introduce
 
@@ -42,7 +43,8 @@ zero-shot CoT: 使用简单的提示, 如: `Let's think step by step`, 自动进
 
 # ToT
 
-[[2305.10601v2_ToT.pdf]]
+> [!paper]-
+> ![[2305.10601v2_ToT.pdf]]
 
 ## Introduce
 
@@ -68,7 +70,8 @@ zero-shot CoT: 使用简单的提示, 如: `Let's think step by step`, 自动进
 
 # GoT
 
-[[2312.15291v2_GoT.pdf]]
+> [!paper]-
+> [[2312.15291v2_GoT.pdf]]
 
 ## Introduce
 
@@ -86,7 +89,8 @@ Reverse Exclusion with Graph-of-Thought
 
 # CoD
 
-[[2502.18600v1_ChainOfDraft.pdf]]
+> [!paper]-
+> ![[2502.18600v1_ChainOfDraft.pdf]]
 
 ## Introduce
 

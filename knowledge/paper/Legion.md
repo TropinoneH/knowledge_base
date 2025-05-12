@@ -12,6 +12,8 @@ aliases:
 ---
 # Preserving and combining knowledge in robotic lifelong reinforcement learning
 
+> [!paper]-
+> ![[Preserving and combining knowledge in robotic lifelong reinforcement learning.pdf]]
 ## Introduce
 
 机器人终身学习

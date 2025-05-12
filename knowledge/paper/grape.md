@@ -12,6 +12,8 @@ aliases:
 ---
 # GRAPE
 
+> [!paper]-
+> ![[2411.19309v2_GRAPE.pdf]]
 ## Introduce
 
 解决问题:

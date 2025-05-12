@@ -7,9 +7,10 @@ tags:
 aliases:
   - "A-MEM: Agentic Memory for LLM agent"
 ---
-[[2502.12110v3_A-MEM.pdf]]
 # A-MEM
 
+> [!paper]-
+> ![[2502.12110v3_A-MEM.pdf]]
 ## Introduce
 
 原始的:

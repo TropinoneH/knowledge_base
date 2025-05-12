@@ -12,6 +12,9 @@ aliases:
 published on ICML 2024
 
 # LESR
+
+> [!paper]-
+> ![[2407.13237v1_LESR.pdf]]
 ## Introduce
 
 问题: source state repr通常包含general的环境信息, 但是缺少关于当前任务的特定细节信息, 这些信息可能对value network的训练起到重要作用

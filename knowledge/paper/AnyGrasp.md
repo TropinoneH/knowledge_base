@@ -8,6 +8,9 @@ aliases:
   - "AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains"
 ---
 # Any Grasp
+
+> [!paper]-
+> ![[2212.08333_AnyGrasp.pdf]]
 ## Introduce
 
 弥合机器人与人类对于抓取的感知的差距, 结合物体center of gravity(COG)重心感知
