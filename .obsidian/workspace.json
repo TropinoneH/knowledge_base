@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d37c3063bfff5ad",
+        "id": "2cce342bbf35ee44",
         "type": "tabs",
         "children": [
           {
-            "id": "964e12226a669b99",
+            "id": "a4dc7eb6fd72a368",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/CS182/Fit.md",
+                "file": "knowledge/paper/Hamster.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,25 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fit"
+              "title": "Hamster"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ca6bcbc7aeab32c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69d70a48901870f0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/Hamster.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Hamster"
             }
           }
         ]
@@ -73,19 +91,8 @@
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "8068b92d2fe623a8",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -120,13 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS182/Fit.md",
+                "file": "knowledge/paper/Hamster.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fit"
+              "title": "Outline of Hamster"
             }
           }
         ],
@@ -156,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/CS182/Fit.md",
+                "file": "knowledge/paper/Hamster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +173,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Fit"
+              "title": "Backlinks for Hamster"
             }
           }
         ],
@@ -182,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS182/Fit.md",
+                "file": "knowledge/paper/Hamster.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,7 +217,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Fit"
+              "title": "Graph of Hamster"
             }
           }
         ]
@@ -231,29 +238,31 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "964e12226a669b99",
+  "active": "a4dc7eb6fd72a368",
   "lastOpenFiles": [
+    "knowledge/paper/PDFS/Hamster.pdf",
+    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
+    "knowledge/paper/Hamster.md",
+    "knowledge/paper/LESR.md",
+    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
+    "knowledge/paper/grape.md",
+    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
+    "knowledge/paper/GraspNet-1B.md",
+    "assets/Pasted image 20250512210559.png",
+    "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
     "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "knowledge/shanghaitech/CS182/Fit.md",
     "pre/2025-04-29.md",
     "knowledge/shanghaitech/SI152/Ch5.Convex.md",
-    "knowledge/paper/LESR.md",
-    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
-    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
-    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
     "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
-    "knowledge/paper/grape.md",
     "knowledge/paper/AnyGrasp.md",
     "knowledge/paper/LaRe.md",
     "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
     "knowledge/paper/PDFS/Planning with Goal-Conditioned Policies.pdf",
     "knowledge/paper/PDFS/Scaling Goal-based Exploration via Pruning Proto-goals.pdf",
     "knowledge/paper/PDFS/Learning Goal-Conditioned Representations for Language Reward Models.pdf",
-    "knowledge/paper/GraspNet-1B.md",
     "assets/Pasted image 20250509180051.png",
     "assets/Pasted image 20250509180022.png",
-    "knowledge/paper/PDFS/Hamster.pdf",
     "knowledge/paper/RDT-1B.md",
     "knowledge/paper/RT-2.md",
     "knowledge/paper/RT-1.md",
@@ -268,8 +277,6 @@
     "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-cognition-engineer.md",
     "knowledge/paper/MAYE.md",
-    "knowledge/shanghaitech/SI152/Ch3.Simplex.md",
-    "knowledge/shanghaitech/SI152/Ch8.ProximalGradient.md",
     "assets/Pasted image 20250506162641.png",
     "assets/Pasted image 20250506150835.png",
     "knowledge/paper/PDFS/2403.12014v2_EnvGen.pdf",
@@ -278,7 +285,6 @@
     "assets/image-20241122114925922.png",
     "assets/image-20241127104301286.png",
     "assets/image-20241127111706878.png",
-    "assets/image-20241122121529933.png",
-    "assets/image-20241127112752051.png"
+    "assets/image-20241122121529933.png"
   ]
 }
