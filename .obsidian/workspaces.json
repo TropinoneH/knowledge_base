@@ -398,60 +398,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "854332692c702abf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/grape.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "grape"
-                }
-              },
-              {
-                "id": "a4dc7eb6fd72a368",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/LESR.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "LESR"
-                }
-              },
-              {
                 "id": "cfc917e6679bc69d",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/paper/GraspNet-1B.md",
+                    "file": "knowledge/paper/Hamster.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -466,54 +418,28 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "GraspNet-1B"
+                  "title": "Hamster"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "ca6bcbc7aeab32c9",
             "type": "tabs",
             "children": [
               {
-                "id": "b1f3d5620cd96d91",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2411.19309v2_GRAPE"
-                }
-              },
-              {
-                "id": "69d70a48901870f0",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "knowledge/paper/PDFS/2407.13237v1_LESR.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2407.13237v1_LESR"
-                }
-              },
-              {
                 "id": "c69a340e69320a5b",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf"
+                    "file": "knowledge/paper/PDFS/Hamster.pdf"
                   },
                   "icon": "lucide-file-text",
-                  "title": "1912.13470_GraspNet-1B"
+                  "title": "Hamster"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -591,13 +517,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/paper/LESR.md",
+                    "file": "knowledge/paper/Hamster.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of LESR"
+                  "title": "Outline of Hamster"
                 }
               }
             ],
@@ -627,7 +553,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/paper/LESR.md",
+                    "file": "knowledge/paper/Hamster.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -637,7 +563,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for LESR"
+                  "title": "Backlinks for Hamster"
                 }
               }
             ],
@@ -653,7 +579,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/paper/LESR.md",
+                    "file": "knowledge/paper/Hamster.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -681,7 +607,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of LESR"
+                  "title": "Graph of Hamster"
                 }
               }
             ]
@@ -702,8 +628,8 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "a4dc7eb6fd72a368",
-      "mtime": "2025-05-11T23:11:12+08:00"
+      "active": "cfc917e6679bc69d",
+      "mtime": "2025-05-13T05:15:59+08:00"
     },
     "note": {
       "main": {
