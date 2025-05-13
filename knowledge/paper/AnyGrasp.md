@@ -9,6 +9,8 @@ aliases:
 ---
 # Any Grasp
 
+T-RO (IEEE Transactions on Robotics)
+
 > [!paper]-
 > ![[2212.08333_AnyGrasp.pdf]]
 ## Introduce
@@ -102,7 +104,7 @@ $$s_{\text{corr}}(\mathcal G_1,\mathcal G_2)=\frac{\mathbf f_1\cdot\mathbf f_2}{
 
 训练过程中, 将其作为[[#Loss Function]]
 
-inference时, 将计算得到的features vectors储存到temporal buffer, score matrix是通过当前的而features和buffer中的features计算得到的. 因此如果想track某$n$个确定向量, 那么把$n$个向量的feature vectors和当前的seed的feature计算分素, 找到top-$n$ score的pose
+inference时, 将计算得到的features vectors储存到temporal buffer, score matrix是通过当前的features和buffer中的features计算得到的. 因此如果想track某$n$个确定向量, 那么把$n$个向量的feature vectors和当前的seed的feature计算分数, 找到top-$n$ score的pose
 
 #### Loss Function
 

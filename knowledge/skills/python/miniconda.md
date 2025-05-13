@@ -29,6 +29,19 @@ tags:
 conda activate
 ```
 
+### 使用fish shell的status为4(不为0)
+
+有一个为了powershell的commit的修改, 导致会尝试删除一个不存在的environment variable([issue](https://github.com/conda/conda/issues/14659), [fix](https://github.com/conda/conda/pull/14660/files))
+
+修改文件 `<path/to/miniconda>/lib/python3.13/site-packages/conda/activate.py`, 在1066行左右有一个变量叫做`unset_var_tmpl`, 原来是:
+```python
+    unset_var_tmpl = "set -e %s"
+```
+修改成
+```python
+    unset_var_tmpl = "set -e %s || true"
+```
+
 ## 换源
 
 ```shell
