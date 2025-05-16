@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2cce342bbf35ee44",
+        "id": "2d37c3063bfff5ad",
         "type": "tabs",
         "children": [
           {
-            "id": "cfc917e6679bc69d",
+            "id": "964e12226a669b99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/Hamster.md",
+                "file": "knowledge/skills/rust/gtk-rs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,25 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hamster"
-            }
-          }
-        ]
-      },
-      {
-        "id": "ca6bcbc7aeab32c9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c69a340e69320a5b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/Hamster.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Hamster"
+              "title": "gtk-rs"
             }
           }
         ]
@@ -81,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "saddle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,6 +72,16 @@
               },
               "icon": "lucide-search",
               "title": "Search"
+            }
+          },
+          {
+            "id": "8068b92d2fe623a8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -127,13 +119,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/PDFS/Hamster.pdf",
+                "file": "knowledge/skills/rust/gtk-rs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hamster"
+              "title": "Outline of gtk-rs"
             }
           }
         ],
@@ -163,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/PDFS/Hamster.pdf",
+                "file": "knowledge/skills/rust/gtk-rs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +165,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Hamster"
+              "title": "Backlinks for gtk-rs"
             }
           }
         ],
@@ -189,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/PDFS/Hamster.pdf",
+                "file": "knowledge/skills/rust/gtk-rs.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +209,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Hamster"
+              "title": "Graph of gtk-rs"
             }
           }
         ]
@@ -238,8 +230,11 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c69a340e69320a5b",
+  "active": "964e12226a669b99",
   "lastOpenFiles": [
+    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "knowledge/paper/grape.md",
+    "knowledge/paper/PDFS/Hamster.pdf",
     "knowledge/paper/Hamster.md",
     "pre/2025-05-13.md",
     "pre/2025-04-29.md",
@@ -248,9 +243,7 @@
     "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
     "knowledge/paper/LESR.md",
     "knowledge/paper/AnyGrasp.md",
-    "knowledge/paper/grape.md",
     "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
-    "knowledge/paper/PDFS/Hamster.pdf",
     "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
     "knowledge/paper/GraspNet-1B.md",
     "pre/2025-04-17.md",
@@ -271,14 +264,12 @@
     "knowledge/shanghaitech/CS182/Fit.md",
     "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
     "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
     "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
     "assets/Pasted image 20250509180051.png",
     "assets/Pasted image 20250509180022.png",
     "knowledge/paper/RDT-1B.md",
     "knowledge/paper/RT-2.md",
     "knowledge/paper/RT-1.md",
-    "knowledge/paper/OpenVLA.md",
     "assets/Pasted image 20250506162641.png",
     "assets/Pasted image 20250506150835.png",
     "pre/img.png",

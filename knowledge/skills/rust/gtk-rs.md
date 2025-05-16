@@ -208,7 +208,7 @@ button.connect_clicked(|_| num += 1)
 ```
 if we use keyword `move`, still not allowed because the `num` will be drop after closure, but the closure will be called multiple time:
 ```rust
-button.connect_clicker(move |_| num += 1)
+button.connect_clicked(move |_| num += 1)
 ```
 so we need to use [[Variable#Reference|reference]].
 
