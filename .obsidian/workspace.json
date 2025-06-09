@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d37c3063bfff5ad",
+        "id": "2cce342bbf35ee44",
         "type": "tabs",
         "children": [
           {
-            "id": "964e12226a669b99",
+            "id": "fc3dd1477419398b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/skills/rust/gtk-rs.md",
+                "file": "knowledge/paper/OpenVLA-oft.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,49 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "gtk-rs"
+              "title": "OpenVLA-oft"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ca6bcbc7aeab32c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07447c19af1e0bb1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2502.19645v2_OpenVLA-oft"
+            }
+          },
+          {
+            "id": "d8a522bf40cc1138",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2502.05450v2_ConRFT"
+            }
+          },
+          {
+            "id": "509d6bb1637f508e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2505.17016v1_RIPT-VLA"
             }
           }
         ]
@@ -63,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "saddle",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,16 +114,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "8068b92d2fe623a8",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
             }
           }
         ]
@@ -119,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/skills/rust/gtk-rs.md",
+                "file": "knowledge/paper/OpenVLA-oft.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of gtk-rs"
+              "title": "Outline of OpenVLA-oft"
             }
           }
         ],
@@ -155,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/skills/rust/gtk-rs.md",
+                "file": "knowledge/paper/OpenVLA-oft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +197,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for gtk-rs"
+              "title": "Backlinks for OpenVLA-oft"
             }
           }
         ],
@@ -181,7 +213,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/skills/rust/gtk-rs.md",
+                "file": "knowledge/paper/OpenVLA-oft.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,7 +241,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of gtk-rs"
+              "title": "Graph of OpenVLA-oft"
             }
           }
         ]
@@ -230,53 +262,53 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "964e12226a669b99",
+  "active": "fc3dd1477419398b",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+    "knowledge/paper/VideoTree.md",
+    "pre/Pre.md",
+    "pre/2025-05-29.pdf",
+    "pre/2025-05-21.pdf",
+    "pre/2025-03-18.md",
     "knowledge/paper/grape.md",
-    "knowledge/paper/PDFS/Hamster.pdf",
-    "knowledge/paper/Hamster.md",
-    "pre/2025-05-13.md",
-    "pre/2025-04-29.md",
-    "pre/2025-05-13.pdf",
-    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
-    "knowledge/paper/PDFS/2212.08333_AnyGrasp.pdf",
-    "knowledge/paper/LESR.md",
-    "knowledge/paper/AnyGrasp.md",
-    "knowledge/paper/PDFS/1912.13470_GraspNet-1B.pdf",
-    "knowledge/paper/PDFS/2411.19309v2_GRAPE.pdf",
-    "knowledge/paper/GraspNet-1B.md",
-    "pre/2025-04-17.md",
-    "knowledge/paper/PDFS/2407.21762v1_ReplanVLM.pdf",
-    "knowledge/paper/PDFS/2309.11495v2_Chain-of-Verification.pdf",
-    "knowledge/paper/L2R.md",
-    "knowledge/paper/A-MEM.md",
-    "knowledge/paper/CoT.md",
-    "knowledge/paper/Diffusion.md",
-    "knowledge/paper/DiT.md",
-    "knowledge/paper/FlowMatching.md",
-    "knowledge/paper/LaRe.md",
-    "knowledge/paper/Legion.md",
     "knowledge/paper/LucidSim.md",
-    "knowledge/paper/LoRA.md",
-    "knowledge/paper/PDFS/Preserving and combining knowledge in robotic lifelong reinforcement learning.pdf",
-    "assets/Pasted image 20250512210559.png",
-    "knowledge/shanghaitech/CS182/Fit.md",
-    "knowledge/shanghaitech/SI152/Ch1.Introduction_of_Linear_Programming.md",
-    "knowledge/shanghaitech/SI152/Ch4.Duality_Theorem.md",
-    "knowledge/paper/PDFS/f-Policy Gradients- A General Framework for Goal Conditioned RL using f-Divergences.pdf",
-    "assets/Pasted image 20250509180051.png",
-    "assets/Pasted image 20250509180022.png",
-    "knowledge/paper/RDT-1B.md",
+    "knowledge/skills/system/linux/Commands.md",
+    "knowledge/skills/system/linux/VIM.md",
+    "knowledge/paper/LESR.md",
+    "knowledge/paper/LLoVi.md",
+    "knowledge/paper/Transformer.md",
+    "knowledge/paper/survey-cognition-engineer.md",
+    "knowledge/paper/Learning Goal-Conditioned Repr for Language Reward Models.md",
+    "knowledge/shanghaitech/CS181/09-RL.md",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
+    "knowledge/paper/f-policy.md",
+    "knowledge/paper/OpenVLA-oft.md",
+    "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf",
+    "assets/Pasted image 20250609170348.png",
+    "knowledge/paper/What Makes Pre-trained Visual Representation Successful for Robust Manipulation.md",
+    "knowledge/paper/ToRL.md",
+    "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf",
+    "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf",
+    "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/RT-2.md",
     "knowledge/paper/RT-1.md",
+    "knowledge/paper/roco.md",
+    "knowledge/paper/RDT-1B.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/PDFS/1911.08453_LEAP.pdf",
+    "knowledge/paper/PDFS/2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation.pdf",
+    "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
+    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
+    "knowledge/skills/system/windows",
+    "assets/Pasted image 20250520204421.png",
+    "assets/Pasted image 20250512210559.png",
+    "assets/Pasted image 20250509180051.png",
+    "assets/Pasted image 20250509180022.png",
     "assets/Pasted image 20250506162641.png",
     "assets/Pasted image 20250506150835.png",
     "pre/img.png",
     "Untitled.canvas",
     "assets/image-20241122114925922.png",
-    "assets/image-20241127104301286.png",
-    "assets/image-20241127111706878.png",
-    "assets/image-20241122121529933.png"
+    "assets/image-20241127104301286.png"
   ]
 }

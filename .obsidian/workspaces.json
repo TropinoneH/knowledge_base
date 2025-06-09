@@ -398,12 +398,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "cfc917e6679bc69d",
+                "id": "af3d4ef6b2090c0f",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/paper/Hamster.md",
+                    "file": "knowledge/paper/Learning Goal-Conditioned Repr for Language Reward Models.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -418,40 +418,162 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Hamster"
+                  "title": "Learning Goal-Conditioned Repr for Language Reward Models"
+                }
+              },
+              {
+                "id": "6bfbc5207e089f2a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/LEAP.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "LEAP"
+                }
+              },
+              {
+                "id": "85a054a299bb32ff",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/What Makes Pre-trained Visual Representation Successful for Robust Manipulation.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "What Makes Pre-trained Visual Representation Successful for Robust Manipulation"
+                }
+              },
+              {
+                "id": "36960297e68d2bf0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/f-policy.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "f-policy"
+                }
+              },
+              {
+                "id": "fc3dd1477419398b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/A-MEM.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "A-MEM"
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           },
           {
             "id": "ca6bcbc7aeab32c9",
             "type": "tabs",
             "children": [
               {
-                "id": "c69a340e69320a5b",
+                "id": "3176165305475f09",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "pdf",
                   "state": {
-                    "file": "knowledge/paper/grape.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
+                    "file": "knowledge/paper/PDFS/2407.13887v2_Learning Goal-Conditioned Representations for Language Reward Models.pdf"
                   },
-                  "icon": "lucide-file",
-                  "title": "grape"
+                  "icon": "lucide-file-text",
+                  "title": "2407.13887v2_Learning Goal-Conditioned Representations for Language Reward Models"
+                }
+              },
+              {
+                "id": "3f2205a3a6393214",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2310.06794_f-policy-gradient"
+                }
+              },
+              {
+                "id": "78591a0af19af599",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation"
+                }
+              },
+              {
+                "id": "07447c19af1e0bb1",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/1911.08453_LEAP.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "1911.08453_LEAP"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -529,13 +651,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/paper/grape.md",
+                    "file": "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of grape"
+                  "title": "Outline of 2310.06794_f-policy-gradient"
                 }
               }
             ],
@@ -565,7 +687,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/paper/grape.md",
+                    "file": "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -575,7 +697,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for grape"
+                  "title": "Backlinks for 2310.06794_f-policy-gradient"
                 }
               }
             ],
@@ -591,7 +713,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/paper/grape.md",
+                    "file": "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -619,7 +741,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of grape"
+                  "title": "Graph of 2310.06794_f-policy-gradient"
                 }
               }
             ]
@@ -640,8 +762,8 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "c69a340e69320a5b",
-      "mtime": "2025-05-17T02:12:20+08:00"
+      "active": "3f2205a3a6393214",
+      "mtime": "2025-06-06T04:36:33+08:00"
     },
     "note": {
       "main": {
@@ -658,7 +780,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+                    "file": "knowledge/skills/latex.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -673,7 +795,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Ch5.Convex"
+                  "title": "latex"
                 }
               }
             ]
@@ -764,13 +886,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+                    "file": "knowledge/skills/latex.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of Ch5.Convex"
+                  "title": "Outline of latex"
                 }
               }
             ],
@@ -800,7 +922,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+                    "file": "knowledge/skills/latex.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -810,7 +932,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Ch5.Convex"
+                  "title": "Backlinks for latex"
                 }
               }
             ],
@@ -826,7 +948,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/shanghaitech/SI152/Ch5.Convex.md",
+                    "file": "knowledge/skills/latex.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -854,7 +976,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Ch5.Convex"
+                  "title": "Graph of latex"
                 }
               }
             ]
@@ -876,8 +998,8 @@
         }
       },
       "active": "964e12226a669b99",
-      "mtime": "2025-05-07T18:00:58+08:00"
+      "mtime": "2025-06-09T16:22:08+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
