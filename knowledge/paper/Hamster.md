@@ -22,13 +22,11 @@ robot数据是expensive的.
 小模型效果不错
 
 结合 大模型VLM的泛化优势 和 小模型的效率,局部robustness
-
 ## Hamster
 
 分成两个阶段:
 1. 在大规模, off-domain的数据集上finetune VLM, 生成2D path guidance
 2. 基于2D path生成action
-
 ### VLM for Producing 2D Path Trained from Off-Domain Data
 
 high-level的VLM根据单目RGB图片$\text{img}$和文字instruction $z$预测粗略的2D path $\hat p\sim\text{VLM}(\text{img},z)$, 这个路径描述机器人的end-effector(eef)在这个RGB image上的移动轨迹, 同时包含gripper的开合状态: $p=[(x_t,y_t,\text{gripper\_open}_t)]_t$. 其中坐标均为归一化之后的值, $\text{gripper\_open}$是二进制的值, 表示gripper的open或close
@@ -59,7 +57,7 @@ high-level的VLM根据单目RGB图片$\text{img}$和文字instruction $z$预测�
 
 #### Path Guided Low-Level Policy Learning
 
-Hamster的low-level policy $\pi_\theta(a|s,o,z,p)$
+Hamster的low-level [[08-MDP#Policy Iteration|policy]] $\pi_\theta(a|s,o,z,p)$
 
 policy可以在没有path的基础上学习, 但是path能够让low-level policy放弃long-horizon和语义推理, 只关注local and geometric predictions以生成robot actions
 

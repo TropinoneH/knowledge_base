@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "OpenVLA-oft"
             }
+          },
+          {
+            "id": "2f010481b092528c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pre/Pre.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Pre"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ca6bcbc7aeab32c9",
@@ -73,7 +98,8 @@
               "title": "2505.17016v1_RIPT-VLA"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -151,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/OpenVLA-oft.md",
+                "file": "pre/Pre.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OpenVLA-oft"
+              "title": "Outline of Pre"
             }
           }
         ],
@@ -187,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/OpenVLA-oft.md",
+                "file": "pre/Pre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +223,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for OpenVLA-oft"
+              "title": "Backlinks for Pre"
             }
           }
         ],
@@ -213,7 +239,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/OpenVLA-oft.md",
+                "file": "pre/Pre.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,7 +267,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of OpenVLA-oft"
+              "title": "Graph of Pre"
             }
           }
         ]
@@ -262,12 +288,18 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "fc3dd1477419398b",
+  "active": "2f010481b092528c",
   "lastOpenFiles": [
-    "knowledge/paper/VideoTree.md",
-    "pre/Pre.md",
     "pre/2025-05-29.pdf",
     "pre/2025-05-21.pdf",
+    "pre/Pre.md",
+    "pre/2025-05-13.pdf",
+    "knowledge/paper/OpenVLA-oft.md",
+    "knowledge/shanghaitech/CS182/Fit.md",
+    "knowledge/skills/latex.md",
+    "knowledge/paper/Hamster.md",
+    "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf",
+    "knowledge/paper/VideoTree.md",
     "pre/2025-03-18.md",
     "knowledge/paper/grape.md",
     "knowledge/paper/LucidSim.md",
@@ -281,8 +313,6 @@
     "knowledge/shanghaitech/CS181/09-RL.md",
     "knowledge/shanghaitech/CS181/08-MDP.md",
     "knowledge/paper/f-policy.md",
-    "knowledge/paper/OpenVLA-oft.md",
-    "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf",
     "assets/Pasted image 20250609170348.png",
     "knowledge/paper/What Makes Pre-trained Visual Representation Successful for Robust Manipulation.md",
     "knowledge/paper/ToRL.md",
@@ -292,14 +322,10 @@
     "knowledge/paper/RT-2.md",
     "knowledge/paper/RT-1.md",
     "knowledge/paper/roco.md",
-    "knowledge/paper/RDT-1B.md",
-    "knowledge/paper/pi0.md",
-    "knowledge/paper/OpenVLA.md",
     "knowledge/paper/PDFS/1911.08453_LEAP.pdf",
     "knowledge/paper/PDFS/2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation.pdf",
     "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
     "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
-    "knowledge/skills/system/windows",
     "assets/Pasted image 20250520204421.png",
     "assets/Pasted image 20250512210559.png",
     "assets/Pasted image 20250509180051.png",
