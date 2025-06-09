@@ -4,6 +4,16 @@ tags:
   - tutorial
   - linux
 ---
+# Text Editor
+
+## nano
+
+## Vim
+
+[[VIM]]
+
+## NVIM
+
 # Show Capacity
 ## show disk capacity
 
@@ -171,3 +181,48 @@ pacman -Qs <pkg_name>
 same usage as [[#pacman]].
 
 download pkgs from `aur.archlinux.org`, which is not such official.
+
+# ntfsfix
+
+修复一些基本的ntfs一致性问题, 不是chkdsk(没法修复复杂的问题, 如索引丢失等)
+
+修复分区:
+```shell
+sudo ntfsfix /dev/nvme0n1p<*>
+```
+
+Clear the volume dirty flag if the volume can be fixed and mounted. If the option is not present or the volume cannot be fixed, the dirty volume flag is set to request a volume checking at next mount.
+```shell
+sudo ntfsfix -d /dev/nvme0n1p<*>
+```
+
+# mount
+
+挂载分区.
+
+直接挂载到已有位置(文件夹):
+```shell
+sudo mount /dev/<disk&part> </path/to/mount>
+```
+
+挂载并自动创建文件夹(如果没有):
+```shell
+sudo mount --mkdir /dev/<disk&part> </path/to/mount>
+```
+
+使用option:
+```shell
+sudo mount --options key1=val1,key2=val2 /dev/<disk&part> </path/to/mount>
+```
+
+常用options - btrfs的分卷:
+```shell
+sudo mount -o subvol=/@,defaults,user /dev/<disk&part> </path/to/mount>
+```
+
+指定partition类型:
+```shell
+sudo -t <type> mount /dev/<disk&part> </path/to/mount>
+```
+有时候不同类型需要额外安装一些程序, 比如说ntfs需要[[#pacman]]安装`ntfs-3g`
+

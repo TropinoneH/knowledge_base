@@ -178,6 +178,13 @@ gtk4-update-icon-cache <path/to/icons: /usr/share/icons>
 # btrfs
 Btrfs是一种文件系统。不同于ext4和ntfs，这种操作系统最大的好处就是可以很方便的备份
 
+## 分卷挂载
+
+使用[[Commands#mount|mount]]命令, 使用options:
+```shell
+sudo mount -o subvol=/<vol_name> /dev/nvme0n<*>p<*> </path/to/mount>
+```
+
 ## 创建备份
 
 使用命令
@@ -238,3 +245,14 @@ sudo usermod -d /home/<new_name> -m <new_name>
 ```
 
 注意, 可能有很多地方都会用到这个用户名, 比如说`ln`的软链接, miniconda的shell.fish等等
+
+# 修改hostname
+
+尝试直接使用`hostnamectl`:
+```shell
+hostnamectl <new-hostname>
+```
+
+如果没有这个命令, 可以编辑`/etc/hostname`文件, 里面写的就是hostname.
+
+然后, 查看`/etc/hosts`文件, 可能也需要更改.
