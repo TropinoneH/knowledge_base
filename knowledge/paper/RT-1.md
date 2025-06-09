@@ -6,9 +6,12 @@ tags:
   - RL
 aliases:
   - "RT-1: Robotics Transformer for Real-world Control at Scale"
+publish: RSS 2023
 ---
-[[RT-1.pdf]]
 # RT-1
+
+> [!paper]-
+> ![[RT-1.pdf]]
 
 希望能够找到一个泛化能力强, 能吸收大量知识的模型架构.
 

@@ -8,6 +8,7 @@ tags:
   - DL
 aliases:
   - Flow Matching for Generative Modeling
+publish: NeurIPS 2024
 ---
 
 > [!paper]-

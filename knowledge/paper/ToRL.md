@@ -7,6 +7,7 @@ tags:
   - DL
 aliases:
   - "ToRL: Scaling Tool-integrated RL"
+publish: arxiv preprint
 ---
 # ToRL
 

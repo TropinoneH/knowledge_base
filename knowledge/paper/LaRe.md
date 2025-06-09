@@ -7,6 +7,7 @@ tags:
   - paper
 aliases:
   - "Latent Reward: LLM-Empowered Credit Assignment in Episodic Reinforcement Learning"
+publish: AAAI 2025
 ---
 # Latent Reward: LLM-Empowered Credit Assignment in Episodic Reinforcement Learning
 

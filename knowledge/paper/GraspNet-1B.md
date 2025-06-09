@@ -6,6 +6,7 @@ tags:
   - EmbodiedAI
 aliases:
   - "GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping"
+publish: CVPR 2020
 ---
 # GraspNet-1B
 

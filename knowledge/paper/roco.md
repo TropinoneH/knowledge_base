@@ -6,9 +6,12 @@ tags:
   - DL
 aliases:
   - RoCo Dialectic Multi-Robot Collaboration with Lar
+publish: ICRA 2024
 ---
-[[RoCo Dialectic Multi-Robot Collaboration with Lar.pdf]]
 # RoCo
+
+> [!paper]-
+> ![[RoCo Dialectic Multi-Robot Collaboration with Lar.pdf]]
 
 使用LLM进行高层通信和低层路径规划, 提供环境反馈. 引入了RoCoBench, 多机器人写作的基准测试.
 

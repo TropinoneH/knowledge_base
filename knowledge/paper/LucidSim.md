@@ -7,6 +7,7 @@ tags:
   - DL
 aliases:
   - Learning Visual Parkour from Generated Images
+publish: CoRL 2024
 ---
 # Lucid Sim
 

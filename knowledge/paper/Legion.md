@@ -9,6 +9,7 @@ tags:
   - DL
 aliases:
   - Preserving and combining knowledge in robotic lifelong reinforcement learning
+publish: Nature Machine Intelligence
 ---
 # Preserving and combining knowledge in robotic lifelong reinforcement learning
 

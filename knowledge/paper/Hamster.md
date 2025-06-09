@@ -9,10 +9,9 @@ tags:
   - algorithm
 aliases:
   - "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation"
+publish: ICLR 2025
 ---
 # Hamster
-
-publish on: ICLR 2025
 
 > [!paper]-
 > ![[Hamster.pdf]]

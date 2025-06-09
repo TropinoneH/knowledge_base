@@ -6,9 +6,12 @@ tags:
   - DL
 aliases:
   - "RDT-1B: A Diffusion Foundation Model For Bimanual Manipulation"
+publish: ICRL 2025
 ---
-[[RDT-1B：A DIFFUSION FOUNDATION MODEL FOR BIMANUAL MANIPULATION.pdf]]
 # RDT-1B
+
+> [!paper]-
+> ![[RDT-1B：A DIFFUSION FOUNDATION MODEL FOR BIMANUAL MANIPULATION.pdf]]
 
 针对双手的操作, 提出Robotics [[Diffusion]] [[Transformer]] model.
 

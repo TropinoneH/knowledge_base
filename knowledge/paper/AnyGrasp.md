@@ -4,12 +4,12 @@ tags:
   - algorithm
   - DL
   - EmbodiedAI
+  - Vision
 aliases:
   - "AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains"
+publish: T-RO
 ---
 # Any Grasp
-
-T-RO (IEEE Transactions on Robotics)
 
 > [!paper]-
 > ![[2212.08333_AnyGrasp.pdf]]

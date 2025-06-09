@@ -7,6 +7,7 @@ tags:
   - DL
 aliases:
   - Language to Reward for Robotic Skill Synthesis
+publish: CoRL 2023
 ---
 # Language to Reward for Robotic Skill Synthesis
 

@@ -6,6 +6,7 @@ tags:
   - DL
 aliases:
   - "A-MEM: Agentic Memory for LLM agent"
+publish: arxiv preprint
 ---
 # A-MEM
 

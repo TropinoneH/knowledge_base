@@ -8,10 +8,12 @@ tags:
   - DL
 aliases:
   - "pi0: A Vision-Language-Action Flow Model for General Robot Control"
+publish: Physical Intelligence
 ---
-[[pi0.pdf]]
 # $\pi0$
 
+> [!paper]-
+> ![[pi0.pdf]]
 ## Introduce
 
 在高度多样化的数据集上进行pretrain, 然后在根据需要的任务进行fine-tune(align), 能有更好的效果.

@@ -8,6 +8,7 @@ tags:
   - DL
 aliases:
   - Scalable Diffusion Models with Transformers
+publish: ICCV 2023
 ---
 
 > [!paper]-

@@ -9,6 +9,7 @@ tags:
   - DL
 aliases:
   - "GRAPE: Generalizing Robot Policy via Preference Alignment"
+publish: ICRA 2025
 ---
 # GRAPE
 
@@ -33,7 +34,7 @@ $$\mathcal L_{\text{SFT}}=-\sum_{(\zeta,q)\in D}\sum_{t=1}^T\log p(a_t|o_t,q;\pi
 
 ### TPO
 
-RL目标:
+[[09-RL|RL]]目标:
 $$\text{max}_{\pi_\theta}\mathbb E_{\zeta\sim\pi_\theta}\left[r_\phi(\zeta)\right]-\beta D_{KL}\left[\pi_\theta(\zeta)\|\pi_{ref}(\zeta)\right]$$
 $\pi_{ref}$是SFT之后的模型. 使用RL进行fine-tune, $r_\phi$是强化学习自身的reward
 

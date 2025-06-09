@@ -7,9 +7,12 @@ tags:
   - DL
 aliases:
   - "OpenVLA: An Open-Source Vision-Language-Action Model"
+publish: CoRL 2024
 ---
-[[OpenVLA：An Open-Source Vision-Language-Action Model.pdf]]
 # OpenVLA
+
+> [!paper]-
+> ![[OpenVLA：An Open-Source Vision-Language-Action Model.pdf]]
 
 7B-parameter vision-language-action model, [[Transformer]]
 

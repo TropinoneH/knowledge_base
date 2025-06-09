@@ -8,9 +8,8 @@ tags:
   - EmbodiedAI
 aliases:
   - LLM-Empowered State Representation for Reinforcement Learning
+publish: ICML 2024
 ---
-published on ICML 2024
-
 # LESR
 
 > [!paper]-

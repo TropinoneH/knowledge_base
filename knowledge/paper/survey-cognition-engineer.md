@@ -6,11 +6,12 @@ tags:
   - DL
 aliases:
   - Cognition Engineering
+publish: TMLR 2025 underrewiew
 ---
+# Cognition Engineering
+
 > [!paper]-
 > ![[Cognition Engineering.pdf]]
-
-# Cognition Engineering
 
 认为分为两个阶段, 第一部分是prompt engineering, 第二部分是cognition engineering
 ## Cognition Engineering Definition

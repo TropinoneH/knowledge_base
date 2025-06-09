@@ -10,6 +10,8 @@ aliases:
 this refer to [d2l](https://d2l.ai/)
 
 the paper is: [Attention is all you need](https://arxiv.org/abs/1706.03762)
+
+所有 #LLM 标签的文章, 基于本文. Transformer是LLM的基础架构, 多个Transformer拼接, 加上其他一些模块, 即可组成LLM
 ## Background
 
 如果使用不同大小的数据, 那么对数据的处理可能变得困难.

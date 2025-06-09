@@ -6,6 +6,7 @@ tags:
   - RL
 aliases:
   - "Rethinking RL Scaling for Vision Language Models: A Transparent, From-Scratch Framework and Comprehensive Evaluation Scheme"
+publish: arxiv preprint
 ---
 # MAYE
 
