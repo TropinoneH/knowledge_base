@@ -17,6 +17,7 @@ publish: ICCV 2023
 [github project](https://github.com/facebookresearch/DiT)
 # DiT
 
+[[Diffusion]] [[Transformer]]
 #### 整体架构
 1. 潜在空间编码：  
    输入图像通过预训练的VAE编码器压缩到低维潜在空间，例如对于$256\times256$的图像，潜在表示 $z$ 的尺寸为 $32\times32\times4$（下采样因子为8）。

@@ -42,6 +42,14 @@ conda activate
     unset_var_tmpl = "set -e %s || true"
 ```
 
+### Terminals database is inaccessible
+
+针对kitty-term(暂时只测试了这一个)
+
+推测是安装cuda的时候会额外安装一个`clear`在`</path/to/conda>/env/<env_name>/bin/clear`的位置
+
+直接将这个删除掉或者使用`/bin/clear`即可
+
 ## 换源
 
 ```shell

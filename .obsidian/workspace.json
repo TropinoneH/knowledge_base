@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc3dd1477419398b",
+            "id": "af3d4ef6b2090c0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/OpenVLA-oft.md",
+                "file": "knowledge/paper/BehaviorClone.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "OpenVLA-oft"
+              "title": "BehaviorClone"
             }
           },
           {
-            "id": "2f010481b092528c",
+            "id": "33749d7dc187bd0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pre/Pre.md",
+                "file": "knowledge/paper/pi0.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,54 +52,102 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Pre"
+              "title": "pi0"
+            }
+          },
+          {
+            "id": "c54cd797bfcbcf2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/pi0.5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "pi0.5"
+            }
+          },
+          {
+            "id": "367ab9e16e0092f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/paper/RTC.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RTC"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "ca6bcbc7aeab32c9",
         "type": "tabs",
         "children": [
           {
-            "id": "07447c19af1e0bb1",
+            "id": "eb06a7e4b2149670",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf"
+                "file": "knowledge/paper/PDFS/pi0.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2502.19645v2_OpenVLA-oft"
+              "title": "pi0"
             }
           },
           {
-            "id": "d8a522bf40cc1138",
+            "id": "09c365659c00e0fc",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf"
+                "file": "knowledge/paper/PDFS/2504.16054v1_pi0.5.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2502.05450v2_ConRFT"
+              "title": "2504.16054v1_pi0.5"
             }
           },
           {
-            "id": "509d6bb1637f508e",
+            "id": "c7bf35908a0b3979",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf"
+                "file": "knowledge/paper/PDFS/2506.07339v1_RTC.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2505.17016v1_RIPT-VLA"
+              "title": "2506.07339v1_RTC"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,13 +225,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pre/Pre.md",
+                "file": "knowledge/paper/pi0.5.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pre"
+              "title": "Outline of pi0.5"
             }
           }
         ],
@@ -213,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pre/Pre.md",
+                "file": "knowledge/paper/pi0.5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +271,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pre"
+              "title": "Backlinks for pi0.5"
             }
           }
         ],
@@ -239,7 +287,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "pre/Pre.md",
+                "file": "knowledge/paper/pi0.5.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -267,7 +315,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Pre"
+              "title": "Graph of pi0.5"
             }
           }
         ]
@@ -288,53 +336,53 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "2f010481b092528c",
+  "active": "e87140d09247ee1e",
   "lastOpenFiles": [
-    "pre/2025-05-29.pdf",
-    "pre/2025-05-21.pdf",
-    "pre/Pre.md",
-    "pre/2025-05-13.pdf",
-    "knowledge/paper/OpenVLA-oft.md",
-    "knowledge/shanghaitech/CS182/Fit.md",
-    "knowledge/skills/latex.md",
-    "knowledge/paper/Hamster.md",
-    "knowledge/paper/PDFS/2502.19645v2_OpenVLA-oft.pdf",
-    "knowledge/paper/VideoTree.md",
-    "pre/2025-03-18.md",
-    "knowledge/paper/grape.md",
-    "knowledge/paper/LucidSim.md",
-    "knowledge/skills/system/linux/Commands.md",
-    "knowledge/skills/system/linux/VIM.md",
-    "knowledge/paper/LESR.md",
-    "knowledge/paper/LLoVi.md",
-    "knowledge/paper/Transformer.md",
-    "knowledge/paper/survey-cognition-engineer.md",
-    "knowledge/paper/Learning Goal-Conditioned Repr for Language Reward Models.md",
-    "knowledge/shanghaitech/CS181/09-RL.md",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
-    "knowledge/paper/f-policy.md",
-    "assets/Pasted image 20250609170348.png",
-    "knowledge/paper/What Makes Pre-trained Visual Representation Successful for Robust Manipulation.md",
-    "knowledge/paper/ToRL.md",
-    "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf",
-    "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "knowledge/paper/RT-2.md",
-    "knowledge/paper/RT-1.md",
-    "knowledge/paper/roco.md",
+    "knowledge/paper/pi0.md",
+    "knowledge/paper/pi0.5.md",
+    "knowledge/paper/PDFS/2504.16054v1_pi0.5.pdf",
+    "knowledge/paper/RTC.md",
+    "knowledge/paper/PDFS/2506.07339v1_RTC.pdf",
+    "knowledge/paper/PDFS/pi0.pdf",
+    "knowledge/paper/BehaviorClone.md",
     "knowledge/paper/PDFS/1911.08453_LEAP.pdf",
     "knowledge/paper/PDFS/2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation.pdf",
     "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
-    "knowledge/paper/PDFS/2407.13237v1_LESR.pdf",
+    "knowledge/paper/ConsistencyPolicy.md",
+    "knowledge/paper/ConRFT.md",
+    "knowledge/paper/OpenVLA.md",
+    "knowledge/paper/MAYE.md",
+    "knowledge/paper/LoRA.md",
+    "knowledge/paper/FiLM.md",
+    "knowledge/paper/Transformer.md",
+    "knowledge/paper/Diffusion.md",
+    "knowledge/paper/Learning Goal-Conditioned Repr for Language Reward Models.md",
+    "knowledge/paper/LEAP.md",
+    "knowledge/paper/f-policy.md",
+    "knowledge/paper/A-MEM.md",
+    "knowledge/paper/PDFS/2310.06343v2_ConsistencyPolicy.pdf",
+    "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf",
+    "knowledge/paper/OpenVLA-OFT.md",
+    "knowledge/paper/PDFS/2502.19645v2_OpenVLA-OFT.pdf",
+    "assets/Pasted image 20250611154203.png",
+    "knowledge/paper/DiT.md",
+    "knowledge/skills/docker.md",
+    "pre/2025-03-18.md",
+    "knowledge/skills/python/miniconda.md",
+    "assets/Pasted image 20250611014056.png",
+    "knowledge/paper/RT-1.md",
+    "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
+    "knowledge/skills/system/linux/Linux.md",
+    "assets/Pasted image 20250610162054.png",
+    "pre/Pre.md",
+    "assets/Pasted image 20250609170348.png",
     "assets/Pasted image 20250520204421.png",
     "assets/Pasted image 20250512210559.png",
     "assets/Pasted image 20250509180051.png",
     "assets/Pasted image 20250509180022.png",
     "assets/Pasted image 20250506162641.png",
     "assets/Pasted image 20250506150835.png",
-    "pre/img.png",
-    "Untitled.canvas",
-    "assets/image-20241122114925922.png",
-    "assets/image-20241127104301286.png"
+    "Untitled.canvas"
   ]
 }

@@ -8,9 +8,8 @@ tags:
   - DL
 aliases:
   - "pi0: A Vision-Language-Action Flow Model for General Robot Control"
-publish: Physical Intelligence
 ---
-# $\pi0$
+# $\pi_0$
 
 > [!paper]-
 > ![[pi0.pdf]]

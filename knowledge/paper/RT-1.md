@@ -49,6 +49,8 @@ target是 学一个$\pi$能够maximize average reward, in expectation over distr
 > [!info]
 > Behavioral Cloning
 > 
+> 或者称作模仿学习(IL, Imitation Learning)
+>
 > 假设已经有了一个expert的动作$a^\text{expert}$, 我们需要通过最小化预测的动作和$a^\text{expert}$差异来进行学习
 > 
 > 事实上, 这还是一个reinforcement learning, 只是结合了一下deep learning
@@ -64,19 +66,7 @@ target是 学一个$\pi$能够maximize average reward, in expectation over distr
 
 Robot Transformer 1(RT-1), 将一系列的short sequence of images和自然语言instruction作为输入, 在每个time step输出robot action.
 
-> [!info]
-> 
-> 1. FiLM
->    
-> 	FiLM接受文本的embedding vector作为input, 生成特征缩放参数$\gamma$和特征偏移参数$\beta$
-> 	
-> 	这些参数通过feature-wise的仿射变换作用于CNN的中间特征图:
-> 	$$\text{FiLM}(\mathbf F_{I,c}|\gamma_{i,c},\beta_{i,c})=\gamma_{i,c}\cdot\mathbf F_{i,c}+\beta_{i,c}$$
-> 	
-> 	一般是插入到残差块之后动态调整feature map的分布
-> 2. ImageNet
->    
->    可以是[EfficientNet](https://arxiv.org/abs/1905.11946)或者是[ResNet](https://arxiv.org/abs/1512.03385)
+[[FiLM|关于FiLM, 请参考这篇文章]]
 
 ```mermaid
 graph TB
