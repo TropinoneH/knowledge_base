@@ -79,43 +79,34 @@ $$\mathbf A_t^{\tau+\delta}=\mathbf A_t^\tau+\delta\mathbf v_\theta(\mathbf A_t^
 
 ```mermaid
 graph TD
-    %% 1. 数据来源与预处理
 	PD["π Dataset <br> (自有灵巧任务数据)"]
 	OD["Open X-Embodiment <br> (开源多任务数据)"]
 	ID["Internet-scale Data <br> (互联网图文数据)"]
-    %% 2. 模型初始化
 	ID -- "用于预训练" --> VLM_Init(PaliGemma VLM)
 	VLM_Init -- "加载权重" --> VLM["VLM Backbone <br> (视觉语言主干)"]
-    %% 3. 训练样本构建
 	PD & OD --> DM("数据混合器 <br> Data Mixture")
 	DM --> Sampled("从数据集中采样一个时间步 t")
 	Sampled -- "观察数据 (o_t)" --> Img("多视角图像 I_t")
 	Sampled -- "观察数据 (o_t)" --> Lang("语言指令 l_t")
 	Sampled -- "观察数据 (o_t)" --> Prop("机器人本体状态 q_t")
 	Sampled -- "标签数据" --> GT_Action("真实的未来动作序列 A_t")
-    %% 4. 流匹配过程
 	GT_Action --> Noise_Proc
 	Noise["采样随机噪声 ε"] --> Noise_Proc(""结合动作与噪声"")
 	Noise_Proc --> Noisy_Action("生成带噪动作 A_t^τ")
 	Noise_Proc -- "计算目标" --> Target_Field("目标向量场 u = ε - A_t")
-    %% 5. 模型前向传播
 	Img & Lang --> VLM
 	Prop --> AE["Action Expert <br> (动作专家)"]
 	Noisy_Action --> AE
-	%% 两个模块通过自注意力机制交互
 	VLM -- "通过注意力机制交互" <--> AE
 	AE -- "预测" --> Pred_Field("预测的向量场 v_θ")
-    %% 6. 损失计算与更新
 	Pred_Field & Target_Field --> Loss("计算流匹配损失 <br> ||v_θ - u||²")
 	Loss -- "反向传播" --> Update(更新VLM和动作专家的权重)
-
 ```
 
 
 ## Inference Recipe
-
+``
 ```mermaid
-%% π₀ 模型推理阶段数据流动图
 graph TD
 	Img("多视角图像 I_t") --> VLM
 	Lang[语言instruction] --> VLM
