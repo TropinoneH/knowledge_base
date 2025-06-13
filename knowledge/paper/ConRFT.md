@@ -68,7 +68,7 @@ pretrained VLA对zero-shot的novel robotic configurations缺乏泛化性, 因此
 
 将BC loss和Cal-QL结合在consistency-based objective中, 提出了Cal-ConRFT的方法. 这个方法使用consistency policy作为action head来fine-tuning VLA, 解决两个主要的问题:
 1. pre-collected dataset中的inconsistency和sub-optimal的演示示例
-2. 与[[diffusion]] policy相比, 这个方法更加轻量级
+2. 与[[Diffusion]] policy相比, 这个方法更加轻量级
 
 对于diffusion horizon(diffusion的时间范围) $[\varepsilon, K]$, 将其离散化为$M$个子区间, 其边界为$k_1=\varepsilon\leq k_2\leq\cdots\leq k_m=K$. 这种情况下的consistency policy为:
 $$\pi_\psi(a|s)=f_\psi(a^k,k|E_\phi(s))$$
