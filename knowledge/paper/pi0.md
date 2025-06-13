@@ -80,32 +80,21 @@ $$\mathbf A_t^{\tau+\delta}=\mathbf A_t^\tau+\delta\mathbf v_\theta(\mathbf A_t^
 ```mermaid
 graph TD
     %% 定义样式
-    style VLM fill:#cde4ff,stroke:#333,stroke-width:2px
-    style AE fill:#d5e8d4,stroke:#333,stroke-width:2px
-
     %% 1. 数据来源与预处理
-
-        PD["π Dataset <br> (自有灵巧任务数据)"]:::Data
-        OD["Open X-Embodiment <br> (开源多任务数据)"]:::Data
-        ID["Internet-scale Data <br> (互联网图文数据)"]:::Data
-
-
+	PD["π Dataset <br> (自有灵巧任务数据)"]
+	OD["Open X-Embodiment <br> (开源多任务数据)"]
+	ID["Internet-scale Data <br> (互联网图文数据)"]
     %% 2. 模型初始化
-
-        ID -- "用于预训练" --> VLM_Init(PaliGemma VLM)
-        VLM_Init -- "加载权重" --> VLM["VLM Backbone <br> (视觉语言主干)"]:::VLM
-
-
+	ID -- "用于预训练" --> VLM_Init(PaliGemma VLM)
+	VLM_Init -- "加载权重" --> VLM["VLM Backbone <br> (视觉语言主干)"]
     %% 3. 训练样本构建
-
-        PD & OD --> DM("数据混合器 <br> Data Mixture")
-        DM --> Sampled("从数据集中采样一个时间步 t")
-        
-        Sampled -- "观察数据 (o_t)" --> Img("多视角图像 I_t")
-        Sampled -- "观察数据 (o_t)" --> Lang("语言指令 l_t")
-        Sampled -- "观察数据 (o_t)" --> Prop("机器人本体状态 q_t")
-        Sampled -- "标签数据" --> GT_Action("真实的未来动作序列 A_t")
-
+	PD & OD --> DM("数据混合器 <br> Data Mixture")
+	DM --> Sampled("从数据集中采样一个时间步 t")
+	
+	Sampled -- "观察数据 (o_t)" --> Img("多视角图像 I_t")
+	Sampled -- "观察数据 (o_t)" --> Lang("语言指令 l_t")
+	Sampled -- "观察数据 (o_t)" --> Prop("机器人本体状态 q_t")
+	Sampled -- "标签数据" --> GT_Action("真实的未来动作序列 A_t")
     
     %% 4. 流匹配过程
 
@@ -118,19 +107,19 @@ graph TD
     %% 5. 模型前向传播
 
         Img & Lang --> VLM
-        Prop --> AE["Action Expert <br> (动作专家)"]:::AE
+        Prop --> AE["Action Expert <br> (动作专家)"]
         Noisy_Action --> AE
 
         %% 两个模块通过自注意力机制交互
         VLM -- "通过注意力机制交互" <--> AE
         
-        AE -- "预测" --> Pred_Field("预测的向量场 v_θ"):::Output
+        AE -- "预测" --> Pred_Field("预测的向量场 v_θ")
 
 
     %% 6. 损失计算与更新
 
-        Pred_Field & Target_Field --> Loss("计算流匹配损失 <br> ||v_θ - u||²"):::Process
-        Loss -- "反向传播" --> Update(更新VLM和动作专家的权重):::Process
+        Pred_Field & Target_Field --> Loss("计算流匹配损失 <br> ||v_θ - u||²")
+        Loss -- "反向传播" --> Update(更新VLM和动作专家的权重)
 
 ```
 
@@ -140,33 +129,15 @@ graph TD
 ```mermaid
 %% π₀ 模型推理阶段数据流动图
 graph TD
-    %% 定义样式
-    style VLM fill:#cde4ff,stroke:#333,stroke-width:2px
-    style AE fill:#d5e8d4,stroke:#333,stroke-width:2px
-
-    %% 1. 实时输入
-        Robot[机器人环境] -- "获取" --> Img("多视角图像 I_t"):::Input
-        Robot -- "获取" --> Prop("机器人本体状态 q_t"):::Input
-        User[人类用户或上层策略] -- "提供" --> Lang("语言指令 l_t"):::Input
-    %% 2. 加载训练好的模型
-    VLM_Trained(已训练的VLM Backbone) --> VLM("VLM Backbone"):::VLM
-    AE_Trained(已训练的Action Expert) --> AE("Action Expert"):::AE
-
-    %% 3. 编码观察信息
-    Img & Lang --> VLM
+	Img("多视角图像 I_t") --> VLM
+	Lang[语言instruction] --> VLM
     Prop --> AE
-    VLM -- "计算并缓存K/V" --> Integration_Loop
-    AE -- "计算并缓存K/V" --> Integration_Loop
-
-    %% 4. 迭代去噪生成动作
-        Start_Noise["从纯随机噪声 A^0 开始"]:::Process --> Integration_Loop{"迭代去噪循环<br>(例如10步)"}
-        
-        Integration_Loop -- "当前带噪动作 A^τ" --> AE
-        AE -- "预测" --> Pred_Field("向量场 v_θ"):::Output
-        Pred_Field -- "欧拉积分步进<br>A^{τ+δ} = A^τ + δ*v_θ" --> Integration_Loop
-    
-    %% 5. 输出并执行
-    Integration_Loop -- "10步后完成" --> Final_Action("最终预测的动作序列 A_t"):::Output
-    Final_Action --> Robot_Control[发送至机器人控制器]
-    Robot_Control -- "执行动作" --> Robot
+    VLM -- "计算并缓存K/V" --> AE
+	Robot[机器人环境] -- "获取" --> Img
+	Robot -- "获取" --> Prop("机器人本体状态 q_t")
+	Start_Noise["从纯随机噪声 A^0 开始"] -- "迭代去噪循环<br>(例如10步)" --> AE
+	AE -- "预测" --> Pred_Field("向量场 v_θ")
+	Pred_Field -- "欧拉积分步进<br>A^{τ+δ} = A^τ + δ*v_θ" --> AE
+    AE -- "10步后完成" --> Final_Action("最终预测的动作序列 A_t")
+    Final_Action -- "发送至机器人控制器 执行动作" --> Robot
 ```
