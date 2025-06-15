@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
 
 .pro文件中:(是工程文件,最好不要修改,连注释也不要加,下面的注释是复制后添加的):
 
-```
+```qmake
 QT       += core gui       //qt包含的模块,core核心模块,gui图形模块
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets  //大于qt4版本以上,包含widget模块
 CONFIG += c++11

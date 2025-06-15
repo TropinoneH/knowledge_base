@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2cce342bbf35ee44",
+        "id": "6bb87830926adcac",
         "type": "tabs",
         "children": [
           {
-            "id": "af3d4ef6b2090c0f",
+            "id": "d2b5573b78585685",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/BehaviorClone.md",
+                "file": "knowledge/skills/system/linux/Commands.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "BehaviorClone"
+              "title": "Commands"
             }
           },
           {
-            "id": "33749d7dc187bd0f",
+            "id": "f300daccaba7ab51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/pi0.md",
+                "file": "knowledge/skills/system/linux/Linux.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,98 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "pi0"
-            }
-          },
-          {
-            "id": "c54cd797bfcbcf2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/pi0.5.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "pi0.5"
-            }
-          },
-          {
-            "id": "367ab9e16e0092f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/paper/RTC.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "RTC"
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "ca6bcbc7aeab32c9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "eb06a7e4b2149670",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/pi0.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "pi0"
-            }
-          },
-          {
-            "id": "09c365659c00e0fc",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/2504.16054v1_pi0.5.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2504.16054v1_pi0.5"
-            }
-          },
-          {
-            "id": "c7bf35908a0b3979",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "knowledge/paper/PDFS/2506.07339v1_RTC.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2506.07339v1_RTC"
+              "title": "Linux"
             }
           }
         ],
@@ -179,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "saddle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,6 +97,16 @@
               },
               "icon": "lucide-search",
               "title": "Search"
+            }
+          },
+          {
+            "id": "8068b92d2fe623a8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -225,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/pi0.5.md",
+                "file": "knowledge/skills/system/linux/Linux.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of pi0.5"
+              "title": "Outline of Linux"
             }
           }
         ],
@@ -261,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/pi0.5.md",
+                "file": "knowledge/skills/system/linux/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -271,7 +190,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for pi0.5"
+              "title": "Backlinks for Linux"
             }
           }
         ],
@@ -287,7 +206,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/pi0.5.md",
+                "file": "knowledge/skills/system/linux/Linux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -315,7 +234,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of pi0.5"
+              "title": "Graph of Linux"
             }
           }
         ]
@@ -336,53 +255,54 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "e87140d09247ee1e",
+  "active": "f300daccaba7ab51",
   "lastOpenFiles": [
-    "knowledge/paper/pi0.md",
     "knowledge/paper/pi0.5.md",
+    "markdown.md",
+    "obsidian.md",
+    "knowledge/skills/system/linux/Linux.md",
+    "assets/Pasted image 20250615185800.png",
+    "assets/Pasted image 20250615185747.png",
+    "assets/2025-06-15-185747_hyprshot.png",
+    "assets/2025-06-15-185800_hyprshot.png",
+    "assets/Pasted image 20250615185548.png",
+    "assets/2025-06-15-185548_hyprshot_1.png",
+    "assets/2025-06-15-185548_hyprshot.png",
+    "knowledge/skills/system/linux/Commands.md",
+    "assets/Pasted image 20250615183717.png",
+    "assets/Pasted image 20250615183711.png",
+    "assets/2025-06-15-183717_hyprshot.png",
+    "knowledge/skills/GUI/Qt/Qt笔记.md",
+    "knowledge/skills/latex.md",
     "knowledge/paper/PDFS/2504.16054v1_pi0.5.pdf",
+    "pre/Pre.md",
+    "knowledge/paper/ConRFT.md",
+    "knowledge/paper/OpenVLA-OFT.md",
     "knowledge/paper/RTC.md",
+    "knowledge/paper/pi0.md",
+    "pre/2025-03-18.md",
     "knowledge/paper/PDFS/2506.07339v1_RTC.pdf",
-    "knowledge/paper/PDFS/pi0.pdf",
+    "knowledge/paper/PDFS/2410.24164v3_pi0.pdf",
     "knowledge/paper/BehaviorClone.md",
+    "knowledge/paper/Diffusion.md",
+    "index.md",
+    "knowledge/paper/PDFS/pi0.pdf",
     "knowledge/paper/PDFS/1911.08453_LEAP.pdf",
     "knowledge/paper/PDFS/2312.12444v1_WhatMakesPreTrainedVisualRepresentationsSuccessfulForRobustManipulation.pdf",
     "knowledge/paper/PDFS/2310.06794_f-policy-gradient.pdf",
     "knowledge/paper/ConsistencyPolicy.md",
-    "knowledge/paper/ConRFT.md",
     "knowledge/paper/OpenVLA.md",
     "knowledge/paper/MAYE.md",
     "knowledge/paper/LoRA.md",
     "knowledge/paper/FiLM.md",
     "knowledge/paper/Transformer.md",
-    "knowledge/paper/Diffusion.md",
     "knowledge/paper/Learning Goal-Conditioned Repr for Language Reward Models.md",
     "knowledge/paper/LEAP.md",
     "knowledge/paper/f-policy.md",
     "knowledge/paper/A-MEM.md",
     "knowledge/paper/PDFS/2310.06343v2_ConsistencyPolicy.pdf",
     "knowledge/paper/PDFS/2502.05450v2_ConRFT.pdf",
-    "knowledge/paper/OpenVLA-OFT.md",
     "knowledge/paper/PDFS/2502.19645v2_OpenVLA-OFT.pdf",
-    "assets/Pasted image 20250611154203.png",
-    "knowledge/paper/DiT.md",
-    "knowledge/skills/docker.md",
-    "pre/2025-03-18.md",
-    "knowledge/skills/python/miniconda.md",
-    "assets/Pasted image 20250611014056.png",
-    "knowledge/paper/RT-1.md",
-    "knowledge/paper/PDFS/2505.17016v1_RIPT-VLA.pdf",
-    "knowledge/shanghaitech/CS181/08-MDP.md",
-    "knowledge/skills/system/linux/Linux.md",
-    "assets/Pasted image 20250610162054.png",
-    "pre/Pre.md",
-    "assets/Pasted image 20250609170348.png",
-    "assets/Pasted image 20250520204421.png",
-    "assets/Pasted image 20250512210559.png",
-    "assets/Pasted image 20250509180051.png",
-    "assets/Pasted image 20250509180022.png",
-    "assets/Pasted image 20250506162641.png",
-    "assets/Pasted image 20250506150835.png",
     "Untitled.canvas"
   ]
 }
