@@ -45,4 +45,8 @@ tags:
 > - [[What Makes Pre-trained Visual Representation Successful for Robust Manipulation]]
 
 > [!note]- 2025-06-11
+> ![[2025-06-11.pdf]]
+>
+> - [[OpenVLA-OFT]]
+> - [[ConRFT]]
 
