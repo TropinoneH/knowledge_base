@@ -70,6 +70,9 @@ motivate: 解决问题:
 > [!tip]- Bi-directional Attention
 > [paper](https://arxiv.org/abs/1611.01603)
 > 
+> > [!paper]-
+> > ![[1611.01603v6_BiDirectionalAttention.pdf]]
+> 
 > ![[Pasted image 20250610162054.png]]
 > 
 > 使用bi-LSTM对上下文和query的词语之间的时间交互进行建模
