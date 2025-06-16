@@ -8,6 +8,7 @@ tags:
   - DL
 aliases:
   - "pi0: A Vision-Language-Action Flow Model for General Robot Control"
+publish: arxiv preprint
 ---
 # $\pi_0$
 

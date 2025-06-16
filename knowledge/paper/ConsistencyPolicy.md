@@ -6,6 +6,7 @@ tags:
   - LLM
   - DL
   - RL
+  - diffusion
 aliases:
   - Boosting Continuous Control with Consistency Policy
 publish: AAMAS 2024

@@ -698,16 +698,16 @@
         "type": "split",
         "children": [
           {
-            "id": "2d37c3063bfff5ad",
+            "id": "6bb87830926adcac",
             "type": "tabs",
             "children": [
               {
-                "id": "964e12226a669b99",
+                "id": "d2b5573b78585685",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "knowledge/skills/latex.md",
+                    "file": "knowledge/skills/system/linux/Commands.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -722,10 +722,35 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "latex"
+                  "title": "Commands"
+                }
+              },
+              {
+                "id": "f300daccaba7ab51",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/skills/system/linux/Linux.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Linux"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -813,13 +838,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/skills/latex.md",
+                    "file": "knowledge/skills/system/linux/Linux.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of latex"
+                  "title": "Outline of Linux"
                 }
               }
             ],
@@ -849,7 +874,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/skills/latex.md",
+                    "file": "knowledge/skills/system/linux/Linux.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -859,7 +884,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for latex"
+                  "title": "Backlinks for Linux"
                 }
               }
             ],
@@ -875,7 +900,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/skills/latex.md",
+                    "file": "knowledge/skills/system/linux/Linux.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -903,7 +928,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of latex"
+                  "title": "Graph of Linux"
                 }
               }
             ]
@@ -924,9 +949,9 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "964e12226a669b99",
-      "mtime": "2025-06-09T16:22:08+08:00"
+      "active": "f300daccaba7ab51",
+      "mtime": "2025-06-15T21:38:29+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
