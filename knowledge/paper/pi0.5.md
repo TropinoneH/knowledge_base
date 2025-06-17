@@ -105,7 +105,7 @@ $$\mathcal L=\mathbb E_{D,\tau,\omega}[H(x_{1:M},f_\theta^l(o_t,l))+\alpha\|\ome
 
 在实验室中的任务, 包含叠衣服, 摆桌子等等, 在一个比较整洁的环境中
 
-包含开源数据集[Open X-Embodiment](https://arxiv.com/abs/2310.08864)
+包含开源数据集[Open X-Embodiment](https://arxiv.org/abs/2310.08864)
 
 ***H*igh-*L*evel subtask prediction**(HL):
 
@@ -115,7 +115,7 @@ $$\mathcal L=\mathbb E_{D,\tau,\omega}[H(x_{1:M},f_\theta^l(o_t,l))+\alpha\|\ome
 
 **Multi-modal *W*eb *D*ata**(WD):
 
-图像描述和物体定位等数据集([Cambrain-7M](https://arxiv.org/abs/2406.16860), [PixMo](https://arxiv.com/abs/2409.17146), [VQAv2](https://arxiv.com/abs/1612.00837))
+图像描述和物体定位等数据集([Cambrain-7M](https://arxiv.org/abs/2406.16860), [PixMo](https://arxiv.org/abs/2409.17146), [VQAv2](https://arxiv.org/abs/1612.00837))
 
 **dataset settings**
 

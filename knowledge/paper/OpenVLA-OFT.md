@@ -30,7 +30,7 @@ motivate: 解决问题:
 3. learning objective
 	- next-token prediction ([[Transformer]], LLM)
 	- L1 Regression ([[Fit#Lasso回归|回归]])
-	- [[diffusion]]
+	- [[Diffusion]]
 
 结论:
 1. 并行解码+action chunk能增加推理效率, 也能增加成功率, 同时使input/output更加灵活
