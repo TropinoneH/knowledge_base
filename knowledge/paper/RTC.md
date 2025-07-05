@@ -54,7 +54,7 @@ inpaint是[[Diffusion]]和[[FlowMatching]]框架的优势.
 参考[[piGDM.pdf|PiGDM]]和[[2310.04432v2_TrainFreeInpaint.pdf|Train free inpaint 算法]]的去噪步骤:
 $$\mathbf v_{\Pi\text{GDM}}(A_t^\tau,o_t,\tau)=\mathbf v(a_t^\tau,o_t,\tau)+\min\left(\beta,\frac{1-\tau}{\tau\cdot r^2_\tau}\right)\left(\mathbf Y-\widehat {\mathbf {A}_t^1}\right)^\top\text{diag}(\mathbf W)\frac{\partial\widehat{\mathbf A_t^1}}{\partial\mathbf A_t^\tau}$$
 其中:
-- $\mathbf v$: 学习到的速度场
+-$\mathbf v$: 学习到的速度场
 - 目标值$\mathbf Y$. 在inpaint问题中, 这里的$\mathbf Y$是masked image, 期望得到的结果是完整的图像
 - $\widehat{\mathbf A_t^1}=\mathbf A_t^\tau+(1-\tau)\mathbf v(\mathbf A_t^\tau,o_t,\tau)$是flow matching的denoise过程, $\widehat{\mathbf A_t^1}$是最终去噪结束后的原始chunk
 - $r_\tau^2=\frac{(1-\tau)^2}{\tau^1-(1-\tau)^2}$
@@ -92,9 +92,11 @@ graph TB
         end
         a_p3-->a_p4["a'_4"]==>a_p5["a'_5"]==>a_p6["a'_6"]==>a_p7["a'_7"]==>a_p8["a'_8"]-->a_p9["a'_9"]
         subgraph "Actions not executed"
-	        a_p9-->a_p10["a'_10"]-->a_p11["a'_11"]-->a_p12["a'_12"]-->a_p13["a'_13"]-->a_p14["a'_14"]
+	        a_p9-->a_p10["a'_10"]-->a_p11["a'_11"]-->a_p12["a'_12"]-->a_p13["a'_13"]-->a_p14["a'_14"]-->a_p15["a'_15"]
         end
     end
+    a_10 ~~~ a_p0
+    a_p15 ~~~ a[next chunk]
     a_0 -.->|Frozen, weight=1| a_p0
     a_1 -.->|Frozen, weight=1| a_p1
     a_2 -.->|Frozen, weight=1| a_p2
@@ -103,14 +105,22 @@ graph TB
     a_4 -.->|Soft Mask, decreasing weight| a_p4
     a_5 -.->|...| a_p5
     a_10 -.->|Soft Mask, weight near 0| a_p10
-	a_p8 ==> a[next chunk]
+	a_p8 ==> a
 	a_p5 -.->|Frozen, weight=1| a
 	a_p6 -.->|Frozen, weight=1| a
 	a_p7 -.->|Frozen, weight=1| a
 	a_p8 -.->|Frozen, weight=1| a
     a_p9 -.->|Soft Mask, decreasing weight| a
     a_p10 -.->|...| a
-    a_p14 -.->|Soft Mask, weight near 0| a
-    Chunk1 ~~~ Chunk2
+    a_p15 -.->|Soft Mask, weight near 0| a
 ```
+
+### Soft Masking for Improved Cross-Chunk Continuity
+
+使用exponentially decay降低权重mask:
+$$\mathbf W_i=\left\{\begin{matrix}1&\text{if }i<d\\c_i\frac{e^c_i-1}{e-1}&\text{if }d\leq i\leq H-s\\0&\text{if }i\geq H-s\end{matrix}\right.$$
+其中, $c_i=\frac{H-s-i}{H-s-d+1}$是一个与$i$有关的值. 具体的函数样式可以参考[[#Inference-Time Inpainting with Flow Matching|前面章节]]的图
+
+### Real-Time Chunking
+
 

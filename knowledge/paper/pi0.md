@@ -54,6 +54,7 @@ post-train stage: fine-tune base model使其适应特定的下游任务
 
 ## The $\pi0$ Model
 
+
 $\pi0$模型主要由一个LLM backbone组成. 使用conditional flow matching对robot action的continuous distribution进行建模. 受到Transfusion的启发, 使用multiple objectives训练一个单独的transformer, 并使用flow matching对image的输出进行supervise. 使用独立的权重针对robot action可以提升performance. 因此有两个独立的flow matching weights, 第一个是image的, 第二个是robot action的(称作action expert)
 
 希望model data distribution: $p(\mathbf A_t|\mathbf o_t)$, $\mathbf A_t=[\mathbf a_t, \mathbf a_{t+1},\cdots,\mathbf a_{t+H-1}]$是未来的action chunk, $\mathbf o_t=[\mathbf I_t^1,\cdots,\mathbf I_t^n,l_t,\mathbf q_t]$, 其中$\mathbf I_t^i$是$t$ time step的观测到的第$i$个image(每个robot都有2-3个image), $l_t$是sequence of language tokens, $\mathbf q_t$是机器人的关节角度向量.
@@ -82,10 +83,8 @@ $$\mathbf A_t^{\tau+\delta}=\mathbf A_t^\tau+\delta\mathbf v_\theta(\mathbf A_t^
 graph TD
 	PD["π Dataset <br> (自有灵巧任务数据)"]
 	OD["Open X-Embodiment <br> (开源多任务数据)"]
-	ID["Internet-scale Data <br> (互联网图文数据)"]
-	ID -- "用于预训练" --> VLM_Init(PaliGemma VLM)
-	VLM_Init -- "加载权重" --> VLM["VLM Backbone <br> (视觉语言主干)"]
-	PD & OD --> DM("数据混合器 <br> Data Mixture")
+	PD --> DM
+	OD --> DM
 	DM --> Sampled("从数据集中采样一个时间步 t")
 	Sampled -- "观察数据 (o_t)" --> Img("多视角图像 I_t")
 	Sampled -- "观察数据 (o_t)" --> Lang("语言指令 l_t")
@@ -95,7 +94,7 @@ graph TD
 	Noise["采样随机噪声 ε"] --> Noise_Proc(""结合动作与噪声"")
 	Noise_Proc --> Noisy_Action("生成带噪动作 A_t^τ")
 	Noise_Proc -- "计算目标" --> Target_Field("目标向量场 u = ε - A_t")
-	Img & Lang --> VLM
+	Img & Lang --> VLM[PaliGamma VLM]
 	Prop --> AE["Action Expert <br> (动作专家)"]
 	Noisy_Action --> AE
 	VLM -- "通过注意力机制交互" <--> AE
@@ -106,7 +105,7 @@ graph TD
 
 
 ## Inference Recipe
-``
+
 ```mermaid
 graph TD
 	Img("多视角图像 I_t") --> VLM

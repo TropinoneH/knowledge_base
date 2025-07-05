@@ -32,135 +32,32 @@
                   "icon": "lucide-file",
                   "title": "Pre"
                 }
+              },
+              {
+                "id": "807ecdcd8daa314c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/RTC.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "RTC"
+                }
               }
             ]
-          },
-          {
-            "id": "0e6f76c581b79570",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1ac8972317329b48",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/survey-LLM-for-RL.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "survey-LLM-for-RL"
-                }
-              },
-              {
-                "id": "f31dfc68d1df6991",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/L2R.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "L2R"
-                }
-              },
-              {
-                "id": "34d580ea898bd045",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/LaRe.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "LaRe"
-                }
-              },
-              {
-                "id": "29ae244cc85ae611",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/MAYE.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "MAYE"
-                }
-              },
-              {
-                "id": "28e6fbd2e248173e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "knowledge/paper/ToRL.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "ToRL"
-                }
-              }
-            ],
-            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -362,7 +259,7 @@
         }
       },
       "active": "2711bb3ccd9ecd30",
-      "mtime": "2025-06-14T19:06:13+08:00"
+      "mtime": "2025-06-19T00:30:45+08:00"
     },
     "paper": {
       "main": {
@@ -398,7 +295,7 @@
                 }
               },
               {
-                "id": "33749d7dc187bd0f",
+                "id": "76e9732e455b7316",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -422,7 +319,31 @@
                 }
               },
               {
-                "id": "c54cd797bfcbcf2c",
+                "id": "2131f224b9d83872",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/FAST.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "FAST"
+                }
+              },
+              {
+                "id": "9cd04688e7a8386e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -468,16 +389,64 @@
                   "icon": "lucide-file",
                   "title": "RTC"
                 }
+              },
+              {
+                "id": "b8aa71a67f49129d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "knowledge/paper/FlowMatching.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "FlowMatching"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           },
           {
             "id": "ca6bcbc7aeab32c9",
             "type": "tabs",
             "children": [
               {
-                "id": "09c365659c00e0fc",
+                "id": "48dc568afa2a1e96",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2410.24164v3_pi0.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2410.24164v3_pi0"
+                }
+              },
+              {
+                "id": "074c5e7747e5b32d",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "knowledge/paper/PDFS/2501.09747v1_FAST.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2501.09747v1_FAST"
+                }
+              },
+              {
+                "id": "8a279c744e66d406",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -500,7 +469,8 @@
                   "title": "2506.07339v1_RTC"
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -578,13 +548,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "knowledge/paper/pi0.5.md",
+                    "file": "knowledge/paper/RTC.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of pi0.5"
+                  "title": "Outline of RTC"
                 }
               }
             ],
@@ -614,7 +584,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "knowledge/paper/pi0.5.md",
+                    "file": "knowledge/paper/RTC.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -624,7 +594,7 @@
                     "unlinkedCollapsed": false
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for pi0.5"
+                  "title": "Backlinks for RTC"
                 }
               }
             ],
@@ -640,7 +610,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "knowledge/paper/pi0.5.md",
+                    "file": "knowledge/paper/RTC.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -668,7 +638,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of pi0.5"
+                  "title": "Graph of RTC"
                 }
               }
             ]
@@ -689,8 +659,8 @@
           "obsidian-advanced-slides:Show Slide Preview": false
         }
       },
-      "active": "c54cd797bfcbcf2c",
-      "mtime": "2025-06-14T19:05:19+08:00"
+      "active": "367ab9e16e0092f5",
+      "mtime": "2025-06-18T17:19:55+08:00"
     },
     "note": {
       "main": {

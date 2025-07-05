@@ -65,7 +65,7 @@ VLA的任务: $$\max\mathbb E_{(a_{t:t+H},o_t,l)\sim D}[\log(\pi_\theta(a_{t:t+H
 ### The $\pi_{0.5}$ architecture
 
 policy: $\pi_\theta(a_{t:t+H},\hat l|o_t,l)=\pi_\theta(a_{t:t+H}|o_t,\hat l)\pi_\theta(\hat l|o_t,l)$, 其中
-- [ ] $o_t=[I^1_t,\cdots,I_t^n,q_t]$: observation, 包含所有摄像机提供的image $I$ 和当前robot的状态$q$
+- $o_t=[I^1_t,\cdots,I_t^n,q_t]$: observation, 包含所有摄像机提供的image $I$ 和当前robot的状态$q$
 - $l$: language instruction
 - $\hat l$: subtask instruction(tokenized)
 
@@ -92,7 +92,6 @@ $$\mathcal L=\mathbb E_{D,\tau,\omega}[H(x_{1:M},f_\theta^l(o_t,l))+\alpha\|\ome
 ### Pre-Training
 
 使用[[FAST]]将连续的动作转换成离散的token
-
 **Diverse *M*obile *M*anipulator data**(MM):
 
 移动操作数据, 400 hours, 在100个新环境中做家务
