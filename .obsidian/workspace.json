@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "3dde54cecbf17771",
+            "id": "1f733c6ed0a03daf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+                "file": "knowledge/shanghaitech/CS181/07-Probabilistic.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "05-BayesNetwork"
+              "title": "07-Probabilistic"
             }
           }
         ],
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+                "file": "knowledge/shanghaitech/CS181/07-Probabilistic.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 05-BayesNetwork"
+              "title": "Outline of 07-Probabilistic"
             }
           }
         ],
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+                "file": "knowledge/shanghaitech/CS181/07-Probabilistic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 05-BayesNetwork"
+              "title": "Backlinks for 07-Probabilistic"
             }
           }
         ],
@@ -214,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+                "file": "knowledge/shanghaitech/CS181/07-Probabilistic.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -242,7 +242,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 05-BayesNetwork"
+              "title": "Graph of 07-Probabilistic"
             }
           }
         ]
@@ -263,10 +263,11 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "3dde54cecbf17771",
+  "active": "1f733c6ed0a03daf",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/CS181/01-Search.md",
     "knowledge/paper/survey-VLA.md",
+    "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
+    "knowledge/shanghaitech/CS181/01-Search.md",
     "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
     "knowledge/paper/survey-LLM-for-RL.md",
     "knowledge/paper/survey-MLLM-CoT.md",
@@ -307,7 +308,6 @@
     "knowledge/paper/RTC.md",
     "knowledge/paper/pi0.5.md",
     "knowledge/paper/FAST.md",
-    "pre/2025-03-18.md",
     "assets/Pasted image 20250618154220.png",
     "assets/Pasted image 20250617024805.png",
     "assets/Pasted image 20250617024404.png",

@@ -73,7 +73,7 @@ graph LR
 ### Model
 
 - Initial Distribution: $P(X_0)$
-- Transition Mode: $P(X_t|X_{t-1})$
+- Transition Model: $P(X_t|X_{t-1})$
 - Emission Model: $P(E_t|X_t)$
 
 Joint Distribution of HMM: $P(X_0,\cdots,X_T,E_1,\cdots,E_T)=P(X_0)\prod_tP(X_t|X_{t-1})P(E_t|X_t)$
