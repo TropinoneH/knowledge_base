@@ -171,11 +171,11 @@ $$V_{k+1}(s)\leftarrow\max_a\sum_{s'}T(s,a,s')\left[R(s,a,s')-\gamma V_k(s')\rig
 
 Value Iteration:
 
-- 每一次更新都会计算所有的policy的value
-- 会track所有的policy的值
+- 每一次更新都会计算所有的state的value
+- 会track所有的state的值
 
 Policy Iteration:
 
-- 只更新一部分固定的policy. 每一个iteration都只关注一个policy而不是全部的policy
+- 只更新一部分固定的state. 每一个iteration都只关注一个state而不是全部的state
 - 每一次计算之后都会更新policy function
 - 可能收敛更快
