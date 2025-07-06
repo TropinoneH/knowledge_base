@@ -9,7 +9,7 @@ aliases:
 前置要求: [[04-PropositionalLogic]]
 # Bayes Network
 
-CPT: Conditional Distributions Tabel
+CPT: Conditional Probability Table
 
 独立: 
 $$\forall x,y\ P(x,y)=P(x)P(y)$$

@@ -202,7 +202,7 @@ A* search: $f(n)=g(n)+h(n)$
     A比B先弹出fringe, 表示A会先进行is_goal的测试
 
   Proof:
-  - $$text{admissive}\Rightarrow h(n)\leq h^*(n)=g(A)-g(n)$$
+  - $$\text{admissive}\Rightarrow h(n)\leq h^*(n)=g(A)-g(n)$$
     $$h(A)=0\Rightarrow f(A)=g(A)\Rightarrow h(n)\leq f(A)-g(n)$$
     $$\Rightarrow h(n)+g(n)\leq f(A)\Rightarrow f(n)\leq f(A)$$
     因此, 节点$n$一定在节点$A$之前找到
