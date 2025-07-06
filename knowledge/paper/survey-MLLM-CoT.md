@@ -2,6 +2,8 @@
 tags:
   - paper
   - LLM
+  - survey
+  - DL
 aliases:
   - "Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey"
 ---

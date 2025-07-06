@@ -5,6 +5,7 @@ tags:
   - LLM
   - DL
   - WorldModel
+  - EmbodiedAI
 aliases:
   - "WorldVLA: Towards Autoregressive Action World Model"
 publish: arxiv preprint

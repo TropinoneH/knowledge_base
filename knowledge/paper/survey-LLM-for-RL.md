@@ -4,6 +4,8 @@ tags:
   - LLM
   - RL
   - EmbodiedAI
+  - survey
+  - DL
 aliases:
   - survey of LLM aided RL
 ---

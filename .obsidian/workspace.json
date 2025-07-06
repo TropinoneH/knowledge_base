@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "af3d4ef6b2090c0f",
+            "id": "878c0421f0145074",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/BehaviorClone.md",
+                "file": "knowledge/paper/survey-VLA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "BehaviorClone"
+              "title": "survey-VLA"
             }
           },
           {
-            "id": "c7bf35908a0b3979",
+            "id": "3dde54cecbf17771",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledge/paper/WorldVLA.md",
+                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,25 +52,26 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "WorldVLA"
+              "title": "05-BayesNetwork"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ca6bcbc7aeab32c9",
         "type": "tabs",
         "children": [
           {
-            "id": "59c30dd7de6fa4bd",
+            "id": "c6f77fcaa0b68a76",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "knowledge/paper/PDFS/2506.21539_WorldVLA.pdf"
+                "file": "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2506.21539_WorldVLA"
+              "title": "2507.01925v1_VLASurvey"
             }
           }
         ]
@@ -151,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/paper/BehaviorClone.md",
+                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of BehaviorClone"
+              "title": "Outline of 05-BayesNetwork"
             }
           }
         ],
@@ -187,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/paper/BehaviorClone.md",
+                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +198,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for BehaviorClone"
+              "title": "Backlinks for 05-BayesNetwork"
             }
           }
         ],
@@ -213,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/paper/BehaviorClone.md",
+                "file": "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,7 +242,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of BehaviorClone"
+              "title": "Graph of 05-BayesNetwork"
             }
           }
         ]
@@ -262,10 +263,24 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "af3d4ef6b2090c0f",
+  "active": "3dde54cecbf17771",
   "lastOpenFiles": [
-    "knowledge/paper/PDFS/2506.21539_WorldVLA.pdf",
+    "knowledge/shanghaitech/CS181/01-Search.md",
+    "knowledge/paper/survey-VLA.md",
+    "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
+    "knowledge/paper/survey-LLM-for-RL.md",
+    "knowledge/paper/survey-MLLM-CoT.md",
+    "knowledge/paper/survey-cognition-engineer.md",
+    "knowledge/paper/PDFS/2312.00752v2_Mamba.pdf",
+    "knowledge/paper/Mamba.md",
+    "knowledge/paper/Transformer.md",
+    "knowledge/shanghaitech/CS181/HMM.md",
+    "knowledge/shanghaitech/CS182/SSM.md",
+    "assets/Pasted image 20250705175213.png",
+    "knowledge/shanghaitech/CS181/07-Probabilistic.md",
     "knowledge/paper/WorldVLA.md",
+    "knowledge/paper/PDFS/2506.21539_WorldVLA.pdf",
+    "knowledge/paper/BehaviorClone.md",
     "assets/Pasted image 20250705044224.png",
     "assets/Pasted image 20250705031814.png",
     "assets/Pasted image 20250705024817.png",
@@ -292,23 +307,10 @@
     "knowledge/paper/RTC.md",
     "knowledge/paper/pi0.5.md",
     "knowledge/paper/FAST.md",
-    "knowledge/paper/PDFS/2501.09747v1_FAST.pdf",
     "pre/2025-03-18.md",
-    "knowledge/paper/pi0.md",
     "assets/Pasted image 20250618154220.png",
-    "knowledge/paper/PDFS/2410.24164v3_pi0.pdf",
     "assets/Pasted image 20250617024805.png",
     "assets/Pasted image 20250617024404.png",
-    "knowledge/paper/OpenVLA-OFT.md",
-    "knowledge/paper/BehaviorClone.md",
-    "knowledge/paper/ConsistencyPolicy.md",
-    "knowledge/paper/FiLM.md",
-    "knowledge/paper/FlowMatching.md",
-    "assets/Pasted image 20250616172730.png",
-    "markdown.md",
-    "obsidian.md",
-    "knowledge/skills/GUI/Qt/Qt笔记.md",
-    "knowledge/skills/latex.md",
     "Untitled.canvas"
   ]
 }
