@@ -1,6 +1,6 @@
 {
-  "findText": "\\\\matrix\\{(.*)\\}",
-  "replaceText": "\\begin{matrix}$1\\end{matrix}",
+  "findText": "[d*]",
+  "replaceText": "",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": false,

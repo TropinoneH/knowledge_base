@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "survey-VLA"
             }
-          },
-          {
-            "id": "1f733c6ed0a03daf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "08-MDP"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ca6bcbc7aeab32c9",
@@ -152,13 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08-MDP"
+              "title": "Outline of 2507.01925v1_VLASurvey"
             }
           }
         ],
@@ -188,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +173,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 08-MDP"
+              "title": "Backlinks for 2507.01925v1_VLASurvey"
             }
           }
         ],
@@ -214,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/shanghaitech/CS181/08-MDP.md",
+                "file": "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -242,7 +217,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 08-MDP"
+              "title": "Graph of 2507.01925v1_VLASurvey"
             }
           }
         ]
@@ -263,15 +238,25 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "1f733c6ed0a03daf",
+  "active": "c6f77fcaa0b68a76",
   "lastOpenFiles": [
-    "knowledge/shanghaitech/CS181/07-Probabilistic.md",
+    "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
     "knowledge/paper/survey-VLA.md",
+    "pre/2025-04-09.md",
+    "pre/2025-04-22.md",
+    "pre/2025-04-17.md",
+    "pre/2025-03-18.md",
+    "pre/2025-04-29.md",
+    "pre/2025-04-27.md",
+    "knowledge/paper/survey-MLLM-CoT.md",
+    "knowledge/paper/survey-LLM-for-RL.md",
+    "knowledge/paper/f-policy.md",
+    "knowledge/shanghaitech/CS181/09-RL.md",
+    "knowledge/paper/grape.md",
+    "knowledge/shanghaitech/CS181/08-MDP.md",
+    "knowledge/shanghaitech/CS181/07-Probabilistic.md",
     "knowledge/shanghaitech/CS181/05-BayesNetwork.md",
     "knowledge/shanghaitech/CS181/01-Search.md",
-    "knowledge/paper/PDFS/2507.01925v1_VLASurvey.pdf",
-    "knowledge/paper/survey-LLM-for-RL.md",
-    "knowledge/paper/survey-MLLM-CoT.md",
     "knowledge/paper/survey-cognition-engineer.md",
     "knowledge/paper/PDFS/2312.00752v2_Mamba.pdf",
     "knowledge/paper/Mamba.md",
@@ -288,26 +273,15 @@
     "knowledge/paper/DreamPolicy.md",
     "knowledge/paper/PDFS/2505.18780v2_DreamPolicy.pdf",
     "knowledge/skills/system/linux/Commands.md",
-    "knowledge/skills/python/module.md",
-    "knowledge/skills/python/miniconda.md",
-    "knowledge/skills/system/linux/Linux.md",
-    "knowledge/paper/SpatialVLA.md",
     "knowledge/paper/PDFS/2501.15830v5_SpatialVLA.pdf",
-    "knowledge/paper/L2R.md",
-    "knowledge/shanghaitech/CS181/09-RL.md",
     "assets/Pasted image 20250619050023.png",
     "assets/Pasted image 20250619042603.png",
     "assets/Pasted image 20250619042333.png",
     "knowledge/paper/PDFS/2504.16054v1_pi0.5.pdf",
     "knowledge/paper/PDFS/2506.07339v1_RTC.pdf",
-    "knowledge/paper/grape.md",
-    "pre/Pre.md",
     "pre/2025-06-18.pdf",
     "pre/2026-06-18.pdf",
     "pre/pre.pdf",
-    "knowledge/paper/RTC.md",
-    "knowledge/paper/pi0.5.md",
-    "knowledge/paper/FAST.md",
     "assets/Pasted image 20250618154220.png",
     "assets/Pasted image 20250617024805.png",
     "assets/Pasted image 20250617024404.png",
