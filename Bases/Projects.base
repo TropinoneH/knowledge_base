@@ -1,0 +1,36 @@
+filters:
+  and:
+    - file.inFolder("Develop")
+views:
+  - type: table
+    name: All Projects
+    order:
+      - file.name
+      - done
+      - tags
+      - file.backlinks
+      - file.links
+    columnSize:
+      file.backlinks: 387
+  - type: table
+    name: JS/TS/HTML
+    filters:
+      and:
+        - file.hasTag("javascripts")
+    order:
+      - file.name
+      - done
+      - tags
+      - file.backlinks
+      - file.links
+  - type: table
+    name: Swift
+    filters:
+      and:
+        - file.hasTag("swift")
+    order:
+      - file.name
+      - done
+      - tags
+      - file.backlinks
+      - file.links

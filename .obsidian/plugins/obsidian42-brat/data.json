@@ -1,0 +1,27 @@
+{
+  "pluginList": [
+    "Yaozhuwa/AttachFlow"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "Yaozhuwa/AttachFlow",
+      "version": "latest"
+    }
+  ],
+  "themesList": [
+    {
+      "repo": "catppuccin/obsidian",
+      "lastUpdate": "196964318"
+    }
+  ],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "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",
+  "selectLatestPluginVersionByDefault": false
+}
