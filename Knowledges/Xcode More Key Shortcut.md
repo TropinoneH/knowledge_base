@@ -3,7 +3,7 @@ type: software
 tags:
   - MacOS
   - swift
-  - software
+  - software/Xcode
 ---
 # 快捷键设置
 

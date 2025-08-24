@@ -3,6 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "done": "checkbox"
+    "done": "checkbox",
+    "rate": "text"
   }
 }

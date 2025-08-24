@@ -8,10 +8,17 @@ views:
     order:
       - file.name
       - done
+      - rate
       - tags
       - file.backlinks
       - file.links
+    sort:
+      - property: done
+        direction: ASC
+      - property: rate
+        direction: DESC
     columnSize:
+      note.rate: 177
       file.backlinks: 387
   - type: table
     name: JS/TS/HTML
@@ -22,8 +29,14 @@ views:
       - file.name
       - done
       - tags
+      - rate
       - file.backlinks
       - file.links
+    sort:
+      - property: done
+        direction: ASC
+      - property: rate
+        direction: DESC
   - type: table
     name: Swift
     filters:
@@ -33,5 +46,11 @@ views:
       - file.name
       - done
       - tags
+      - rate
       - file.backlinks
       - file.links
+    sort:
+      - property: done
+        direction: ASC
+      - property: rate
+        direction: DESC
