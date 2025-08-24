@@ -1,6 +1,7 @@
 filters:
   and:
     - file.inFolder("Develop")
+    - type == "project"
 views:
   - type: table
     name: All Projects

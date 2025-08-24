@@ -4,5 +4,6 @@
   "vimMode": false,
   "newFileLocation": "current",
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "Assets"
+  "attachmentFolderPath": "Assets",
+  "showInlineTitle": true
 }

@@ -1,6 +1,12 @@
-# Xcode
+---
+type: software
+tags:
+  - MacOS
+  - swift
+  - software
+---
+# 快捷键设置
 
-## 快捷键设置
 所有的快捷键绑定的功能列表在:
 ```
 /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/Resources/IDETextKeyBindingSet.plist
@@ -10,7 +16,7 @@
 
 
 在这里面添加一个key, 类型选择Dictionary. 里面可以添加两个Key, `Insert Newline Above` 和 `Insert Newline Below`, 都是string类型的. 里面填充command如下:
-
+![[Pasted image 20250819192014.png]]
 
 将这个文件保存(或者保存在其他位置, 替换回去)
 

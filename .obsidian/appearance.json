@@ -10,5 +10,6 @@
     "image-cards",
     "tag-pills"
   ],
-  "translucency": false
+  "translucency": false,
+  "showViewHeader": true
 }

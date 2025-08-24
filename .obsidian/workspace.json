@@ -75,52 +75,11 @@
             }
           }
         ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300
-  },
-  "right": {
-    "id": "989a8de35f3c6aa0",
-    "type": "split",
-    "children": [
+      },
       {
-        "id": "9a3d2360b6a27bbe",
+        "id": "29e7e0b618b8ddbc",
         "type": "tabs",
         "children": [
-          {
-            "id": "4275504213f05a28",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Welcome.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
-            }
-          },
-          {
-            "id": "137ed9f8d4c8f28c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Welcome.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
-            }
-          },
           {
             "id": "eeaaaee2f4068c06",
             "type": "leaf",
@@ -135,20 +94,34 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "989a8de35f3c6aa0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a3d2360b6a27bbe",
+        "type": "tabs",
+        "children": [
           {
             "id": "1fd694b517416a3c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "Knowledges/Xcode.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Xcode"
             }
           },
           {
@@ -161,8 +134,90 @@
               "title": "Quiet Outline"
             }
           }
+        ]
+      },
+      {
+        "id": "289652e43374cd5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5e00afb7e231c52",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Knowledges/Xcode.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Xcode"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fde24d656db5f9c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "137ed9f8d4c8f28c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Knowledges/Xcode.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Xcode"
+            }
+          },
+          {
+            "id": "4275504213f05a28",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Knowledges/Xcode.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Xcode"
+            }
+          }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,13 +239,16 @@
   },
   "active": "23101c9ebd9eb363",
   "lastOpenFiles": [
+    "Templates/Insert Callouts.md",
+    "Knowledges/Xcode.md",
+    "Knowledges/Untitled.md",
+    "Bases/Projects.base",
+    "Develop/Better-Link-Clicker.md",
+    "Develop/QueryTools.md",
+    "Assets/Pasted image 20250819192014.png",
     "Assets",
     "未命名文件夹",
     "Untitled",
-    "Bases/Projects.base",
-    "Knowledges/Xcode.md",
-    "Develop/QueryTools.md",
-    "Develop/Better-Link-Clicker.md",
     "Develop/12123.md",
     "Develop/123123.md",
     "Develop/123.md",

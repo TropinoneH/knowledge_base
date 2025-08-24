@@ -1,9 +1,9 @@
 ---
+type: project
 tags:
-  - project
   - obsidian
   - javascripts
-done: false
+done: true
 ---
 - ### 1. 环境搭建与项目初始化
 	- [x] 确保已安装 `Node.js` 和 `npm`。
