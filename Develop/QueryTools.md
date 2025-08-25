@@ -22,10 +22,17 @@ rate: 🌟🌟🌟🌟
 	- module id(unique)
 	- module name
 	- module icon
+	- prefix
 	- settings view
-	- content view
-	- footer包含的内容(return-key事件的描述("启动App", "打开文件位置", "复制结果到剪切板", ...), 以及actions), 详情见[[#Footer]]部分
-	- header view(一般是search bar(详情参见[[#SearchBar]]), 里面需要配置placeholder和下拉框的内容, 但是也可以不存在或者是其他内容)
+	- features. 每个features都有:
+		- feature name
+		- content view
+		- footer包含的内容:
+			- return-key事件的描述("启动App", "打开文件位置", "复制结果到剪切板", ...)
+			- 以及actions, 详情见[[#Footer]]部分
+		- header view:
+			- 一般是search bar(详情参见[[#SearchBar]]), 里面需要配置placeholder和下拉框的内容
+			- - 但是也可以不存在或者是其他内容
 
 有两个主要的窗口, 一个Search Window(Main Window), 一个Settings Window.
 - Search Window是主要的窗口, 使用NSPanel, .borderless, .fullSizeContentView, .nonactivatingPanel.
@@ -42,6 +49,7 @@ rate: 🌟🌟🌟🌟
 	- 每个module有自己的SettingsView, 这个Window只是展示
 	- 使用Defaults持久化
 	- 每次设置之后, 热更新, 包括UI和功能
+
 ### 事件驱动
 - Escape Key Press
 - Return Key Press
@@ -84,10 +92,12 @@ rate: 🌟🌟🌟🌟
 
 按照不同的Module的要求, 右侧可能会有下拉框.
 
+当输入了module prefix + 空格之后, 会自动跳转到对应的module(搜索该module的所有的feature. 这个feature由module管理和控制. 但是这个还是存在于MainView页面中)
+
 #### Footer
 
 在content view下面有footer. 默认footer由三部分组成:
-- 左侧是module icon + module name
+- 左侧是module icon + module feature name
 - 中间使用Spacer()隔开
 - 右侧是两个按钮使用vertical Divider()隔开:
 	- 左侧按钮展示return键的作用(可以在general设置中修改对应按键)
@@ -311,7 +321,343 @@ Settings:
 
 你需要根据需求文档, 写出一份实施细则, 具体到每个部分的每个文件有什么功能, 需要完成什么功能, 需要实现什么API接口. 将这个实施细则使用markdown的todo list的形式给出. 这个todo list的顺序是实施的顺序, 这个todo list作为大纲. 注意, 你只需要在最细节的一条内容中添加`- [ ]`即可, 无需全部添加
 
+你需要尽可能详细写, 无需考虑输出限制, 你需要尽可能详细给出每个模块的所有需要实现的内容, 尽可能不全需要实现的内容. 在你进行输出todo list的时候, 你需要考虑全局, 考虑所有的模块的开发, 一次性将全部需要实现的属性给出.
+
 # QueryTools App 实施细则
 
 使用 #software/Xcode 进行创建
 
+## 1. 项目设置与核心架构 (Project Setup & Core Architecture)
+
+- **项目初始化**
+    - [x] 创建名为 `QueryTools` 的新 macOS App 项目.
+    - [x] 在项目根目录下创建 `Packages` Group.
+    - [x] 集成项目依赖 (Swift Packages):
+        - [x] `File` -> `Add Packages...` -> `https://github.com/Clipy/Sauce`
+        - [x] `File` -> `Add Packages...` -> `https://github.com/sindresorhus/KeyboardShortcuts`
+        - [x] `File` -> `Add Packages...` -> `https://github.com/sindresorhus/Defaults.git`
+        - [x] `File` -> `Add Packages...` -> `https://github.com/sindresorhus/LaunchAtLogin`
+        - [x] `File` -> `Add Packages...` -> `https://github.com/sparkle-project/Sparkle`
+
+- **协议模块 (`QueryKit` Protocol Module)**
+    - [x] 创建本地 Swift Package `QueryKit`.
+    - **`QueryKit/Sources/QueryKit/QueryModule.swift`**
+        - [x] 定义 `QueryModule` protocol, 作为所有模块的入口.
+            ```swift
+            public protocol QueryModule {
+                var id: String { get } // unique module id
+                var name: String { get }
+                var icon: Image { get }
+                var prefix: String? { get }
+                var features: [ModuleFeature] { get }
+                func settingsView() -> AnyView
+            }
+            ```
+    - **`QueryKit/Sources/QueryKit/ModuleFeature.swift`**
+        - [x] 定义 `ModuleFeature` protocol, 描述模块提供的具体功能.
+            ```swift
+            public protocol ModuleFeature {
+                var name: String { get }
+                func headerView(globalState: GlobalState) -> AnyView?
+                func contentView(globalState: GlobalState) -> AnyView
+                func footer(globalState: GlobalState) -> ModuleFooter
+            }
+            ```
+    - **`QueryKit/Sources/QueryKit/ModuleFooter.swift`**
+        - [x] 定义 `ModuleFooter` struct, 用于配置Footer UI.
+            ```swift
+            public struct ModuleFooter {
+                let returnAction: ModuleAction
+                let otherActions: [ModuleAction]
+            }
+            ```
+    - **`QueryKit/Sources/QueryKit/ModuleAction.swift`**
+        - [x] 定义 `ModuleAction` struct, 用于封装所有可执行动作.
+            ```swift
+            public struct ModuleAction {
+                let name: String
+                let shortcut: KeyboardShortcuts.Name? // 与 KeyboardShortcuts 集成
+                let handler: () -> Void
+            }
+            ```
+
+- **数据中心 (Data Hub)**
+    - [x] 在 `QueryTools` 主项目中创建 `Core` Group.
+    - **`Core/GlobalState.swift`**
+        - [x] 创建一个 `final class GlobalState: ObservableObject`, 采用单例模式.
+        - [x] `@Published var currentQuery: String = ""`
+        - [x] `@Published var queryResults: [Any] = []` // 泛型结果
+        - [x] `@Published var selectedIndex: Int = 0`
+        - [x] `@Published var activeModule: QueryModule? = nil`
+        - [x] `@Published var isMainWindowVisible: Bool = false`
+        - [x] `private(set) var loadedModules: [QueryModule] = []`
+        - [x] `public func loadModules()`
+        - [x] `public func performSearch(query: String)`
+        - [x] `public func setActiveModule(_ module: QueryModule)`
+
+- **事件中心 (Event Hub)**
+    - **`Core/Notifications.swift`**
+        - [x] 使用 `Notification.Name` 扩展定义所有全局事件.
+            - [x] `static let escapeKeyPressed`
+            - [x] `static let returnKeyPressed`
+            - [x] `static let arrowUpKeyPressed`
+            - [x] `static let arrowDownKeyPressed`
+            - [x] `static let mainWindowWillShow`
+            - [x] `static let mainWindowDidHide`
+            - [x] `static let settingsDidChange(forModule: String)`
+
+## 2. 通用UI组件与主窗口 (Common UI & Main Windows)
+
+- **通用UI (`QueryTools/UI/Common`)**
+    - **`KeyboardKeyView.swift`**
+        - [ ] 创建 `KeyboardKeyView: View`.
+        - [ ] 支持 `modifier` (显示SF Symbol) 和 `key` (显示大写字母) 两种模式.
+        - [ ] 实现玻璃效果背景 (material background).
+        - [ ] 可配置大小.
+    - **`SearchBarView.swift`**
+        - [ ] 创建 `SearchBarView: View`.
+        - [ ] 包含一个 `TextField` (input).
+        - [ ] 实现 `onEditingChanged` 和 `onCommit` 回调.
+        - [ ] 实现焦点自动保持逻辑 (使用 `@FocusState`).
+        - [ ] 左侧可选的返回按钮 (`Image(systemName: "arrow.left")`).
+        - [ ] 右侧可选的 `Picker` 下拉框.
+        - [ ] 可配置的 `placeholder` 文本.
+    - **`FooterView.swift`**
+        - [ ] 创建 `FooterView: View`.
+        - [ ] 左侧展示模块图标和 `feature` 名称.
+        - [ ] 右侧垂直分割线隔开两个按钮.
+        - [ ] 实现 "Return Key" 按钮, 包含文本和 `KeyboardKeyView`.
+        - [ ] 实现 "Actions" 按钮, 点击后弹出 `ActionsPopoverView`.
+    - **`ActionsPopoverView.swift`**
+        - [ ] 创建 `ActionsPopoverView: View` 用于展示actions列表.
+        - [ ] 实现玻璃效果背景.
+        - [ ] 顶端包含一个搜索框, 用于过滤 `actions`.
+        - [ ] 列表展示所有可用的 `ModuleAction`.
+        - [ ] 实现外部点击或按 `Esc` 关闭逻辑.
+
+- **主搜索窗口 (Search Window)**
+    - **`Windows/SearchWindow.swift`**
+        - [ ] 创建 `SearchWindow: NSPanel`, 设置 styleMask: `.borderless`, `.fullSizeContentView`, `.nonactivatingPanel`.
+        - [ ] 实现 `canBecomeKey` 返回 `true` 但不激活其他应用.
+        - [ ] 实现失去焦点时自动隐藏 (`windowDidResignKey`).
+    - **`Windows/SearchWindowManager.swift`**
+        - [ ] 管理 `SearchWindow` 的显示和隐藏.
+        - [ ] 拦截 Cmd+Q, 改为隐藏窗口.
+        - [ ] 监听全局快捷键以显示窗口.
+    - **`UI/Main/MainView.swift`**
+        - [ ] 作为 `SearchWindow` 的根 `View`.
+        - [ ] 顶部包含 `SearchBarView`.
+        - [ ] 中间是 `ContentView`, 根据 `activeModule` 动态展示内容.
+        - [ ] 底部是 `FooterView`.
+        - [ ] 实现键盘事件拦截 (通过 `NSViewController` 的 `cancelOperation` 等).
+
+- **设置窗口 (Settings Window)**
+    - **`Windows/SettingsWindow.swift`**
+        - [ ] 创建一个标准的 `NSWindow`.
+    - **`UI/Settings/SettingsView.swift`**
+        - [ ] 作为 `SettingsWindow` 的根 `View`.
+        - [ ] 使用 `NavigationSplitView` 创建两栏布局.
+        - [ ] 左侧 `Sidebar` 列表展示所有 `loadedModules`.
+        - [ ] 右侧 `Detail` 区域展示 `selectedModule.settingsView()`.
+        - [ ] 应用玻璃效果, 并按要求调整透明度和模糊度.
+
+## 3. 主程序逻辑 (QueryTools App Logic)
+
+- **`QueryToolsApp.swift`**
+    - [ ] App 入口, 初始化 `GlobalState` 和 `SearchWindowManager`.
+    - [ ] 注册全局快捷键.
+    - [ ] 加载 `Sparkle` 更新器.
+    - [ ] 配置 `LaunchAtLogin`.
+- **`Core/ModuleManager.swift`**
+    - [ ] 负责发现和加载所有模块 (Swift Packages).
+    - [ ] 提供一个接口获取所有已启用的模块列表.
+    - [ ] 处理模块的优先级排序.
+- **`Core/SearchEngine.swift`**
+    - [ ] 实现主搜索逻辑.
+    - [ ] 当 `currentQuery` 改变时, 进行 `debounce` 处理.
+    - [ ] 检查 `query` 是否匹配模块 `prefix`.
+        - [ ] 如果匹配, 则将搜索范围限定在该模块内, 并设置 `activeModule`.
+        - [ ] 如果不匹配, 则在所有模块的 `features` 中进行全局搜索.
+    - [ ] 更新 `GlobalState.queryResults`.
+
+## 4. 模块开发 (Modules Development)
+
+### MainView (作为核心功能实现)
+
+- **`UI/Main/MainContentView.swift`**
+    - [ ] 当 `activeModule` 为 `nil` 时展示此视图.
+    - [ ] 以 `Section` 形式分组展示所有已启用模块的 `feature` 入口.
+- **`Core/GeneralSettings.swift`**
+    - [ ] 使用 `Defaults` 创建持久化设置.
+        - [ ] `enum SearchMode: String, Codable { case fuzzy, exact, regex }`
+        - [ ] `Defaults.Key<SearchMode>("searchMode", default: .fuzzy)`
+        - [ ] `Defaults.Key<Double>("debounceDuration", default: 0.2)`
+        - [ ] `Defaults.Key<[String]>("enabledModules", default: ["AppSearch", ...])`
+        - [ ] `Defaults.Key<[String: Int]>("modulePriority", default: [:])`
+        - [ ] 定义 `KeyboardShortcuts.Name` 用于 Return 和 Actions 快捷键.
+- **`UI/Settings/GeneralSettingsView.swift`**
+    - [ ] 提供UI来修改上述所有 `GeneralSettings`.
+    - [ ] 使用 `KeyboardShortcuts.Recorder` 来录制快捷键.
+
+---
+
+### App Search Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `AppSearchModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Settings**
+    - [ ] `AppSearchSettings.swift`: 使用 `Defaults` 存储搜索方式, 最近使用App数量.
+    - [ ] `AppSearchSettingsView.swift`: 提供UI进行设置.
+- **Logic**
+    - [ ] `AppSearchService.swift`:
+        - [ ] 使用 `NSMetadataQuery` 或 `Spotlight` 搜索 `kMDItemContentType == "com.apple.application-bundle"`.
+        - [ ] 搜索 `kMDItemDisplayName` 和 `kMDItemAlternativeNames`.
+        - [ ] 缓存搜索结果以提高性能.
+        - [ ] 提供获取最近使用App的接口 (`NSWorkspace.shared.runningApplications`).
+- **Views**
+    - [ ] `AppSearchView.swift` (Feature ContentView):
+        - [ ] 上半部分使用 `ScrollView` + `LazyVGrid` 展示最近使用的App.
+        - [ ] 下半部分使用 `List` 展示按 `Category` 分组的搜索结果.
+        - [ ] `AppItemView.swift`: 展示单个App的图标和名称.
+
+---
+
+### Calendar Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `CalendarModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `ReminderService.swift`:
+        - [ ] 使用 `EventKit`框架访问用户的提醒事项.
+        - [ ] 请求日历/提醒事项访问权限.
+        - [ ] 提供接口获取指定日期范围内的所有提醒事项.
+        - [ ] 提供增、删、改、完成提醒事项的接口.
+- **Views**
+    - [ ] `CalendarView.swift` (Feature ContentView):
+        - [ ] 实现一个日历网格视图.
+        - [ ] `CalendarDayCell.swift`: 在每个单元格中渲染当天的提醒事项.
+        - [ ] `ReminderItemView.swift`: 用提醒事项分类的颜色作为背景, 展示标题.
+    - [ ] `EditReminderView.swift` (用于添加/修改的Subview):
+        - [ ] 创建表单, 包含标题、备注、日期、优先级等输入框.
+        - [ ] 实现 Tab 和 Shift+Tab 的焦点切换.
+
+---
+
+### Calculator Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `CalculatorModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `CalculatorEngine.swift`:
+        - [ ] 封装 `NSExpression` 进行数学计算.
+        - [ ] 扩展 `NSExpression` 以支持 `**` (幂) 和 `sqrt()` (开根) 等自定义函数.
+        - [ ] 实现布尔运算逻辑.
+    - [ ] `UnitConverterService.swift`:
+        - [ ] 使用 `Foundation` 的 `Unit` 和 `Dimension` 类型进行单位转换. (这是内置库, 无需网络)
+        - [ ] 建立一个可支持的单位转换列表.
+- **Views**
+    - [ ] `CalculationView.swift` (计算 Subview):
+        - [ ] 无输入时, 展示帮助信息 (支持的运算符和函数).
+        - [ ] 输入有效时, 显示计算结果.
+        - [ ] 输入无效时, 显示错误提示.
+    - [ ] `UnitConverterView.swift` (单位转换 Subview):
+        - [ ] 无输入时, 分类展示支持的单位和占位符.
+        - [ ] 根据输入内容实时进行转换并展示结果.
+
+---
+
+### Clipboard Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `ClipboardModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Data**
+    - [ ] `ClipboardDatabase.swift`:
+        - [ ] 使用 `GRDB.swift` 或 `SQLite.swift` 库来管理 `sqlite` 数据库.
+        - [ ] 设计数据表: `id`, `content_type` (text, image, file), `data`, `source_app`, `first_copied_at`, `last_used_at`, `copy_count`.
+- **Logic**
+    - [ ] `ClipboardManager.swift`:
+        - [ ] 使用 `Timer` 轮询 `NSPasteboard`.
+        - [ ] 检测剪贴板内容变化, 并将新内容存入数据库.
+        - [ ] 提供搜索和排序数据库记录的接口.
+- **Views**
+    - [ ] `ClipboardHistoryView.swift` (Feature ContentView):
+        - [ ] 使用 `NavigationSplitView` 实现两栏布局.
+        - [ ] 左侧 `List` 展示预览条目 (`ClipboardItemRowView`).
+        - [ ] 右侧 `DetailView` 展示选中项的详细内容, 根据类型 (文字/图片/文件) 渲染不同视图.
+
+---
+
+### Finder Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `FinderModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `FinderSearchService.swift`:
+        - [ ] 使用 `NSMetadataQuery` 进行文件搜索.
+        - [ ] 根据下拉框选择, 配置搜索范围 (`kMDQueryScopeHome`, `kMDQueryScopeComputer`).
+        - [ ] 提供获取文件 `metadata` 和 `preview` (使用 `QuickLookThumbnailing`) 的接口.
+- **Views**
+    - [ ] `FinderSearchView.swift` (Feature ContentView):
+        - [ ] 使用 `NavigationSplitView` 实现两栏布局.
+        - [ ] 左侧展示最近文件列表和搜索结果.
+        - [ ] 右侧 `FileDetailView` 展示预览和详细的元数据.
+
+---
+
+### System & Settings Modules (合并简化)
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `SystemModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `SystemActionService.swift`:
+        - [ ] **设置跳转**: 使用 `NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.keyboard")!)` 打开系统设置特定面板.
+        - [ ] **音量/亮度**: 使用 `CoreAudio` (可能需要三方库简化) 和 `CoreDisplay` 控制.
+        - [ ] **系统操作**: 使用 `AppleScript` 执行 `sleep`, `shutdown`, `restart`, `toggle dark mode`, `toggle DND` 等操作.
+        - [ ] **网络**: 使用 `CoreWLAN` 框架控制Wi-Fi.
+        - [ ] **蓝牙**: 使用 `IOBluetooth` 框架控制蓝牙设备.
+- **Views**
+    - [ ] `SystemActionsView.swift` (Feature ContentView):
+        - [ ] 作为一个 `List`, 展示所有可用的系统操作 (如 "Sleep", "Toggle Dark Mode", "Open Sound Settings").
+        - [ ] 每个列表项都是一个可执行的动作.
+
+---
+
+### Translate & Web Browser Modules (合并简化, 依赖外部应用)
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `WebModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `WebActionService.swift`:
+        - [ ] **搜索引擎**: 根据用户设置拼接搜索URL (e.g., `https://www.google.com/search?q=...`), 使用 `NSWorkspace.shared.open()` 打开.
+        - [ ] **URL判断**: 检查输入是否为合法的URL, 如果是则直接打开.
+        - [ ] **历史/收藏**: 使用 `AppleScript` 或直接读取 `~/Library/Safari/History.db` 和 `Bookmarks.plist` 文件. (需要处理沙盒权限)
+        - [ ] **翻译/词典**: 使用URL Scheme打开词典应用 (`dict://word`) 或跳转到谷歌翻译页面.
+- **Views**
+    - [ ] `WebSearchView.swift` (Feature ContentView):
+        - [ ] `List` 展示搜索结果/历史/收藏.
+        - [ ] 根据输入内容动态生成 "Search with Google for '...'" 或 "Open URL '...'" 等选项.
+
+---
+
+### Window Manager Module
+
+- **Package & Protocol**
+    - [ ] 创建本地 Swift Package `WindowManagerModule`.
+    - [ ] 实现 `QueryModule` protocol.
+- **Logic**
+    - [ ] `WindowService.swift`:
+        - [ ] 使用 **Accessibility API** (`AXUIElement`) 来获取所有窗口信息 (app, title) 并对其进行操作 (移动, 缩放, 置顶).
+        - [ ] **权限请求**: 实现请求辅助功能权限的逻辑.
+        - [ ] **布局管理**: 实现预设的布局算法 (左半屏, 右半屏, 居中, 最大化).
+        - [ ] **多显示器**: 使用 `NSScreen.screens` 获取显示器信息, 实现窗口跨显示器移动.
+- **Views**
+    - [ ] `WindowManagerView.swift` (Feature ContentView):
+        - [ ] `List` 展示所有可执行的窗口管理动作 (如 "Center Front Window", "Move to Left Half").
+        - [ ] 同时可以有一个搜索框, 搜索当前打开的窗口并进行切换.
