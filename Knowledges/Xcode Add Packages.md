@@ -1,7 +1,6 @@
 ---
 type: skills
 tags:
-  - app
   - MacOS
   - swift
   - software/Xcode

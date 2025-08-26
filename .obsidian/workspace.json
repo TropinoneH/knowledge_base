@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Git Init.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "QueryTools"
+              "title": "Git Init"
             }
           }
         ]
@@ -119,8 +119,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Git Init.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Git Init"
             }
           },
           {
@@ -211,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Git Init.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Git Init"
             }
           }
         ]
@@ -262,11 +261,12 @@
   },
   "active": "f74535368dff1668",
   "lastOpenFiles": [
-    "Knowledges/Xcode Add Packages.md",
-    "Develop/Better-Link-Clicker.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Templates/Insert Callouts.md",
     "Develop/QueryTools.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Git Init.md",
+    "Develop/Better-Link-Clicker.md",
+    "Templates/Insert Callouts.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
