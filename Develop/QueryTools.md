@@ -42,13 +42,14 @@ rate: 🌟🌟🌟🌟
 	- 在这里拦截所有的key press, 但是我希望你不是直接去监听按键按下而是类似cancelOperation这种事件的拦截, 因为有的按键并不是针对这个SearchWindow的, 比如说使用中文输入法的时候的return, arrow key等.
 	- 不改变原来窗口的焦点
 	- 在打开的时候可能会获取之前Window的ID(句柄?引用?), 在Window Manager Module中可能会有用
+        - 在打开的时候触发事件, 在隐藏的时候触发事件
 - Settings Window
 	- 分成两栏
 		- 左侧是所有的module, 是导航栏. 玻璃效果的透明度略低
 		- 右侧是选中module的具体设置, 所有的设置由每个module自己控制. 玻璃效果的blur效果略高
 	- 每个module有自己的SettingsView, 这个Window只是展示
 	- 使用Defaults持久化
-	- 每次设置之后, 热更新, 包括UI和功能
+	- 每次设置之后, 热更新, 包括UI和功能(触发事件)
 
 ### 事件驱动
 - Escape Key Press
@@ -70,7 +71,7 @@ rate: 🌟🌟🌟🌟
 
 ### 数据集中管理
 
-所有global共享的数据全部放在一个singleton模式的`ObservableObject`下, 使用`@Publisher`或者`Combine`进行监听和热更新, 比如说, 当前启用的模块`activeModule`, 当前选中的结果索引`selectedIndex`, 所有的搜索结果`queryResults`, 当前搜索的内容`currentQuery`. 每个模块中进行更新数据的时候都是对这个`@ObservedObject`进行修改, 所有与数据相关的内容都是对这个进行读取.
+所有global共享的数据全部放在一个singleton模式的`ObservableObject`下, 使用`@Publisher`或者`Combine`进行监听和热更新, 比如说, 当前启用的模块`activeFeature: (any Feature)?`, 当前选中的结果索引`selectedIndex: Int?`, 所有的搜索结果`queryResults`, 当前搜索的内容`currentQuery`. 每个模块中进行更新数据的时候都是对这个`@ObservedObject`进行修改, 所有与数据相关的内容都是对这个进行读取.
 
 注意, 你可能会需要将部分属性设置为`private(set)`, 然后使用`set...`这种公共接口进行设置, 以保证安全性.
 
@@ -154,6 +155,8 @@ GeneralSettings:
 - 如果输入的是module prefix + space, 那么搜索该module的所有feature的entry
 - 如果输入的是feature prefix + space, 那么直接进入该feature
 - 如果都不属于上面两种, 查询所有的feature(需要判断feature是否support这个query), 给出每个feature的最符合的三条记录(这个数量在settings中可以设置), 按照module priority的顺序
+
+如果什么也没有搜索, 那么直接展示所有的features的entries. 这个通过监听展示main window的事件, 进行自动调用搜索(在最开始打开的时候, 进行一次搜索, currentQuery == "", 返回所有的features entries)
 
 搜索结果的UI设置:
 - 一个横条
@@ -331,10 +334,9 @@ Settings:
 
 请你阅读上面所有的需求文档(部分Modules没有写完, 缺少一些UI/设置/功能的配置, 你可以帮我自行完成)
 
-你需要根据需求文档, 写出一份实施细则, 具体到每个部分的每个文件有什么功能, 需要完成什么功能, 需要实现什么API接口. 将这个实施细则使用markdown的todo list的形式给出. 这个todo list的顺序是实施的顺序, 这个todo list作为大纲. 注意, 你只需要在最细节的一条内容中添加`-`即可, 无需全部添加
+你需要根据需求文档, 写出一份实施细则, 具体到每个部分的每个文件有什么功能, 需要完成什么功能, 需要实现什么API接口. 将这个实施细则使用markdown的todo list的形式给出. 这个todo list的顺序是实施的顺序, 这个todo list作为大纲.
 
 你需要尽可能详细写, 无需考虑输出限制, 你需要尽可能详细给出每个模块的所有需要实现的内容, 尽可能不全需要实现的内容. 在你进行输出todo list的时候, 你需要考虑全局, 考虑所有的模块的开发, 一次性将全部需要实现的属性给出.
-
 # QueryTools App 实施细则
 
 使用 #software/Xcode 进行创建
@@ -365,43 +367,45 @@ Settings:
 ### 阶段一：项目初始化与核心架构
 
 - **1. 创建 Xcode 项目**
-    - [x] 创建一个新的 macOS App 项目，命名为 `QueryTools`。
-    - [x] 在项目根目录下创建一个名为 `Packages` 的Group，用于存放本地Swift Packages。
+	- [x] 创建一个新的 macOS App 项目，命名为 `QueryTools`。
+	- [x] 在项目根目录下创建一个名为 `Packages` 的Group，用于存放本地Swift Packages。
 
 - **2. 创建 `ModuleProtocol` Package**
-    - [x] 在 `Packages` Group下，创建新的本地Swift Package，命名为 `ModuleProtocol`。
-    - **File: `Module.swift`**
-        - [x] 定义 `Module` protocol，包含以下属性：
-            -   `var id: UUID { get }`
-            -   `var name: String { get }`
-            -   `var icon: Image { get }`
-            -   `var prefix: String? { get }`
-            -   `var settingsView: AnyView { get }`
-            -   `var features: [any Feature] { get }`
-    - **File: `Feature.swift`**
-        - [x] 定义 `Feature` protocol，包含以下属性和方法：
-            -   `var name: String { get }`
-            -   `var prefix: String? { get }`
-            -   `func support() -> Bool` // 判断该feature是否应该响应当前查询. 通过全局数据状态来获取currentQuery
-            -   `var view: AnyView { get }` // 返回该feature的主内容视图
-            -   `var headerView: AnyView? { get }` // 可选的头部视图，通常是SearchBar
-            -   `var footerView: AnyView? { get }` // 可选的脚部视图
-            -   `var actions: [Action] { get }` // 定义该feature支持的actions
-            -   `func performReturnAction()` // 执行回车键默认操作
-    - **File: `Action.swift`**
-        - [x] 定义 `Action` struct，包含：
-            -   `var name: String`
-            -   `var shortcut: KeyboardShortcuts.Name?` // 可选的快捷键
-            -   `var handler: () -> Void` // 执行操作的闭包
-    - **File: `QueryResult.swift`**
-        - [x] 定义 `QueryResult` struct/class，用于在MainView中展示搜索结果条目。
-            -   `var id: UUID`
-            -   `var sourceModule: Module.id`
-            -   `var icon: Image`
-            -   `var title: String`
-            -   `var subtitle: String?`
-            -   `var typeDescription: String` // "Module Entry", "App Result", etc.
-            -   `var onSelect: () -> Void` // 选中后执行的操作
+	- [x] 在 `Packages` Group下，创建新的本地Swift Package，命名为 `ModuleProtocol`。
+	- **File: `Module.swift`**
+		- [x] 定义 `Module` protocol，包含以下属性：
+			-   `var id: UUID { get }`
+			-   `var name: String { get }`
+			-   `var icon: Image { get }`
+			-   `var prefix: String? { get }`
+			-   `var settingsView: AnyView { get }`
+			-   `var features: [any Feature] { get }`
+	- **File: `Feature.swift`**
+		- [x] 定义 `Feature` protocol，包含以下属性和方法：
+			-   `var id: UUID`
+			-   `var name: String { get }`
+			-   `var prefix: String? { get }`
+			-   `func support(for query: String) -> Bool` // 判断该feature是否应该响应当前查询.
+			-   `func performQuery() -> [QueryResult]` // 核心函数, 从全局状态管理中心中读取currentQuery, 进行搜索或者其他功能
+			-   `var view: AnyView { get }` // 返回该feature的主内容视图
+			-   `var headerView: AnyView? { get }` // 可选的头部视图，通常是SearchBar
+			-   `var footerView: AnyView? { get }` // 可选的脚部视图
+	- **File: `Action.swift`**
+		- [x] 定义 `Action` struct，包含：
+			-   `var id: UUID`
+			-   `var name: String`
+			-   `var shortcut: KeyboardShortcuts.Name?` // 可选的快捷键
+			-   `var handler: () -> Void` // 执行操作的闭包
+	- **File: `QueryResult.swift`**
+		- [x] 定义 `QueryResult` struct/class，用于在MainView中展示搜索结果条目。
+			-   `var id: UUID`
+			-   `var sourceModule: any Module`
+			-   `var icon: Image`
+			-   `var title: String`
+			-   `var subtitle: String?`
+			-   `var typeDescription: String` // "Module Entry", "App Result", etc.
+			-   `var onSelect: () -> Void` // 选中后执行的操作
+			-   `var actions: [Action] { get }` // 定义该feature支持的actions
 
 - **3. 创建全局数据状态管理中心 (`GlobalState`)**
     - [x] 在 `QueryTools` 主项目中，创建 `GlobalState.swift`。
@@ -409,15 +413,12 @@ Settings:
     - [x] 添加 `@Published` 属性：
         -   `@Published var currentQuery: String = ""`
         -   `@Published var queryResults: [QueryResult] = []`
-        -   `@Published var activeModule: (any Module)?`
         -   `@Published var activeFeature: (any Feature)?`
-        -   `@Published var selectedIndex: Int = 0`
-        -   `@Published var isMainWindowVisible: Bool = false`
-        -   `@Published var isActionPanelVisible: Bool = false`
-    - [x] 添加线程安全的方法来更新这些属性，例如 `public func setResults(_ results: [QueryResult])`。
+        -   `@Published var selectedIndex: Int? = nil`
+    - [x] 添加线程安全的方法来更新这些属性。
 
 - **4. 事件驱动中心 (`NotificationManager`)**
-    - [x] 在 `QueryTools` 主项目中，创建 `NotificationManager.swift`。
+    - [x] 在 `QueryTools` 主项目中，创建 `AppEvents.swift`。
     - [x] 使用 `Notification.Name` 扩展，定义所有全局事件：
         -   `static let escapeKeyPressed`
         -   `static let returnKeyPressed`

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f74535368dff1668",
+            "id": "ca7234899093a4e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Git Init"
             }
+          },
+          {
+            "id": "47f023625ea29769",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Develop/QueryTools.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "QueryTools"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Init.md",
+                "file": "Develop/QueryTools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +206,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Init"
+              "title": "Backlinks for QueryTools"
             }
           },
           {
@@ -210,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Init.md",
+                "file": "Develop/QueryTools.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,12 +258,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5280271663017597,
+                  "scale": 1.5204108763401327,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Init"
+              "title": "Graph of QueryTools"
             }
           }
         ]
@@ -259,13 +284,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f74535368dff1668",
+  "active": "47f023625ea29769",
   "lastOpenFiles": [
-    "Develop/QueryTools.md",
-    "Knowledges/Xcode Add Packages.md",
-    "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Git Init.md",
+    "Knowledges/SSH Key.md",
+    "PyTorch.md",
+    "Knowledges/C++ Use Torch Module.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
+    "Develop/QueryTools.md",
+    "Knowledges/Vicon Connect ROS.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Xcode Add Packages.md",
+    "Knowledges/ROS.md",
+    "Knowledges/ROS Topic.md",
     "Templates/Insert Callouts.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
