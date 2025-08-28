@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca7234899093a4e1",
+            "id": "ca030d538151d214",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Init.md",
+                "file": "Knowledges/Git Commit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Init"
-            }
-          },
-          {
-            "id": "47f023625ea29769",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/QueryTools.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "QueryTools"
+              "title": "Git Commit"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#command",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,7 +132,7 @@
       {
         "id": "9a3d2360b6a27bbe",
         "type": "tabs",
-        "dimension": 45.583038869257955,
+        "dimension": 40.13086150490731,
         "children": [
           {
             "id": "94a8754fa1af570e",
@@ -174,7 +149,7 @@
       {
         "id": "fde24d656db5f9c0",
         "type": "tabs",
-        "dimension": 23.462897526501767,
+        "dimension": 25.627044711014175,
         "children": [
           {
             "id": "137ed9f8d4c8f28c",
@@ -196,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Git Commit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Git Commit"
             }
           },
           {
@@ -227,7 +202,7 @@
       {
         "id": "b54e4c0ed8902f03",
         "type": "tabs",
-        "dimension": 30.954063604240282,
+        "dimension": 34.24209378407851,
         "children": [
           {
             "id": "d5e00afb7e231c52",
@@ -235,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Git Commit.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -248,7 +223,7 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
+                  "collapse-display": true,
                   "showArrow": true,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 0.6203857421875,
@@ -257,13 +232,13 @@
                   "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
                   "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.5204108763401327,
+                  "linkDistance": 101,
+                  "scale": 0.9832475302420403,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Git Commit"
             }
           }
         ]
@@ -284,16 +259,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47f023625ea29769",
+  "active": "ca030d538151d214",
   "lastOpenFiles": [
     "Knowledges/Git Init.md",
+    "Knowledges/Git Log.md",
     "Knowledges/SSH Key.md",
+    "Knowledges/Git Commit.md",
+    "Assets/Pasted image 20250828165858.png",
+    "Assets/Pasted image 20250828165452.png",
+    "Develop/QueryTools.md",
     "PyTorch.md",
     "Knowledges/C++ Use Torch Module.md",
     "Knowledges/Xcode Add Packages.md",
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
-    "Develop/QueryTools.md",
     "Knowledges/Vicon Connect ROS.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Xcode Add Packages.md",

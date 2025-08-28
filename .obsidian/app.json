@@ -5,5 +5,6 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": false,
   "attachmentFolderPath": "Assets",
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "newFileFolderPath": ""
 }

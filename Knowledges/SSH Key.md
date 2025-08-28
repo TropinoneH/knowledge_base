@@ -1,3 +1,8 @@
+---
+type: command
+tags:
+  - cli
+---
 # Generate Key
 
 创建ssh公钥私钥:

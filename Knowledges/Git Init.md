@@ -2,7 +2,6 @@
 type: command
 tags:
   - cli
-  - command
 ---
 # 前置需求
 
