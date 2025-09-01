@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git.md",
+                "file": "Topic/PyTorch.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "PyTorch"
             }
           }
         ]
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#command",
+                "query": "tag:#python",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git.md",
+                "file": "Topic/PyTorch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git"
+              "title": "Backlinks for PyTorch"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git.md",
+                "file": "Topic/PyTorch.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git"
+              "title": "Graph of PyTorch"
             }
           }
         ]
@@ -259,14 +259,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4fe4731e93e5b87c",
+  "active": "eeaaaee2f4068c06",
   "lastOpenFiles": [
+    "Knowledges/C++ Use Torch Module.md",
+    "Topic/PyTorch.md",
+    "Topic/Git.md",
+    "Topic",
     "Knowledges/Git Cache.md",
     "Knowledges/Git Submodule.md",
     "Knowledges/Git Clone.md",
     "Knowledges/Git Checkout.md",
     "Knowledges/Git Branch.md",
-    "Knowledges/Git.md",
     "Knowledges/Git Ignore.md",
     "Knowledges/Untitled.md",
     "Knowledges/Git PullRequest.md",
@@ -279,7 +282,6 @@
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
     "Knowledges/Vicon Connect ROS.md",
-    "Knowledges/C++ Use Torch Module.md",
     "Knowledges/SSH.md",
     "Git Checkout.md",
     "Assets/Pasted image 20250828165858.png",
@@ -288,7 +290,6 @@
     "PyTorch.md",
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
-    "Xcode Add Packages.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
@@ -300,7 +301,6 @@
     "Assets/Pasted image 20250819192014.png",
     "Assets",
     "未命名文件夹",
-    "Untitled",
     "Knowledges",
     "Develop",
     "Bases",

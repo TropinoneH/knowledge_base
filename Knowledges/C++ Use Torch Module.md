@@ -1,10 +1,9 @@
 ---
 type: skills
 tags:
-  - cpp
-  - python
   - DeepLearning
-  - code
+  - code/python
+  - code/cpp
 done: true
 ---
 # Torch Export
