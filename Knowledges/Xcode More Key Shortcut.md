@@ -4,6 +4,7 @@ tags:
   - MacOS
   - swift
   - software/Xcode
+done: true
 ---
 # 快捷键设置
 

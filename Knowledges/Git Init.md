@@ -2,6 +2,8 @@
 type: command
 tags:
   - cli
+  - cooperate
+done: true
 ---
 # 前置需求
 
@@ -33,7 +35,7 @@ git config --global -e
 ```
 ## (可选) 配置ssh
 
-![[SSH Key#Generate Key]]
+![[SSH#Generate Key]]
 
 # 创建新的git仓库
 
@@ -63,21 +65,4 @@ git remote set <remote_name> <remote_url>
 
 # 设置上游仓库
 
-在任何[[Git Commit|commit提交]]之后, 可以[[Git Push|上传]]到远程仓库:
-```bash
-git push <remote_name> <branch>
-```
-
-[[Git Branch|分支]]需要当前的分支名称和远程的分支名称匹配. 或者使用下方命令:
-```bash
-git push <remote_name> <local_branch>:<remote_branch>
-```
-
-但是每次上传都需要写`<remote_name>`. 因此可以使用`-u`在push的时候, 下一次push可以无需写明:
-```bash
-git push -u <remote> <branch>
-```
-此后无需指定remote和branch:
-```bash
-git push
-```
+![[Git Push#Push]]

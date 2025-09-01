@@ -2,6 +2,7 @@
 type: command
 tags:
   - cli
+done: false
 ---
 # Generate Key
 
@@ -49,7 +50,9 @@ usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
                   -n namespace -s signature_file [-r krl_file] [-O option]
 ```
 
-# Login by SSH Key
+
+# SSH Login
+## Login by SSH Key
 
 创建ssh key之后, 使用下面的命令将自己的ssh公钥发送给server, 后续使用ssh私钥登陆:
 ```bash

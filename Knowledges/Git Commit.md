@@ -1,5 +1,9 @@
 ---
 type: command
+tags:
+  - cli
+  - cooperate
+done: true
 ---
 # Preliminaries
 
@@ -83,7 +87,7 @@ editor中展示:
 
 使用下面的代码进行修改commit:
 ```bash
-git commit --allow-empty --amend --only -m "<new_messages>"
+git commit --allow-empty --amend --only -m "<new_message>"
 ```
 
 ## 将新的修改添加到上一条commit中
@@ -163,4 +167,4 @@ rebase之后的[[Git Log#Show commit|log]]应该为:
 
 此时合并结束.
 
-如果要[[Git Push|上传远程]], 可能需要shi
+如果要[[Git Push|上传远程]], 可能需要使用`--force`或者`--force-with-release`强制推送

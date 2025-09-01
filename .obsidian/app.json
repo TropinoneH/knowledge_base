@@ -6,5 +6,6 @@
   "showUnsupportedFiles": false,
   "attachmentFolderPath": "Assets",
   "showInlineTitle": true,
-  "newFileFolderPath": ""
+  "newFileFolderPath": "",
+  "alwaysUpdateLinks": true
 }

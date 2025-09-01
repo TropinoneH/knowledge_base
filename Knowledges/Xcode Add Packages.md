@@ -5,6 +5,7 @@ tags:
   - swift
   - software/Xcode
   - code
+done: true
 ---
 # Create New Local Packages
 

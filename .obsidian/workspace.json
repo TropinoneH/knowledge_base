@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca030d538151d214",
+            "id": "4fe4731e93e5b87c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
+              "title": "Git"
             }
           }
         ]
@@ -149,7 +149,7 @@
       {
         "id": "fde24d656db5f9c0",
         "type": "tabs",
-        "dimension": 25.627044711014175,
+        "dimension": 25.62704471101417,
         "children": [
           {
             "id": "137ed9f8d4c8f28c",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Commit"
+              "title": "Backlinks for Git"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Commit"
+              "title": "Graph of Git"
             }
           }
         ]
@@ -259,30 +259,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca030d538151d214",
+  "active": "4fe4731e93e5b87c",
   "lastOpenFiles": [
-    "Knowledges/Git Init.md",
+    "Knowledges/Git Cache.md",
+    "Knowledges/Git Submodule.md",
+    "Knowledges/Git Clone.md",
+    "Knowledges/Git Checkout.md",
+    "Knowledges/Git Branch.md",
+    "Knowledges/Git.md",
+    "Knowledges/Git Ignore.md",
+    "Knowledges/Untitled.md",
+    "Knowledges/Git PullRequest.md",
+    "Knowledges/Git Pull.md",
+    "Knowledges/Git Push.md",
+    "Knowledges/Git Merge.md",
     "Knowledges/Git Log.md",
-    "Knowledges/SSH Key.md",
+    "Knowledges/Git Init.md",
     "Knowledges/Git Commit.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Knowledges/Vicon Connect ROS.md",
+    "Knowledges/C++ Use Torch Module.md",
+    "Knowledges/SSH.md",
+    "Git Checkout.md",
     "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250828165452.png",
     "Develop/QueryTools.md",
     "PyTorch.md",
-    "Knowledges/C++ Use Torch Module.md",
-    "Knowledges/Xcode Add Packages.md",
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
-    "Knowledges/Vicon Connect ROS.md",
-    "Knowledges/Xcode More Key Shortcut.md",
     "Xcode Add Packages.md",
-    "Knowledges/ROS.md",
-    "Knowledges/ROS Topic.md",
-    "Templates/Insert Callouts.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
-    "Knowledges/Xcode Add.md",
     "Assets/Pasted image 20250824203528.png",
     "Assets/Pasted image 20250824202514.png",
     "Assets/Pasted image 20250824202415.png",
@@ -292,15 +301,8 @@
     "Assets",
     "未命名文件夹",
     "Untitled",
-    "Develop/12123.md",
-    "Develop/123123.md",
-    "Develop/123.md",
-    "Develop/1.md",
-    "index.md",
-    "Welcome.md",
     "Knowledges",
     "Develop",
-    "123123.md",
     "Bases",
     "Templates"
   ]

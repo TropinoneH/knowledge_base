@@ -6,6 +6,7 @@ tags:
   - EmbodiedAI
   - ComputerVision
   - code
+done: true
 ---
 # Vicon
 
