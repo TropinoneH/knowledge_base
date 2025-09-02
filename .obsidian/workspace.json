@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topic/PyTorch.md",
+                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PyTorch"
+              "title": "Dual-System(Windows+Linux) Grub Rescue"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topic/PyTorch.md",
+                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PyTorch"
+              "title": "Backlinks for Dual-System(Windows+Linux) Grub Rescue"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Topic/PyTorch.md",
+                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PyTorch"
+              "title": "Graph of Dual-System(Windows+Linux) Grub Rescue"
             }
           }
         ]
@@ -259,11 +259,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eeaaaee2f4068c06",
+  "active": "4fe4731e93e5b87c",
   "lastOpenFiles": [
-    "Knowledges/C++ Use Torch Module.md",
+    "Topic/Linux.md",
+    "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
     "Topic/PyTorch.md",
     "Topic/Git.md",
+    "Knowledges/C++ Use Torch Module.md",
     "Topic",
     "Knowledges/Git Cache.md",
     "Knowledges/Git Submodule.md",
@@ -271,7 +273,6 @@
     "Knowledges/Git Checkout.md",
     "Knowledges/Git Branch.md",
     "Knowledges/Git Ignore.md",
-    "Knowledges/Untitled.md",
     "Knowledges/Git PullRequest.md",
     "Knowledges/Git Pull.md",
     "Knowledges/Git Push.md",
@@ -289,7 +290,6 @@
     "Develop/QueryTools.md",
     "PyTorch.md",
     "Develop/Span Anything.md",
-    "Develop/Better-Link-Clicker.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
