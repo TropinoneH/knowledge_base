@@ -2,9 +2,8 @@
 type: skills
 tags:
   - MacOS
-  - swift
   - software/Xcode
-  - code
+  - code/swift
 done: true
 ---
 # Create New Local Packages

@@ -1,10 +1,10 @@
 ---
 type: project
 tags:
-  - swift
   - GUI
   - MacOS
   - software/Xcode
+  - code/swift
 done: false
 rate: 🌟🌟🌟🌟
 ---

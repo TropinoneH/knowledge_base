@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+                "file": "Topic/Linux.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dual-System(Windows+Linux) Grub Rescue"
+              "title": "Linux"
             }
           }
         ]
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#python",
+                "query": "tag:#swift",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+                "file": "Topic/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Dual-System(Windows+Linux) Grub Rescue"
+              "title": "Backlinks for Linux"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+                "file": "Topic/Linux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,12 +233,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 0.9832475302420403,
+                  "scale": 1.2754245006257974,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Dual-System(Windows+Linux) Grub Rescue"
+              "title": "Graph of Linux"
             }
           }
         ]
@@ -261,8 +261,20 @@
   },
   "active": "4fe4731e93e5b87c",
   "lastOpenFiles": [
+    "Knowledges/Pacman.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Untitled.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Develop/QueryTools.md",
     "Topic/Linux.md",
+    "Knowledges/ArchLinux Install.md",
+    "Knowledges/Dual-System Install Ubuntu.md",
+    "Knowledges/Linux Timezone.md",
+    "Assets/Pasted image 20250615182155.png",
+    "Assets/Pasted image 20250615181559.png",
     "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+    "Assets/Pasted image 20250828165858.png",
+    "Assets/Pasted image 20250615034145.png",
     "Topic/PyTorch.md",
     "Topic/Git.md",
     "Knowledges/C++ Use Torch Module.md",
@@ -280,25 +292,13 @@
     "Knowledges/Git Log.md",
     "Knowledges/Git Init.md",
     "Knowledges/Git Commit.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Knowledges/Xcode Add Packages.md",
-    "Knowledges/Vicon Connect ROS.md",
-    "Knowledges/SSH.md",
-    "Git Checkout.md",
-    "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250828165452.png",
-    "Develop/QueryTools.md",
-    "PyTorch.md",
-    "Develop/Span Anything.md",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
     "Assets/Pasted image 20250824203528.png",
     "Assets/Pasted image 20250824202514.png",
     "Assets/Pasted image 20250824202415.png",
-    "Assets/Pasted image 20250824202350.png",
-    "Assets/Pasted image 20250824202121.png",
-    "Assets/Pasted image 20250819192014.png",
     "Assets",
     "未命名文件夹",
     "Knowledges",

@@ -2,7 +2,6 @@
 type: software
 tags:
   - MacOS
-  - swift
   - software/Xcode
 done: true
 ---
