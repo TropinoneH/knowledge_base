@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topic/Linux.md",
+                "file": "Knowledges/Grub Rescue.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linux"
+              "title": "Grub Rescue"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topic/Linux.md",
+                "file": "Knowledges/Grub Rescue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Linux"
+              "title": "Backlinks for Grub Rescue"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Topic/Linux.md",
+                "file": "Knowledges/Grub Rescue.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Linux"
+              "title": "Graph of Grub Rescue"
             }
           }
         ]
@@ -261,18 +261,18 @@
   },
   "active": "4fe4731e93e5b87c",
   "lastOpenFiles": [
+    "Topic/Linux.md",
     "Knowledges/Pacman.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Untitled.md",
     "Knowledges/Xcode Add Packages.md",
     "Develop/QueryTools.md",
-    "Topic/Linux.md",
     "Knowledges/ArchLinux Install.md",
     "Knowledges/Dual-System Install Ubuntu.md",
     "Knowledges/Linux Timezone.md",
     "Assets/Pasted image 20250615182155.png",
     "Assets/Pasted image 20250615181559.png",
-    "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+    "Knowledges/Grub Rescue.md",
     "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250615034145.png",
     "Topic/PyTorch.md",
