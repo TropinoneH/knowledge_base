@@ -22,7 +22,7 @@ git submodule add [-b <branch>] <remote_url> <path/to/repo>
 > [!tip]+ Tips
 > 有的时候, `path/to/repo`已经在[[Git Cache|缓存]]中存在(原来就有一个文件夹). 这个时候应该先从cache中移除这个文件夹:
 > 
-> ![[Git Cache#Remove Cache]]
+> ![[Git Cache#Remove from Staging Area]]
 
 ## Sync URL
 

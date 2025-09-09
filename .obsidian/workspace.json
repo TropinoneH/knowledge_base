@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f27b34261ae3f7c4",
+        "id": "b386e04b263030bf",
         "type": "tabs",
         "children": [
           {
-            "id": "4fe4731e93e5b87c",
+            "id": "0ba3573cab5d6a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topic/Git.md",
+                "file": "Knowledges/Git Merge.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Git Merge"
+            }
+          },
+          {
+            "id": "ab6c9a72edc3a15b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/3D-VLA.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "3D-VLA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#swift",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +144,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -171,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topic/Git.md",
+                "file": "Paper/3D-VLA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +207,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git"
+              "title": "Backlinks for 3D-VLA"
             }
           },
           {
@@ -210,7 +236,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Topic/Git.md",
+                "file": "Paper/3D-VLA.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,12 +259,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.2754245006257974,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git"
+              "title": "Graph of 3D-VLA"
             }
           }
         ]
@@ -256,11 +282,25 @@
       "bases:Create new base": false,
       "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "4fe4731e93e5b87c",
+  "active": "ab6c9a72edc3a15b",
   "lastOpenFiles": [
+    "Paper/PDF/2403.09631v1.pdf",
+    "Paper/3D-VLA.md",
+    "Knowledges/Git Merge.md",
+    "Knowledges/Git Pull.md",
+    "Topic/Git.md",
+    "Develop/Span Anything.md",
+    "Knowledges/Git Cache.md",
+    "Knowledges/Git Submodule.md",
+    "Knowledges/Git Ignore.md",
+    "Paper/PDF",
+    "Paper",
     "Topic/Linux.md",
     "Knowledges/Grub Rescue.md",
     "Btrfs.md",
@@ -277,21 +317,12 @@
     "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250615034145.png",
     "Topic/PyTorch.md",
-    "Topic/Git.md",
     "Knowledges/C++ Use Torch Module.md",
     "Topic",
-    "Knowledges/Git Cache.md",
-    "Knowledges/Git Submodule.md",
     "Knowledges/Git Clone.md",
     "Knowledges/Git Checkout.md",
     "Knowledges/Git Branch.md",
-    "Knowledges/Git Ignore.md",
     "Knowledges/Git PullRequest.md",
-    "Knowledges/Git Pull.md",
-    "Knowledges/Git Push.md",
-    "Knowledges/Git Merge.md",
-    "Knowledges/Git Log.md",
-    "Knowledges/Git Init.md",
     "Assets/Pasted image 20250828165452.png",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
@@ -303,7 +334,6 @@
     "未命名文件夹",
     "Knowledges",
     "Develop",
-    "Bases",
-    "Templates"
+    "Bases"
   ]
 }

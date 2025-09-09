@@ -149,7 +149,10 @@ var SettingsUtils = class {
     const containerHeight = container.clientHeight;
     const naturalWidth = element instanceof HTMLImageElement ? element.naturalWidth : element.videoWidth;
     const naturalHeight = element instanceof HTMLImageElement ? element.naturalHeight : element.videoHeight;
-    const minScale = Math.max(containerWidth / naturalWidth, containerHeight / naturalHeight);
+    const minScale = Math.max(
+      containerWidth / naturalWidth,
+      containerHeight / naturalHeight
+    );
     const scale = Math.max(minScale, minScale * scaleFactor);
     const scaledWidth = naturalWidth * scale;
     const scaledHeight = naturalHeight * scale;
@@ -173,7 +176,12 @@ var SettingsUtils = class {
         plugin.applyMediaStyles(media);
         return;
       }
-      this.applyImagePosition(media, plugin.settings.PositionX ?? 50, plugin.settings.PositionY ?? 50, plugin.settings.Scale ?? 1);
+      this.applyImagePosition(
+        media,
+        plugin.settings.PositionX ?? 50,
+        plugin.settings.PositionY ?? 50,
+        plugin.settings.Scale ?? 1
+      );
     };
     window.addEventListener("resize", this.resizeHandler);
   }
@@ -181,6 +189,16 @@ var SettingsUtils = class {
     if (!this.resizeHandler) return;
     window.removeEventListener("resize", this.resizeHandler);
     this.resizeHandler = null;
+  }
+  static SaveSettingsDebounced(plugin) {
+    return (0, import_obsidian.debounce)(async () => {
+      await plugin.saveSettings();
+    }, 300);
+  }
+  static ApplyWallpaperDebounced(plugin) {
+    return (0, import_obsidian.debounce)(async (anyOptionEnabled) => {
+      await plugin.applyWallpaper(anyOptionEnabled);
+    }, 300);
   }
 };
 SettingsUtils.resizeHandler = null;
@@ -273,6 +291,12 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     });
+    new import_obsidian2.Setting(containerEl).setName("Limit wallpaper size").setDesc("Enable to restrict wallpapers to a maximum size (currently 12 MB). Disable for unlimited size.").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.SizeLimited).onChange(async (value) => {
+        this.plugin.settings.SizeLimited = value;
+        await this.plugin.saveSettings();
+      });
+    });
     new import_obsidian2.Setting(containerEl).setName("Enable reposition").setDesc("Toggle to adjust the wallpaper's position and scale.").addToggle((Toggle) => {
       Toggle.setValue(this.plugin.settings.Reposition).onChange(async (value) => {
         const media = document.getElementById("live-wallpaper-media");
@@ -293,7 +317,7 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         slider.setLimits(0, 100, 1).setValue(this.plugin.settings.PositionX).setDynamicTooltip().setInstant(true).onChange(async (value) => {
           const media = document.getElementById("live-wallpaper-media");
           this.plugin.settings.PositionX = value;
-          await this.plugin.saveSettings();
+          this.plugin.debouncedSave();
           if (media) {
             SettingsUtils.applyImagePosition(media, this.plugin.settings.PositionX, this.plugin.settings.PositionY, this.plugin.settings.Scale);
           }
@@ -303,7 +327,7 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         slider.setLimits(0, 100, 1).setValue(this.plugin.settings.PositionY).setDynamicTooltip().setInstant(true).onChange(async (value) => {
           const media = document.getElementById("live-wallpaper-media");
           this.plugin.settings.PositionY = value;
-          await this.plugin.saveSettings();
+          this.plugin.debouncedSave();
           if (media) {
             SettingsUtils.applyImagePosition(media, this.plugin.settings.PositionX, this.plugin.settings.PositionY, this.plugin.settings.Scale);
           }
@@ -313,7 +337,7 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         slider.setLimits(0.5, 2, 0.1).setValue(this.plugin.settings.Scale ?? 1).setDynamicTooltip().setInstant(true).onChange(async (value) => {
           const media = document.getElementById("live-wallpaper-media");
           this.plugin.settings.Scale = value;
-          await this.plugin.saveSettings();
+          this.plugin.debouncedSave();
           if (media) {
             SettingsUtils.applyImagePosition(media, this.plugin.settings.PositionX, this.plugin.settings.PositionY, this.plugin.settings.Scale);
           }
@@ -326,7 +350,7 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         dropdown.setValue(this.plugin.settings.Position).onChange(async (value) => {
           const media = document.getElementById("live-wallpaper-media");
           this.plugin.settings.Position = value;
-          await this.plugin.saveSettings();
+          this.plugin.debouncedSave();
           if (media) {
             this.plugin.settings.PositionX = Number.parseInt(value);
             SettingsUtils.applyImagePosition(media, this.plugin.settings.PositionX, this.plugin.settings.PositionY, this.plugin.settings.Scale);
@@ -339,7 +363,7 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         toggle.setValue(this.plugin.settings.useObjectFit).onChange(async (value) => {
           const media = document.getElementById("live-wallpaper-media");
           this.plugin.settings.useObjectFit = value;
-          await this.plugin.saveSettings();
+          this.plugin.debouncedSave();
           if (media) {
             Object.assign(media.style, {
               objectFit: this.plugin.settings.useObjectFit ? "unset" : "cover"
@@ -364,8 +388,8 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         if (!this.plugin.settings.AdnvOpend) {
           this.plugin.settings.opacity = v;
           valueEl.textContent = ` ${v}%`;
-          await this.plugin.saveSettings();
-          this.plugin.applyWallpaper(anyOptionEnabled);
+          this.plugin.debouncedApplyWallpaper(anyOptionEnabled);
+          this.plugin.debouncedSave();
         }
       });
     });
@@ -377,8 +401,8 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
       slider.setInstant(true).setLimits(0, 20, 1).setValue(this.plugin.settings.blurRadius).onChange(async (v) => {
         this.plugin.settings.blurRadius = v;
         valueEl.textContent = ` ${v}px`;
-        await this.plugin.saveSettings();
-        this.plugin.applyWallpaper(anyOptionEnabled);
+        this.plugin.debouncedApplyWallpaper(anyOptionEnabled);
+        this.plugin.debouncedSave();
       });
     });
     new import_obsidian2.Setting(containerEl).setName("Brightness").setDesc("Adjusts the wallpaper brightness (100% = normal)").addSlider((slider) => {
@@ -389,8 +413,8 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
       slider.setInstant(true).setLimits(20, 130, 1).setValue(this.plugin.settings.brightness).onChange(async (v) => {
         this.plugin.settings.brightness = v;
         valueEl.textContent = ` ${v}%`;
-        await this.plugin.saveSettings();
-        this.plugin.applyWallpaper(anyOptionEnabled);
+        this.plugin.debouncedApplyWallpaper(anyOptionEnabled);
+        this.plugin.debouncedSave();
       });
     });
     new import_obsidian2.Setting(containerEl).setName("Layer position (z\u2011index)").setDesc(
@@ -408,8 +432,8 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
         if (!this.plugin.settings.AdnvOpend) {
           this.plugin.settings.zIndex = v;
           valueEl.textContent = ` ${v}`;
-          await this.plugin.saveSettings();
-          this.plugin.applyWallpaper(anyOptionEnabled);
+          this.plugin.debouncedApplyWallpaper(anyOptionEnabled);
+          this.plugin.debouncedSave();
         }
       });
     });
@@ -429,8 +453,8 @@ var SettingsApp = class extends import_obsidian2.PluginSettingTab {
       });
       slider.setInstant(true).setLimits(0.25, 2, 0.25).setValue(this.plugin.settings.playbackSpeed).onChange(async (val) => {
         this.plugin.settings.playbackSpeed = val;
-        await this.plugin.saveSettings();
-        await this.plugin.applyWallpaper(false);
+        this.plugin.debouncedApplyWallpaper(false);
+        this.plugin.debouncedSave();
         valueEl.setText(`${val.toFixed(2)}x`);
       });
     });
@@ -722,15 +746,18 @@ var LiveWallpaperSettingTab = class extends import_obsidian4.PluginSettingTab {
     });
     const advancedOptionsContainer = advancedSection.createDiv();
     advancedOptionsContainer.style.display = this.plugin.settings.AdnvOpend ? "block" : "none";
-    toggleAdvancedButton.onclick = () => {
+    toggleAdvancedButton.onclick = async () => {
       this.plugin.settings.AdnvOpend = !this.plugin.settings.AdnvOpend;
       advancedOptionsContainer.style.display = this.plugin.settings.AdnvOpend ? "block" : "none";
-      toggleAdvancedButton.setText(
-        this.plugin.settings.AdnvOpend ? "Hide advanced options" : "Show advanced options"
-      );
-      this.plugin.toggleModalStyles();
-      this.plugin.settings.opacity = 40;
-      this.plugin.settings.zIndex = 5;
+      toggleAdvancedButton.setText(this.plugin.settings.AdnvOpend ? "Hide advanced options" : "Show advanced options");
+      await this.plugin.toggleModalStyles();
+      if (this.plugin.settings.AdnvOpend === false) {
+        this.plugin.settings.opacity = 40;
+        this.plugin.settings.zIndex = 5;
+      } else {
+        this.plugin.settings.opacity = 100;
+        this.plugin.settings.zIndex = 0;
+      }
       this.plugin.applyWallpaper(anyOptionEnabled);
       this.plugin.saveSettings();
       this.display();
@@ -823,23 +850,23 @@ var LiveWallpaperSettingTab = class extends import_obsidian4.PluginSettingTab {
       new import_obsidian4.Setting(advancedOptionsContainer).setName("Modal blur radius").setDesc("Adjust the blur intensity applied to the modal background").addSlider((slider) => {
         slider.setValue(this.plugin.settings.modalStyle.blurRadius).setLimits(0, 30, 1).setInstant(true).setDynamicTooltip().onChange(async (value) => {
           this.plugin.settings.modalStyle.blurRadius = value;
-          this.plugin.toggleModalStyles();
-          await this.plugin.saveSettings();
+          await this.plugin.toggleModalStyles();
+          this.plugin.debouncedSave();
         });
       });
       new import_obsidian4.Setting(advancedOptionsContainer).setName("Modal dim opacity").setDesc("Adjust the darkness level applied to the modal background").addSlider((slider) => {
         slider.setValue(this.plugin.settings.modalStyle.dimOpacity * 100).setLimits(0, 100, 5).setInstant(true).setDynamicTooltip().onChange(async (value) => {
           this.plugin.settings.modalStyle.dimOpacity = value / 100;
-          this.plugin.toggleModalStyles();
-          await this.plugin.saveSettings();
+          await this.plugin.toggleModalStyles();
+          this.plugin.debouncedSave();
         });
       });
       new import_obsidian4.Setting(advancedOptionsContainer).setName("Reset modal settings").setDesc("Restore default blur and dim opacity for the modal background").addButton(
         (btn) => btn.setIcon("reset").setTooltip("Reset modal styles to default").onClick(async () => {
           const defaults = DEFAULT_SETTINGS;
           this.plugin.settings.modalStyle = { ...defaults.modalStyle };
-          this.plugin.toggleModalStyles();
-          await this.plugin.saveSettings();
+          await this.plugin.toggleModalStyles();
+          this.plugin.debouncedSave();
           this.display();
         })
       );
@@ -925,6 +952,7 @@ var DEFAULT_SETTINGS = {
   Scale: 1,
   useObjectFit: true,
   INBUILD: false,
+  SizeLimited: true,
   scheduledWallpapers: {
     wallpaperDayPaths: [],
     wallpaperWeekPaths: [],
@@ -948,6 +976,8 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
     this.lastPath = null;
     this.lastType = null;
     this.resizeRegistered = false;
+    this.debouncedSave = SettingsUtils.SaveSettingsDebounced(this);
+    this.debouncedApplyWallpaper = SettingsUtils.ApplyWallpaperDebounced(this);
   }
   async onload() {
     await this.loadSettings();
@@ -1009,7 +1039,6 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
     try {
       const loaded = await this.loadData();
       this.settings = { ...DEFAULT_SETTINGS, ...loaded };
-      await this.LoadOrUnloadChanges(true);
     } catch (e) {
       console.error("Live Wallpaper Plugin \u2013 loadSettings error:", e);
       this.settings = { ...DEFAULT_SETTINGS };
@@ -1051,6 +1080,7 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
     return ["image", "video", "gif"].includes(t);
   }
   async applyWallpaper(anyOptionEnabled) {
+    console.log("asdads");
     let newPath = null;
     let newType = this.settings.wallpaperType;
     if (anyOptionEnabled) {
@@ -1090,20 +1120,21 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
           newMedia2.style.opacity = "0";
           newMedia2.style.transition = "opacity 1s ease-in-out";
           container.appendChild(newMedia2);
-          requestAnimationFrame(() => {
-            newMedia2.style.opacity = "1";
-          });
+          await new Promise((resolve) => requestAnimationFrame(() => resolve()));
+          await new Promise((resolve) => setTimeout(resolve, 20));
           const medias = container.querySelectorAll('[id^="live-wallpaper-media"]');
+          await this.waitForMediaDimensions(newMedia2);
           medias.forEach((el, i) => {
             if (i < medias.length - 1) {
               const htmlEl = el;
               htmlEl.style.transition = "opacity 1s ease-in-out";
               htmlEl.style.opacity = "0";
+              newMedia2.style.opacity = "1";
               setTimeout(() => {
                 if (htmlEl.parentElement) {
                   htmlEl.remove();
                 }
-              }, 1e3);
+              }, 3e3);
             }
           });
           media = newMedia2;
@@ -1120,7 +1151,6 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
           this.settings.Scale
         );
       }
-      await this.saveSettings();
       return;
     }
     this.removeExistingWallpaperElements();
@@ -1276,7 +1306,7 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
         alert("Unsupported file type!");
         return;
       }
-      if (file.size > 12 * 1024 * 1024) {
+      if (this.settings.SizeLimited && file.size > 12 * 1024 * 1024) {
         alert("File is too large (max 12MB).");
         return;
       }
@@ -1309,7 +1339,8 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
           this.settings.wallpaperPath = activeRelPath;
           this.settings.wallpaperType = this.getWallpaperType(fileName);
         }
-        this.applyWallpaper(anyOptionEnabled);
+        await this.applyWallpaper(anyOptionEnabled);
+        this.debouncedSave();
       } catch (error) {
         alert("Could not save the file. Check disk permissions.");
         console.error(error);
@@ -1481,7 +1512,7 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
     }
     this.LoadOrUnloadChanges(true);
   }
-  toggleModalStyles() {
+  async toggleModalStyles() {
     const styleId = "extrastyles-dynamic-css";
     let style = document.getElementById(styleId);
     if (this.settings.AdnvOpend) {
@@ -1509,7 +1540,13 @@ var LiveWallpaperPlugin3 = class extends import_obsidian6.Plugin {
     } else {
       style?.remove();
     }
-    this.LoadOrUnloadChanges(this.settings.AdnvOpend);
+    const wallpaperExists = await SettingsUtils.getPathExists(this, this.settings.wallpaperPath);
+    if (!wallpaperExists) {
+      this.LoadOrUnloadChanges(false);
+      return;
+    } else {
+      this.LoadOrUnloadChanges(this.settings.AdnvOpend);
+    }
   }
   RemoveModalStyles() {
     const styleId = "extrastyles-dynamic-css";

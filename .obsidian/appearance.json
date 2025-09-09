@@ -11,5 +11,6 @@
     "tag-pills"
   ],
   "translucency": false,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "showRibbon": false
 }
