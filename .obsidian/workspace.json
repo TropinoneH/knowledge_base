@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Grub Rescue.md",
+                "file": "Topic/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Grub Rescue"
+              "title": "Git"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Grub Rescue.md",
+                "file": "Topic/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Grub Rescue"
+              "title": "Backlinks for Git"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Grub Rescue.md",
+                "file": "Topic/Git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Grub Rescue"
+              "title": "Graph of Git"
             }
           }
         ]
@@ -262,6 +262,8 @@
   "active": "4fe4731e93e5b87c",
   "lastOpenFiles": [
     "Topic/Linux.md",
+    "Knowledges/Grub Rescue.md",
+    "Btrfs.md",
     "Knowledges/Pacman.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Untitled.md",
@@ -272,7 +274,6 @@
     "Knowledges/Linux Timezone.md",
     "Assets/Pasted image 20250615182155.png",
     "Assets/Pasted image 20250615181559.png",
-    "Knowledges/Grub Rescue.md",
     "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250615034145.png",
     "Topic/PyTorch.md",
@@ -291,7 +292,6 @@
     "Knowledges/Git Merge.md",
     "Knowledges/Git Log.md",
     "Knowledges/Git Init.md",
-    "Knowledges/Git Commit.md",
     "Assets/Pasted image 20250828165452.png",
     "Assets/Pasted image 20250824204642.png",
     "Bases/Projects.base",
