@@ -10,9 +10,10 @@ tags:
   - DeepLearning
   - Robot
 publish: ICML24
+pdf: "[[2403.09631v1.pdf]]"
 rate:
 done: false
 ---
-> [!note]- Paper
+ > [!note]- Paper
 > ![[2403.09631v1.pdf]]
 

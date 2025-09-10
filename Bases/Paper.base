@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("Paper")
+    - type == "paper"
+views:
+  - type: table
+    name: All Papers
+    order:
+      - file.name
+      - file.tags
+      - publish
+      - rate
+      - done
+      - pdf
+    sort:
+      - property: pdf
+        direction: ASC
+    columnSize:
+      file.tags: 357
+      note.publish: 91
+      note.rate: 83
+      note.done: 65

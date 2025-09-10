@@ -55,8 +55,7 @@
               "title": "3D-VLA"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/3D-VLA.md",
+                "file": "Knowledges/Git Merge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +206,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 3D-VLA"
+              "title": "Backlinks for Git Merge"
             }
           },
           {
@@ -236,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/3D-VLA.md",
+                "file": "Knowledges/Git Merge.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -264,7 +263,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 3D-VLA"
+              "title": "Graph of Git Merge"
             }
           }
         ]
@@ -288,10 +287,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ab6c9a72edc3a15b",
+  "active": "0ba3573cab5d6a51",
   "lastOpenFiles": [
-    "Paper/PDF/2403.09631v1.pdf",
     "Paper/3D-VLA.md",
+    "Bases/Paper.base",
+    "Paper/PDF/2403.09631v1.pdf",
+    "Bases/Projects.base",
     "Knowledges/Git Merge.md",
     "Knowledges/Git Pull.md",
     "Topic/Git.md",
@@ -325,7 +326,6 @@
     "Knowledges/Git PullRequest.md",
     "Assets/Pasted image 20250828165452.png",
     "Assets/Pasted image 20250824204642.png",
-    "Bases/Projects.base",
     "Assets/Pasted image 20250824204425.png",
     "Assets/Pasted image 20250824203528.png",
     "Assets/Pasted image 20250824202514.png",
@@ -333,7 +333,6 @@
     "Assets",
     "未命名文件夹",
     "Knowledges",
-    "Develop",
-    "Bases"
+    "Develop"
   ]
 }
