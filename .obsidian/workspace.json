@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Merge.md",
+                "file": "Knowledges/Git Cache.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Merge"
+              "title": "Git Cache"
             }
           },
           {
@@ -196,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Merge.md",
+                "file": "Knowledges/Git Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +206,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Merge"
+              "title": "Backlinks for Git Cache"
             }
           },
           {
@@ -235,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Merge.md",
+                "file": "Knowledges/Git Cache.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,7 +263,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Merge"
+              "title": "Graph of Git Cache"
             }
           }
         ]
@@ -289,16 +289,16 @@
   },
   "active": "0ba3573cab5d6a51",
   "lastOpenFiles": [
+    "Knowledges/Git Submodule.md",
+    "Knowledges/Git Merge.md",
     "Paper/3D-VLA.md",
     "Bases/Paper.base",
     "Paper/PDF/2403.09631v1.pdf",
     "Bases/Projects.base",
-    "Knowledges/Git Merge.md",
     "Knowledges/Git Pull.md",
     "Topic/Git.md",
     "Develop/Span Anything.md",
     "Knowledges/Git Cache.md",
-    "Knowledges/Git Submodule.md",
     "Knowledges/Git Ignore.md",
     "Paper/PDF",
     "Paper",
