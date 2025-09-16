@@ -32,28 +32,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "a924183c6c628690",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5af6692667f102d2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/生物医学统计-白芳-1.pdf",
-                "page": 7,
-                "left": -29,
-                "top": 145,
-                "zoom": 0.54296875
-              },
-              "icon": "lucide-file-text",
-              "title": "生物医学统计-白芳-1"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -145,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -268,8 +245,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -287,10 +263,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "5af6692667f102d2",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Slides/ee160-lec1.pdf",
     "Lecture/Slides/生物医学统计-白芳-1.pdf",
+    "Lecture/Slides/ee160-lec1.pdf",
     "Lecture/Biomedical Statistics.md",
     "Lecture/Introduction to Control.md",
     "Lecture/Slides",
