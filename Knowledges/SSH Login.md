@@ -2,6 +2,7 @@
 type: command
 tags:
   - cli
+  - ssh
 done: false
 ---
 # Generate Key

@@ -35,7 +35,7 @@ git config --global -e
 ```
 ## (可选) 配置ssh
 
-![[SSH#Generate Key]]
+![[SSH Login#Generate Key]]
 
 # 创建新的git仓库
 

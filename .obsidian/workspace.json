@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Cache.md",
+                "file": "Knowledges/SSH Forward.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Cache"
+              "title": "SSH Forward"
             }
           },
           {
@@ -196,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Cache.md",
+                "file": "Knowledges/SSH Forward.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +206,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Cache"
+              "title": "Backlinks for SSH Forward"
             }
           },
           {
@@ -235,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Cache.md",
+                "file": "Knowledges/SSH Forward.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,7 +263,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Cache"
+              "title": "Graph of SSH Forward"
             }
           }
         ]
@@ -289,6 +289,10 @@
   },
   "active": "0ba3573cab5d6a51",
   "lastOpenFiles": [
+    "Knowledges/SSH Forward.md",
+    "Knowledges/VPN.md",
+    "Knowledges/SSH Login.md",
+    "Knowledges/Git Cache.md",
     "Knowledges/Git Submodule.md",
     "Knowledges/Git Merge.md",
     "Paper/3D-VLA.md",
@@ -298,7 +302,6 @@
     "Knowledges/Git Pull.md",
     "Topic/Git.md",
     "Develop/Span Anything.md",
-    "Knowledges/Git Cache.md",
     "Knowledges/Git Ignore.md",
     "Paper/PDF",
     "Paper",
@@ -322,8 +325,6 @@
     "Topic",
     "Knowledges/Git Clone.md",
     "Knowledges/Git Checkout.md",
-    "Knowledges/Git Branch.md",
-    "Knowledges/Git PullRequest.md",
     "Assets/Pasted image 20250828165452.png",
     "Assets/Pasted image 20250824204642.png",
     "Assets/Pasted image 20250824204425.png",

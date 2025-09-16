@@ -9,7 +9,7 @@ done: true
 
 ## (可选) 设置SSH
 
-![[SSH#Generate Key]]
+![[SSH Login#Generate Key]]
 
 然后将ssh pub key添加到github
 
