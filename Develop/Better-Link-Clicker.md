@@ -2,7 +2,7 @@
 type: project
 tags:
   - obsidian
-  - javascripts
+  - code/javascript
 done: true
 rate: 🌟🌟
 ---

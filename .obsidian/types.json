@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "done": "checkbox",
-    "rate": "text"
+    "rate": "text",
+    "teacher": "multitext"
   }
 }

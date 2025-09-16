@@ -1,0 +1,16 @@
+---
+type: lecture notes
+tags:
+  - biology
+  - MachineLearning
+  - algorithm
+teacher:
+  - 白芳
+  - 陈洪涛
+ClassID: BT1062
+done: false
+---
+# Lecture 01
+> [!note]- slide
+> ![[生物医学统计-白芳-1.pdf]]
+
