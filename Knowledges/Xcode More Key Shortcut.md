@@ -1,8 +1,8 @@
 ---
 type: software
 tags:
-  - MacOS
   - software/Xcode
+  - system/MacOS
 done: true
 ---
 # 快捷键设置

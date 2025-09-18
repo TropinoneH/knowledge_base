@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Biomedical Statistics.md",
+                "file": "Knowledges/Conda Init.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Biomedical Statistics"
+              "title": "Conda Init"
             }
           }
         ]
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "tag:#system/MacOS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Biomedical Statistics.md",
+                "file": "Knowledges/Conda Init.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Biomedical Statistics"
+              "title": "Backlinks for Conda Init"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Biomedical Statistics.md",
+                "file": "Knowledges/Conda Init.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Biomedical Statistics"
+              "title": "Graph of Conda Init"
             }
           }
         ]
@@ -263,41 +263,42 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "de7127bc402a7b85",
+  "active": "eeaaaee2f4068c06",
   "lastOpenFiles": [
-    "Lecture/Slides/生物医学统计-白芳-1.pdf",
-    "Lecture/Slides/ee160-lec1.pdf",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Develop/QueryTools.md",
+    "Topic/System.md",
+    "Knowledges/Conda Init.md",
+    "Topic/Git.md",
+    "Topic/Conda.md",
+    "Templates/Topic Template.md",
+    "Templates/Insert Callouts.md",
+    "Topic/Shell.md",
+    "Knowledges/ArchLinux Install.md",
     "Lecture/Biomedical Statistics.md",
+    "Paper/3D-VLA.md",
     "Lecture/Introduction to Control.md",
+    "Lecture/Slides/ee160-lec1.pdf",
+    "Lecture/Electric Circuits.md",
+    "Develop/Better-Link-Clicker.md",
+    "Lecture/Slides/生物医学统计-白芳-1.pdf",
     "Lecture/Slides",
     "Lecture/未命名文件夹",
-    "Lecture/Electric Circuits.md",
-    "Knowledges/Conda Init.md",
-    "Topic/Conda.md",
     "Knowledges/Conda Activate.md",
     "Knowledges/Conda Environment.md",
     "Knowledges/Conda Bugs.md",
     "Bases/Paper.base",
     "Bases/Projects.base",
-    "Paper/3D-VLA.md",
     "Knowledges/Conda Install.md",
     "Knowledges/Linux MultiEnv.md",
-    "Topic/Git.md",
-    "Topic/Linux.md",
-    "Templates/Insert Callouts.md",
-    "Develop/Better-Link-Clicker.md",
     "Knowledges/Dual-System Install Ubuntu.md",
     "Knowledges/Linux Timezone.md",
     "Knowledges/SSH Forward.md",
     "Lecture",
     "Knowledges/VPN.md",
     "Knowledges/SSH Login.md",
-    "Knowledges/Git Cache.md",
-    "Knowledges/Git Submodule.md",
-    "Knowledges/Git Merge.md",
     "Paper/PDF/2403.09631v1.pdf",
-    "Knowledges/Git Pull.md",
-    "Develop/Span Anything.md",
     "Paper/PDF",
     "Paper",
     "Assets/Pasted image 20250615182155.png",

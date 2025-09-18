@@ -33,7 +33,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 ```
 
-#System/MacOS fish shell, 使用[[Homebrew]]安装:
+#system/MacOS fish shell, 使用[[Homebrew]]安装:
 ```fish
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

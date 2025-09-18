@@ -116,7 +116,7 @@ Include = /etc/pacman.d/mirrorlist
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware nano vim sudo intel-ucode bluez bluez-utils grub efibootmgr os-prober networkmanager resolvconf iwd dhcpcd ntfs-3g btrfs-progs
 ```
 - `base`, `base-devel`: 基础安装包, 包含一些编译命令, 如`makepkg`, `make`等
-- `linux`, `linux-headers`, `linux-firmware`: [[Linux]]本体和硬件管理. 还有别的版本如`linux-zen`+`linux-zen-headers`性能优化内核 / `linux-lts`+`linux-lts-headers` 长期支持的内核 [等等](https://wiki.archlinux.org/title/Kernel)
+- `linux`, `linux-headers`, `linux-firmware`: [[System]]本体和硬件管理. 还有别的版本如`linux-zen`+`linux-zen-headers`性能优化内核 / `linux-lts`+`linux-lts-headers` 长期支持的内核 [等等](https://wiki.archlinux.org/title/Kernel)
 - `nano`, `vim`: editor
 - `sudo`: permission control
 - `intel-ucode`/`amd-ucode`: 对于不同CPU的架构, 安装对应的ucode. microcode为CPU提供安全性和bug的补丁
