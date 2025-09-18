@@ -45,14 +45,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/ee160-lec1.pdf",
-                    "page": 22,
-                    "left": -198,
-                    "top": 190,
-                    "zoom": 0.7
+                    "file": "Lecture/Slides/ee160-lec2.pdf",
+                    "page": 16,
+                    "left": 0,
+                    "top": 521,
+                    "zoom": 0.67
                   },
                   "icon": "lucide-file-text",
-                  "title": "ee160-lec1"
+                  "title": "ee160-lec2"
                 }
               }
             ]
@@ -290,7 +290,7 @@
         }
       },
       "active": "de7127bc402a7b85",
-      "mtime": "2025-09-17T20:37:00+08:00"
+      "mtime": "2025-09-18T18:05:22+08:00"
     },
     "note": {
       "main": {

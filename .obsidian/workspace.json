@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Conda Init.md",
+                "file": "Topic/Lecture Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conda Init"
+              "title": "Lecture Notes"
             }
           }
         ]
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#system/MacOS",
+                "query": "tag:#javascripts",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Conda Init.md",
+                "file": "Topic/Lecture Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Conda Init"
+              "title": "Backlinks for Lecture Notes"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Conda Init.md",
+                "file": "Topic/Lecture Notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conda Init"
+              "title": "Graph of Lecture Notes"
             }
           }
         ]
@@ -263,24 +263,28 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "eeaaaee2f4068c06",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Topic/Conda.md",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Slides/ee160-lec2.pdf",
+    "Topic/Git.md",
+    "Lecture/Slides/ee160-lec1.pdf",
+    "Lecture/Slides/F25Lec2-Kirchhoff and Node_Mesh_analysis.pdf",
+    "Lecture/Electric Circuits.md",
+    "Topic/Lecture Notes.md",
+    "Lecture/Slides/F25Lec1-Introduction & Circuit Terminology.pdf",
+    "Knowledges/Conda Init.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
     "Develop/QueryTools.md",
     "Topic/System.md",
-    "Knowledges/Conda Init.md",
-    "Topic/Git.md",
-    "Topic/Conda.md",
     "Templates/Topic Template.md",
     "Templates/Insert Callouts.md",
     "Topic/Shell.md",
     "Knowledges/ArchLinux Install.md",
     "Lecture/Biomedical Statistics.md",
     "Paper/3D-VLA.md",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/ee160-lec1.pdf",
-    "Lecture/Electric Circuits.md",
     "Develop/Better-Link-Clicker.md",
     "Lecture/Slides/生物医学统计-白芳-1.pdf",
     "Lecture/Slides",
@@ -296,11 +300,6 @@
     "Knowledges/Linux Timezone.md",
     "Knowledges/SSH Forward.md",
     "Lecture",
-    "Knowledges/VPN.md",
-    "Knowledges/SSH Login.md",
-    "Paper/PDF/2403.09631v1.pdf",
-    "Paper/PDF",
-    "Paper",
     "Assets/Pasted image 20250615182155.png",
     "Assets/Pasted image 20250615181559.png",
     "Assets/Pasted image 20250828165858.png",
