@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topic/Lecture Notes.md",
+                "file": "Develop/QueryTools.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lecture Notes"
+              "title": "QueryTools"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topic/Lecture Notes.md",
+                "file": "Develop/QueryTools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture Notes"
+              "title": "Backlinks for QueryTools"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Topic/Lecture Notes.md",
+                "file": "Develop/QueryTools.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Lecture Notes"
+              "title": "Graph of QueryTools"
             }
           }
         ]
@@ -265,27 +265,28 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Develop/Better-Link-Clicker.md",
+    "Templates/Topic Template.md",
+    "Topic/Untitled.md",
+    "Topic/System.md",
+    "Templates/Insert Callouts.md",
     "Topic/Conda.md",
+    "Lecture/Biomedical Statistics.md",
+    "Topic/Lecture Notes.md",
     "Lecture/Introduction to Control.md",
     "Lecture/Slides/ee160-lec2.pdf",
     "Topic/Git.md",
     "Lecture/Slides/ee160-lec1.pdf",
     "Lecture/Slides/F25Lec2-Kirchhoff and Node_Mesh_analysis.pdf",
     "Lecture/Electric Circuits.md",
-    "Topic/Lecture Notes.md",
     "Lecture/Slides/F25Lec1-Introduction & Circuit Terminology.pdf",
     "Knowledges/Conda Init.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
     "Develop/QueryTools.md",
-    "Topic/System.md",
-    "Templates/Topic Template.md",
-    "Templates/Insert Callouts.md",
     "Topic/Shell.md",
     "Knowledges/ArchLinux Install.md",
-    "Lecture/Biomedical Statistics.md",
     "Paper/3D-VLA.md",
-    "Develop/Better-Link-Clicker.md",
     "Lecture/Slides/生物医学统计-白芳-1.pdf",
     "Lecture/Slides",
     "Lecture/未命名文件夹",

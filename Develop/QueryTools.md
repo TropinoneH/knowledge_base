@@ -499,9 +499,9 @@ Settings:
 
 - **1. 实现模块管理器 (`ModuleManager`)**
     - [ ] 创建 `ModuleManager.swift`，作为单例。
-    - [ ] 实现一个 `discoverAndLoadModules()` 方法。
-        -   *（这部分在纯SwiftPM中比较复杂，初期可以硬编码一个模块列表进行注册）*
-        -   `private(set) var allModules: [any Module] = [AppSearchModule(), CalendarModule(), ...]`
+    - [ ] 实现一个 `addModules()` 方法。  
+        - `private(set) var allModules: [any Module] = [AppSearchModule(), CalendarModule(), ...]`
+        - 在每个Module中调用这个方法, 将自己作为Module添加到`allModules`中.
     - [ ] 从 `Defaults` 读取启用的模块ID和排序，并提供 `enabledModules` 和 `sortedEnabledModules` 属性。
 
 - **2. 实现主视图逻辑 (`MainView` & `MainViewModel`)**
