@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Topic/Conda.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "QueryTools"
+              "title": "Conda"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Topic/Conda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Conda"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Topic/Conda.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Conda"
             }
           }
         ]
@@ -265,6 +265,7 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Develop/QueryTools.md",
     "Develop/Better-Link-Clicker.md",
     "Templates/Topic Template.md",
     "Topic/Untitled.md",
@@ -283,7 +284,6 @@
     "Knowledges/Conda Init.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
-    "Develop/QueryTools.md",
     "Topic/Shell.md",
     "Knowledges/ArchLinux Install.md",
     "Paper/3D-VLA.md",
