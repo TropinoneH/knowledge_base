@@ -191,3 +191,50 @@ $$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$
 对于电路系统:
 ![[EE160-lec2.pdf#page=16&rect=190,353,511,470&color=note|ee160-lec2, p.16]]
 
+## State Space Model
+
+State Space Model由两部分组成, 一个是状态$\overset{\cdot}{x}=\mathbf{A}x(t)+\mathbf{B}u(t)$, 一个是输出$y=\mathbf{C}x(t)+\mathbf{D}u(t)$
+
+![[EE160-lec2.pdf#page=22&rect=329,277,468,392|EE160-lec2, p.22|132]]
+
+其中:
+- $x(t)$是状态向量
+- $\overset{\cdot}{x}(t)$是一阶导数
+- $y$是输出向量
+- $u$是输入向量, 或者说control vector
+- $\mathbf{A}$是系统矩阵
+- $\mathbf{B}$是输入矩阵
+- $\mathbf{C}$是输出矩阵
+- $\mathbf{D}$是前馈矩阵
+
+![[EE160-lec2.pdf#page=23&rect=20,271,477,437|EE160-lec2, p.23]]
+$$\overset{\cdot}{x}=\begin{bmatrix}\frac{1}{C_1}&\frac{1}{C_1}&-\frac{1}{C_1}\\-\frac{1}{L}&0&0\\\frac{1}{C_2}&0&-\frac{1}{C_2}\end{bmatrix}\cdot x+\begin{bmatrix}0\\1\\0\end{bmatrix}\cdot v_i(t)$$
+$$y=\begin{bmatrix}0&0&1\end{bmatrix}x$$
+
+![[EE160-lec2.pdf#page=23&rect=497,319,921,438|EE160-lec2, p.23]]
+$$\overset{\cdot}{z}=\begin{bmatrix}0&1&0&0&0&0\\-1&-1&0&1&0&0\\0&0&0&1&0&0\\0&1&-1&-1&1&0\\0&0&0&0&1&0\\0&0&1&0&-1&-1\end{bmatrix}\cdot z+\begin{bmatrix}0\\1\\0\\0\\0\\0\end{bmatrix}\cdot f(t)$$
+$$y=\begin{bmatrix}0&0&0&0&1&0\end{bmatrix}z$$
+$$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}_2&x_3&\overset{\cdot}{x}_3&\end{bmatrix}^\top$$
+
+### Transfer Function to State Space Model
+
+二级结论: 对于分母的幂次严格大于分子的转移函数, 有:
+
+![[EE160-lec2.pdf#page=24&rect=457,28,943,274|EE160-lec2, p.24]]
+
+> [!example]+
+> ![[EE160-lec2.pdf#page=27&rect=41,369,787,455|EE160-lec2, p.27]]
+> $$$$
+
+### State Space Model to Transfer Function
+
+![[EE160-lec2.pdf#page=28&rect=634,207,906,295|EE160-lec2, p.28]]
+
+> [!example]+ 
+> ![[EE160-lec2.pdf#page=30&rect=206,317,703,437|EE160-lec2, p.30]]
+> $$sI-A=\begin{bmatrix}s+4&1.5\\-4&s\end{bmatrix}$$
+> $$adj(sI-A)=\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}$$
+> $$det(sI-A)=s(s+4)+6$$
+> $$(sI-A)^{-1}=\frac{ajd(sI-A)}{det(sI-A)}=\frac{\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}}{s^2+4s+6}$$
+> $$T(s)=\begin{bmatrix}1.5&0.625\end{bmatrix}\frac{\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}}{s^2+4s+6}\begin{bmatrix}2\\0\end{bmatrix}=\frac{3s+5}{s^2+4s+6}$$
+

@@ -3,7 +3,6 @@ type: command
 tags:
   - topic
   - code/python
-done: false
 ---
 # Conda
 

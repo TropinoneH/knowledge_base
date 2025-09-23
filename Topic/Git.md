@@ -1,10 +1,9 @@
 ---
 type: command
 tags:
+  - topic
   - cli
   - cooperate
-  - topic
-done: false
 ---
 # Git
 

@@ -8,15 +8,19 @@
     ]
   ],
   "trigger_on_file_creation": true,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
-  "user_scripts_folder": "",
+  "user_scripts_folder": "Templates/Scripts",
   "enable_folder_templates": true,
   "folder_templates": [
     {
       "folder": "Topic",
       "template": "Templates/Topic Template.md"
+    },
+    {
+      "folder": "Lecture",
+      "template": "Templates/Lecture Note Template.md"
     }
   ],
   "enable_file_templates": false,

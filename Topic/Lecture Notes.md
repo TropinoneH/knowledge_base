@@ -1,8 +1,8 @@
 ---
 type: lecture notes
 tags:
+  - topic
   - lecture
-done: false
 ---
 # All Lectures
 

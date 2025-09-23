@@ -13,6 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Lecture/Numerical Optimization.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Numerical Optimization"
+            }
+          },
+          {
+            "id": "01ec1e427834aa98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Artificial Intelligence.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Artificial Intelligence"
+            }
+          },
+          {
+            "id": "1adcb8b0760553a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Templates/Topic Template.md",
                 "mode": "source",
                 "source": false,
@@ -108,7 +156,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -143,6 +191,18 @@
               "icon": "lines-of-text",
               "title": "Quiet Outline"
             }
+          },
+          {
+            "id": "419fbf10ff0e5c8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Lecture/Numerical Optimization.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Numerical Optimization"
+            }
           }
         ]
       },
@@ -171,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Topic Template.md",
+                "file": "Lecture/Numerical Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +241,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Topic Template"
+              "title": "Backlinks for Numerical Optimization"
             }
           },
           {
@@ -210,7 +270,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Templates/Topic Template.md",
+                "file": "Lecture/Numerical Optimization.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,12 +293,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 1.133169312633287,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Topic Template"
+              "title": "Graph of Numerical Optimization"
             }
           }
         ]
@@ -265,50 +325,51 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Topic/Conda.md",
-    "Topic/1.md",
+    "Assets/Pasted image 20250506162641.png",
+    "Assets/Pasted image 20250305154032.png",
+    "Assets/Pasted image 20250304193335.png",
+    "Assets/Pasted image 20250303154326.png",
+    "Assets/image-20250304193335325.png",
+    "Assets/image-20250305154032867.png",
+    "Assets/image-20250303154326541.png",
+    "Assets/Pasted image 20250506150835.png",
+    "Templates/Lecture Note Template.md",
+    "Lecture/Numerical Optimization.md",
     "Templates/Topic Template.md",
+    "Topic/1.md",
+    "Templates/Scripts/frontmatterMultiSuggester.js",
+    "Templates/Scripts/frontmatterSelecter.js",
+    "Templates/Scripts/multiSelect.js",
+    "typescript.md",
+    "Templates/Scripts/Untitled.md",
+    "Templates/Scripts",
     "Topic/test.md",
-    "Topic/Lecture Notes.md",
+    "Topic/o.md",
+    "Topic/te.md",
+    "Lecture/1.md",
+    "Lecture/Artificial Intelligence.md",
+    "Templates/Insert Callouts.md",
+    "Lecture/123.md",
     "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE160-lec2.pdf",
-    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Electric Circuits.md",
+    "Topic/Lecture Notes.md",
+    "Topic/Conda.md",
+    "Topic/12.md",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Topic/.md",
+    "Topic/Untitled",
+    "Topic/Lecture.md",
+    "Topic/Git.md",
+    "Topic/System.md",
+    "Topic/Test.md",
+    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/ee160-lec2-updated-20250923.pdf",
     "Assets/IMG_3828.jpeg",
     "Assets/Pasted image 20250828165858.png",
     "Assets/Pasted image 20250923084823.jpeg",
-    "Assets/Pasted image 20250923084812.jpeg",
     "Lecture/Slides/BT1062-lec1.pdf",
     "Lecture/Biomedical Statistics.md",
     "Lecture/Slides/EE160-lec1.pdf",
-    "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Lecture/Slides/CS181-03-CSP.pdf",
-    "Lecture/Artificial Intelligence.md",
-    "Assets/Pasted image 20241016142151.png",
-    "Assets/Pasted image 20241016141956.png",
-    "Assets/Pasted image 20241016141415.png",
-    "Assets/Pasted image 202410161414159.png",
-    "Assets/Pasted image 20241016141415974.png",
-    "Assets/image-20241016141956157.png",
-    "Lecture/Slides/CS181-02-Search.pdf",
-    "Lecture/Artificial Intelligence - CSP.md",
-    "Lecture/Slides/CS181-01-Introduction.pdf",
-    "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
-    "Knowledges/ArchLinux Install.md",
-    "Templates/Insert Callouts.md",
-    "Topic/Git.md",
-    "Develop/QueryTools.md",
-    "Develop/Better-Link-Clicker.md",
-    "Topic/System.md",
-    "Knowledges/Conda Init.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Knowledges/Xcode Add Packages.md",
-    "Topic/Shell.md",
-    "Paper/3D-VLA.md",
-    "Knowledges/Conda Activate.md",
-    "Knowledges/Conda Environment.md",
-    "Knowledges/Conda Bugs.md",
-    "Knowledges/Conda Install.md"
+    "Lecture/Artificial Intelligence - CSP.md"
   ]
 }
