@@ -12,5 +12,6 @@
   ],
   "translucency": false,
   "showViewHeader": true,
-  "showRibbon": false
+  "showRibbon": false,
+  "theme": "obsidian"
 }

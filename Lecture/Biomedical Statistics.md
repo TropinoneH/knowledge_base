@@ -12,5 +12,5 @@ done: false
 ---
 # Lecture 01
 > [!note]- slide
-> ![[生物医学统计-白芳-1.pdf]]
+> ![[BT1062-lec1.pdf]]
 

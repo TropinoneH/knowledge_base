@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topic/Conda.md",
+                "file": "Templates/Topic Template.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conda"
+              "title": "Topic Template"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topic/Conda.md",
+                "file": "Templates/Topic Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Conda"
+              "title": "Backlinks for Topic Template"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Topic/Conda.md",
+                "file": "Templates/Topic Template.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conda"
+              "title": "Graph of Topic Template"
             }
           }
         ]
@@ -265,51 +265,50 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Develop/QueryTools.md",
-    "Develop/Better-Link-Clicker.md",
-    "Templates/Topic Template.md",
-    "Topic/Untitled.md",
-    "Topic/System.md",
-    "Templates/Insert Callouts.md",
     "Topic/Conda.md",
-    "Lecture/Biomedical Statistics.md",
+    "Topic/1.md",
+    "Templates/Topic Template.md",
+    "Topic/test.md",
     "Topic/Lecture Notes.md",
     "Lecture/Introduction to Control.md",
-    "Lecture/Slides/ee160-lec2.pdf",
-    "Topic/Git.md",
-    "Lecture/Slides/ee160-lec1.pdf",
-    "Lecture/Slides/F25Lec2-Kirchhoff and Node_Mesh_analysis.pdf",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Electric Circuits.md",
-    "Lecture/Slides/F25Lec1-Introduction & Circuit Terminology.pdf",
+    "Lecture/Slides/ee160-lec2-updated-20250923.pdf",
+    "Assets/IMG_3828.jpeg",
+    "Assets/Pasted image 20250828165858.png",
+    "Assets/Pasted image 20250923084823.jpeg",
+    "Assets/Pasted image 20250923084812.jpeg",
+    "Lecture/Slides/BT1062-lec1.pdf",
+    "Lecture/Biomedical Statistics.md",
+    "Lecture/Slides/EE160-lec1.pdf",
+    "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
+    "Lecture/Slides/CS181-03-CSP.pdf",
+    "Lecture/Artificial Intelligence.md",
+    "Assets/Pasted image 20241016142151.png",
+    "Assets/Pasted image 20241016141956.png",
+    "Assets/Pasted image 20241016141415.png",
+    "Assets/Pasted image 202410161414159.png",
+    "Assets/Pasted image 20241016141415974.png",
+    "Assets/image-20241016141956157.png",
+    "Lecture/Slides/CS181-02-Search.pdf",
+    "Lecture/Artificial Intelligence - CSP.md",
+    "Lecture/Slides/CS181-01-Introduction.pdf",
+    "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
+    "Knowledges/ArchLinux Install.md",
+    "Templates/Insert Callouts.md",
+    "Topic/Git.md",
+    "Develop/QueryTools.md",
+    "Develop/Better-Link-Clicker.md",
+    "Topic/System.md",
     "Knowledges/Conda Init.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
     "Topic/Shell.md",
-    "Knowledges/ArchLinux Install.md",
     "Paper/3D-VLA.md",
-    "Lecture/Slides/生物医学统计-白芳-1.pdf",
-    "Lecture/Slides",
-    "Lecture/未命名文件夹",
     "Knowledges/Conda Activate.md",
     "Knowledges/Conda Environment.md",
     "Knowledges/Conda Bugs.md",
-    "Bases/Paper.base",
-    "Bases/Projects.base",
-    "Knowledges/Conda Install.md",
-    "Knowledges/Linux MultiEnv.md",
-    "Knowledges/Dual-System Install Ubuntu.md",
-    "Knowledges/Linux Timezone.md",
-    "Knowledges/SSH Forward.md",
-    "Lecture",
-    "Assets/Pasted image 20250615182155.png",
-    "Assets/Pasted image 20250615181559.png",
-    "Assets/Pasted image 20250828165858.png",
-    "Assets/Pasted image 20250615034145.png",
-    "Assets/Pasted image 20250828165452.png",
-    "Assets/Pasted image 20250824204642.png",
-    "Assets/Pasted image 20250824204425.png",
-    "Assets/Pasted image 20250824203528.png",
-    "Assets/Pasted image 20250824202514.png",
-    "Assets/Pasted image 20250824202415.png"
+    "Knowledges/Conda Install.md"
   ]
 }

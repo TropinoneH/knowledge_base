@@ -45,14 +45,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/ee160-lec2.pdf",
-                    "page": 16,
-                    "left": 0,
-                    "top": 521,
-                    "zoom": 0.67
+                    "file": "Lecture/Slides/EE160-lec2.pdf",
+                    "page": 18,
+                    "left": -29,
+                    "top": 262,
+                    "zoom": 0.54296875
                   },
                   "icon": "lucide-file-text",
-                  "title": "ee160-lec2"
+                  "title": "EE160-lec2"
                 }
               }
             ]
@@ -290,7 +290,7 @@
         }
       },
       "active": "de7127bc402a7b85",
-      "mtime": "2025-09-18T18:05:22+08:00"
+      "mtime": "2025-09-23T10:29:41+08:00"
     },
     "note": {
       "main": {
@@ -307,9 +307,9 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Topic/Conda.md",
+                    "file": "Templates/Topic Template.md",
                     "mode": "source",
-                    "source": false,
+                    "source": true,
                     "backlinks": true,
                     "backlinkOpts": {
                       "collapseAll": false,
@@ -322,7 +322,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Conda"
+                  "title": "Topic Template"
                 }
               }
             ]
@@ -465,7 +465,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Topic/Conda.md",
+                    "file": "Templates/Topic Template.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -475,7 +475,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Conda"
+                  "title": "Backlinks for Topic Template"
                 }
               },
               {
@@ -504,7 +504,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Topic/Conda.md",
+                    "file": "Templates/Topic Template.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -532,7 +532,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Conda"
+                  "title": "Graph of Topic Template"
                 }
               }
             ]
@@ -558,7 +558,7 @@
         }
       },
       "active": "de7127bc402a7b85",
-      "mtime": "2025-09-17T20:37:21+08:00"
+      "mtime": "2025-09-23T10:23:01+08:00"
     }
   },
   "active": "note"
