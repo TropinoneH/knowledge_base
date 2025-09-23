@@ -22,7 +22,7 @@ module.exports = async (tp, key, defaultKeys = []) => {
         if (choice) {
             if (choice === addNewOption) {
                 const newValue = await tp.system.prompt(`please enter new ${key}:`);
-                if (!selectedItems.includes(newValue)) {
+                if (newValue && !selectedItems.includes(newValue)) {
                     selectedItems.push(newValue);
                 }
             } else {
