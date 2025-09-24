@@ -11,10 +11,24 @@
             "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Mechain Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Mechain Learning"
             }
           }
         ]
@@ -157,6 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lecture/Mechain Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Mechain Learning"
             }
           },
           {
@@ -195,6 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Lecture/Mechain Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Mechain Learning"
             }
           }
         ]
@@ -247,53 +263,52 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "de7127bc402a7b85",
+  "active": "2cc16ca757d495f4",
   "lastOpenFiles": [
-    "Topic/Lecture Notes.md",
-    "Topic/Conda.md",
-    "Topic/Git.md",
-    "Topic/System.md",
-    "Topic",
-    "Templates/Topic Template.md",
+    "Lecture/Algorithm and Data Structure.md",
+    "Lecture/Mechain Learning.md",
+    "Lecture/Discrete Mathematics.md",
+    "Lecture/Computer Architecture.md",
+    "Assets/Pasted image 20240611082314.png",
+    "Assets/Pasted image 20240611082022.png",
+    "Assets/Pasted image 20240606092710.png",
+    "Assets/Pasted image 20240606092624.png",
+    "Assets/Pasted image 20240604084744.png",
+    "Assets/Pasted image 20240604083237.png",
+    "Assets/Pasted image 20240604082420.png",
+    "Assets/Pasted image 20240604082338.png",
+    "Assets/Pasted image 20240604082318.png",
+    "Assets/Pasted image 20240604082256.png",
     "Templates/Scripts/frontmatterMultiSuggester.js",
     "Templates/Lecture Note Template.md",
-    "Paper/PDF/2403.09631v1.pdf",
-    "Paper/3D-VLA.md",
-    "Lecture/Slides/ee160-lec2.pdf",
-    "Lecture/Slides/ee160-lec1.pdf",
+    "Lecture/Numerical Optimization.md",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
     "Lecture/Slides/CS181-16-Large-Language-Models.pdf",
     "Lecture/Slides/CS181-15-Unsupervised-machine-learning.pdf",
-    "Lecture/Numerical Optimization.md",
-    "Lecture/Mechain Learning.md",
+    "Lecture/Slides/CS181-14-Supervised-machine-learning.pdf",
+    "Lecture/Slides/CS181-13-Reinforcement-learning.pdf",
+    "Lecture/Slides/CS181-12-Markov-decision-process.pdf",
+    "Lecture/Slides/CS181-11-Probabilistic-temporal-models.pdf",
+    "Lecture/Artificial Intelligence.md",
+    "Topic/Lecture Notes.md",
+    "Topic/System.md",
+    "Templates/Topic Template.md",
+    "Topic/Conda.md",
+    "Topic/Linux.md",
+    "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
+    "Knowledges/SSH.md",
+    "Topic/Git.md",
+    "Paper/3D-VLA.md",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
-    "Lecture/Discrete Mathematics.md",
-    "Lecture/Computer Architecture.md",
     "Lecture/Biomedical Statistics.md",
-    "Lecture/Artificial Intelligence.md",
-    "Lecture/Algorithm and Data Structure.md",
     "Knowledges/VPN.md",
     "Knowledges/SSH Login.md",
     "Knowledges/SSH Forward.md",
     "Knowledges/Pacman.md",
     "Knowledges/Linux Timezone.md",
-    "Knowledges/Linux MultiEnv.md",
-    "Knowledges/Grub Rescue.md",
-    "Knowledges/Git Submodule.md",
-    "Knowledges/Git Push.md",
-    "Knowledges/Git PullRequest.md",
-    "Assets/Pasted image 20250923084823.jpeg",
-    "Assets/Pasted image 20250828165858.png",
-    "Assets/Pasted image 20250828165452.png",
-    "Assets/Pasted image 20250615182155.png",
-    "Assets/Pasted image 20250615181559.png",
-    "Assets/Pasted image 20250615034145.png",
-    "Assets/Pasted image 20250506162641.png",
-    "Assets/Pasted image 20250506150835.png",
-    "Assets/Pasted image 20250305154032.png",
-    "Assets/Pasted image 20250304193335.png"
+    "Knowledges/Linux MultiEnv.md"
   ]
 }
