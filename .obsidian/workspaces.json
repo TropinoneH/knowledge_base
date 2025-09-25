@@ -32,8 +32,33 @@
                   "icon": "lucide-file",
                   "title": "Introduction to Control"
                 }
+              },
+              {
+                "id": "167d4f8a9e852b7f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Lecture/Electric Circuits.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Electric Circuits"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "363f9be3567338d8",
@@ -46,16 +71,33 @@
                   "type": "pdf",
                   "state": {
                     "file": "Lecture/Slides/EE160-lec2.pdf",
-                    "page": 32,
-                    "left": -29,
-                    "top": 483,
-                    "zoom": 0.54296875
+                    "page": 46,
+                    "left": -30,
+                    "top": 206,
+                    "zoom": 0.53125
                   },
                   "icon": "lucide-file-text",
                   "title": "EE160-lec2"
                 }
+              },
+              {
+                "id": "a29cbc20cbfb5ca8",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+                    "page": 9,
+                    "left": -21,
+                    "top": 108,
+                    "zoom": 0.7083333333333334
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "EE111-F25Lec3-Circuit Theorem"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -289,8 +331,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "de7127bc402a7b85",
-      "mtime": "2025-09-23T17:45:19+08:00"
+      "active": "a29cbc20cbfb5ca8",
+      "mtime": "2025-09-25T20:49:38+08:00"
     },
     "note": {
       "main": {
@@ -561,5 +603,5 @@
       "mtime": "2025-09-23T11:21:24+08:00"
     }
   },
-  "active": "note"
+  "active": "lecture note"
 }

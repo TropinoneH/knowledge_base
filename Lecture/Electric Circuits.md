@@ -11,7 +11,8 @@ done: false
 > [!note]- slide
 > ![[EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf]]
 
-exercise: [[EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf#page=32|F25Lec1-Introduction & Circuit Terminology, p.32]]
+exercise: 
+![[EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf#page=32&rect=54,91,634,425|EE111-F25Lec1-Introduction-&-Circuit-Terminology, p.32]]
 
 计算功率:
 
@@ -128,7 +129,7 @@ $$i_1+i_2-i_3-i_4=0$$
 > ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=16&rect=38,236,307,431&color=note|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.16|519]]
 > 
 > $$i_1=\frac{v}{R_1},i_2=\frac{v}{R_2}$$
-> KCL: $$i=i_1+i_2=v(\frac{1}{R_1}+\frac{1}{R_2}$$
+> KCL: $$i=i_1+i_2=v(\frac{1}{R_1}+\frac{1}{R_2})$$
 > 
 > 等效:
 > ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=16&rect=347,236,595,435&color=note|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.16|519]]
@@ -268,7 +269,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > KVL: 假设电流源的电压为$V_A$
 > 
 > 对于左侧:
-> $$-20+6i_1+2(i_1-i_2)-6-V_A=0$$
+> $$-20+6i_1+2(i_1-i_2)-V_A=0$$
 > 对于右侧:
 > $$V_A-2(i_1-i_2)+10i_2+4i_2=0$$
 > 此时有两个mesh两个方程, 但是有三个未知数. 需要再找一个方程.
