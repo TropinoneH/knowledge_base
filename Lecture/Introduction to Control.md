@@ -195,7 +195,7 @@ $$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$
 
 State Space Model由两部分组成, 一个是状态$\overset{\cdot}{x}=\mathbf{A}x(t)+\mathbf{B}u(t)$, 一个是输出$y=\mathbf{C}x(t)+\mathbf{D}u(t)$
 
-![[EE160-lec2.pdf#page=22&rect=329,277,468,392|EE160-lec2, p.22|132]]
+![[EE160-lec2.pdf#page=24&rect=329,277,468,392|EE160-lec2, p.22|132]]
 
 其中:
 - $x(t)$是状态向量
@@ -207,11 +207,11 @@ State Space Model由两部分组成, 一个是状态$\overset{\cdot}{x}=\mathbf{
 - $\mathbf{C}$是输出矩阵
 - $\mathbf{D}$是前馈矩阵
 
-![[EE160-lec2.pdf#page=23&rect=20,271,477,437|EE160-lec2, p.23]]
+![[EE160-lec2.pdf#page=25&rect=20,271,477,437|EE160-lec2, p.23]]
 $$\overset{\cdot}{x}=\begin{bmatrix}\frac{1}{C_1}&\frac{1}{C_1}&-\frac{1}{C_1}\\-\frac{1}{L}&0&0\\\frac{1}{C_2}&0&-\frac{1}{C_2}\end{bmatrix}\cdot x+\begin{bmatrix}0\\1\\0\end{bmatrix}\cdot v_i(t)$$
 $$y=\begin{bmatrix}0&0&1\end{bmatrix}x$$
 
-![[EE160-lec2.pdf#page=23&rect=497,319,921,438|EE160-lec2, p.23]]
+![[EE160-lec2.pdf#page=25&rect=497,319,921,438|EE160-lec2, p.23]]
 $$\overset{\cdot}{z}=\begin{bmatrix}0&1&0&0&0&0\\-1&-1&0&1&0&0\\0&0&0&1&0&0\\0&1&-1&-1&1&0\\0&0&0&0&1&0\\0&0&1&0&-1&-1\end{bmatrix}\cdot z+\begin{bmatrix}0\\1\\0\\0\\0\\0\end{bmatrix}\cdot f(t)$$
 $$y=\begin{bmatrix}0&0&0&0&1&0\end{bmatrix}z$$
 $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}_2&x_3&\overset{\cdot}{x}_3&\end{bmatrix}^\top$$
@@ -220,18 +220,18 @@ $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}
 
 二级结论: 对于分母的幂次严格大于分子的转移函数, 有:
 
-![[EE160-lec2.pdf#page=24&rect=457,28,943,274|EE160-lec2, p.24]]
+![[EE160-lec2.pdf#page=26&rect=457,28,943,274|EE160-lec2, p.24]]
 
 > [!example]+
-> ![[EE160-lec2.pdf#page=27&rect=41,369,787,455|EE160-lec2, p.27]]
+> ![[EE160-lec2.pdf#page=29&rect=41,369,787,455|EE160-lec2, p.27]]
 > $$$$
 
 ### State Space Model to Transfer Function
 
-![[EE160-lec2.pdf#page=28&rect=634,207,906,295|EE160-lec2, p.28]]
+![[EE160-lec2.pdf#page=30&rect=634,207,906,295|EE160-lec2, p.28]]
 
 > [!example]+ 
-> ![[EE160-lec2.pdf#page=30&rect=206,317,703,437|EE160-lec2, p.30]]
+> ![[EE160-lec2.pdf#page=32&rect=206,317,703,437|EE160-lec2, p.30]]
 > $$sI-A=\begin{bmatrix}s+4&1.5\\-4&s\end{bmatrix}$$
 > $$adj(sI-A)=\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}$$
 > $$det(sI-A)=s(s+4)+6$$
@@ -241,7 +241,52 @@ $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}
 ### Diagonal State Space Repr
 
 对角SSM表达:
-![[EE160-lec2.pdf#page=32|EE160-lec2, p.32]]
+![[EE160-lec2.pdf#page=34|EE160-lec2, p.32]]
 
 > [!example] 
-> ![[EE160-lec2.pdf#page=33&rect=15,327,579,441|EE160-lec2, p.33]]
+> ![[EE160-lec2.pdf#page=35&rect=15,327,579,441|EE160-lec2, p.33]]
+> 
+> Solution:
+> ![[EE160-lec2.pdf#page=35&rect=33,28,921,205|EE160-lec2, p.33]]
+> ![[EE160-lec2.pdf#page=35&rect=603,319,953,469|EE160-lec2, p.33|287]]
+> ![[EE160-lec2.pdf#page=35&rect=565,218,763,312|EE160-lec2, p.33|203]]
+> 使用[[#State Space Model to Transfer Function|之前]]的解法:
+> $$\begin{aligned}Y&=C(sI-A)^{-1}Bu\\&=\begin{bmatrix}2&3\end{bmatrix}\begin{bmatrix}s+3&-1\\-1&s+3\end{bmatrix}^{-1}\begin{bmatrix}1\\2\end{bmatrix}u\\&=\begin{bmatrix}2&3\end{bmatrix}\frac{\begin{bmatrix}s+3&1\\1&s+3\end{bmatrix}}{s^2+6s+8}\begin{bmatrix}1\\2\end{bmatrix}u\\&=\frac{8s+31}{s^2+6s+8}u=\left(\frac{}{s+2}+\frac{}{s+4}\right)u\end{aligned}$$
+> 
+
+## Solution of the State Space Model
+
+![[EE160-lec2.pdf#page=37&rect=89,439,213,473|EE160-lec2, p.37|184]]
+转化到频域:
+![[EE160-lec2.pdf#page=37&rect=22,354,285,389|EE160-lec2, p.37|355]]
+
+## Block Diagram
+
+框图:
+![[EE160-lec2.pdf#page=40|EE160-lec2, p.40]]
+
+信号都是在频域中的
+
+串联: 频域相乘:
+![[EE160-lec2.pdf#page=40&rect=157,44,485,159|EE160-lec2, p.40]]
+并联: 频域相加:
+![[EE160-lec2.pdf#page=40&rect=492,44,840,245|EE160-lec2, p.40]]
+
+![[EE160-lec2.pdf#page=41&rect=609,49,887,286|EE160-lec2, p.41]]
+注意符号
+
+- 叠加原理: ![[EE160-lec2.pdf#page=42&rect=420,349,769,482|EE160-lec2, p.42]]
+- 齐次原理: ![[EE160-lec2.pdf#page=42&rect=223,46,504,272|EE160-lec2, p.42]]
+
+> [!example] 
+> ![[EE160-lec2.pdf#page=43&rect=328,162,943,476|EE160-lec2, p.43]]
+> 
+> Solution: 化简框图, 得:
+> ![[EE160-lec2.pdf#page=44&rect=292,59,639,476|EE160-lec2, p.44]]
+
+# Lecture 03
+> [!note]- slide
+> ![[EE160-lec3.pdf]]
+
+![[EE160-lec3.pdf#page=3&rect=314,37,935,425|EE160-lec3, p.3]]
+

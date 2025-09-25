@@ -196,7 +196,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Lecture/Introduction to Control.md",
+                    "file": "Lecture/Electric Circuits.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Lecture/Introduction to Control.md",
+                    "file": "Lecture/Electric Circuits.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -561,5 +561,5 @@
       "mtime": "2025-09-23T11:21:24+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "note"
 }

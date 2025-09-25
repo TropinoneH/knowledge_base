@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/3D-VLA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,69 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
-            "id": "95d313e7473c95f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Electric Circuits.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Electric Circuits"
-            }
-          }
-        ]
-      },
-      {
-        "id": "363f9be3567338d8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "77300e3581b6e645",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec2.pdf",
-                "page": 32,
-                "left": -29,
-                "top": 108,
-                "zoom": 0.54296875
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec2"
-            }
-          },
-          {
-            "id": "3c25627cc6cd4e98",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                "page": 9,
-                "left": -21,
-                "top": 108,
-                "zoom": 0.7239583333333334
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec3-Circuit Theorem"
+              "title": "3D-VLA"
             }
           }
         ]
@@ -185,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -234,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/3D-VLA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -244,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Introduction to Control"
+              "title": "Backlinks for 3D-VLA"
             }
           },
           {
@@ -273,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/3D-VLA.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -301,15 +238,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Introduction to Control"
+              "title": "Graph of 3D-VLA"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -329,11 +265,14 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Slides/EE160-lec2.pdf",
+    "Templates/Insert Callouts.md",
+    "Templates/Topic Template.md",
     "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE160-lec3.pdf",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE160-lec1.pdf",
     "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Paper/3D-VLA.md",
     "Templates/Note Template.md",
@@ -341,8 +280,6 @@
     "Topic/test.md",
     "Topic/t.md",
     "Templates/Lecture Note Template.md",
-    "Templates/Insert Callouts.md",
-    "Templates/Topic Template.md",
     "Templates/Scripts/frontmatter.js",
     "Knowledges/obsidian.md",
     "Topic/12.md",
@@ -371,7 +308,6 @@
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
     "Lecture/Slides/CS181-16-Large-Language-Models.pdf",
-    "Lecture/Slides/CS181-15-Unsupervised-machine-learning.pdf",
     "Lecture/Artificial Intelligence.md",
     "Topic/Lecture Notes.md"
   ]
