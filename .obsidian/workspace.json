@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Mechain Learning.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,69 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Mechain Learning"
+              "title": "Introduction to Control"
+            }
+          },
+          {
+            "id": "95d313e7473c95f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
+            }
+          }
+        ]
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77300e3581b6e645",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec2.pdf",
+                "page": 32,
+                "left": -29,
+                "top": 108,
+                "zoom": 0.54296875
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec2"
+            }
+          },
+          {
+            "id": "3c25627cc6cd4e98",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+                "page": 9,
+                "left": -21,
+                "top": 108,
+                "zoom": 0.7239583333333334
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec3-Circuit Theorem"
             }
           }
         ]
@@ -123,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -171,7 +234,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Mechain Learning.md",
+                "file": "Lecture/Introduction to Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +244,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Mechain Learning"
+              "title": "Backlinks for Introduction to Control"
             }
           },
           {
@@ -210,7 +273,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Mechain Learning.md",
+                "file": "Lecture/Introduction to Control.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,14 +301,15 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Mechain Learning"
+              "title": "Graph of Introduction to Control"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,10 +327,33 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2cc16ca757d495f4",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Algorithm and Data Structure.md",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE160-lec1.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
+    "Paper/3D-VLA.md",
+    "Templates/Note Template.md",
+    "Knowledges/1.md",
+    "Topic/test.md",
+    "Topic/t.md",
+    "Templates/Lecture Note Template.md",
+    "Templates/Insert Callouts.md",
+    "Templates/Topic Template.md",
+    "Templates/Scripts/frontmatter.js",
+    "Knowledges/obsidian.md",
+    "Topic/12.md",
+    "Knowledges/ArchLinux Install.md",
+    "Develop/Untitled.md",
+    "Develop/QueryTools.md",
+    "Develop/QueryTools-bak.md",
+    "Develop/Better-Link-Clicker.md",
+    "Develop/Span Anything.md",
     "Lecture/Mechain Learning.md",
+    "Lecture/Algorithm and Data Structure.md",
     "Lecture/Discrete Mathematics.md",
     "Lecture/Computer Architecture.md",
     "Assets/Pasted image 20240611082314.png",
@@ -280,35 +367,12 @@
     "Assets/Pasted image 20240604082318.png",
     "Assets/Pasted image 20240604082256.png",
     "Templates/Scripts/frontmatterMultiSuggester.js",
-    "Templates/Lecture Note Template.md",
     "Lecture/Numerical Optimization.md",
-    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
     "Lecture/Slides/CS181-16-Large-Language-Models.pdf",
     "Lecture/Slides/CS181-15-Unsupervised-machine-learning.pdf",
-    "Lecture/Slides/CS181-14-Supervised-machine-learning.pdf",
-    "Lecture/Slides/CS181-13-Reinforcement-learning.pdf",
-    "Lecture/Slides/CS181-12-Markov-decision-process.pdf",
-    "Lecture/Slides/CS181-11-Probabilistic-temporal-models.pdf",
     "Lecture/Artificial Intelligence.md",
-    "Topic/Lecture Notes.md",
-    "Topic/System.md",
-    "Templates/Topic Template.md",
-    "Topic/Conda.md",
-    "Topic/Linux.md",
-    "Knowledges/Dual-System(Windows+Linux) Grub Rescue.md",
-    "Knowledges/SSH.md",
-    "Topic/Git.md",
-    "Paper/3D-VLA.md",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Biomedical Statistics.md",
-    "Knowledges/VPN.md",
-    "Knowledges/SSH Login.md",
-    "Knowledges/SSH Forward.md",
-    "Knowledges/Pacman.md",
-    "Knowledges/Linux Timezone.md",
-    "Knowledges/Linux MultiEnv.md"
+    "Topic/Lecture Notes.md"
   ]
 }

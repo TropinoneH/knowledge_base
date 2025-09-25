@@ -4,7 +4,7 @@ tags:
   - obsidian
   - code/javascript
 done: true
-rate: 🌟🌟
+rate: 🌟🌟🌟
 ---
 ## Better Link Clicker
 

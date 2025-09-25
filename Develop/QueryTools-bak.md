@@ -30,7 +30,7 @@ rate: 🌟🌟🌟🌟
 			- 以及actions, 详情见[[#Footer]]部分
 		- header view:
 			- 一般是search bar(详情参见[[#SearchBar]]), 里面需要配置placeholder和下拉框的内容
-			- 但是也可以不存在或者是其他内容
+			- - 但是也可以不存在或者是其他内容
 
 有两个主要的窗口, 一个Search Window(Main Window), 一个Settings Window.
 - Search Window是主要的窗口, 使用NSPanel, .borderless, .fullSizeContentView, .nonactivatingPanel.

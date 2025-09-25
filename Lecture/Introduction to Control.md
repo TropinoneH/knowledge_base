@@ -238,3 +238,10 @@ $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}
 > $$(sI-A)^{-1}=\frac{ajd(sI-A)}{det(sI-A)}=\frac{\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}}{s^2+4s+6}$$
 > $$T(s)=\begin{bmatrix}1.5&0.625\end{bmatrix}\frac{\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}}{s^2+4s+6}\begin{bmatrix}2\\0\end{bmatrix}=\frac{3s+5}{s^2+4s+6}$$
 
+### Diagonal State Space Repr
+
+对角SSM表达:
+![[EE160-lec2.pdf#page=32|EE160-lec2, p.32]]
+
+> [!example] 
+> ![[EE160-lec2.pdf#page=33&rect=15,327,579,441|EE160-lec2, p.33]]

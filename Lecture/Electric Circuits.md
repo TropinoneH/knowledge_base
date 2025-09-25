@@ -168,14 +168,14 @@ $$\begin{aligned}R_1&=\frac{R_bR_c}{R_a+R_b+R_c}\\R_2&=\frac{R_cR_a}{R_a+R_b+R_c
 ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=24&rect=233,38,433,91|EE111-F25Lec2-Kirchhoff and Node_Mesh_analysis, p.24]]
 
 ## Node Analysis
-> [!example]+
+> [!example]
 > 在未知$v_1,v_2$的情况下求解电路: 假设未知数$v_1,v_2$, 使用KCL设置方程组, 求解$v_1,v_2$
 > ![[Pasted image 20250923084823.jpeg]]
 
 节点法求解:
 ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=27&rect=56,136,686,425|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.27]]
 
-> [!example]+ 
+> [!example]
 > ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=28&rect=12,244,304,433|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.28]]
 > 假设三个节点对应的电压分别为$v_1,v_2,v_3$
 > 
@@ -231,3 +231,84 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 最小的回路.
 
 所有最小回路会组成独立回路组
+
+- Step 1: 找到mesh, 给每个mesh假定一个mesh current, 假定方向和大小(未知数)
+- Step 2: 对每个mesh使用KVL, 对于共享元件, 按照mesh电流的方向计算电流之差
+- 解方程, 得到mesh currents
+
+> [!example]
+> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=419,251,692,447|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36]]
+> 
+> Step 1: mesh, $i_1$, $i_2$
+> 
+> Step 2: Apply KVL:
+> 
+> > [!info]- 使用支路电流
+> > 左侧:
+> > $$-15+5I_1+10I_3+10=0$$
+> > 右侧:
+> > $$-10-10I_3+6I_2+4I_2=0$$
+> 使用网孔电流:
+> 
+> 对于左侧的mesh:
+> $$-15+5i_1+10(i_1-i_2)+10=0$$
+> 对于右侧的mesh:
+> $$-10-10(i_1-i_2)+6i_2+4i_2=0$$
+> 解得:
+> $$i_1=i_2=1A$$
+> 
+> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=547,331,584,408|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36|30]]
+> 注意, 此时中间的$I_3=i_1-i_2=0$, 因此中间的$10\Omega$的电阻处流经电流为$0A$, 那么这里是断路. 同时注意到右侧mesh的总电势为$10V$, 那么注意到中间的电压源为$10V$恒压电压源, 这处电路的两侧电势相等, 因此也是短路. 那么这个$10\Omega$电阻就同时为短路和断路.
+
+![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=37&rect=330,101,502,238&color=note|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.37]]
+这里由于没有其他的电流, 因此在这个mesh中网孔电流和电流源应该是相等的, 方向相反(注意图中标注的$i_2$是顺时针)
+
+> [!example] 对于共享电流源
+> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=38&rect=376,266,663,420&color=note|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.38]]
+> KVL: 假设电流源的电压为$V_A$
+> 
+> 对于左侧:
+> $$-20+6i_1+2(i_1-i_2)-6-V_A=0$$
+> 对于右侧:
+> $$V_A-2(i_1-i_2)+10i_2+4i_2=0$$
+> 此时有两个mesh两个方程, 但是有三个未知数. 需要再找一个方程.
+> 
+> 考虑电流源的电流, 有:
+> $$i_1-i_2=6$$
+> 联立求解.
+
+Supermesh方法: 将多个mesh合成一个更大的mesh. 但是注意, 在一个supermesh之后, 里面还是有多个mesh current在转:
+![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=39&rect=62,269,668,436&color=note|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.39]]
+可以列出方程:
+$$-20+6i_1+10i_2+4i_2=0$$
+这样可以避开中间的电流源的电压.
+
+这个和上面KVL联立方程消元之后的结果一致.
+
+# Lecture 03
+> [!note]- slide
+> ![[EE111-F25Lec3-Circuit Theorem.pdf]]
+
+线性系统:
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=4&rect=43,60,665,420|EE111-F25Lec3-Circuit Theorem, p.4]]
+
+> [!example] 使用齐次性求解电路
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=5&rect=36,268,358,430|EE111-F25Lec3-Circuit Theorem, p.5]]
+> 假设了最初是的电流为$1A$, 或者说可以假设$u_1$的电压为$120V$
+> $$i_1=1A$$
+> $$v_c=10V$$
+> $$v_b=v_c+1\times2=12V$$
+> $$i_2=\frac{v_b-0}{5}=2.4A$$
+> KCL: $$i_3=i_1+i_2=3.4A$$
+> ...
+
+## Superposition
+
+1. 找一个需要分析的source
+2. 将其他的source归零("Turn off"), 电流源$\rightarrow0A$, 电压源$\rightarrow0V$
+3. 分析
+4. 对其他需要分析的source重复
+
+> [!example] 使用可加性求解
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=10&rect=28,0,700,443|EE111-F25Lec3-Circuit Theorem, p.10]]
+

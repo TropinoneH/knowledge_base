@@ -1,6 +1,7 @@
-module.exports = async (tp, key, defaultKeys = []) => {
+const multiSuggester = async (tp, key, defaultKeys = []) => {
     const existingValues = await app.metadataCache.getFrontmatterPropertyValuesForKey(key);
     let selectedItems = [];
+    let continueChoose = true;
     defaultKeys.forEach(key => {
         const index = existingValues.indexOf(key);
         if (index > -1) {
@@ -11,8 +12,7 @@ module.exports = async (tp, key, defaultKeys = []) => {
 
     const addNewOption = `add new ${key}`;
     const suggesterOptions = [addNewOption, ...existingValues];
-    let chooseMore = true;
-    while (chooseMore) {
+    while (continueChoose) {
         const choice = await tp.system.suggester(
             suggesterOptions,
             suggesterOptions,
@@ -30,8 +30,21 @@ module.exports = async (tp, key, defaultKeys = []) => {
 				suggesterOptions.remove(choice);
             }
         } else {
-            chooseMore = false;
+            continueChoose = false;
         }
     }
     return selectedItems;
 }
+
+const suggester = async (tp, key) => {
+    const existingValues = await app.metadataCache.getFrontmatterPropertyValuesForKey(key);
+    const choice = await tp.system.suggester(
+        existingValues,
+        existingValues,
+        false,
+        `Choose ${key}`
+    );
+    return choice;
+}
+
+module.exports = { multiSuggester, suggester }

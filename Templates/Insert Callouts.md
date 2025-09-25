@@ -1,4 +1,8 @@
+---
+type: template
+---
 <%*
+tR = ""
 const callouts = {
 note: '🔵 ✏ Note',
 info: '🔵 ℹ Info',

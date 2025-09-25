@@ -21,6 +21,10 @@
     {
       "folder": "Lecture",
       "template": "Templates/Lecture Note Template.md"
+    },
+    {
+      "folder": "Knowledges",
+      "template": "Templates/Note Template.md"
     }
   ],
   "enable_file_templates": false,

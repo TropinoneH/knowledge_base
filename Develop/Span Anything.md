@@ -8,7 +8,7 @@ tags:
   - software/ros
   - software/vicon
   - ComputerVision
-rate: 🌟🌟🌟
+rate: 🌟
 done: false
 ---
 - [x] [[IsaacLab]]环境搭建
@@ -20,3 +20,5 @@ done: false
 - [ ] 旋转平衡
 - [ ] 机械臂旋转
 - [ ] 论文
+
+烂尾了
