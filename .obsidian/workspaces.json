@@ -95,9 +95,41 @@
                   "icon": "lucide-file-text",
                   "title": "EE111-F25Lec3-Circuit Theorem"
                 }
+              },
+              {
+                "id": "83003d1d87c940eb",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
+                    "page": 4,
+                    "left": 0,
+                    "top": 393,
+                    "zoom": 0.75
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis"
+                }
+              },
+              {
+                "id": "08182a1d5153ecbb",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
+                    "page": 31,
+                    "left": -12,
+                    "top": 522,
+                    "zoom": 1.2760416666666667
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "EE111-F25Lec1-Introduction-&-Circuit-Terminology"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -331,8 +363,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a29cbc20cbfb5ca8",
-      "mtime": "2025-09-25T20:49:38+08:00"
+      "active": "08182a1d5153ecbb",
+      "mtime": "2025-09-27T00:14:45+08:00"
     },
     "note": {
       "main": {

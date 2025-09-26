@@ -97,7 +97,6 @@
           {
             "id": "83003d1d87c940eb",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
@@ -114,14 +113,13 @@
           {
             "id": "08182a1d5153ecbb",
             "type": "leaf",
-            "dimension": 33.333333333333336,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
                 "page": 31,
                 "left": -21,
-                "top": 522,
+                "top": 523,
                 "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
