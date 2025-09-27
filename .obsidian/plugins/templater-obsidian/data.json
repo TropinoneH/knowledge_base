@@ -25,6 +25,10 @@
     {
       "folder": "Knowledges",
       "template": "Templates/Note Template.md"
+    },
+    {
+      "folder": "Develop",
+      "template": "Templates/Develop Template.md"
     }
   ],
   "enable_file_templates": false,

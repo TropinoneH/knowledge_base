@@ -22,7 +22,7 @@ const multiSuggester = async (tp, key, defaultKeys = []) => {
         if (choice) {
             if (choice === addNewOption) {
                 const newValue = await tp.system.prompt(`please enter new ${key}:`);
-                if (newValue && !selectedItems.includes(newValue)) {
+                if (newValue !== null && !selectedItems.includes(newValue)) {
                     selectedItems.push(newValue);
                 }
             } else {
@@ -37,13 +37,18 @@ const multiSuggester = async (tp, key, defaultKeys = []) => {
 }
 
 const suggester = async (tp, key) => {
-    const existingValues = await app.metadataCache.getFrontmatterPropertyValuesForKey(key);
+    const addNewOption = `add new ${key}`;
+    const existingValues = [addNewOption, ...(await app.metadataCache.getFrontmatterPropertyValuesForKey(key))];
     const choice = await tp.system.suggester(
         existingValues,
         existingValues,
         false,
         `Choose ${key}`
     );
+    if (choice === addNewOption) {
+        const newValue = await tp.system.prompt(`please enter new ${key}:`, null, true);
+        return newValue;
+    }
     return choice;
 }
 

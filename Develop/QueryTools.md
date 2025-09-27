@@ -8,9 +8,34 @@ tags:
 done: false
 rate: 🌟🌟🌟🌟
 ---
-## 架构
+## 需求
 
-分不同的模块, 每个模块是独立的. 每个模块使用Swift Packages的方式独立开发, 遵循同一个protocol(这个也可以是一个local Swift Packages), 最终在一个统一的架构中进行展示. 注意, 每一个Module都要是一个完全独立的项目, 不要在同一个项目中进行开发.
+我现在正在开发一个类似MacOS26的Spotlight, 或者说类似raycast的程序, 有多种功能. 使用alt+space唤起一个窗口, 然后根据输入的内容执行不同的命令.
+
+我下面将会给你这个程序的需要实现的内容, 请你阅读所有的内容, 然后尝试梳理一份完整的开发需求出来.
+
+这份开发需求包括:
+1. 程序的架构设计
+	1. 文件架构: 文件夹结构, 每个文件的作用
+	2. 程序架构: 继承, 模块化设计, 数据统一管理, 事件驱动
+	3. 视图架构: 需要哪些窗口, 哪些subview, 如何进行嵌套
+2. 数据流动的设计
+	1. 数据统一管理, 使用数据中心的singleton
+	2. 数据如何更新
+	3. 数据更新之后, 发送全局
+	4. 全局根据数据热更新, 包括重绘UI等
+3. 需求设计
+	1. 文件之间的依赖关系, 我希望能尽可能少的依赖, 尽可能解耦合
+	2. 功能的实现顺序, 我希望能够一次性按顺序生成一个文件的所有内容, 尽可能不要留下占位符或者假数据, 不要写“后续再写”, 不要留下`TODO`
+	3. 每个文件需要实现哪些内容, 使用`- [ ]`这种TODO list的格式列出来
+
+请你完善这个需求文档.
+
+## 程序要求
+
+分不同的**模块**, 每个模块是独立的. 每个模块使用Swift Packages的方式独立开发, 遵循同一个protocol(这个也可以是一个local Swift Packages), 最终在一个统一的架构中进行展示. 注意, 每一个Module都要是一个完全独立的项目, 不要在同一个项目中进行开发.
+
+module之间的交互使用**事件驱动**, 所有的数据交流均通过Notification.
 
 大致分为多个模块, QueryTools本身, protocol, 和其他modules. [[Xcode Add Packages#Create New Local Packages|创建packages]]的方式为: 在project root下创建一个新的group `Packages`, 选择menubar的File -> New -> Package..., 创建Multiplatform的Library, 并添加到TARGETS -> QueryTools中.
 - QueryTools本身提供主要的框架, 提供各种API, UI窗口的管理, 主要的程序入口
@@ -32,22 +57,25 @@ rate: 🌟🌟🌟🌟
 			- 一般是search bar(详情参见[[#SearchBar]]), 里面需要配置placeholder和下拉框的内容
 			- 但是也可以不存在或者是其他内容
 
-有两个主要的窗口, 一个Search Window(Main Window), 一个Settings Window.
-- Search Window是主要的窗口, 使用NSPanel, .borderless, .fullSizeContentView, .nonactivatingPanel.
-	- 当失去焦点的时候自动隐藏窗口
-	- 拦截Cmd+Q, 不退出, 而是隐藏窗口
-	- 在这里拦截escape(使用cancelOperation).
-	- 在这里拦截所有的key press, 但是我希望你不是直接去监听按键按下而是类似cancelOperation这种事件的拦截, 因为有的按键并不是针对这个SearchWindow的, 比如说使用中文输入法的时候的return, arrow key等.
-	- 不改变原来窗口的焦点
-	- 在打开的时候可能会获取之前Window的ID(句柄?引用?), 在Window Manager Module中可能会有用
-        - 在打开的时候触发事件, 在隐藏的时候触发事件
-- Settings Window
-	- 分成两栏
-		- 左侧是所有的module, 是导航栏. 玻璃效果的透明度略低
-		- 右侧是选中module的具体设置, 所有的设置由每个module自己控制. 玻璃效果的blur效果略高
-	- 每个module有自己的SettingsView, 这个Window只是展示
-	- 使用Defaults持久化
-	- 每次设置之后, 热更新, 包括UI和功能(触发事件)
+程序的主入口提供两个窗口, 但是这两个窗口不提供任何的展示, 所有需要展示的内容均通过Module的subview(或者settings view)提供. 这两个窗口仅作为展示的框架:
+1. 主窗口:
+	- 使用NSPanel, 无边框, 不存在标题栏, 使用.nonactivatingPanel
+	- 当失去焦点的时候自动隐藏
+	- 不获取窗口焦点, 或者说不改变原来窗口的焦点
+	- 拦截Cmd+Q, 不会退出而是隐藏窗口(即, 当监测到app退出事件的时候, 拦截这次事件, 转换为隐藏窗口)
+	- 打开的时候需要获取之前window的id(或者说, 句柄,引用, 等), 在window manager module中可能会使用
+	- 在对应生命周期触发对应的事件(Notification)
+	- 拦截并捕获key press事件, 并发送一个Notification
+		- 找到firstResponser, 判断是否是textfield, 如果是, 那么判断是否`hasMarkedText()`, 如果为true, 那么说明有输入法正在输入, 此时不触发Notification, 不拦截key press
+		- 如果上面的判断为false, 那么捕获key press, 并发送Notification.
+2. settings window
+	- 使用液态玻璃的设计方法(MacOS 26)
+	- 分成两栏, 参考最新版MacOS26的设置界面
+		- 左侧是所有的module
+		- 右侧是选中的module的设置
+		- 左侧的module通过读取`allModules`获取, 右侧的设置全部由module自己的settings view控制
+	- 使用`Defaults`库进行持久化
+	- 每次设置之后热更新, 重新触发UI和功能(在事件中触发)
 
 ### 事件驱动
 - Escape Key Press
@@ -69,9 +97,11 @@ rate: 🌟🌟🌟🌟
 
 ### 数据集中管理
 
-所有global共享的数据全部放在一个singleton模式的`ObservableObject`下, 使用`@Publisher`或者`Combine`进行监听和热更新, 比如说, 当前启用的模块`activeFeature: (any Feature)?`, 当前选中的结果索引`selectedIndex: Int?`, 所有的搜索结果`queryResults`, 当前搜索的内容`currentQuery`. 每个模块中进行更新数据的时候都是对这个`@ObservedObject`进行修改, 所有与数据相关的内容都是对这个进行读取.
+比如说, 当前启用的模块`activeFeature: (any Feature)?`, 当前选中的结果索引`selectedIndex: Int?`, 所有的搜索结果`queryResults`, 当前搜索的内容`currentQuery`.
 
-注意, 你可能会需要将部分属性设置为`private(set)`, 然后使用`set...`这种公共接口进行设置, 以保证安全性.
+所有的数据存放在一个singleton下面. 所有的的修改通过Notification进行修改. 使用ObservableObject+Published的方式将变量发布, 让其他的Modules能够读取每个变量是否更新, 以完成热更新.
+
+使用`.environment(...)`将这个数据管理的singleton注入到最顶层的environment中.
 
 ### 通用UI设置
 
@@ -134,9 +164,7 @@ GeneralSettings:
 - module priority(一个顺序, 这个顺序是module priority的顺序)
 - Footer的actions中每个action的快捷键
 
-实际上MainView并不能算是一个额外的Module.
-
-- SearchBar:
+- SearchBar
 	- 没有左侧按钮
 	- Placeholder: Search for anything...
 	- 右侧展示下拉框, 里面是所有activated modules, 与设置联通
@@ -305,6 +333,13 @@ Footer的actions:
 
 ### Translate
 
+Settings:
+- dictionary的来源
+	- 苹果自带的dict
+	- ...
+- translate的api
+- Footer的actions中每一个action的快捷键
+
 两个feature:
 - dictionary, 针对单个单词的字典, 调用苹果自己的dict.app
 - translate, 针对一整句话进行翻译, 可能需要api
@@ -314,6 +349,7 @@ Footer的actions:
 Settings:
 - 用什么browser
 - 用什么搜索引擎
+- Footer的actions中每一个action的快捷键
 
 三个feature:
 - 在指定搜索引擎中搜索, 如果是url, 那么打开url(多一个选项)
@@ -322,20 +358,20 @@ Settings:
 
 ### Window Manager
 
+Settings:
+- 搜索窗口的搜索方式
+	- fuzzy
+	- exact
+	- regex
+- 配置允许哪些平铺方式(多选)
+	- 二等分
+	- 三等分
+	- 四等分
+	- ...
+- Footer的actions中每一个action的快捷键
+
 一个feature, 有多个功能(query results):
 1. 搜索window(按照title, app, ...)
 2. 置顶window(active window)
 3. 将窗口平铺于...(可以配置不同的布局, grid布局的不同的位置)
 4. ...(请你帮我思考还有哪些窗口的控制)
-
-## 要求
-
-请你阅读上面所有的需求文档(部分Modules没有写完, 缺少一些UI/设置/功能的配置, 你可以帮我自行完成)
-
-你需要根据需求文档, 写出一份实施细则, 具体到每个部分的每个文件有什么功能, 需要完成什么功能, 需要实现什么API接口. 将这个实施细则使用markdown的todo list的形式给出. 这个todo list的顺序是实施的顺序, 这个todo list作为大纲.
-
-你需要尽可能详细写, 无需考虑输出限制, 你需要尽可能详细给出每个模块的所有需要实现的内容, 尽可能补全需要实现的内容, 并且要保证有极高的可拓展性. 在你进行输出todo list的时候, 你需要考虑全局, 考虑所有的模块的开发, 尽可能不要留下“空白”或者“占位符”, 一次性将全部需要实现的属性给出.
-
-我希望文件架构为:
-1. 创建一个Group: Packages, 所有的swift package放在这里
-2. 在QueryTools中, Core放核心组件, App放启动相关的(AppDelegate, QueryToolsApp, 等等, 以及生命周期相关的内容), UI放界面(里面可以放SearchView, SettingsView, Components, 等等), Utils(放工具相关的内容), 等等. 这些都是文件夹而不是group.
