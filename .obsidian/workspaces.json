@@ -398,33 +398,8 @@
                   "icon": "lucide-file",
                   "title": "QueryTools"
                 }
-              },
-              {
-                "id": "023b8199c81ae570",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Templates/Develop Template.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Develop Template"
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -564,7 +539,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Templates/Develop Template.md",
+                    "file": "Develop/QueryTools.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -574,7 +549,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Develop Template"
+                  "title": "Backlinks for QueryTools"
                 }
               },
               {
@@ -603,7 +578,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Templates/Develop Template.md",
+                    "file": "Develop/QueryTools.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -631,7 +606,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Develop Template"
+                  "title": "Graph of QueryTools"
                 }
               }
             ]
@@ -656,9 +631,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "023b8199c81ae570",
-      "mtime": "2025-09-27T22:06:32+08:00"
+      "active": "de7127bc402a7b85",
+      "mtime": "2025-09-28T08:18:01+08:00"
     }
   },
-  "active": "note"
+  "active": "lecture note"
 }
