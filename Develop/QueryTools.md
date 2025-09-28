@@ -28,7 +28,7 @@ rate: 🌟🌟🌟🌟
 > 3. 需求设计
 > 	1. 文件之间的依赖关系, 我希望能尽可能少的依赖, 尽可能解耦合
 > 	2. 功能的实现顺序, 我希望能够一次性按顺序生成一个文件的所有内容, 尽可能不要留下占位符或者假数据, 不要写“后续再写”, 不要留下`TODO`
-> 	3. 每个文件需要实现哪些内容, 使用`- [ ]`这种TODO list的格式列出来
+> 	3. 每个文件需要实现哪些内容, 给出完整的内容, 尽可能详细, 使用markdown的TODO list的格式列出来. 注意, 只给嵌套的最深处的一条加上TODO list, 嵌套的外层不需要加上Todo List的标志. 注意, `- [ ]`不要和`-`共用, 在生成todo list的时候不要加上list的前缀
 > 
 > 请你完善这个需求文档.
 > 
@@ -41,6 +41,7 @@ rate: 🌟🌟🌟🌟
 > 大致分为多个模块, QueryTools本身, protocol, 和其他modules. [[Xcode Add Packages#Create New Local Packages|创建packages]]的方式为: 在project root下创建一个新的group `Packages`, 选择menubar的File -> New -> Package..., 创建Multiplatform的Library, 并添加到TARGETS -> QueryTools中.
 > - QueryTools本身提供主要的框架, 提供各种API, UI窗口的管理, 主要的程序入口
 > - protocol提供Modules和QueryTools之间的交互
+> - Features提供QueryResults的entries功能, 每个features
 > - Modules复制具体的功能实现
 > 	- module id(unique)
 > 	- module name
@@ -153,7 +154,7 @@ rate: 🌟🌟🌟🌟
 > 
 > ## Modules
 > 
-> ### MainView
+> ### MainModule(MainView)
 > 
 > GeneralSettings:
 > - 搜索的方式: fuzzy, exact, regex
@@ -302,7 +303,7 @@ rate: 🌟🌟🌟🌟
 > 
 > 一个feature, subview为:
 > - 有一个Search Bar
-> 	- 左侧一个按钮(Image: 左箭头), 表示退出当前的module回到MainView
+> 	- 左侧一个按钮(Image: 左箭头), 表示退出当前的module回到MainModule
 > 	- 右侧一个下拉框, 是搜索的范围: This Mac, User(username)
 > 	- Placeholder: Search files...
 > - 左侧是最近使用的文件, 展示略缩图和名称
@@ -320,6 +321,31 @@ rate: 🌟🌟🌟🌟
 > - copy file path
 > - Divider()
 > - input
+>
+> ### Media Controller
+> 
+> Settings:
+> - playlist的文件夹路径, 默认为null. 如果为null则不加载playlist
+> - Footer的actions中每一个action的快捷键
+> 
+> 一个feature, subview为:
+> - 一个Search Bar
+> 	- 左侧为按钮(Image: 左箭头), 表示退出当前的module回到MainModule
+> 	- 右侧不展示内容
+> 	- Placeholder: Media Controllers
+> - 左侧是可以选择的控制
+> 	- 暂停 / 播放
+> 	- 上一首
+> 	- 下一首
+> 	- 增加音量, 后面加上一个数字(通过string解析成number的方式尝试解析, 如果失败则弹出一个错误提示), 表示将音量的百分比增加多少
+> 	- 减少音量, 后面加上一个数字(通过string解析成number的方式尝试解析, 如果失败则弹出一个错误提示), 表示将音量的百分比降低多少
+> 	- 设置音量为, 后面加上一个数字(通过string解析成number的方式尝试解析, 如果失败则弹出一个错误提示), 表示将音量的百分比设置为多少
+> 	- 静音 / 解除静音
+> 	- 在默认程序中打开当前音乐
+> 	- 在finder中展示
+> 	- 切换playlist
+> 	- 前进一段时间, 后面加上一个数字(通过string解析成float number的方式尝试解析, 如果失败则弹出一个错误提示), 表示将当前的时间前进多少秒
+> 	- 后退一段时间, 后面加上一个数字(通过string解析成float number的方式尝试解析, 如果失败则弹出一个错误提示), 表示将当前的时间后退多少秒
 > 
 > ### Settings
 > 

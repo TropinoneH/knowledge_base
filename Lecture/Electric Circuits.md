@@ -330,3 +330,42 @@ Superposition可以计算得出每一个电压源/电流源对相应的影响
 
 ## Thevenin's Theorem
 
+当电路分析中, 只有一个元器件的参数是变化的(变量, 或者叫做"load", 负载), 其他的元器件的参数是固定的, 测试可以使用Thevenin定理: **一个两个端子的电路(包含电阻, 线性相关/不相关的电源), 可以使用一个电压源和一个电阻串联来表达**
+
+计算等效电路的方法:
+1. 分析得到端子处的电压
+2. [[EE111-F25Lec3-Circuit Theorem.pdf#page=21&selection=34,1,47,18&color=note|deactivate]]所有的独立源
+3. 化简计算得到等效组织
+
+> [!example] 
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=20&rect=390,257,717,400|EE111-F25Lec3-Circuit Theorem, p.20]]
+> 
+> 使用Thevenin's Theorem, 将$R_2$之外的电路化简, 得:
+> ![[Pasted image 20250928093011.jpeg]]
+
+> [!example] 
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=22&rect=91,183,266,392|EE111-F25Lec3-Circuit Theorem, p.22]]
+>
+> 等效电压源的电压时开路的电压. 此时这个电路本身就是开路状态, 直接求开路电压即可.
+> 
+> 将最下面的node接地, 使用节点法进行求解a,b两点的节点电压$v_a,v_b$:
+> - 对节点a使用KCL: $$\frac{16-v_a}{50}=\frac{v_a}{50}+\frac{v_a-v_b}{30}$$
+> - 对节点b使用KCL: $$\frac{v_a-v_b}{30}+4=\frac{v_b}{35}$$
+> 
+> 解得$$u_{oc}=v_a-v_b=-44V$$
+>
+> 将电路的独立源turn off, 计算阻值, 有:
+> $$R_{ab}=[(50\|50)+35]\|30=20\Omega$$
+> 则$R_{eq}=R_{ab}=20\Omega$
+
+> [!attention] 注意
+> Thevenin Equivalent方法不适用于有受控源(非独立源)的情况: 电压不会受到影响, 但是等效阻值会受到影响
+
+对于含有受控源的电路, 可以使用[[EE111-F25Lec3-Circuit Theorem.pdf#page=23|这个方法]](开路电压短路电流法)进行计算:
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=23|EE111-F25Lec3-Circuit Theorem, p.23]]
+
+第一步是相同的, 计算得到开路电压
+
+但是第二步的时候, 先不去计算等效电阻:
+1. 首先假设在开路的两个端子连接一个导线形成短路
+2. 此时有KVL: $R_{eq}=\frac{u_{oc}}{i_{ic}}$, 这里需要注意一下$u_{oc}$和$i_{sc}$的方向
