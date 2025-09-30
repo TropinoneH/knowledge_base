@@ -290,3 +290,6 @@ $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}
 
 ![[EE160-lec3.pdf#page=3&rect=314,37,935,425|EE160-lec3, p.3]]
 
+## Routh Table
+![[EE160-lec3.pdf#page=19|EE160-lec3, p.19]]
+

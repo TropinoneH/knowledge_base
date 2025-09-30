@@ -380,5 +380,35 @@ Superposition可以计算得出每一个电压源/电流源对相应的影响
 
 第一步仍然是相同的, 使用求解等效电压(开路电压)
 
-第二步是在外部新加上一个电压源, 有$v_{ex}$, 输出的电流为$i_{ex}$. 求解这两个的值, 得到$R_{eq}=\frac{v_{ex}}{i_{ex}}$
+第二步是在外部新加上一个电压源, 同时关闭内部的所有电源, 有$v_{ex}$, 输出的电流为$i_{ex}$. 求解这两个的值, 得到$R_{eq}=\frac{v_{ex}}{i_{ex}}$
 
+### I-V characteristic
+
+在正常的电路中, 可以将一个正常电路分成两个Thevenin电路, 两个Thevenin分别有自己的I-V性质:
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=29&rect=49,206,645,447|EE111-F25Lec3-Circuit Theorem, p.29]]
+
+两个电路有两个I-V函数, 找到交点即为电路的解
+
+## Norton's Theorem
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=30|EE111-F25Lec3-Circuit Theorem, p.30]]
+
+和[[#Thevenin's Theorem]]类似, 不过一个是用电压源串联电阻, 一个是电流源并联电阻
+
+因此Norton's Theorem也有三种不同的方法, 与Thevenin's完全一致.
+
+## Source Transfer
+
+> [!example] 
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=34&rect=54,192,673,445|EE111-F25Lec3-Circuit Theorem, p.34]]
+> 
+> $$P_L=V_L\cdot I_L=\left(\frac{V_{TH}}{R_{TH}+R_L}\right)^2\cdot R_L$$
+> 导数为零的时候有最大的功率:
+> $$\frac{\partial P_L}{\partial R_L}=0\Rightarrow R_L=R_{TH}$$
+> $$\Rightarrow P_{L\text{max}}=...$$
+
+
+> [!example] 
+> ![[EE111-F25Lec3-Circuit Theorem.pdf#page=35&rect=45,246,672,443|EE111-F25Lec3-Circuit Theorem, p.35]]
+> 计算第二问的时候, 总功率$P_{total}$需要使用原先电路来计算, 不能使用等效的电路. “等效”是对外等效, 对内可能不等效(功率是内部性质)
+
+# Lecture 04

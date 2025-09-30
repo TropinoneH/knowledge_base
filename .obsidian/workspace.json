@@ -79,29 +79,12 @@
               "title": "QueryTools"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "363f9be3567338d8",
         "type": "tabs",
         "children": [
-          {
-            "id": "77300e3581b6e645",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 15,
-                "left": -40,
-                "top": 295,
-                "zoom": 0.5312500000000001
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec3"
-            }
-          },
           {
             "id": "a29cbc20cbfb5ca8",
             "type": "leaf",
@@ -109,13 +92,29 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                "page": 26,
+                "page": 35,
                 "left": -21,
-                "top": 515,
+                "top": 292,
                 "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec3-Circuit Theorem"
+            }
+          },
+          {
+            "id": "61d90fcca8c54225",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 18,
+                "left": -29,
+                "top": 87,
+                "zoom": 0.54296875
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec3"
             }
           }
         ],
@@ -260,7 +259,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Introduction to Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -270,7 +269,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for Introduction to Control"
             }
           },
           {
@@ -299,7 +298,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Introduction to Control.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -327,7 +326,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of Introduction to Control"
             }
           }
         ]
@@ -353,18 +352,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "167d4f8a9e852b7f",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE160-lec3.pdf",
+    "Lecture/Slides/EE160-lec2.pdf",
     "Lecture/Introduction to Control.md",
     "Develop/QueryTools.md",
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+    "Lecture/Electric Circuits.md",
     "Develop/Span Anything.md",
     "Develop/VimSafari.md",
     "Develop/QueryTools-bak.md",
     "Knowledges/Xcode Add Packages.md",
-    "Lecture/Slides/EE160-lec3.pdf",
-    "Lecture/Slides/EE160-lec2.pdf",
     "Assets/Pasted image 20250928093011.jpeg",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
