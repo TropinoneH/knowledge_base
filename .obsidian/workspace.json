@@ -13,54 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
-            "id": "167d4f8a9e852b7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Electric Circuits.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Electric Circuits"
-            }
-          },
-          {
-            "id": "3391ee5e535ef471",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Develop/QueryTools.md",
                 "mode": "source",
                 "source": false,
@@ -80,45 +32,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "363f9be3567338d8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a29cbc20cbfb5ca8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                "page": 35,
-                "left": -21,
-                "top": 292,
-                "zoom": 0.7239583333333334
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec3-Circuit Theorem"
-            }
-          },
-          {
-            "id": "61d90fcca8c54225",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 18,
-                "left": -29,
-                "top": 87,
-                "zoom": 0.54296875
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec3"
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -259,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Develop/QueryTools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Introduction to Control"
+              "title": "Backlinks for QueryTools"
             }
           },
           {
@@ -298,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Develop/QueryTools.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -321,20 +233,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 1.1539618883506355,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Introduction to Control"
+              "title": "Graph of QueryTools"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -354,9 +265,9 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE160-lec2.pdf",
-    "Lecture/Introduction to Control.md",
     "Develop/QueryTools.md",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Electric Circuits.md",

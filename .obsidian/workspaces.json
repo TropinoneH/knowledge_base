@@ -88,38 +88,39 @@
             "type": "tabs",
             "children": [
               {
-                "id": "77300e3581b6e645",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Lecture/Slides/EE160-lec3.pdf",
-                    "page": 12,
-                    "left": -28,
-                    "top": 375,
-                    "zoom": 0.5312500000000001
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "EE160-lec3"
-                }
-              },
-              {
                 "id": "a29cbc20cbfb5ca8",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                    "page": 23,
+                    "page": 35,
                     "left": -21,
-                    "top": 516,
+                    "top": 292,
                     "zoom": 0.7239583333333334
                   },
                   "icon": "lucide-file-text",
                   "title": "EE111-F25Lec3-Circuit Theorem"
                 }
+              },
+              {
+                "id": "61d90fcca8c54225",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture/Slides/EE160-lec3.pdf",
+                    "page": 19,
+                    "left": -28,
+                    "top": 540,
+                    "zoom": 0.5312500000000001
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "EE160-lec3"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -260,7 +261,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Lecture/Electric Circuits.md",
+                    "file": "Lecture/Introduction to Control.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -299,7 +300,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Lecture/Electric Circuits.md",
+                    "file": "Lecture/Introduction to Control.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -354,7 +355,7 @@
         }
       },
       "active": "de7127bc402a7b85",
-      "mtime": "2025-09-28T18:04:05+08:00"
+      "mtime": "2025-09-30T19:25:35+08:00"
     },
     "note": {
       "main": {
@@ -625,5 +626,5 @@
       "mtime": "2025-09-30T08:30:04+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "note"
 }
