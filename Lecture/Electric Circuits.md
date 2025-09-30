@@ -361,6 +361,7 @@ Superposition可以计算得出每一个电压源/电流源对相应的影响
 > [!attention] 注意
 > Thevenin Equivalent方法不适用于有受控源(非独立源)的情况: 电压不会受到影响, 但是等效阻值会受到影响
 
+### OC电压SC电流法
 对于含有受控源的电路, 可以使用[[EE111-F25Lec3-Circuit Theorem.pdf#page=23|这个方法]](开路电压短路电流法)进行计算:
 ![[EE111-F25Lec3-Circuit Theorem.pdf#page=23|EE111-F25Lec3-Circuit Theorem, p.23]]
 
@@ -368,4 +369,16 @@ Superposition可以计算得出每一个电压源/电流源对相应的影响
 
 但是第二步的时候, 先不去计算等效电阻:
 1. 首先假设在开路的两个端子连接一个导线形成短路
-2. 此时有KVL: $R_{eq}=\frac{u_{oc}}{i_{ic}}$, 这里需要注意一下$u_{oc}$和$i_{sc}$的方向
+2. 此时有KVL: $R_{eq}=\frac{u_{oc}}{i_{ic}}$, 这里需要注意一下$u_{oc}$和$i_{sc}$的
+
+### External Source Method
+但是部分的电路不能用上面两个方法:
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=28&rect=251,308,603,471|EE111-F25Lec3-Circuit Theorem, p.28]]
+
+使用第三种方法(鲁棒性更强):
+![[EE111-F25Lec3-Circuit Theorem.pdf#page=26|EE111-F25Lec3-Circuit Theorem, p.26]]
+
+第一步仍然是相同的, 使用求解等效电压(开路电压)
+
+第二步是在外部新加上一个电压源, 有$v_{ex}$, 输出的电流为$i_{ex}$. 求解这两个的值, 得到$R_{eq}=\frac{v_{ex}}{i_{ex}}$
+

@@ -13,6 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Lecture/Introduction to Control.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Introduction to Control"
+            }
+          },
+          {
+            "id": "167d4f8a9e852b7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
+            }
+          },
+          {
+            "id": "3391ee5e535ef471",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Develop/QueryTools.md",
                 "mode": "source",
                 "source": false,
@@ -31,7 +79,47 @@
               "title": "QueryTools"
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77300e3581b6e645",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 15,
+                "left": -40,
+                "top": 295,
+                "zoom": 0.5312500000000001
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec3"
+            }
+          },
+          {
+            "id": "a29cbc20cbfb5ca8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+                "page": 26,
+                "left": -21,
+                "top": 515,
+                "zoom": 0.7239583333333334
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec3-Circuit Theorem"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -171,7 +260,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +270,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -210,7 +299,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,19 +322,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,21 +353,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "de7127bc402a7b85",
+  "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
-    "Knowledges/Xcode Add Packages.md",
-    "Develop/QueryTools.md",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Electric Circuits.md",
+    "Lecture/Introduction to Control.md",
+    "Develop/QueryTools.md",
+    "Develop/Span Anything.md",
+    "Develop/VimSafari.md",
+    "Develop/QueryTools-bak.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE160-lec2.pdf",
     "Assets/Pasted image 20250928093011.jpeg",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Develop/VimSafari.md",
-    "Develop/Span Anything.md",
-    "Develop/QueryTools-bak.md",
     "Templates/Develop Template.md",
     "Develop/Better-Link-Clicker.md",
     "Knowledges/ArchLinux Install.md",
@@ -309,7 +399,6 @@
     "Templates/Scripts/frontmatterMultiSuggester.js",
     "Lecture/Numerical Optimization.md",
     "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
-    "Lecture/Slides/CS181-16-Large-Language-Models.pdf",
-    "Lecture/Artificial Intelligence.md"
+    "Lecture/Slides/CS181-16-Large-Language-Models.pdf"
   ]
 }
