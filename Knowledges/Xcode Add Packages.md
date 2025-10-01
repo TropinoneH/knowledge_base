@@ -8,7 +8,7 @@ done: true
 ---
 # Create New Local Packages
 
-假设目标结构如下(参考[[QueryTools]]):
+假设目标结构如下(参考[[QueryTools Prompt]]):
 ```
 QueryTools
 ├── QueryTools (主 App 代码)

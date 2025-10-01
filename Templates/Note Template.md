@@ -3,7 +3,7 @@ type: template
 ---
 <%*
 tR = ""
-let title = await tp.system.prompt("Lecture name(filename)");
+let title = await tp.system.prompt("Note name(filename)");
 if (title) {
 	await tp.file.rename(title);
 }

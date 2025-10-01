@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Develop/QueryTools Prompt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "QueryTools"
+              "title": "QueryTools Prompt"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Develop/QueryTools Prompt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for QueryTools Prompt"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Develop/QueryTools Prompt.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of QueryTools Prompt"
             }
           }
         ]
@@ -265,24 +265,25 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Develop/Span Anything.md",
+    "Develop/QueryTools Prompt.md",
+    "Templates/Topic Template.md",
+    "Templates/Note Template.md",
+    "Templates/Develop Template.md",
+    "Develop/Untitled.md",
     "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE160-lec2.pdf",
-    "Develop/QueryTools.md",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Electric Circuits.md",
-    "Develop/Span Anything.md",
     "Develop/VimSafari.md",
     "Develop/QueryTools-bak.md",
     "Knowledges/Xcode Add Packages.md",
     "Assets/Pasted image 20250928093011.jpeg",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Templates/Develop Template.md",
     "Develop/Better-Link-Clicker.md",
     "Knowledges/ArchLinux Install.md",
-    "Templates/Note Template.md",
-    "Templates/Topic Template.md",
     "Templates/Lecture Note Template.md",
     "Templates/Insert Callouts.md",
     "Paper/3D-VLA.md",
