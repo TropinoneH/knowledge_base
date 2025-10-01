@@ -8,7 +8,8 @@
     "better-bullet-points-in-edit-mode",
     "enlarge-image-on-horver",
     "image-cards",
-    "tag-pills"
+    "tag-pills",
+    "pdf-list-indent-line"
   ],
   "translucency": false,
   "showViewHeader": true,
