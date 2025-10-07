@@ -249,6 +249,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > > $$-15+5I_1+10I_3+10=0$$
 > > 右侧:
 > > $$-10-10I_3+6I_2+4I_2=0$$
+>
 > 使用网孔电流:
 > 
 > 对于左侧的mesh:
@@ -258,7 +259,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > 解得:
 > $$i_1=i_2=1A$$
 > 
-> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=547,331,584,408|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36|30]]
+> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=547,331,584,408|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36|100]]
 > 注意, 此时中间的$I_3=i_1-i_2=0$, 因此中间的$10\Omega$的电阻处流经电流为$0A$, 那么这里是断路. 同时注意到右侧mesh的总电势为$10V$, 那么注意到中间的电压源为$10V$恒压电压源, 这处电路的两侧电势相等, 因此也是短路. 那么这个$10\Omega$电阻就同时为短路和断路.
 
 ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=37&rect=330,101,502,238&color=note|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.37]]

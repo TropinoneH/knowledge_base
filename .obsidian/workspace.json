@@ -11,10 +11,24 @@
             "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Electric Circuits"
             }
           }
         ]
@@ -157,6 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -195,6 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
@@ -247,14 +263,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2cc16ca757d495f4",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Lecture/Artificial Intelligence.md",
+    "Lecture/Electric Circuits.md",
     "Develop/Span Anything.md",
     "Develop/VimSafari.md",
     "Templates/Insert Callouts.md",
     "Topic/Git.md",
     "Paper/3D-VLA.md",
-    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Develop/QueryTools Prompt.md",
     "Templates/Topic Template.md",
