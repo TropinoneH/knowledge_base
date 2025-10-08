@@ -55,8 +55,7 @@
               "title": "Electric Circuits"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "363f9be3567338d8",
@@ -69,10 +68,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                "page": 34,
-                "left": -12,
-                "top": 539,
-                "zoom": 1.2760416666666667
+                "page": 20,
+                "left": -21,
+                "top": 279,
+                "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec3-Circuit Theorem"
@@ -85,16 +84,34 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 17,
-                "left": -16,
-                "top": 127,
-                "zoom": 0.95703125
+                "page": 19,
+                "left": -40,
+                "top": 368,
+                "zoom": 0.5312500000000001
               },
               "icon": "lucide-file-text",
               "title": "EE160-lec3"
             }
+          },
+          {
+            "id": "235cb8795f76c500",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec2.pdf",
+                "page": 3,
+                "left": -29,
+                "top": 206,
+                "zoom": 0.54296875
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec2"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -328,52 +345,52 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a29cbc20cbfb5ca8",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-    "Lecture/Slides/EE160-lec3.pdf",
-    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Artificial Intelligence.md",
-    "Develop/Span Anything.md",
-    "Develop/VimSafari.md",
-    "Templates/Insert Callouts.md",
-    "Topic/Git.md",
-    "Paper/3D-VLA.md",
-    "Develop/QueryTools Prompt.md",
-    "Templates/Topic Template.md",
-    "Templates/Note Template.md",
-    "Templates/Develop Template.md",
-    "Develop/Untitled.md",
     "Lecture/Slides/EE160-lec2.pdf",
-    "Develop/QueryTools-bak.md",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Artificial Intelligence.md",
+    "Lecture/Slides/EE160-lec3.pdf",
+    "Lecture/Slides/CS181-13-Reinforcement-learning.pdf",
+    "Lecture/Slides/CS181-12-Markov-decision-process.pdf",
+    "Lecture/Slides/CS181-11-Probabilistic-temporal-models.pdf",
+    "Knowledges/Conda Init.md",
+    "Knowledges/Hidden Markov Model.md",
+    "Lecture/Machine Learning.md",
+    "Knowledges/HMM.md",
+    "Lecture/Slides/CS181-10-Probabilistic-logics.pdf",
+    "Lecture/Slides/CS181-09-BN-approximate-inference.pdf",
+    "Lecture/Slides/CS181-08-BN-exact-Inference.pdf",
+    "Lecture/Slides/CS181-07-Bayesian-networks.pdf",
+    "Knowledges/Grub Rescue.md",
+    "Lecture/Slides/CS181-06-First-order-logic.pdf",
+    "Lecture/Slides/Bayes.md",
+    "Lecture/PyTorch.md",
     "Knowledges/Xcode Add Packages.md",
-    "Assets/Pasted image 20250928093011.jpeg",
-    "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Develop/Better-Link-Clicker.md",
-    "Knowledges/ArchLinux Install.md",
-    "Templates/Lecture Note Template.md",
-    "Lecture/Slides/EE160-lec1.pdf",
-    "Knowledges/1.md",
-    "Topic/test.md",
-    "Topic/t.md",
-    "Templates/Scripts/frontmatter.js",
-    "Knowledges/obsidian.md",
-    "Topic/12.md",
-    "Lecture/Mechain Learning.md",
+    "Assets/Pasted image 20241009103458.png",
+    "Assets/Pasted image 20241009112505.png",
+    "Assets/Pasted image 20241009112113.png",
+    "Assets/Pasted image 20241009102714.png",
+    "Assets/image-20241009112113288.png",
+    "Assets/image-20241009103458020.png",
+    "Assets/image-20241009112505161.png",
+    "Assets/image-20241009102714101.png",
     "Lecture/Algorithm and Data Structure.md",
-    "Assets/Pasted image 20240611082314.png",
-    "Assets/Pasted image 20240611082022.png",
-    "Assets/Pasted image 20240606092710.png",
-    "Assets/Pasted image 20240606092624.png",
-    "Assets/Pasted image 20240604084744.png",
-    "Assets/Pasted image 20240604083237.png",
-    "Assets/Pasted image 20240604082420.png",
-    "Assets/Pasted image 20240604082338.png",
-    "Assets/Pasted image 20240604082318.png",
-    "Templates/Scripts/frontmatterMultiSuggester.js",
-    "Lecture/Slides/CS181-17-Advanced-topics-in-AI.pdf",
-    "Lecture/Slides/CS181-16-Large-Language-Models.pdf"
+    "Lecture/Computer Architecture.md",
+    "Knowledges/Linux Disk.md",
+    "Knowledges/Windows Partition.md",
+    "Knowledges/Mount.md",
+    "Knowledges/Btrfs.md",
+    "Knowledges/ArchLinux Install.md",
+    "index.md",
+    "Mount.md",
+    "Knowledges/Pacman.md",
+    "Knowledges/VPN.md",
+    "Knowledges/Python Module.md",
+    "Knowledges/Platformio.md",
+    "Knowledges/PyTorch3D Install Error.md",
+    "Assets/Pasted image 20250928093011.jpeg",
+    "Assets/Pasted image 20240611082314.png"
   ]
 }

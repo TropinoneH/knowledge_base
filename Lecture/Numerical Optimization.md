@@ -1003,7 +1003,7 @@ $$f'(\mathbf x;\mathbf d):=\lim_{\tau\downarrow0}\frac{f(\mathbf x+\tau\mathbf d
 
 每一次迭代中, 有$\mathbf x^{t+1}=\mathbf x^t-\eta\mathbf d^t$, 其中$\mathbf d^t$是在$\mathbf x^t$的时候的descend direction, $\eta$是步长.
 
-在[[Mechain Learning|机器学习]]中, $f$通常是loss函数, $\mathbf x$通常是loss函数中的参数, $\eta$是学习率
+在[[Machine Learning|机器学习]]中, $f$通常是loss函数, $\mathbf x$通常是loss函数中的参数, $\eta$是学习率
 
 > [!note]
 > Steepest Descend 最陡下降法

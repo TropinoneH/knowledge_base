@@ -9,7 +9,7 @@ if (title) {
 }
 
 const tags = await tp.user.frontmatter.multiSuggester(tp, "tags")
-const isDone = await tp.system.suggester(["true", "false"], [true, false], true, "Is this lecture done?")
+const isDone = await tp.system.suggester(["true", "false"], [true, false], true, "Is this project done?")
 const rate = await tp.user.frontmatter.suggester(tp, "rate")
 
 tp.hooks.on_all_templates_executed(async () => {

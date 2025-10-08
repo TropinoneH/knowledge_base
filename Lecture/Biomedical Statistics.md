@@ -1,5 +1,5 @@
 ---
-type: lecture notes
+type: lecture note
 tags:
   - biology
   - MachineLearning

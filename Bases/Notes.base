@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.inFolder("Knowledges")
+views:
+  - type: table
+    name: All Notes
+    order:
+      - file.name
+      - type
+      - file.tags
+      - done
+      - file.ctime
+      - file.mtime
+    columnSize:
+      file.name: 243
+      note.type: 83
+      file.tags: 159

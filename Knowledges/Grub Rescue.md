@@ -53,9 +53,9 @@ sudo grub-install /dev/<disk>
 
 ### ArchLinux
 
-一般ArchLinux使用的都是[[Btrfs|btrfs]]文件系统. 因此grub rescue模式中无法读取数据
+一般ArchLinux使用的都是[[Btrfs]]文件系统. 因此grub rescue模式中无法读取数据
 
-需要使用安装ArchLinux的[[ArchLinux Install|live cd]], 进入live os, [[Btrfs#Mount|挂载]]硬盘到`/mnt`:
+需要使用安装ArchLinux的[[ArchLinux Install|live cd]], 进入live os, [[Btrfs#分卷挂载|挂载]]硬盘到`/mnt`:
 ```bash
 mount -o subvol=/@ /dev/<disk> /mnt
 mount -o subvol=/@home /dev/<disk> /mnt/home

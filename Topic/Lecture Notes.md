@@ -1,5 +1,5 @@
 ---
-type: lecture notes
+type: lecture note
 tags:
   - topic
   - lecture
@@ -10,7 +10,7 @@ tags:
 filters:
   and:
     - file.inFolder("Lecture")
-    - type == "lecture notes"
+    - type == "lecture note"
 views:
   - type: cards
     name: Lectures

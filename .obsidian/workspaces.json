@@ -58,12 +58,12 @@
                 }
               },
               {
-                "id": "3391ee5e535ef471",
+                "id": "629fa54581998413",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Lecture/Artificial Intelligence.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -78,10 +78,11 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "QueryTools"
+                  "title": "Artificial Intelligence"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "363f9be3567338d8",
@@ -94,9 +95,9 @@
                   "type": "pdf",
                   "state": {
                     "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                    "page": 35,
+                    "page": 20,
                     "left": -21,
-                    "top": 292,
+                    "top": 279,
                     "zoom": 0.7239583333333334
                   },
                   "icon": "lucide-file-text",
@@ -111,16 +112,32 @@
                   "state": {
                     "file": "Lecture/Slides/EE160-lec3.pdf",
                     "page": 19,
-                    "left": -28,
-                    "top": 540,
+                    "left": -40,
+                    "top": 368,
                     "zoom": 0.5312500000000001
                   },
                   "icon": "lucide-file-text",
                   "title": "EE160-lec3"
                 }
+              },
+              {
+                "id": "1aa61fb271346f39",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture/Slides/CS181-07-Bayesian-networks.pdf",
+                    "page": 102,
+                    "left": -29,
+                    "top": 76,
+                    "zoom": 0.54296875
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "CS181-07-Bayesian-networks"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -354,8 +371,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "de7127bc402a7b85",
-      "mtime": "2025-09-30T19:25:35+08:00"
+      "active": "629fa54581998413",
+      "mtime": "2025-10-08T22:00:46+08:00"
     },
     "note": {
       "main": {
@@ -367,12 +384,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "de7127bc402a7b85",
+                "id": "bab1db2919d53990",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Knowledges/Grub Rescue.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -387,7 +404,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "QueryTools"
+                  "title": "Grub Rescue"
                 }
               }
             ]
@@ -467,7 +484,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:#javascripts",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -478,7 +495,8 @@
                   "title": "Search"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "horizontal",
@@ -530,7 +548,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Knowledges/Grub Rescue.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -540,7 +558,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for QueryTools"
+                  "title": "Backlinks for Grub Rescue"
                 }
               },
               {
@@ -569,7 +587,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Knowledges/Grub Rescue.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -597,7 +615,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of QueryTools"
+                  "title": "Graph of Grub Rescue"
                 }
               }
             ]
@@ -622,8 +640,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "de7127bc402a7b85",
-      "mtime": "2025-09-30T08:30:04+08:00"
+      "active": "bab1db2919d53990",
+      "mtime": "2025-10-08T21:43:09+08:00"
     }
   },
   "active": "lecture note"

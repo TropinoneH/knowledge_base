@@ -39,7 +39,7 @@ timedatectl status
 
 使用`cfdisk /dev/nvme0n1`进入tui界面, 进行分盘.
 
-一般分盘swap需要16G, 主目录自由分盘. 不需要手动创建`/home`的分盘(后续可以使用btrfs的subvolume进行区分)
+一般分盘swap需要16G, 主目录自由分盘. 不需要手动创建`/home`的分盘(后续可以使用[[Btrfs]]的subvolume进行区分)
 
 ![[Pasted image 20250615034145.png]]
 
@@ -56,7 +56,7 @@ mkswap /dev/nvme0n1p<*>
 swapon /dev/nvme0n1p<*>
 ```
 
-对于`Linux filesystem`分区, 这里使用[[#btrfs]]作为文件系统:
+对于`Linux filesystem`分区, 这里使用[[Btrfs]]作为文件系统:
 ```shell
 mkfs.btrfs -f /dev/nvme0n1p<*>
 ```
@@ -65,7 +65,7 @@ mkfs.btrfs -f /dev/nvme0n1p<*>
 > 这个操作会强制抹掉所有内容, 谨慎操作
 #### 挂载
 
-使用[[Mount|mount]]指令
+使用[[Mount]]指令
 
 ```shell
 # mount main filesystem

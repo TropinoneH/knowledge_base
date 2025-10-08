@@ -8,7 +8,7 @@ tags:
 ```base
 filters:
   and:
-    - file.hasTag("System/MacOS")
+    - file.hasTag("system")
     - file.inFolder("Knowledges")
 views:
   - type: cards
@@ -34,6 +34,9 @@ views:
       - file.mtime
   - type: cards
     name: Ubuntu
+    filters:
+      and:
+        - file.hasTag("system/linux/ubuntu")
     order:
       - file.name
       - file.tags
@@ -43,6 +46,9 @@ views:
       - file.mtime
   - type: cards
     name: Windows
+    filters:
+      and:
+        - file.hasTag("system/windows")
     order:
       - file.name
       - file.tags
@@ -52,6 +58,9 @@ views:
       - file.mtime
   - type: cards
     name: MacOS
+    filters:
+      and:
+        - file.hasTag("system/MacOS")
     order:
       - file.name
       - file.tags

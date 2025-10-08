@@ -26,7 +26,11 @@ sudo update-alternatives --config cuda
 sudo update-alternatives --install "/usr/local/cuda" "cuda" "<path/to/cuda/folder>" <priority>
 ```
 
-`<priority>`指的是默认的权重，`<path/to/cuda/folder>`通常是`/usr/local/cuda-xx.x`这样的路径
+install用法: 接受四个参数
+1. 第一个参数表示目标软连接的位置（相当于将你自己的版本直接存在了`<path>`里面）
+2. 第二个参数用于后续快捷调整版本（相当于label）, 直接通过`sudo update-alternatives --config <label>`进行选择版本
+3. 第三个参数是用于替换的位置，只需要在zshrc里面引用这个位置就可以
+4. `<priority>`指的是默认的权重，`<path/to/cuda/folder>`通常是`/usr/local/cuda-xx.x`这样的路径
 
 ## Java
 

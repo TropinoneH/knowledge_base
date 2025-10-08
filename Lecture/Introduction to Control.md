@@ -1,5 +1,5 @@
 ---
-type: lecture notes
+type: lecture note
 tags:
   - lecture
   - electric
@@ -108,7 +108,7 @@ $$Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
 > 叠加性:
 > h(x_1)+h(x_2)=h(x_1+x_2)
 
-> [!PDF|note] [[EE160-lec2.pdf#page=3&selection=40,0,42,10&color=note|ee160-lec2, p.3]]
+> [!PDF|note] [[EE160-lec2.pdf#page=3&selection=40,0,42,10|ee160-lec2, p.3]]
 > > time-invariance
 > 
 > 时不变:
@@ -118,7 +118,7 @@ $$Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
 > c("h(x-t0)")-->e[System]-->d("y(x-t0)")
 > ```
 
-> [!PDF|note] [[EE160-lec2.pdf#page=4&selection=18,0,18,13&color=note|ee160-lec2, p.4]]
+> [!PDF|note] [[EE160-lec2.pdf#page=4&selection=18,0,18,13|ee160-lec2, p.4]]
 > > True or False
 > 
 > True, 是一个线性系统, 但是是时变的
