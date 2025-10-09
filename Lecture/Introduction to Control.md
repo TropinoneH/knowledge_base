@@ -293,3 +293,14 @@ $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}
 ## Routh Table
 ![[EE160-lec3.pdf#page=19|EE160-lec3, p.19]]
 
+## Routh-Hurwitz Criterion
+劳斯判据
+
+%% TODO %%
+
+## Steady State Error
+稳态误差($e_2(\infty)$)
+
+![[EE160-lec3.pdf#page=28&rect=613,45,943,460|EE160-lec3, p.28|278]]
+
+

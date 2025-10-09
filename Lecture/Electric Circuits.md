@@ -413,3 +413,113 @@ Superposition可以计算得出每一个电压源/电流源对相应的影响
 > 计算第二问的时候, 总功率$P_{total}$需要使用原先电路来计算, 不能使用等效的电路. “等效”是对外等效, 对内可能不等效(功率是内部性质)
 
 # Lecture 04
+> [!note]- slide
+> ![[EE111-F25Lec4-Operational Amplifiers.pdf]]
+
+## 运算放大器
+
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=6&rect=206,28,593,234|EE111-F25Lec4-Operational Amplifiers, p.6|433]]
+$$v_0=Av_d=A(v_2-v_1)$$
+
+将电压放大了$A$倍. 但是放大的倍数不能无限增大. 如果超过一定限制, 那么会达到最大值(输出电压不能超过供电电压, “钳制”):
+
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=7&rect=67,35,350,356|EE111-F25Lec4-Operational Amplifiers, p.7|279]]
+
+一个理想的放大的倍数$A$是无穷大的. 虽然在现实器件中无法做到, 但是$A$仍然很大($10^5\sim10^8$).
+
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=9&rect=428,59,714,487|EE111-F25Lec4-Operational Amplifiers, p.9|382]]
+
+认为输出的电压源是一个受控电压源, 有:
+$$v_0=\frac{R_i}{R_i+R_o}\cdot A(v_2-v_1)$$
+在理想的放大器中, 希望$R_o=0$, 因此实际上$R_o$越小越好
+
+**虚短虚断**:
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=9&rect=54,137,414,426|EE111-F25Lec4-Operational Amplifiers, p.9|454]]
+
+在运算放大器中, 常使用KCL. 因为KVL的回路是不完整的, 运放内部是无法看到的.
+
+> [!example] 
+> ![[EE111-F25Lec4-Operational Amplifiers.pdf#page=11&rect=18,244,349,490|EE111-F25Lec4-Operational Amplifiers, p.11]]
+> 求, $\frac{v_o}{v_s}$
+> 
+> 两个节点n节点(negative)和p节点(positive), 以及一个feedback(可以去找一下[[Introduction to Control#Control]]这一部分)
+> 
+> 根据虚短虚断: $v_n=v_p=0,i_n=i_p=0$
+> 
+> 对n点KCL:
+> $$i_1+i_2+i_n=0$$
+> $$\frac{v_n-v_s}{R_s}+\frac{v_n-v_o}{R_f}+0=0$$
+> $$\frac{-v_s}{R_s}+\frac{-v_o}{R_f}=0$$
+> $$\frac{v_o}{v_s}=-\frac{R_f}{R_s}$$
+> 
+> 在$R_L$处的电流不一定等于$i_2$, $i_L=\frac{v_0-0}{R_L}$与电阻有关. 因为$R_L$是随意的, 因此可能有$i_L\neq i_2$. $i_L$和$i_2$的差由运放的输出补齐
+> 
+> 注意, 这里可以看到输入和输出的比例为$-\frac{R_f}{R_s}$, 说明电压时反向的
+> 
+> $A$仍然成立, 但是这里有一个feedback, 不再是开环控制. $A(v_2-v_1)$是开环控制的计算
+
+这里是"[[EE111-F25Lec4-Operational Amplifiers.pdf#page=11&rect=18,244,349,490|Inverting]]"的原因是电压源的正极连接了运放的负极. [[EE111-F25Lec4-Operational Amplifiers.pdf#page=14&rect=24,198,366,486|下面是"Non-Inverting"]]的原因是输入电压源的正极连接运放正极.
+
+> [!example] 
+> ![[EE111-F25Lec4-Operational Amplifiers.pdf#page=13&rect=195,142,493,349|EE111-F25Lec4-Operational Amplifiers, p.13]]
+> 
+> 由于运放的输入都是没有电流的, 因此$20k\Omega$的输入电流都给到了$40k\Omega$.
+
+> [!example] 
+> ![[EE111-F25Lec4-Operational Amplifiers.pdf#page=14&rect=24,198,366,486|EE111-F25Lec4-Operational Amplifiers, p.14]]
+> 求, $\frac{v_o}{v_{in}}$
+> 
+> 由于虚短虚断, 因此输入的两极的电压是相同的, 都是$v_{in}$
+> 
+> 在负极节点处的KCL:
+> $$\frac{v_o-v_{in}}{R_2}=\frac{v_{in}-0}{R_1}$$
+> $$\frac{v_o}{v_{in}}=\frac{R_1+R_2}{R_1}$$
+> 
+> 是一个同向的放大器
+
+> [!example] 
+> ![[EE111-F25Lec4-Operational Amplifiers.pdf#page=15&rect=22,267,442,490|EE111-F25Lec4-Operational Amplifiers, p.15]]
+> > 是[[EE111-F25Lec4-Operational Amplifiers.pdf#page=14&rect=24,198,366,486|上面的电路]]的一个改版, 令$R_1\to\infty$, $R_2\to0$
+> 
+> 或者说只看这一个电路自己:
+> 
+> $$v_o=v_2=v_{in}\Rightarrow\frac{v_o}{v_{in}}=1$$
+> 
+> 是电压跟随器.
+
+
+电压跟随器的原因:
+
+前面已经有一个电压源了, 为什么这里还需要一个运放: Buffer
+
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=16&rect=19,286,338,419|EE111-F25Lec4-Operational Amplifiers, p.16]]
+这种情况下, 如果长时间运行, 会导致电压源漂移(?), 分压变成了$v_o=\frac{R_L}{R_L+R_s}v_s$
+
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=16&rect=19,101,331,260|EE111-F25Lec4-Operational Amplifiers, p.16]]
+使用运放, 那么会有虚短虚断, 导致$R_s$不起作用(因为电流为0, 电压为0, 直接看成导线即可). 那么这个时候的$v_o=v_s$.
+
+### Negative Feedback
+
+在运放反馈的时候, 大部分都是往负极去连接反馈(inverted input), 称作负反馈
+
+目的: 自我调整:
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=18&rect=156,167,582,427|EE111-F25Lec4-Operational Amplifiers, p.18]]
+
+### Summing Amplifier
+
+加法器运放:
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=19&rect=346,145,657,360|EE111-F25Lec4-Operational Amplifiers, p.19]]
+$$v_+=(-\frac{R_f}{R_1}v_1-\frac{R_f}{R_2}v_2-\frac{R_f}{R_3}v_3)$$
+
+### Difference Amplifier
+
+减法器运放:
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=21&rect=10,233,342,420|EE111-F25Lec4-Operational Amplifiers, p.21]]
+$$v_o=\frac{R_2\frac{1+R_1}{R_2}}{R_1\frac{1+R_3}{R_4}}v_2-\frac{R_2}{R_1}v_1$$
+
+### Cascaded Op Amps
+
+级联: 多个OA直接相乘:
+![[EE111-F25Lec4-Operational Amplifiers.pdf#page=23&rect=64,216,664,327|EE111-F25Lec4-Operational Amplifiers, p.23]]
+$$A=A_1\cdot A_2\cdot A_3$$
+
