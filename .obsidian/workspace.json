@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/EO-1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
+              "title": "EO-1"
             }
           },
           {
-            "id": "964fcd69f34f5044",
+            "id": "136e8dd42689b9de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Topic/Coding.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "Coding"
             }
           }
         ]
@@ -62,66 +62,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a29cbc20cbfb5ca8",
+            "id": "4bc7f45b526e17a1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-                "page": 24,
-                "left": -21,
-                "top": 292,
-                "zoom": 0.7239583333333334
+                "file": "Paper/PDF/2508.21112v3.pdf",
+                "page": 1,
+                "left": -17,
+                "top": 817,
+                "zoom": 0.8756442389748622
               },
               "icon": "lucide-file-text",
-              "title": "EE111-F25Lec4-Operational Amplifiers"
-            }
-          },
-          {
-            "id": "75ca2d6c6f0c95b4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 26,
-                "left": -29,
-                "top": 229,
-                "zoom": 0.54296875
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec3"
-            }
-          },
-          {
-            "id": "bd95a1782e477ba8",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "460bdc151696051c",
-            "type": "leaf",
-            "dimension": 33.333333333333336,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec2.pdf",
-                "page": 42,
-                "left": -29,
-                "top": 341,
-                "zoom": 0.54296875
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec2"
+              "title": "2508.21112v3"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,7 +154,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "rust",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -355,30 +311,43 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "460bdc151696051c",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE160-lec2.pdf",
+    "Paper/PDF/2508.21112v3.pdf",
+    "Paper/EO-1.md",
     "Lecture/Slides/EE160-lec3.pdf",
-    "Lecture/Slides/ee160-lec3-updated-20251008.pdf",
+    "Topic/Coding.md",
+    "Knowledges/MacOS Install Rust.md",
+    "Paper/3D-VLA.md",
+    "Topic/Git.md",
+    "Topic/Conda.md",
+    "Topic/System.md",
+    "Topic/Lecture Notes.md",
+    "Develop/VimSafari.md",
+    "Develop/Span Anything.md",
+    "Develop/Better-Link-Clicker.md",
+    "Bases/Notes.base",
+    "Lecture/Machine Learning.md",
+    "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
+    "Lecture/Discrete Mathematics.md",
+    "Lecture/Algorithm and Data Structure.md",
+    "Lecture/Artificial Intelligence.md",
+    "Templates/Lecture Note Template.md",
+    "Lecture/Computer Architecture.md",
+    "Knowledges/Cargo.md",
+    "Knowledges/Conda Init.md",
+    "Templates/Paper Note Template.md",
+    "Templates/Note Template.md",
+    "Templates/Topic Template.md",
+    "Templates/Develop Template.md",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-    "Knowledges/Grub Rescue.md",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Lecture/Slides/ee160-lec3-updated-20251008.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-    "Knowledges/Mac Free App Website.md",
     "Lecture/Slides/F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/Fall-2025-EE111-Homework2-Final(1).pdf",
-    "Lecture/Artificial Intelligence.md",
     "Lecture/Slides/CS181-13-Reinforcement-learning.pdf",
-    "Lecture/Slides/CS181-12-Markov-decision-process.pdf",
-    "Lecture/Slides/CS181-11-Probabilistic-temporal-models.pdf",
-    "Knowledges/Conda Init.md",
-    "Knowledges/Hidden Markov Model.md",
-    "Lecture/Machine Learning.md",
-    "Knowledges/HMM.md",
-    "Lecture/Slides/Bayes.md",
-    "Lecture/PyTorch.md",
-    "Knowledges/Xcode Add Packages.md",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",
@@ -387,19 +356,6 @@
     "Assets/image-20241009103458020.png",
     "Assets/image-20241009112505161.png",
     "Assets/image-20241009102714101.png",
-    "Lecture/Algorithm and Data Structure.md",
-    "Lecture/Computer Architecture.md",
-    "Knowledges/Linux Disk.md",
-    "Knowledges/Windows Partition.md",
-    "Knowledges/Mount.md",
-    "Knowledges/Btrfs.md",
-    "Knowledges/ArchLinux Install.md",
-    "index.md",
-    "Mount.md",
-    "Knowledges/Pacman.md",
-    "Knowledges/VPN.md",
-    "Knowledges/Python Module.md",
-    "Knowledges/Platformio.md",
     "Assets/Pasted image 20250928093011.jpeg",
     "Assets/Pasted image 20240611082314.png"
   ]

@@ -5,6 +5,7 @@ tags:
   - MachineLearning
   - math
   - DeepLearning
+  - code/python
 teacher:
   - 孙露
 ClassID: CS182

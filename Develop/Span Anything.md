@@ -8,6 +8,8 @@ tags:
   - software/ros
   - software/vicon
   - ComputerVision
+  - code/python
+  - code/cpp
 rate: 🌟
 done: false
 ---

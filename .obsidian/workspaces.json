@@ -613,12 +613,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "de7127bc402a7b85",
+                "id": "0d494ccfaa631af0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Lecture/Introduction to Control.md",
+                    "file": "Paper/EO-1.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -633,16 +633,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Introduction to Control"
+                  "title": "EO-1"
                 }
               },
               {
-                "id": "167d4f8a9e852b7f",
+                "id": "136e8dd42689b9de",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Lecture/Electric Circuits.md",
+                    "file": "Topic/Coding.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -657,50 +657,32 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Electric Circuits"
+                  "title": "Coding"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "363f9be3567338d8",
             "type": "tabs",
             "children": [
               {
-                "id": "61d90fcca8c54225",
+                "id": "4bc7f45b526e17a1",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE160-lec3.pdf",
-                    "page": 19,
-                    "left": -40,
-                    "top": 368,
-                    "zoom": 0.5312500000000001
+                    "file": "Paper/PDF/2508.21112v3.pdf",
+                    "page": 1,
+                    "left": -17,
+                    "top": 842,
+                    "zoom": 0.8756442389748622
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE160-lec3"
-                }
-              },
-              {
-                "id": "a29cbc20cbfb5ca8",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-                    "page": 10,
-                    "left": -21,
-                    "top": 438,
-                    "zoom": 0.7239583333333334
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "EE111-F25Lec4-Operational Amplifiers"
+                  "title": "2508.21112v3"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -777,7 +759,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:#javascripts",
+                    "query": "rust",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -934,9 +916,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a29cbc20cbfb5ca8",
-      "mtime": "2025-10-09T09:12:50+08:00"
+      "active": "4bc7f45b526e17a1",
+      "mtime": "2025-10-10T02:51:57+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }

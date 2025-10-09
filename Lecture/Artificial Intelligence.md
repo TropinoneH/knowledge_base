@@ -4,6 +4,7 @@ tags:
   - algorithm
   - ReinforcementLearning
   - lecture
+  - code/python
 teacher:
   - 任侃
 ClassID: CS181

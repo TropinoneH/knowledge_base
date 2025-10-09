@@ -23,4 +23,3 @@ tp.hooks.on_all_templates_executed(async () => {
   });
 });
 -%>
-<%* tp.file.cursor() %>

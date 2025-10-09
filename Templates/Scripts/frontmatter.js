@@ -52,4 +52,18 @@ const suggester = async (tp, key) => {
     return choice;
 }
 
-module.exports = { multiSuggester, suggester }
+async function suggestFile(tp, attachmentsPath, ext) {
+    const files = app.vault.getFiles().filter(f =>
+        f.path.startsWith(attachmentsPath) && f.extension === ext
+    )
+
+    if (files.length === 0) {
+        tp.notify(`No ${ext} files found in ${attachmentsPath}`, 'warning')
+        tp.
+    }
+
+    const filePaths = files.map(f => f.name)
+    return await tp.system.suggester(filePaths, filePaths, false, `Choose a ${ext} file`)
+}
+
+module.exports = { multiSuggester, suggester, suggestFile }

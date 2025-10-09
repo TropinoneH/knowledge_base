@@ -3,6 +3,7 @@ type: lecture note
 tags:
   - lecture
   - algorithm
+  - code/cpp
 teacher:
   - 赵登吉
   - 耿浩

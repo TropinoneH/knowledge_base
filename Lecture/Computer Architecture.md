@@ -4,6 +4,8 @@ tags:
   - lecture
   - algorithm
   - system/linux
+  - code/c
+  - code/assemble
 teacher:
   - 王春东
   - 刘思廷
