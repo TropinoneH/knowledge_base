@@ -635,30 +635,6 @@
                   "icon": "lucide-file",
                   "title": "EO-1"
                 }
-              },
-              {
-                "id": "136e8dd42689b9de",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Topic/Coding.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Coding"
-                }
               }
             ]
           },
@@ -674,9 +650,9 @@
                   "state": {
                     "file": "Paper/PDF/2508.21112v3.pdf",
                     "page": 1,
-                    "left": -17,
-                    "top": 842,
-                    "zoom": 0.8756442389748622
+                    "left": 0,
+                    "top": 313,
+                    "zoom": 1.3544137509323408
                   },
                   "icon": "lucide-file-text",
                   "title": "2508.21112v3"
@@ -916,9 +892,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "4bc7f45b526e17a1",
-      "mtime": "2025-10-10T02:51:57+08:00"
+      "active": "0d494ccfaa631af0",
+      "mtime": "2025-10-11T00:02:36+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }
