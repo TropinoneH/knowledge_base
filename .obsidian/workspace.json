@@ -69,9 +69,9 @@
               "state": {
                 "file": "Paper/PDF/2508.21112v3.pdf",
                 "page": 1,
-                "left": -17,
-                "top": 719,
-                "zoom": 0.8756442389748622
+                "left": -11,
+                "top": 313,
+                "zoom": 1.3544137509323408
               },
               "icon": "lucide-file-text",
               "title": "2508.21112v3"
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -311,10 +310,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4bc7f45b526e17a1",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Paper/EO-1.md",
     "Paper/PDF/2508.21112v3.pdf",
+    "Templates/Paper Note Template.md",
+    "Paper/Untitled.md",
+    "Paper/EO-1.md",
     "Lecture/Slides/EE160-lec3.pdf",
     "Topic/Coding.md",
     "Knowledges/MacOS Install Rust.md",
@@ -337,10 +338,8 @@
     "Lecture/Computer Architecture.md",
     "Knowledges/Cargo.md",
     "Knowledges/Conda Init.md",
-    "Templates/Paper Note Template.md",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
-    "Templates/Develop Template.md",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/EE160-lec2.pdf",
     "Lecture/Slides/ee160-lec3-updated-20251008.pdf",

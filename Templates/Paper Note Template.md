@@ -9,14 +9,21 @@ if (title) {
 	await tp.file.rename(title);
 }
 
+const rate = ["", "", "", ",]
+
 const selectedTags = await tp.user.frontmatter.multiSuggester(tp, "tags")
-const published = await tp.user.frontmatter.suggester(tp, "publish")
+const publish = await tp.user.frontmatter.suggester(tp, "publish")
+const pdf = await tp.user.frontmatter.suggestFile(tp, "Paper/PDF", "pdf")
+const rate = await tp.system.suggester()
 
 tp.hooks.on_all_templates_executed(async () => {
   const file = tp.file.find_tfile(tp.file.path(true));
   await tp.app.fileManager.processFrontMatter(file, (frontmatter) => {
     frontmatter["type"] = "paper";
     frontmatter["tags"] = selectedTags;
+    frontmatter["publish"] = publish;
+    frontmatter["pdf"] = pdf;
+    frontmatter["rate"] = rate;
   });
 });
 -%>
