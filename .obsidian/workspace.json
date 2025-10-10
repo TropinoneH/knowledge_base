@@ -70,7 +70,7 @@
                 "file": "Paper/PDF/2508.21112v3.pdf",
                 "page": 1,
                 "left": -17,
-                "top": 817,
+                "top": 719,
                 "zoom": 0.8756442389748622
               },
               "icon": "lucide-file-text",
@@ -311,10 +311,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0d494ccfaa631af0",
+  "active": "4bc7f45b526e17a1",
   "lastOpenFiles": [
-    "Paper/PDF/2508.21112v3.pdf",
     "Paper/EO-1.md",
+    "Paper/PDF/2508.21112v3.pdf",
     "Lecture/Slides/EE160-lec3.pdf",
     "Topic/Coding.md",
     "Knowledges/MacOS Install Rust.md",
