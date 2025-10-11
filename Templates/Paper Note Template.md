@@ -9,12 +9,13 @@ if (title) {
 	await tp.file.rename(title);
 }
 
-const rate = ["", "", "", ",]
+const allRate = ["🌟", "🌟🌟", "🌟🌟🌟", "🌟🌟🌟🌟", "🌟🌟🌟🌟🌟"];
 
-const selectedTags = await tp.user.frontmatter.multiSuggester(tp, "tags")
-const publish = await tp.user.frontmatter.suggester(tp, "publish")
-const pdf = await tp.user.frontmatter.suggestFile(tp, "Paper/PDF", "pdf")
-const rate = await tp.system.suggester()
+const selectedTags = await tp.user.frontmatter.multiSuggester(tp, "tags");
+const publish = await tp.user.frontmatter.suggester(tp, "publish");
+const pdf = await tp.user.frontmatter.suggestFile(tp, "Paper/PDF", "pdf");
+const rate = await tp.system.suggester(allRate, allRate, true, "Rate of this paper");
+const isDone = await tp.system.suggester(["true", "false"], [true, false], true, "Is this note done?")
 
 tp.hooks.on_all_templates_executed(async () => {
   const file = tp.file.find_tfile(tp.file.path(true));
@@ -24,6 +25,7 @@ tp.hooks.on_all_templates_executed(async () => {
     frontmatter["publish"] = publish;
     frontmatter["pdf"] = pdf;
     frontmatter["rate"] = rate;
+    frontmatter["done"] = isDone;
   });
 });
 -%>

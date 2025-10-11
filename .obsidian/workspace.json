@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Slurm.md",
+                "file": "Paper/EO-1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,29 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Slurm"
+              "title": "EO-1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bc7f45b526e17a1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2508.21112v3.pdf",
+                "page": 1,
+                "left": -53,
+                "top": 313,
+                "zoom": 1.3544137509323408
+              },
+              "icon": "lucide-file-text",
+              "title": "2508.21112v3"
             }
           }
         ]
@@ -108,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "rust",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,12 +141,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -172,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Slurm.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +204,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Slurm"
+              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
             }
           },
           {
@@ -211,7 +233,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Slurm.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,19 +256,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Slurm"
+              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,21 +287,27 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bab1db2919d53990",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Knowledges/Windows Firewall.md",
+    "Knowledges/Linux File Permission.md",
+    "Templates/Paper Note Template.md",
+    "Templates/Note Template.md",
+    "Templates/Topic Template.md",
+    "Paper/EO-1.md",
+    "Paper/Untitled.md",
+    "Paper/s.md",
+    "Paper/1.md",
+    "Paper/PDF/2403.09631v1.pdf",
     "Knowledges/Slurm.md",
+    "Knowledges/Windows Firewall.md",
     "Lecture/Machine Learning.md",
     "Knowledges/Grub Rescue.md",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",
     "Assets/Pasted image 20251011000933.png",
-    "Paper/EO-1.md",
     "Topic/Coding.md",
     "Paper/PDF/2508.21112v3.pdf",
-    "Templates/Paper Note Template.md",
-    "Paper/Untitled.md",
     "Lecture/Slides/EE160-lec3.pdf",
     "Knowledges/MacOS Install Rust.md",
     "Paper/3D-VLA.md",
@@ -294,18 +323,12 @@
     "Lecture/Electric Circuits.md",
     "Lecture/Discrete Mathematics.md",
     "Lecture/Algorithm and Data Structure.md",
-    "Lecture/Artificial Intelligence.md",
-    "Templates/Lecture Note Template.md",
-    "Lecture/Computer Architecture.md",
-    "Knowledges/Cargo.md",
-    "Knowledges/Conda Init.md",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/EE160-lec2.pdf",
     "Lecture/Slides/ee160-lec3-updated-20251008.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/Fall-2025-EE111-Homework2-Final(1).pdf",
-    "Lecture/Slides/CS181-13-Reinforcement-learning.pdf",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",

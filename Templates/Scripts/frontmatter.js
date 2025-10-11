@@ -57,14 +57,9 @@ async function suggestFile(tp, attachmentsPath, ext) {
         f.path.startsWith(attachmentsPath) && f.extension === ext
     )
 
-    if (files.length === 0) {
-        // tp.notify(`No ${ext} files found in ${attachmentsPath}`, 'warning')
-        throw new Error(`No ${ext} files found in ${attachmentsPath}`)
-    }
-
     const filePaths = files.map(f => f.name)
     const res = await tp.system.suggester(filePaths, filePaths, true, `Choose a ${ext} file`)
-    return `![[${attachmentsPath}/${res}]]`
+    return `[[${attachmentsPath}/${res}]]`
 }
 
 module.exports = { multiSuggester, suggester, suggestFile }

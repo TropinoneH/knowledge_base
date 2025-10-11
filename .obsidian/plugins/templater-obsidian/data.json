@@ -29,6 +29,10 @@
     {
       "folder": "Develop",
       "template": "Templates/Develop Template.md"
+    },
+    {
+      "folder": "Paper",
+      "template": "Templates/Paper Note Template.md"
     }
   ],
   "enable_file_templates": false,
