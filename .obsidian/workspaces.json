@@ -650,8 +650,8 @@
                   "state": {
                     "file": "Paper/PDF/2508.21112v3.pdf",
                     "page": 1,
-                    "left": 0,
-                    "top": 313,
+                    "left": -57,
+                    "top": 641,
                     "zoom": 1.3544137509323408
                   },
                   "icon": "lucide-file-text",
@@ -893,8 +893,8 @@
         }
       },
       "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-11T00:02:36+08:00"
+      "mtime": "2025-10-12T16:15:47+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }
