@@ -5,6 +5,5 @@ tags:
   - DeepLearning
 done: true
 ---
-# Squeeze
+# Change the Dimension of Tensor
 
-常用于将一个数组去掉一个维度.

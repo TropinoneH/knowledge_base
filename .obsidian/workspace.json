@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/PyTorch Squeeze.md",
+                "file": "Knowledges/PyTorch Tensor Dimension.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PyTorch Squeeze"
+              "title": "PyTorch Tensor Dimension"
             }
           }
         ]
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/PyTorch Squeeze.md",
+                "file": "Knowledges/PyTorch Tensor Dimension.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PyTorch Squeeze"
+              "title": "Backlinks for PyTorch Tensor Dimension"
             }
           },
           {
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/PyTorch Squeeze.md",
+                "file": "Knowledges/PyTorch Tensor Dimension.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,7 +239,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PyTorch Squeeze"
+              "title": "Graph of PyTorch Tensor Dimension"
             }
           }
         ]
@@ -267,7 +267,7 @@
   "active": "bab1db2919d53990",
   "lastOpenFiles": [
     "Knowledges/Linux File Permission.md",
-    "Knowledges/PyTorch Squeeze.md",
+    "Knowledges/PyTorch Tensor Dimension.md",
     "Paper/EO-1.md",
     "Templates/Paper Note Template.md",
     "Templates/Note Template.md",
