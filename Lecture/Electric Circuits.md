@@ -30,14 +30,14 @@ $$p_4=-1A\times8V=-8W$$
 
 ## Kirchhoff's Law
 示例:
-> [!PDF|note] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=11,1,16,18&color=note|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
+> [!PDF|blue] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=9,1,16,18&color=blue|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
 > > 𝑏 – number of branches
 > 
 > $b=5$
 > 
 > 有五个组件, 每个组件作为一个branch
 
-> [!PDF|note] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=20,0,24,15&color=note|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
+> [!PDF|blue] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=18,0,24,15&color=blue|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
 > > 𝑛 – number of nodes
 > 
 > $n=3$
@@ -47,7 +47,7 @@ $$p_4=-1A\times8V=-8W$$
 > 
 > 因此实际上是3个node
 
-> [!PDF|note] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=28,0,32,15&color=note|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
+> [!PDF|blue] [[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=4&selection=26,0,32,15&color=blue|F25Lec2-Kirchhoff and Node_Mesh_analysis, p.4]]
 > > l – number of loops
 > 
 > $l=6$
@@ -259,7 +259,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > 解得:
 > $$i_1=i_2=1A$$
 > 
-> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=547,331,584,408|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36|100]]
+> ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=36&rect=547,331,584,408&color=blue|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.36|100]]
 > 注意, 此时中间的$I_3=i_1-i_2=0$, 因此中间的$10\Omega$的电阻处流经电流为$0A$, 那么这里是断路. 同时注意到右侧mesh的总电势为$10V$, 那么注意到中间的电压源为$10V$恒压电压源, 这处电路的两侧电势相等, 因此也是短路. 那么这个$10\Omega$电阻就同时为短路和断路.
 
 ![[EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf#page=37&rect=330,101,502,238&color=note|EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis, p.37]]
@@ -276,7 +276,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > 此时有两个mesh两个方程, 但是有三个未知数. 需要再找一个方程.
 > 
 > 考虑电流源的电流, 有:
-> $$i_1-i_2=6$$
+> $$i_12-i_1=6$$
 > 联立求解.
 
 Supermesh方法: 将多个mesh合成一个更大的mesh. 但是注意, 在一个supermesh之后, 里面还是有多个mesh current在转:

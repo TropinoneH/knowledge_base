@@ -69,9 +69,9 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 19,
-                "left": -40,
-                "top": 217,
+                "page": 49,
+                "left": -424,
+                "top": 203,
                 "zoom": 0.5312500000000001
               },
               "icon": "lucide-file-text",
@@ -85,17 +85,34 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 19,
+                "page": 18,
                 "left": -21,
-                "top": 29,
+                "top": 6,
                 "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec5-1st-Order Circuits"
             }
+          },
+          {
+            "id": "313186c9a4a1e38b",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
+                "page": 37,
+                "left": -20,
+                "top": 70,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -331,10 +348,11 @@
   },
   "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Electric Circuits.md",
+    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE160-lec3.pdf",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/PyTorch Tensor Dimension.md",
@@ -369,7 +387,6 @@
     "Bases/Notes.base",
     "Lecture/Slides/EE160-lec2.pdf",
     "Lecture/Slides/ee160-lec3-updated-20251008.pdf",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",
