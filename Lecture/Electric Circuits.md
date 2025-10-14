@@ -529,10 +529,12 @@ $$A=A_1\cdot A_2\cdot A_3$$
 
 电容和电感
 
-## 电容
+## Capacity
 
-平行班电容器:
+平行板电容器:
 ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=5&rect=14,242,439,445|EE111-F25Lec5-1st-Order Circuits, p.5]]
+
+C 单位: F (法拉利).
 
 “电容(capacity)”: 储存多少电荷的能力:
 $$C=\frac{Q}{V}=\frac{dQ}{dV}$$
@@ -568,5 +570,91 @@ $$\begin{aligned}V(t)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\\&=\int_{-\infty}
 
 > [!example] 
 > ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=18,271,381,428|EE111-F25Lec5-1st-Order Circuits, p.8]]
-> 第一段电流:
-> $$i=C\cdot\frac{dv}{dt}=0.6\times5=$$
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=104,298,171,361&color=blue|第一段电流]]:
+> $$i=C\cdot\frac{dv}{dt}=0.6\times5=3\mu A$$
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=165,338,235,370&color=blue|第二段]]:
+> $$i=C\cdot\frac{dv}{dt}=C\cdot0=0$$
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=226,324,258,361&color=blue|第三段]]:
+> $$i=C\cdot\frac{dv}{dt}=0.6\times-5=-3\mu A$$
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=255,316,325,344&color=blue|第四段]]: 同第二段, 电流为$0$
+> 
+> ---
+> 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=20,107,369,271|EE111-F25Lec5-1st-Order Circuits, p.8]]
+> 由于每一段斜率都为$0$, 因此每一段电流均为$0$
+> 
+> ---
+> 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=389,236,704,403|EE111-F25Lec5-1st-Order Circuits, p.8]]
+> 
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=466,281,527,364&color=blue|储存能量]], [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=556,243,611,316&color=blue|释放能量]]
+> 
+> ---
+> 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=416,56,698,225|EE111-F25Lec5-1st-Order Circuits, p.8]]
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=454,79,518,182&color=blue|储能]], [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=509,157,574,182&color=blue|等待(idle)]], [[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=557,94,587,179&color=blue|释能]]
+> 
+> ---
+> 
+> 这些图片的时间都是对应的, 是同一个电路相同时间坐标系下的图, 因此可以对称看.
+
+注意, 电压不能突变. 由于电流$i=C\cdot\frac{dv}{dt}$, 那么如果电压突变, 微分变成$\infty$, 导致功率$p=v\cdot i=\infty$, [[EE111-F25Lec5-1st-Order Circuits.pdf#page=9&rect=484,81,651,224|这个]]是不被允许的.
+
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=10&rect=30,99,396,392|EE111-F25Lec5-1st-Order Circuits, p.10]]
+串联. 使用KVL:
+$$\begin{aligned}v_s&=v_1+v_2+v_3\\&=\frac{1}{C_1}\int_{-\infty}^ti_s(t)dt+\frac{1}{C_2}\int...+\frac{1}{C_3}\int...\\&=\left(\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}\right)\int_{-\infty}^ti_s(t)dt\\\Rightarrow C_{eq}&=\left(\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}\right)^{-1}\\\frac{v_1}{v_s}&=\frac{\frac{1}{C_1}}{\frac{1}{C_{eq}}}=\frac{C_{eq}}{C_1}\end{aligned}$$
+
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=11&rect=35,91,407,429|EE111-F25Lec5-1st-Order Circuits, p.11]]
+并联. 使用KCL:
+$$\begin{aligned}i_s&=i_1+i_2+i_3\\&=C_1\frac{dv}{dt}+C_2\frac{dv}{dt}+C_3\frac{dv}{dt}\\\Rightarrow C_{eq}&=C_1+C_2+C_3\\\frac{i_1}{i_s}&=\frac{C_1}{C_{eq}}\end{aligned}$$
+
+## Inductor
+
+电感, 或者称为线圈:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=13&rect=54,203,602,436|EE111-F25Lec5-1st-Order Circuits, p.13]]
+$L$的单位: H (Heng, 亨利). 真实世界中一般都是$nH$, 纳亨.
+
+线圈会产生感应电动势, 感应电动势的方向由线圈的绕法和电流方向共同决定(楞次定律). 在电路中, 不考虑电感线圈的绕法; 画图中, 使用电压电流的关系来表示方向
+$$v=L\frac{di}{dt}$$
+考虑[[#Capacity|电感]], 公式只是换了符号: 二元性.
+
+使用积分形式:
+$$\begin{aligned}di&=\frac{1}{L}vdt\\\int_{(i(-\infty)}^{i(t)}di&=\int_{-\infty}^t\frac{1}{L}v(t)dt\\i(t)-i(-\infty)&=\frac{1}{L}\int_{-\infty}^tv(t)dt\\i(t)&=\frac{1}{L}\int_{-\infty}^tv(t)dt\\&=i(t_0)+\int_{t_0}^tv(t)dt\end{aligned}$$
+
+> [!PDF|] [[EE111-F25Lec5-1st-Order Circuits.pdf#page=14&selection=12,4,12,19|EE111-F25Lec5-1st-Order Circuits, p.14]]
+> > power delivered 
+> 
+> $$p(t)=v(t)i(t)=L\frac{di(t)}{dt}i(t)$$
+
+> [!PDF|] [[EE111-F25Lec5-1st-Order Circuits.pdf#page=14&selection=16,4,16,17|EE111-F25Lec5-1st-Order Circuits, p.14]]
+> > energy stored
+> 
+> same as [[EE111-F25Lec5-1st-Order Circuits.pdf#page=6&selection=16,4,16,17|Capacity]]:
+> $$E(t)=\frac{1}{2}L\cdot i^2(t)$$
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=15&rect=57,303,327,436|EE111-F25Lec5-1st-Order Circuits, p.15]]
+> 
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=15&rect=377,316,409,409&color=blue|第一段]]: 电流爬升, $\frac{di}{dt}>0$. $i>0$, 因此电压$v>0$, $p>0$
+> 
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=15&rect=401,317,439,414&color=blue|第二段]]: $i>0$, $\frac{di}{dt}<0$, 因此电压$v<0$, $p<0$
+> 
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=15&rect=433,297,455,324&color=blue|第三段]]: $i<0$, $\frac{di}{dt}<0$, 因此$v>0$, $p>0$
+> 
+> [[EE111-F25Lec5-1st-Order Circuits.pdf#page=15&rect=452,297,488,324&color=blue|第四段]]: $i<0$, $\frac{di}{dt}>0$, 因此$v<0$, $p<0$
+
+同理, 对于电感而言, 电流是不能突变的.
+
+串联:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=17&rect=39,107,397,430|EE111-F25Lec5-1st-Order Circuits, p.17]]
+
+并联:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=18&rect=38,50,427,389|EE111-F25Lec5-1st-Order Circuits, p.18]]
+
+电容在直流源作用下是断路, 电感在直流源的作用下是短路.
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=19&rect=26,85,381,420|EE111-F25Lec5-1st-Order Circuits, p.19]]
+
+总结:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=20&rect=56,51,675,410|EE111-F25Lec5-1st-Order Circuits, p.20]]
+

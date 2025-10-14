@@ -71,7 +71,7 @@
                 "file": "Lecture/Slides/EE160-lec3.pdf",
                 "page": 19,
                 "left": -40,
-                "top": 368,
+                "top": 217,
                 "zoom": 0.5312500000000001
               },
               "icon": "lucide-file-text",
@@ -85,9 +85,9 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 7,
+                "page": 19,
                 "left": -21,
-                "top": 102,
+                "top": 29,
                 "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
@@ -331,8 +331,10 @@
   },
   "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
+    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/PyTorch Tensor Dimension.md",
@@ -355,7 +357,6 @@
     "Assets/Pasted image 20251011000933.png",
     "Topic/Coding.md",
     "Paper/PDF/2508.21112v3.pdf",
-    "Lecture/Slides/EE160-lec3.pdf",
     "Knowledges/MacOS Install Rust.md",
     "Paper/3D-VLA.md",
     "Topic/Git.md",
@@ -366,7 +367,6 @@
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
     "Bases/Notes.base",
-    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE160-lec2.pdf",
     "Lecture/Slides/ee160-lec3-updated-20251008.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
