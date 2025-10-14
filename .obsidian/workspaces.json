@@ -349,7 +349,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/PyTorch Tensor Dimension.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -364,7 +364,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Linux File Permission"
+                  "title": "PyTorch Tensor Dimension"
                 }
               }
             ]
@@ -508,7 +508,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/PyTorch Tensor Dimension.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -518,7 +518,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Linux File Permission"
+                  "title": "Backlinks for PyTorch Tensor Dimension"
                 }
               },
               {
@@ -547,7 +547,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/PyTorch Tensor Dimension.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -575,7 +575,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Linux File Permission"
+                  "title": "Graph of PyTorch Tensor Dimension"
                 }
               }
             ]
@@ -601,7 +601,7 @@
         }
       },
       "active": "bab1db2919d53990",
-      "mtime": "2025-10-11T20:08:05+08:00"
+      "mtime": "2025-10-14T08:17:20+08:00"
     },
     "paper": {
       "main": {
@@ -896,5 +896,5 @@
       "mtime": "2025-10-12T16:15:47+08:00"
     }
   },
-  "active": "note"
+  "active": "lecture note"
 }

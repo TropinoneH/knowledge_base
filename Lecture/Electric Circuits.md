@@ -523,3 +523,50 @@ $$v_o=\frac{R_2\frac{1+R_1}{R_2}}{R_1\frac{1+R_3}{R_4}}v_2-\frac{R_2}{R_1}v_1$$
 ![[EE111-F25Lec4-Operational Amplifiers.pdf#page=23&rect=64,216,664,327|EE111-F25Lec4-Operational Amplifiers, p.23]]
 $$A=A_1\cdot A_2\cdot A_3$$
 
+# Lecture 05
+> [!note]- slide
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf]]
+
+电容和电感
+
+## 电容
+
+平行班电容器:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=5&rect=14,242,439,445|EE111-F25Lec5-1st-Order Circuits, p.5]]
+
+“电容(capacity)”: 储存多少电荷的能力:
+$$C=\frac{Q}{V}=\frac{dQ}{dV}$$
+$$i=\frac{dQ}{dt}=\frac{CdV}{dt}$$
+$$\begin{aligned}dV(t)&=\frac{1}{C}\cdot i(t)dt\\\int_{V(-\infty)}^{V(t)}dV(t)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\\V(t)-V(-\infty)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\\V(t)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\end{aligned}$$
+也是一个[[#Lecture 03|线性元件]]. 最后的一行可以认为是: 最终的电压应该和历史所有的电荷的流入流出都有关系, 所有历史上的电荷的移动才有最终的电压
+
+根据积分性质, 可以有:
+$$\begin{aligned}V(t)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\\&=\int_{-\infty}^{t_0}\frac{1}{C}\cdot i(t)dt+\int_{t_0}^t\frac{1}{C}\cdot i(t)dt\\&=V(t_0)+\int_{t_0}^t\frac{1}{C}\cdot i(t)dt\end{aligned}$$
+可以认为是在$t_0$时间节点做了一次“结算”.
+
+> [!PDF|] [[EE111-F25Lec5-1st-Order Circuits.pdf#page=6&selection=12,4,12,23|EE111-F25Lec5-1st-Order Circuits, p.6]]
+> >  instantaneous power 
+> 
+> $$p(t)=v(t)\cdot i(t)=v(t)\cdot C\cdot \frac{dv(t)}{dt}$$
+
+> [!PDF|] [[EE111-F25Lec5-1st-Order Circuits.pdf#page=6&selection=16,4,16,17|EE111-F25Lec5-1st-Order Circuits, p.6]]
+> > energy stored 
+> 
+> $$\begin{aligned}E(t)&=\int_{-\infty}^tp(t)dt\\&=\int_{-\infty}^tv(t)\cdot C\cdot\frac{dv(t)}{dt}dt\\&=\int_{v(-\infty)}^{v(t)}v(t)\cdot Cdv(t)\\&=\frac{1}{2}C\cdot v^2(t)\end{aligned}$$
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=32,274,423,442|EE111-F25Lec5-1st-Order Circuits, p.7]]
+> 
+> 电压源: 直流电压源. 可以认为电容会让电路变成开路状态. 注意, [[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=257,287,288,355&color=red|这个地方]]虽然有一个元器件, 但是由于还有一个电容, 因此这里没有任何的电流, 没有任何的电压差. 可以认为[[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=257,287,288,355&color=red|这里]]直接是一个导线.
+> 
+> 计算$v_1,v_2$电压差: 分压直接看对应的电阻的阻值.
+> 
+> 如, $v_2$连接在[[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=348,321,417,375&color=blue|这个电阻]]的两侧, 因此分压应该和这个电阻相同:
+> $$v_2=\frac{50k\Omega}{20+30+50k\Omega}\times20V=10V$$
+> $v_1$和[[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=348,321,417,375&color=blue|这个电阻]]和[[EE111-F25Lec5-1st-Order Circuits.pdf#page=7&rect=197,394,264,438&color=blue|这个电阻]]的两侧, 因此:
+> $$v_1=\frac{50+30}{20+30+50}\times20=16V$$
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=8&rect=18,271,381,428|EE111-F25Lec5-1st-Order Circuits, p.8]]
+> 第一段电流:
+> $$i=C\cdot\frac{dv}{dt}=0.6\times5=$$
