@@ -101,14 +101,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
-                "page": 37,
-                "left": -20,
-                "top": 70,
-                "zoom": 1.25
+                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+                "page": 5,
+                "left": -12,
+                "top": 468,
+                "zoom": 1.2760416666666667
               },
               "icon": "lucide-file-text",
-              "title": "EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis"
+              "title": "EE111-F25Lec3-Circuit Theorem"
             }
           }
         ],
@@ -348,6 +348,7 @@
   },
   "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Electric Circuits.md",
     "Lecture/Introduction to Control.md",
