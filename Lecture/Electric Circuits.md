@@ -598,7 +598,7 @@ $$\begin{aligned}V(t)&=\int_{-\infty}^t\frac{1}{C}\cdot i(t)dt\\&=\int_{-\infty}
 > 
 > 这些图片的时间都是对应的, 是同一个电路相同时间坐标系下的图, 因此可以对称看.
 
-注意, 电压不能突变. 由于电流$i=C\cdot\frac{dv}{dt}$, 那么如果电压突变, 微分变成$\infty$, 导致功率$p=v\cdot i=\infty$, [[EE111-F25Lec5-1st-Order Circuits.pdf#page=9&rect=484,81,651,224|这个]]是不被允许的.
+注意, 电压不能突变. 由于电流$i=C\cdot\frac{dv}{dt}$, 那么如果电压突变, 微分变成$\infty$, 导致功率$p=v\cdot i=\infty$, [[EE111-F25Lec5-1st-Order Circuits.pdf#page=9&rect=484,81,651,224|这个]]是不被允许的. ^3bcbad
 
 ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=10&rect=30,99,396,392|EE111-F25Lec5-1st-Order Circuits, p.10]]
 串联. 使用KVL:
@@ -658,3 +658,26 @@ $$\begin{aligned}di&=\frac{1}{L}vdt\\\int_{(i(-\infty)}^{i(t)}di&=\int_{-\infty}
 总结:
 ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=20&rect=56,51,675,410|EE111-F25Lec5-1st-Order Circuits, p.20]]
 
+## Natural response of RC/RL circuits
+
+- RC电路: 只包含[[EE111-F25Lec5-1st-Order Circuits.pdf#page=22&selection=14,0,19,1|电源, 电阻和电容]]的电路 
+- RL电路: 只包含[[EE111-F25Lec5-1st-Order Circuits.pdf#page=22&selection=31,0,36,1|电源, 电阻和电感]]的电路
+
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=23&rect=400,269,659,389|EE111-F25Lec5-1st-Order Circuits, p.23]]
+用于研究在没有其他电源的时候, 电容(或者电感)充满电之后的行为.
+- 开关处于1号位置的时候(称[[EE111-F25Lec5-1st-Order Circuits.pdf#page=23&rect=404,150,694,265|t=0-]])为充电
+- 开关位于2号位置的时候(称[[EE111-F25Lec5-1st-Order Circuits.pdf#page=23&rect=422,15,593,136|t=0+]]), 只存在电容(或电感), 此时为"Natural Response". 刚切换的时候, 电容身上的电压仍然为$v_s$, 因为[[#^3bcbad|电压不能突变]]: $v_c(0^-)=v_c(0^+)=v_s$
+
+分析[[EE111-F25Lec5-1st-Order Circuits.pdf#page=24&rect=53,299,232,439|0+]]的时候
+根据KCL:
+$$i=\frac{v_R}{R}=C\frac{dv_t}{dt}$$
+KVL:
+$$v_R+v_C=0$$
+$$\Rightarrow\frac{dv_t}{dt}=\frac{-v_C}{R}$$
+$$\frac{dv_t}{dt}+\frac{1}{R_C}\cdot v_C=0$$
+解微分方程(齐次一阶常系数微分方程):
+$$$$
+
+
+
+因此电压随时间变化的图像为:
