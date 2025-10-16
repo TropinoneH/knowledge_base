@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/EO-1.md",
+                "file": "Paper/Qwen2.5VL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "EO-1"
+              "title": "Qwen2.5VL"
             }
           }
         ]
@@ -43,14 +43,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2508.21112v3.pdf",
-                "page": 1,
-                "left": 0,
-                "top": 470,
-                "zoom": 1.3544137509323408
+                "file": "Paper/PDF/2502.13923v1.pdf",
+                "page": 4,
+                "left": -8,
+                "top": 735,
+                "zoom": 1.16
               },
               "icon": "lucide-file-text",
-              "title": "2508.21112v3"
+              "title": "2502.13923v1"
             }
           }
         ]
@@ -289,9 +289,17 @@
   },
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
+    "Paper/PDF/2502.13923v1.pdf",
+    "Paper/Qwen2.5VL.md",
+    "Paper/PDF/2508.21112v3.pdf",
+    "Paper/EO-1.md",
+    "Lecture/Electric Circuits.md",
+    "Knowledges/PyTorch Tensor Dimension.md",
+    "Templates/Note Template.md",
+    "Templates/Paper Note Template.md",
+    "Paper/3D-VLA.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2506.01583v2.pdf",
-    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
@@ -299,16 +307,10 @@
     "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
-    "Knowledges/PyTorch Tensor Dimension.md",
     "Knowledges/Linux File Permission.md",
-    "Paper/EO-1.md",
-    "Templates/Paper Note Template.md",
-    "Templates/Note Template.md",
     "Templates/Topic Template.md",
-    "Paper/Untitled.md",
     "Paper/s.md",
     "Paper/1.md",
-    "Paper/PDF/2403.09631v1.pdf",
     "Knowledges/Slurm.md",
     "Knowledges/Windows Firewall.md",
     "Lecture/Machine Learning.md",
@@ -318,9 +320,7 @@
     "Assets/Pasted image 20251011001130.png",
     "Assets/Pasted image 20251011000933.png",
     "Topic/Coding.md",
-    "Paper/PDF/2508.21112v3.pdf",
     "Knowledges/MacOS Install Rust.md",
-    "Paper/3D-VLA.md",
     "Topic/Git.md",
     "Topic/Conda.md",
     "Topic/System.md",
@@ -328,7 +328,6 @@
     "Develop/VimSafari.md",
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
-    "Bases/Notes.base",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",

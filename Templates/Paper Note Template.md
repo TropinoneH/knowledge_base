@@ -28,4 +28,6 @@ tp.hooks.on_all_templates_executed(async () => {
     frontmatter["done"] = isDone;
   });
 });
--%>
+
+tR += `> [!note]- paper\n!${pdf}\n`
+%>

@@ -10,7 +10,7 @@ tags:
   - DeepLearning
   - Robot
 publish: arxiv preprint
-pdf: "[[2508.21112v3.pdf]]"
+pdf: "[[Paper/PDF/2508.21112v3.pdf]]"
 rate: 🌟🌟🌟
 done: false
 ---
