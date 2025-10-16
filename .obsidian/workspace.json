@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/EO-1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,74 +28,32 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
-            "id": "167d4f8a9e852b7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Electric Circuits.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "EO-1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "363f9be3567338d8",
         "type": "tabs",
         "children": [
           {
-            "id": "61d90fcca8c54225",
+            "id": "4bc7f45b526e17a1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 49,
-                "left": -424,
-                "top": 203,
-                "zoom": 0.5312500000000001
+                "file": "Paper/PDF/2508.21112v3.pdf",
+                "page": 1,
+                "left": 0,
+                "top": 470,
+                "zoom": 1.3544137509323408
               },
               "icon": "lucide-file-text",
-              "title": "EE160-lec3"
-            }
-          },
-          {
-            "id": "a29cbc20cbfb5ca8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 23,
-                "left": -21,
-                "top": 1,
-                "zoom": 0.7239583333333334
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec5-1st-Order Circuits"
+              "title": "2508.21112v3"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "rust",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -236,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +204,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
             }
           },
           {
@@ -275,7 +233,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -303,7 +261,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
             }
           }
         ]
@@ -329,10 +287,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "167d4f8a9e852b7f",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Paper/PDF/2509.09372v2.pdf",
+    "Paper/PDF/2506.01583v2.pdf",
     "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Introduction to Control.md",
@@ -369,7 +329,6 @@
     "Develop/Span Anything.md",
     "Develop/Better-Link-Clicker.md",
     "Bases/Notes.base",
-    "Lecture/Slides/EE160-lec2.pdf",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",

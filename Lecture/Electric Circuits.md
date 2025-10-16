@@ -658,7 +658,7 @@ $$\begin{aligned}di&=\frac{1}{L}vdt\\\int_{(i(-\infty)}^{i(t)}di&=\int_{-\infty}
 总结:
 ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=20&rect=56,51,675,410|EE111-F25Lec5-1st-Order Circuits, p.20]]
 
-## Natural response of RC/RL circuits
+## Natural response of RC circuits
 
 - RC电路: 只包含[[EE111-F25Lec5-1st-Order Circuits.pdf#page=22&selection=14,0,19,1|电源, 电阻和电容]]的电路 
 - RL电路: 只包含[[EE111-F25Lec5-1st-Order Circuits.pdf#page=22&selection=31,0,36,1|电源, 电阻和电感]]的电路
@@ -668,16 +668,75 @@ $$\begin{aligned}di&=\frac{1}{L}vdt\\\int_{(i(-\infty)}^{i(t)}di&=\int_{-\infty}
 - 开关处于1号位置的时候(称[[EE111-F25Lec5-1st-Order Circuits.pdf#page=23&rect=404,150,694,265|t=0-]])为充电
 - 开关位于2号位置的时候(称[[EE111-F25Lec5-1st-Order Circuits.pdf#page=23&rect=422,15,593,136|t=0+]]), 只存在电容(或电感), 此时为"Natural Response". 刚切换的时候, 电容身上的电压仍然为$v_s$, 因为[[#^3bcbad|电压不能突变]]: $v_c(0^-)=v_c(0^+)=v_s$
 
-分析[[EE111-F25Lec5-1st-Order Circuits.pdf#page=24&rect=53,299,232,439|0+]]的时候
-根据KCL:
+分析[[EE111-F25Lec5-1st-Order Circuits.pdf#page=24&rect=53,299,232,439|0+]]的时候, 根据KCL:
 $$i=\frac{v_R}{R}=C\frac{dv_t}{dt}$$
 KVL:
 $$v_R+v_C=0$$
-$$\Rightarrow\frac{dv_t}{dt}=\frac{-v_C}{R}$$
-$$\frac{dv_t}{dt}+\frac{1}{R_C}\cdot v_C=0$$
+$$\Rightarrow\frac{dv_t}{dt}=\frac{-v_C}{R\cdot C}$$
+$$\frac{dv_t}{dt}+\frac{1}{RC}\cdot v_C=0$$
 解微分方程(齐次一阶常系数微分方程):
-$$$$
+$$v_C(t)=A\cdot e^{\frac{1}{RC}t}$$
+$$\begin{aligned}v_C(0^+)&=v_s\\\Rightarrow A&=v_s\\\Rightarrow v_C(t)&=v_s\cdot e^{\frac{1}{RC}t}\end{aligned}$$
 
-
+> [!tip]- 齐次一阶常系数微分方程解的形式
+> 求解$\frac{dx}{dt}+ax=0$
+> 
+> 通解的形式应该为:
+> $$x(t)=Ae^{-at}$$
 
 因此电压随时间变化的图像为:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=25&rect=48,275,491,433|EE111-F25Lec5-1st-Order Circuits, p.25]]
+时间常数: $\tau=RC$, 表示衰减的速度. $RC$越大, 衰减越慢
+
+那么电流的图为:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=25&rect=43,69,428,234|EE111-F25Lec5-1st-Order Circuits, p.25]]
+$$i=C\cdot\frac{dv_C(t)}{dt}=C\cdot v_s\cdot(-\frac{1}{RC})\cdot e^{-\frac{1}{RC}t}=-\frac{v_s}{R}\cdot e^{-\frac{1}{RC}t}$$
+注意对于电容而言, 电流允许有突变, 但是电压不允许突变
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=31&rect=42,196,323,333|EE111-F25Lec5-1st-Order Circuits, p.31]]
+> 
+> 并联电阻: $R=\frac{5\times(8+12)}{5+8+12}=4\Omega$
+> $$\Rightarrow v_c(t)=v_s\cdot e^{-\frac{1}{RC}t}=15e^{-\frac{5}{2}t}$$
+> 
+> 分压:
+> $$v_x(t)=\frac{12}{8+12}v_C(t)=9e^{-\frac{5}{2}t}$$
+> 
+> $$i_x(t)=\frac{v_x(t)}{R_x}=\frac{3}{4}e^{-\frac{5}{2}t}$$
+> or 使用分流:
+> $$i_C(t)=-\frac{v_C(0)}{R}e^{-\frac{1}{RC}t}=-\frac{15}{4}e^{-\frac{5}{2}t}$$
+> $$i_x(t)=\frac{5}{5+8+12}i_C(t)=-\frac{3}{4}e^{-\frac{5}{2}t}$$
+
+## Natural response of RL circuits
+
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=27&rect=191,315,501,450|EE111-F25Lec5-1st-Order Circuits, p.27]]
+类似的, 分成两个阶段:
+- 充电阶段([[EE111-F25Lec5-1st-Order Circuits.pdf#page=27&rect=43,169,331,307|t=0-]]): 给L充电. 此时所有电流都会给电感身上. (可以理解为, 电感是导线, 让R两侧电势差为0, 因此电流不走R只走L)
+- 放点([[EE111-F25Lec5-1st-Order Circuits.pdf#page=27&rect=48,43,339,170|t=0+]]): $R_0$有突变, 出现电流; 电感的电流不能突变, 因此$t=0^+$的时候的电流仍然等于$t=0^-$的时候的电流状态. 同时, $R$这个电阻身上的电流从0突变成$i_L(0^+)$的值.
+
+分析[[EE111-F25Lec5-1st-Order Circuits.pdf#page=28&rect=26,305,319,447|0+]]: 假设参考方向[[EE111-F25Lec5-1st-Order Circuits.pdf#page=28&rect=163,397,232,440&color=blue|如图]]:
+
+电流不突变:
+$$i_L(0^+)=i_L(0^-)$$KVL:
+$$L\cdot\frac{di_L}{dt}+i_LR=0$$
+$$\Rightarrow\frac{di_L}{dt}+\frac{R}{L}\cdot i_L=0$$
+$$\Rightarrow i_L(t)=I_s\cdot e^{-\frac{R}{L}t}$$
+图:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=29&rect=39,174,318,433|EE111-F25Lec5-1st-Order Circuits, p.29]]
+
+同时可得:
+$$v_L(t)=L\frac{di_L(t)}{dt}=L\cdot I_s\cdot(-\frac{R}{L})e^{-\frac{R}{L}t}=-I_sRe^{-\frac{R}{L}t}$$
+时间常数$\tau=\frac{L}{R}$
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=32&rect=25,50,685,429|EE111-F25Lec5-1st-Order Circuits, p.32]]
+> 
+> 首先求开关闭合时电流:
+> $$i_L(0^-)=\frac{12}{4+12}\frac{40}{2+\frac{4\times12}{4+12}}=6A$$
+> 
+> 开关断开时:
+> $$\frac{R}{L}=\frac{\frac{(12+4)\times16}{12+6+16}}{2}=4$$
+> $$\Rightarrow i_L(t)=i_L(0^-)e^{-\frac{R}{L}t}=6e^{-4t}$$
+
+
+
