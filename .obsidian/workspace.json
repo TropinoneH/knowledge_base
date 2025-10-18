@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d494ccfaa631af0",
+            "id": "bab1db2919d53990",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/VLA-Adapter.md",
+                "file": "Develop/QueryTools.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,29 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "VLA-Adapter"
-            }
-          }
-        ]
-      },
-      {
-        "id": "363f9be3567338d8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4bc7f45b526e17a1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2509.09372v2.pdf",
-                "page": 2,
-                "left": -18,
-                "top": 602,
-                "zoom": 0.8333333333333334
-              },
-              "icon": "lucide-file-text",
-              "title": "2509.09372v2"
+              "title": "QueryTools"
             }
           }
         ]
@@ -130,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rust",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,12 +119,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -194,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
+                "file": "Develop/QueryTools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +182,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
+              "title": "Backlinks for QueryTools"
             }
           },
           {
@@ -233,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
+                "file": "Develop/QueryTools.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -256,20 +234,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 1.1539618883506355,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
+              "title": "Graph of QueryTools"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -287,18 +264,30 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4bc7f45b526e17a1",
+  "active": "bab1db2919d53990",
   "lastOpenFiles": [
+    "Knowledges/Xcode Add Packages.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Templates/Topic Template.md",
+    "Develop/QueryTools.md",
+    "Develop/VimSafari.md",
+    "Develop/Span Anything.md",
+    "Develop/Better-Link-Clicker.md",
+    "Templates/Develop Template.md",
+    "Templates/Insert Callouts.md",
+    "Templates/Paper Note Template.md",
+    "Templates/Note Template.md",
+    "Templates/Lecture Note Template.md",
+    "Topic/Lecture Notes.md",
+    "Knowledges/QueryTools Prompt.md",
+    "Knowledges/PyTorch Tensor Dimension.md",
     "Paper/VLA-Adapter.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/Qwen2.5VL.md",
-    "Templates/Paper Note Template.md",
     "Paper/PDF/2502.13923v1.pdf",
     "Paper/PDF/2508.21112v3.pdf",
     "Paper/EO-1.md",
     "Lecture/Electric Circuits.md",
-    "Knowledges/PyTorch Tensor Dimension.md",
-    "Templates/Note Template.md",
     "Paper/3D-VLA.md",
     "Paper/PDF/2506.01583v2.pdf",
     "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
@@ -309,25 +298,14 @@
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/Linux File Permission.md",
-    "Templates/Topic Template.md",
     "Paper/s.md",
     "Paper/1.md",
     "Knowledges/Slurm.md",
     "Knowledges/Windows Firewall.md",
-    "Lecture/Machine Learning.md",
-    "Knowledges/Grub Rescue.md",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",
     "Assets/Pasted image 20251011000933.png",
-    "Topic/Coding.md",
-    "Knowledges/MacOS Install Rust.md",
-    "Topic/Git.md",
-    "Topic/Conda.md",
-    "Topic/System.md",
-    "Topic/Lecture Notes.md",
-    "Develop/VimSafari.md",
-    "Develop/Span Anything.md",
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",
