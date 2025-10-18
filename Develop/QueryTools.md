@@ -38,6 +38,8 @@ Feature Protocol:
 - shortcut
 - actions
 - subview
+- handler: 
+- searchable: Bool, 是否能够在MainModule中搜索
 
 Action Protocol:
 - id
