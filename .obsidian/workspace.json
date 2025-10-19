@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Paper/VLA-Adapter.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,29 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "QueryTools"
+              "title": "VLA-Adapter"
+            }
+          }
+        ]
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bc7f45b526e17a1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2509.09372v2.pdf",
+                "page": 3,
+                "left": -18,
+                "top": 688,
+                "zoom": 0.8333333333333334
+              },
+              "icon": "lucide-file-text",
+              "title": "2509.09372v2"
             }
           }
         ]
@@ -108,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "rust",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,12 +141,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -172,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +204,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
             }
           },
           {
@@ -211,7 +233,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,19 +256,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,23 +287,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bab1db2919d53990",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Knowledges/Xcode Add Packages.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Templates/Topic Template.md",
-    "Develop/QueryTools.md",
-    "Develop/VimSafari.md",
-    "Develop/Span Anything.md",
-    "Develop/Better-Link-Clicker.md",
+    "Knowledges/PyTorch Tensor Dimension.md",
     "Templates/Develop Template.md",
-    "Templates/Insert Callouts.md",
     "Templates/Paper Note Template.md",
+    "Templates/Insert Callouts.md",
+    "Develop/QueryTools.md",
+    "Develop/Better-Link-Clicker.md",
+    "Develop/Span Anything.md",
+    "Develop/VimSafari.md",
+    "Templates/Topic Template.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Xcode Add Packages.md",
     "Templates/Note Template.md",
     "Templates/Lecture Note Template.md",
     "Topic/Lecture Notes.md",
     "Knowledges/QueryTools Prompt.md",
-    "Knowledges/PyTorch Tensor Dimension.md",
     "Paper/VLA-Adapter.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/Qwen2.5VL.md",
