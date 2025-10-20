@@ -5,5 +5,8 @@ tags:
   - DeepLearning
 done: true
 ---
-# Change the Dimension of Tensor
+# Dim Operation
+
+
+## Change the Dimension of Tensor
 
