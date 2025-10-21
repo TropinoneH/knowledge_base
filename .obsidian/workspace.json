@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/PyTorch Tensor Dimension.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,74 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PyTorch Tensor Dimension"
+              "title": "Introduction to Control"
+            }
+          },
+          {
+            "id": "167d4f8a9e852b7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61d90fcca8c54225",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 49,
+                "left": -424,
+                "top": 203,
+                "zoom": 0.5312500000000001
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec3"
+            }
+          },
+          {
+            "id": "a29cbc20cbfb5ca8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+                "page": 47,
+                "left": -34,
+                "top": 114,
+                "zoom": 0.7
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec5-1st-Order Circuits"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +172,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#javascripts",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,12 +183,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -172,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/PyTorch Tensor Dimension.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +246,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PyTorch Tensor Dimension"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -211,7 +275,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/PyTorch Tensor Dimension.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,19 +298,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PyTorch Tensor Dimension"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,10 +329,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bab1db2919d53990",
+  "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
-    "Knowledges/Pytorch CUDA Error Position.md",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Introduction to Control.md",
     "Knowledges/PyTorch Tensor Dimension.md",
+    "Knowledges/Pytorch CUDA Error Position.md",
     "Paper/VLA-Adapter.md",
     "Templates/Develop Template.md",
     "Templates/Paper Note Template.md",
@@ -288,20 +356,16 @@
     "Paper/PDF/2502.13923v1.pdf",
     "Paper/PDF/2508.21112v3.pdf",
     "Paper/EO-1.md",
-    "Lecture/Electric Circuits.md",
     "Paper/3D-VLA.md",
     "Paper/PDF/2506.01583v2.pdf",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
-    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE160-lec3.pdf",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/Linux File Permission.md",
     "Paper/s.md",
     "Paper/1.md",
-    "Knowledges/Slurm.md",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",

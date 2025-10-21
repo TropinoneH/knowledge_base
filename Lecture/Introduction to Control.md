@@ -127,7 +127,7 @@ $$Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
 
 冲击函数: $\delta(t)$: $\int_{0^-}^{0^+}\delta(t)dt=1$
 
-阶跃函数: $u(t)$
+阶跃函数: $u(t)$ ^1a68f2
 
 Laplace Transform:
 $$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$

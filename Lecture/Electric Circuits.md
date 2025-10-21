@@ -738,5 +738,43 @@ $$v_L(t)=L\frac{di_L(t)}{dt}=L\cdot I_s\cdot(-\frac{R}{L})e^{-\frac{R}{L}t}=-I_s
 > $$\frac{R}{L}=\frac{\frac{(12+4)\times16}{12+6+16}}{2}=4$$
 > $$\Rightarrow i_L(t)=i_L(0^-)e^{-\frac{R}{L}t}=6e^{-4t}$$
 
+## Step Response
+### RC Circuits
 
+一个直流电源突然接入RC电路中.
+
+[[Introduction to Control#^1a68f2|阶跃相应]]:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=35&rect=51,178,315,341|EE111-F25Lec5-1st-Order Circuits, p.35]]
+
+在电路中, 可以认为是:
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=35&rect=141,25,575,171|EE111-F25Lec5-1st-Order Circuits, p.35]]
+是$v_0\cdot u(t)$
+
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=37&rect=6,242,426,448|EE111-F25Lec5-1st-Order Circuits, p.37]]
+KVL:
+$$\begin{aligned}v_s&=v_R+v_C\\&=i_R\cdot R+v_C\\&=C\cdot\frac{dv_c}{dt}\cdot R+v_c\end{aligned}$$
+$$\frac{dv_c}{dt}+\frac{1}{RC}v_C=\frac{v_s}{RC}$$
+齐次方程, $v'_c(t)=Ae^{-\frac{t}{RC}}$,
+$$\begin{aligned}v_c(t=0^+)&=v_0\\&=Ae^{0^+}+v_s\\\Rightarrow v_C(t)&=v_s+(v_0-v_s)e^{-\frac{t}{RC}}\end{aligned}$$
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=39&rect=14,66,656,447|EE111-F25Lec5-1st-Order Circuits, p.39]]
+(假定$v_s>v_0$)
+
+完全响应: [[#Natural response of RC circuits|自然响应]]+强制响应(有独立源影响)
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=41&rect=81,128,620,403|EE111-F25Lec5-1st-Order Circuits, p.41]]
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=42&rect=40,190,672,485|EE111-F25Lec5-1st-Order Circuits, p.42]]
+
+### RL Circuit
+类似的, 完全响应:
+$$i(t)=\frac{v_s}{R}+(i_0-\frac{v_s}{R})e^{-\frac{R}{L}t}$$
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=44&rect=17,90,679,421|EE111-F25Lec5-1st-Order Circuits, p.44]]
+
+## Summary
+![[EE111-F25Lec5-1st-Order Circuits.pdf#page=46|EE111-F25Lec5-1st-Order Circuits, p.46]]
+
+> [!example] 
+> ![[EE111-F25Lec5-1st-Order Circuits.pdf#page=48&rect=53,167,680,431|EE111-F25Lec5-1st-Order Circuits, p.48]]
+>
+> $$t<0\Rightarrow v_c(t=0^-)=v_{5k\Omega}=\frac{5}{5+3}\times24=15V$$
+> $$t>0\Rightarrow \text{成为开路, 因此 }v_c(t=\infty)=30V$$
+> $$\begin{aligned}v_c(t)&=v_c(\infty)+[v_c(0)-v_c(\infty)]e^{-\frac{t}{RC}}\\&=30-15e^{-\frac{t}{2}}\end{aligned}$$
 
