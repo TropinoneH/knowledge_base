@@ -8,9 +8,9 @@ done: true
 ---
 # MacOS资源免费网站
 
-[AppsTorrent](appstorrent.org)
+[AppsTorrent](https://www.appstorrent.org)
 
-[MacWk](macwk.com)
+[MacWk](https://www.macwk.com)
 
-[MacKed](macked.app)
+[MacKed](https://www.macked.app)
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Knowledges/Mac Free App Website.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "Mac Free App Website"
             }
           }
         ],
@@ -331,8 +331,8 @@
   },
   "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Introduction to Control.md",
     "Knowledges/PyTorch Tensor Dimension.md",
     "Knowledges/Pytorch CUDA Error Position.md",
