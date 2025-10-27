@@ -85,9 +85,9 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 39,
+                "page": 28,
                 "left": -12,
-                "top": 272,
+                "top": 477,
                 "zoom": 1.2760416666666667
               },
               "icon": "lucide-file-text",
@@ -102,17 +102,34 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-                "page": 11,
+                "page": 10,
                 "left": -20,
-                "top": 520,
+                "top": 172,
                 "zoom": 1.25
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec4-Operational Amplifiers"
             }
+          },
+          {
+            "id": "6f4929d20d096a5c",
+            "type": "leaf",
+            "dimension": 33.333333333333336,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+                "page": 24,
+                "left": -20,
+                "top": 265,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec3-Circuit Theorem"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -346,12 +363,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fae76dc411f79962",
+  "active": "167d4f8a9e852b7f",
   "lastOpenFiles": [
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Electric Circuits.md",
     "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Knowledges/Mac Free App Website.md",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/PyTorch Tensor Dimension.md",
     "Knowledges/Pytorch CUDA Error Position.md",
     "Paper/VLA-Adapter.md",
@@ -376,14 +395,11 @@
     "Paper/EO-1.md",
     "Paper/3D-VLA.md",
     "Paper/PDF/2506.01583v2.pdf",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE160-lec3.pdf",
-    "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/Linux File Permission.md",
     "Paper/s.md",
-    "Paper/1.md",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",
