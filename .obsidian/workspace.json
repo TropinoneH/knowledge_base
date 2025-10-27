@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Mac Free App Website.md",
+                "file": "Lecture/Electric Circuits.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Mac Free App Website"
+              "title": "Electric Circuits"
             }
           }
         ],
@@ -85,17 +85,34 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 41,
-                "left": -21,
-                "top": 456,
-                "zoom": 0.7239583333333334
+                "page": 39,
+                "left": -12,
+                "top": 272,
+                "zoom": 1.2760416666666667
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec5-1st-Order Circuits"
             }
+          },
+          {
+            "id": "fae76dc411f79962",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
+                "page": 11,
+                "left": -20,
+                "top": 520,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec4-Operational Amplifiers"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -329,11 +346,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "167d4f8a9e852b7f",
+  "active": "fae76dc411f79962",
   "lastOpenFiles": [
     "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Introduction to Control.md",
+    "Knowledges/Mac Free App Website.md",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/PyTorch Tensor Dimension.md",
     "Knowledges/Pytorch CUDA Error Position.md",
     "Paper/VLA-Adapter.md",
