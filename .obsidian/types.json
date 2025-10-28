@@ -5,6 +5,7 @@
     "tags": "tags",
     "done": "checkbox",
     "rate": "text",
-    "teacher": "multitext"
+    "teacher": "multitext",
+    "topic": "multitext"
   }
 }

@@ -4,6 +4,9 @@ tags:
   - cli
   - code/python
 done: false
+topic:
+  - "[[Conda]]"
+  - "[[Coding]]"
 ---
 # Activate by Name
 

@@ -6,6 +6,9 @@ tags:
   - error
   - ComputerVision
 done: true
+topic:
+  - "[[PyTorch]]"
+  - "[[Coding]]"
 ---
 # PyTorch3D安装问题
 

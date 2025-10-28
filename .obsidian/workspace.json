@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/VLA-Adapter.md",
+                "file": "Paper/Conditioning Matters.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "VLA-Adapter"
+              "title": "Conditioning Matters"
             }
           }
         ]
@@ -43,14 +43,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2509.09372v2.pdf",
-                "page": 5,
-                "left": 153,
-                "top": 569,
-                "zoom": 1.47
+                "file": "Paper/PDF/2505.11123v1.pdf",
+                "page": 1,
+                "left": -11,
+                "top": 792,
+                "zoom": 1.3174019607843137
               },
               "icon": "lucide-file-text",
-              "title": "2509.09372v2"
+              "title": "2505.11123v1"
             }
           }
         ]
@@ -130,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rust",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,12 +141,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -289,41 +289,42 @@
   },
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Paper/PDF/2509.09372v2.pdf",
+    "Paper/3D-VLA.md",
     "Paper/VLA-Adapter.md",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-    "Knowledges/PyTorch Tensor Dimension.md",
+    "Paper/EO-1.md",
+    "Paper/OpenVLA.md",
+    "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
-    "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-    "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-    "Knowledges/Mac Free App Website.md",
-    "Knowledges/Pytorch CUDA Error Position.md",
-    "Templates/Develop Template.md",
-    "Templates/Paper Note Template.md",
-    "Templates/Insert Callouts.md",
-    "Develop/QueryTools.md",
-    "Develop/Better-Link-Clicker.md",
-    "Develop/Span Anything.md",
-    "Develop/VimSafari.md",
+    "Paper/PDF/2406.09246v3.pdf",
+    "Paper/PDF/Cocos.md",
+    "Knowledges/SSH Server.md",
+    "Knowledges/PyTorch Safetensors Model.md",
+    "Knowledges/SSH Login.md",
+    "Topic/SSH.md",
+    "Topic/Git.md",
+    "Topic/Lecture Notes.md",
+    "Knowledges/SSH Forward.md",
+    "Knowledges/Slurm.md",
+    "Knowledges/PyTorch Tensor Dimension.md",
+    "Lecture/Electric Circuits.md",
     "Templates/Topic Template.md",
+    "Topic/System.md",
+    "Topic/Conda.md",
+    "Topic/Coding.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
-    "Templates/Note Template.md",
-    "Templates/Lecture Note Template.md",
-    "Topic/Lecture Notes.md",
-    "Knowledges/QueryTools Prompt.md",
-    "Paper/Qwen2.5VL.md",
-    "Paper/PDF/2502.13923v1.pdf",
-    "Paper/PDF/2508.21112v3.pdf",
-    "Paper/EO-1.md",
-    "Paper/3D-VLA.md",
-    "Knowledges/Linux File Permission.md",
-    "Paper/s.md",
+    "Knowledges/PyTorch3D Install Error.md",
+    "Knowledges/Pytorch CUDA Error Position.md",
+    "Knowledges/Python Module.md",
+    "Knowledges/Platformio.md",
+    "Paper/PDF/2509.09372v2.pdf",
+    "Paper/PDF/2406.09246.pdf",
+    "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",

@@ -3,6 +3,8 @@ type: system
 tags:
   - system/linux
 done: true
+topic:
+ - "[[System]]"
 ---
 # 修改hostname
 

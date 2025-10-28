@@ -4,6 +4,8 @@ tags:
   - system/windows
   - web
 done: true
+topic:
+  - "[[System]]"
 ---
 - 入站: 外部的流量访问本机
 - 出站: 本机的信息流量向外部发送

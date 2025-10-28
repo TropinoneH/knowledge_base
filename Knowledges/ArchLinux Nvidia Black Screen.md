@@ -7,6 +7,8 @@ tags:
   - hardware
   - system/linux/archlinux
 done: true
+topic:
+  - "[[System]]"
 ---
 # 多显示器黑屏
 

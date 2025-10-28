@@ -4,6 +4,8 @@ tags:
   - cli
   - cooperate
 done: true
+topic:
+ - "[[Git]]"
 ---
 # Git Architecture
 

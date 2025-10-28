@@ -5,4 +5,6 @@ tags:
   - code/rust
   - software/package-manager
 done: false
+topic:
+  - "[[Rust]]"
 ---

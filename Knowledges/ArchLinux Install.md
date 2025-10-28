@@ -5,6 +5,8 @@ tags:
   - system/linux/archlinux
   - cli
 done: true
+topic:
+  - "[[System]]"
 ---
 # Arch Linux
 

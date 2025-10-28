@@ -6,6 +6,8 @@ tags:
   - cli
   - software
 done: true
+topic:
+  - "[[System]]"
 ---
 # Install Rustup
 

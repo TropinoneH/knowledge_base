@@ -6,6 +6,8 @@ tags:
   - system
   - ssh
 done: true
+topic:
+  - "[[System]]"
 ---
 # 更改默认Shell
 

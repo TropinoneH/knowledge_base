@@ -5,6 +5,8 @@ tags:
   - cli
   - software/terminal
 done: true
+topic:
+  - "[[System]]"
 ---
 # 更改默认的终端模拟器
 

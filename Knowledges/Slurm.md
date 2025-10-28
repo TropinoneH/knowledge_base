@@ -6,6 +6,8 @@ tags:
   - cli
   - software/nvidia
 done: false
+topic:
+  - "[[System]]"
 ---
 # Slurm
 

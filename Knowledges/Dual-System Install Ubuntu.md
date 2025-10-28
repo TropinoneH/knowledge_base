@@ -5,6 +5,8 @@ tags:
   - system/linux/ubuntu
   - cli
 done: true
+topic:
+ - "[[System]]"
 ---
 # 双系统安装Ubuntu
 

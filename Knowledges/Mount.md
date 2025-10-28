@@ -4,6 +4,8 @@ tags:
   - cli
   - system/linux
 done: true
+topic:
+ - "[[System]]"
 ---
 # Mount
 

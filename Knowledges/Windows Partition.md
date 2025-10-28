@@ -4,6 +4,8 @@ tags:
   - system/windows
   - system/linux
 done: false
+topic:
+  - "[[System]]"
 ---
 # 修复Partition
 

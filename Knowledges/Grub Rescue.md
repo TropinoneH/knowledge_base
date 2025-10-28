@@ -4,6 +4,8 @@ tags:
   - system/linux
   - system/windows
 done: true
+topic:
+ - "[[System]]"
 ---
 # 双系统进入grub rescue模式
 

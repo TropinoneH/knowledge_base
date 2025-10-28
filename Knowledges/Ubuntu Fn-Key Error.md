@@ -4,6 +4,8 @@ tags:
   - hardware
   - error
 done: true
+topic:
+  - "[[System]]"
 ---
 ## Ubuntu 键盘fn功能区
 

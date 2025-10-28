@@ -4,6 +4,9 @@ tags:
   - cli
   - code/python
 done: true
+topic:
+  - "[[Conda]]"
+  - "[[Coding]]"
 ---
 # Conda Install
 

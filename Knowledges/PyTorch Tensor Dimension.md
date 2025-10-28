@@ -4,6 +4,9 @@ tags:
   - code/python
   - DeepLearning
 done: true
+topic:
+  - "[[PyTorch]]"
+  - "[[Coding]]"
 ---
 # Dim Operation
 

@@ -3,6 +3,8 @@ type: system
 tags:
   - system/linux/ubuntu
 done: true
+topic:
+  - "[[System]]"
 ---
 # 更新Icon
 ## 更改gtk图标

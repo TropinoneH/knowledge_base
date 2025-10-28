@@ -5,6 +5,8 @@ tags:
   - system/linux
   - cli
 done: false
+topic:
+ - "[[System]]"
 ---
 # Linux File System Permission
 

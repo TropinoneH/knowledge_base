@@ -5,6 +5,8 @@ tags:
   - system/linux/archlinux
   - system/linux/ubuntu
 done: false
+topic:
+ - "[[System]]"
 ---
 # Update-Alternatives
 

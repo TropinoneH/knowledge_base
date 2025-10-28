@@ -5,6 +5,9 @@ tags:
   - code/python
   - error
 done: false
+topic:
+  - "[[Conda]]"
+  - "[[Coding]]"
 ---
 # Fish Shell Status
 

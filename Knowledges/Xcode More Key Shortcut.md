@@ -4,6 +4,9 @@ tags:
   - software/Xcode
   - system/MacOS
 done: true
+topic:
+  - "[[System]]"
+  - "[[Coding]]"
 ---
 # 快捷键设置
 

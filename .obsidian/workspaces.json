@@ -349,7 +349,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor Dimension.md",
+                    "file": "Knowledges/SSH Server.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -364,7 +364,297 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "PyTorch Tensor Dimension"
+                  "title": "SSH Server"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "31c0a20b2538a10b",
+        "type": "split",
+        "children": [
+          {
+            "id": "920a469cebbecf07",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2cc16ca757d495f4",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "9207189d52246e78",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          },
+          {
+            "id": "29e7e0b618b8ddbc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eeaaaee2f4068c06",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "61505d66b81f7cd3",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "a46f84ed0d0f514a",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "\"[[Swift]]\"",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "989a8de35f3c6aa0",
+        "type": "split",
+        "children": [
+          {
+            "id": "9a3d2360b6a27bbe",
+            "type": "tabs",
+            "dimension": 40.13086150490731,
+            "children": [
+              {
+                "id": "94a8754fa1af570e",
+                "type": "leaf",
+                "state": {
+                  "type": "quiet-outline",
+                  "state": {},
+                  "icon": "lines-of-text",
+                  "title": "Quiet Outline"
+                }
+              }
+            ]
+          },
+          {
+            "id": "fde24d656db5f9c0",
+            "type": "tabs",
+            "dimension": 25.62704471101417,
+            "children": [
+              {
+                "id": "137ed9f8d4c8f28c",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Knowledges/SSH Server.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from SSH Server"
+                }
+              },
+              {
+                "id": "4275504213f05a28",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Knowledges/SSH Server.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for SSH Server"
+                }
+              },
+              {
+                "id": "57032853b5c56229",
+                "type": "leaf",
+                "state": {
+                  "type": "footnotes",
+                  "state": {
+                    "file": "Develop/QueryTools.md"
+                  },
+                  "icon": "lucide-file-signature",
+                  "title": "Footnotes"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "b54e4c0ed8902f03",
+            "type": "tabs",
+            "dimension": 34.24209378407851,
+            "children": [
+              {
+                "id": "d5e00afb7e231c52",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Knowledges/SSH Server.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 0.6203857421875,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 101,
+                      "scale": 1.1539618883506355,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of SSH Server"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "command-palette:Open command palette": false,
+          "bases:Create new base": false,
+          "obsidian42-brat:BRAT": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-git:Open Git source control": false,
+          "pdf-plus:PDF++: Toggle auto-copy": false,
+          "pdf-plus:PDF++: Toggle auto-focus": false,
+          "pdf-plus:PDF++: Toggle auto-paste": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "bab1db2919d53990",
+      "mtime": "2025-10-28T19:41:48+08:00"
+    },
+    "paper": {
+      "main": {
+        "id": "33c7b276218875eb",
+        "type": "split",
+        "children": [
+          {
+            "id": "b386e04b263030bf",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "0d494ccfaa631af0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/OpenVLA.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "OpenVLA"
+                }
+              }
+            ]
+          },
+          {
+            "id": "363f9be3567338d8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4bc7f45b526e17a1",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2406.09246v3.pdf",
+                    "page": 1,
+                    "left": -18,
+                    "top": 792,
+                    "zoom": 0.8517156862745098
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2406.09246v3"
                 }
               }
             ]
@@ -457,296 +747,6 @@
               }
             ],
             "currentTab": 2
-          }
-        ],
-        "direction": "horizontal",
-        "width": 300
-      },
-      "right": {
-        "id": "989a8de35f3c6aa0",
-        "type": "split",
-        "children": [
-          {
-            "id": "9a3d2360b6a27bbe",
-            "type": "tabs",
-            "dimension": 40.13086150490731,
-            "children": [
-              {
-                "id": "94a8754fa1af570e",
-                "type": "leaf",
-                "state": {
-                  "type": "quiet-outline",
-                  "state": {},
-                  "icon": "lines-of-text",
-                  "title": "Quiet Outline"
-                }
-              }
-            ]
-          },
-          {
-            "id": "fde24d656db5f9c0",
-            "type": "tabs",
-            "dimension": 25.62704471101417,
-            "children": [
-              {
-                "id": "137ed9f8d4c8f28c",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "Develop/QueryTools.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "Outgoing links from QueryTools"
-                }
-              },
-              {
-                "id": "4275504213f05a28",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "Knowledges/PyTorch Tensor Dimension.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Backlinks for PyTorch Tensor Dimension"
-                }
-              },
-              {
-                "id": "57032853b5c56229",
-                "type": "leaf",
-                "state": {
-                  "type": "footnotes",
-                  "state": {
-                    "file": "Develop/QueryTools.md"
-                  },
-                  "icon": "lucide-file-signature",
-                  "title": "Footnotes"
-                }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "b54e4c0ed8902f03",
-            "type": "tabs",
-            "dimension": 34.24209378407851,
-            "children": [
-              {
-                "id": "d5e00afb7e231c52",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "Knowledges/PyTorch Tensor Dimension.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": true,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 0.6203857421875,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 101,
-                      "scale": 1.1539618883506355,
-                      "close": true
-                    }
-                  },
-                  "icon": "lucide-git-fork",
-                  "title": "Graph of PyTorch Tensor Dimension"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 300
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "graph:Open graph view": false,
-          "canvas:Create new canvas": false,
-          "command-palette:Open command palette": false,
-          "bases:Create new base": false,
-          "obsidian42-brat:BRAT": false,
-          "templater-obsidian:Templater": false,
-          "obsidian-git:Open Git source control": false,
-          "pdf-plus:PDF++: Toggle auto-copy": false,
-          "pdf-plus:PDF++: Toggle auto-focus": false,
-          "pdf-plus:PDF++: Toggle auto-paste": false,
-          "workspaces:Manage workspace layouts": false
-        }
-      },
-      "active": "bab1db2919d53990",
-      "mtime": "2025-10-28T09:14:05+08:00"
-    },
-    "paper": {
-      "main": {
-        "id": "33c7b276218875eb",
-        "type": "split",
-        "children": [
-          {
-            "id": "b386e04b263030bf",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "0d494ccfaa631af0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/VLA-Adapter.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "VLA-Adapter"
-                }
-              }
-            ]
-          },
-          {
-            "id": "363f9be3567338d8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4bc7f45b526e17a1",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2509.09372v2.pdf",
-                    "page": 4,
-                    "left": -18,
-                    "top": 627,
-                    "zoom": 0.8517156862745098
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2509.09372v2"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "31c0a20b2538a10b",
-        "type": "split",
-        "children": [
-          {
-            "id": "920a469cebbecf07",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2cc16ca757d495f4",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": false
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "Files"
-                }
-              },
-              {
-                "id": "9207189d52246e78",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
-                }
-              }
-            ]
-          },
-          {
-            "id": "29e7e0b618b8ddbc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "eeaaaee2f4068c06",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-tags",
-                  "title": "Tags"
-                }
-              },
-              {
-                "id": "61505d66b81f7cd3",
-                "type": "leaf",
-                "state": {
-                  "type": "all-properties",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-archive",
-                  "title": "All properties"
-                }
-              },
-              {
-                "id": "a46f84ed0d0f514a",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "rust",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "Search"
-                }
-              }
-            ]
           }
         ],
         "direction": "horizontal",
@@ -893,7 +893,7 @@
         }
       },
       "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-28T09:14:02+08:00"
+      "mtime": "2025-10-28T18:51:49+08:00"
     }
   },
   "active": "paper"

@@ -4,6 +4,8 @@ tags:
   - code/python
   - cli
 done: true
+topic:
+  - "[[Coding]]"
 ---
 # pip
 ## Install

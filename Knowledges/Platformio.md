@@ -7,6 +7,9 @@ tags:
   - hardware
   - cli
 done: true
+topic:
+  - "[[System]]"
+  - "[[Coding]]"
 ---
 # Platformio
 

@@ -3,6 +3,8 @@ type: skills
 tags:
   - code/latex
 done: true
+topic:
+ - "[[Latex]]"
 ---
 # bib citation
 

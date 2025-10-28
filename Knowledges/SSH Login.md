@@ -4,6 +4,8 @@ tags:
   - cli
   - ssh
 done: false
+topic:
+  - "[[SSH]]"
 ---
 # Generate Key
 

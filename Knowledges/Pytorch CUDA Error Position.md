@@ -4,6 +4,9 @@ tags:
   - code/python
   - error
 done: true
+topic:
+  - "[[PyTorch]]"
+  - "[[Coding]]"
 ---
 # CUDA Multi-Thread
 

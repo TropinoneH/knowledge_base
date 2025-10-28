@@ -4,6 +4,8 @@ tags:
   - cli
   - ssh
 done: true
+topic:
+  - "[[SSH]]"
 ---
 # Forward
 

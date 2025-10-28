@@ -5,6 +5,8 @@ tags:
   - code/swift
   - system/MacOS
 done: true
+topic:
+  - "[[Coding]]"
 ---
 # Create New Local Packages
 
