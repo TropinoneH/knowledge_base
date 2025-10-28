@@ -617,7 +617,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/OpenVLA.md",
+                    "file": "Paper/Conditioning Matters.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -632,7 +632,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "OpenVLA"
+                  "title": "Conditioning Matters"
                 }
               }
             ]
@@ -647,14 +647,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2406.09246v3.pdf",
+                    "file": "Paper/PDF/2505.11123v1.pdf",
                     "page": 1,
-                    "left": -18,
-                    "top": 792,
-                    "zoom": 0.8517156862745098
+                    "left": -10,
+                    "top": 575,
+                    "zoom": 1.5012254901960784
                   },
                   "icon": "lucide-file-text",
-                  "title": "2406.09246v3"
+                  "title": "2505.11123v1"
                 }
               }
             ]
@@ -893,8 +893,8 @@
         }
       },
       "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-28T18:51:49+08:00"
+      "mtime": "2025-10-28T22:48:30+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }

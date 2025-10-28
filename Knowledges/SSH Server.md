@@ -6,7 +6,7 @@ tags:
   - system/windows
   - system/linux
   - system/MacOS
-done: false
+done: true
 topic:
   - "[[SSH]]"
   - "[[System]]"
@@ -15,7 +15,7 @@ topic:
 
 sshd, 指的是ssh daemon, 是ssh服务器的后台进程.
 
-当一台主机配置了sshd, 其他的主机才能连接.
+当一台主机配置了sshd, 其他的主机才能连接. 这里的连接包括了[[SSH Login]], [[SSHFS]], [[Scp]]等连接方式
 
 ## Linux Setup
 
