@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/VLA-Adapter.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,108 +28,32 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
-            "id": "167d4f8a9e852b7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Electric Circuits.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "VLA-Adapter"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "363f9be3567338d8",
         "type": "tabs",
         "children": [
           {
-            "id": "61d90fcca8c54225",
+            "id": "4bc7f45b526e17a1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 49,
-                "left": -424,
-                "top": 203,
-                "zoom": 0.5312500000000001
+                "file": "Paper/PDF/2509.09372v2.pdf",
+                "page": 5,
+                "left": 153,
+                "top": 569,
+                "zoom": 1.47
               },
               "icon": "lucide-file-text",
-              "title": "EE160-lec3"
-            }
-          },
-          {
-            "id": "a29cbc20cbfb5ca8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                "page": 28,
-                "left": -12,
-                "top": 477,
-                "zoom": 1.2760416666666667
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec5-1st-Order Circuits"
-            }
-          },
-          {
-            "id": "fae76dc411f79962",
-            "type": "leaf",
-            "dimension": 50,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
-                "page": 10,
-                "left": -20,
-                "top": 172,
-                "zoom": 1.25
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec4-Operational Amplifiers"
-            }
-          },
-          {
-            "id": "6f4929d20d096a5c",
-            "type": "leaf",
-            "dimension": 33.333333333333336,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-                "page": 24,
-                "left": -20,
-                "top": 265,
-                "zoom": 1.25
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25Lec3-Circuit Theorem"
+              "title": "2509.09372v2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "rust",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -270,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -280,7 +204,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
             }
           },
           {
@@ -309,7 +233,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -337,7 +261,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
             }
           }
         ]
@@ -363,17 +287,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "167d4f8a9e852b7f",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Paper/PDF/2509.09372v2.pdf",
+    "Paper/VLA-Adapter.md",
     "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
+    "Knowledges/PyTorch Tensor Dimension.md",
+    "Paper/PDF/2505.11123v1.pdf",
+    "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Knowledges/Mac Free App Website.md",
-    "Knowledges/PyTorch Tensor Dimension.md",
     "Knowledges/Pytorch CUDA Error Position.md",
-    "Paper/VLA-Adapter.md",
     "Templates/Develop Template.md",
     "Templates/Paper Note Template.md",
     "Templates/Insert Callouts.md",
@@ -388,16 +317,11 @@
     "Templates/Lecture Note Template.md",
     "Topic/Lecture Notes.md",
     "Knowledges/QueryTools Prompt.md",
-    "Paper/PDF/2509.09372v2.pdf",
     "Paper/Qwen2.5VL.md",
     "Paper/PDF/2502.13923v1.pdf",
     "Paper/PDF/2508.21112v3.pdf",
     "Paper/EO-1.md",
     "Paper/3D-VLA.md",
-    "Paper/PDF/2506.01583v2.pdf",
-    "Lecture/Slides/EE111-F25Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
-    "Lecture/Slides/EE160-lec3.pdf",
-    "Lecture/Slides/F25Lec5-1st-Order Circuits.pdf",
     "Knowledges/Linux File Permission.md",
     "Paper/s.md",
     "Assets/Pasted image 20251011001149.png",

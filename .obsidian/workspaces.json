@@ -86,14 +86,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-                    "page": 32,
-                    "left": -16,
-                    "top": 437,
-                    "zoom": 0.9427083333333334
+                    "file": "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
+                    "page": 7,
+                    "left": -21,
+                    "top": 525,
+                    "zoom": 0.7239583333333334
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25Lec5-1st-Order Circuits"
+                  "title": "EE111-F25Lec6-2nd-Order Circuits-Part1"
                 }
               }
             ],
@@ -332,7 +332,7 @@
         }
       },
       "active": "167d4f8a9e852b7f",
-      "mtime": "2025-10-16T18:00:59+08:00"
+      "mtime": "2025-10-28T09:48:07+08:00"
     },
     "note": {
       "main": {
@@ -601,7 +601,7 @@
         }
       },
       "active": "bab1db2919d53990",
-      "mtime": "2025-10-21T08:27:51+08:00"
+      "mtime": "2025-10-28T09:14:05+08:00"
     },
     "paper": {
       "main": {
@@ -649,9 +649,9 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2509.09372v2.pdf",
-                    "page": 3,
+                    "page": 4,
                     "left": -18,
-                    "top": 688,
+                    "top": 627,
                     "zoom": 0.8517156862745098
                   },
                   "icon": "lucide-file-text",
@@ -893,8 +893,8 @@
         }
       },
       "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-20T16:44:12+08:00"
+      "mtime": "2025-10-28T09:14:02+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }

@@ -778,3 +778,8 @@ $$i(t)=\frac{v_s}{R}+(i_0-\frac{v_s}{R})e^{-\frac{R}{L}t}$$
 > $$t>0\Rightarrow \text{成为开路, 因此 }v_c(t=\infty)=30V$$
 > $$\begin{aligned}v_c(t)&=v_c(\infty)+[v_c(0)-v_c(\infty)]e^{-\frac{t}{RC}}\\&=30-15e^{-\frac{t}{2}}\end{aligned}$$
 
+# Lecture 06
+> [!note]- slide
+> ![[EE111-F25Lec6-2nd-Order Circuits-Part1.pdf]]
+
+
