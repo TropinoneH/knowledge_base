@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "0d494ccfaa631af0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Paper/Masked Auto Encoder.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,29 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Discrete Mathematics"
+              "title": "Masked Auto Encoder"
+            }
+          }
+        ]
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bc7f45b526e17a1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2111.06377v3.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 692,
+                "zoom": 0.8517156862745098
+              },
+              "icon": "lucide-file-text",
+              "title": "2111.06377v3"
             }
           }
         ]
@@ -108,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"[[Swift]]\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,11 +141,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -157,12 +181,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Discrete Mathematics"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -171,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +205,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Discrete Mathematics"
+              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
             }
           },
           {
@@ -196,7 +220,8 @@
               "title": "Footnotes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b54e4c0ed8902f03",
@@ -209,7 +234,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,19 +257,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Discrete Mathematics"
+              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,20 +288,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bab1db2919d53990",
+  "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
+    "Paper/PDF/2111.06377v3.pdf",
+    "Paper/PDF/2505.11123v1.pdf",
+    "Paper/Masked Auto Encoder.md",
+    "Paper/3D-VLA.md",
+    "Paper/Conditioning Matters.md",
+    "Paper/EO-1.md",
     "Lecture/Discrete Mathematics.md",
     "Assets/Pasted image 20230424103607.png",
     "Assets/Pasted image 20230424104624.png",
     "Lecture/Pasted image 20230424103607.png.md",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/SSH Server.md",
-    "Paper/Conditioning Matters.md",
-    "Paper/3D-VLA.md",
     "Paper/VLA-Adapter.md",
-    "Paper/EO-1.md",
     "Paper/OpenVLA.md",
-    "Paper/PDF/2505.11123v1.pdf",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/PDF/Cocos.md",
     "Knowledges/PyTorch Safetensors Model.md",
@@ -292,7 +320,6 @@
     "Topic/Coding.md",
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
-    "Knowledges/PyTorch3D Install Error.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
@@ -300,7 +327,6 @@
     "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
-    "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",

@@ -493,7 +493,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Knowledges/SSH Server.md",
+                    "file": "Lecture/Discrete Mathematics.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
@@ -896,5 +896,5 @@
       "mtime": "2025-10-28T22:48:30+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
