@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PyTorch Tensor"
+              "title": "Discrete Mathematics"
             }
           }
         ]
@@ -157,12 +157,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledges/SSH Server.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from Discrete Mathematics"
             }
           },
           {
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PyTorch Tensor"
+              "title": "Backlinks for Discrete Mathematics"
             }
           },
           {
@@ -196,8 +196,7 @@
               "title": "Footnotes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "b54e4c0ed8902f03",
@@ -210,7 +209,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +237,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PyTorch Tensor"
+              "title": "Graph of Discrete Mathematics"
             }
           }
         ]
@@ -265,6 +264,11 @@
   },
   "active": "bab1db2919d53990",
   "lastOpenFiles": [
+    "Lecture/Discrete Mathematics.md",
+    "Assets/Pasted image 20230424103607.png",
+    "Assets/Pasted image 20230424104624.png",
+    "Lecture/Pasted image 20230424103607.png.md",
+    "Knowledges/PyTorch Tensor.md",
     "Knowledges/SSH Server.md",
     "Paper/Conditioning Matters.md",
     "Paper/3D-VLA.md",
@@ -281,7 +285,6 @@
     "Topic/Lecture Notes.md",
     "Knowledges/SSH Forward.md",
     "Knowledges/Slurm.md",
-    "Knowledges/PyTorch Tensor.md",
     "Lecture/Electric Circuits.md",
     "Templates/Topic Template.md",
     "Topic/System.md",
@@ -290,9 +293,6 @@
     "Knowledges/Xcode More Key Shortcut.md",
     "Knowledges/Xcode Add Packages.md",
     "Knowledges/PyTorch3D Install Error.md",
-    "Knowledges/Pytorch CUDA Error Position.md",
-    "Knowledges/Python Module.md",
-    "Knowledges/Platformio.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
@@ -308,8 +308,6 @@
     "Assets/Pasted image 20241009103458.png",
     "Assets/Pasted image 20241009112505.png",
     "Assets/Pasted image 20241009112113.png",
-    "Assets/Pasted image 20241009102714.png",
-    "Assets/image-20241009112113288.png",
-    "Assets/image-20241009103458020.png"
+    "Assets/Pasted image 20241009102714.png"
   ]
 }
