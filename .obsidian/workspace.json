@@ -44,10 +44,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2111.06377v3.pdf",
-                "page": 1,
-                "left": -18,
-                "top": 692,
-                "zoom": 0.8517156862745098
+                "page": 3,
+                "left": -8,
+                "top": 559,
+                "zoom": 0.88
               },
               "icon": "lucide-file-text",
               "title": "2111.06377v3"
@@ -291,8 +291,9 @@
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
     "Paper/PDF/2111.06377v3.pdf",
-    "Paper/PDF/2505.11123v1.pdf",
     "Paper/Masked Auto Encoder.md",
+    "Paper/VLA-Adapter.md",
+    "Paper/PDF/2505.11123v1.pdf",
     "Paper/3D-VLA.md",
     "Paper/Conditioning Matters.md",
     "Paper/EO-1.md",
@@ -302,7 +303,6 @@
     "Lecture/Pasted image 20230424103607.png.md",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/SSH Server.md",
-    "Paper/VLA-Adapter.md",
     "Paper/OpenVLA.md",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/PDF/Cocos.md",

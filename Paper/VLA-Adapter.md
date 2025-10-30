@@ -21,7 +21,7 @@ done: true
 > 
 > Motivation:
 > - 高效将视觉-语言表达和动作对齐
-> - 减少[[VLA]]模型对大型[[VLM]]和大规模pretrain的训练
+> - 减少 #VLA 模型对大型 #VLM 和大规模pretrain的训练
 
 训练需要的参数:
 ![[2509.09372v2.pdf#page=1&rect=254,192,496,245|2509.09372v2, p.1]]
@@ -35,7 +35,7 @@ pipeline:
 > 
 > [self.action_queries = nn.Embedding(NUM_TOKENS, self.llm_dim)](https://github.com/OpenHelix-Team/VLA-Adapter/blob/838a36da195daf3e8b8a53520c8c7ce86231b6d9/prismatic/extern/hf/modeling_prismatic.py#L375C9-L375C69)
 > 
-> 在VLM中, 每一层attention layer输出的hidden state和Action Query进行一次cross attention, 得到更深一层的action query features:
+> 在VLM中, 每一层[[Transformer]] layer输出的hidden state和Action Query进行一次cross attention, 得到更深一层的action query features:
 > ![[2509.09372v2.pdf#page=4&rect=116,566,213,693|2509.09372v2, p.4|162]] 
 
 > [!PDF|] [[2509.09372v2.pdf#page=3&selection=223,0,223,62|2509.09372v2, p.3]]
@@ -43,7 +43,7 @@ pipeline:
 > 
 > VLM骨干用的是 [[Qwen2.5VL|Qwen2.5-0.5B]], 是纯文字版本, 然后使用Prismatic VLM的方法进行训练.
 > 
-> 使用[[SigLip]]和[[DINOv2]]作为Vision Transformer, 获取图片的feature, 与Qwen进行共同训练
+> 使用[[SigLip]]和[[DINOv2]]作为[[ViT]], 获取图片的feature, 与Qwen进行共同训练
 
 > [!PDF|] [[2509.09372v2.pdf#page=4&selection=277,0,304,54|2509.09372v2, p.4]]
 > > Key Finding 1. Regarding CR t , the middle-layer latent performs better than the deep-layer latent. Deep-layer CR t is biased towards semantic information and less effective in action generation. The middle-layer CR t effectively integrates image and text information, retains richer multimodal details, and facilitates action generation.
