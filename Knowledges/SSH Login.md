@@ -62,4 +62,9 @@ usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
 ssh-copy-id <username>@<ip> -p <port>
 ```
 
+对于 #system/windows , 由于windows没有`ssh-copy-id`这个命令, 因此使用下面的命令来代替:
+```powershell
+type "~\.ssh\id_ed25519.pub" | ssh <user>@<ip> "cat >> .ssh/authorized_keys"
+```
+
 这样可以免去登录时的输入密码

@@ -44,10 +44,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2111.06377v3.pdf",
-                "page": 3,
-                "left": -8,
-                "top": 559,
-                "zoom": 0.88
+                "page": 4,
+                "left": -23,
+                "top": 719,
+                "zoom": 1.44
               },
               "icon": "lucide-file-text",
               "title": "2111.06377v3"
@@ -292,6 +292,10 @@
   "lastOpenFiles": [
     "Paper/PDF/2111.06377v3.pdf",
     "Paper/Masked Auto Encoder.md",
+    "Lecture/Machine Learning.md",
+    "Lecture/Deep Learning.md",
+    "Knowledges/SSH Login.md",
+    "Knowledges/SSH Server.md",
     "Paper/VLA-Adapter.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Paper/3D-VLA.md",
@@ -302,12 +306,10 @@
     "Assets/Pasted image 20230424104624.png",
     "Lecture/Pasted image 20230424103607.png.md",
     "Knowledges/PyTorch Tensor.md",
-    "Knowledges/SSH Server.md",
     "Paper/OpenVLA.md",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/PDF/Cocos.md",
     "Knowledges/PyTorch Safetensors Model.md",
-    "Knowledges/SSH Login.md",
     "Topic/SSH.md",
     "Topic/Git.md",
     "Topic/Lecture Notes.md",
@@ -318,8 +320,6 @@
     "Topic/System.md",
     "Topic/Conda.md",
     "Topic/Coding.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Knowledges/Xcode Add Packages.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",

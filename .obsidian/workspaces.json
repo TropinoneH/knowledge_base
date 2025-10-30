@@ -617,7 +617,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/Conditioning Matters.md",
+                    "file": "Paper/Masked Auto Encoder.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -632,7 +632,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Conditioning Matters"
+                  "title": "Masked Auto Encoder"
                 }
               }
             ]
@@ -647,14 +647,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2505.11123v1.pdf",
-                    "page": 1,
-                    "left": -10,
-                    "top": 575,
-                    "zoom": 1.5012254901960784
+                    "file": "Paper/PDF/2111.06377v3.pdf",
+                    "page": 3,
+                    "left": -8,
+                    "top": 285,
+                    "zoom": 0.88
                   },
                   "icon": "lucide-file-text",
-                  "title": "2505.11123v1"
+                  "title": "2111.06377v3"
                 }
               }
             ]
@@ -893,7 +893,7 @@
         }
       },
       "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-28T22:48:30+08:00"
+      "mtime": "2025-10-30T17:26:38+08:00"
     }
   },
   "active": "paper"

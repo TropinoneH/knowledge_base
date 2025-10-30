@@ -81,4 +81,32 @@ Pipeline:
 > [!PDF|] [[2111.06377v3.pdf#page=3&selection=157,0,158,0|2111.06377v3, p.3]]
 > > MAE decoder
 > 
+> 将image embeddings和一个特殊的embedding vector(mask embedding)按照顺序进行拼接, 得到最终的`input_embeds`, 然后送给[[Transformer]]进行Self Attention, 最终得到一个完整的image的embeddings.
 > 
+> 随后, 使用MLP或其他方法将hidden states重建成为image
+
+> [!PDF|] [[2111.06377v3.pdf#page=4&selection=26,0,27,1|2111.06377v3, p.4]]
+> > Reconstruction target.
+> 
+> 与[[BERT]]类似, 只针对masked掉的patch进行[[Deep Learning#MSE|MSE]] loss计算. 因此在infer的时候, 那些没有被masked的patch重建效果可能较差
+
+> [!PDF|] [[2111.06377v3.pdf#page=4&selection=51,0,52,1|2111.06377v3, p.4]]
+> > Simple implementation.
+> 
+> 这一部分是比较巧妙的地方, 使用了一些trick, 能够加速mask的replace.
+> 
+> 首先, 使用randomly shuffle随机打乱patch embeds:
+> ```python
+> input_patches = patch(image) # (bs, seq_len, image_dim)
+> shuffle_indices = torch.rand(bs, seq_len).argsort(dim=1)
+> unshuffle_indices = shuffle_indices.argsort(dim=1)
+> 
+> shuffle_patches = torch.gather(input_patches, 1, shuffled_indices.unsqueeze(-1).expand(-1, -1, image_dim))
+> num_visible = int(0.25 * seq_len) # Maksed 75% patches
+> visible_patches = shuffle_patches[:, :num_visible, :]
+> 
+> visible_embeds = transformer(visible_patches)
+> 
+> # Concat visible patches and mask embeds
+> full_shuffled_embeds = torch.cat([visible_embeds, masked_token.expand(bs, seq_len - num_visible, )])
+> ```
