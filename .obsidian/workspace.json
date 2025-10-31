@@ -116,10 +116,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2010.11929v2.pdf",
-                "page": 1,
-                "left": 126,
-                "top": 661,
-                "zoom": 1.23
+                "page": 3,
+                "left": 61,
+                "top": 349,
+                "zoom": 1.79
               },
               "icon": "lucide-file-text",
               "title": "2010.11929v2"
@@ -229,8 +229,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -377,17 +376,19 @@
   },
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Paper/Conditioning Matters.md",
-    "Paper/Masked Auto Encoder.md",
-    "Paper/ViT.md",
-    "Paper/PDF/2010.11929v2.pdf",
     "Lecture/Deep Learning.md",
+    "Paper/ViT.md",
+    "Lecture/Machine Learning.md",
+    "Lecture/Artificial Intelligence.md",
+    "Lecture/Hidden Markov Model.md",
+    "Paper/Masked Auto Encoder.md",
+    "Paper/PDF/2010.11929v2.pdf",
+    "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Paper/PDF/2111.06377v3.pdf",
-    "Lecture/Machine Learning.md",
     "Knowledges/SSH Login.md",
     "Knowledges/SSH Server.md",
     "Paper/VLA-Adapter.md",
@@ -409,7 +410,6 @@
     "Knowledges/Slurm.md",
     "Lecture/Electric Circuits.md",
     "Templates/Topic Template.md",
-    "Topic/System.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",

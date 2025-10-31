@@ -88,7 +88,7 @@ Pipeline:
 > [!PDF|] [[2111.06377v3.pdf#page=4&selection=26,0,27,1|2111.06377v3, p.4]]
 > > Reconstruction target.
 > 
-> 与[[BERT]]类似, 只针对masked掉的patch进行[[Deep Learning#MSE|MSE]] loss计算. 因此在infer的时候, 那些没有被masked的patch重建效果可能较差
+> 与[[BERT]]类似, 只针对masked掉的patch进行[[Deep Learning#Common Loss Functions|MSE]] loss计算. 因此在infer的时候, 那些没有被masked的patch重建效果可能较差
 
 > [!PDF|] [[2111.06377v3.pdf#page=4&selection=51,0,52,1|2111.06377v3, p.4]]
 > > Simple implementation.
