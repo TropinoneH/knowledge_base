@@ -13,6 +13,78 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Paper/ViT.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ViT"
+            }
+          },
+          {
+            "id": "d2410da79cf8e9e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Deep Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Deep Learning"
+            }
+          },
+          {
+            "id": "e29236a0aed21998",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/Conditioning Matters.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Conditioning Matters"
+            }
+          },
+          {
+            "id": "460a3c6aaf79d5ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Paper/Masked Auto Encoder.md",
                 "mode": "source",
                 "source": false,
@@ -38,19 +110,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4bc7f45b526e17a1",
+            "id": "4409db2eb0dc5914",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2111.06377v3.pdf",
-                "page": 4,
-                "left": -23,
-                "top": 719,
-                "zoom": 1.44
+                "file": "Paper/PDF/2010.11929v2.pdf",
+                "page": 1,
+                "left": 126,
+                "top": 661,
+                "zoom": 1.23
               },
               "icon": "lucide-file-text",
-              "title": "2111.06377v3"
+              "title": "2010.11929v2"
+            }
+          },
+          {
+            "id": "3aada75bf62dd74d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2505.11123v1.pdf",
+                "page": 1,
+                "left": -22,
+                "top": 658,
+                "zoom": 0.6678921568627452
+              },
+              "icon": "lucide-file-text",
+              "title": "2505.11123v1"
             }
           }
         ]
@@ -146,8 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -195,7 +282,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
+                "file": "Paper/ViT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +292,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
+              "title": "Backlinks for ViT"
             }
           },
           {
@@ -234,7 +321,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
+                "file": "Paper/ViT.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -262,7 +349,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
+              "title": "Graph of ViT"
             }
           }
         ]
@@ -290,16 +377,21 @@
   },
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Paper/PDF/2111.06377v3.pdf",
+    "Paper/Conditioning Matters.md",
     "Paper/Masked Auto Encoder.md",
-    "Lecture/Machine Learning.md",
+    "Paper/ViT.md",
+    "Paper/PDF/2010.11929v2.pdf",
     "Lecture/Deep Learning.md",
+    "Paper/PDF/2505.11123v1.pdf",
+    "Knowledges/ArchLinux Nvidia Black Screen.md",
+    "Assets/Pasted image 20251030212859.png",
+    "Assets/Pasted image 20251030212857.png",
+    "Paper/PDF/2111.06377v3.pdf",
+    "Lecture/Machine Learning.md",
     "Knowledges/SSH Login.md",
     "Knowledges/SSH Server.md",
     "Paper/VLA-Adapter.md",
-    "Paper/PDF/2505.11123v1.pdf",
     "Paper/3D-VLA.md",
-    "Paper/Conditioning Matters.md",
     "Paper/EO-1.md",
     "Lecture/Discrete Mathematics.md",
     "Assets/Pasted image 20230424103607.png",
@@ -318,22 +410,17 @@
     "Lecture/Electric Circuits.md",
     "Templates/Topic Template.md",
     "Topic/System.md",
-    "Topic/Conda.md",
-    "Topic/Coding.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
     "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/EE111-F25Lec3-Circuit Theorem.pdf",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",
     "Assets/Pasted image 20251011000933.png",
     "Assets/Pasted image 20241009103458.png",
-    "Assets/Pasted image 20241009112505.png",
-    "Assets/Pasted image 20241009112113.png",
-    "Assets/Pasted image 20241009102714.png"
+    "Assets/Pasted image 20241009112505.png"
   ]
 }

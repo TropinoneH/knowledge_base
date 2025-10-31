@@ -617,7 +617,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/Masked Auto Encoder.md",
+                    "file": "Paper/ViT.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -632,29 +632,64 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Masked Auto Encoder"
+                  "title": "ViT"
+                }
+              },
+              {
+                "id": "d2410da79cf8e9e4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Lecture/Deep Learning.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Deep Learning"
+                }
+              },
+              {
+                "id": "e29236a0aed21998",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "363f9be3567338d8",
             "type": "tabs",
             "children": [
               {
-                "id": "4bc7f45b526e17a1",
+                "id": "4409db2eb0dc5914",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2111.06377v3.pdf",
-                    "page": 3,
-                    "left": -8,
-                    "top": 285,
-                    "zoom": 0.88
+                    "file": "Paper/PDF/2010.11929v2.pdf",
+                    "page": 1,
+                    "left": -11,
+                    "top": 696,
+                    "zoom": 1.3174019607843137
                   },
                   "icon": "lucide-file-text",
-                  "title": "2111.06377v3"
+                  "title": "2010.11929v2"
                 }
               }
             ]
@@ -750,8 +785,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 300
       },
       "right": {
         "id": "989a8de35f3c6aa0",
@@ -799,7 +833,6 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -809,7 +842,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for EE111-F25Lec4-Operational Amplifiers"
+                  "title": "Backlinks"
                 }
               },
               {
@@ -838,7 +871,6 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec4-Operational Amplifiers.pdf",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -866,7 +898,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of EE111-F25Lec4-Operational Amplifiers"
+                  "title": "Graph view"
                 }
               }
             ]
@@ -892,8 +924,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "0d494ccfaa631af0",
-      "mtime": "2025-10-30T17:26:38+08:00"
+      "active": "e29236a0aed21998",
+      "mtime": "2025-10-30T21:45:06+08:00"
     }
   },
   "active": "paper"

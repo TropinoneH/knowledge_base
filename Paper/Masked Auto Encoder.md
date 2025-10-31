@@ -9,7 +9,7 @@ tags:
 publish: CVPR 2022
 pdf: "[[Paper/PDF/2111.06377v3.pdf]]"
 rate: 🌟🌟🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[Paper/PDF/2111.06377v3.pdf]]
@@ -64,7 +64,7 @@ Motivation: 将NLP领域的遮罩预测方法(以[[BERT]]为例子)应用到视�
 Pipeline:
 ![[2111.06377v3.pdf#page=1&rect=292,453,563,599|2111.06377v3, p.1]]
 
-## Approach
+**Approach**:
 
 > [!PDF|] [[2111.06377v3.pdf#page=3&selection=108,0,108,7|2111.06377v3, p.3]]
 > > Masking
@@ -108,5 +108,84 @@ Pipeline:
 > visible_embeds = transformer(visible_patches)
 > 
 > # Concat visible patches and mask embeds
-> full_shuffled_embeds = torch.cat([visible_embeds, masked_token.expand(bs, seq_len - num_visible, )])
+> # masked_token = nn.Parameter(...)
+> full_shuffled_embeds = torch.cat([visible_embeds, masked_token.expand(bs, seq_len - num_visible, -1)])
+> full_unshuffled_embeds = torch.gather(full_shuffled_embeds, 1, unshuffled_indices.unsqueeze(-1).expand(-1, -1, hidden_dim))
+> 
+> # decode by Transformer Blocks
+> return decoder(full_unshuffled_embeds)
 > ```
+> 
+> 上面的这个是全部的伪代码. 这个tricky的点在于使用了`rand`+`argsort`配合`torch.gather`快速的记录了mask的顺序, 并快速进行了采样
+> 
+> > [!tip]- shuffled作用机理
+> > ### **步骤 1: 生成随机打乱索引 (`shuffled_indices`)**
+> > 
+> > 这个索引的作用是：**告诉我如何将原始序列打乱**。
+> > 
+> > 1.  **生成随机数：**
+> >     我们为4个位置各自生成一个随机数。假设生成的随机数是：
+> >     *   位置0: `0.7`
+> >     *   位置1: `0.1`
+> >     *   位置2: `0.9`
+> >     *   位置3: `0.4`
+> > 
+> > 2.  **对随机数进行排序 (`argsort`)：**
+> >     `argsort` 操作会返回**原始数组中元素按从小到大排序后的索引**。
+> >     *   最小的数是 `0.1`，它在位置 `1`。
+> >     *   第二小的数是 `0.4`，它在位置 `3`。
+> >     *   第三小的数是 `0.7`，它在位置 `0`。
+> >     *   最大的数是 `0.9`，它在位置 `2`。
+> > 
+> >     因此，`argsort` 的结果就是 `[1, 3, 0, 2]`。
+> > 
+> > 1.  **得到 `shuffled_indices`:**
+> >     `shuffled_indices = [1, 3, 0, 2]`
+> > 
+> > **这个索引的含义是：** “新的序列中，第0个位置应该放原始序列的第1个元素；第1个位置应该放原始序列的第3个元素；第2个位置应该放原始序列的第0个元素；第3个位置应该放原始序列的第2个元素。”
+> > 
+> > #### **应用 `shuffled_indices`**
+> > 
+> > 如果我们用这个索引来打乱原始序列 `[P0, P1, P2, P3]`，我们会得到一个新的序列 `shuffled_sequence`：
+> > 
+> > *   `shuffled_sequence[0] = original_sequence[1] = P1`
+> > *   `shuffled_sequence[1] = original_sequence[3] = P3`
+> > *   `shuffled_sequence[2] = original_sequence[0] = P0`
+> > *   `shuffled_sequence[3] = original_sequence[2] = P2`
+> > 
+> > 所以，打乱后的序列是：`[P1, P3, P0, P2]`
+> > 
+> > ---
+> > 
+> > ### **步骤 2: 生成恢复顺序索引 (`unshuffle_indices`)**
+> > 
+> > 这个索引的作用是：**告诉我如何将打乱后的序列恢复到原始顺序**。
+> > 
+> > 它的生成方法非常巧妙：**对 `shuffled_indices` 本身再做一次 `argsort` 操作。**
+> > 
+> > 1.  **我们的 `shuffled_indices` 是：** `[1, 3, 0, 2]`
+> > 
+> > 2.  **对它进行 `argsort`：**
+> >     *   `shuffled_indices` 中最小的数是 `0`，它在位置 `2`。
+> >     *   第二小的数是 `1`，它在位置 `0`。
+> >     *   第三小的数是 `2`，它在位置 `3`。
+> >     *   最大的数是 `3`，它在位置 `1`。
+> > 
+> >     因此，`argsort` 的结果是 `[2, 0, 3, 1]`。
+> > 
+> > 1.  **得到 `unshuffle_indices`:**
+> >     `unshuffle_indices = [2, 0, 3, 1]`
+> > 
+> > **这个索引的含义是：** “恢复后的序列中，第0个位置应该放**打乱序列**的第2个元素；第1个位置应该放**打乱序列**的第0个元素；第2个位置应该放**打乱序列**的第3个元素；第3个位置应该放**打乱序列**的第1个元素。”
+> > 
+> > #### **应用 `unshuffle_indices`**
+> > 
+> > 现在，我们用这个索引来恢复打乱后的序列 `shuffled_sequence = [P1, P3, P0, P2]`：
+> > 
+> > *   `unshuffled_sequence[0] = shuffled_sequence[2] = P0`
+> > *   `unshuffled_sequence[1] = shuffled_sequence[0] = P1`
+> > *   `unshuffled_sequence[2] = shuffled_sequence[3] = P2`
+> > *   `unshuffled_sequence[3] = shuffled_sequence[1] = P3`
+> > 
+> > 所以，恢复后的序列是：`[P0, P1, P2, P3]`。 **我们成功地恢复了原始顺序！**
+
