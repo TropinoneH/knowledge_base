@@ -117,9 +117,9 @@
               "state": {
                 "file": "Paper/PDF/2010.11929v2.pdf",
                 "page": 3,
-                "left": 61,
-                "top": 349,
-                "zoom": 1.79
+                "left": 60,
+                "top": 474,
+                "zoom": 0.88
               },
               "icon": "lucide-file-text",
               "title": "2010.11929v2"
@@ -376,13 +376,13 @@
   },
   "active": "0d494ccfaa631af0",
   "lastOpenFiles": [
-    "Lecture/Deep Learning.md",
+    "Paper/PDF/2010.11929v2.pdf",
     "Paper/ViT.md",
+    "Lecture/Deep Learning.md",
     "Lecture/Machine Learning.md",
     "Lecture/Artificial Intelligence.md",
     "Lecture/Hidden Markov Model.md",
     "Paper/Masked Auto Encoder.md",
-    "Paper/PDF/2010.11929v2.pdf",
     "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
@@ -409,7 +409,6 @@
     "Knowledges/SSH Forward.md",
     "Knowledges/Slurm.md",
     "Lecture/Electric Circuits.md",
-    "Templates/Topic Template.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",

@@ -26,5 +26,7 @@ Motivation: 将[[Transformer]]架构应用给 #ComputerVision 领域, 证明了�
 pipeline:
 ![[2010.11929v2.pdf#page=3&rect=138,538,474,723]]
 
-
-
+> [!PDF|] [[2010.11929v2.pdf#page=3&selection=101,30,164,13|2010.11929v2, p.3]]
+> > To handle 2D images, we reshape the image $x\in\mathbb R^{H\times W\times C}$ into a sequence of flattened 2D patches $x_p\in\mathbb R^{N\times(P^2\cdot C)}$, where (H, W ) is the resolution of the original image, C is the number of channels, (P, P ) is the resolution of each image patch, and N = HW/P 2 is the resulting number of patches, which also serves as the effective input sequence length for the Transformer. 
+> 
+> 
