@@ -27,8 +27,8 @@ Motivation: 将NLP领域的遮罩预测方法(以[[BERT]]为例子)应用到视�
 > - GPT
 > 
 > Auto Encoding:
-> - [[AE]]
-> - [[VAE]]
+> - [[Deep Learning#Autoencoder (AE)|AE]]
+> - [[Deep Learning#Variational Autoencoder (VAE)|VAE]]
 > 
 > Masked Image Encoding:
 > - DAE

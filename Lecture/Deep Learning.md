@@ -568,4 +568,377 @@ graph TB
 #### Comparison
 GRU是LSTM的一个成功的简化版本。在许多任务上，它的性能与LSTM相当，但由于其更简单的结构和更少的参数，训练起来可能更快。在选择LSTM还是GRU时，并没有一个绝对的答案，通常需要根据具体任务和数据集进行经验性的选择。
 
+# Advanced Architectures
+
+本部分将深入探讨当前深度学习领域中一些更高级和前沿的模型架构。这些模型通常是为了解决基础模型的特定局限性而设计的，例如处理长距离依赖、提高生成质量或实现更高效的计算。我们将从注意力机制开始，逐步过渡到完全基于注意力的 Transformer 模型，最后探讨几种主流的深度生成模型。
+
+## Attention and Transformer
+
+### Attention Mechanism
+
+注意力机制最初是为了解决基于 RNN 的 Encoder-Decoder 模型在处理长序列时的“信息瓶颈”问题而提出的。它允许模型在生成输出的每一步动态地“关注”输入序列的不同部分。
+
+#### Model Architecture (in Encoder-Decoder)
+注意力机制通常被嵌入到 Encoder-Decoder 框架中。Decoder 在生成每个输出词元 $y_t$ 时，不再仅仅依赖于 Encoder 最后的隐藏状态，而是计算一个上下文向量 $c_t$，该向量是 Encoder 所有隐藏状态 $h_1, h_2, \dots, h_N$ 的加权和。
+
+```mermaid
+graph TD
+    subgraph Encoder
+        x1 --> h1 --> h2 --> h3 --> hN["h_N"]
+    end
+    
+    subgraph Decoder
+        s_prev["Decoder State s_{t-1}"] --> Alignment["Alignment Score Calculation"];
+        h1 --> Alignment;
+        h2 --> Alignment;
+        h3 --> Alignment;
+        hN --> Alignment;
+        Alignment --> Softmax["Softmax"];
+        Softmax -- "Attention Weights α_t" --> Context["Weighted Sum (Context Vector c_t)"];
+        h1 --> Context;
+        h2 --> Context;
+        h3 --> Context;
+        hN --> Context;
+        Context --> s_current["New Decoder State s_t"];
+        s_prev --> s_current;
+        y_prev["Previous Output y_{t-1}"] --> s_current;
+        s_current --> Output["Generate y_t"];
+    end
+```
+
+#### Mathematical Derivations
+注意力机制的计算过程主要分为三步：
+1.  计算对齐分数 (Alignment Score): 对于 Decoder 的当前隐藏状态 $s_{t-1}$ 和 Encoder 的每个隐藏状态 $h_i$，计算一个分数 $e_{t,i}$ 来衡量它们的相关性。
+    $$e_{t,i} = a(s_{t-1}, h_i)$$
+    这里的对齐函数 $a$ 可以有多种形式，例如：
+    - 加性注意力 (Additive Attention): $a(s, h) = v_a^T \tanh(W_a s + U_a h)$
+    - 点积注意力 (Dot-Product Attention): $a(s, h) = s^T h$
+    - 缩放点积注意力 (Scaled Dot-Product Attention): $a(s, h) = \frac{s^T h}{\sqrt{d_k}}$
+2.  计算注意力权重 (Attention Weights): 将对齐分数通过 Softmax 函数进行归一化，得到注意力权重 $\alpha_{t,i}$。
+    $$\alpha_{t,i} = \frac{\exp(e_{t,i})}{\sum_{j=1}^N \exp(e_{t,j})}$$
+    这些权重 $\alpha_{t,i}$ 的和为 1，可以看作是一个概率分布，表示在生成 $y_t$ 时对输入位置 $i$ 的关注程度。
+3.  计算上下文向量 (Context Vector): 上下文向量 $c_t$ 是 Encoder 所有隐藏状态的加权和。
+    $$c_t = \sum_{i=1}^N \alpha_{t,i} h_i$$
+这个上下文向量 $c_t$ 随后与 Decoder 的前一状态 $s_{t-1}$ 和前一输出 $y_{t-1}$ 一起，用于计算当前状态 $s_t$ 和生成当前输出 $y_t$。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 解决了长序列的信息瓶颈问题，显著提升了机器翻译等任务的性能。
+    - 提供了模型的可解释性，通过可视化注意力权重，可以直观地看到模型在生成每个输出时“关注”了输入的哪些部分。
+- 缺点: 在 RNN 框架下，其计算仍然是串行的，限制了并行计算能力。
+
+#### Task
+主要应用于机器翻译 (NMT)、图像字幕生成 (Image Captioning) 等需要对齐输入和输出的序列到序列任务中。
+
+### Self-Attention
+
+自注意力机制是注意力机制的一种特殊形式，它将注意力机制从 Encoder-Decoder 之间的交互推广到了单个序列内部的元素交互。它允许序列中的每个元素关注序列中的所有其他元素（包括自身）。
+
+#### Model Architecture
+自注意力的核心思想是将每个输入向量 $x_i$ 映射为三个不同的向量：查询向量 (Query, $q_i$)、键向量 (Key, $k_i$) 和值向量 (Value, $v_i$)。这是通过与三个可学习的权重矩阵 $W_Q, W_K, W_V$ 相乘得到的。
+$$q_i = W_Q x_i, \quad k_i = W_K x_i, \quad v_i = W_V x_i$$
+然后，每个位置的输出 $y_i$ 是所有值向量 $v_j$ 的加权和，权重由查询向量 $q_i$ 和所有键向量 $k_j$ 的相似度决定。
+
+```mermaid
+graph TD
+    subgraph SelfAttention
+        X[Input Vectors X] --> Q[Queries Q = XW_Q];
+        X --> K[Keys K = XW_K];
+        X --> V[Values V = XW_V];
+
+        Q --> MatMul["Matrix Multiply (QK^T)"];
+        K --> MatMul;
+        
+        MatMul --> Scale["Scale (1/√d_k)"];
+        Scale --> OptMask["Optional Mask"];
+        OptMask --> Softmax["Softmax"];
+        
+        Softmax -- "Attention Weights A" --> WeightedSum["Weighted Sum (AV)"];
+        V --> WeightedSum;
+        
+        WeightedSum --> Y[Output Vectors Y];
+    end
+```
+
+#### Mathematical Derivations (Scaled Dot-Product Attention)
+对于整个序列的矩阵形式，计算过程如下：
+$$Attention(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+- $Q, K, V$ 分别是由所有查询、键、值向量堆叠而成的矩阵。
+- $\sqrt{d_k}$ 是一个缩放因子，$d_k$ 是键向量的维度。这个缩放是为了防止当 $d_k$ 很大时，点积结果过大，导致 Softmax 函数进入梯度很小的饱和区域。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 能够捕捉序列内部任意两个位置之间的长距离依赖关系，因为信息传递路径是直接的（长度为 $O(1)$），而 RNN 是 $O(N)$。
+    - 计算是高度可并行化的，因为每个位置的输出可以独立计算。
+- 缺点:
+    - 计算和内存复杂度为 $O(N^2 d)$，其中 $N$ 是序列长度，这使得它难以处理非常长的序列。
+    - 自身不包含位置信息，是排列不变的，需要额外引入位置编码 (Positional Encoding)。
+
+### Transformer
+
+Transformer 是一个完全基于自注意力机制的模型架构，完全抛弃了循环和卷积结构。
+
+#### Model Architecture
+Transformer 由一个 Encoder 堆栈和一个 Decoder 堆栈组成。
+- Encoder Block: 每个 Encoder 块包含两个子层：
+    1.  一个多头自注意力层 (Multi-Head Self-Attention)。
+    2.  一个简单的、位置独立的全连接前馈网络 (Position-wise Feed-Forward Network)。
+    每个子层都使用了残差连接和层归一化 (Layer Normalization)。
+- Decoder Block: 每个 Decoder 块包含三个子层：
+    1.  一个带掩码的多头自注意力层 (Masked Multi-Head Self-Attention)，确保在预测当前位置时只能关注到之前的位置。
+    2.  一个多头注意力层，其 Query 来自前一个 Decoder 子层，Key 和 Value 来自 Encoder 的输出，实现了 Encoder-Decoder 之间的注意力。
+    3.  一个位置独立的全连接前馈网络。
+    同样，每个子层都使用了残差连接和层归一化。
+- 多头注意力 (Multi-Head Attention): 与其执行一次高维的自注意力，不如将 Query, Key, Value 线性投影到 $h$ 个不同的低维空间中，并行地执行 $h$ 次注意力计算，然后将结果拼接并再次进行线性投影。这允许模型在不同位置、不同子空间中共同关注来自不同表示空间的信息。
+- Positional Encoding: 由于模型不含循环或卷积，为了利用序列的顺序信息，需要在输入嵌入中加入位置编码。这通常是通过一组特定频率的正弦和余弦函数来实现的。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 凭借其并行计算能力和对长距离依赖的强大建模能力，在许多 NLP 任务上取得了 SOTA 性能。
+    - 成为 NLP 领域预训练模型（如 BERT, GPT）的基础架构。
+- 缺点:
+    - $O(N^2)$ 的复杂度和内存消耗仍然是处理超长序列的主要瓶颈。
+    - 需要大量的训练数据和计算资源。
+
+#### Task
+机器翻译、语言建模、文本摘要、问答系统等几乎所有的 NLP 任务。
+
+## Generative Models
+
+深度生成模型旨在学习数据的底层分布，并能够从中生成新的、与训练数据相似的样本。
+
+### Autoencoder (AE)
+
+自编码器是一种无监督学习模型，其目标是学习数据的有效表示（编码）。
+
+#### Model Architecture
+AE 由两部分组成：一个编码器 (Encoder) $f$ 和一个解码器 (Decoder) $g$。
+- Encoder 将输入数据 $x$ 映射到一个通常是低维的潜在表示（或编码）$z = f(x)$。
+- Decoder 尝试从潜在表示 $z$ 中重建原始输入 $\hat{x} = g(z)$。
+
+```mermaid
+graph TD
+    X[Input x] --> Encoder["Encoder f"];
+    Encoder --> Z["Latent Code z"];
+    Z --> Decoder["Decoder g"];
+    Decoder --> X_hat["Reconstructed x̂"];
+```
+
+#### Loss Function
+训练的目标是最小化重建误差，即输入与重建输出之间的差异。对于连续数据，通常使用均方误差 (MSE) 损失：
+$$L(x, \hat{x}) = ||x - g(f(x))||^2$$
+对于二值数据，则使用交叉熵损失。
+
+#### Variants and Properties
+- Undercomplete AE: 当潜空间维度小于输入维度时，AE 被迫学习数据中最重要的特征。如果编码器和解码器都是线性的，那么它学习到的子空间与主成分分析 (PCA) 相同。
+- Regularized AE: 即使潜空间维度大于等于输入维度，也可以通过向损失函数添加正则化项来防止 AE 简单地学习恒等函数。
+    - Sparse AE: 在损失中加入对潜表示 $z$ 的稀疏性惩罚（如 $L_1$ 范数），促使每个样本只有少数几个神经元被激活。
+    - Denoising AE: 在训练时，向输入 $x$ 中加入噪声得到 $\tilde{x}$，然后让 AE 学习从损坏的输入 $\tilde{x}$ 中重建出原始的、干净的输入 $x$。这迫使模型学习数据流形，而不仅仅是复制输入。
+
+#### Advantages and Disadvantages
+- 优点: 是一种简单而有效的特征学习和降维方法，可以作为预训练步骤来初始化监督学习模型。
+- 缺点: 它是一个确定性模型，潜空间 $z$ 可能不连续或不规则，导致我们无法从中有效地采样来生成新的数据。它学习的是一个从数据到编码的映射，而不是数据的概率分布。
+
+### Variational Autoencoder (VAE)
+
+VAE 是一种结合了变分推断和深度学习的生成模型，它旨在学习数据的概率分布。
+
+#### Model Architecture
+VAE 同样由 Encoder 和 Decoder 组成，但它们都具有概率性。
+- Encoder ($q_{\phi}(z|x)$): 也称为“推断网络”或“识别模型”，它不再是输出一个确定的潜码 $z$，而是输出一个概率分布的参数（通常是高斯分布的均值 $\mu(x)$ 和方差 $\sigma^2(x)$）。潜码 $z$ 从这个分布中采样得到。
+- Decoder ($p_{\theta}(x|z)$): 也称为“生成网络”，它接收一个潜码 $z$ 作为输入，并输出一个关于数据 $x$ 的概率分布的参数（例如，如果 $x$ 是图像，则输出每个像素的高斯分布均值）。
+
+```mermaid
+graph TD
+    X[Input x] --> Encoder["Encoder q_φ(z|x)"];
+    Encoder -- "μ(x), σ(x)" --> Sampling["z ~ N(μ(x), σ(x)I)"];
+    Sampling --> Z["Latent Code z"];
+    Z --> Decoder["Decoder p_θ(x|z)"];
+    Decoder --> X_hat["Reconstructed x̂"];
+```
+
+#### Mathematical Derivations (ELBO)
+VAE 的目标是最大化数据的边际对数似然 $\log p(x)$。由于 $\log p(x) = \log \int p(x,z) dz$ 难以直接优化，VAE 转而最大化其证据下界（Evidence Lower Bound, ELBO）。
+$$\log p_{\theta}(x) \ge \mathcal{L}(\theta, \phi; x) = E_{q_{\phi}(z|x)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x) || p(z))$$
+- 重建项 $E_{q_{\phi}(z|x)}[\log p_{\theta}(x|z)]$: 鼓励解码器在给定潜码的情况下能很好地重建数据。
+- 正则化项 $- D_{KL}(q_{\phi}(z|x) || p(z))$: 促使编码器输出的后验分布 $q_{\phi}(z|x)$ 接近先验分布 $p(z)$（通常是标准正态分布 $N(0, I)$）。这使得潜空间具有良好的结构，便于采样。
+
+#### Reparameterization Trick
+为了能够通过反向传播来训练整个模型（特别是对采样步骤求导），VAE 使用了重参数化技巧。对于高斯分布，采样过程 $z \sim N(\mu, \sigma^2)$ 可以重写为 $z = \mu + \sigma \cdot \epsilon$，其中 $\epsilon \sim N(0, 1)$。这样，随机性就被从网络结构中分离出来，梯度可以顺畅地流过确定性的 $\mu$ 和 $\sigma$ 节点。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 是一个真正的生成模型，可以从先验分布 $p(z)$ 中采样并生成新的数据。
+    - 学习到的潜空间通常是连续且有意义的，可以用于插值和探索。
+- 缺点:
+    - 生成的样本通常比 GANs 模糊。这可能是因为重建损失（如 MSE）倾向于生成“平均”的图像，以及变分近似的局限性。
+    - ELBO 是真实对数似然的一个下界，最大化 ELBO 并不等同于最大化真实似然。
+
+#### Task
+图像生成、特征学习、数据降维等。
+
+### Generative Adversarial Networks (GANs)
+
+GANs 是一种通过对抗性训练过程来学习生成模型的框架。
+
+#### Model Architecture
+GAN 由两个相互竞争的神经网络组成：
+- 生成器 (Generator, $G$): 接收一个随机噪声向量 $z$ 作为输入，并输出一个与真实数据相似的假样本 $G(z)$。它的目标是生成足够逼真的样本来欺骗判别器。
+- 判别器 (Discriminator, $D$): 接收一个样本（真实的或生成的）作为输入，并输出该样本是真实数据的概率。它的目标是尽可能准确地分辨出真实样本和生成样本。
+
+```mermaid
+graph TD
+    Z[Random Noise z] --> G[Generator G];
+    G --> Fake_X["Generated Sample G(z)"];
+    
+    Real_X["Real Data x"] --> D[Discriminator D];
+    Fake_X --> D;
+
+    D -- "Real/Fake?" --> Loss_D["Discriminator Loss"];
+    D -- "Real/Fake?" --> Loss_G["Generator Loss"];
+
+    subgraph Training Loop
+        Loss_D -- "Update D" --> D;
+        Loss_G -- "Update G" --> G;
+    end
+```
+
+#### Mathematical Derivations (Minimax Game)
+GAN 的训练过程是一个二人零和博弈，其目标函数为：
+$$\min_G \max_D V(D, G) = E_{x \sim p_{\text{data}}(x)}[\log D(x)] + E_{z \sim p_z(z)}[\log(1 - D(G(z)))]$$
+- 判别器 D 的目标是最大化这个表达式，即正确分类真实样本（$D(x) \to 1$）和虚假样本（$D(G(z)) \to 0$）。
+- 生成器 G 的目标是最小化这个表达式，即让判别器将生成的样本误判为真实样本（$D(G(z)) \to 1$）。
+在理论上，当达到纳什均衡时，$p_G = p_{\text{data}}$，判别器无法区分真假，对所有输入的输出均为 $1/2$。
+
+#### Challenges and Solutions
+GAN 的训练非常不稳定，常见的问题包括：
+- 模式崩溃 (Mode Collapse): 生成器只学会了生成少数几种能够欺骗判别器的样本，而没有学习到整个数据分布的多样性。
+- 梯度消失: 如果判别器训练得太好，它能轻易地区分真假样本，导致生成器的梯度消失，无法继续学习。
+为了解决这些问题，研究者提出了许多变体：
+- WGAN (Wasserstein GAN): 使用 Wasserstein 距离代替原始 GAN 的 JS 散度作为损失函数。Wasserstein 距离即使在两个分布没有重叠时也能提供有意义的梯度，从而缓解了梯度消失和模式崩溃问题。
+- Conditional GAN (CGAN): 通过向生成器和判别器提供额外的条件信息 $y$（如类别标签），可以控制生成样本的属性。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 能够生成非常清晰、逼真的图像，通常优于 VAEs。
+    - 训练过程不需要直接计算复杂的概率密度函数。
+- 缺点:
+    - 训练过程不稳定，需要仔细调整超参数和网络架构。
+    - 容易发生模式崩溃。
+    - 评估生成模型的质量很困难。
+
+#### Task
+高质量图像生成、图像到图像翻译 (Pix2Pix, CycleGAN)、超分辨率、数据增强等。
+
+### Diffusion Models
+
+扩散模型是近年来在图像生成领域取得巨大成功的一类生成模型。
+
+#### Model Architecture and Process
+扩散模型包含两个过程：
+1.  前向过程 (Forward/Diffusion Process): 这是一个固定的、非学习的过程。它从一个真实数据样本 $\mathbf{x}_0$ 开始，通过 $T$ 个步骤逐渐向其添加高斯噪声，直到最终得到一个纯粹的噪声样本 $\mathbf{x}_T \sim N(0, I)$。
+    $$\mathbf{x}_t = \sqrt{\alpha_t} \mathbf{x}_{t-1} + \sqrt{1 - \alpha_t} \mathbf{\epsilon}_{t-1}, \quad \text{where } \epsilon \sim N(0, I)$$
+    一个重要的性质是，任意时刻的 $\mathbf{x}_t$ 都可以直接从 $\mathbf{x}_0$ 通过以下公式得到：
+    $$\mathbf{x}_t = \sqrt{\bar{\alpha}_t} \mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t} \mathbf{\epsilon}$$
+    其中 $\bar{\alpha}_t = \prod_{i=1}^t \alpha_i$。
+2.  反向过程 (Reverse/Denoising Process): 这是一个学习的过程。模型（通常是一个 U-Net 架构的神经网络）学习如何从一个噪声样本 $\mathbf{x}_t$ 中预测并移除噪声，以逐步恢复出更干净的样本 $\mathbf{x}_{t-1}$。这个过程从纯噪声 $\mathbf{x}_T$ 开始，迭代 $T$ 次，最终生成一个干净的样本 $\mathbf{x}_0$。
+
+#### Training Objective
+模型被训练来预测在给定 $\mathbf{x}_t$ 的情况下，添加到 $\mathbf{x}_0$ 中以产生 $\mathbf{x}_t$ 的噪声 $\mathbf{\epsilon}$。训练目标通常是一个简单的均方误差损失：
+$$L = E_{t, \mathbf{x}_0, \mathbf{\epsilon}} \left[ ||\mathbf{\epsilon} - \mathbf{\epsilon}_{\theta}(\mathbf{x}_t, t)||^2 \right]$$
+其中 $\mathbf{\epsilon}_{\theta}$ 是我们的神经网络。这个目标函数可以被证明是变分下界（ELBO）的一个简化和加权版本。
+
+#### Sampling
+采样过程就是反向过程的迭代应用。从一个纯噪声样本 $\mathbf{x}_T \sim N(0, I)$ 开始，对于 $t = T, \dots, 1$：
+$$\mathbf{x}_{t-1} = \frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t - \frac{1-\alpha_t}{\sqrt{1-\bar{\alpha}_t}}\mathbf{\epsilon}_{\theta}(\mathbf{x}_t, t)\right) + \sigma_t \mathbf{z}$$
+其中 $\mathbf{z} \sim N(0, I)$ 是一个随机噪声项。
+
+#### Variants (DDIM, LDM)
+- DDIM (Denoising Diffusion Implicit Models): 提出了一种非马尔可夫的前向过程，使得在采样时可以跳过一些步骤，从而大大加快了生成速度，而图像质量几乎没有损失。
+- LDM (Latent Diffusion Models), e.g., Stable Diffusion: 为了解决在像素空间进行扩散计算成本高昂的问题，LDM 首先使用一个预训练的自编码器（如 VAE）将图像压缩到一个低维的潜空间，然后在潜空间中执行扩散和去噪过程，最后再由解码器将潜码恢复为图像。这极大地降低了计算和内存需求。
+
+#### Advantages and Disadvantages
+- 优点:
+    - 能够生成质量极高且多样性丰富的图像，在许多基准测试上超越了 GANs。
+    - 训练过程相对稳定。
+- 缺点:
+    - 传统的采样过程（如 DDPM）非常缓慢，需要数百到数千次迭代才能生成一个样本。尽管 DDIM 等技术可以加速，但通常仍比 GANs 慢。
+
+#### Task
+高质量的无条件和有条件图像生成（包括文本到图像、图像修复等），视频生成，音频合成，分子结构生成等。
+
+# Other Applications and Concepts
+
+本部分将简要介绍深度学习模型，特别是前文讨论的高级模型，在一些前沿和具体应用中的实现。内容严格依据您提供的PPT，重点展示这些模型如何被应用于解决实际问题。
+
+## Generative Model Applications
+
+深度生成模型，特别是VAE、GAN和Diffusion模型，已经催生了大量创造性的应用，从图像合成、编辑到跨模态生成。
+
+### Text-to-Image Synthesis
+
+这是生成模型最引人注目的应用之一，目标是根据文本描述生成相应的图像。
+
+#### Key Models
+- DALL-E 2: 这是OpenAI开发的一个强大的文本到图像模型。其核心思想是利用CLIP（Contrastive Language-Image Pre-Training）模型学习到的联合表示空间。
+    1.  **CLIP训练 (Step-1)**: 首先训练一个CLIP模型，它包含一个文本编码器和一个图像编码器，使得匹配的文本-图像对在潜空间中的表示尽可能接近。
+    2.  **Prior训练 (Step-2)**: 训练一个"先验"模型（可以是自回归模型或扩散模型），学习从一个CLIP文本嵌入生成对应的CLIP图像嵌入。
+    3.  **Decoder训练 (Step-3)**: 训练一个图像解码器（通常是扩散模型），该解码器以CLIP图像嵌入为条件，生成最终的高分辨率图像。
+    这个分阶段的过程允许模型解耦文本理解和图像合成，提高了生成质量和对文本的遵循度。
+- Imagen: 这是Google提出的模型，其特点是使用了强大的预训练语言模型（如T5）作为文本编码器，并且整个生成过程都在像素空间通过级联的扩散模型完成，而没有像DALL-E 2那样使用一个共享的潜空间。它首先生成一个低分辨率图像，然后通过一系列超分辨率扩散模型逐步提升图像的分辨率。Imagen的成功表明，一个非常强大的文本编码器对于生成高质量、符合文本描述的图像至关重要。
+- Stable Diffusion: 这是一个基于潜扩散模型（Latent Diffusion Model, LDM）的开源文本到图像模型。它首先使用一个VAE的编码器将图像压缩到一个低维的潜空间，然后在该潜空间中进行扩散过程，最后用VAE的解码器将去噪后的潜码恢复为高分辨率图像。由于扩散过程在低维空间进行，其计算效率远高于在像素空间操作的模型，使其能够在消费级硬件上运行。
+- Parti Model (Google): 这是一个基于自回归方法的模型。它将图像分词（tokenize）为一系列离散的视觉词元（visual tokens），然后像训练语言模型（如GPT）一样，以文本描述为条件，自回归地预测下一个视觉词元，最终生成完整的图像词元序列并解码为图像。
+
+#### Summary of Framework
+这些先进的文本到图像模型通常遵循一个通用的多模态框架：
+1.  **Text Encoder**: 一个强大的模块（通常是Transformer）将输入的文本提示编码为一个丰富的语义表示。
+2.  **Generation Model**: 一个生成模型（自回归、扩散模型等）以文本表示为条件，生成一个中间表示（如CLIP图像嵌入、潜码或低分辨率图像）。
+3.  **Image Decoder**: 一个解码器（扩散模型的超分辨率部分、VAE解码器等）将中间表示转换为最终的高分辨率图像。
+这个框架的成功依赖于大数据（如LAION-5B）、大模型和大量的计算资源。
+
+### Cross-Modality and Downstream Applications
+
+生成模型的能力已经超越了简单的文本到图像生成，扩展到了更复杂的编辑和跨模态任务。
+- DreamBooth: 一种“主题驱动”的生成技术。用户只需提供一个特定主体（如一只宠物狗）的少量（3-5张）图片，就可以对一个预训练的文本到图像模型进行微调，使其能够生成该特定主体在不同场景、姿态和风格下的全新图像。
+- ControlNet: 允许对预训练的扩散模型进行更精细的空间控制。它通过一个额外的可训练网络分支，将边缘图、人体姿态骨架、深度图等条件信息注入到扩散模型的去噪过程中，从而可以精确地控制生成图像的结构和构图。
+- InstructPix2Pix: 这是一个基于指令的图像编辑模型。它能够理解人类的编辑指令（如“把向日葵换成玫瑰”），并对输入图像进行相应的修改。该模型通常基于GPT-3等大型语言模型来理解指令，并结合扩散模型来执行编辑。
+
+### Text-to-3D Synthesis
+
+这是生成模型领域的一个新兴且激动人心的方向。
+- NeRF (Neural Radiance Field)的应用: NeRF提供了一种连续的3D场景表示，这为从2D生成模型扩展到3D提供了桥梁。
+- DreamFusion: 该模型利用一个预训练的2D文本到图像扩散模型（如Imagen）作为“知识先验”，通过一种称为Score Distillation Sampling (SDS)的技术，来优化一个3D表示（如NeRF）。它在没有3D训练数据的情况下，能够从文本生成高质量的3D模型。
+- Magic3D (NVIDIA) 和 Point-E (OpenAI): 这些模型进一步发展了文本到3D的技术，通常采用粗到精的策略，先生成低分辨率的粗糙表示，再逐步优化细节，以提高生成速度和质量。
+- InstructNeRF2NeRF: 类似于InstructPix2Pix，该模型允许用户通过文本指令来编辑一个已经构建好的NeRF场景。
+
+## Vision Transformers (ViT) and Unification
+
+Transformer架构最初为NLP设计，但其成功引发了将其应用于计算机视觉的浪潮，旨在统一AI领域的基础模型。
+
+### iGPT (Image GPT)
+
+iGPT是OpenAI将GPT模型应用于图像生成的早期尝试。
+- 核心思想: 将图像展平为一个像素序列，然后像处理文本一样，使用一个自回归的Transformer模型来预测下一个像素。
+- 应用: 可以用于图像补全（completion）和无监督特征学习。在CIFAR-10等数据集上，通过iGPT预训练后进行线性探测（linear probing）或微调，可以获得与有监督方法相媲美的分类性能，证明了生成式预训练在视觉领域的潜力。
+
+### DALL-E
+
+DALL-E（第一代）是另一个将GPT思想用于视觉的力作。它将文本和图像都分词为离散的词元序列，然后训练一个巨大的自回归Transformer模型来联合建模这些序列。这使得模型能够从文本生成图像，并且还能进行零样本的图像到图像转换。
+
+### Vision Transformer ([[ViT]])
+
+ViT是Google提出的一个直接将Transformer架构应用于图像分类的模型，取得了巨大成功。
+- 核心思想: 不再依赖卷积。它将输入图像分割成一系列固定大小的图像块（patches），将每个图像块线性嵌入为一个向量，并添加位置编码，然后将这个向量序列输入到一个标准的Transformer编码器中进行处理。最后，使用一个特殊的 `[CLS]` 令牌的最终输出来进行分类。
+- 意义: ViT的成功挑战了CNN在计算机视觉领域的统治地位，表明基于自注意力的架构也能够学习到强大的视觉表示，开启了视觉和NLP模型统一的大门。Swin Transformer等后续工作通过引入视觉先验（如层次化和局部性）进一步提升了性能，使其在目标检测、分割等密集预测任务上也超越了CNN。
+
+## Neural Rendering Applications
+
+神经渲染结合了计算机图形学和深度学习，旨在从数据中学习可控的、逼真的场景表示。
+
+### Neural Human Rendering
+
+这是神经渲染的一个重要应用方向，目标是创建和控制逼真的人体数字替身。
+- DVP (Deep Video Portraits): 使用一个编码器-解码器框架，将一个源视频中人物的动作和表情迁移到一个目标人物上。它首先从源视频和目标视频中提取3D模型参数（姿态、表情等），然后将源视频的运动参数应用到目标人物的模型上，生成一个合成的中间表示（渲染图、法线图等），最后通过一个图像到图像的转换网络（如pix2pix）将这个中间表示渲染成逼真的视频帧。
+- Everybody Dance Now: 这是一个动作迁移的例子。它首先从一个源视频（如专业舞者）中提取人体骨架姿态序列，然后训练一个条件GAN（cGAN），以源姿态序列和目标人物的单张图片为条件，生成目标人物做出相同舞蹈动作的视频。
+- 动态场景的神经引擎: 近期的研究（如Neural Animated Mesh, Instant-NVR）致力于构建能够实时渲染动态场景（特别是人体）的系统。这些系统通常利用神经表示（如NeRF的变体）来建模4D时空流形，并开发高效的特征表示（如Fourier PlenOctrees, Tri-plane representation）和压缩技术，以实现实时、高质量的自由视角渲染和编辑。这些技术在虚拟现实、数字人和远程呈现等领域有巨大潜力。
 

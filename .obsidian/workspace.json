@@ -32,30 +32,6 @@
             }
           },
           {
-            "id": "d2410da79cf8e9e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Deep Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Deep Learning"
-            }
-          },
-          {
             "id": "e29236a0aed21998",
             "type": "leaf",
             "state": {
@@ -78,30 +54,6 @@
               "icon": "lucide-file",
               "title": "Conditioning Matters"
             }
-          },
-          {
-            "id": "460a3c6aaf79d5ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/Masked Auto Encoder.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Masked Auto Encoder"
-            }
           }
         ]
       },
@@ -117,9 +69,9 @@
               "state": {
                 "file": "Paper/PDF/2010.11929v2.pdf",
                 "page": 3,
-                "left": 60,
-                "top": 474,
-                "zoom": 0.88
+                "left": -11,
+                "top": 362,
+                "zoom": 1.317401960784314
               },
               "icon": "lucide-file-text",
               "title": "2010.11929v2"
@@ -281,7 +233,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/ViT.md",
+                "file": "Paper/PDF/2010.11929v2.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +243,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ViT"
+              "title": "Backlinks for 2010.11929v2"
             }
           },
           {
@@ -320,7 +272,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/ViT.md",
+                "file": "Paper/PDF/2010.11929v2.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -348,7 +300,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ViT"
+              "title": "Graph of 2010.11929v2"
             }
           }
         ]
@@ -374,16 +326,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0d494ccfaa631af0",
+  "active": "4409db2eb0dc5914",
   "lastOpenFiles": [
-    "Paper/PDF/2010.11929v2.pdf",
     "Paper/ViT.md",
+    "Paper/PDF/2010.11929v2.pdf",
+    "Paper/Conditioning Matters.md",
     "Lecture/Deep Learning.md",
+    "Paper/Masked Auto Encoder.md",
     "Lecture/Machine Learning.md",
     "Lecture/Artificial Intelligence.md",
     "Lecture/Hidden Markov Model.md",
-    "Paper/Masked Auto Encoder.md",
-    "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
     "Assets/Pasted image 20251030212859.png",
