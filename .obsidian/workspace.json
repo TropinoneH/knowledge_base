@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d494ccfaa631af0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/ViT.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ViT"
-            }
-          },
-          {
-            "id": "e29236a0aed21998",
+            "id": "7b21c92b57a3954a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,29 +30,38 @@
               "icon": "lucide-file",
               "title": "Conditioning Matters"
             }
+          },
+          {
+            "id": "e29236a0aed21998",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/FlowMatching.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "FlowMatching"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "363f9be3567338d8",
         "type": "tabs",
         "children": [
-          {
-            "id": "4409db2eb0dc5914",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2010.11929v2.pdf",
-                "page": 3,
-                "left": -11,
-                "top": 362,
-                "zoom": 1.317401960784314
-              },
-              "icon": "lucide-file-text",
-              "title": "2010.11929v2"
-            }
-          },
           {
             "id": "3aada75bf62dd74d",
             "type": "leaf",
@@ -85,15 +70,32 @@
               "state": {
                 "file": "Paper/PDF/2505.11123v1.pdf",
                 "page": 1,
-                "left": -22,
-                "top": 658,
-                "zoom": 0.6678921568627452
+                "left": -106,
+                "top": 753,
+                "zoom": 0.67
               },
               "icon": "lucide-file-text",
               "title": "2505.11123v1"
             }
+          },
+          {
+            "id": "2f3b256361fe8a0f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2210.02747v2.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 722,
+                "zoom": 0.8517156862745098
+              },
+              "icon": "lucide-file-text",
+              "title": "2210.02747v2"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -233,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/PDF/2010.11929v2.pdf",
+                "file": "Paper/FlowMatching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +246,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2010.11929v2"
+              "title": "Backlinks for FlowMatching"
             }
           },
           {
@@ -272,7 +275,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/PDF/2010.11929v2.pdf",
+                "file": "Paper/FlowMatching.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -300,7 +303,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2010.11929v2"
+              "title": "Graph of FlowMatching"
             }
           }
         ]
@@ -326,17 +329,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4409db2eb0dc5914",
+  "active": "e29236a0aed21998",
   "lastOpenFiles": [
-    "Paper/ViT.md",
-    "Paper/PDF/2010.11929v2.pdf",
     "Paper/Conditioning Matters.md",
+    "Paper/PDF/2210.02747v2.pdf",
+    "Paper/FlowMatching.md",
+    "Paper/PDF/2505.11123v1.pdf",
+    "Paper/PDF/2210.02747v2_FlowMatching.pdf",
+    "Bases/Paper.base",
+    "Paper/Qwen2.5VL.md",
+    "Paper/PDF/2010.11929v2.pdf",
+    "Paper/ViT.md",
     "Lecture/Deep Learning.md",
     "Paper/Masked Auto Encoder.md",
     "Lecture/Machine Learning.md",
     "Lecture/Artificial Intelligence.md",
     "Lecture/Hidden Markov Model.md",
-    "Paper/PDF/2505.11123v1.pdf",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
@@ -359,14 +367,9 @@
     "Topic/Git.md",
     "Topic/Lecture Notes.md",
     "Knowledges/SSH Forward.md",
-    "Knowledges/Slurm.md",
-    "Lecture/Electric Circuits.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/EE111-F25Lec5-1st-Order Circuits.pdf",
-    "Lecture/Slides/EE110-F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",

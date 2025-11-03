@@ -9,7 +9,7 @@ tags:
 publish: ICLR 2021
 pdf: "[[Paper/PDF/2010.11929v2.pdf]]"
 rate: 🌟🌟🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[Paper/PDF/2010.11929v2.pdf]]
@@ -40,5 +40,44 @@ pipeline:
 > 
 > 根据self attention, 每一个token都会和其他的token进行交互, 因此这个token的主要作用就是汇集其他的tokens的信息. 最终对图片进行分类的时候, 只提取这一个token的embeding vector, 送入[[2010.11929v2.pdf#page=3&selection=206,6,206,24|分类头]]中进行MLP forward, 得到最终分类的概率
 
+> [!PDF|] [[2010.11929v2.pdf#page=3&selection=208,0,208,19|2010.11929v2, p.3]]
+> > Position embeddings
+> 
+> 使用一个nn.Embeddings作为Positional Embedding. 这个positional embedding是通过学习学到的, 表示每一个patch在原来图片中的位置. 但是这个embeds只能适用于相同大小的图片, 相同的patch size, 不支持修改分辨率.
+> 
+> 证明这个embedding就是positional embedding:
+> ![[2010.11929v2.pdf#page=9&rect=101,513,512,707|2010.11929v2, p.9]]
 
+> [!PDF|] [[2010.11929v2.pdf#page=3&selection=214,4,214,23|2010.11929v2, p.3]]
+> > Transformer encoder
+> 
+> 最重要的[[Transformer]]模块将image提取信息, 由[[2010.11929v2.pdf#page=13&selection=279,0,285,9|多头自注意力(MSA)]]和[[Deep Learning#Multi-Layer Network|MLP]]交替层组成.同时, 在每个block之前使用layernorm归一化处理, 每一个block之后使用残差连接.
+> 
+> $$z'_l=MSA(LN(z_{l-1}))+z_{l-1}$$
+> $$z_l=MLP(LN(z'_l))+z'_l$$
 
+> [!PDF|] [[2010.11929v2.pdf#page=4&selection=130,0,130,15|2010.11929v2, p.4]]
+> > Inductive bias.
+> 
+> ViT比[[Deep Learning#Convolutional Neural Networks (CNNs)|CNN]]有更少的归纳偏差, 因为只有MLP层和positional embedding具有平移等变性. 因此, ViT在大数据中表现更好, 有更强的通用性, CNN在小规模的数据上有更好的表现.
+> 
+> > [!tip]- 平移等变性
+> > 平移等变性是指, 如果输入改变, 那么模型会精确的捕捉到这个改变, 并反映在输出中.
+> > 
+> > 在CNN中, 模型有非常强的平移等变性: 模型只关注local的信息(kernal), 不关心全局的位置信息. 即, 一个物体在图片中的任何位置都只会得到有这个物体, 而不会关注其空间位置信息. 需要添加其他的模型获取空间位置信息.
+
+> [!PDF|] [[2010.11929v2.pdf#page=4&selection=142,0,143,0|2010.11929v2, p.4]]
+> > Hybrid Architecture.
+> 
+> 同时, ViT可以使用CNN提取到的Features作为输入, 并不一定需要是原始的image
+
+> [!PDF|] [[2010.11929v2.pdf#page=4&selection=158,0,167,9|2010.11929v2, p.4]]
+> > FINE-TUNING AND HIGHER RESOLUTION
+> 
+> 对于Fine-Tuning, 首先在一个大规模的数据上进行pretrain, 然后移除pretrain的prediction head, 然后换成一个新的预测头(可以是`nn.Linear(hidden_dim, num_classes)`)
+> 
+> 对于高分辨率的图片, 可以拼接, 但是会导致positional embeddings没有意义. 可以使用插值的方式(离谱)获得更多的position embeds
+
+后续最重要的一个改进就是positional embedding的改进:
+- 相对位置编码 RPE
+- 旋转位置编码 RoPE
