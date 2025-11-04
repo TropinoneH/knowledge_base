@@ -85,9 +85,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2210.02747v2.pdf",
-                "page": 1,
+                "page": 4,
                 "left": -18,
-                "top": 722,
+                "top": 553,
                 "zoom": 0.8517156862745098
               },
               "icon": "lucide-file-text",
@@ -331,9 +331,10 @@
   },
   "active": "e29236a0aed21998",
   "lastOpenFiles": [
-    "Paper/Conditioning Matters.md",
     "Paper/PDF/2210.02747v2.pdf",
     "Paper/FlowMatching.md",
+    "Lecture/Electric Circuits.md",
+    "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Paper/PDF/2210.02747v2_FlowMatching.pdf",
     "Bases/Paper.base",
@@ -366,7 +367,6 @@
     "Topic/SSH.md",
     "Topic/Git.md",
     "Topic/Lecture Notes.md",
-    "Knowledges/SSH Forward.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2406.09246.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
