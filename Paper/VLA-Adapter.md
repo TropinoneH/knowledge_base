@@ -16,6 +16,8 @@ done: true
 > [!note]- paper
 ![[Paper/PDF/2509.09372v2.pdf]]
 
+[Github Repo](https://github.com/OpenHelix-Team/VLA-Adapter)
+
 > [!PDF|] [[2509.09372v2.pdf#page=1&selection=150,40,151,66|2509.09372v2, p.1]]
 > > In this paper, we investigate how to effectively bridge vision-language (VL) representations to action (A). 
 > 

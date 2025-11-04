@@ -14,7 +14,7 @@ done: true
 > [!note]- paper
 ![[Paper/PDF/2111.06377v3.pdf]]
 
-MAE: Masked Auto-Encoder
+[MAE: Masked Auto-Encoder](https://github.com/facebookresearch/mae)
 
 Motivation: 将NLP领域的遮罩预测方法(以[[BERT]]为例子)应用到视觉领域
 - 使用[[2111.06377v3.pdf#page=1&selection=35,7,39,28|非对称的Encoder-Decoder框架]]

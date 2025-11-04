@@ -16,6 +16,8 @@ done: true
 > [!note]- paper
 ![[Paper/PDF/2406.09246v3.pdf]]
 
+[Github Repo](https://github.com/openvla/openvla)
+
 7B-parameter vision-language-action model, [[Transformer]]
 
 基于[[LLaMA2]], 结合使用了[[DINOv2]]和[[SigLip]]的pretrained visual encoder. 可以使用[[LoRA]]进行微调.

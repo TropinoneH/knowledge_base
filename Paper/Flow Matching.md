@@ -10,10 +10,12 @@ tags:
 publish: NeurIPS 2024
 pdf: "[[Paper/PDF/2210.02747v2.pdf]]"
 rate: 🌟🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[Paper/PDF/2210.02747v2.pdf]]
+
+[Github Repo](https://github.com/facebookresearch/flow_matching)
 
 > [!tip] 快速理解
 > 按照物理的运动学理解加噪去噪的过程.
@@ -87,7 +89,7 @@ done: false
 > 
 > 那么给定原始分布的一个采样$x_1$, 使用$p_t(x|x_1)$表示在$x_1$作为条件下的概率分布. 在时间步$t=0$时有噪声$p_0(x|x_1)=p(x)$, 最终的去噪结果被设计为$p_1(x|x_1)=\mathcal N(x|x_1,\sigma^2I)$(一个均值为$x_1$且标准差$\sigma>0$足够小的正态分布, 至于为什么这么设计, 可以看下面的marginal probability的计算)
 > 
-> 计算边缘概率分布:
+> 计算边缘概率路径:
 > $$p_t(x)=\int p_t(x|x_1)q(x_q)dx_1$$
 > 
 > 当时间步$t=1$的时候, 计算结果为:
@@ -128,5 +130,65 @@ done: false
 > 
 > 当t=0的时候, 令$\mu_0(x_1)=0,\sigma_0(x_1)=1$, 成为一个标准的正态分布; 当t=1的时候, 令$\mu_1(x_1)=x_1,\sigma_1(x_1)=\sigma_{\text{min}}$
 
+> [!PDF|] [[2210.02747v2.pdf#page=4&selection=423,0,434,1|2210.02747v2, p.4]]
+> > There is an infinite number of vector fields that generate any particular probability path (e.g., by adding a divergence free component to the continuity equation, see equation 26), but the vast majority of these is due to the presence of components that leave the underlying distribution invariant—for instance, rotational components when the distribution is rotation-invariant—leading to unnecessary extra compute. We decide to use the simplest vector field corresponding to a canonical transformation for Gaussian distributions. Specifically, consider the flow (conditioned on $x_1$)
+> 
+> 实际上, 有非常多种不同的路径从高斯分布到原始数据分布. 为了防止不必要的计算, 在此处Flow Matching 选择了最简单的一种: 使用高斯分布的正则变换对应的速度(向量场):
+> $$\psi_t(x)=\sigma_t(x_1)x+\mu_t(x_1)$$
+> 
+> 如果输入的$x$也服从正态分布(高斯分布), 那么$\psi_t$就是一个仿射变换, 将其映射到一个均值为$\mu_t(x_1)$, 标准差为$\sigma_t(x_1)$的正态分布中, 即:
+> $$[\psi_t]*p_0(x|x_1)=p_t(x|x_1)$$
+> 
+> 同时, 其速度向量场为
+> $$\frac{d}{dt}\psi_t(x)=u_t(\psi_t(x)|x_1)$$
+> 
+> 代入CFM objective function中, 有
+> $$\mathcal L_{CFM}(\theta)=\|v_t(\psi_t(x_0))-\frac{d}{dt}\psi_t(x_0)\|^2$$
+> 
+> 由于$\psi_t$是一个简单的仿射变换, 因此求$\frac{d}{dt}\psi_t$比较简单, 因此可以求解闭式解
 
+> [!PDF|] [[2210.02747v2.pdf#page=5&selection=2,0,2,9|2210.02747v2, p.5]]
+> > Theorem 3
+> 
+> 根据这个定理, 我们可以将$u_t(x|x_1)$转换成与高斯分布的参数相关的函数:
+> $$u_t(x|x_1)=\frac{\sigma'_t(x_1)}{\sigma_t(x_1)}(x-\mu_t(x_1))+\mu'_t(x_1)$$
 
+现在已经有了最终的loss函数, 并且将速度进行了拆分, 只和高斯噪声参数的时间函数有关. 接下来尝试对参数时间函数进行建模.
+
+有两种思路进行建模:
+
+> [!PDF|] [[2210.02747v2.pdf#page=5&selection=131,11,132,0|2210.02747v2, p.5]]
+> > Diffusion conditional VFs.
+> 
+> 使用Diffusion的思路对向量场建模. 
+> 
+> 根据[[Diffusion]]的相关推导, 最终获取向量场的函数为:
+> $$\begin{aligned}u_t(x|x_1)&=\frac{\alpha_{1-t}'}{1-\alpha^2_{1-t}}(\alpha_{1-t}x-x_1)\\&=-\frac{T'(1-t)}{2}\left[\frac{e^{-T(1-t)}x-e^{-\frac{1}{2}T(1-t)}x_1}{1-e^{-T(1-t)}}\right]\end{aligned}$$
+
+> [!PDF|] [[2210.02747v2.pdf#page=5&selection=540,12,540,45|2210.02747v2, p.5]]
+> > Optimal Transport conditional VFs
+> 
+> OT路径(最优传输条件向量场)
+> 
+> 直接假设$\mu_t(x)=tx_1,\sigma_t(x)=1-(1-\sigma_{\text{min}})t$
+> 
+> 因此最终的速度场为:
+> $$u_t(x|x_1)=\frac{x_1-(1-\sigma_{\text{min}})x}{1-(1-\sigma_{\sigma_{\text{min}}})t}$$
+
+根据实验可知, OT路径有更高的速度, 并且能避免Diffusion路径的一些问题(如[[2210.02747v2.pdf#page=6&selection=301,1,301,10|overshoot]]). 因此直接无脑使用OT即可.
+> [!tip] 速度更快的原因的猜测
+> ![[2210.02747v2.pdf#page=6&rect=377,312,511,404|2210.02747v2, p.6]]
+> 可能是因为OT路径学习的是多个直线的去噪, diffusion本身去尝试拟合一条曲线. 因此OT的ODE更加平滑, 使用NFE(Number of Function Evaluation)次数更少
+> 
+> 同时OT的向量场更加简单, 因此有更加快的训练速度
+
+最终使用OT的flow:
+$$\psi_t(x)=(1-(1-\sigma_{\text{min}})t)x+tx_1$$
+CFM objective function:
+$$\mathcal L_{CFM}(\theta)=\mathbb E_{t,q(x_1),p(x_0)}\left\|v_t(\psi_t(x_0)-\left(x_1-(1-\sigma_{\text{min}})x_0\right)\right\|^2$$
+
+因此, 对于概率分布的概率路径可以写成:
+$$p_t=[(1-t)\text{id}+t\psi]*p_0$$
+其中:
+- $\text{id}$表示一个恒等变换
+- $\psi$是OT映射, 将 $p_0$ push-forward 到 $p_1$

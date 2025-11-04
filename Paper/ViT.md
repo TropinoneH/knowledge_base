@@ -14,6 +14,8 @@ done: true
 > [!note]- paper
 ![[Paper/PDF/2010.11929v2.pdf]]
 
+[Github Repo](https://github.com/lucidrains/vit-pytorch)
+
 Motivation: 将[[Transformer]]架构应用给 #ComputerVision 领域, 证明了可以完全抛弃[[Deep Learning#Convolutional Neural Networks (CNNs)|CNN]]架构
 
 > [!PDF|] [[2010.11929v2.pdf#page=1&selection=104,48,104,94|2010.11929v2, p.1]]

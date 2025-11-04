@@ -15,6 +15,8 @@ done: true
 > [!note]- paper
 > ![[2502.13923v1.pdf]]
 
+[Huggingface Repo](https://huggingface.co/docs/transformers/main/en/model_doc/qwen2_5_vl)
+
 pipeline:
 ![[2502.13923v1.pdf#page=3&rect=46,466,543,782|2502.13923v1, p.3]]
 

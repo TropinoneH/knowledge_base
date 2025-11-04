@@ -17,6 +17,11 @@ done: false
 > [!note]- paper
 > ![[2508.21112v3.pdf]]
 
+[Huggingface Repo](https://huggingface.co/collections/IPEC-COMMUNITY/eo-robotics)
+
+> [!warning]+ 
+> 截止目前为止, 仍然未上传训练代码
+
 > [!PDF|teal] [[2508.21112v3.pdf#page=1&selection=56,33,57,70&color=teal|2508.21112v3, p.1]]
 > > a unified architecture that processes multimodal inputs indiscriminately
 > 
