@@ -68,9 +68,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2505.11123v1.pdf",
-                "page": 4,
-                "left": 100,
-                "top": 470,
+                "page": 2,
+                "left": -62,
+                "top": 414,
                 "zoom": 1.29
               },
               "icon": "lucide-file-text",
@@ -332,6 +332,7 @@
   "lastOpenFiles": [
     "Paper/PDF/2505.11123v1.pdf",
     "Paper/Conditioning Matters.md",
+    "Paper/Flow Matching.md",
     "Paper/Diffusion Policy.md",
     "Paper/PDF/2303.04137v5.pdf",
     "Paper/VLA-Adapter.md",
@@ -340,7 +341,6 @@
     "Paper/OpenVLA.md",
     "Paper/Masked Auto Encoder.md",
     "Paper/EO-1.md",
-    "Paper/Flow Matching.md",
     "Paper/PDF/2210.02747v2.pdf",
     "Assets/BT1062-lec1.pdf",
     "Lecture/Electric Circuits.md",
