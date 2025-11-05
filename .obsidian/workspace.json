@@ -68,10 +68,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2505.11123v1.pdf",
-                "page": 2,
-                "left": -62,
-                "top": 414,
-                "zoom": 1.29
+                "page": 4,
+                "left": -18,
+                "top": 268,
+                "zoom": 0.8517156862745098
               },
               "icon": "lucide-file-text",
               "title": "2505.11123v1"
@@ -80,7 +80,6 @@
           {
             "id": "ff18140756da76e2",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
