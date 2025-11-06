@@ -600,7 +600,7 @@
         }
       },
       "active": "bab1db2919d53990",
-      "mtime": "2025-10-28T19:41:48+08:00"
+      "mtime": "2025-11-06T08:54:02+08:00"
     },
     "paper": {
       "main": {
@@ -612,7 +612,7 @@
             "type": "tabs",
             "children": [
               {
-                "id": "7b21c92b57a3954a",
+                "id": "3d4309e9322a73a2",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -636,12 +636,12 @@
                 }
               },
               {
-                "id": "e29236a0aed21998",
+                "id": "7b21c92b57a3954a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/FlowMatching.md",
+                    "file": "Paper/Diffusion Policy.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -656,11 +656,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "FlowMatching"
+                  "title": "Diffusion Policy"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "363f9be3567338d8",
@@ -673,33 +672,32 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2505.11123v1.pdf",
-                    "page": 1,
-                    "left": -106,
-                    "top": 753,
-                    "zoom": 0.67
+                    "page": 2,
+                    "left": 75,
+                    "top": 404,
+                    "zoom": 1.23
                   },
                   "icon": "lucide-file-text",
                   "title": "2505.11123v1"
                 }
               },
               {
-                "id": "2f3b256361fe8a0f",
+                "id": "ff18140756da76e2",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2210.02747v2.pdf",
+                    "file": "Paper/PDF/2303.04137v5.pdf",
                     "page": 1,
-                    "left": -18,
-                    "top": 792,
-                    "zoom": 0.8517156862745099
+                    "left": -17,
+                    "top": 741,
+                    "zoom": 0.8756442389748622
                   },
                   "icon": "lucide-file-text",
-                  "title": "2210.02747v2"
+                  "title": "2303.04137v5"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -933,8 +931,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "e29236a0aed21998",
-      "mtime": "2025-11-04T08:20:24+08:00"
+      "active": "3d4309e9322a73a2",
+      "mtime": "2025-11-06T08:40:00+08:00"
     }
   },
   "active": "paper"

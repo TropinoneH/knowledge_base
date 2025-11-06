@@ -34,8 +34,33 @@ Motivation: 尝试解决[[Diffusion Policy]]等方法对机器人action的训练
 > - 上限$\|\nabla_\theta v_\theta\|\leq M$
 > - 上限$\|d\|\leq D$
 > 
-> 于是模型对相似condition的loss优化相同, 最终[[2505.11123v1.pdf#page=4&selection=412,3,413,14|目标loss函数会退化成边缘分布]]
->
+> 于是模型对相似condition的loss优化相同, 最终[[2505.11123v1.pdf#page=4&selection=412,3,413,14|目标loss函数会退化成边缘分布]], 学习的向量场[[2505.11123v1.pdf#page=4&selection=563,1,566,1|与输入的条件c无关]]:
+> $$v*(t,x):=\mathop{\arg\min}_v\mathbb E_{c\in\mathcal C}\mathbb E_{z\sim\mu}\left[\|v(t,x)-u_t(x|x_1,x_0)\|^2\right]$$
 > 
+> 最终会导致在training的时候看起来模型能力比较好, 但是inference的时候发现模型没有学到任何成功的内容
+
+ > [!PDF|] [[2505.11123v1.pdf#page=2&selection=89,3,106,17|2505.11123v1, p.2]]
+> > Rather than adopting a standard Gaussian prior q(z), Cocos anchors the source distribution around the semantics of each condition q(z|c), theoretically preventing training loss collapse and forcing the policy network to remain responsive to condition inputs.
+> 
+> 为了解决上面说到的loss collapse的问题, 文章提出了一种 **co**ndition-**co**nditioned **s**ource distribution(cocos) 的方法: noise不再是一个标准的正态分布, 而是一个锚定在给定condition周围的一个分布$q(z|c)$
+
+pipeline:
+![[2505.11123v1.pdf#page=2&rect=105,605,495,733|2505.11123v1, p.2]]
+
+> [!PDF|] [[2505.11123v1.pdf#page=5&selection=152,0,177,1|2505.11123v1, p.5]]
+> > $q(x_0|c)=\mathcal N(x_0;\alpha F_\phi(\mathcal E(c)),\beta^2I)$
+> 
+> 这个是Cocos中创建与条件相关的噪声的方法.
+> 
+> 首先将language instructions和images提取embeddings:
+> $$e=\mathcal E(c)$$
+> 注意, 该步骤不参与loss的计算
+> 
+> 然后, 设计一个[[Deep Learning#Autoencoder (AE)|AE]], 有编码器($F_\phi$)和解码器($G_\phi$). 参考[[2505.11123v1.pdf#page=6&selection=174,15,175,64|这一部分]], AutoEncoder的Encoder和Decoder都是由一个single-layer的[[Transformer]]组成.
+> 
+> 由于文章中并没有给出Transformer层的具体架构, 因此根据[[2505.11123v1.pdf#page=2&rect=109,665,240,730&color=blue|pipeline]]猜测, 最可能的架构为:
+> - T5-base和[[DINOv2]]提取的features拼接一个nn.Embedding的可学习的query进行Transformer layer([[Deep Learning#Self-Attention|self attention]] + [[Deep Learning#Multi-Layer Network|MLP]])的过程
+> - 把query位置的Encoder输出作为condition, 用于噪声采样
+> - 根据其他的embedding(T5和[[DINOv2]]的embedding对应的位置)送给Decoder进行Self Attention + MLP, 将输出与原始的embedding vector做[[Cosine Similarity|余弦相似度]]的loss
 
 

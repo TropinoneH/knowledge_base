@@ -4,7 +4,7 @@ type: template
 <%*
 tR = ""
 // 1. 设置文件名
-let title = await tp.system.prompt("Topic name(filename)");
+let title = await tp.system.prompt("Paper name(filename)");
 if (title) {
 	await tp.file.rename(title);
 }
