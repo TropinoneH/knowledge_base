@@ -69,9 +69,9 @@
               "state": {
                 "file": "Paper/PDF/2505.11123v1.pdf",
                 "page": 6,
-                "left": 19,
-                "top": 459,
-                "zoom": 0.93
+                "left": 151,
+                "top": 765,
+                "zoom": 2.7
               },
               "icon": "lucide-file-text",
               "title": "2505.11123v1"
@@ -234,7 +234,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/Conditioning Matters.md",
+                "file": "Paper/PDF/2505.11123v1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -244,7 +244,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Conditioning Matters"
+              "title": "Backlinks for 2505.11123v1"
             }
           },
           {
@@ -273,7 +273,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/Conditioning Matters.md",
+                "file": "Paper/PDF/2505.11123v1.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -301,7 +301,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conditioning Matters"
+              "title": "Graph of 2505.11123v1"
             }
           }
         ]
@@ -327,15 +327,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7b21c92b57a3954a",
+  "active": "3aada75bf62dd74d",
   "lastOpenFiles": [
-    "Paper/Diffusion Policy.md",
     "Paper/Conditioning Matters.md",
+    "Paper/PDF/2505.11123v1.pdf",
+    "Paper/Diffusion Policy.md",
     "Knowledges/Cosine Similarity.md",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
     "Templates/Paper Note Template.md",
-    "Paper/PDF/2505.11123v1.pdf",
     "Knowledges/SSH Server.md",
     "Knowledges/Wandb.md",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
@@ -366,7 +366,6 @@
     "Assets/Pasted image 20230424103607.png",
     "Assets/Pasted image 20230424104624.png",
     "Lecture/Pasted image 20230424103607.png.md",
-    "Knowledges/PyTorch Tensor.md",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/PDF/2509.09372v2.pdf",
     "Assets/Pasted image 20251011001149.png",

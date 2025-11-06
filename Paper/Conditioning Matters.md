@@ -60,7 +60,37 @@ pipeline:
 > 
 > 由于文章中并没有给出Transformer层的具体架构, 因此根据[[2505.11123v1.pdf#page=2&rect=109,665,240,730&color=blue|pipeline]]猜测, 最可能的架构为:
 > - T5-base和[[DINOv2]]提取的features拼接一个nn.Embedding的可学习的query进行Transformer layer([[Deep Learning#Self-Attention|self attention]] + [[Deep Learning#Multi-Layer Network|MLP]])的过程
-> - 把query位置的Encoder输出作为condition, 用于噪声采样
+> - 把query位置的Encoder输出作为condition(可能会使用MLP投影到相应维度), 用于噪声采样
 > - 根据其他的embedding(T5和[[DINOv2]]的embedding对应的位置)送给Decoder进行Self Attention + MLP, 将输出与原始的embedding vector做[[Cosine Similarity|余弦相似度]]的loss
 
+> [!PDF|] [[2505.11123v1.pdf#page=5&selection=207,25,207,47|2505.11123v1, p.5]]
+> > autoencoding objective
+> 
+> 对Decoder重建得到的embedding vectors与原始输入的Feature Embeddings进行reconstruction loss, 用于训练Encoder:
+> $$\mathcal L(\phi)=-\mathbb E_c\text{Sim}(G_\phi(F_\phi(\mathcal E(c)),\mathcal E(c))$$
 
+> [!PDF|] [[2505.11123v1.pdf#page=5&selection=257,32,258,26|2505.11123v1, p.5]]
+> > However, in practical scenarios, this two-step pipeline may introduce additional inflexibility. 
+> 
+> [[2505.11123v1.pdf#page=5&selection=256,45,257,31|default的settings]]是, 首先训练AE, 然后再固定AE的权重, 使用AE训练Flow Matching(或者说, Policy Model)
+> 
+> 但是使用2-stage的方法有一定缺点:
+> - 不灵活: 无法针对困难的条件进行特调, 只是学习了一个平均的一个condition(针对输入平均, 没有针对难度进行特调)
+> - 流程繁琐
+> 
+> 因此提出了一个端到端的训练策略. 但是由于在训练的时候, 会更新原始分布$x_0$, 导致得到的policy model不稳定, 于是提出了一个方法: EMA
+> 
+> > [!PDF|]- [[2505.11123v1.pdf#page=5&selection=264,29,264,56|2505.11123v1, p.5]]
+> >  Exponential Moving Average
+> > 
+> > **指数移动平均 (EMA)** 是一种平滑技术，它通过维护一个模型的两个副本来解决训练不稳定的问题：
+> >
+> > 1.  **在线网络 (Online Network):** 正常接收梯度并快速更新的网络。
+> > 2.  **目标网络 (Target Network):** 从不接收梯度，其权重是“在线网络”过去所有权重的一个**指数加权平均**。
+> >
+> > 它的工作机制是，在每次更新“在线网络”后，都通过以下公式极其缓慢地更新“目标网络”：
+> > $$w_t=\tau w_{t-1}+(1-\tau)w'_t$$
+> 
+> 通过EMA算法更新权重, 使权重的变化尽量保持平滑.
+
+![[2505.11123v1.pdf#page=5&rect=106,123,508,247|2505.11123v1, p.5]]
