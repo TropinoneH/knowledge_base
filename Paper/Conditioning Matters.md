@@ -10,7 +10,7 @@ tags:
 publish: arxiv preprint
 pdf: "[[Paper/PDF/2505.11123v1.pdf]]"
 rate: 🌟🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[Paper/PDF/2505.11123v1.pdf]]
