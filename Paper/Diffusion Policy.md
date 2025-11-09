@@ -47,4 +47,7 @@ pipeline:
 > 
 > 为了时间连续性, 并为了最大发挥出diffusion的能力, 一次性生成一个chunk的action sequence. 执行其中一小部分, 然后根据新的observation进行replan, 重新生成新的action, 以执行闭环控制.
 > 
-> 
+> 为了能预测当前的动作, 同时不需要预测未来动作以加速推理, 因此使用DDPM去拟合一个分布$p(A_t|O_t)$而不是原始的联合分布$p(A_t,O_t)$. 此时, 去噪公式变成:
+> $$A_t^{k-1}=\alpha(A_t^k-\gamma\epsilon_\theta(O_t,A_t^k,k)+\mathcal N(0,\sigma^2I))$$
+> Loss变成:
+> $$\mathcal L=\text{MSE}(\varepsilon^k,\epsilon_\theta(O_t,A_t^0+\varepsilon^k,k))$$
