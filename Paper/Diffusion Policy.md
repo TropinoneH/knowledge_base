@@ -51,3 +51,5 @@ pipeline:
 > $$A_t^{k-1}=\alpha(A_t^k-\gamma\epsilon_\theta(O_t,A_t^k,k)+\mathcal N(0,\sigma^2I))$$
 > Loss变成:
 > $$\mathcal L=\text{MSE}(\varepsilon^k,\epsilon_\theta(O_t,A_t^0+\varepsilon^k,k))$$
+
+

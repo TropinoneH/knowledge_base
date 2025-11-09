@@ -69,9 +69,9 @@
               "state": {
                 "file": "Paper/PDF/2303.04137v5.pdf",
                 "page": 3,
-                "left": -17,
-                "top": 639,
-                "zoom": 0.8756442389748622
+                "left": -18,
+                "top": 229,
+                "zoom": 0.8567454424502249
               },
               "icon": "lucide-file-text",
               "title": "2303.04137v5"
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/Diffusion Policy.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +228,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Diffusion Policy"
+              "title": "Backlinks for 2303.04137v5"
             }
           },
           {
@@ -257,7 +257,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/Diffusion Policy.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -285,7 +285,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Diffusion Policy"
+              "title": "Graph of 2303.04137v5"
             }
           }
         ]
@@ -311,13 +311,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d3114e0b595df2b7",
+  "active": "ff18140756da76e2",
   "lastOpenFiles": [
+    "Paper/Diffusion Policy.md",
     "Paper/PDF/2303.04137v5.pdf",
     "Paper/VLA-Adapter.md",
     "Paper/Qwen2.5VL.md",
     "Paper/PDF/2509.09372v2.pdf",
-    "Paper/Diffusion Policy.md",
     "Lecture/Deep Learning.md",
     "Lecture/Biomedical Statistics.md",
     "Knowledges/Cosine Similarity.md",
