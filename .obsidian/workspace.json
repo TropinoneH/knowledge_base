@@ -8,6 +8,30 @@
         "type": "tabs",
         "children": [
           {
+            "id": "628a2d09cd9713e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Deep Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Deep Learning"
+            }
+          },
+          {
             "id": "d3114e0b595df2b7",
             "type": "leaf",
             "state": {
@@ -30,32 +54,9 @@
               "icon": "lucide-file",
               "title": "Diffusion Policy"
             }
-          },
-          {
-            "id": "27a5aa3df2c8ff9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Deep Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Deep Learning"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "363f9be3567338d8",
@@ -68,8 +69,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2303.04137v5.pdf",
-                "page": 1,
-                "zoom": 1
+                "page": 3,
+                "left": -11,
+                "top": 239,
+                "zoom": 1.354413750932341
               },
               "icon": "lucide-file-text",
               "title": "2303.04137v5"
@@ -152,7 +155,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "归纳",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -309,17 +311,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ff18140756da76e2",
+  "active": "d3114e0b595df2b7",
   "lastOpenFiles": [
-    "Paper/Diffusion Policy.md",
     "Paper/PDF/2303.04137v5.pdf",
+    "Paper/Diffusion Policy.md",
+    "Lecture/Deep Learning.md",
+    "Paper/ViT.md",
+    "Paper/Conditioning Matters.md",
     "Paper/VLA-Adapter.md",
     "Paper/Qwen2.5VL.md",
     "Paper/PDF/2509.09372v2.pdf",
-    "Lecture/Deep Learning.md",
     "Lecture/Biomedical Statistics.md",
     "Knowledges/Cosine Similarity.md",
-    "Paper/Conditioning Matters.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
@@ -328,7 +331,6 @@
     "Knowledges/Wandb.md",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
     "Paper/Flow Matching.md",
-    "Paper/ViT.md",
     "Paper/OpenVLA.md",
     "Paper/Masked Auto Encoder.md",
     "Paper/EO-1.md",

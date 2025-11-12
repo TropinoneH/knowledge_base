@@ -45,11 +45,29 @@ pipeline:
 > 
 > 把Observation $O_t$作为condition, 对action进行denoise生成.
 > 
-> 为了时间连续性, 并为了最大发挥出diffusion的能力, 一次性生成一个chunk的action sequence. 执行其中一小部分, 然后根据新的observation进行replan, 重新生成新的action, 以执行闭环控制.
+> 为了时间连续性, 并为了最大发挥出diffusion的能力, 一次性生成一个chunk的action sequence. 执行其中一小部分, 然后根据新的observation进行replan, 重新生成新的action, 以执行[[2303.04137v5.pdf#page=3&selection=388,12,414,32|闭环控制]].
 > 
 > 为了能预测当前的动作, 同时不需要预测未来动作以加速推理, 因此使用DDPM去拟合一个分布$p(A_t|O_t)$而不是原始的联合分布$p(A_t,O_t)$. 此时, 去噪公式变成:
 > $$A_t^{k-1}=\alpha(A_t^k-\gamma\epsilon_\theta(O_t,A_t^k,k)+\mathcal N(0,\sigma^2I))$$
 > Loss变成:
 > $$\mathcal L=\text{MSE}(\varepsilon^k,\epsilon_\theta(O_t,A_t^0+\varepsilon^k,k))$$
+
+> [!PDF|] [[2303.04137v5.pdf#page=3&selection=627,0,633,1|2303.04137v5, p.3]]
+> > The first design decision is the choice of neural network architectures for $\varepsilon_\theta$ . 
+> 
+> 有两种不同的去噪模型架构.
+> 
+> 首先是[[2303.04137v5.pdf#page=3&selection=672,0,672,26|CNN]]的架构. 使用1D的时序[[Deep Learning#Convolutional Neural Networks (CNNs)|CNN]]进行卷积并进行了一部分改进:
+> - 使用[[FiLM]]将Observation的Features作为条件用于去噪(将$O_t$作为condition注入到CNN中间层的features中)
+> - 仅预测动作轨迹$A_t$, 而不是预测一个$[O_t, A_t]$
+> - 为了满足之间的[[2303.04137v5.pdf#page=3&selection=388,12,414,32|闭环控制]], 不使用[[2303.04137v5.pdf#page=4&selection=8,19,8,58|inpainting-based]]的goal(给定头尾预测中间). 如果实在需要inpainting-based goal state conditioning, 可以使用[[FiLM]]将goal state作为条件嵌入
+> 
+> 但是使用CNN有问题, CNN架构由于有强大的[[Deep Learning#Convolutional Neural Networks (CNNs)#Key Concepts|归纳偏执]], 因此对于高频动作信号的处理不佳. 同时, CNN对于长期的视野的建模能力不佳.
+
+> [!PDF|] [[2303.04137v5.pdf#page=4&selection=35,0,36,0|2303.04137v5, p.4]]
+> > Time-series diffusion transformer
+> 
+> 
+
 
 
