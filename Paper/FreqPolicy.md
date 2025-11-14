@@ -9,7 +9,7 @@ tags:
   - Robot
   - DeepLearning
   - VLM
-publish: arxiv preprint
+publish: NeurIPS 2025
 pdf: "[[Paper/PDF/2506.01583v2.pdf]]"
 rate: 🌟🌟🌟
 done: false
