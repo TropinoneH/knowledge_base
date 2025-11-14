@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "628a2d09cd9713e4",
+            "id": "bb2bee28062364f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Deep Learning.md",
+                "file": "Paper/FreqPolicy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,54 +28,29 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deep Learning"
-            }
-          },
-          {
-            "id": "d3114e0b595df2b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/Diffusion Policy.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Diffusion Policy"
+              "title": "FreqPolicy"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "363f9be3567338d8",
+        "id": "3542dc07d0254323",
         "type": "tabs",
         "children": [
           {
-            "id": "ff18140756da76e2",
+            "id": "797849166a50a89e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2303.04137v5.pdf",
+                "file": "Paper/PDF/2506.01583v2.pdf",
                 "page": 1,
                 "left": -22,
-                "top": 842,
-                "zoom": 0.6866562737284891
+                "top": 547,
+                "zoom": 0.6678921568627451
               },
               "icon": "lucide-file-text",
-              "title": "2303.04137v5"
+              "title": "2506.01583v2"
             }
           }
         ]
@@ -311,18 +286,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d3114e0b595df2b7",
+  "active": "bb2bee28062364f3",
   "lastOpenFiles": [
+    "Paper/PDF/2506.01583v2.pdf",
+    "Paper/FreqPolicy.md",
     "Paper/PDF/2303.04137v5.pdf",
-    "Paper/Diffusion Policy.md",
     "Lecture/Deep Learning.md",
-    "Paper/ViT.md",
+    "Paper/Diffusion Policy.md",
+    "Paper/DDPM.md",
+    "Paper/PDF/上海科技大学学生缓考申请表(201909).docx",
     "Paper/Conditioning Matters.md",
+    "Knowledges/Exponential Moving Average.md",
+    "Knowledges/Cosine Similarity.md",
+    "Paper/ViT.md",
     "Paper/VLA-Adapter.md",
     "Paper/Qwen2.5VL.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Lecture/Biomedical Statistics.md",
-    "Knowledges/Cosine Similarity.md",
     "Paper/PDF/2505.11123v1.pdf",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
@@ -346,12 +326,8 @@
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Paper/PDF/2111.06377v3.pdf",
-    "Knowledges/SSH Login.md",
-    "Paper/3D-VLA.md",
-    "Lecture/Discrete Mathematics.md",
     "Assets/Pasted image 20230424103607.png",
     "Assets/Pasted image 20230424104624.png",
-    "Paper/PDF/2406.09246v3.pdf",
     "Assets/Pasted image 20251011001149.png",
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",

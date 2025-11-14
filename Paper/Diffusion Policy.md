@@ -10,7 +10,7 @@ tags:
 publish: RSS 2023
 pdf: "[[Paper/PDF/2303.04137v5.pdf]]"
 rate: 🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[Paper/PDF/2303.04137v5.pdf]]
@@ -58,16 +58,88 @@ pipeline:
 > 有两种不同的去噪模型架构.
 > 
 > 首先是[[2303.04137v5.pdf#page=3&selection=672,0,672,26|CNN]]的架构. 使用1D的时序[[Deep Learning#Convolutional Neural Networks (CNNs)|CNN]]进行卷积并进行了一部分改进:
+> ![[2303.04137v5.pdf#page=3&rect=333,654,441,785&color=blue|2303.04137v5, p.3|170]]
 > - 使用[[FiLM]]将Observation的Features作为条件用于去噪(将$O_t$作为condition注入到CNN中间层的features中)
 > - 仅预测动作轨迹$A_t$, 而不是预测一个$[O_t, A_t]$
 > - 为了满足之间的[[2303.04137v5.pdf#page=3&selection=388,12,414,32|闭环控制]], 不使用[[2303.04137v5.pdf#page=4&selection=8,19,8,58|inpainting-based]]的goal(给定头尾预测中间). 如果实在需要inpainting-based goal state conditioning, 可以使用[[FiLM]]将goal state作为条件嵌入
+> - 最终经过$K$个Conv1D+FiLM之后, 得到最终的梯度$\epsilon_\theta(O_t,A_t^k,k)$
 > 
 > 但是使用CNN有问题, CNN架构由于有强大的[[Deep Learning#Convolutional Neural Networks (CNNs)#Key Concepts|归纳偏执]], 因此对于高频动作信号的处理不佳. 同时, CNN对于长期的视野的建模能力不佳.
 
 > [!PDF|] [[2303.04137v5.pdf#page=4&selection=35,0,36,0|2303.04137v5, p.4]]
 > > Time-series diffusion transformer
 > 
+> ![[2303.04137v5.pdf#page=3&rect=441,654,543,785&color=blue|2303.04137v5, p.3|170]]
 > 
+> 按照pipeline图, 可以认为架构如下:
+> - 首先将去噪步数$k$转换成正弦编码, 拼接在最头上.
+> - 然后将Observation经过[[Deep Learning#Multi-Layer Network|MLP]]转换成Embedding空间中的向量拼接在$k$后面
+> - actions $A_t$(这个是多个action的拼接, 长度为action horizon) 经过embedding得到action embedding, 拼接在Observation后面
+> - 上述的部分作为query(应该是). action embeddings独立作为key和value, 与query做cross attention. 在cross attention的时候, 针对action embedding使用causal mask, action和observation部分两者完全可见
+> - 将这个cross attention重复$K$次, 将$K$次之后的输出给到一个MLP, 让这个MLP生成$\epsilon_\theta(O_t,A_t^k,k)$
+> 
+> 使用[[Transformer]]能够有更强大的表达能力, 能够处理高频的动作信号. 但是对超参数敏感, 更难得到一个好的结果. 使用更大的数据集可能能解决
 
+> [!PDF|] [[2303.04137v5.pdf#page=4&selection=156,0,156,14|2303.04137v5, p.4]]
+> > Visual Encoder
+> 
+> 使用[[Deep Learning#ResNet (Residual Network)|ResNet-18]]作为encoder(未经过pretrain), 并做了以下改进:
+> - 使用softmax pooling代替普通的pooling
+> - [[DDPM]]中常使用EMA+Norm, 但是使用[[Exponential Moving Average]]无法和BatchNorm进行配合. 因此改成GroupNorm + EMA
 
+> [!PDF|] [[2303.04137v5.pdf#page=4&selection=210,0,210,14|2303.04137v5, p.4]]
+> > Noise Schedule
+> 
+> 使用[[iDDPM]]的 Square Cosine Schedule
+
+> [!PDF|] [[2303.04137v5.pdf#page=4&selection=257,0,258,7|2303.04137v5, p.4]]
+> > Accelerating Inference for Real-time Control
+> 
+> 使用[[DDIM]]的方法, 将训练中的去噪步数和推理时的去噪步数解耦, 在真实世界中有0.1s的推理延迟(使用100次训练去噪步数, 10次推理去噪步数, 在Nvidia 3080 GPU上推理)
+
+> [!PDF|]- [[2303.04137v5.pdf#page=4&selection=271,0,273,41|第四节 AI总结]]
+> > 4 Intriguing Properties of Diffusion Policy
+> 
+> ### 第四节核心内容总结
+> 
+> 本节旨在从机理上解释 Diffusion Policy 相比于其他模仿学习方法（如 `LSTM-GMM`, `BET`, `IBC`）的优越性，主要围绕以下四个特性展开：
+> 
+> #### 1. 特性一：有效建模多模态动作分布 (Section 4.1)
+> 
+> - 问题背景: 机器人完成同一个任务目标，常常有多种同样好的方式（例如推箱子时从左边绕行或从右边绕行），这就是“多模态性”。传统方法如直接回归会输出一个无效的“平均动作”（试图同时向左又向右），而 `LSTM-GMM` 等方法虽然试图建模多个模式，但常常有偏见或模式坍塌问题。
+> - Diffusion Policy 的优势: 它通过两个机制自然地解决了多模态问题：
+>     1.  随机初始化 (Stochastic Initialization): 每次推理都从一个随机的高斯噪声开始，这个初始噪声的不同决定了最终生成的动作会落入哪个“模式”（就像从山脉的不同位置滚雪球，最终会滚入不同的山谷）。
+>     2.  随机采样过程 (Stochastic Sampling Procedure): 在去噪的每一步中，都可以加入少量新的随机噪声（Langevin Dynamics 采样）。这使得动作序列在优化过程中有机会“跳出”一个模式，探索并收敛到另一个更好的模式。
+> - 核心论点: Diffusion Policy 不需要像 `GMM` 那样预先假设有多少个模式，也不需要像 `IBC` 那样进行复杂的能量面优化，而是通过其固有的随机生成过程，自然且精确地表达了复杂的多模态动作分布。
+> 
+> #### 2. 特性二：与位置控制的协同效应 (Section 4.2)
+> 
+> - 问题背景: 机器人控制通常有两种模式：位置控制（直接命令末端去某个坐标）和速度控制（命令末端以某个速度移动）。大多数近期工作都依赖速度控制。
+> - Diffusion Policy 的惊人发现: 实验表明，Diffusion Policy 在位置控制模式下的表现远超速度控制模式，而其他基线方法则正好相反。
+> - 原因推测:
+>     1.  多模态性更强: 位置控制模式下的多模态问题更突出（到达同一个目标位置的路径有无数条），而这恰好是 Diffusion Policy 的强项。
+>     2.  误差累积更小: 位置控制受复合误差的影响较小，因此更适合长序列的预测。
+> - 核心论点: Diffusion Policy 的多模态建模能力使其能够克服位置控制的主要缺点，并充分利用其优势，这揭示了策略表示和动作空间选择之间存在深刻的协同关系。
+> 
+> #### 3. 特性三：动作序列预测的好处 (Section 4.3)
+> 
+> - 问题背景: 传统方法通常只预测单步动作，导致动作不连贯、抖动。
+> - Diffusion Policy 的优势: 通过预测一个完整的动作序列，天然地解决了以下问题：
+>     1.  时间一致性 (Temporal Action Consistency): 生成的序列在时间上是平滑且逻辑连贯的，避免了在不同模式间来回跳跃（如 Figure 3 所示，`BET` 方法就在左右两种推法之间犹豫不决）。
+>     2.  对空闲动作的鲁棒性 (Robustness to Idle Actions): 演示数据中常有机器人暂停等待的片段。单步预测模型容易过拟合于“不动”，导致卡死。而序列预测模型能学习到从“不动”到“行动”的完整模式，不会被卡住。
+> - 核心论点: 动作序列预测是 Diffusion Policy 成功的关键设计之一。它利用了扩散模型擅长生成高维结构化数据的优势，解决了单步预测方法的固有缺陷，使得机器人行为更稳定、更合理。
+> 
+> #### 4. 特性四：训练稳定性 (Section 4.4)
+> 
+> - 问题背景: 与 Diffusion Policy 最相似的隐式策略 `IBC` (Implicit Behavioral Cloning)，虽然理论上很强大，但因为依赖于能量模型（EBM）的训练方式，所以存在固有的训练不稳定性。
+> - IBC 的问题: 训练 EBM 需要通过负采样来估计一个难以计算的归一化常数 $Z(\theta, o)$。负采样如果做得不好，就会导致训练过程剧烈震荡、难以收敛（如 Figure 6 所示）。
+> - Diffusion Policy 的优势: Diffusion Policy 通过学习分数函数 (Score Function) $\nabla_a \log p(a|o)$ 来巧妙地绕过了这个难题。分数函数等价于能量函数的梯度，而这个梯度与归一化常数 $Z$ 无关。
+>     - 数学原理: $\nabla_a \log p(a|o) = \nabla_a \log \frac{e^{-E(o,a)}}{Z(o, \theta)} = - \nabla_a E(o,a) - \nabla_a \log Z(o, \theta)$。因为 $Z$ 只与 $o$ 和 $\theta$ 有关，与 $a$ 无关，所以 $\nabla_a \log Z = 0$。
+> - 核心论点: Diffusion Policy 在概念上享有 `IBC` 等能量模型的优点（如强大的表达能力），但在实现上通过学习分数函数（等价于预测噪声），从根本上避免了 EBM 训练不稳定的问题，使得训练过程极其稳定可靠，这也是它能够轻松应用于众多任务的关键原因。
+> 
+> ---
+> 
+> ### 本节总结
+> 
+> 第四节从“为什么”的层面，为 Diffusion Policy 的成功提供了强有力的理论和直觉支撑。它告诉我们，Diffusion Policy 不仅仅是一个效果好的新模型，更是一个在建模范式上解决了模仿学习领域多个核心痛点的优秀框架。其成功源于其固有的多模态生成能力、与动作序列预测及位置控制的完美契合，以及相比能量模型在训练稳定性上的根本性优势。
 
