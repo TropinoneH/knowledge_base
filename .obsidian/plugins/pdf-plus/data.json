@@ -21,7 +21,7 @@
       "template": ""
     }
   ],
-  "defaultDisplayTextFormatIndex": 0,
+  "defaultDisplayTextFormatIndex": 4,
   "syncDisplayTextFormat": true,
   "syncDefaultDisplayTextFormat": false,
   "copyCommands": [
@@ -98,7 +98,7 @@
   "singleMDLeafInSidebar": true,
   "alwaysUseSidebar": true,
   "ignoreExistingMarkdownTabIn": [],
-  "defaultColorPaletteActionIndex": 4,
+  "defaultColorPaletteActionIndex": 1,
   "syncColorPaletteAction": true,
   "syncDefaultColorPaletteAction": false,
   "proxyMDProperty": "PDF",
@@ -222,7 +222,7 @@
   "respectCursorPositionWhenAutoPaste": true,
   "blankLineAboveAppendedContent": true,
   "autoCopy": false,
-  "autoFocus": false,
+  "autoFocus": true,
   "autoPaste": false,
   "autoFocusTarget": "last-active-and-open-then-last-paste",
   "autoPasteTarget": "last-active-and-open-then-last-paste",

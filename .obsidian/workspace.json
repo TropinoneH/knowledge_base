@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Paper/pi0.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FreqPolicy"
-            }
-          },
-          {
-            "id": "a7f5abaecdb5b493",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/Conditioning Matters.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Conditioning Matters"
+              "title": "pi0"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3542dc07d0254323",
@@ -69,16 +44,33 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 1,
-                "left": -11,
-                "top": 713,
-                "zoom": 1.3174019607843137
+                "page": 2,
+                "left": 72,
+                "top": 675,
+                "zoom": 0.97
               },
               "icon": "lucide-file-text",
               "title": "2506.01583v2"
             }
+          },
+          {
+            "id": "a8400570812e968c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2410.24164v3.pdf",
+                "page": 3,
+                "left": -22,
+                "top": 430,
+                "zoom": 0.6678921568627451
+              },
+              "icon": "lucide-file-text",
+              "title": "2410.24164v3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -311,24 +303,30 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a7f5abaecdb5b493",
+  "active": "bb2bee28062364f3",
   "lastOpenFiles": [
-    "Paper/PDF/2506.01583v2.pdf",
+    "Paper/PDF/2410.24164v3.pdf",
+    "Paper/pi0.md",
+    "Paper/PDF/2506.07339v1.pdf",
+    "Paper/PDF/2501.09747v1.pdf",
+    "Paper/PDF/2504.16054v1.pdf",
+    "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
+    "Paper/PDF/2506.07339v1_RTC.pdf",
+    "Paper/PDF/2504.16054v1_pi0.5.pdf",
+    "Paper/PDF/2501.09747v1_FAST.pdf",
+    "Paper/PDF/2506.01583v2.pdf",
     "Paper/PDF/2303.04137v5.pdf",
     "Lecture/Deep Learning.md",
     "Paper/Diffusion Policy.md",
     "Paper/DDPM.md",
     "Paper/PDF/上海科技大学学生缓考申请表(201909).docx",
-    "Paper/Conditioning Matters.md",
     "Knowledges/Exponential Moving Average.md",
     "Knowledges/Cosine Similarity.md",
     "Paper/ViT.md",
     "Paper/VLA-Adapter.md",
     "Paper/Qwen2.5VL.md",
-    "Paper/PDF/2509.09372v2.pdf",
     "Lecture/Biomedical Statistics.md",
-    "Paper/PDF/2505.11123v1.pdf",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
     "Templates/Paper Note Template.md",
@@ -339,15 +337,9 @@
     "Paper/OpenVLA.md",
     "Paper/Masked Auto Encoder.md",
     "Paper/EO-1.md",
-    "Paper/PDF/2210.02747v2.pdf",
-    "Assets/BT1062-lec1.pdf",
     "Lecture/Electric Circuits.md",
-    "Paper/PDF/2210.02747v2_FlowMatching.pdf",
-    "Bases/Paper.base",
-    "Paper/PDF/2010.11929v2.pdf",
     "Lecture/Machine Learning.md",
     "Lecture/Artificial Intelligence.md",
-    "Lecture/Hidden Markov Model.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Assets/Pasted image 20230424103607.png",
