@@ -782,4 +782,91 @@ $$i(t)=\frac{v_s}{R}+(i_0-\frac{v_s}{R})e^{-\frac{R}{L}t}$$
 > [!note]- slide
 > ![[EE111-F25Lec6-2nd-Order Circuits-Part1.pdf]]
 
+# Lecture 07
+> [!note]- 
+> ![[EE111-F25Lec7-Phasor.pdf]]
 
+
+> [!PDF|] [[EE111-F25Lec7-Phasor.pdf#page=1&selection=18,0,18,25]]
+> 
+> AC: Alternating Current, 一种有规律变化的电流.
+> 
+> 在本节课中特指正弦电流源或者正弦电压源. ([[EE111-F25Lec7-Phasor.pdf#page=1&selection=20,19,20,29|sinusoidal]]包含sin函数和cos函数的波形. 因为这些只有$\frac{\pi}{2}$的相位差)
+
+> [!PDF|] [[EE111-F25Lec7-Phasor.pdf#page=3&selection=8,0,8,23]]
+> > 使用正弦函数的原因
+> 
+> - 在自然界中很多现象都是正弦的
+> - 正弦信号非常容易产生和变换
+> - 容易使用数学工具处理 (三角函数的性质)
+> 
+> 根据[[EE111-F25Lec7-Phasor.pdf#page=3&selection=44,0,44,16|傅立叶分析]], 周期函数可以被表达成多个正弦函数之和
+
+![[EE111-F25Lec7-Phasor.pdf#page=4&rect=347,183,567,385|284]]
+
+正弦函数有三个要素:
+- peak value(magnitude) 波峰 $V_m$
+- angular frequency 角频率 $\omega$
+- phase angle 相位角 $\omega t+\theta$. 这里更关注的是t=0时的初始的相位角 initial phase angle: $\theta$
+	- 在这里我们关注$\theta\in[-180^\circ,180^\circ]$的范围
+
+了解三个要素之后可以得到原始的三角函数$v(t)=V_m\cos(\omega t+\theta)$
+- $\omega=2\pi f$
+- $f=\frac{1}{T}$
+
+常见三角变换:
+![[EE111-F25Lec7-Phasor.pdf#page=5&rect=376,127,701,464|333]]
+
+![[EE111-F25Lec7-Phasor.pdf#page=6&rect=23,113,706,481|482]]
+左加右减, $v_3(t)$是领先其他两者的.
+
+> [!example] 
+> ![[EE111-F25Lec7-Phasor.pdf#page=7&rect=37,335,714,489]]
+> 
+> $t>0$时, 使用[[#Kirchhoff's Votage Law (KVL)]]:
+> $$L\frac{di(t)}{dt}+Ri(t)=V_m\cos(\omega t+\phi)$$
+> $$\Rightarrow\frac{di(t)}{dt}+\frac{R}{L}i(t)=\frac{V_m}{L}\cos(\omega t+\phi)$$
+> 求解一个标准的微分方程:
+> 1. general solution: $i_G=A\cdot e^{-\frac{R}{L}t}$
+> 2. 找到一个particular solution: $i_p=B\cdot\cos(\omega t+c)$
+> 3. 将ps代入微分方程:$$-B\cdot\omega\cdot\sin(\omega t+c)+\frac{R}{L}\cdot B\cdot\cos(\omega t+c)=\frac{V_m}{L}\cos(\omega t+\phi)$$
+> 4. 令$t=0$, 有:
+> $$\begin{aligned}-B\cdot\omega\sin c+\frac{R}{L}B\cos(c)&=\frac{V_m}{L}\cos\phi\\ B\cdot\sqrt{\omega^2+\frac{R^2}{L^2}}&=\frac{V_m}{L}\\ B&=\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\end{aligned}$$
+> $$\cos(c+\theta)=\cos\phi\Rightarrow c=\phi-\arctan(\frac{\omega L}{R})$$
+> 5. $$i=i_G+i_p=\frac{-V_m}{\sqrt{R^2+\omega^2L^2}}\cos(\phi-\theta)e^{-\frac{R}{L}t}+\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\cos(\omega t+\phi-\theta)$$
+
+使用时域方法求解过于繁琐, 因此要找到一个方法去处理这个电路.
+
+## Phasor
+
+结合Magnitude+Phase
+
+将三角函数使用欧拉公式$e^{\pm j\phi}=\cos\phi\pm j\sin\phi$转换成复指数:$$v(t)=V\cos(\omega t+\phi)=Re\{Ve^{j\phi}e^{j\omega t}\}$$
+
+![[EE111-F25Lec7-Phasor.pdf#page=11&rect=158,50,537,349|290]]
+复数坐标的投影: $\mathbf V=Ve^{j\phi}=V\cos\phi+jV\sin\phi$
+
+或者使用极坐标的方式: $\mathbf V=V\angle\phi$
+
+![[EE111-F25Lec7-Phasor.pdf#page=12&rect=16,80,694,486]]
+
+复数运算:
+![[EE111-F25Lec7-Phasor.pdf#page=14|EE111-F25Lec7-Phasor, page 14]]
+![[EE111-F25Lec7-Phasor.pdf#page=15|EE111-F25Lec7-Phasor, page 15]]
+
+卡西欧991可以直接计算复数的加减. 在菜单中的第二项可以计算角度或复数(角度使用shift+eng, 复数直接按eng)
+
+![[EE111-F25Lec7-Phasor.pdf#page=18&rect=136,332,604,413]]
+如果有周期的振荡(有$\omega\neq0$), 可以有双向箭头. 但是如果不是一个周期振荡的函数, 那么不能双向转换.
+
+> [!example] 
+> ![[EE111-F25Lec7-Phasor.pdf#page=19&rect=56,334,459,423]]
+> 
+> 1. $$i=6\cos(50t-40^\circ)\Rightarrow i=6\angle-40$$
+> 2. 需要首先将$\sin$转换成$\cos$:
+> 	- 首先画图, 坐标轴向右为$\cos$正方向, 向下为$\sin$正方向.
+> 	- 原始为$-4\sin(\omega t+50^\circ)$, 那么为: 上方$-\sin$轴上找到$-4$点, 逆时针旋转$50^\circ$.
+> 	- 这个向量距离$\cos$正轴的夹角为$50^\circ+90^\circ=140^\circ$, 那么转换成$\cos$应该为$4\cos(\omega t+140^\circ)$
+> 	- 这个方法与$\omega$无关. 只需要画图
+> 	
+> 	最终有: $v=4\angle140$

@@ -61,3 +61,12 @@ scontrol show node <node_name>
 scontrol show node <node_name> | grep -e "NodeName" -e "CfgTRES" -e "AllocTRES"
 ```
 后面两个参数表示总显卡数量和已申请显卡数量
+
+# Skills
+## check usage
+
+检查node节点都有哪些人使用, 占用的资源是什么:
+```
+sacct -N <node_name> -s RUNNING --format="JobID,Account,Partition,State,ReqGRES,AllocCPUS"
+```
+
