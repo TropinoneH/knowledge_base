@@ -49,3 +49,21 @@ conda env export > environment.yml
 ```
 
 可以用于[[#Create by Config|创建环境]]
+
+# Conda Environment Variables
+
+可以通过下面的指令针对特殊的环境设置专门的environment variable. 一旦激活环境, 这个环境变量也会被注入:
+
+```bash
+conda env config vars set NAME=val
+```
+
+删除:
+```bash
+conda env config vars unset NAME
+```
+
+列出所有特殊设置:
+```bash
+conda env config vars list
+```

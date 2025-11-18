@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/ArchLinux Install.md",
+                "file": "Knowledges/Conda Environment.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ArchLinux Install"
+              "title": "Conda Environment"
             }
           }
         ]
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"[[Swift]]\"",
+                "query": "\"environment \"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -171,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/ArchLinux Install.md",
+                "file": "Knowledges/Conda Environment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +182,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ArchLinux Install"
+              "title": "Backlinks for Conda Environment"
             }
           },
           {
@@ -210,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/ArchLinux Install.md",
+                "file": "Knowledges/Conda Environment.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +239,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ArchLinux Install"
+              "title": "Graph of Conda Environment"
             }
           }
         ]
@@ -265,6 +266,11 @@
   },
   "active": "bab1db2919d53990",
   "lastOpenFiles": [
+    "Knowledges/Conda Bugs.md",
+    "Knowledges/Conda Init.md",
+    "Topic/Conda.md",
+    "Knowledges/Conda Environment.md",
+    "Knowledges/ArchLinux Install.md",
     "Knowledges/Slurm.md",
     "Knowledges/Ubuntu Docker.md",
     "Knowledges/SSH Server.md",
@@ -296,11 +302,6 @@
     "Templates/Paper Note Template.md",
     "Knowledges/Wandb.md",
     "Knowledges/ArchLinux Nvidia Black Screen.md",
-    "Paper/Flow Matching.md",
-    "Paper/OpenVLA.md",
-    "Paper/Masked Auto Encoder.md",
-    "Paper/EO-1.md",
-    "Lecture/Machine Learning.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Assets/Pasted image 20230424103607.png",
