@@ -40,22 +40,77 @@ c["Action Denosier<br>(Flow Matching)"]
 d[(Dataset)]
 e(["images<br>(wrist(1 or 2), third-party)"])
 f(["language instruct<br>(tokenized by PaliGemma Tokenizer)"])
-g(["robot ego state<br>(not used in pi0)"])
 i(["Action<br>(Expert Action, using for compute loss)"])
+g(["robot ego state<br>(not used in pi0)"])
+oooo(["noise"])
 
 h((concat))
+k(("\-"))
 
+l[["Flow Matching Loss"]]
+m[["Flow Matching<br>Vector Field"]]
+n((MSE Loss))
 
 d-->|Sample Batch|e
 d-->|Sample Batch|f
 d-->|Sample Batch|i
 d-->|Sample Batch|g
-e-->h
-f-->h
-h-->|embed|a
-a-->|"Transformer Forward<br>-> hidden state"|b
-b-->|"Transformer Forward<br>-> hidden state"|c
 
-c-->|Denoised|
+subgraph forward
+	e-->h
+	f-->h
+	h-->|embed|a
+	a-->|"Transformer Forward<br>-> hidden state"|b
+	b-->|"Transformer Forward<br>-> hidden state"|c
+	
+	c-->m
+	oooo-->k
+	i-->k
+	k-->n
+	m-->n
+	n-->l
+end
+l-->bbbb((Backward))
+```
+
+Inference时的架构:
+```mermaid
+graph TD
+
+a[(Observation)]
+
+b(["images<br>(wrist images(1 or 2), and third-party image)"])
+c(["Language Instruct<br>(tokenized by PaliGemma Tokenizer)"])
+d(["Robot Ego State<br>(not used in pi0)"])
+
+e["VLM Backbone<br>(PaliGemma 2B)"]
+f["Action Expert<br>(Gemma 300M)"]
+g["Flow Matching Vector Field"]
+
+h((concat))
+i(("\-"))
+
+j([noise])
+k(["Denoising action<br>A<sub>k</sub><sup>1-t</sup>"])
+l[["Denoised Actions"]]
+
+a-->b
+a-->c
+a-->d
+
+subgraph SampleAction
+    b-->h
+    c-->h
+    h-->|embed|e
+    e-->|forward<br>-> hidden state|f
+    f-->|forward<br>-> hidden state|g
+    subgraph WhileLoop
+	    j-->i
+	    g-->i
+	    i-->k
+	    k-->i
+	end
+	i-->l
+end
 ```
 
