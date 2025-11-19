@@ -60,9 +60,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2410.24164v3.pdf",
-                "page": 4,
+                "page": 6,
                 "left": -22,
-                "top": 578,
+                "top": 572,
                 "zoom": 0.6678921568627451
               },
               "icon": "lucide-file-text",
@@ -305,6 +305,8 @@
   },
   "active": "bb2bee28062364f3",
   "lastOpenFiles": [
+    "Paper/PDF/2410.24164v3.pdf",
+    "Paper/pi0.md",
     "Paper/PDF/1763528126611.png",
     "Knowledges/Docker.md",
     "Knowledges/Conda Environment.md",
@@ -317,8 +319,6 @@
     "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
-    "Paper/pi0.md",
-    "Paper/PDF/2410.24164v3.pdf",
     "Paper/PDF/2506.07339v1.pdf",
     "Paper/PDF/2501.09747v1.pdf",
     "Paper/PDF/2504.16054v1.pdf",
@@ -349,7 +349,6 @@
     "Assets/Pasted image 20251011001139.png",
     "Assets/Pasted image 20251011001130.png",
     "Assets/Pasted image 20251011000933.png",
-    "Assets/Pasted image 20241009103458.png",
-    "Assets/Pasted image 20241009112505.png"
+    "Assets/Pasted image 20241009103458.png"
   ]
 }
