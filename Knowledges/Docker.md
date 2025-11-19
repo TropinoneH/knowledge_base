@@ -2,15 +2,17 @@
 type: system
 tags:
   - docker
-  - system/linux/ubuntu
-  - error
   - cli
   - software
+  - system/linux
+  - system
 done: false
 topic:
   - "[[System]]"
 ---
 # Docker
+
+
 
 # Common Errors
 

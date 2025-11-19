@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "bb2bee28062364f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Conda Environment.md",
+                "file": "Paper/pi0.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,49 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conda Environment"
+              "title": "pi0"
             }
           }
         ]
+      },
+      {
+        "id": "3542dc07d0254323",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "797849166a50a89e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2506.01583v2.pdf",
+                "page": 2,
+                "left": 72,
+                "top": 675,
+                "zoom": 0.97
+              },
+              "icon": "lucide-file-text",
+              "title": "2506.01583v2"
+            }
+          },
+          {
+            "id": "a8400570812e968c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2410.24164v3.pdf",
+                "page": 4,
+                "left": -22,
+                "top": 578,
+                "zoom": 0.6678921568627451
+              },
+              "icon": "lucide-file-text",
+              "title": "2410.24164v3"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"environment \"",
+                "query": "归纳",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,8 +158,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,12 +196,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -172,7 +210,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Conda Environment.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +220,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Conda Environment"
+              "title": "Backlinks for 2303.04137v5"
             }
           },
           {
@@ -211,7 +249,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Conda Environment.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,19 +272,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conda Environment"
+              "title": "Graph of 2303.04137v5"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,15 +303,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bab1db2919d53990",
+  "active": "bb2bee28062364f3",
   "lastOpenFiles": [
+    "Paper/PDF/1763528126611.png",
+    "Knowledges/Docker.md",
+    "Knowledges/Conda Environment.md",
     "Knowledges/Conda Bugs.md",
     "Knowledges/Conda Init.md",
     "Topic/Conda.md",
-    "Knowledges/Conda Environment.md",
     "Knowledges/ArchLinux Install.md",
     "Knowledges/Slurm.md",
-    "Knowledges/Ubuntu Docker.md",
     "Knowledges/SSH Server.md",
     "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
@@ -301,7 +341,6 @@
     "Templates/Topic Template.md",
     "Templates/Paper Note Template.md",
     "Knowledges/Wandb.md",
-    "Knowledges/ArchLinux Nvidia Black Screen.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Assets/Pasted image 20230424103607.png",

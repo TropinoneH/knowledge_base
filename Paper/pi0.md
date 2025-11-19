@@ -41,7 +41,7 @@ d[(Dataset)]
 e(["images<br>(wrist(1 or 2), third-party)"])
 f(["language instruct<br>(tokenized by PaliGemma Tokenizer)"])
 i(["Action<br>(Expert Action, using for compute loss)"])
-g(["robot ego state<br>(not used in pi0)"])
+g(["robot ego state"])
 oooo(["noise"])
 
 h((concat))
@@ -60,12 +60,14 @@ subgraph forward
 	e-->h
 	f-->h
 	h-->|embed|a
+	oooo-->b
 	a-->|"Transformer Forward<br>-> hidden state"|b
+	g-->b
 	b-->|"Transformer Forward<br>-> hidden state"|c
 	
 	c-->m
-	oooo-->k
 	i-->k
+	oooo-->k
 	k-->n
 	m-->n
 	n-->l
@@ -81,14 +83,13 @@ a[(Observation)]
 
 b(["images<br>(wrist images(1 or 2), and third-party image)"])
 c(["Language Instruct<br>(tokenized by PaliGemma Tokenizer)"])
-d(["Robot Ego State<br>(not used in pi0)"])
+d(["Robot Ego State"])
 
 e["VLM Backbone<br>(PaliGemma 2B)"]
 f["Action Expert<br>(Gemma 300M)"]
 g["Flow Matching Vector Field"]
 
 h((concat))
-i(("\-"))
 
 j([noise])
 k(["Denoising action<br>A<sub>k</sub><sup>1-t</sup>"])
@@ -101,16 +102,19 @@ a-->d
 subgraph SampleAction
     b-->h
     c-->h
+    d-->f
     h-->|embed|e
     e-->|forward<br>-> hidden state|f
-    f-->|forward<br>-> hidden state|g
+	
+	j-->f
     subgraph WhileLoop
-	    j-->i
-	    g-->i
-	    i-->k
-	    k-->i
+	    f-->|forward<br>-> hidden state|g
+	    g-->k
+	    k-->f
 	end
-	i-->l
+	k-->l
 end
 ```
+
+metrics:
 
