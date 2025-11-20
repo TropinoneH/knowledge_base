@@ -14,7 +14,7 @@ tags:
 publish: arxiv preprint
 pdf: "[[2410.24164v3.pdf]]"
 rate: 🌟🌟🌟🌟
-done: false
+done: true
 ---
 > [!note]- paper
 ![[2410.24164v3.pdf]]
@@ -28,6 +28,8 @@ pipeline:
 ![[2410.24164v3.pdf#page=1&rect=57,297,550,568|2410.24164v3_pi0, p.1]]
 但是核心的pipeline只有:
 ![[2410.24164v3.pdf#page=4&rect=47,587,578,751]]
+
+使用[[SigLip]]作为[[ViT]]+PaliGemma [[Transformer]]作为VLM backbone, 配合[[Flow Matching]]的denoise过程生成连续的action.
 
 Training的代码的架构:
 ```mermaid

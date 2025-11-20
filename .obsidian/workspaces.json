@@ -86,14 +86,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
-                    "page": 18,
-                    "left": -21,
-                    "top": 157,
-                    "zoom": 0.7239583333333334
+                    "file": "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
+                    "page": 15,
+                    "left": -8,
+                    "top": 286,
+                    "zoom": 1.2916666666666667
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25Lec7-Phasor"
+                  "title": "EE111-F25Lec8-AC-SteadyStateAnalysis"
                 }
               }
             ],
@@ -332,7 +332,7 @@
         }
       },
       "active": "167d4f8a9e852b7f",
-      "mtime": "2025-11-18T11:22:29+08:00"
+      "mtime": "2025-11-20T16:50:00+08:00"
     },
     "note": {
       "main": {
@@ -912,5 +912,5 @@
       "mtime": "2025-11-20T08:18:03+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }

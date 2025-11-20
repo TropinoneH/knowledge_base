@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
+            "id": "bb2bee28062364f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/FreqPolicy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
+              "title": "FreqPolicy"
             }
           },
           {
-            "id": "167d4f8a9e852b7f",
+            "id": "a8400570812e968c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/PDF/pi0.5.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,50 +52,48 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "pi0.5"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "363f9be3567338d8",
+        "id": "3542dc07d0254323",
         "type": "tabs",
         "children": [
           {
-            "id": "61d90fcca8c54225",
+            "id": "797849166a50a89e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 49,
-                "left": -424,
-                "top": 203,
-                "zoom": 0.5312500000000001
+                "file": "Paper/PDF/2506.01583v2.pdf",
+                "page": 1,
+                "left": 17,
+                "top": 612,
+                "zoom": 1.55
               },
               "icon": "lucide-file-text",
-              "title": "EE160-lec3"
+              "title": "2506.01583v2"
             }
           },
           {
-            "id": "a29cbc20cbfb5ca8",
+            "id": "8b6e40269b2c4048",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
-                "page": 12,
-                "left": -21,
-                "top": 159,
-                "zoom": 0.7239583333333334
+                "file": "Paper/PDF/2504.16054v1.pdf",
+                "page": 1,
+                "left": -11,
+                "top": 610,
+                "zoom": 1.3174019607843137
               },
               "icon": "lucide-file-text",
-              "title": "EE111-F25Lec8-AC-SteadyStateAnalysis"
+              "title": "2504.16054v1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,7 +170,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "归纳",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,8 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -236,7 +233,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +243,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for 2303.04137v5"
             }
           },
           {
@@ -275,7 +272,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/PDF/2303.04137v5.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -303,7 +300,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of 2303.04137v5"
             }
           }
         ]
@@ -329,13 +326,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "167d4f8a9e852b7f",
+  "active": "797849166a50a89e",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
+    "Paper/FreqPolicy.md",
+    "Paper/PDF/2506.01583v2.pdf",
+    "Paper/PDF/2504.16054v1.pdf",
+    "Paper/PDF/pi0.5.md",
+    "Paper/Flow Matching.md",
     "Paper/pi0.md",
     "Paper/PDF/2410.24164v3.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
+    "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
     "Paper/PDF/1763528126611.png",
     "Knowledges/Docker.md",
     "Knowledges/Conda Environment.md",
@@ -348,12 +350,9 @@
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Paper/PDF/2506.07339v1.pdf",
     "Paper/PDF/2501.09747v1.pdf",
-    "Paper/PDF/2504.16054v1.pdf",
     "Paper/Conditioning Matters.md",
-    "Paper/FreqPolicy.md",
     "Paper/PDF/2506.07339v1_RTC.pdf",
     "Paper/PDF/2504.16054v1_pi0.5.pdf",
-    "Paper/PDF/2501.09747v1_FAST.pdf",
     "Lecture/Deep Learning.md",
     "Paper/Diffusion Policy.md",
     "Paper/DDPM.md",
@@ -365,8 +364,6 @@
     "Lecture/Biomedical Statistics.md",
     "Templates/Note Template.md",
     "Templates/Topic Template.md",
-    "Templates/Paper Note Template.md",
-    "Knowledges/Wandb.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Assets/Pasted image 20230424103607.png",
