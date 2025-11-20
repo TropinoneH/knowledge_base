@@ -68,10 +68,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 1,
-                "left": 17,
-                "top": 612,
-                "zoom": 1.55
+                "page": 2,
+                "left": -2,
+                "top": 535,
+                "zoom": 1.36
               },
               "icon": "lucide-file-text",
               "title": "2506.01583v2"
@@ -92,8 +92,25 @@
               "icon": "lucide-file-text",
               "title": "2504.16054v1"
             }
+          },
+          {
+            "id": "d0e29cf10c51d319",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec1.pdf",
+                "page": 9,
+                "left": -35,
+                "top": 509,
+                "zoom": 0.4257812500000001
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec1"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -326,10 +343,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "797849166a50a89e",
+  "active": "bb2bee28062364f3",
   "lastOpenFiles": [
-    "Paper/FreqPolicy.md",
+    "Lecture/Slides/EE160-lec1.pdf",
     "Paper/PDF/2506.01583v2.pdf",
+    "Paper/FreqPolicy.md",
     "Paper/PDF/2504.16054v1.pdf",
     "Paper/PDF/pi0.5.md",
     "Paper/Flow Matching.md",
