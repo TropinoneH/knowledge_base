@@ -834,6 +834,7 @@ $$i(t)=\frac{v_s}{R}+(i_0-\frac{v_s}{R})e^{-\frac{R}{L}t}$$
 > $$\begin{aligned}-B\cdot\omega\sin c+\frac{R}{L}B\cos(c)&=\frac{V_m}{L}\cos\phi\\ B\cdot\sqrt{\omega^2+\frac{R^2}{L^2}}&=\frac{V_m}{L}\\ B&=\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\end{aligned}$$
 > $$\cos(c+\theta)=\cos\phi\Rightarrow c=\phi-\arctan(\frac{\omega L}{R})$$
 > 5. $$i=i_G+i_p=\frac{-V_m}{\sqrt{R^2+\omega^2L^2}}\cos(\phi-\theta)e^{-\frac{R}{L}t}+\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\cos(\omega t+\phi-\theta)$$
+^4a2f2b
 
 使用时域方法求解过于繁琐, 因此要找到一个方法去处理这个电路.
 
@@ -870,3 +871,74 @@ $$i(t)=\frac{v_s}{R}+(i_0-\frac{v_s}{R})e^{-\frac{R}{L}t}$$
 > 	- 这个方法与$\omega$无关. 只需要画图
 > 	
 > 	最终有: $v=4\angle140$
+
+![[EE111-F25Lec7-Phasor.pdf#page=21&rect=35,75,585,430]]
+时域与频域的转变: 时域求导频域乘$j\omega$, 时域积分频域除$j\omega$
+![[EE111-F25Lec7-Phasor.pdf#page=22&rect=23,17,391,434|377]]
+
+## Phasor Relationships
+### Resistor
+![[EE111-F25Lec7-Phasor.pdf#page=23&rect=495,249,704,422|157]]![[EE111-F25Lec7-Phasor.pdf#page=23&rect=505,72,700,234|161]]
+假设电压电流为:
+$$\begin{aligned}i&=I_m\cos(\omega t+\phi)=I_m\angle\phi\\v&=RI_m\cos(\omega t+\phi)=RI_m\angle\phi\end{aligned}$$
+
+这里可以看出来, 对于同一个电阻, 电压和电流的相位角是相通的, 只有数值模长不同. 因此电阻:$R=\frac{\overset{\cdot}{V}}{\overset{\cdot}{I}}$, 在时域和频域是相通的
+$$\Rightarrow V=RI$$
+### Inductors
+
+$$\begin{aligned}i&=I_m\cos(\omega t+\phi)=I_m\angle\phi\\v&=L\frac{di}{dt}=\omega LI_m\cos(\omega t+\phi+90^\circ)=j\omega L\cdot I_m\angle\phi\\&=j\omega L\cdot i\end{aligned}$$
+电压领先电流$90^\circ$
+
+$$\Rightarrow V=j\omega LI$$
+![[EE111-F25Lec7-Phasor.pdf#page=24&rect=483,240,675,427|120]]![[EE111-F25Lec7-Phasor.pdf#page=24&rect=466,31,695,173|139]]
+
+### Capacitors
+$$\begin{aligned}v&=V_m\cos(\omega t+\phi)=V_m\angle\phi\\i&=C\frac{dv}{dt}=\omega CV_m\cos(\omega t+\phi+90^\circ)=j\omega CV_m\angle\phi\\&=j\omega\cdot v\end{aligned}$$
+$$\Rightarrow V=\frac{I}{j\omega C}$$
+![[EE111-F25Lec7-Phasor.pdf#page=25&rect=501,239,669,397|131]]![[EE111-F25Lec7-Phasor.pdf#page=25&rect=447,57,672,199|195]]
+
+### Impedance
+
+首先总结: 领先的一项为可以突变的一项(对于[[#Phasor Relationships#Capacitors|电容]]和[[#Phasor Relationships#Inductors|电感]]而言)
+
+定义阻抗$Z$:
+$$Z=\frac{V}{I}$$
+![[EE111-F25Lec7-Phasor.pdf#page=26&rect=57,265,668,432]]
+
+阻抗依赖于频率$\omega$. 阻抗不是一个phasor(phasor要求有一个振荡, 要求相位角一直变化), 但是阻抗通常是一个复数, 并满足欧姆定律:
+$$V=IZ,Z=\frac{V}{I}$$
+![[EE111-F25Lec7-Phasor.pdf#page=28&rect=61,31,662,438]]
+
+> [!example] 
+> ![[EE111-F25Lec7-Phasor.pdf#page=29&rect=38,342,712,486]]
+> 
+> $$\begin{aligned}L\frac{di}{dt}+Ri&=V_m\cos(\omega t+\phi)\\L\cdot j\omega\overset{\cdot}{I}+R\cdot\overset{\cdot}{I}&=V_m\angle\phi\\(j\omega L+R)\overset{\cdot}{I}&=V_m\angle\phi\\\overset{\cdot}{I}&=\frac{V_m\angle\phi}{j\omega L+R}=\frac{V_m\angle\phi}{\sqrt{R^2+\omega^2L^2}\angle\theta}\\&=\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\angle\phi-\theta\\\Rightarrow i(t)&=\frac{V_m}{\sqrt{R^2+\omega^2L^2}}\cos(\omega t+\phi-\theta)\end{aligned}$$
+> 其中, $\theta=\arctan\frac{\omega L}{R}$
+> 
+> 参考[[#^4a2f2b]], 使用频域求解更加方便
+
+# Lecture 08
+> [!note]- slide
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf]]
+
+在phasor domain(频域)也能满足KVL和KCL
+
+## Series & Parallel Impedance
+电阻和阻抗可以理解成相同的东西. 串联电阻相加$\Leftrightarrow$串联阻抗相加
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=7&rect=44,32,669,339]]
+
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=9&rect=40,17,547,443|210]]
+可以把电阻/电感/电容转换成阻抗然后变成一个元器件:
+$$\begin{aligned}Z_1&=R+j\omega L\\Z_2&=R+\frac{1}{j\omega C}\\Z_3&=j\omega L+\frac{1}{j\omega C}\end{aligned}$$
+
+并联:
+$$\frac{1}{Z_{eq}}=\frac{1}{Z_1}+\frac{1}{Z_2}+\cdots$$
+
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=11&rect=35,26,658,487]]
+
+## Delta-Wye in Phasor Domain
+
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=13&rect=51,87,677,405|496]]
+
+
+
