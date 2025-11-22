@@ -85,32 +85,16 @@
               "state": {
                 "file": "Paper/PDF/2504.16054v1.pdf",
                 "page": 1,
-                "left": -11,
+                "left": -22,
                 "top": 610,
-                "zoom": 1.3174019607843137
+                "zoom": 0.6678921568627452
               },
               "icon": "lucide-file-text",
               "title": "2504.16054v1"
             }
-          },
-          {
-            "id": "d0e29cf10c51d319",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-lec1.pdf",
-                "page": 9,
-                "left": -35,
-                "top": 509,
-                "zoom": 0.4257812500000001
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-lec1"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
