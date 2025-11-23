@@ -68,9 +68,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 2,
+                "page": 3,
                 "left": -2,
-                "top": 535,
+                "top": 143,
                 "zoom": 1.36
               },
               "icon": "lucide-file-text",
@@ -86,15 +86,14 @@
                 "file": "Paper/PDF/2504.16054v1.pdf",
                 "page": 1,
                 "left": -22,
-                "top": 610,
+                "top": 792,
                 "zoom": 0.6678921568627452
               },
               "icon": "lucide-file-text",
               "title": "2504.16054v1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -329,11 +328,12 @@
   },
   "active": "bb2bee28062364f3",
   "lastOpenFiles": [
-    "Lecture/Slides/EE160-lec1.pdf",
     "Paper/PDF/2506.01583v2.pdf",
     "Paper/FreqPolicy.md",
-    "Paper/PDF/2504.16054v1.pdf",
     "Paper/PDF/pi0.5.md",
+    "Bases/Paper.base",
+    "Lecture/Slides/EE160-lec1.pdf",
+    "Paper/PDF/2504.16054v1.pdf",
     "Paper/Flow Matching.md",
     "Paper/pi0.md",
     "Paper/PDF/2410.24164v3.pdf",
@@ -353,8 +353,6 @@
     "Paper/PDF/2506.07339v1.pdf",
     "Paper/PDF/2501.09747v1.pdf",
     "Paper/Conditioning Matters.md",
-    "Paper/PDF/2506.07339v1_RTC.pdf",
-    "Paper/PDF/2504.16054v1_pi0.5.pdf",
     "Lecture/Deep Learning.md",
     "Paper/Diffusion Policy.md",
     "Paper/DDPM.md",

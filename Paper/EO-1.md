@@ -11,7 +11,7 @@ tags:
   - Robot
 publish: arxiv preprint
 pdf: "[[Paper/PDF/2508.21112v3.pdf]]"
-rate: 🌟🌟🌟
+rate: 🌟🌟
 done: false
 ---
 > [!note]- paper

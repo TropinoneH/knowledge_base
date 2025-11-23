@@ -8,7 +8,7 @@ tags:
   - code/python
 publish: CVPR 2022
 pdf: "[[Paper/PDF/2111.06377v3.pdf]]"
-rate: 🌟🌟🌟🌟🌟
+rate: 🌟🌟🌟
 done: true
 ---
 > [!note]- paper
