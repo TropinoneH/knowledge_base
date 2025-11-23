@@ -48,13 +48,39 @@ Motivation: 要求在保持[[2506.01583v2.pdf#page=1&selection=63,57,63,81|计�
 
 FreqPolicy这个方法: 首先使用[[DCT]][[2506.01583v2.pdf#page=2&selection=124,1,129,36|将action sequence转换为频率分量.]] 然后通过[[Masked Auto Encoder|MAE]]逐步预测, 使用[[2506.01583v2.pdf#page=2&selection=130,70,131,88|低频信号指导高频信号的生成]].
 
-## Methods
-
 pipeline:
 ![[2506.01583v2.pdf#page=4&rect=101,488,508,726]]
 
+**[[2506.01583v2.pdf#page=4&selection=326,0,395,62|Methods]]**:
+
 Training阶段:
 1. 首先使用DCT将action sequence分解成频率分量
-2. 使用逆DCT在不同level上重建
+2. 使用逆DCT在不同level上重建. 低level只负责重建低频信号, 高level负责重建低频+高频信号.
+3. 将observation和k-level reconstruction action拼接, 送给[[Masked Auto Encoder|MAE]]的encoder+decoder, 得到隐空间向量
+4. 将得到的隐空间向量作为condition指导Diffusion生成去噪的action的频率分量(注意, 这里生成的是频率的分量, 不是action本身)
 
+Inference阶段:
+1. 将observation和initial token拼接. 这里的initial token可以认为是一个$y^{l_0}$-level的重建结果, 是一个全0的vector.
+2. 进入循环.
+	1. 接受输入$y^{l_{i-1}}$
+	2. 经过training的过程, 将$y^{l_{i-1}}$和observation拼接后, 送给encoder+decoder, 作为condition指导diffusion去噪生成频率分量$\hat x^i$
+	3. 只保留前$l_i$个频率分量(保留低频信号), 将这些低频信号使用iDCT转换为$y^{l_i}$, 作为下一个循环的输入
+3. 最终经过$N_{iter}$层迭代, 得到最终的action
 
+> [!example]- [[2506.01583v2.pdf#page=7&selection=136,0,201,39]]
+> 假设一个16-timestep的轨迹, 使用$N_{iter}=4$的迭代次数.
+> 
+> 假设$l_0=0,l_1=4,l_2=8,l_3=12,l_4=16$.
+> 
+> 在inference的时候, 首先是$y^{l_0}$是全为零的向量. 将这个向量丢给MAE+Diffusion生成一个新的信号, 过滤, 只保留$l_1=4$个低频的信号, 重建$y^{l_1}$, 送给MAE+Diffusion
+> 
+> 经过$0\rightarrow4\rightarrow8\rightarrow12\rightarrow16$逐步添加action的frequency components的diffusion过程之后, 最终得到由16个频率分量重建得到的action信号
+
+能够让低频指导高频信号生成的原因:
+1. 在training的时候, 强制让diffusion学习, 如何通过一个低频信号重建得到原始信号的频域分量
+2. 在inference的时候, 每次都逐步生成更加复杂的信号. 第一次迭代是从完全空白的信号中生成一个略微完整的信号, 然后只取这个信号的低频部分, 让下一次迭代基于这个低频信号指导生成新的更加完善的信号, 直到最后得到一个完整的信号.
+
+使用低频指导高频的原因:
+1. [[2506.01583v2.pdf#page=5&selection=61,26,63,32|大部分任务的低频信号都是非常重要的, 能量更加集中于低频区域]]. 因此优先处理低频信号是一个更自然更高效的方式.
+2. [[2506.01583v2.pdf#page=5&selection=75,98,82,56|不同任务对频域的要求不同. 有的任务要求高频, 有的任务要求低频]]. 因此使用频率无关的action表达是不够的, 需要设计一个方法, 根据不同的任务要求, 自动调整是否需要高频信号
+3. 因此, 从低频开始确定了action的“骨架”, 在这个骨架上填充更多的信息(高频信号)

@@ -68,9 +68,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 3,
-                "left": -2,
-                "top": 143,
+                "page": 6,
+                "left": 94,
+                "top": 108,
                 "zoom": 1.36
               },
               "icon": "lucide-file-text",
@@ -170,7 +170,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "归纳",
+                "query": "pytorch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -233,7 +233,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/PDF/2303.04137v5.pdf",
+                "file": "Paper/FreqPolicy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +243,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2303.04137v5"
+              "title": "Backlinks for FreqPolicy"
             }
           },
           {
@@ -272,7 +272,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/PDF/2303.04137v5.pdf",
+                "file": "Paper/FreqPolicy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -295,12 +295,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 0.6826227075497521,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2303.04137v5"
+              "title": "Graph of FreqPolicy"
             }
           }
         ]
@@ -328,9 +328,11 @@
   },
   "active": "bb2bee28062364f3",
   "lastOpenFiles": [
-    "Paper/PDF/2506.01583v2.pdf",
+    "Knowledges/DCT.md",
     "Paper/FreqPolicy.md",
     "Paper/PDF/pi0.5.md",
+    "Knowledges/ArchLinux Install.md",
+    "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
     "Lecture/Slides/EE160-lec1.pdf",
     "Paper/PDF/2504.16054v1.pdf",
@@ -346,7 +348,6 @@
     "Knowledges/Conda Bugs.md",
     "Knowledges/Conda Init.md",
     "Topic/Conda.md",
-    "Knowledges/ArchLinux Install.md",
     "Knowledges/Slurm.md",
     "Knowledges/SSH Server.md",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
