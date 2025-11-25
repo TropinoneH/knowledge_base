@@ -4,7 +4,7 @@ tags:
   - system/linux
   - ssh
   - cli
-  - software/nvidia
+  - software
 done: false
 topic:
   - "[[System]]"

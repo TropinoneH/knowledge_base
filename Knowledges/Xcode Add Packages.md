@@ -1,7 +1,7 @@
 ---
 type: skills
 tags:
-  - software/Xcode
+  - software
   - code/swift
   - system/MacOS
 done: true

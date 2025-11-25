@@ -3,7 +3,7 @@ type: command
 tags:
   - cli
   - code/rust
-  - software/package-manager
+  - software
 done: false
 topic:
   - "[[Rust]]"

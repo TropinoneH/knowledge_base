@@ -2,7 +2,7 @@
 type: command
 tags:
   - cli
-  - software/shell
+  - software
   - system
   - ssh
 done: true

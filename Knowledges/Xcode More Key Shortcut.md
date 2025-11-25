@@ -1,7 +1,7 @@
 ---
 type: software
 tags:
-  - software/Xcode
+  - software
   - system/MacOS
 done: true
 topic:

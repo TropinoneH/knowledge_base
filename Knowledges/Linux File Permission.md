@@ -1,7 +1,7 @@
 ---
 type: system
 tags:
-  - software/file-system
+  - software
   - system/linux
   - cli
 done: false
@@ -159,4 +159,148 @@ find <path> -type d -exec chmod +x {} +
 > find my_folder -type f -perm /a=x -exec chmod o+x {} +
 > ```
 
+# Group
+在 Linux 系统中，Group（组）不仅仅是一个权限标签，它是系统管理员高效管理多用户权限的核心机制。通过将用户归类到不同的组中，管理员可以一次性对一组用户授予对特定文件或资源的访问权限，而无需针对每个用户单独设置。
 
+## Group Concepts
+
+Linux 用户组主要分为两种类型。第一种是主组（Primary Group），这是用户在创建文件时默认赋予该文件的组，通常与用户名相同。第二种是附加组（Secondary or Supplementary Group），用户可以属于多个附加组，这通常用于授予用户对特定项目或系统资源的额外访问权限。
+
+## Group Management Commands
+
+对于组本身的增删改查，系统提供了一套直观的命令。这些操作通常需要 root 权限或使用 `sudo` 执行。
+
+### Creating a Group
+
+使用 `groupadd` 命令可以在系统中创建一个新的组。这是搭建协作环境的第一步。例如，若要创建一个名为 `developers` 的组，只需运行命令:
+```bash
+sudo groupadd developers
+```
+
+系统会将新的组信息写入 `/etc/group` 文件中。
+### Deleting a Group
+
+当一个项目结束或组不再需要时，可以使用 `groupdel` 命令将其移除。例如，删除名为 `developers` 的组使用命令 `sudo groupdel developers`。需要注意的是，如果该组是某个用户的主组，系统通常会阻止删除操作，必须先修改该用户的主组设置。
+
+### Modifying a Group
+
+如果需要更改组的名称，可以使用 `groupmod` 命令配合 `-n` 选项。例如，将 `developers` 组重命名为 `dev_team`，命令:
+```bash
+sudo groupmod -n dev_team developers
+```
+这个操作只会修改组名，组的 ID（GID）保持不变，因此文件系统中的权限关联通常不会受到影响。
+
+## User Management Commands
+
+用户是组的成员，因此管理组权限往往离不开对用户的创建与管理。
+
+### Creating a User
+
+`useradd` 命令用于创建新用户。虽然它有许多选项，但在实践中通常建议使用 `-m` 选项来自动创建用户的家目录，并使用 `-s` 指定默认的 Shell。
+
+例如，创建一个名为 `alice` 的新用户，为其创建家目录并指定 Bash 为 Shell：
+```bash
+sudo useradd -m -s /bin/bash alice
+```
+
+新创建的用户默认处于锁定状态，需要使用 `passwd` 命令为其设置密码才能登录：
+```bash
+sudo passwd alice
+```
+
+### Deleting a User
+
+当需要从系统中移除用户时，使用 `userdel` 命令。为了彻底清理，通常建议加上 `-r` 选项，这会在删除用户账号的同时一并删除其家目录和邮件池。
+
+命令示例：
+```bash
+sudo userdel -r alice
+```
+
+### Modifying a User
+
+`usermod` 是一个非常强大的命令，用于修改现有用户的属性。除了修改组归属（将在下一节详细介绍），它还可以用来锁定用户账户（`-L`）或解锁用户账户（`-U`），以及修改用户的登录 Shell 或主目录。
+
+## Managing User Group Membership
+
+这是权限管理中最频繁使用的操作之一。将用户添加到特定组，即可让该用户获得该组拥有的文件访问权限。
+
+### Adding a User to a Group
+
+将用户添加到附加组时，务必小心使用 `usermod` 的参数。必须同时使用 `-a` (append) 和 `-G` (groups) 选项。`-a` 选项至关重要，因为它告诉系统将用户追加到新组中，而不是覆盖用户当前所属的所有附加组。
+
+例如，将用户 `alice` 添加到 `developers` 组：
+```bash
+sudo usermod -aG developers alice
+```
+
+如果遗漏了 `-a` 选项，用户将被移出除了 `developers` 之外的所有其他附加组，这可能会导致严重的权限丢失问题。
+
+### Checking Group Membership
+
+在修改权限后，可以使用 `groups` 命令查看特定用户所属的所有组。例如 `groups alice`。另外，`id` 命令可以提供更详细的信息，包括用户的 UID、主组 GID 以及所有附加组的 GID。
+
+值得注意的是，当用户被添加到新组后，更改不会立即在当前登录的会话中生效。用户通常需要注销并重新登录，或者使用 `newgrp` 命令来刷新当前的组会话。
+
+## Changing File Ownership
+
+在 Linux 中，每个文件都属于一个所有者和一个组。`ls -l` 输出的第三列和第四列分别显示了这两个属性。要修改文件的归属，主要使用 `chown` 和 `chgrp` 命令。
+
+### Using chown
+
+`chown` (change owner) 功能最为全面，它可以同时修改文件的所有者和所属组。其语法格式通常为 `用户:组`。
+
+例如，将 `project_code.py` 的所有者改为 `alice`，所属组改为 `developers`：
+```bash
+sudo chown alice:developers project_code.py
+```
+
+如果只想修改所有者，可以省略冒号和组名：
+```bash
+sudo chown alice project_code.py
+```
+
+如果只想修改所属组，可以在冒号前留空（或者使用 `chgrp` 命令）：
+```bash
+sudo chown :developers project_code.py
+```
+
+### Using chgrp
+
+`chgrp` (change group) 命令专门用于修改文件的所属组，功能比 `chown` 单一，但在某些脚本或特定场景下语义更明确。
+
+例如，将 `docs` 目录的所属组改为 `editors`：
+```bash
+sudo chgrp editors docs
+```
+
+与 `chmod` 类似，`chown` 和 `chgrp` 都支持 `-R` 选项，用于递归地修改目录及其内部所有文件的归属。
+
+## Collaborative Directories and SGID
+
+在团队协作场景中，仅仅创建组和添加用户往往是不够的。默认情况下，用户在一个目录下创建新文件时，文件的所属组是该用户的主组，而不是目录的所属组。这意味着团队中的其他成员可能只有只读权限，甚至无法访问。
+
+为了解决这个问题，可以使用特殊权限位 **SGID** (Set Group ID)。
+
+当在一个目录上设置了 SGID 位后，在该目录下创建的任何新文件或子目录，将自动继承父目录的所属组，而不是创建者的主组。这确保了属于同一组的成员可以持续地共享和编辑彼此创建的文件。
+
+### Setting SGID
+
+设置 SGID 的方法是在 `chmod` 命令中使用 `g+s`。
+
+假设我们有一个共享目录 `/var/www/html`，属于 `webdev` 组。为了让组内成员能够协作编辑：
+
+1. 确保目录属于正确的组：
+   ```bash
+   sudo chgrp webdev /var/www/html
+   ```
+2. 赋予组写权限，以便成员可以创建文件：
+   ```bash
+   sudo chmod g+w /var/www/html
+   ```
+3. 设置 SGID 位：
+   ```bash
+   sudo chmod g+s /var/www/html
+   ```
+
+设置完成后，使用 `ls -l` 查看权限时，你会发现组权限的执行位变为了 `s`（例如 `drwxrwsr-x`）。这标志着该目录已配置为协作友好的共享空间。

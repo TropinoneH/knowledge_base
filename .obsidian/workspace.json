@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95ecdb37eb91446d",
+        "id": "b386e04b263030bf",
         "type": "tabs",
         "children": [
           {
-            "id": "bb2bee28062364f3",
+            "id": "bab1db2919d53990",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Knowledges/SSH Server.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FreqPolicy"
+              "title": "SSH Server"
             }
           },
           {
-            "id": "a8400570812e968c",
+            "id": "15b8c037055b21f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/PDF/pi0.5.md",
+                "file": "Knowledges/Scp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,48 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "pi0.5"
+              "title": "Scp"
             }
           }
-        ]
-      },
-      {
-        "id": "3542dc07d0254323",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "797849166a50a89e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 6,
-                "left": 94,
-                "top": 108,
-                "zoom": 1.36
-              },
-              "icon": "lucide-file-text",
-              "title": "2506.01583v2"
-            }
-          },
-          {
-            "id": "8b6e40269b2c4048",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2504.16054v1.pdf",
-                "page": 1,
-                "left": -22,
-                "top": 792,
-                "zoom": 0.6678921568627452
-              },
-              "icon": "lucide-file-text",
-              "title": "2504.16054v1"
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pytorch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -219,12 +182,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from QueryTools"
+              "title": "Outgoing links from SSH Server"
             }
           },
           {
@@ -233,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Knowledges/Scp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +206,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for FreqPolicy"
+              "title": "Backlinks for Scp"
             }
           },
           {
@@ -272,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Knowledges/Scp.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -295,20 +258,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 0.6826227075497521,
+                  "scale": 1.1539618883506355,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of FreqPolicy"
+              "title": "Graph of Scp"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -326,12 +288,32 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bb2bee28062364f3",
+  "active": "15b8c037055b21f9",
   "lastOpenFiles": [
-    "Knowledges/DCT.md",
-    "Paper/FreqPolicy.md",
-    "Paper/PDF/pi0.5.md",
+    "Knowledges/SSH Server.md",
+    "Knowledges/Scp.md",
+    "Paper/3D-VLA.md",
+    "Knowledges/VPN.md",
+    "Knowledges/Xcode More Key Shortcut.md",
+    "Knowledges/Xcode Add Packages.md",
+    "Develop/VimSafari.md",
+    "Knowledges/Ubuntu Change Default Terminal Emulator.md",
+    "Develop/Span Anything.md",
+    "Knowledges/Mac Free App Website.md",
+    "Knowledges/Linux File Permission.md",
+    "Knowledges/Linux Disk.md",
+    "Knowledges/Docker.md",
+    "Knowledges/Change Default Shell.md",
+    "Knowledges/Cargo.md",
+    "Knowledges/Btrfs.md",
+    "Knowledges/ArchLinux Nvidia Black Screen.md",
+    "Knowledges/Vicon Connect ROS.md",
+    "Knowledges/Slurm.md",
+    "Knowledges/Ubuntu Common Errors.md",
     "Knowledges/ArchLinux Install.md",
+    "Paper/FreqPolicy.md",
+    "Knowledges/DCT.md",
+    "Paper/PDF/pi0.5.md",
     "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
     "Lecture/Slides/EE160-lec1.pdf",
@@ -339,32 +321,12 @@
     "Paper/Flow Matching.md",
     "Paper/pi0.md",
     "Paper/PDF/2410.24164v3.pdf",
-    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
     "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
     "Paper/PDF/1763528126611.png",
-    "Knowledges/Docker.md",
-    "Knowledges/Conda Environment.md",
-    "Knowledges/Conda Bugs.md",
-    "Knowledges/Conda Init.md",
-    "Topic/Conda.md",
-    "Knowledges/Slurm.md",
-    "Knowledges/SSH Server.md",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
     "Paper/PDF/2506.07339v1.pdf",
     "Paper/PDF/2501.09747v1.pdf",
-    "Paper/Conditioning Matters.md",
-    "Lecture/Deep Learning.md",
-    "Paper/Diffusion Policy.md",
-    "Paper/DDPM.md",
-    "Knowledges/Exponential Moving Average.md",
-    "Knowledges/Cosine Similarity.md",
-    "Paper/ViT.md",
-    "Paper/VLA-Adapter.md",
-    "Paper/Qwen2.5VL.md",
-    "Lecture/Biomedical Statistics.md",
-    "Templates/Note Template.md",
-    "Templates/Topic Template.md",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
     "Assets/Pasted image 20230424103607.png",

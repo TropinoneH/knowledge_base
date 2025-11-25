@@ -618,7 +618,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/pi0.md",
+                    "file": "Paper/FreqPolicy.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -633,7 +633,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "pi0"
+                  "title": "FreqPolicy"
+                }
+              },
+              {
+                "id": "a8400570812e968c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/PDF/pi0.5.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "pi0.5"
                 }
               }
             ]
@@ -649,33 +673,32 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2506.01583v2.pdf",
-                    "page": 2,
-                    "left": 72,
-                    "top": 675,
-                    "zoom": 0.97
+                    "page": 6,
+                    "left": 94,
+                    "top": 108,
+                    "zoom": 1.36
                   },
                   "icon": "lucide-file-text",
                   "title": "2506.01583v2"
                 }
               },
               {
-                "id": "a8400570812e968c",
+                "id": "8b6e40269b2c4048",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2410.24164v3.pdf",
-                    "page": 6,
+                    "file": "Paper/PDF/2504.16054v1.pdf",
+                    "page": 1,
                     "left": -22,
-                    "top": 572,
-                    "zoom": 0.6678921568627451
+                    "top": 792,
+                    "zoom": 0.6678921568627452
                   },
                   "icon": "lucide-file-text",
-                  "title": "2410.24164v3"
+                  "title": "2504.16054v1"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -752,7 +775,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "归纳",
+                    "query": "pytorch",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -815,7 +838,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Paper/PDF/2303.04137v5.pdf",
+                    "file": "Paper/FreqPolicy.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -825,7 +848,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for 2303.04137v5"
+                  "title": "Backlinks for FreqPolicy"
                 }
               },
               {
@@ -854,7 +877,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Paper/PDF/2303.04137v5.pdf",
+                    "file": "Paper/FreqPolicy.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -877,12 +900,12 @@
                       "repelStrength": 10,
                       "linkStrength": 1,
                       "linkDistance": 101,
-                      "scale": 1.3925405856570754,
+                      "scale": 0.6826227075497521,
                       "close": true
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of 2303.04137v5"
+                  "title": "Graph of FreqPolicy"
                 }
               }
             ]
@@ -909,8 +932,8 @@
         }
       },
       "active": "bb2bee28062364f3",
-      "mtime": "2025-11-20T08:18:03+08:00"
+      "mtime": "2025-11-24T16:18:06+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }

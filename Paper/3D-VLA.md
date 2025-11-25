@@ -5,7 +5,6 @@ tags:
   - algorithm
   - LLM
   - VLA
-  - code/python
   - ComputerVision
   - DeepLearning
   - Robot

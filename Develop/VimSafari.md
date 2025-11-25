@@ -2,7 +2,7 @@
 type: project
 tags:
   - code/swift
-  - software/Xcode
+  - software
   - web
 done: false
 rate: 🌟🌟

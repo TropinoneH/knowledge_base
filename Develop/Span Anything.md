@@ -5,8 +5,8 @@ tags:
   - ReinforcementLearning
   - algorithm
   - Robot
-  - software/ros
-  - software/vicon
+  - software
+
   - ComputerVision
   - code/python
   - code/cpp

@@ -3,7 +3,7 @@ type: software
 tags:
   - cli
   - GUI
-  - software/vpn
+  - software
   - web
 done: false
 ---

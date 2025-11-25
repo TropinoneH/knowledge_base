@@ -1,7 +1,7 @@
 ---
 type: system
 tags:
-  - software/file-system
+  - software
   - system/linux
   - cli
 done: true

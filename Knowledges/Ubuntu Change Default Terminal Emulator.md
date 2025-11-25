@@ -3,7 +3,7 @@ type: skills
 tags:
   - system/linux/ubuntu
   - cli
-  - software/terminal
+  - software
 done: true
 topic:
   - "[[System]]"

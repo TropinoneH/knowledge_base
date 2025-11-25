@@ -1,8 +1,7 @@
 ---
 type: software
 tags:
-  - software/vicon
-  - software/ros
+  - software
   - EmbodiedAI
   - ComputerVision
   - code

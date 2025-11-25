@@ -1,7 +1,7 @@
 ---
 type: system
 tags:
-  - software/nvidia
+  - software
   - error
   - GUI
   - hardware

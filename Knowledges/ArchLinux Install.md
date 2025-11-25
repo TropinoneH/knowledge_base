@@ -185,7 +185,7 @@ LANG=en_US.UTF-8
 passwd
 ```
 
-**创建新用户**:
+**[[Linux File Permission#Creating a User|创建新用户]]**:
 ```shell
 useradd -m -G wheel -s /bin/fish <username>
 ```

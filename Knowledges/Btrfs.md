@@ -3,7 +3,7 @@ type: system
 tags:
   - system/linux/archlinux
   - system/linux
-  - software/file-system
+  - software
 done: false
 topic:
   - "[[System]]"
