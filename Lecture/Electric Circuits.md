@@ -940,5 +940,108 @@ $$\frac{1}{Z_{eq}}=\frac{1}{Z_1}+\frac{1}{Z_2}+\cdots$$
 
 ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=13&rect=51,87,677,405|496]]
 
+## AC Phasor Analysis General Procedure
+
+求解一个电路的步骤:
+1. 将激励转换成cos的形式(对应phasor的标准形式)
+2. 将电路转换成phasor domain(电路的电阻/电感/电容转换成阻抗)
+3. 使用phasor domain的KCL或/和KVL列方程
+4. 求解未知数
+5. 将phasor domain的公式转换到原始的时域中
+
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=17&rect=429,7,709,531|173]]
+
+> [!example] 
+> 对于上面一题的详细过程
+> 
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=16&rect=14,32,414,400|176]]![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=17&rect=5,29,412,404|175]]
+
+> [!example] 
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=18&rect=49,208,511,393]]
+> 
+> 转换成phasor domain:
+> $$\left\{\begin{matrix}\text{电压源: }V=20\angle0^\circ=20\\\text{受控源: }I_x=\angle0^\circ i_x\\\text{电容: }Z_C=\frac{1}{j\omega C}=-j2.5\\\text{电感: }Z_L=j\omega L=j4\end{matrix}\right.$$
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=18&rect=69,20,505,183]]
+> 
+> 使用KCL:
+> $$\frac{20-V_1}{10}=\frac{V_1}{-j2.5}+\frac{V_1-V_2}{j4}$$
+> $$\frac{V_1-V_2}{j4}+2I_x=\frac{V_2}{j2}$$
+> $$I_x=\frac{V_1}{-j2.5}$$
+> 三个未知数, 两个KCL方程, 一个电容的欧姆定律. 求解得到:
+> $$I_x=7.59\angle108.4^\circ\Rightarrow i_x(t)=7.59\cos(4t+108.4^\circ)$$
+
+> [!example]- 使用Mesh Current求解phasor domain
+> 求$i_0(t)$: ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=20&rect=74,228,435,439]]
+> 
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=21&rect=122,53,477,218
+
+可以使用[[#Superposition|叠加定理]]求解:
+> [!example]- superposition
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=22&rect=55,53,611,439]]
+
+注意, 在使用superposition的时候, 需要进行判断是否是同一个$\omega$. 在上述例题中, 阻抗是相同的, 因此可以认为两个电源的$\omega$是相同的.
+
+> [!example]- 当电源的$\omega$不同时使用superposition
+> ![[Pasted image 20251125093602.jpeg]]
+> 
+> 针对D.C.电压源:
+> $$\omega=0\Rightarrow Z_C=\frac{1}{j\omega C}\to\infty,Z_L=j\omega L\to0$$
+> 和之前的说法一样, 对于直流源, 电容等于断路, 电感等于短路. 此时电路只剩下一个直流源$5V$和一个$1\Omega$电阻和$4\Omega$电阻串联:
+> $$v_0^1(t)=\frac{1}{1+4}\cdot-5=-1V$$
+> 
+> 对于振荡电压源: $\omega=2$, $V=10\angle0^\circ=10$
+> - 电感: $Z_L=j\omega L=4j$
+> - 电容: $Z_C=\frac{1}{j\omega C}=-5j$
+> 
+> $$V_0^2=\frac{1}{1+4j+\text{并联的阻抗}}\cdot10=2.498\angle-30.79^\circ$$
+> $$v_0^2(t)=2.498\cos(2t-30.79^\circ)$$
+> > [!tip]- 图片
+> > ![[Pasted image 20251125093620.jpeg]]
+> 
+> 对于振荡电流源: $\omega=5$, $I=2\angle-90^\circ$
+> - 电感: $Z_L=j\omega L=10j$
+> - 电容: $Z_C=\frac{1}{j\omega C}=-2j$
+> 
+> $$I^3_0=\frac{10j}{10j+1+\text{并联的阻抗}}I_s=\frac{10j}{10j+1+\frac{-8j}{4-2j}}2\angle-90^\circ$$
+> $$V_0^3=I^3_0\cdot 1=2.328\angle-80^\circ$$
+> $$v_0^3(t)=2.328\cos(5t-80^\circ)$$
+> 
+> > [!tip]- 图片
+> > ![[Pasted image 20251125093711.jpeg]]
+> 
+> $$\Rightarrow v_0(t)=v_0^1(t)+v_0^2(t)+v_0^3(t)=-1+2.498\cos(2t-30.79^\circ)+2.328\cos(5t-80^\circ)$$
+
+### Thevenin for Phasor Domain
+
+[[#Thevenin's Theorem]]在phasor domain也可以使用:
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=24|EE111-F25Lec8-AC-SteadyStateAnalysis, page 24]]
+
+Norton和Thevenin的转换也是[[#Source Transfer|相同的]]:
+$$V_s=Z_sI_s\Leftrightarrow I_s=\frac{V_s}{Z_s}$$
+
+Omp也相同:
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=26|EE111-F25Lec8-AC-SteadyStateAnalysis, page 26]]
+
+## Phasor Diagram
+
+![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=29&rect=45,173,586,388]]
+
+对于电容:
+$$Z_C=\frac{1}{j\omega C}=\frac{V_C}{I_C}$$
+$$I_C=j\omega CV_C=\omega C\angle90^\circ\cdot|V_c|\angle\phi$$
+
+> [!example] 
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=30&rect=340,367,643,490]]
+> 
+> 计算得到电流:
+> $$I=\frac{V_s}{R+j\omega L-\frac{j}{\omega C}}=2e^{j66.87^\circ}$$
+> 
+> - 电阻: $V_R=R\cdot I_R=R\angle0^\circ\cdot I_R$
+> - 电感: $V_L=j\omega LI_L=\omega L\angle90^\circ\cdot2\angle66.87^\circ=2\omega L\angle156.87^\circ=4\angle156.87^\circ$
+> - 电容: $V_C=\frac{1}{j\omega C}I_C=8\angle-90^\circ\cdot2\angle66.87^\circ=16\angle-23.13^\circ$
+> 
+> 因此, 如果认为都是向量, 有: $V_s=V_R+V_L+V_C$
+> ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=30&rect=305,40,665,279]]
+
 
 

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab1db2919d53990",
+            "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/SSH Server.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SSH Server"
+              "title": "Introduction to Control"
             }
           },
           {
-            "id": "15b8c037055b21f9",
+            "id": "7fba9ad21e28a254",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Scp.md",
+                "file": "Lecture/Electric Circuits.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,46 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scp"
+              "title": "Electric Circuits"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61d90fcca8c54225",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 49,
+                "left": -424,
+                "top": 203,
+                "zoom": 0.5312500000000001
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec3"
+            }
+          },
+          {
+            "id": "a29cbc20cbfb5ca8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
+                "page": 29,
+                "left": -3,
+                "top": 252,
+                "zoom": 0.76
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25Lec8-AC-SteadyStateAnalysis"
             }
           }
         ],
@@ -133,7 +172,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#javascripts",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -148,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -182,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -196,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Scp.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +246,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Scp"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -235,7 +275,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Scp.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,19 +298,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Scp"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -288,10 +329,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "15b8c037055b21f9",
+  "active": "7fba9ad21e28a254",
   "lastOpenFiles": [
-    "Knowledges/SSH Server.md",
+    "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
+    "Lecture/Electric Circuits.md",
+    "Assets/Pasted image 20251125093620.jpeg",
+    "Assets/Pasted image 20251125093711.jpeg",
+    "Assets/Pasted image 20251125093602.jpeg",
+    "Assets/Pasted image 20230424103607.png",
+    "Knowledges/PyTorch Tensor.md",
+    "Paper/pi0.5.md",
+    "Knowledges/vim.md",
     "Knowledges/Scp.md",
+    "Knowledges/SSH Server.md",
     "Paper/3D-VLA.md",
     "Knowledges/VPN.md",
     "Knowledges/Xcode More Key Shortcut.md",
@@ -311,17 +361,11 @@
     "Knowledges/Slurm.md",
     "Knowledges/Ubuntu Common Errors.md",
     "Knowledges/ArchLinux Install.md",
-    "Paper/FreqPolicy.md",
-    "Knowledges/DCT.md",
-    "Paper/PDF/pi0.5.md",
     "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
     "Lecture/Slides/EE160-lec1.pdf",
     "Paper/PDF/2504.16054v1.pdf",
-    "Paper/Flow Matching.md",
-    "Paper/pi0.md",
     "Paper/PDF/2410.24164v3.pdf",
-    "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
     "Lecture/Slides/EE111-F25Lec7-Phasor.pdf",
     "Paper/PDF/1763528126611.png",
     "Lecture/Slides/EE111-F25Lec6-2nd-Order Circuits-Part1.pdf",
@@ -329,12 +373,8 @@
     "Paper/PDF/2501.09747v1.pdf",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
-    "Assets/Pasted image 20230424103607.png",
     "Assets/Pasted image 20230424104624.png",
     "Assets/Pasted image 20251011001149.png",
-    "Assets/Pasted image 20251011001139.png",
-    "Assets/Pasted image 20251011001130.png",
-    "Assets/Pasted image 20251011000933.png",
-    "Assets/Pasted image 20241009103458.png"
+    "Assets/Pasted image 20251011001139.png"
   ]
 }
