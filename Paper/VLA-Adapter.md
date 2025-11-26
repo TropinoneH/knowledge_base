@@ -30,6 +30,9 @@ done: true
 pipeline:
 ![[2509.09372v2.pdf#page=1&rect=254,156,496,194|2509.09372v2, p.1]]
 
+pipeline:
+![[2509.09372v2.pdf#page=5&rect=108,319,508,467]]
+
 > [!PDF|] [[2509.09372v2.pdf#page=3&selection=175,15,178,1|2509.09372v2, p.3]]
 > > ActionQuery AQ
 > 
@@ -38,7 +41,7 @@ pipeline:
 > [self.action_queries = nn.Embedding(NUM_TOKENS, self.llm_dim)](https://github.com/OpenHelix-Team/VLA-Adapter/blob/838a36da195daf3e8b8a53520c8c7ce86231b6d9/prismatic/extern/hf/modeling_prismatic.py#L375C9-L375C69)
 > 
 > 在VLM中, 每一层[[Transformer]] layer输出的hidden state和Action Query进行一次cross attention, 得到更深一层的action query features:
-> ![[2509.09372v2.pdf#page=4&rect=116,566,213,693|2509.09372v2, p.4|162]] 
+> ![[2509.09372v2.pdf#page=4&rect=116,566,213,693&c|162]] 
 
 > [!PDF|] [[2509.09372v2.pdf#page=3&selection=223,0,223,62|2509.09372v2, p.3]]
 > > The backbones select the Prismatic VLM trained on Qwen2.5-0.5B
@@ -79,7 +82,7 @@ pipeline:
 > > Bridge Attention.
 > 
 > Bridge Attention: 将VLM的hidden state和Action Query的hidden state作为condition生成Action:
-> ![[2509.09372v2.pdf#page=5&rect=273,348,499,431|2509.09372v2, p.5|452]]
+> ![[2509.09372v2.pdf#page=5&rect=273,348,499,431&color=blue|452]]
 > 实际上, 在代码中, 并没有直接按照Bridge Attention的做法, 做Cross Attention以及Action的Attention. 在代码中, 仅仅是将`image feature`+`language feature`+`action query hidden state`拼接到一起, 过一次`self.language_model`的self attention, 然后通过`action_head`(分成两种, continuous的L1Regressive以及discrete的通过VLM的`logits`计算)获取normalized action.
 
 总体的数据流动为:
