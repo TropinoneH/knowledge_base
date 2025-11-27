@@ -1043,5 +1043,88 @@ $$I_C=j\omega CV_C=\omega C\angle90^\circ\cdot|V_c|\angle\phi$$
 > 因此, 如果认为都是向量, 有: $V_s=V_R+V_L+V_C$
 > ![[EE111-F25Lec8-AC-SteadyStateAnalysis.pdf#page=30&rect=305,40,665,279]]
 
+# Lecture 09
+> [!note]- slide
+> ![[EE111-F25Lec9--ACPowerCalculation.pdf]]
+
+## Instantaneous Power
+瞬时功率
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=3&rect=30,263,431,442|321]]
+$$Z_{eq}=\frac{V}{I}=\frac{V_m\angle\theta_v}{I_m\angle\theta_i}=\frac{V_m}{I_m}\angle\theta_v-\theta_i$$
+$$\begin{aligned}p(t)&=v(t)i(t)=V_mI_m\cos(\omega t+\theta_v)\cos(\omega t+\theta_i)\\&=\frac{1}{2}V_mI_m\cos(\theta_v-\theta_i)+\frac{1}{2}\cos(2\omega t+\theta_v+\theta_i)\end{aligned}$$
+
+> [!tip]- 积化和差
+> $$\cos\alpha\cdot\cos\beta=\frac{1}{2}\cos(\alpha+\beta)+\frac{1}{2}\cos(\alpha-\beta)$$
+
+## Average Power
+
+平均功率:
+$$\begin{aligned}P&=\frac{1}{T}\int_0^Tp(t)dt\\&=\frac{1}{T}\int_0^T\frac{1}{2}V_mI_m\cos(\theta_v-\theta_i)dt+\frac{1}{T}\int_0^T\frac{1}{2}V_mI_m\cos(2\omega t+\theta_v+\theta_i)dt\\&=\frac{1}{2}V_mI_m\cos(\theta_v-\theta_i)\frac{1}{T}\int_0^Tdt+\frac12V_mI_m\frac1T\int_0^T\cos(2\omega t+\theta_v+\theta_i)dt\\&=\frac12V_mI_m\cos(\theta_v-\theta_i)\end{aligned}$$
+
+对于电容和电感而言, 平均功率为0: 因为$\theta_v-\theta_i=90^\circ\Rightarrow\cos(\theta_v-\theta_i)=0$. 但是注意, 虽然平均功率为0, 但是瞬时功率不为0, 有振荡
+
+phasor domain:
+$$\begin{aligned}\text{定义共轭: }&I^*=I_m\angle-\theta_i\\&\frac12VI^*=\frac12V_mI_m\angle\theta_v-\theta_i=\frac12V_mI_m[\cos(\theta_v-\theta_i)+j\sin(\theta_v-\theta_i)]\\\Rightarrow&P=\frac12\mathbf{Re}[VI^*]=\frac12V_mI_m\cos(\theta_v-\theta_i)\end{aligned}$$
+
+对于纯电阻电路:
+$$P=\frac12V_mI_m=\frac12I^2R=\frac12|I|^2R$$
+其中$|I|^2=I\times I^*$
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=9&rect=26,140,313,405|154]]
+纯电阻电路没有向外释放能量的能力: 功率全部都大于零, 因此没有释放能量.
+
+对于纯电抗负载([[#Capacity]]和[[#Inductor]]):
+$$\theta_v-\theta_i=90^\circ\Rightarrow P=\frac12V_mI_m\cos90^\circ=0$$
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=9&rect=409,155,657,413|172]]
+纯电抗电路吸收能量和释放能量的功率是相同的, 因此虽然有瞬时功率不为0, 但平均功率为0
+
+## Effective Power
+等效功率
+
+将一个振荡电压源等效成一个直流电压源:
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=10&rect=20,311,668,448]]
+因此有:
+$$\begin{aligned}P&=\frac1T\int_0^Tp(t)dt=\frac1T\int_0^Tv(t)\frac{v(t)}{R}dt\\&=\frac1T\int_0^TV_{eff}\frac{V_{eff}}{R}dt=\frac{V_{eff}^2}{R}\\\Rightarrow V_{eff}&=\sqrt{\frac1T\int_0^Tv^2(t)dt}\end{aligned}$$
+
+[[RMS]]: $$X_{eff}=X_{rms}=\sqrt{\frac1T\int_0^Tx^2(t)dt}$$
+
+因此平均功率可以表示为:
+$$P=\frac{V_m}{\sqrt{2}}\frac{I_m}{\sqrt{2}}\cos(\theta_v-\theta_i)=V_{rms}I_{rms}\cos(\theta_v-\theta_i)$$
+
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=10&rect=104,0,567,86]]
+
+## Apparent Power
+
+视在功率.
+
+原始的功率为:
+$$P=\mathbf{Re}[V_{rms}I_{rms}^*]=V_{rms}I_{rms}\cos(\theta_v-\theta_i)$$
+
+Apparent Power视在功率($\mathbf S$或者$Sa$, 单位是V·A, 伏·安):
+$$Sa=V_{rms}I_{rms}$$
+这个不是一个正确的功率, 没有实际的物理意义. (如果实在想找出来一个物理意义, 可以认为是瞬时功率能够达到的最大值)
+
+## Power Factor
+
+功率因素:
+$$pf=\frac{P}{Sa}=\cos(\theta_v-\theta_i)$$
+
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=14&rect=64,59,455,169]]
+
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=16&rect=22,44,703,339]]
+
+在计算的时候, 如果用的是最大值$V_m,I_m$, 那么需要一直使用最大值, 并且最后算出来的结果也是最大值; 如果使用的是有效值$V_{rms},I_{rms}$, 那么也是需要一直使用RMS的值, 最后的结果也是一个有效值.
+
+## Complex Power
+
+复功率:
+$$\tilde{S}=\frac12VI^*=V_{rms}I_{rms}\angle\theta_v-\theta_i=P+jQ$$
+实部对应平均功率.
+
+complex power有两种形式:
+- 极坐标: $V_{rms}I_{rms}\angle\theta_v-\theta_i$
+- 直角坐标: $P+jQ$
+
+可以看成一个直角三角形, 边长分别为: $V_{rms}I_{rms}$, $P$, $Q$
+
 
 

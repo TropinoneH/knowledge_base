@@ -666,7 +666,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/PDF/pi0.5.md",
+                    "file": "Paper/Conditioning Matters.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -681,10 +681,35 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "pi0.5"
+                  "title": "Conditioning Matters"
+                }
+              },
+              {
+                "id": "db44ea357cbc58fb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/VLA-Adapter.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "VLA-Adapter"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "3542dc07d0254323",
@@ -721,8 +746,26 @@
                   "icon": "lucide-file-text",
                   "title": "2504.16054v1"
                 }
+              },
+              {
+                "id": "1be02dc514bbb721",
+                "type": "leaf",
+                "dimension": 50,
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2509.09372v2.pdf",
+                    "page": 5,
+                    "left": -22,
+                    "top": 630,
+                    "zoom": 0.6678921568627451
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2509.09372v2"
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -955,9 +998,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "bb2bee28062364f3",
-      "mtime": "2025-11-24T16:18:06+08:00"
+      "active": "1be02dc514bbb721",
+      "mtime": "2025-11-27T08:18:16+08:00"
     }
   },
-  "active": "paper"
+  "active": "lecture note"
 }
