@@ -81,19 +81,20 @@
                 }
               },
               {
-                "id": "a29cbc20cbfb5ca8",
+                "id": "755091a8784bd37b",
                 "type": "leaf",
+                "dimension": 50,
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
-                    "page": 29,
-                    "left": -3,
-                    "top": 252,
-                    "zoom": 0.76
+                    "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
+                    "page": 17,
+                    "left": -26,
+                    "top": 115,
+                    "zoom": 0.5677083333333334
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25Lec8-AC-SteadyStateAnalysis"
+                  "title": "EE111-F25Lec9--ACPowerCalculation"
                 }
               }
             ],
@@ -189,8 +190,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 300
       },
       "right": {
         "id": "989a8de35f3c6aa0",
@@ -332,7 +332,7 @@
         }
       },
       "active": "7fba9ad21e28a254",
-      "mtime": "2025-11-25T15:15:31+08:00"
+      "mtime": "2025-11-27T19:01:52+08:00"
     },
     "note": {
       "main": {
@@ -344,36 +344,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "bab1db2919d53990",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Knowledges/SSH Server.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "SSH Server"
-                }
-              },
-              {
                 "id": "15b8c037055b21f9",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/vim.md",
+                    "file": "Knowledges/SSH Forward.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -388,11 +364,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "vim"
+                  "title": "SSH Forward"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -532,7 +507,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/vim.md",
+                    "file": "Knowledges/SSH Forward.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -542,7 +517,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for vim"
+                  "title": "Backlinks for SSH Forward"
                 }
               },
               {
@@ -571,7 +546,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/vim.md",
+                    "file": "Knowledges/SSH Forward.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -599,7 +574,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of vim"
+                  "title": "Graph of SSH Forward"
                 }
               }
             ]
@@ -625,7 +600,7 @@
         }
       },
       "active": "15b8c037055b21f9",
-      "mtime": "2025-11-25T08:23:05+08:00"
+      "mtime": "2025-11-27T19:37:42+08:00"
     },
     "paper": {
       "main": {
@@ -1002,5 +977,5 @@
       "mtime": "2025-11-27T08:18:16+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }

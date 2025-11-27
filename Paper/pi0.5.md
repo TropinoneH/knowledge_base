@@ -17,3 +17,127 @@ done: false
 > [!note]- paper
 ![[Paper/PDF/2504.16054v1.pdf]]
 
+Motivation: 解决泛化问题.
+- 难以处理OOD(out-of-domain)问题
+- 特定robot的数据太少, 需要有一种模型能够处理异构机器人的数据
+
+主要贡献:
+- 在[[pi0]]的基础上, 提出一个分层的模型: high-level提供subtask的预测, low-level提供action的输出
+- 设计了异构数据集的协同训练的方法(并没有开源)
+- 能够在真实世界中进行零样本泛化
+
+pipeline:
+![[2504.16054v1.pdf#page=4&rect=45,524,583,733]]
+
+分成两个stages.
+
+在pre-train的时候, 仅使用VLM backbone进行训练. [[2504.16054v1.pdf#page=5&selection=3,55,6,28|此时所有的action都是用离散的token]], 使用[[FAST]]进行离散化处理, 以获得更高的效率
+
+在post-train的时候, 给模型添加了action expert, 就是[[pi0]]的Gemma 300M以及[[Flow Matching]]部分, 以实现[[2504.16054v1.pdf#page=5&selection=6,35,13,51|更细粒度的控制, 以及更高效的计算]]
+
+推理的时候, 首先让VLM预测生成subtask的hidden state, 然后low-level model(action expert)生成连续的action
+
+因此数学公式可以表示为:
+$$\pi_\theta(a_{t:t+T},\hat l|o_t,l)=\pi_\theta(a_{t:t+T}|o_t,\hat l)\pi_\theta(\hat l|o_t,l)$$
+其中:
+- $o_t$包含机械臂处的图片以及外置摄像头的图片($I^1_t,\cdots,I_t^n$), 以及机械臂的本体状态$q_t$
+- $l$是语言文本指令
+- $a_{t:t+T}$是action chunk, action horizon是$T$
+- $\hat l$是预测的subtask hidden state
+
+但是实际上在代码中, 生成$\hat l$和action chunk是同步的, 并没有先后顺序. 猜测是因为[openpi](https://github.com/Physical-Intelligence/openpi)中并没有给出完整的代码.
+
+并且在代码中, 没有给出训练base model的代码(包括[[pi0]]). 特别是pi0.5, 论文中提到的subtask的预测, 并没有任何的loss存在. 应该是由于开源的代码中并没有给出pre-training stage的代码. 推测在pre-train中, 在output embedding后面接了一层lm_head, 将输出转换成token然后进行[[Cross-Entropy Loss]]的梯度回传.
+
+为了增加训练的效果([[FAST]]中有提到), 使用离散的token进行训练. 但是为了inference的效率, 仍然需要continuous action space. 因此使用离散token和连续的token同时进行训练.
+
+特别设置了mask:
+![[2504.16054v1.pdf#page=19&rect=309,489,567,739|413]]
+其中(按照从左到右的顺序, Images+Prompt是VLM能看到的, State和Action Expert是Action Expert的. FAST Action tokens理应是Action Expert部分的. 注意 Action Expert Embeddings仅仅用于提取信息, 后续生成flow matching的向量场):
+- VLM可以看到: Images + Prompt + State
+- [[FAST]]生成的离散token能够看到VLM的全部信息, 但是看不到Action Expert生成的noisy action embedding. 同时, 因为这里是auto-regressive的生成式模型, 因此这个只能看到自己前面的信息, 看不到自己后面的信息.
+- Action Expert中, noisy action embedding(用于经过一个action out proj生成[[Flow Matching]]的向量场$v_t$)能看到VLM的全部信息, 但是看不到[[FAST]]生成的离散信息. 并且这个embedding能够完全看到自己. 这个embedding仅仅用于提取信息, 不是生成.
+
+但是注意, 这里虽然确实能够防止VLM看到action expert embeddings的信息, 但是梯度仍然能够从action回传到VLM backbone.
+
+### Loss
+
+$$\mathcal L=\mathbb E_{D,\tau,\omega}[H(x_{1:M},f_\theta^l(o_t,l))+\alpha\|\omega-a_{t:t+H}-f_\theta^a(a^{\tau,\omega}_{t:t+H},o_t,l)\|^2]$$
+其中:
+- $f_\theta^l(o_t,l)$: VLM主干, 进行next token prediction
+- $f^a_\theta(a,o,l)$: action expert, 在后期训练可以认为是flow matching
+- $H(x_{1:M},f_\theta^l(o_t,l))$: cross entropy loss, 是正常LLM训练的loss(包含[[FAST]] encoded action tokens)
+- $\alpha$: trade-off factor. 进行pre-train的时候, $\alpha=0$, 只训练VLM. post-train的时候, 打开action expert(flow matching)的loss权重
+
+在post-train的时候仍然训练VLM的next-token prediction, 因为要保持原来输出token的能力
+### Pre-Training
+
+使用[[FAST]]将连续的动作转换成离散的token
+
+**Diverse *M*obile *M*anipulator data**(MM):
+
+移动操作数据, 400 hours, 在100个新环境中做家务
+
+**Diverse *M*ulti-*E*nvironment non-mobile robot data**(ME):
+
+在家中不可移动的单/双臂机器人数据
+
+***C*ross-*E*mbodiment laboratory data**(CE):
+
+在实验室中的任务, 包含叠衣服, 摆桌子等等, 在一个比较整洁的环境中
+
+包含开源数据集[Open X-Embodiment](https://arxiv.org/abs/2310.08864)
+
+***H*igh-*L*evel subtask prediction**(HL):
+
+将"打扫卧室"等高层级指令分解成"整理床铺","调整毯子"等low-level subtask
+
+手动标注
+
+**Multi-modal *W*eb *D*ata**(WD):
+
+图像描述和物体定位等数据集([Cambrain-7M](https://arxiv.org/abs/2406.16860), [PixMo](https://arxiv.org/abs/2409.17146), [VQAv2](https://arxiv.org/abs/1612.00837))
+
+**dataset settings**
+
+为了区分一般token和action token, 使用`<control_mode> joint/end effector <control_mode>`
+
+类似[[FAST]], 需要将1st and 99th quantile到$[-1,1]$
+
+### Post-Training
+
+pre-train 280k gradient steps之后, 添加[[Flow Matching]], 并为专门训练移动policy
+
+令$\alpha=10.0$(在[[#Loss]]中), 保留文本输出能力([[Cross-Entropy Loss]]保留), 附加80k的refine
+
+post-training dataset:
+- MM
+- ME
+- WD: 为了保持模型的视觉能力和文字能力
+- Verbal Instruction: 新收集的数据集, 关于用户提供language demonstrations, 选择合适的sub-task commands指导机器人移动
+
+### AdaRMS
+
+这个是代码中, pi0.5区别于pi0最大的一点([代码](https://github.com/Physical-Intelligence/openpi)中没有给出pre-training stage的代码).
+
+在[[pi0]]中, 将time step作为一个额外的token拼接在action后面(`action horizon=50`, 但是最终的`len(action token)=51`), 然后送给[[Transformer]], 让模型自己学习timestep的机制
+
+这里使用了条件注入, 注入到[[RMS#RMSNorm in Deep Learning|RMS Norm]]中. 这里通过一些方法去学习计算两个参数: scaling和shifting, 然后对norm之后的数据进行偏移:
+$$X_{AdaRMS}=X_{RMS}\cdot(1+scale)+shift$$
+
+在pi0.5中, 使用的方法是:
+```python
+x = sinusoidal_pos_embedding
+
+x = nn.Linear(...)(x)
+x = F.silu(x)
+x = nn.Linear(...)(x)
+time_emb = F.silu(x)
+
+# in Adapter RMS Norm
+x = time_emb
+x = nn.Linear(...)(x) # this linear module is zero init
+scale, shift, gate = torch.chunk(x, 3, dim=-1)
+normed_inputs = normed_inputs * (1 + scale.to(torch.float32)) + shift.to(torch.float32)
+return normed_inputs.to(dtype), gate.to(dtype)
+```

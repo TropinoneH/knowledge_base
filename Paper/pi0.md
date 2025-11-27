@@ -25,8 +25,6 @@ Motivation:
 3. 给出一个更加高效的训练策略: 在[[2410.24164v3.pdf#page=3&selection=53,16,54,4|10000h+的机器人数据集中pretrain]], [[2410.24164v3.pdf#page=3&selection=54,11,57,22|然后针对特殊的任务进行finetune]]
 
 pipeline:
-![[2410.24164v3.pdf#page=1&rect=57,297,550,568|2410.24164v3_pi0, p.1]]
-但是核心的pipeline只有:
 ![[2410.24164v3.pdf#page=4&rect=47,587,578,751]]
 
 使用[[SigLip]]作为[[ViT]]+PaliGemma [[Transformer]]作为VLM backbone, 配合[[Flow Matching]]的denoise过程生成连续的action.
@@ -35,87 +33,122 @@ Training的代码的架构:
 ```mermaid
 graph TD
 
-a["VLM Backbone<br>(PaliGemma 2B)"]
-b["Action Expert<br>(Gemma 300M)"]
-c["Action Denosier<br>(Flow Matching)"]
+dataset[(Dataset)]
 
-d[(Dataset)]
-e(["images<br>(wrist(1 or 2), third-party)"])
-f(["language instruct<br>(tokenized by PaliGemma Tokenizer)"])
-i(["Action<br>(Expert Action, using for compute loss)"])
-g(["robot ego state"])
-oooo(["noise"])
+cat1(("concat"))
+cat2(("concat"))
+cat3(("concat"))
 
-h((concat))
-k(("\-"))
+image(["**images**<br>wrist(1 or 2) and third-party camera"])
+instruct(["**language instruct**<br>tokenized by PaliGemma Tokenizer"])
+state(["**robot state**<br>e.g. joint angle"])
+action(["**original action**<br>continuous action from expert"])
 
-l[["Flow Matching Loss"]]
-m[["Flow Matching<br>Vector Field"]]
-n((MSE Loss))
+noise(["**noise**<br>sampled from normal distribution"])
 
-d-->|Sample Batch|e
-d-->|Sample Batch|f
-d-->|Sample Batch|i
-d-->|Sample Batch|g
+dataset-->|sample batch|image
+dataset-->|sample batch|instruct
+dataset-->|sample batch|state
+dataset-->|sample batch|action
+state-->state_proj["state projection<br>nn.Linear"]-->cat2
+action-->add1("(1-t)\*action+t\*noise")
+noise-->add1
+add1-->x_t
 
-subgraph forward
-	e-->h
-	f-->h
-	h-->|embed|a
-	oooo-->b
-	a-->|"Transformer Forward<br>-> hidden state"|b
-	g-->b
-	b-->|"Transformer Forward<br>-> hidden state"|c
-	
-	c-->m
-	i-->k
-	oooo-->k
-	k-->n
-	m-->n
-	n-->l
+vlm["**VLM Backbone**<br>PaliGemma 2B"]
+vlm_weight["Q/K/V projection from VLM Backbone"]
+vit["**ViT**<br>SigLip, ViT for VLM Backbone"]
+vlm_embed["Embedding for VLM"]
+ae["**Action Expert**<br>Gemma 3000M"]
+ae_weight["Q/K/V projection from Action Expert"]
+
+subgraph VLM
+	vlm-->vit
+	vlm-->vlm_embed
+	cat1
+	vlm-->vlm_weight
 end
-l-->bbbb((Backward))
+
+subgraph AE
+	ae-->ae_weight
+end
+
+
+image-->vit
+instruct-->vlm_embed
+vit-->cat1(("concat"))
+vlm_embed-->cat1
+cat1-->vlm_weight
+
+x_t-->act_proj["action_in_proj & action time mlp in/out<br>nn.Linear"]-->cat2-->ae_weight
+
+vlm_weight-->cat3
+ae_weight-->cat3
+cat3-->sa["self attention"]
+sa-->|suffix output embed|v_t
+x_t-->minus(("\-"))
+action-->minus-->u_t
+u_t-->loss["MSE Loss"]
+v_t-->loss
+loss-->b[[Backward]]
 ```
 
 Inference时的架构:
 ```mermaid
 graph TD
 
-a[(Observation)]
 
-b(["images<br>(wrist images(1 or 2), and third-party image)"])
-c(["Language Instruct<br>(tokenized by PaliGemma Tokenizer)"])
-d(["Robot Ego State"])
+dataset[(Observation)]
 
-e["VLM Backbone<br>(PaliGemma 2B)"]
-f["Action Expert<br>(Gemma 300M)"]
-g["Flow Matching Vector Field"]
+cat1(("concat"))
+cat2(("concat"))
+cat3(("concat"))
 
-h((concat))
+image(["**images**<br>wrist(1 or 2) and third-party camera"])
+instruct(["**language instruct**<br>tokenized by PaliGemma Tokenizer"])
+state(["**robot state**<br>e.g. joint angle"])
 
-j([noise])
-k(["Denoising action<br>A<sub>k</sub><sup>1-t</sup>"])
-l[["Denoised Actions"]]
 
-a-->b
-a-->c
-a-->d
+noise(["**noisy action**<br>sampled from normal distribution"])
 
-subgraph SampleAction
-    b-->h
-    c-->h
-    d-->f
-    h-->|embed|e
-    e-->|forward<br>-> hidden state|f
-	
-	j-->f
-    subgraph WhileLoop
-	    f-->|forward<br>-> hidden state|g
-	    g-->k
-	    k-->f
-	end
-	k-->l
+dataset-->|sample batch|image
+dataset-->|sample batch|instruct
+dataset-->|sample batch|state
+state-->state_proj["state projection<br>nn.Linear"]-->cat2
+
+vlm["**VLM Backbone**<br>PaliGemma 2B"]
+vlm_weight["Q/K/V projection from VLM Backbone"]
+vit["**ViT**<br>SigLip, ViT for VLM Backbone"]
+vlm_embed["Embedding for VLM"]
+ae["**Action Expert**<br>Gemma 3000M"]
+ae_weight["Q/K/V projection from Action Expert"]
+
+subgraph VLM
+	vlm-->vit
+	vlm-->vlm_embed
+	cat1
+	vlm-->vlm_weight
 end
+
+subgraph AE
+	ae-->ae_weight
+end
+
+
+image-->vit
+instruct-->vlm_embed
+vit-->cat1(("concat"))
+vlm_embed-->cat1
+cat1-->vlm_weight
+
+noise-->act_proj["action_in_proj & action time mlp in/out<br>nn.Linear"]-->cat2-->ae_weight
+
+vlm_weight-->cat3
+ae_weight-->cat3
+cat3-->sa["self attention"]
+sa-->|suffix output embed|v_t
+v_t-->minus(("\-"))
+noise-->minus-->da(denoised actions)-->l["use while loop to denoise(send to action_in_proj)"]
 ```
 
 metrics:
