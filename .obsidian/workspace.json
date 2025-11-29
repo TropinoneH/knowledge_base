@@ -109,10 +109,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/pi06.pdf",
-                "page": 3,
-                "left": 59,
-                "top": 451,
-                "zoom": 0.89
+                "page": 1,
+                "left": -2,
+                "top": 669,
+                "zoom": 1.36
               },
               "icon": "lucide-file-text",
               "title": "pi06"
@@ -126,16 +126,16 @@
               "state": {
                 "file": "Paper/PDF/pistar06.pdf",
                 "page": 1,
-                "left": -22,
-                "top": 249,
-                "zoom": 0.67
+                "left": 21,
+                "top": 752,
+                "zoom": 2.41
               },
               "icon": "lucide-file-text",
               "title": "pistar06"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -368,15 +368,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8dc5a4795f5e827d",
+  "active": "44f72a560ca80d7e",
   "lastOpenFiles": [
     "Paper/pi0.6.md",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/pistar06.pdf",
-    "Paper/PDF/2504.16054v1.pdf",
+    "Paper/Qwen2.5VL.md",
+    "Paper/Masked Auto Encoder.md",
     "Paper/pi0.5.md",
-    "Knowledges/RMS.md",
     "Paper/pi0.md",
+    "Templates/Insert Callouts.md",
+    "Templates/Paper Note Template.md",
+    "Templates/Lecture Note Template.md",
+    "Templates/Note Template.md",
+    "Templates/Develop Template.md",
+    "Knowledges/Untitled.md",
+    "Paper/PDF/2504.16054v1.pdf",
+    "Knowledges/RMS.md",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/VLA-Adapter.md",
     "Knowledges/SSH Forward.md",
@@ -389,7 +397,6 @@
     "Lecture/Introduction to Control.md",
     "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
-    "Paper/Masked Auto Encoder.md",
     "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
     "Assets/Pasted image 20251125093620.jpeg",
     "Assets/Pasted image 20251125093711.jpeg",
@@ -398,13 +405,6 @@
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/Scp.md",
     "Knowledges/SSH Server.md",
-    "Paper/3D-VLA.md",
-    "Knowledges/VPN.md",
-    "Knowledges/Xcode More Key Shortcut.md",
-    "Knowledges/Xcode Add Packages.md",
-    "Develop/VimSafari.md",
-    "Knowledges/Ubuntu Change Default Terminal Emulator.md",
-    "Develop/Span Anything.md",
     "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
     "Lecture/Slides/EE160-lec1.pdf",
