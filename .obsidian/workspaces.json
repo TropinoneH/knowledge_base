@@ -665,7 +665,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/VLA-Adapter.md",
+                    "file": "Paper/pi0.6.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -680,7 +680,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "VLA-Adapter"
+                  "title": "pi0.6"
                 }
               }
             ],
@@ -707,40 +707,39 @@
                 }
               },
               {
-                "id": "8b6e40269b2c4048",
+                "id": "44f72a560ca80d7e",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2504.16054v1.pdf",
+                    "file": "Paper/PDF/pi06.pdf",
                     "page": 1,
-                    "left": -22,
-                    "top": 792,
-                    "zoom": 0.6678921568627452
+                    "left": -2,
+                    "top": 661,
+                    "zoom": 1.36
                   },
                   "icon": "lucide-file-text",
-                  "title": "2504.16054v1"
+                  "title": "pi06"
                 }
               },
               {
-                "id": "1be02dc514bbb721",
+                "id": "8dc5a4795f5e827d",
                 "type": "leaf",
-                "dimension": 50,
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2509.09372v2.pdf",
-                    "page": 5,
-                    "left": -22,
-                    "top": 630,
-                    "zoom": 0.6678921568627451
+                    "file": "Paper/PDF/pistar06.pdf",
+                    "page": 1,
+                    "left": 21,
+                    "top": 752,
+                    "zoom": 2.41
                   },
                   "icon": "lucide-file-text",
-                  "title": "2509.09372v2"
+                  "title": "pistar06"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -973,9 +972,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1be02dc514bbb721",
-      "mtime": "2025-11-27T08:18:16+08:00"
+      "active": "44f72a560ca80d7e",
+      "mtime": "2025-11-30T21:23:34+08:00"
     }
   },
-  "active": "paper"
+  "active": "lecture note"
 }

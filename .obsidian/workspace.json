@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95ecdb37eb91446d",
+        "id": "b386e04b263030bf",
         "type": "tabs",
         "children": [
           {
-            "id": "bb2bee28062364f3",
+            "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FreqPolicy"
+              "title": "Introduction to Control"
             }
           },
           {
-            "id": "a8400570812e968c",
+            "id": "7fba9ad21e28a254",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/Conditioning Matters.md",
+                "file": "Lecture/Electric Circuits.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,86 +52,46 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conditioning Matters"
-            }
-          },
-          {
-            "id": "db44ea357cbc58fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/pi0.6.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "pi0.6"
+              "title": "Electric Circuits"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
-        "id": "3542dc07d0254323",
+        "id": "363f9be3567338d8",
         "type": "tabs",
         "children": [
           {
-            "id": "797849166a50a89e",
+            "id": "61d90fcca8c54225",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 6,
-                "left": 94,
-                "top": 108,
-                "zoom": 1.36
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 49,
+                "left": -424,
+                "top": 203,
+                "zoom": 0.5312500000000001
               },
               "icon": "lucide-file-text",
-              "title": "2506.01583v2"
+              "title": "EE160-lec3"
             }
           },
           {
-            "id": "44f72a560ca80d7e",
+            "id": "755091a8784bd37b",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/pi06.pdf",
-                "page": 1,
-                "left": -2,
-                "top": 669,
-                "zoom": 1.36
+                "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
+                "page": 17,
+                "left": -377,
+                "top": 116,
+                "zoom": 0.5677083333333334
               },
               "icon": "lucide-file-text",
-              "title": "pi06"
-            }
-          },
-          {
-            "id": "8dc5a4795f5e827d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/pistar06.pdf",
-                "page": 1,
-                "left": 21,
-                "top": 752,
-                "zoom": 2.41
-              },
-              "icon": "lucide-file-text",
-              "title": "pistar06"
+              "title": "EE111-F25Lec9--ACPowerCalculation"
             }
           }
         ],
@@ -212,7 +172,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pytorch",
+                "query": "tag:#javascripts",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -275,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -285,7 +245,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for FreqPolicy"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -314,7 +274,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -337,12 +297,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 0.6826227075497521,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of FreqPolicy"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
@@ -368,10 +328,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "44f72a560ca80d7e",
+  "active": "7fba9ad21e28a254",
   "lastOpenFiles": [
-    "Paper/pi0.6.md",
     "Paper/PDF/pi06.pdf",
+    "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/Qwen2.5VL.md",
     "Paper/Masked Auto Encoder.md",
