@@ -85,10 +85,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-                "page": 17,
-                "left": -377,
-                "top": 116,
-                "zoom": 0.5677083333333334
+                "page": 18,
+                "left": 0,
+                "top": 435,
+                "zoom": 1.03
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec9--ACPowerCalculation"
@@ -328,8 +328,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7fba9ad21e28a254",
+  "active": "755091a8784bd37b",
   "lastOpenFiles": [
+    "Lecture/Electric Circuits.md",
     "Paper/PDF/pi06.pdf",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
@@ -350,7 +351,6 @@
     "Knowledges/SSH Forward.md",
     "Topic/SSH.md",
     "Knowledges/vim.md",
-    "Lecture/Electric Circuits.md",
     "Lecture/Machine Learning.md",
     "Knowledges/Python Module.md",
     "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
