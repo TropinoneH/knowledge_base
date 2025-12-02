@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
+            "id": "bb2bee28062364f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Introduction to Control.md",
+                "file": "Paper/FreqPolicy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Introduction to Control"
+              "title": "FreqPolicy"
             }
           },
           {
-            "id": "7fba9ad21e28a254",
+            "id": "a8400570812e968c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/Conditioning Matters.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,46 +52,110 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "Conditioning Matters"
+            }
+          },
+          {
+            "id": "db44ea357cbc58fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/pi0.6.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "pi0.6"
+            }
+          },
+          {
+            "id": "50435f877883d59a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/VLA-Adapter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "VLA-Adapter"
             }
           }
         ],
         "currentTab": 1
       },
       {
-        "id": "363f9be3567338d8",
+        "id": "3542dc07d0254323",
         "type": "tabs",
         "children": [
           {
-            "id": "61d90fcca8c54225",
+            "id": "797849166a50a89e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-lec3.pdf",
-                "page": 49,
-                "left": -424,
-                "top": 203,
-                "zoom": 0.5312500000000001
+                "file": "Paper/PDF/2506.01583v2.pdf",
+                "page": 6,
+                "left": 94,
+                "top": 108,
+                "zoom": 1.36
               },
               "icon": "lucide-file-text",
-              "title": "EE160-lec3"
+              "title": "2506.01583v2"
             }
           },
           {
-            "id": "755091a8784bd37b",
+            "id": "44f72a560ca80d7e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-                "page": 19,
-                "left": -21,
-                "top": 131,
-                "zoom": 0.7239583333333334
+                "file": "Paper/PDF/pi06.pdf",
+                "page": 1,
+                "left": -2,
+                "top": 661,
+                "zoom": 1.36
               },
               "icon": "lucide-file-text",
-              "title": "EE111-F25Lec9--ACPowerCalculation"
+              "title": "pi06"
+            }
+          },
+          {
+            "id": "8dc5a4795f5e827d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/pistar06.pdf",
+                "page": 1,
+                "left": 21,
+                "top": 752,
+                "zoom": 2.41
+              },
+              "icon": "lucide-file-text",
+              "title": "pistar06"
             }
           }
         ],
@@ -172,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascripts",
+                "query": "pytorch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,8 +251,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -236,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/FreqPolicy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +309,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for FreqPolicy"
             }
           },
           {
@@ -275,7 +338,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/FreqPolicy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -298,12 +361,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 0.6826227075497521,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of FreqPolicy"
             }
           }
         ]
@@ -329,11 +392,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7fba9ad21e28a254",
+  "active": "a8400570812e968c",
   "lastOpenFiles": [
-    "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-    "Lecture/Electric Circuits.md",
+    "Paper/FreqPolicy.md",
+    "Paper/VLA-Adapter.md",
+    "Paper/Conditioning Matters.md",
     "Paper/PDF/pi06.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+    "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/Qwen2.5VL.md",
@@ -349,15 +416,12 @@
     "Paper/PDF/2504.16054v1.pdf",
     "Knowledges/RMS.md",
     "Paper/PDF/2509.09372v2.pdf",
-    "Paper/VLA-Adapter.md",
     "Knowledges/SSH Forward.md",
     "Topic/SSH.md",
     "Knowledges/vim.md",
     "Lecture/Machine Learning.md",
     "Knowledges/Python Module.md",
     "Lecture/Introduction to Control.md",
-    "Paper/Conditioning Matters.md",
-    "Paper/FreqPolicy.md",
     "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
     "Assets/Pasted image 20251125093620.jpeg",
     "Assets/Pasted image 20251125093711.jpeg",
@@ -369,7 +433,6 @@
     "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
     "Lecture/Slides/EE160-lec1.pdf",
-    "Paper/PDF/2410.24164v3.pdf",
     "Paper/PDF/1763528126611.png",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",

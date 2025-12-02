@@ -1127,6 +1127,12 @@ complex power有两种形式:
 可以看成一个直角三角形, 边长分别为: $V_{rms}I_{rms}$, $P$, $Q$, 下图中的$\theta=\theta_v-\theta_i$
 ![[EE111-F25Lec9--ACPowerCalculation.pdf#page=20&rect=36,35,522,490|303]]
 
+## Summary
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=22&rect=71,129,644,400]]
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=32&rect=13,7,711,440]]
 
+## Lecture 10
+> [!note]- slide
+> ![[EE111-F25-Lec10-ThreePhaseCircuits.pdf]]
 
 

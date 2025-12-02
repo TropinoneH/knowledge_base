@@ -49,7 +49,7 @@
                       "sortOrder": "alphabetical",
                       "showSearch": false,
                       "searchQuery": "",
-                      "backlinkCollapsed": false,
+                      "backlinkCollapsed": true,
                       "unlinkedCollapsed": true
                     }
                   },
@@ -83,18 +83,17 @@
               {
                 "id": "755091a8784bd37b",
                 "type": "leaf",
-                "dimension": 50,
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-                    "page": 17,
-                    "left": -26,
-                    "top": 115,
-                    "zoom": 0.5677083333333334
+                    "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+                    "page": 9,
+                    "left": -13,
+                    "top": 509,
+                    "zoom": 1.1197916666666667
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25Lec9--ACPowerCalculation"
+                  "title": "EE111-F25-Lec10-ThreePhaseCircuits"
                 }
               }
             ],
@@ -332,7 +331,7 @@
         }
       },
       "active": "7fba9ad21e28a254",
-      "mtime": "2025-11-27T19:01:52+08:00"
+      "mtime": "2025-12-02T15:38:34+08:00"
     },
     "note": {
       "main": {
@@ -976,5 +975,5 @@
       "mtime": "2025-11-30T21:23:34+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }

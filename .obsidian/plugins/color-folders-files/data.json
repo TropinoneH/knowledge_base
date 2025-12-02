@@ -1,5 +1,71 @@
 {
-  "styles": {},
-  "presets": {},
-  "presetOrder": []
+  "styles": {
+    "Assets": {
+      "backgroundColor": "#4f1720",
+      "applyToFiles": false,
+      "applyToSubfolders": true,
+      "opacity": 1
+    },
+    "Bases": {
+      "backgroundColor": "#6b2a24",
+      "applyToSubfolders": true
+    },
+    "Develop": {
+      "backgroundColor": "#6b3f1f",
+      "applyToSubfolders": true,
+      "applyToFiles": false
+    },
+    "Knowledges": {
+      "backgroundColor": "#6d5826",
+      "applyToSubfolders": true
+    },
+    "Lecture": {
+      "backgroundColor": "#206030",
+      "applyToSubfolders": true
+    },
+    "Paper": {
+      "applyToSubfolders": true,
+      "backgroundColor": "#1c5f54"
+    },
+    "Templates": {
+      "applyToSubfolders": true,
+      "backgroundColor": "#1d5763"
+    },
+    "Topic": {
+      "applyToSubfolders": true,
+      "backgroundColor": "#1c4c6e"
+    }
+  },
+  "presets": {
+    "Assets": {
+      "backgroundColor": "#4f1720",
+      "applyToFiles": true,
+      "applyToSubfolders": true
+    },
+    "Bases": {
+      "backgroundColor": "#6b2a24",
+      "applyToSubfolders": true
+    },
+    "Develop": {},
+    "Knowledge": {
+      "backgroundColor": "#6d5826",
+      "applyToSubfolders": true
+    },
+    "Lecture": {
+      "backgroundColor": "#206030"
+    },
+    "Paper": {},
+    "Template": {},
+    "Topic": {}
+  },
+  "presetOrder": [
+    "Assets",
+    "Bases",
+    "Develop",
+    "Knowledge",
+    "Lecture",
+    "Paper",
+    "Template",
+    "Topic"
+  ]
 }
