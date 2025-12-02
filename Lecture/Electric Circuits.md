@@ -1118,13 +1118,15 @@ $$pf=\frac{P}{Sa}=\cos(\theta_v-\theta_i)$$
 
 复功率:
 $$\tilde{S}=\frac12VI^*=V_{rms}I_{rms}\angle\theta_v-\theta_i=P+jQ$$
-实部对应平均功率.
+实部对应平均功率, 虚部对应相应功率(Reactive Power)
 
 complex power有两种形式:
 - 极坐标: $V_{rms}I_{rms}\angle\theta_v-\theta_i$
 - 直角坐标: $P+jQ$
 
-可以看成一个直角三角形, 边长分别为: $V_{rms}I_{rms}$, $P$, $Q$
+可以看成一个直角三角形, 边长分别为: $V_{rms}I_{rms}$, $P$, $Q$, 下图中的$\theta=\theta_v-\theta_i$
+![[EE111-F25Lec9--ACPowerCalculation.pdf#page=20&rect=36,35,522,490|303]]
+
 
 
 

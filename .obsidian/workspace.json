@@ -85,10 +85,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-                "page": 18,
-                "left": 0,
-                "top": 435,
-                "zoom": 1.03
+                "page": 19,
+                "left": -21,
+                "top": 131,
+                "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
               "title": "EE111-F25Lec9--ACPowerCalculation"
@@ -187,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -328,8 +329,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "755091a8784bd37b",
+  "active": "7fba9ad21e28a254",
   "lastOpenFiles": [
+    "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
     "Lecture/Electric Circuits.md",
     "Paper/PDF/pi06.pdf",
     "Paper/pi0.6.md",
@@ -353,7 +355,6 @@
     "Knowledges/vim.md",
     "Lecture/Machine Learning.md",
     "Knowledges/Python Module.md",
-    "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
     "Lecture/Introduction to Control.md",
     "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
