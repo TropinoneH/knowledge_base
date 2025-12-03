@@ -103,8 +103,7 @@
               "title": "VLA-Adapter"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3542dc07d0254323",
@@ -157,9 +156,26 @@
               "icon": "lucide-file-text",
               "title": "pistar06"
             }
+          },
+          {
+            "id": "453d925494891402",
+            "type": "leaf",
+            "dimension": 33.333333333333336,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2509.09372v2.pdf",
+                "page": 5,
+                "left": -23,
+                "top": 514,
+                "zoom": 0.6495098039215687
+              },
+              "icon": "lucide-file-text",
+              "title": "2509.09372v2"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -236,7 +252,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pytorch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -247,7 +263,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -392,9 +409,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a8400570812e968c",
+  "active": "bb2bee28062364f3",
   "lastOpenFiles": [
+    "Paper/PDF/2111.06377v3.pdf",
     "Paper/FreqPolicy.md",
+    "Paper/PDF/2506.01583v2.pdf",
+    "Paper/PDF/2509.09372v2.pdf",
     "Paper/VLA-Adapter.md",
     "Paper/Conditioning Matters.md",
     "Paper/PDF/pi06.pdf",
@@ -415,7 +435,6 @@
     "Knowledges/Untitled.md",
     "Paper/PDF/2504.16054v1.pdf",
     "Knowledges/RMS.md",
-    "Paper/PDF/2509.09372v2.pdf",
     "Knowledges/SSH Forward.md",
     "Topic/SSH.md",
     "Knowledges/vim.md",
@@ -430,9 +449,7 @@
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/Scp.md",
     "Knowledges/SSH Server.md",
-    "Paper/PDF/2506.01583v2.pdf",
     "Bases/Paper.base",
-    "Lecture/Slides/EE160-lec1.pdf",
     "Paper/PDF/1763528126611.png",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
