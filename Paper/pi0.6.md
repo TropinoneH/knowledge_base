@@ -27,9 +27,9 @@ Motivation: 之前的工作([[pi0]], [[pi0.5]])过度依赖特定任务的fine-t
 
 基于[[pi0.5]]进行构建: [[pi06.pdf#page=1&selection=30,1,43,69|有high-level的subtask的预测和low-level action的生成]]. 同时, 这个也是[[pistar0.6]]的base model.
 
-与[[pi0.5]]一样, 基于[[Flow Matching]]和[[FAST]], 同时有discrete和continuous的action loss. 但是VLM的backbone使用了Gemma 4B, Action Expert
+与[[pi0.5]]一样, 基于[[Flow Matching]]和[[FAST]], 同时有discrete和continuous的action loss. 但是VLM的backbone使用了Gemma 4B, Action Expert用了Gemma 860M, 扩大了参数.
 
-
+ 
 
 
 

@@ -34,7 +34,7 @@
                 }
               },
               {
-                "id": "7fba9ad21e28a254",
+                "id": "085b59be24e35215",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -49,7 +49,7 @@
                       "sortOrder": "alphabetical",
                       "showSearch": false,
                       "searchQuery": "",
-                      "backlinkCollapsed": true,
+                      "backlinkCollapsed": false,
                       "unlinkedCollapsed": true
                     }
                   },
@@ -87,10 +87,10 @@
                   "type": "pdf",
                   "state": {
                     "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
-                    "page": 9,
-                    "left": -13,
-                    "top": 509,
-                    "zoom": 1.1197916666666667
+                    "page": 18,
+                    "left": -34,
+                    "top": 322,
+                    "zoom": 0.7
                   },
                   "icon": "lucide-file-text",
                   "title": "EE111-F25-Lec10-ThreePhaseCircuits"
@@ -189,7 +189,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 300
+        "width": 300,
+        "collapsed": true
       },
       "right": {
         "id": "989a8de35f3c6aa0",
@@ -330,8 +331,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "7fba9ad21e28a254",
-      "mtime": "2025-12-02T15:38:34+08:00"
+      "active": "085b59be24e35215",
+      "mtime": "2025-12-04T09:51:00+08:00"
     },
     "note": {
       "main": {
@@ -599,7 +600,7 @@
         }
       },
       "active": "15b8c037055b21f9",
-      "mtime": "2025-11-27T19:37:42+08:00"
+      "mtime": "2025-12-04T09:17:53+08:00"
     },
     "paper": {
       "main": {
@@ -681,6 +682,30 @@
                   "icon": "lucide-file",
                   "title": "pi0.6"
                 }
+              },
+              {
+                "id": "50435f877883d59a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/VLA-Adapter.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "VLA-Adapter"
+                }
               }
             ],
             "currentTab": 2
@@ -690,22 +715,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "797849166a50a89e",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2506.01583v2.pdf",
-                    "page": 6,
-                    "left": 94,
-                    "top": 108,
-                    "zoom": 1.36
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2506.01583v2"
-                }
-              },
-              {
                 "id": "44f72a560ca80d7e",
                 "type": "leaf",
                 "state": {
@@ -713,9 +722,9 @@
                   "state": {
                     "file": "Paper/PDF/pi06.pdf",
                     "page": 1,
-                    "left": -2,
-                    "top": 661,
-                    "zoom": 1.36
+                    "left": -22,
+                    "top": 710,
+                    "zoom": 0.67
                   },
                   "icon": "lucide-file-text",
                   "title": "pi06"
@@ -736,9 +745,24 @@
                   "icon": "lucide-file-text",
                   "title": "pistar06"
                 }
+              },
+              {
+                "id": "453d925494891402",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2509.09372v2.pdf",
+                    "page": 5,
+                    "left": -22,
+                    "top": 514,
+                    "zoom": 0.6678921568627451
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2509.09372v2"
+                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -815,7 +839,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "pytorch",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -826,7 +850,8 @@
                   "title": "Search"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "horizontal",
@@ -971,8 +996,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "44f72a560ca80d7e",
-      "mtime": "2025-11-30T21:23:34+08:00"
+      "active": "db44ea357cbc58fb",
+      "mtime": "2025-12-04T09:17:51+08:00"
     }
   },
   "active": "paper"

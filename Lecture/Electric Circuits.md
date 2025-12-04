@@ -1131,8 +1131,87 @@ complex power有两种形式:
 ![[EE111-F25Lec9--ACPowerCalculation.pdf#page=22&rect=71,129,644,400]]
 ![[EE111-F25Lec9--ACPowerCalculation.pdf#page=32&rect=13,7,711,440]]
 
-## Lecture 10
+# Lecture 10
 > [!note]- slide
 > ![[EE111-F25-Lec10-ThreePhaseCircuits.pdf]]
+
+## Three-Phase Circuits
+
+三相电路: 家庭供电
+
+Balanced Three-Phase Sources: 三个电压源的相位相差$120^\circ$:
+![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=4&rect=61,7,675,316]]
+
+### Source-Load Configurations
+
+参考[[#Delta-wye Conversion]]部分:
+
+Y-Y连接:
+![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=9&rect=49,235,669,436]]
+中间的$n$和$N$节点是可连可不连的.
+
+Y-Delta:
+![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=9&rect=42,26,667,226]]
+
+Delta-Y:
+![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=10&rect=20,234,640,436]]
+
+Delta-Delta:
+![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=10&rect=29,21,654,222]]
+
+> [!example] 
+> ![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=11&rect=42,13,671,243]]
+> 
+> $$Z_Y=Z_s+Z_l+Z_L$$
+> 
+> 首先判断$n$和$N$之间是否是等电势的. 即, 求解$I_N$是否为0. 如果为0, 说明没有电流流过, 即两点之间等电势.
+> 
+> $$\begin{aligned}V_{an}&=I_aZ_Y-I_nZ_n\\V_{bn}&=I_bZ_Y-I_nZ_n\\V_{cn}&=I_cZ_Y-I_nZ_n\end{aligned}$$
+> $$\begin{aligned}\Rightarrow V_{an}+V_{bn}+V_{cn}&=(I_a+I_b+I_c)Z_Y-3I_nZ_n\\0&=-I_nZ_Y-3I_nZ_n\\(Z_Y+3Z_n)I_n&=0\end{aligned}$$
+> 由于阻抗不可能小于0, 因此$Z_Y+3Z_n\neq0$, 因此有$I_n=0$, 即没有电势差.
+> 
+> 因此, 电路有:
+> $$I_a=\frac{V_{an}}{Z_Y}\ \ \ I_b=\frac{V_{an}}{Z_Y}\ \ \ I_c=\frac{V_{an}}{Z_Y}$$
+> $$I_b=I_a\cdot1\angle-120^\circ$$
+
+对于Balanced Y-Y三相电路, 可以拆解成多个单相电路的拼接. 可以求解简单的单相电路然后拼接的方式求解.
+
+类似的, 对于Y-Delta, 可以将阻抗使用[[#Delta-wye Conversion]]转换成Y型然后使用Y-Y的方法, 分解求的最终结果.
+
+> [!example] 
+> ![[Pasted image 20251204085823.jpeg|324]]
+> 
+> 注意, 这里面写的电压是[[#Effective Power|RMS]]的值
+> 
+> 将load部分转换成Y字型电路: $Z_{LY}=4+4j$
+> 
+> ![[Pasted image 20251204090413.jpeg|325]]
+> 
+> 然后可以直接去计算粉线上方的单相电路:
+> $$\begin{aligned}I_a&=\frac{100\angle0^\circ}{Z_{LY}+1+2j}=12.8\angle-50.19^\circ\\ I_b&=\frac{100\angle-120^\circ}{Z_{LY}+1+2j}=12.8\angle-170.19^\circ\\ I_c&=\frac{100\angle120^\circ}{Z_{LY}+1+2j}=12.8\angle69.81^\circ\end{aligned}$$
+> 
+> $$\tilde S=|I_a|^2Z_{LY}=12.8^2\cdot(4+4j)=655.36+655.36j$$
+ 
+> [!example]
+> 如果使用纯Y-Delta求解:
+> 
+> ![[Pasted image 20251204085823.jpeg|324]]
+> 
+> 注意, 这里面写的电压是[[#Effective Power|RMS]]的值
+> 
+> 对A点使用KCL:
+> $$I_a+I_{CA}=I_{AB}\Rightarrow I_{CA}(-1+1\angle-120^\circ)=I_a$$
+> $$\Rightarrow I_{CA}=\frac{I_a}{-1+1\angle-120^\circ}=7.39\angle99.81^\circ$$
+> $$\tilde S=|I_{CA}|Z_L=7.39^2\cdot (12+12j)=655.36+655.36j$$
+
+对于Delta-Y, 尝试将电源转换成Y形式:
+> [!example] 
+> ![[EE111-F25-Lec10-ThreePhaseCircuits.pdf#page=19&rect=220,232,649,485]]
+> 
+> $$\begin{aligned}V_{ab}&=V_{an}-V_{bn}\\ V_{bn}&=V_{an}\cdot1-\angle-120^\circ\\ \Rightarrow V_{an}&=\frac{V_{ab}}{1-1\angle-120^\circ}=\frac{V_{ab}}{\sqrt{3}}\angle-30^\circ\end{aligned}$$
+> 然后可以使用Y-Y的单相电路:
+> $$I_a=\frac{V_{an}}{Z_Y}=\frac{V_{ab}}{\sqrt{3}Z_Y}\cdot\angle-30^\circ$$
+> $$\tilde S=|I_a|^2Z_Y$$
+
 
 

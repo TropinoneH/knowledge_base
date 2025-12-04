@@ -103,28 +103,13 @@
               "title": "VLA-Adapter"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "3542dc07d0254323",
         "type": "tabs",
         "children": [
-          {
-            "id": "797849166a50a89e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2506.01583v2.pdf",
-                "page": 6,
-                "left": 94,
-                "top": 108,
-                "zoom": 1.36
-              },
-              "icon": "lucide-file-text",
-              "title": "2506.01583v2"
-            }
-          },
           {
             "id": "44f72a560ca80d7e",
             "type": "leaf",
@@ -133,9 +118,9 @@
               "state": {
                 "file": "Paper/PDF/pi06.pdf",
                 "page": 1,
-                "left": -23,
-                "top": 662,
-                "zoom": 0.6495098039215687
+                "left": -22,
+                "top": 710,
+                "zoom": 0.67
               },
               "icon": "lucide-file-text",
               "title": "pi06"
@@ -160,22 +145,20 @@
           {
             "id": "453d925494891402",
             "type": "leaf",
-            "dimension": 33.333333333333336,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2509.09372v2.pdf",
                 "page": 5,
-                "left": -23,
+                "left": -22,
                 "top": 514,
-                "zoom": 0.6495098039215687
+                "zoom": 0.6678921568627451
               },
               "icon": "lucide-file-text",
               "title": "2509.09372v2"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -409,19 +392,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bb2bee28062364f3",
+  "active": "db44ea357cbc58fb",
   "lastOpenFiles": [
-    "Paper/PDF/2111.06377v3.pdf",
-    "Paper/FreqPolicy.md",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+    "Knowledges/SSH Forward.md",
+    "Paper/pi0.6.md",
+    "Paper/PDF/pi06.pdf",
     "Paper/PDF/2506.01583v2.pdf",
+    "Paper/FreqPolicy.md",
+    "Assets/Pasted image 20251204090413.jpeg",
+    "Assets/Pasted image 20251204085823.jpeg",
+    "Lecture/Introduction to Control.md",
+    "Paper/PDF/2111.06377v3.pdf",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/VLA-Adapter.md",
     "Paper/Conditioning Matters.md",
-    "Paper/PDF/pi06.pdf",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
     "Lecture/Slides/EE111-F25Lec9--ACPowerCalculation.pdf",
-    "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/Qwen2.5VL.md",
     "Paper/Masked Auto Encoder.md",
@@ -435,12 +422,10 @@
     "Knowledges/Untitled.md",
     "Paper/PDF/2504.16054v1.pdf",
     "Knowledges/RMS.md",
-    "Knowledges/SSH Forward.md",
     "Topic/SSH.md",
     "Knowledges/vim.md",
     "Lecture/Machine Learning.md",
     "Knowledges/Python Module.md",
-    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE111-F25Lec8-AC-SteadyStateAnalysis.pdf",
     "Assets/Pasted image 20251125093620.jpeg",
     "Assets/Pasted image 20251125093711.jpeg",
@@ -453,8 +438,6 @@
     "Paper/PDF/1763528126611.png",
     "Assets/Pasted image 20251030212859.png",
     "Assets/Pasted image 20251030212857.png",
-    "Assets/Pasted image 20230424104624.png",
-    "Assets/Pasted image 20251011001149.png",
-    "Assets/Pasted image 20251011001139.png"
+    "Assets/Pasted image 20230424104624.png"
   ]
 }
