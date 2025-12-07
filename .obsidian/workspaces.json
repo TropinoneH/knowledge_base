@@ -88,7 +88,7 @@
                   "state": {
                     "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
                     "page": 18,
-                    "left": -34,
+                    "left": -27,
                     "top": 322,
                     "zoom": 0.7
                   },
@@ -332,7 +332,7 @@
         }
       },
       "active": "085b59be24e35215",
-      "mtime": "2025-12-04T09:51:00+08:00"
+      "mtime": "2025-12-07T21:32:20+08:00"
     },
     "note": {
       "main": {
@@ -1000,5 +1000,5 @@
       "mtime": "2025-12-05T00:07:51+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }
