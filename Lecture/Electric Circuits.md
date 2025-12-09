@@ -1243,15 +1243,42 @@ $$v_2=M_{21}\frac{di_1}{dt}$$
 > 在这种情况下, 串联的电感的等效值为:
 > $$L_{eff}=L_1+L_2-2M$$
 
-> [!example] 
-> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=8&rect=308,311,707,457]]
-> 求: $i_1$和$i_2$
-> 
-> 使用KVL:
-> $$\begin{aligned}v_1(t)&=i_1R_1+L_1\frac{di_1}{dt}+M\frac{di_2}{dt}\\v_2(t)&=i_2R_2+L_2\frac{di_2}{dt}+M\frac{di_1}{dt}\end{aligned}$$
-> 转换成[[#Phasor]] domain:
-> $$\begin{aligned}V_1&=I_1R_1+L_1\cdot j\omega I_1+M\cdot j\omega I_2\\V_2&=I_2R_2+L_2\cdot j\omega I_2+M\cdot j\omega I_1\end{aligned}$$
-> 
 
+![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=8&rect=308,311,707,457]]
+求: $i_1$和$i_2$
+
+使用KVL:
+$$\begin{aligned}v_1(t)&=i_1R_1+L_1\frac{di_1}{dt}+M\frac{di_2}{dt}\\v_2(t)&=i_2R_2+L_2\frac{di_2}{dt}+M\frac{di_1}{dt}\end{aligned}$$
+转换成[[#Phasor]] domain:
+$$\begin{aligned}V_1&=I_1R_1+L_1\cdot j\omega I_1+M\cdot j\omega I_2\\V_2&=I_2R_2+L_2\cdot j\omega I_2+M\cdot j\omega I_1\end{aligned}$$
+可以理解成, 独立的不互感的线圈加上一个受控电压源:
+![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=9&rect=53,222,679,409]]
+
+> [!example] 
+> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=10&rect=50,179,614,363]]
+> 
+> KVL:
+> $$\begin{aligned}12\angle0^\circ&=-4jI_1+5jI_1-3jI_2\\3jI_1&=6jI_2+12I_2\end{aligned}$$
+> $$\begin{aligned}I_1&=13.01\angle-49.39^\circ\\I_2&=2.91\angle14.03^\circ\end{aligned}$$
+> $$\begin{aligned}V_1&=5jI_1-3jI_2\\V_2&=-6jI_2+3jI_1\end{aligned}$$
+> $$\frac{V_1}{V_2}=1.77\angle19.29^\circ$$
+
+## Transformer
+
+变压器(不是Transformer模型)
+![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=13&rect=39,184,393,333]]
+
+有等效阻抗:
+$$Z_{in}=R_1+j\omega L_1+\frac{\omega^2M^2}{R_2+j\omega L_2+Z_2}$$
+
+> [!example] 
+> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=14&rect=149,211,589,391]]
+> 找到(1) Mesh Currents (2) Complex power absorbed by the voltage source
+> 
+> 找到受控源:
+> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=15&rect=173,259,482,470]]
+> 然后使用标准的网孔法求解.
+> 
+> 注意, $j8$的电感受$j6$电感的影响. $j6$电感上的电流是两个网孔电流的差值: $I_1-I_2$.
 
 

@@ -86,14 +86,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
-                    "page": 18,
-                    "left": -27,
-                    "top": 322,
-                    "zoom": 0.7
+                    "file": "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
+                    "page": 16,
+                    "left": -21,
+                    "top": 344,
+                    "zoom": 0.7239583333333334
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25-Lec10-ThreePhaseCircuits"
+                  "title": "EE111-F25-Lec11-MagneticallyCoupledCircuits"
                 }
               }
             ],
@@ -332,7 +332,7 @@
         }
       },
       "active": "085b59be24e35215",
-      "mtime": "2025-12-07T21:32:20+08:00"
+      "mtime": "2025-12-09T09:56:11+08:00"
     },
     "note": {
       "main": {
@@ -349,7 +349,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/SSH Forward.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -364,7 +364,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "SSH Forward"
+                  "title": "PyTorch Tensor"
                 }
               }
             ]
@@ -507,7 +507,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/SSH Forward.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -517,7 +517,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for SSH Forward"
+                  "title": "Backlinks for PyTorch Tensor"
                 }
               },
               {
@@ -546,7 +546,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/SSH Forward.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -574,7 +574,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of SSH Forward"
+                  "title": "Graph of PyTorch Tensor"
                 }
               }
             ]
@@ -600,7 +600,7 @@
         }
       },
       "active": "15b8c037055b21f9",
-      "mtime": "2025-12-04T09:17:53+08:00"
+      "mtime": "2025-12-09T15:23:59+08:00"
     },
     "paper": {
       "main": {
@@ -773,15 +773,14 @@
               {
                 "id": "403bdbee4581b325",
                 "type": "leaf",
-                "dimension": 50,
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2406.11838v3.pdf",
                     "page": 4,
-                    "left": -22,
+                    "left": -15,
                     "top": 588,
-                    "zoom": 0.6678921568627452
+                    "zoom": 0.6678921568627451
                   },
                   "icon": "lucide-file-text",
                   "title": "2406.11838v3"
@@ -1023,8 +1022,8 @@
         }
       },
       "active": "453d925494891402",
-      "mtime": "2025-12-09T08:20:42+08:00"
+      "mtime": "2025-12-09T13:18:38+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }
