@@ -706,9 +706,33 @@
                   "icon": "lucide-file",
                   "title": "VLA-Adapter"
                 }
+              },
+              {
+                "id": "453d925494891402",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/PDF/Masked AutoRegressive.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Masked AutoRegressive"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           },
           {
             "id": "3542dc07d0254323",
@@ -722,7 +746,7 @@
                   "state": {
                     "file": "Paper/PDF/pi06.pdf",
                     "page": 1,
-                    "left": -22,
+                    "left": -13,
                     "top": 240,
                     "zoom": 0.67
                   },
@@ -738,31 +762,33 @@
                   "state": {
                     "file": "Paper/PDF/pistar06.pdf",
                     "page": 1,
-                    "left": 21,
-                    "top": 752,
-                    "zoom": 2.41
+                    "left": -14,
+                    "top": 792,
+                    "zoom": 1.31
                   },
                   "icon": "lucide-file-text",
                   "title": "pistar06"
                 }
               },
               {
-                "id": "453d925494891402",
+                "id": "403bdbee4581b325",
                 "type": "leaf",
+                "dimension": 50,
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2509.09372v2.pdf",
-                    "page": 5,
+                    "file": "Paper/PDF/2406.11838v3.pdf",
+                    "page": 4,
                     "left": -22,
-                    "top": 514,
-                    "zoom": 0.6678921568627451
+                    "top": 588,
+                    "zoom": 0.6678921568627452
                   },
                   "icon": "lucide-file-text",
-                  "title": "2509.09372v2"
+                  "title": "2406.11838v3"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -996,9 +1022,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "db44ea357cbc58fb",
-      "mtime": "2025-12-05T00:07:51+08:00"
+      "active": "453d925494891402",
+      "mtime": "2025-12-09T08:20:42+08:00"
     }
   },
-  "active": "paper"
+  "active": "lecture note"
 }

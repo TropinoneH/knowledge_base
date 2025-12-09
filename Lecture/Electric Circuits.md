@@ -1213,5 +1213,45 @@ Delta-Delta:
 > $$I_a=\frac{V_{an}}{Z_Y}=\frac{V_{ab}}{\sqrt{3}Z_Y}\cdot\angle-30^\circ$$
 > $$\tilde S=|I_a|^2Z_Y$$
 
+# Lecture 11
+> [!note]- slide
+> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf]]
+
+互感(Mutual Inductance): 一个线圈上电流的变换引起另一个线圈上电流的变化
+
+![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=4&rect=112,198,529,370]]
+
+$$v_1=L_1\frac{di_1}{dt}$$
+电流变化产生磁场. 部分磁场只影响一号线圈自己: $\phi_{11}$, 另一部分磁场“泄漏”出去, 会影响到其他(2号线圈)元件: $\phi_{21}$
+
+最终二号线圈产生的电流, 和线圈缠绕的匝数以及两个线圈耦合的程度有关系. 在电路中并不关注他们之间的关系, 因此使用一个$M_{21}$表示相关的系数:
+$$v_2=M_{21}\frac{di_1}{dt}$$
+
+影响的系数$M_{12}=M_{21}=N_1N_2\mathscr P$(单位: 亨利), 其中$\mathscr P$表示耦合程度, 只和两个线圈之间的物理属性有关, 因此在不改变两个线圈的情况下(距离等), 是定值.
+
+![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=5&rect=38,317,657,420]]
+方向(或者说感应电压的极性): 电流在两个线圈上的方向相同. 
+
+如, 第一张图, $i_1$是从上面往下走, 那么$i_2$应该也是从上往下走. 因此$L_2$或者$v_2$极性应该是上正下负.
+
+> [!example] 
+> ![[Pasted image 20251209084923.jpeg]]
+> 对于串联的电感, 如果有互感, 那么等效值为:
+> $$L_{eff}=L_1+L_2+2M$$
+> 
+> ![[Pasted image 20251209085217.jpeg]]
+> 在这种情况下, 串联的电感的等效值为:
+> $$L_{eff}=L_1+L_2-2M$$
+
+> [!example] 
+> ![[EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf#page=8&rect=308,311,707,457]]
+> 求: $i_1$和$i_2$
+> 
+> 使用KVL:
+> $$\begin{aligned}v_1(t)&=i_1R_1+L_1\frac{di_1}{dt}+M\frac{di_2}{dt}\\v_2(t)&=i_2R_2+L_2\frac{di_2}{dt}+M\frac{di_1}{dt}\end{aligned}$$
+> 转换成[[#Phasor]] domain:
+> $$\begin{aligned}V_1&=I_1R_1+L_1\cdot j\omega I_1+M\cdot j\omega I_2\\V_2&=I_2R_2+L_2\cdot j\omega I_2+M\cdot j\omega I_1\end{aligned}$$
+> 
+
 
 
