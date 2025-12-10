@@ -157,9 +157,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/pi06.pdf",
-                "page": 1,
-                "left": 65,
-                "top": 160,
+                "page": 2,
+                "left": -71,
+                "top": 787,
                 "zoom": 1.11
               },
               "icon": "lucide-file-text",
@@ -173,9 +173,9 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2406.11838v3.pdf",
-                "page": 3,
-                "left": -15,
-                "top": 48,
+                "page": 6,
+                "left": -320,
+                "top": 96,
                 "zoom": 0.6678921568627451
               },
               "icon": "lucide-file-text",
@@ -200,7 +200,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -434,13 +434,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "44f72a560ca80d7e",
+  "active": "403bdbee4581b325",
   "lastOpenFiles": [
+    "Paper/PDF/Masked AutoRegressive.md",
+    "Paper/PDF/pi06.pdf",
     "Paper/pi0.5.md",
     "Paper/PDF/2504.16054v1.pdf",
     "Paper/PDF/pistar06.pdf",
-    "Paper/PDF/pi06.pdf",
-    "Paper/PDF/Masked AutoRegressive.md",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/SSH Forward.md",
     "Lecture/Electric Circuits.md",
