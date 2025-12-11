@@ -126,9 +126,33 @@
               "icon": "lucide-file",
               "title": "Masked AutoRegressive"
             }
+          },
+          {
+            "id": "b1f6d91a15b7efdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/pi0.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "pi0"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "3542dc07d0254323",
@@ -173,10 +197,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2406.11838v3.pdf",
-                "page": 6,
-                "left": -320,
-                "top": 96,
-                "zoom": 0.6678921568627451
+                "page": 7,
+                "left": 0,
+                "top": 770,
+                "zoom": 1.31
               },
               "icon": "lucide-file-text",
               "title": "2406.11838v3"
@@ -191,7 +215,7 @@
               "state": {
                 "file": "Paper/PDF/2504.16054v1.pdf",
                 "page": 1,
-                "left": 57,
+                "left": -89,
                 "top": 649,
                 "zoom": 1.06
               },
@@ -200,7 +224,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -434,12 +458,57 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "403bdbee4581b325",
+  "floating": {
+    "id": "f6f101137639af1d",
+    "type": "floating",
+    "children": [
+      {
+        "id": "ff2918543db390a9",
+        "type": "window",
+        "children": [
+          {
+            "id": "245b18889eaedbce",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "17ba882efd43b6d2",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2410.24164v3.pdf",
+                    "page": 7,
+                    "left": -6,
+                    "top": 754,
+                    "zoom": 1.7524509803921569
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2410.24164v3"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 435,
+        "y": 34,
+        "width": 600,
+        "height": 882,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "b1f6d91a15b7efdd",
   "lastOpenFiles": [
+    "Paper/PDF/2410.24164v3.pdf",
+    "Paper/pi0.md",
+    "Paper/pi0.6.md",
+    "Paper/PDF/2504.16054v1.pdf",
+    "Paper/PDF/2406.11838v3.pdf",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/PDF/pi06.pdf",
     "Paper/pi0.5.md",
-    "Paper/PDF/2504.16054v1.pdf",
     "Paper/PDF/pistar06.pdf",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/SSH Forward.md",
@@ -449,12 +518,10 @@
     "Assets/Pasted image 20251209084923.jpeg",
     "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
     "Lecture/Slides/F25-Lec11-Magnetically Coupled Circuits.pdf",
-    "Paper/PDF/2406.11838v3.pdf",
     "Paper/PDF/2509.09372v2.pdf",
     "Paper/PDF/2505.06708v1.pdf",
     "Paper/Conditioning Matters.md",
     "Paper/VLA-Adapter.md",
-    "Paper/pi0.6.md",
     "Paper/PDF/2506.01583v2.pdf",
     "Paper/FreqPolicy.md",
     "Assets/Pasted image 20251204090413.jpeg",
@@ -462,7 +529,6 @@
     "Lecture/Introduction to Control.md",
     "Paper/Qwen2.5VL.md",
     "Paper/Masked Auto Encoder.md",
-    "Paper/pi0.md",
     "Templates/Insert Callouts.md",
     "Templates/Paper Note Template.md",
     "Templates/Lecture Note Template.md",
