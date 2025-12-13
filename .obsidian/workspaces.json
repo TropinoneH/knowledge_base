@@ -730,30 +730,38 @@
                   "icon": "lucide-file",
                   "title": "Masked AutoRegressive"
                 }
+              },
+              {
+                "id": "b1f6d91a15b7efdd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/pi0.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "pi0"
+                }
               }
             ],
-            "currentTab": 4
+            "currentTab": 5
           },
           {
             "id": "3542dc07d0254323",
             "type": "tabs",
             "children": [
-              {
-                "id": "44f72a560ca80d7e",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/pi06.pdf",
-                    "page": 1,
-                    "left": -13,
-                    "top": 240,
-                    "zoom": 0.67
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "pi06"
-                }
-              },
               {
                 "id": "8dc5a4795f5e827d",
                 "type": "leaf",
@@ -762,12 +770,28 @@
                   "state": {
                     "file": "Paper/PDF/pistar06.pdf",
                     "page": 1,
-                    "left": -14,
+                    "left": 0,
                     "top": 792,
                     "zoom": 1.31
                   },
                   "icon": "lucide-file-text",
                   "title": "pistar06"
+                }
+              },
+              {
+                "id": "44f72a560ca80d7e",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/pi06.pdf",
+                    "page": 2,
+                    "left": -71,
+                    "top": 787,
+                    "zoom": 1.11
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "pi06"
                 }
               },
               {
@@ -777,17 +801,34 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2406.11838v3.pdf",
-                    "page": 4,
-                    "left": -15,
-                    "top": 588,
-                    "zoom": 0.6678921568627451
+                    "page": 7,
+                    "left": 0,
+                    "top": 770,
+                    "zoom": 1.31
                   },
                   "icon": "lucide-file-text",
                   "title": "2406.11838v3"
                 }
+              },
+              {
+                "id": "bbf25e74124d1884",
+                "type": "leaf",
+                "dimension": 33.333333333333336,
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2504.16054v1.pdf",
+                    "page": 1,
+                    "left": -89,
+                    "top": 649,
+                    "zoom": 1.06
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2504.16054v1"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -1021,9 +1062,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "453d925494891402",
-      "mtime": "2025-12-09T13:18:38+08:00"
+      "active": "b1f6d91a15b7efdd",
+      "mtime": "2025-12-13T15:07:03+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }
