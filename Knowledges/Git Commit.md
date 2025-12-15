@@ -170,3 +170,28 @@ rebase之后的[[Git Log#Show commit|log]]应该为:
 此时合并结束.
 
 如果要[[Git Push|上传远程]], 可能需要使用`--force`或者`--force-with-release`强制推送
+
+## Git Commit Author Modification
+
+在 Git 中修改已提交的用户名称和邮箱是一种重写历史的操作. 这意味着相关提交的哈希值将会发生改变. 根据修改范围的不同, 可以采用不同的策略. 如果代码已经推送到远程仓库, 修改后必须强制推送才能覆盖远程记录, 这可能会影响其他协作者.
+
+### Amending the Latest Commit
+
+这是最简单的场景, 适用于刚刚完成提交但尚未推送到远程仓库, 或者仅需要修正最近一次提交信息的情况. 通过特定参数, 可以直接用新的作者信息覆盖上一次的提交记录, 而无需产生新的提交节点.
+
+```bash
+git commit --amend --author="New Name <new@example.com>" --no-edit
+```
+
+### Modifying Historical Commits
+
+当需要修改过去某几次的提交, 或者非最近一次的提交时, 需要使用交互式变基工具. 这种方法允许用户查看一段历史记录, 并指定需要修改的特定节点.
+
+操作流程通常从启动变基开始, 指定要回溯的提交数量. 在弹出的编辑器中, 将需要修改的提交前的指令从 pick 改为 edit. 保存并退出后, Git 会暂停在标记的提交处. 此时, 再次执行上述的修正命令来更新作者信息. 完成后, 继续变基过程直到所有标记的提交都修改完毕.
+
+```bash
+git rebase -i HEAD~3
+# 在编辑器中将 pick 改为 edit
+git commit --amend --author="New Name <new@example.com>" --no-edit
+git rebase --continue
+```
