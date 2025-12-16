@@ -1281,4 +1281,40 @@ $$Z_{in}=R_1+j\omega L_1+\frac{\omega^2M^2}{R_2+j\omega L_2+Z_2}$$
 > 
 > 注意, $j8$的电感受$j6$电感的影响. $j6$电感上的电流是两个网孔电流的差值: $I_1-I_2$.
 
+# Lecture 12
+> [!note]- slide
+> ![[EE111-F25-Lec12-FrequencyResponse.pdf]]
+
+...
+## Series Resonance
+
+协振:
+![[EE111-F25-Lec12-FrequencyResponse.pdf#page=20&rect=94,252,697,368]]
+
+串联之后的虚部的数值可能大于、小于或等于0. 阻抗最小的情况(协振)即位虚部为0的情况. 此时$\omega_0=\frac{1}{\sqrt{LC}}$ rad/s.
+![[EE111-F25-Lec12-FrequencyResponse.pdf#page=21&rect=21,48,300,435|129]]
+
+![[EE111-F25-Lec12-FrequencyResponse.pdf#page=22&rect=65,30,411,260|285]]
+在resonance时:
+- 纯电阻电路
+- 传递函数到达一个极值(在$H(\omega)=\frac{V}{I}$的定义下为最小值)
+- $$\begin{aligned}V_L&=j\omega L\cdot I=j\omega L\cdot\frac{V_s}{R}=j\omega L\frac{V_m\angle\theta}{R}\\|V_m|&=\frac{V_m}{R}\omega_0L\end{aligned}$$
+- $$\begin{aligned}V_C&=\frac{1}{j\omega C}\cdot I=\cdots=\frac{V_m\angle\theta}{R\cdot j\omega C}\\|V_C|&=\frac{V_m}{R}\frac{1}{\omega_0C}\end{aligned}$$
+
+### Half-Power Frequencies
+![[EE111-F25-Lec12-FrequencyResponse.pdf#page=23&rect=14,28,713,486]]
+$$I=|I|=\frac{V_m}{\sqrt{R^2+(\omega L-\frac{1}{\omega C})^2}}$$
+$$P(\omega_1)=P(\omega_2)=\frac{1}{2}P(\omega_0)$$
+$$\Rightarrow\frac{V_m^2}{2R}\cdot\frac{1}{2}=\frac{1}{2}\frac{V_m^2}{R^2+(\omega L-\frac{1}{\omega C})^2}$$
+$$\Rightarrow\left\{\begin{aligned}\omega_1&=-\frac{R}{2L}+\sqrt{\left(\frac{R}{2L}\right)^2+\frac{1}{LC}}\\\omega_2&=\frac{R}{2L}+\sqrt{\left(\frac{R}{2L}\right)^2+\frac{1}{LC}}\end{aligned}\right.$$
+
+带宽 $B=\omega_2-\omega_1=\frac{R}{L}$
+
+Quality factor $Q=\frac{\omega_0}{B}=\frac{\omega_0L}{R}=\frac{1}{\omega_0CR}$
+
+...
+# Lecture 13
+> [!note]- slide
+> ![[EE111-F25-Lec13-LaplaceTransform.pdf]]
+
 

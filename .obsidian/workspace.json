@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15b8c037055b21f9",
+            "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,74 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
+              "title": "Introduction to Control"
+            }
+          },
+          {
+            "id": "085b59be24e35215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "363f9be3567338d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61d90fcca8c54225",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-lec3.pdf",
+                "page": 49,
+                "left": -424,
+                "top": 203,
+                "zoom": 0.5312500000000001
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-lec3"
+            }
+          },
+          {
+            "id": "755091a8784bd37b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 51,
+                "zoom": 0.8517156862745098
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25-Lec13-LaplaceTransform"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +172,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#javascripts",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -157,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -171,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +246,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Commit"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -210,7 +275,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,19 +298,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Commit"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,26 +329,27 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "15b8c037055b21f9",
+  "active": "085b59be24e35215",
   "lastOpenFiles": [
+    "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
+    "Lecture/Slides/EE111-F25-Lec12-FrequencyResponse.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Untitled.md",
+    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
+    "Lecture/Slides/EE111-F25-Lec13-Laplace Transform.pdf",
+    "Lecture/Slides/EE111-F25-Lec12-Frequency_Response.pdf",
+    "Lecture/Slides/F25-Lec12-Frequency_Response.pdf",
+    "Lecture/Slides/F25-Lec13-Laplace Transform.pdf",
+    "Knowledges/Git Commit.md",
     "Lecture/Slides/EE160-lec7.pdf",
     "Lecture/Slides/ee160-lec7-StateFeedback.pdf",
     "Lecture/Slides/EE160-lec6.pdf",
-    "Lecture/Slides/ee160-lec6.pdf",
-    "Lecture/Slides/EE160-lec5.pdf",
-    "Lecture/Slides/EE160-lec4.pdf",
     "Knowledges/PyTorch Tensor.md",
     "Paper/pi0.md",
-    "Paper/PDF/2410.24164v3.pdf",
     "Paper/pi0.6.md",
-    "Paper/PDF/2504.16054v1.pdf",
-    "Paper/PDF/2406.11838v3.pdf",
     "Paper/PDF/Masked AutoRegressive.md",
-    "Paper/PDF/pi06.pdf",
     "Paper/pi0.5.md",
-    "Paper/PDF/pistar06.pdf",
     "Knowledges/SSH Forward.md",
-    "Lecture/Electric Circuits.md",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
     "Paper/Conditioning Matters.md",
@@ -303,12 +370,10 @@
     "Topic/SSH.md",
     "Knowledges/vim.md",
     "Lecture/Machine Learning.md",
-    "Knowledges/Python Module.md",
     "Assets/Pasted image 20251125093620.jpeg",
     "Assets/Pasted image 20251125093711.jpeg",
     "Assets/Pasted image 20251125093602.jpeg",
     "Assets/Pasted image 20230424103607.png",
-    "Knowledges/Scp.md",
     "Paper/PDF/1763528126611.png",
     "Assets/Pasted image 20251030212859.png"
   ]

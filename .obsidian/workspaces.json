@@ -349,7 +349,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Knowledges/Git Commit.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -364,7 +364,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "PyTorch Tensor"
+                  "title": "Git Commit"
                 }
               }
             ]
@@ -507,7 +507,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Knowledges/Git Commit.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -517,7 +517,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for PyTorch Tensor"
+                  "title": "Backlinks for Git Commit"
                 }
               },
               {
@@ -546,7 +546,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Knowledges/Git Commit.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -574,7 +574,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of PyTorch Tensor"
+                  "title": "Graph of Git Commit"
                 }
               }
             ]
@@ -600,7 +600,7 @@
         }
       },
       "active": "15b8c037055b21f9",
-      "mtime": "2025-12-09T15:23:59+08:00"
+      "mtime": "2025-12-16T08:17:51+08:00"
     },
     "paper": {
       "main": {
@@ -1066,5 +1066,5 @@
       "mtime": "2025-12-13T15:07:03+08:00"
     }
   },
-  "active": "note"
+  "active": "lecture note"
 }
