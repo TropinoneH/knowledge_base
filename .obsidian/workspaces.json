@@ -86,14 +86,14 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
-                    "page": 16,
-                    "left": -21,
-                    "top": 344,
-                    "zoom": 0.7239583333333334
+                    "file": "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
+                    "page": 3,
+                    "left": -18,
+                    "top": 535,
+                    "zoom": 0.8517156862745097
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25-Lec11-MagneticallyCoupledCircuits"
+                  "title": "EE111-F25-Lec13-LaplaceTransform"
                 }
               }
             ],
@@ -332,7 +332,7 @@
         }
       },
       "active": "085b59be24e35215",
-      "mtime": "2025-12-09T09:56:11+08:00"
+      "mtime": "2025-12-19T01:48:42+08:00"
     },
     "note": {
       "main": {
@@ -813,13 +813,12 @@
               {
                 "id": "bbf25e74124d1884",
                 "type": "leaf",
-                "dimension": 33.333333333333336,
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2504.16054v1.pdf",
                     "page": 1,
-                    "left": -89,
+                    "left": 0,
                     "top": 649,
                     "zoom": 1.06
                   },
@@ -1063,8 +1062,8 @@
         }
       },
       "active": "b1f6d91a15b7efdd",
-      "mtime": "2025-12-13T15:07:03+08:00"
+      "mtime": "2025-12-19T01:48:39+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "note"
 }
