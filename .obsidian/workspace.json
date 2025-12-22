@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Cross-Entropy Loss.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
+              "title": "Cross-Entropy Loss"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Cross-Entropy Loss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Commit"
+              "title": "Backlinks for Cross-Entropy Loss"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Knowledges/Cross-Entropy Loss.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Commit"
+              "title": "Graph of Cross-Entropy Loss"
             }
           }
         ]
@@ -265,6 +265,8 @@
   },
   "active": "15b8c037055b21f9",
   "lastOpenFiles": [
+    "Knowledges/Git Commit.md",
+    "Knowledges/Cross-Entropy Loss.md",
     "Lecture/Electric Circuits.md",
     "Paper/pi0.md",
     "Paper/PDF/2303.04137v5.pdf",
@@ -280,7 +282,6 @@
     "Lecture/Slides/EE111-F25-Lec12-Frequency_Response.pdf",
     "Lecture/Slides/F25-Lec12-Frequency_Response.pdf",
     "Lecture/Slides/F25-Lec13-Laplace Transform.pdf",
-    "Knowledges/Git Commit.md",
     "Knowledges/PyTorch Tensor.md",
     "Paper/pi0.6.md",
     "Paper/PDF/Masked AutoRegressive.md",
