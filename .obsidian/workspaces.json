@@ -366,8 +366,33 @@
                   "icon": "lucide-file",
                   "title": "Git Commit"
                 }
+              },
+              {
+                "id": "6441cbf307b7c2f2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Knowledges/PyTorch Normalization.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "PyTorch Normalization"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -507,7 +532,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/Git Commit.md",
+                    "file": "Knowledges/PyTorch Normalization.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -517,7 +542,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Git Commit"
+                  "title": "Backlinks for PyTorch Normalization"
                 }
               },
               {
@@ -546,7 +571,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/Git Commit.md",
+                    "file": "Knowledges/PyTorch Normalization.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -574,7 +599,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Git Commit"
+                  "title": "Graph of PyTorch Normalization"
                 }
               }
             ]
@@ -599,8 +624,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "15b8c037055b21f9",
-      "mtime": "2025-12-16T08:17:51+08:00"
+      "active": "6441cbf307b7c2f2",
+      "mtime": "2025-12-23T17:15:24+08:00"
     },
     "paper": {
       "main": {
@@ -818,16 +843,33 @@
                   "state": {
                     "file": "Paper/PDF/2504.16054v1.pdf",
                     "page": 1,
-                    "left": 0,
-                    "top": 649,
+                    "left": -89,
+                    "top": 792,
                     "zoom": 1.06
                   },
                   "icon": "lucide-file-text",
                   "title": "2504.16054v1"
                 }
+              },
+              {
+                "id": "cb48f77e050e7eca",
+                "type": "leaf",
+                "dimension": 25,
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2410.24164v3.pdf",
+                    "page": 16,
+                    "left": -12,
+                    "top": 764,
+                    "zoom": 1.3174019607843135
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2410.24164v3"
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -915,8 +957,7 @@
                   "title": "Search"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "horizontal",
@@ -968,7 +1009,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Paper/FreqPolicy.md",
+                    "file": "Paper/pi0.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -978,7 +1019,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for FreqPolicy"
+                  "title": "Backlinks for pi0"
                 }
               },
               {
@@ -1007,7 +1048,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Paper/FreqPolicy.md",
+                    "file": "Paper/pi0.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -1035,7 +1076,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of FreqPolicy"
+                  "title": "Graph of pi0"
                 }
               }
             ]
@@ -1062,8 +1103,8 @@
         }
       },
       "active": "b1f6d91a15b7efdd",
-      "mtime": "2025-12-19T01:48:39+08:00"
+      "mtime": "2025-12-23T16:49:06+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }

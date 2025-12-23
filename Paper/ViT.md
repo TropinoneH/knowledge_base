@@ -53,7 +53,7 @@ pipeline:
 > [!PDF|] [[2010.11929v2.pdf#page=3&selection=214,4,214,23|2010.11929v2, p.3]]
 > > Transformer encoder
 > 
-> 最重要的[[Transformer]]模块将image提取信息, 由[[2010.11929v2.pdf#page=13&selection=279,0,285,9|多头自注意力(MSA)]]和[[Deep Learning#Multi-Layer Network|MLP]]交替层组成.同时, 在每个block之前使用layernorm归一化处理, 每一个block之后使用残差连接.
+> 最重要的[[Transformer]]模块将image提取信息, 由[[2010.11929v2.pdf#page=13&selection=279,0,285,9|多头自注意力(MSA)]]和[[Deep Learning#Multi-Layer Network|MLP]]交替层组成.同时, 在每个block之前使用[[PyTorch Normalization#Core Internal Normalizations#Layer Normalization|layernorm]]归一化处理, 每一个block之后使用残差连接.
 > 
 > $$z'_l=MSA(LN(z_{l-1}))+z_{l-1}$$
 > $$z_l=MLP(LN(z'_l))+z'_l$$

@@ -7,6 +7,7 @@ tags:
 done: true
 topic:
   - "[[Coding]]"
+  - "[[PyTorch]]"
 ---
 # DCT
 

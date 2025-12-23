@@ -96,4 +96,56 @@ views:
       - file.ctime
       - file.mtime
       - done
+  - type: cards
+    name: GoLang
+    filters:
+      and:
+        - file.tags.contains("code/go")
+    order:
+      - file.name
+      - type
+      - file.tags
+      - file.path
+      - file.ctime
+      - file.mtime
+      - done
+  - type: cards
+    name: JavaScript
+    filters:
+      and:
+        - file.tags.contains("code/javascript")
+    order:
+      - file.name
+      - type
+      - file.tags
+      - file.path
+      - file.ctime
+      - file.mtime
+      - done        
+  - type: cards
+    name: Assemble
+    filters:
+      and:
+        - file.tags.contains("code/assemble")
+    order:
+      - file.name
+      - type
+      - file.tags
+      - file.path
+      - file.ctime
+      - file.mtime
+      - done
+  - type: cards
+    name: Java
+    filters:
+      and:
+        - file.tags.contains("code/java")
+    order:
+      - file.name
+      - type
+      - file.tags
+      - file.path
+      - file.ctime
+      - file.mtime
+      - done
 ```

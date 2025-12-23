@@ -10,6 +10,7 @@ tags:
 done: true
 topic:
   - "[[Coding]]"
+  - "[[PyTorch]]"
 ---
 ### Definition
 

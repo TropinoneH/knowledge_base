@@ -9,6 +9,7 @@ tags:
 done: true
 topic:
   - "[[Coding]]"
+  - "[[PyTorch]]"
 ---
 # Root Mean Square
 
