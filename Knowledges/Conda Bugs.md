@@ -35,7 +35,7 @@ source <path/to/miniconda3>/bin/activate <env_name>
 
 # `conda: command not found` or `conda: error: argument COMMAND`
 
-使用命令`conda init $(shell)`进行初始化（$(shell)指的是你想要使用conda的shell）
+使用命令`conda init <shell>`进行初始化（`<shell>`指的是你想要使用conda的shell）
 # The current environment has been corrupted
 
 查看在哪个package出现了问题，直接删掉相关的包（文件夹`~/miniconda3/pkgs/<pkg_name>`和文件`~/miniconda3/pkgs/<pkg_name>.conda`，还有文件`~/miniconda3/conda-meta/<pkg_name>.json`）

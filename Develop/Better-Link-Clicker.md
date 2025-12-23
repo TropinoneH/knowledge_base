@@ -8,9 +8,7 @@ rate: 🌟🌟🌟
 ---
 ## Better Link Clicker
 
-使用[[obsidian]]的[[typescript]] API 进行开发.
-
-使用[[pnpm]]构建
+使用[[Obsidian]]的[[Typescript]] API 进行开发, 使用[[Pnpm]]构建
 ### 环境搭建与项目初始化
 - [x] 确保已安装 `Node.js` 和 `npm`。
 - [x] 使用 Obsidian 官方提供的插件模板仓库创建一个新的插件项目。

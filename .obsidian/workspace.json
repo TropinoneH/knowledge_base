@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Cross-Entropy Loss.md",
+                "file": "Topic/Coding.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Cross-Entropy Loss"
+              "title": "Coding"
             }
           }
         ]
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Cross-Entropy Loss.md",
+                "file": "Topic/Coding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Cross-Entropy Loss"
+              "title": "Backlinks for Coding"
             }
           },
           {
@@ -210,7 +210,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Cross-Entropy Loss.md",
+                "file": "Topic/Coding.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Cross-Entropy Loss"
+              "title": "Graph of Coding"
             }
           }
         ]
@@ -265,51 +265,51 @@
   },
   "active": "15b8c037055b21f9",
   "lastOpenFiles": [
+    "Lecture/Computer Architecture.md",
+    "Topic/Coding.md",
+    "Knowledges/Gtk-rs.md",
+    "Knowledges/Rust.md",
+    "Assets/Pasted image 20250328215644.png",
+    "Paper/EO-1.md",
+    "Knowledges/ElementUI.md",
+    "ElementUI.md",
+    "Topic/Note.md",
+    "Knowledges/Obsidian.md",
+    "Knowledges/Markdown.md",
+    "Paper/FiLM.md",
+    "Paper/PDF/1709.07871v2.pdf",
+    "Paper/PDF/1709.07871v2_FiLM.pdf",
+    "Knowledges/FiLM.md",
+    "index.md",
+    "Develop/Better-Link-Clicker.md",
     "Knowledges/Git Commit.md",
+    "Knowledges/SSH Forward.md",
+    "Knowledges/ArchLinux Install.md",
+    "obsidian.md",
+    "Knowledges/PyTorch Parallel Training.md",
+    "Lecture/Introduce to Computer Science.md",
+    "Lecture/Discrete Mathematics.md",
+    "Lecture/Numerical Optimization.md",
+    "Knowledges/Conda Bugs.md",
+    "Paper/Transformer.md",
+    "Paper/PDF/1706.03762v7.pdf",
+    "Transformer.md",
     "Knowledges/Cross-Entropy Loss.md",
-    "Lecture/Electric Circuits.md",
-    "Paper/pi0.md",
     "Paper/PDF/2303.04137v5.pdf",
-    "Paper/Diffusion Policy.md",
-    "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
     "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Paper/PDF/2410.24164v3.pdf",
     "Lecture/Slides/EE111-F25-Lec12-FrequencyResponse.pdf",
-    "Lecture/Untitled.md",
     "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
     "Lecture/Slides/EE111-F25-Lec13-Laplace Transform.pdf",
-    "Lecture/Slides/EE111-F25-Lec12-Frequency_Response.pdf",
-    "Lecture/Slides/F25-Lec12-Frequency_Response.pdf",
-    "Lecture/Slides/F25-Lec13-Laplace Transform.pdf",
-    "Knowledges/PyTorch Tensor.md",
-    "Paper/pi0.6.md",
-    "Paper/PDF/Masked AutoRegressive.md",
-    "Paper/pi0.5.md",
-    "Knowledges/SSH Forward.md",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
-    "Paper/Conditioning Matters.md",
-    "Paper/VLA-Adapter.md",
-    "Paper/FreqPolicy.md",
     "Assets/Pasted image 20251204090413.jpeg",
     "Assets/Pasted image 20251204085823.jpeg",
-    "Paper/Qwen2.5VL.md",
-    "Paper/Masked Auto Encoder.md",
-    "Templates/Insert Callouts.md",
-    "Templates/Paper Note Template.md",
-    "Templates/Lecture Note Template.md",
-    "Templates/Note Template.md",
-    "Templates/Develop Template.md",
-    "Knowledges/Untitled.md",
-    "Knowledges/RMS.md",
-    "Topic/SSH.md",
-    "Knowledges/vim.md",
     "Assets/Pasted image 20251125093620.jpeg",
     "Assets/Pasted image 20251125093711.jpeg",
     "Assets/Pasted image 20251125093602.jpeg",
     "Assets/Pasted image 20230424103607.png",
-    "Paper/PDF/1763528126611.png",
-    "Assets/Pasted image 20251030212859.png"
+    "Paper/PDF/1763528126611.png"
   ]
 }

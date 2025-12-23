@@ -23,7 +23,7 @@ ssh -L <local-port>:<remote-address>:<remote-port> <username>@<address> -p <port
 用途: 服务器上有程序运行, 将端口暴露. 如果想要在本地也使用这个端口, 使用这个ssh端口转发
 
 > [!example]+ 
-> 在远程服务器上启动一个网页服务(`pnpm dev`), 端口在本地的`0.0.0.0:3000`.
+> 在远程服务器上启动一个网页服务(如, 使用[[Pnpm]]: `pnpm dev`), 端口在本地的`0.0.0.0:3000`.
 > 
 > 如果想要在本地调试网页, 需要在本地的浏览器访问这个网页. 因此将远程的端口转发给本地
 ## Forward Local Port to Remote
