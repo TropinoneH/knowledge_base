@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -244,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Develop/QueryTools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for QueryTools"
             }
           },
           {
@@ -283,7 +283,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Develop/QueryTools.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -311,7 +311,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of QueryTools"
             }
           }
         ]
@@ -336,8 +336,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "80708e7ee0884fab",
+  "active": "860364988a2575c8",
   "lastOpenFiles": [
+    "Knowledges/PyTorch Normalization.md",
+    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
     "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
     "Lecture/Slides/EE111-F25-Lec7-Phasor.pdf",
@@ -348,9 +350,7 @@
     "Lecture/Slides/EE111-F25-Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/EE111-F25-Lec14-LaplaceTransformCircuit.pdf",
-    "Lecture/Slides/F25-Lec14-Laplace Transform-Circuit-updated.pdf",
     "Develop/QueryTools.md",
-    "Knowledges/PyTorch Normalization.md",
     "Paper/pi0.md",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/VLA-Adapter.md",
@@ -364,7 +364,6 @@
     "Knowledges/DCT.md",
     "Knowledges/Cosine Similarity.md",
     "Knowledges/Cross-Entropy Loss.md",
-    "Lecture/Electric Circuits.md",
     "Topic/Coding.md",
     "Paper/pi0.5.md",
     "Lecture/Computer Architecture.md",

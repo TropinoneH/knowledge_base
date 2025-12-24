@@ -24,6 +24,15 @@ actions指的是footer中可选的, 针对features执行的操作.
 
 其中, protocol, plugins, app都可能会需要用到package dependencies,如Defaults, KeyboardShortcuts, Sause, Expression等. 注意不要造成重复依赖.
 
+### Dependencies
+
+- Defaults: 持久化
+- KeyboardShortcuts: 快捷键, 全局快捷键
+- Sauce: 适配不同的Keyboard的keycode
+- Sparkle: 软更新
+- LaunchAtLogin: 配置 开机启动
+- SwiftyBeaver: 美化log输出, 配置release时的log file
+
 ### Protocol
 
 Module Protocol:
@@ -32,6 +41,7 @@ Module Protocol:
 - icon
 - prefix
 - features
+- settings
 - setting view
 
 Feature Protocol:
@@ -53,6 +63,16 @@ Action Protocol:
 - shortcut
 - handler
 
+注意, shortcut使用KeyboardShortcuts(是一个Swift第三方库), 用这个进行快捷键绑定.
+
+注意, Module的settings应该包含全部的设置, 包括module和features的设置, 应该能够设置module, features以及actions的 prefix, shortcut(如果有). 这些应该使用Defaults进行持久化, 每一次启动的时候读取设置并更新对应的member variable
+
+#### Logger
+
+你需要实现一个logger, 全局维护一个实例, 在App, Plugins中共享, 使用SwiftyBeaver这个库输出log信息.
+
+当debug时, 输出所有level的信息. 当Release的时候, 只输出Warn和Error的信息到log file的位置. log file的位置应该是一个写死的位置, 位于app的内部(就是`.app`这个文件夹的内部). 当文件大小超过某一定上限的时候清理一部分log信息
+
 #### AppState
 
 AppState保存所有的数据状态. 具体需要保存什么内容请你根据我上述的描述进行设计.
@@ -61,3 +81,6 @@ AppState判断权限(App主程序, MainModule, 其他Plugins), 然后按照权�
 
 注意, AppState需要跨模块传输数据, 并且数据需要是多Module之间同步的.
 
+# 要求
+
+请你设计一个大纲, 先完成protocol和项目的创建. 模块的名字就叫做ModuleProtocol. 不要用QT这个简写
