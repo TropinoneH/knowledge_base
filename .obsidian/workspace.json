@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "QueryTools"
             }
+          },
+          {
+            "id": "80708e7ee0884fab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -220,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -259,7 +283,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -287,7 +311,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
@@ -312,8 +336,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "860364988a2575c8",
+  "active": "80708e7ee0884fab",
   "lastOpenFiles": [
+    "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
+    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
+    "Lecture/Slides/EE111-F25-Lec7-Phasor.pdf",
+    "Lecture/Slides/EE111-F25-Lec6-2nd-Order Circuits-Part1.pdf",
+    "Lecture/Slides/EE111-F25-Lec5-1st-Order Circuits.pdf",
+    "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
+    "Lecture/Slides/EE111-F25-Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25-Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
+    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
+    "Lecture/Slides/EE111-F25-Lec14-LaplaceTransformCircuit.pdf",
+    "Lecture/Slides/F25-Lec14-Laplace Transform-Circuit-updated.pdf",
+    "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",
     "Paper/pi0.md",
     "Paper/PDF/Masked AutoRegressive.md",
@@ -328,11 +364,9 @@
     "Knowledges/DCT.md",
     "Knowledges/Cosine Similarity.md",
     "Knowledges/Cross-Entropy Loss.md",
-    "Paper/PDF/2410.24164v3.pdf",
     "Lecture/Electric Circuits.md",
     "Topic/Coding.md",
     "Paper/pi0.5.md",
-    "Paper/PDF/2504.16054v1.pdf",
     "Lecture/Computer Architecture.md",
     "Knowledges/Gtk-rs.md",
     "Knowledges/Rust.md",
@@ -341,16 +375,6 @@
     "Knowledges/ElementUI.md",
     "ElementUI.md",
     "Topic/Note.md",
-    "Knowledges/Obsidian.md",
-    "Knowledges/Markdown.md",
-    "Paper/PDF/1709.07871v2.pdf",
-    "Paper/PDF/1709.07871v2_FiLM.pdf",
-    "Paper/PDF/1706.03762v7.pdf",
-    "Paper/PDF/2303.04137v5.pdf",
-    "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
-    "Lecture/Slides/EE111-F25Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Lecture/Slides/EE111-F25-Lec12-FrequencyResponse.pdf",
-    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
     "Assets/Pasted image 20251204090413.jpeg",

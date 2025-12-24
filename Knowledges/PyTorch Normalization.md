@@ -220,7 +220,7 @@ Ioffe 和 Szegedy 提出的 Batch Normalization (BN) 是该领域的奇点. 它�
 
 ### Batch Normalization
 
-这是针对深度 CNN 训练困难的直接回应.
+这是针对深度 [[Deep Learning#Convolutional Neural Networks (CNNs)|CNN]] 训练困难的直接回应.
 -   **基于何种改进**: 它是全新的内部归一化概念.
 -   **具体增减**:
     -   **增加**: 在 Batch 维度 $(N)$ 上计算均值 $\mu$ 和方差 $\sigma$. 引入了两个可学习参数 $\gamma$ (缩放) 和 $\beta$ (平移) 来恢复网络的表达能力.
@@ -229,7 +229,7 @@ Ioffe 和 Szegedy 提出的 Batch Normalization (BN) 是该领域的奇点. 它�
 
 ## Adaptation for Sequences: Layer Normalization (2016)
 
-随着 RNN 和 LSTM 在 NLP 领域的应用, BN 暴露出了对 Batch Size 的依赖以及无法处理变长序列的问题.
+随着 [[Deep Learning#Recurrent Neural Networks (RNNs)|RNN]] 和 [[Deep Learning#Long Short-Term Memory (LSTM)|LSTM]] 在 NLP 领域的应用, BN 暴露出了对 Batch Size 的依赖以及无法处理变长序列的问题.
 
 ### Layer Normalization
 
@@ -238,7 +238,7 @@ Ioffe 和 Szegedy 提出的 Batch Normalization (BN) 是该领域的奇点. 它�
 -   **具体增减**:
     -   **移除**: 移除了计算统计量时对 Batch 维度 $N$ 的依赖.
     -   **改变**: 将聚合维度转变为特征维度 $C$ (或 Hidden Dimension $D$). 即对每一个样本独立计算均值和方差 $\mu_L, \sigma_L$.
--   **核心收益**: 使得归一化操作与 Batch Size 无关, 完美适配变长序列 (RNN/Transformer).
+-   **核心收益**: 使得归一化操作与 Batch Size 无关, 完美适配变长序列 (RNN/[[Transformer]]).
 
 ## The Split for Style: Instance Normalization (2016)
 
@@ -255,7 +255,7 @@ Ulyanov 等人在生成纹理网络中提出了这一改进.
 
 ## Stabilization for GANs: Spectral Normalization (2018)
 
-生成对抗网络 (GAN) 的判别器训练极不稳定, 传统的梯度惩罚 (Gradient Penalty) 计算昂贵.
+生成对抗网络 ([[Deep Learning#Generative Adversarial Networks (GANs)|GAN]]) 的判别器训练极不稳定, 传统的梯度惩罚 (Gradient Penalty) 计算昂贵.
 
 ### Spectral Normalization
 
@@ -281,7 +281,7 @@ He 等人提出的 BN 替代方案.
 
 ## Optimization for LLMs: RMSNorm (2019)
 
-随着 Transformer 模型走向深层 (Deep Learning -> Large Models), 计算效率和数值稳定性成为瓶颈.
+随着 [[Transformer]] 模型走向深层 (Deep Learning -> Large Models), 计算效率和数值稳定性成为瓶颈.
 
 ### RMSNorm
 
@@ -298,14 +298,16 @@ Zhang 等人对 Layer Normalization 的简化.
 
 ### AdaLN-Zero
 
-Peebles 等人在 Diffusion Transformer 中提出的改进.
+Peebles 等人在 [[Diffusion Transformer]] 中提出的改进.
 -   **基于何种改进**: 基于 Adaptive Layer Normalization (AdaLN).
 -   **具体增减**:
     -   **改变**: 将原本固定的参数 $\gamma, \beta$ 变为由 MLP 根据条件 $c$ 动态预测的函数.
     -   **增加**: 增加了 "零初始化" 机制. 预测 $\gamma, \beta$ 的 MLP 最后一层权重初始化为 0.
 -   **核心收益**: 使得整个 Transformer Block 在初始状态下等价于恒等映射 (Identity), 极大地降低了训练超深生成模型的难度.
 
-## Visualization of Evolution Timeline
+# Detailed Pros and Cons Analysis
+
+## Evolution Timeline
 
 ```mermaid
 graph TD
@@ -332,21 +334,17 @@ graph TD
     end
 ```
 
-# Detailed Pros and Cons Analysis
-
-以下是对上述主要归一化技术的优劣势对比总结.
-
 ## Batch Normalization
 
-| Advantages | Disadvantages |
-| :--- | :--- |
-| 1. **优化加速**: 极大地平滑了损失地形, 允许使用大学习率.<br>2. **隐式正则**: Batch 统计量的随机性引入了噪声, 防止过拟合.<br>3. **部署成熟**: 现有推理引擎支持 BN 层融合 (Fusion), 推理零耗时. | 1. **Batch 依赖**: Batch Size < 8 时性能急剧下降.<br>2. **序列不适**: 难以处理变长序列 (RNN/Transformer).<br>3. **逻辑割裂**: 训练和推理使用不同的统计量, 导致实现复杂. |
+| Advantages                                                                                                                     | Disadvantages                                                                                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| 1. **优化加速**: 极大地平滑了损失地形, 允许使用大学习率.<br>2. **隐式正则**: Batch 统计量的随机性引入了噪声, 防止过拟合.<br>3. **部署成熟**: 现有推理引擎支持 BN 层融合 (Fusion), 推理零耗时. | 1. **Batch 依赖**: Batch Size < 8 时性能急剧下降.<br>2. **序列不适**: 难以处理变长序列 (RNN/[[Transformer]]).<br>3. **逻辑割裂**: 训练和推理使用不同的统计量, 导致实现复杂. |
 
 ## Layer Normalization
 
-| Advantages | Disadvantages |
-| :--- | :--- |
-| 1. **独立性**: 计算不依赖其他样本, 支持单样本推理.<br>2. **通用性**: 完美适配 RNN, Transformer 等 NLP 架构.<br>3. **实现简单**: 训练与推理逻辑完全一致. | 1. **视觉劣势**: 在 CNN 中破坏了通道间的特征独立性, 精度通常低于 BN.<br>2. **无正则项**: 缺乏 BN 的随机噪声, 正则化能力较弱. |
+| Advantages                                                                                                      | Disadvantages                                                                      |
+| :-------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| 1. **独立性**: 计算不依赖其他样本, 支持单样本推理.<br>2. **通用性**: 完美适配 RNN, [[Transformer]] 等 NLP 架构.<br>3. **实现简单**: 训练与推理逻辑完全一致. | 1. **视觉劣势**: 在 CNN 中破坏了通道间的特征独立性, 精度通常低于 BN.<br>2. **无正则项**: 缺乏 BN 的随机噪声, 正则化能力较弱. |
 
 ## Instance Normalization
 
@@ -362,12 +360,12 @@ graph TD
 
 ## RMSNorm
 
-| Advantages | Disadvantages |
-| :--- | :--- |
-| 1. **计算高效**: 节省了 Mean 计算和减法操作.<br>2. **数值稳定**: 在万亿参数级的 LLM 中梯度表现更稳.<br>3. **简化实现**: 代码更简洁. | 1. **理论缺失**: 丧失了平移不变性 (Shift Invariance).<br>2. **硬件优化**: 相比高度优化的 Standard LayerNorm, 可能需要定制 CUDA Kernel 才能体现速度优势. |
+| Advantages                                                                                 | Disadvantages                                                                                                          |
+| :----------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| 1. **计算高效**: 节省了 Mean 计算和减法操作.<br>2. **数值稳定**: 在万亿参数级的 LLM 中梯度表现更稳.<br>3. **简化实现**: 代码更简洁. | 1. **理论缺失**: 丧失了平移不变性 (Shift Invariance).<br>2. **硬件优化**: 相比高度优化的 Standard LayerNorm, 可能需要定制 [[Cuda]] Kernel 才能体现速度优势. |
 
 ## AdaLN-Zero
 
-| Advantages | Disadvantages |
-| :--- | :--- |
-| 1. **训练启动**: 零初始化使得深层网络初期如浅层般易训练.<br>2. **条件控制**: 完美融合了 Time Embedding 和 Prompt 信息.<br>3. **SOTA 标配**: 高质量 Diffusion Model 的基础组件. | 1. **参数增加**: 需要额外的 MLP 网络来生成参数.<br>2. **特定场景**: 专为条件生成任务设计, 不适用于普通判别任务. |
+| Advantages                                                                                                                            | Disadvantages                                                           |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------- |
+| 1. **训练启动**: 零初始化使得深层网络初期如浅层般易训练.<br>2. **条件控制**: 完美融合了 Time Embedding 和 Prompt 信息.<br>3. **SOTA 标配**: 高质量 [[Diffusion]] Model 的基础组件. | 1. **参数增加**: 需要额外的 MLP 网络来生成参数.<br>2. **特定场景**: 专为条件生成任务设计, 不适用于普通判别任务. |
