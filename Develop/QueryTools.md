@@ -22,7 +22,31 @@ actions指的是footer中可选的, 针对features执行的操作.
 
 数据统一管理. 所有的数据放在AppState中.
 
-其中, protocol, plugins, app都可能会需要用到package dependencies,如Defaults, KeyboardShortcuts, Sause, Expression等. 注意不要造成重复依赖.
+其中, protocol, plugins, app都可能会需要用到package dependencies,如Defaults, KeyboardShortcuts, Sauce, Expression等. 注意不要造成重复依赖.
+
+### File Architecture
+
+```
+QueryToolsWorkspace (not project)
+|-- Frameworks (not project)
+|---- SharedLibs (project, export all third-party dependencies)
+|------ ... (files)
+|---- ModuleProtocol (project, the protocol that module should implement)
+|------ ... (files in ModuleProtocol)
+|---- MainModule (project)
+|------ ... (module implementation)
+|-- Libs (not project)
+|---- ModuleProtocol.framework (Product after build)
+|------ ...
+|---- MainModule.framework
+|------ ...
+|-- QueryTools (project, main entry)
+|---- ... (files in main app)
+```
+
+ModuleProtocol, 每一个module, QueryTools程序主入口, 这些project之间相互完全不知道. QueryTools会搜索Libs中的所有`.framework` (当release的时候换一个位置, 换成`QueryTools.app`这个app文件夹内部的一个路径), 并自动加载Libs中的所有内容.
+
+在Release的时候, 有一个设置界面, 会给出所有的可用的Module. 可以选择某一个module, 然后app会自动从网络中下载该module编译之后的`.framework`文件到module加载目录, 并且调用函数load这个module
 
 ### Dependencies
 
@@ -32,6 +56,8 @@ actions指的是footer中可选的, 针对features执行的操作.
 - Sparkle: 软更新
 - LaunchAtLogin: 配置 开机启动
 - SwiftyBeaver: 美化log输出, 配置release时的log file
+
+所有的Dependencies都写在一个SharedLibs(是一个`.framework`)中, 通过`@_exported import ...`进行转发导出. ModuleProtocol和所有的Module需要加载这个framework并配置为Do not embed, 然后在主程序入口中加载这个framework并配置为sign & embed, 保证依赖不重复引入.
 
 ### Protocol
 
@@ -81,6 +107,13 @@ AppState判断权限(App主程序, MainModule, 其他Plugins), 然后按照权�
 
 注意, AppState需要跨模块传输数据, 并且数据需要是多Module之间同步的.
 
-# 要求
+使用Singleton形式, 在ModuleProtocol这个framework中创建public static的shared. 强制要求所有的Modules都do not embed ModuleProtocol, 只有在QueryTools这个主程序中才sign & embed ModuleProtocol
 
-请你设计一个大纲, 先完成protocol和项目的创建. 模块的名字就叫做ModuleProtocol. 不要用QT这个简写
+#### NotifyCenter
+
+通知中心. 使用Swift原生的API进行配置通知的调度.
+
+需要实现:
+1. 单例模式, 全局调用, 使用public static创建shared
+2. 实现函数进行权限申请
+3. 实现函数进行发送通知 (如果权限申请成功. 如果没有, 那么不发送)
