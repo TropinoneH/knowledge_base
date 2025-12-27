@@ -50,12 +50,12 @@ ModuleProtocol, 每一个module, QueryTools程序主入口, 这些project之间�
 
 ### Dependencies
 
-- Defaults: 持久化
-- KeyboardShortcuts: 快捷键, 全局快捷键
-- Sauce: 适配不同的Keyboard的keycode
-- Sparkle: 软更新
-- LaunchAtLogin: 配置 开机启动
-- SwiftyBeaver: 美化log输出, 配置release时的log file
+- [Defaults](https://github.com/sindresorhus/Defaults): 持久化
+- [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts): 快捷键, 全局快捷键
+- [Sauce](https://github.com/Clipy/Sauce): 适配不同的Keyboard的keycode
+- [Sparkle](https://github.com/sparkle-project/Sparkle): 更新
+- [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern): 配置 开机启动
+- [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver): 美化log输出, 配置release时的log file
 
 所有的Dependencies都写在一个SharedLibs(是一个`.framework`)中, 通过`@_exported import ...`进行转发导出. ModuleProtocol和所有的Module需要加载这个framework并配置为Do not embed, 然后在主程序入口中加载这个framework并配置为sign & embed, 保证依赖不重复引入.
 
