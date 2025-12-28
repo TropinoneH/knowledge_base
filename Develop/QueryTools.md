@@ -28,14 +28,13 @@ actions指的是footer中可选的, 针对features执行的操作.
 
 ```
 QueryToolsWorkspace (not project)
-|-- Frameworks (not project)
-|---- SharedLibs (project, export all third-party dependencies)
-|------ ... (files)
-|---- ModuleProtocol (project, the protocol that module should implement)
+|-- Cores (not project)
 |------ ... (files in ModuleProtocol)
 |---- MainModule (project)
 |------ ... (module implementation)
-|-- Libs (not project)
+|-- Frameworks (not project)
+|---- Defaults.framework (all dependencies built by self, and copy to here)
+|------ ...
 |---- ModuleProtocol.framework (Product after build)
 |------ ...
 |---- MainModule.framework
@@ -44,7 +43,7 @@ QueryToolsWorkspace (not project)
 |---- ... (files in main app)
 ```
 
-ModuleProtocol, 每一个module, QueryTools程序主入口, 这些project之间相互完全不知道. QueryTools会搜索Libs中的所有`.framework` (当release的时候换一个位置, 换成`QueryTools.app`这个app文件夹内部的一个路径), 并自动加载Libs中的所有内容.
+ModuleProtocol, 每一个module, QueryTools程序主入口, 这些project之间相互完全不知道. QueryTools会搜索Libs中的所有`.framework` (当release的时候换一个位置, 换成`QueryTools.app`这个app文件夹内部的一个路径), 并自动加载Frameworks中的所有内容.
 
 在Release的时候, 有一个设置界面, 会给出所有的可用的Module. 可以选择某一个module, 然后app会自动从网络中下载该module编译之后的`.framework`文件到module加载目录, 并且调用函数load这个module
 
@@ -57,7 +56,150 @@ ModuleProtocol, 每一个module, QueryTools程序主入口, 这些project之间�
 - [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern): 配置 开机启动
 - [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver): 美化log输出, 配置release时的log file
 
-所有的Dependencies都写在一个SharedLibs(是一个`.framework`)中, 通过`@_exported import ...`进行转发导出. ModuleProtocol和所有的Module需要加载这个framework并配置为Do not embed, 然后在主程序入口中加载这个framework并配置为sign & embed, 保证依赖不重复引入.
+部分在ModuleProtocol,Modules和App主体中都用到的依赖使用脚本构建:
+> [!info]- build shell
+> ```shell
+> #!/bin/bash
+> 
+> # ==============================================================================
+> # 配置区域
+> # ==============================================================================
+> BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+> SOURCES_DIR="$BASE_DIR/Packages"
+> OUTPUT_DIR="$BASE_DIR/Frameworks"
+> TEMP_BUILD_DIR="$BASE_DIR/TempBuild"
+> 
+> # 清理旧的构建产物
+> rm -rf "$OUTPUT_DIR"
+> rm -rf "$TEMP_BUILD_DIR"
+> mkdir -p "$OUTPUT_DIR"
+> mkdir -p "$TEMP_BUILD_DIR"
+> 
+> echo "📂 工作目录: $BASE_DIR"
+> echo "🚀 开始构建流程..."
+> 
+> # ==============================================================================
+> # 构建函数
+> # ==============================================================================
+> build_package() {
+>     LIB_NAME=$1
+>     SCHEME_NAME=$2
+> 
+>     # 统一使用 NO，依靠后续的手动 Patch 解决 Module 问题。
+>     # 这样兼容性最好，不会报 Library Evolution 错误。
+>     USE_DISTRIBUTION=${3:-NO}
+> 
+>     PKG_PATH="$SOURCES_DIR/$LIB_NAME"
+>     LIB_DERIVED_DATA="$TEMP_BUILD_DIR/$LIB_NAME"
+> 
+>     echo ""
+>     echo "----------------------------------------------------"
+>     echo "📦 正在构建: $LIB_NAME"
+>     echo "----------------------------------------------------"
+> 
+>     if [ ! -d "$PKG_PATH" ]; then
+>         echo "❌ 错误: 找不到源码目录 $PKG_PATH"
+>         return
+>     fi
+> 
+>     cd "$PKG_PATH" || exit
+> 
+>     # [特殊处理] SwiftyBeaver 自带 xcodeproj 会干扰 SPM 构建，必须删除
+>     if [ -d "$LIB_NAME.xcodeproj" ]; then
+>         echo "⚠️  检测到 .xcodeproj，正在移除以强制使用 Package.swift..."
+>         rm -rf "$LIB_NAME.xcodeproj"
+>     fi
+> 
+>     # 1. 执行 xcodebuild
+>     # 注意：这里我们只指定 destination generic/platform=macOS
+>     xcodebuild build \
+>         -scheme "$SCHEME_NAME" \
+>         -destination "generic/platform=macOS" \
+>         -configuration Release \
+>         -derivedDataPath "$LIB_DERIVED_DATA" \
+>         BUILD_LIBRARY_FOR_DISTRIBUTION="$USE_DISTRIBUTION" \
+>         SKIP_INSTALL=NO \
+>         >/dev/null 2>&1
+> 
+>     # 检查构建结果
+>     if [ $? -ne 0 ]; then
+>         echo "❌ 构建失败！尝试输出详细日志..."
+>         xcodebuild build \
+>             -scheme "$SCHEME_NAME" \
+>             -destination "generic/platform=macOS" \
+>             -configuration Release \
+>             -derivedDataPath "$LIB_DERIVED_DATA" \
+>             BUILD_LIBRARY_FOR_DISTRIBUTION="$USE_DISTRIBUTION"
+>         return
+>     fi
+> 
+>     # 2. 定位 Framework 产物
+>     # SPM 的产物路径可能有所不同，按优先级查找
+>     FRAMEWORK_SOURCE="$LIB_DERIVED_DATA/Build/Products/Release/PackageFrameworks/$LIB_NAME.framework"
+> 
+>     if [ ! -d "$FRAMEWORK_SOURCE" ]; then
+>         FRAMEWORK_SOURCE="$LIB_DERIVED_DATA/Build/Products/Release/$LIB_NAME.framework"
+>     fi
+> 
+>     if [ ! -d "$FRAMEWORK_SOURCE" ]; then
+>         echo "❌ 致命错误: 无法在构建产物中找到 $LIB_NAME.framework"
+>         return
+>     fi
+> 
+>     echo "✅ 编译成功，正在处理 Framework 结构..."
+> 
+>     # 3. [关键修复] 自动修补 Swift Modules
+>     # 当 BUILD_LIBRARY_FOR_DISTRIBUTION=NO 时，Framework 缺 Modules 文件夹
+>     # 我们需要从 DerivedData 里把 .swiftmodule 文件夹拷进去
+> 
+>     FRAMEWORK_MODULES_DIR="$FRAMEWORK_SOURCE/Modules"
+>     GENERATED_MODULE_DIR="$LIB_DERIVED_DATA/Build/Products/Release/$LIB_NAME.swiftmodule"
+> 
+>     if [ ! -d "$FRAMEWORK_MODULES_DIR" ]; then
+>         if [ -d "$GENERATED_MODULE_DIR" ]; then
+>             echo "🔧 正在修补缺失的 Modules (解决 'No such module' 错误)..."
+>             mkdir -p "$FRAMEWORK_MODULES_DIR"
+>             cp -R "$GENERATED_MODULE_DIR" "$FRAMEWORK_MODULES_DIR/"
+>         else
+>             echo "⚠️  警告: 未找到生成的 .swiftmodule，如果是纯 ObjC 库则忽略。"
+>         fi
+>     fi
+> 
+>     # 4. 复制到最终目录
+>     cp -R "$FRAMEWORK_SOURCE" "$OUTPUT_DIR/$LIB_NAME.framework"
+>     echo "🎉 $LIB_NAME.framework 已输出。"
+> }
+> 
+> # ==============================================================================
+> # 执行任务
+> # ==============================================================================
+> 
+> # 参数1: 文件夹名
+> # 参数2: Scheme名 (通常与文件夹名相同，但可以通过 swift package describe 查看)
+> 
+> build_package "Defaults" "Defaults"
+> build_package "KeyboardShortcuts" "KeyboardShortcuts"
+> build_package "Sauce" "Sauce" "YES"
+> build_package "SwiftyBeaver" "SwiftyBeaver"
+> 
+> # ==============================================================================
+> # 结束
+> # ==============================================================================
+> 
+> # 清理临时文件 (可选，注释掉以方便 Debug)
+> rm -rf "$TEMP_BUILD_DIR"
+> 
+> echo ""
+> echo "----------------------------------------------------"
+> echo "✅ 所有任务完成！"
+> echo "📁 Frameworks 已生成在: $OUTPUT_DIR"
+> echo "----------------------------------------------------"
+> echo "👉 现在的 .framework 内部已包含 Modules 文件夹。"
+> echo "👉 请回到 Xcode，先 Clean Build Folder，然后重新编译。"
+> 
+> ```
+
+其他的仅在App中用到的依赖只需要在App中通过xcode添加依赖即可
 
 ### Protocol
 
@@ -97,7 +239,7 @@ Action Protocol:
 
 你需要实现一个logger, 全局维护一个实例, 在App, Plugins中共享, 使用SwiftyBeaver这个库输出log信息.
 
-当debug时, 输出所有level的信息. 当Release的时候, 只输出Warn和Error的信息到log file的位置. log file的位置应该是一个写死的位置, 位于app的内部(就是`.app`这个文件夹的内部). 当文件大小超过某一定上限的时候清理一部分log信息
+当debug时, 输出所有level的信息. 当Release的时候, 只输出Warn和Error的信息到log file的位置. log file的位置应该是一个写死的位置. 当文件大小超过某一定上限的时候清理一部分log信息
 
 #### AppState
 
