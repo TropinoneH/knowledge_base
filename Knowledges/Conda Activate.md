@@ -3,7 +3,7 @@ type: command
 tags:
   - cli
   - code/python
-done: false
+done: true
 topic:
   - "[[Conda]]"
   - "[[Coding]]"
@@ -33,3 +33,13 @@ source <path/to/conda>/bin/activate <env_name>
 
 但是这个不能给[[Shell#Fish|fish shell]]使用
 # Activate by Path
+
+将`env_name`替换成path即可:
+```shell
+conda activate <path/to/env>
+```
+或者:
+```shell
+source <path/to/conda>/bin/activate <path/to/env>
+```
+

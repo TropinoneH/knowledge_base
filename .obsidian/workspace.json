@@ -80,12 +80,12 @@
             }
           },
           {
-            "id": "80708e7ee0884fab",
+            "id": "ef04ce794cd5048c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Knowledges/Conda Cache.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Electric Circuits"
+              "title": "Conda Cache"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -244,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Conda Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Conda Cache"
             }
           },
           {
@@ -283,7 +283,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Knowledges/Conda Cache.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -311,7 +311,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Conda Cache"
             }
           }
         ]
@@ -336,8 +336,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "860364988a2575c8",
+  "active": "ef04ce794cd5048c",
   "lastOpenFiles": [
+    "Topic/Conda.md",
+    "Knowledges/Conda Cache.md",
+    "Topic/Coding.md",
+    "Knowledges/Conda Init.md",
+    "Knowledges/Conda Activate.md",
+    "Knowledges/Conda Environment.md",
+    "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",
     "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
@@ -350,7 +357,6 @@
     "Lecture/Slides/EE111-F25-Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
     "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/EE111-F25-Lec14-LaplaceTransformCircuit.pdf",
-    "Develop/QueryTools.md",
     "Paper/pi0.md",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/VLA-Adapter.md",
@@ -364,16 +370,11 @@
     "Knowledges/DCT.md",
     "Knowledges/Cosine Similarity.md",
     "Knowledges/Cross-Entropy Loss.md",
-    "Topic/Coding.md",
     "Paper/pi0.5.md",
     "Lecture/Computer Architecture.md",
     "Knowledges/Gtk-rs.md",
     "Knowledges/Rust.md",
     "Assets/Pasted image 20250328215644.png",
-    "Paper/EO-1.md",
-    "Knowledges/ElementUI.md",
-    "ElementUI.md",
-    "Topic/Note.md",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
     "Assets/Pasted image 20251204090413.jpeg",
