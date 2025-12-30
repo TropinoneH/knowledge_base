@@ -35,11 +35,12 @@ $$\int_0^t\frac{1}{x}dx=\int_0^t\lambda dt$$
 $$\ln|x(t)|-\ln|x(0)|=\lambda(t-0)$$
 $$x(t)=x(0)e^{\lambda t}$$
 
-Lecture 01
-===
+# Lecture 01
 
 > [!note]- slides
-> ![[EE160-lec1.pdf]]
+> ![[EE160-Lec1-Introduction2FeedbackControl.pdf]]
+
+## Control Theory
 
 Control Theory 研究以下三类问题:
 
@@ -63,79 +64,110 @@ graph LR
 
 ## Control
 
+控制:
+- Dynamics: 这个系统本身的变化方向. 如:
+	- $\frac{d}{dt}x=\pm1$: 恒定增长/减小
+	- $\frac{d}{dt}x=\pm x$: 指数增长/减小
+	- $\frac{d}{dt}x=x^2$: 非线性增长/减小
+- Goal: 期望系统达成的目标. 如, 让$x\to0$, 并稳定下来
+- Input: 重点的部分. 要设计一个输入(Control System), 使得整个系统达到我们的Goal:
+	- $\frac{d}{dt}x=x^2+u$
+	- $u$是Control Input. 前面的是Dynamics
+
+但是更常见的系统是一个二阶系统(加速度, ...):
+![[EE160-Lec1-Introduction2FeedbackControl.pdf#page=20&rect=34,318,319,469|409]]
+
+为了防止过冲(有加速度, 一阶系统仅能做到靠近, 但是无法确保不会“过冲”(overshoot)或者震荡)
+
+### Feedback Control
+
 反馈(feedback): 需要知道输出才能知道控制, 即输入$u$是$x$的函数
 
-![[EE160-lec1.pdf#page=22|ee160-lec1, p.22]]
+#### Negative Feedback
 
-![[EE160-lec1.pdf#page=22&rect=315,312,406,405|ee160-lec1, p.22|100]]
-$$E=R-Y$$
+负反馈. 输出越大, 输入越小(或者越负). 防止输出爆炸
 
-![[EE160-lec1.pdf#page=22&rect=382,339,466,392|ee160-lec1, p.22|100]]
-$$U=CE$$
+e.g.
+![[EE160-Lec1-Introduction2FeedbackControl.pdf#page=22&rect=275,330,570,435|230]]
+根据图中的关系写表达式:
+- $Y=D_2+P(U+D_1)$: 最终的输出
+- $U=CE$: 由控制器$C$发出的信号, 用于控制最终的输出
+- $E=R-Y$: Error误差, 期望的目标$R$(或者叫Reference)和输出$Y$之间的差异
 
-![[EE160-lec1.pdf#page=22&rect=462,338,654,419|ee160-lec1, p.22|211]]
-$$Y=D_2+P(U+D_1)$$
-
-上面三个公式组成了输出$Y$, 输入$U$与输出$Y$有关, 因此这个是一个反馈的系统
-
-将中间变量全部消除, 得到:
-$$Y=D_2+P(D_1+C(R-Y))$$
-由于两侧都有输出$Y$, 因此移动并合并, 得到:
-$$Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
-即: [[EE160-lec1.pdf#page=23|ee160-lec1, p.23]]
-
-![[EE160-lec1.pdf#page=24&rect=313,315,684,445|ee160-lec1, p.24]]
+将$U$替换, 得到最终的输出的公式:
+$$\begin{aligned}Y&=D_2+P(U+D_1)\\&=D_2+P(C(R-Y)+D_1)\\&=D_2+PCR-PCY+PD_1\end{aligned}$$
+$$\Rightarrow Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
 
 此处可以理解为:
-- $C$是一个转换器, 希望得到的是$R$, 有误差$E$, 经过$C$使得最终的输出$Y$接近$R$. 使$C=\infty$, 可以令$\frac{PC}{1+PC}R\to R$, 最终$Y\overset{C\to\infty}{=\mathrel{\mkern-3mu}=}R$
+- $C$是一个转换器, 希望得到的是$R$, 有误差$E$, 经过$C$使得最终的输出$Y$接近$R$.
 - 这个系统的目的是让输出$Y$追随目标$R$
 
+使$C=\infty$, 可以令$\frac{PC}{1+PC}R\to R$, 最终$Y\overset{C\to\infty}{=\mathrel{\mkern-3mu}=}R$. 即, 如果让控制的增益能够达到无限, 那么系统会忽视其他的组件, 直接复制Reference.
+
+但是实际上这个是理想的系统, 真实世界中由于 能量不是无限的, 因此令$C\to\infty$是不可能达成的.
 # Lecture 02
 > [!note]- slide
-> ![[EE160-lec2.pdf]]
+> ![[EE160-Lec2-MathModels.pdf]]
 
 ## Linear System
 
-> [!PDF|note] [[EE160-lec2.pdf#page=3&selection=29,0,29,11&color=note|ee160-lec2, p.3]]
-> > homogeneity
-> 
-> 齐次性:
-> $$a h(x)=h(a x)$$
+[[EE160-Lec2-MathModels.pdf#page=3&selection=28,0,28,11|齐次性]]: $\alpha h(x)=h(\alpha x)$
+![[EE160-Lec2-MathModels.pdf#page=3&rect=5,179,247,308|254]]
 
-> [!PDF|note] [[EE160-lec2.pdf#page=3&selection=33,0,33,13&color=note|ee160-lec2, p.3]]
-> > superposition
-> 
-> 叠加性:
-> h(x_1)+h(x_2)=h(x_1+x_2)
+[[EE160-Lec2-MathModels.pdf#page=3&selection=32,0,32,13|可加性]]: $h(x)+h(y)=h(x+y)$
+![[EE160-Lec2-MathModels.pdf#page=3&rect=258,144,499,305|244]]
 
-> [!PDF|note] [[EE160-lec2.pdf#page=3&selection=40,0,42,10|ee160-lec2, p.3]]
-> > time-invariance
-> 
-> 时不变:
-> ```mermaid
-> graph LR
-> a("h(x)")-->f[System]-->b("y(x)")
-> c("h(x-t0)")-->e[System]-->d("y(x-t0)")
-> ```
+[[EE160-Lec2-MathModels.pdf#page=3&selection=38,1,39,15|时不变性]]: $\matrix{x(t)\rightarrow\text{system}\rightarrow y(t)\\\Downarrow\\x(t+t_0)\rightarrow\text{system}\rightarrow y(t+t_0)}$
+![[EE160-Lec2-MathModels.pdf#page=3&rect=503,146,839,306|254]]
 
-> [!PDF|note] [[EE160-lec2.pdf#page=4&selection=18,0,18,13|ee160-lec2, p.4]]
-> > True or False
-> 
-> True, 是一个线性系统, 但是是时变的
+### Linear Operator
+
+线性操作. 对一个线性系统做线形操作, 得到的系统仍然是线性的.
+- $\alpha x(t)$
+- $\frac{1}{\alpha}x(t)$
+- $\int x(t)dt$
+- $\frac{d}{dt}x(t)$
+- $x_1(t)+x_2(t)$
+- $x_1(t)-x_2(t)$
 
 ## Laplace Transform
 
-冲击函数: $\delta(t)$: $\int_{0^-}^{0^+}\delta(t)dt=1$
-
-阶跃函数: $u(t)$ ^1a68f2
+激励函数(Excitation Functions): 在未知系统的时候, 创建一个冲击函数作为输入, 然后根据输出去分析这个系统的构成
+- 冲击函数: $\delta(t)$: $\int_{0^-}^{0^+}\delta(t)dt=1$
+- 阶跃函数: $u(t)=\left\{\matrix{1&t>0\\0&t<0}\right.$ ^1a68f2
 
 Laplace Transform:
-$$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$
-常见的Laplace Transform:
-![[EE160-lec2.pdf#page=7&rect=17,29,363,322&color=note|ee160-lec2, p.7]]
 
-常见的Laplace Transform Theorems:
-![[EE160-lec2.pdf#page=8&rect=456,32,951,409&color=note|ee160-lec2, p.8]]
+定义$s=\sigma+j\omega$:
+$$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$
+
+常见的Laplace[[EE160-Lec2-MathModels.pdf#page=7&rect=14,89,318,342|变换]]和[[EE160-Lec2-MathModels.pdf#page=8&rect=400,103,832,418|逆变换]]:
+
+| $f(t)$                                                    | $F(s)$                          |
+| :-------------------------------------------------------- | :------------------------------ |
+| $\delta(t)$                                               | $1$                             |
+| $u(t) = \begin{cases} 1 & t > 0 \\ 0 & t < 0 \end{cases}$ | $\frac{1}{s}$                   |
+| $tu(t)$                                                   | $\frac{1}{s^2}$                 |
+| $t^n u(t)$                                                | $\frac{n!}{s^{n+1}}$            |
+| $e^{-at}u(t)$                                             | $\frac{1}{s+a}$                 |
+| $\sin \omega t u(t)$                                      | $\frac{\omega}{s^2 + \omega^2}$ |
+| $\cos \omega t u(t)$                                      | $\frac{s}{s^2 + \omega^2}$      |
+
+| Theorem                                                                                     | Name                    |
+| :------------------------------------------------------------------------------------------ | :---------------------- |
+| $\mathscr{L}[f(t)] = F(s) = \int_{0-}^{\infty} f(t)e^{-st}dt$                               | Definition              |
+| $\mathscr{L}[kf(t)] = kF(s)$                                                                | Linearity theorem       |
+| $\mathscr{L}[f_1(t) + f_2(t)] = F_1(s) + F_2(s)$                                            | Linearity theorem       |
+| $\mathscr{L}[e^{-at}f(t)] = F(s+a)$                                                         | Frequency shift theorem |
+| $\mathscr{L}[f(t-T)] = e^{-sT}F(s)$                                                         | Time shift theorem      |
+| $\mathscr{L}[f(at)] = \frac{1}{a}F\left(\frac{s}{a}\right)$                                 | Scaling theorem         |
+| $\mathscr{L}\left[\frac{df}{dt}\right] = sF(s) - f(0-)$                                     | Differentiation theorem |
+| $\mathscr{L}\left[\frac{d^2f}{dt^2}\right] = s^2F(s) - sf(0-) - f'(0-)$                     | Differentiation theorem |
+| $\mathscr{L}\left[\frac{d^n f}{dt^n}\right] = s^n F(s) - \sum_{k=1}^{n} s^{n-k}f^{k-1}(0-)$ | Differentiation theorem |
+| $\mathscr{L}\left[\int_{0-}^{t} f(\tau)d\tau\right] = \frac{F(s)}{s}$                       | Integration theorem     |
+| $f(\infty) = \lim_{s \to 0} sF(s)$                                                          | Final value theorem     |
+| $f(0+) = \lim_{s \to \infty} sF(s)$                                                         | Initial value theorem   |
+
 
 > [!example] 
 > 计算$e^{-3t}t\cdot u(t)$的Laplace Transform:

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15b8c037055b21f9",
+            "id": "de7127bc402a7b85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Lecture/Introduction to Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,83 +28,32 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
-            }
-          },
-          {
-            "id": "6441cbf307b7c2f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Knowledges/PyTorch Normalization.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "PyTorch Normalization"
-            }
-          },
-          {
-            "id": "860364988a2575c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/QueryTools.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "QueryTools"
-            }
-          },
-          {
-            "id": "ef04ce794cd5048c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Knowledges/Conda Cache.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Conda Cache"
+              "title": "Introduction to Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
+      },
+      {
+        "id": "13ca5ba620bd0960",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fe0989e7b52327c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-Lec2-MathModels.pdf",
+                "page": 8,
+                "left": -14,
+                "top": 453,
+                "zoom": 1.0912556494082266
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-Lec2-MathModels"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "1a68f2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,11 +141,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -230,12 +181,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -244,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Conda Cache.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +205,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Conda Cache"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -283,7 +234,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Conda Cache.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -306,19 +257,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conda Cache"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -336,27 +288,31 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ef04ce794cd5048c",
+  "active": "de7127bc402a7b85",
   "lastOpenFiles": [
+    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
+    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
+    "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
+    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
+    "Lecture/Slides/EE160-Lec6-DisturbanceRejection.pdf",
+    "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
+    "Lecture/Slides/EE160-lec7.pdf",
+    "Lecture/Slides/EE160-lec1.pdf",
+    "Lecture/Slides/EE160-lec2.pdf",
+    "Develop/QueryTools.md",
+    "Knowledges/PyTorch Normalization.md",
+    "Knowledges/Conda Config.md",
     "Topic/Conda.md",
     "Knowledges/Conda Cache.md",
     "Topic/Coding.md",
     "Knowledges/Conda Init.md",
+    "Knowledges/Conda Install.md",
+    "index.md",
     "Knowledges/Conda Activate.md",
     "Knowledges/Conda Environment.md",
-    "Develop/QueryTools.md",
-    "Knowledges/PyTorch Normalization.md",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
-    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
-    "Lecture/Slides/EE111-F25-Lec7-Phasor.pdf",
-    "Lecture/Slides/EE111-F25-Lec6-2nd-Order Circuits-Part1.pdf",
-    "Lecture/Slides/EE111-F25-Lec5-1st-Order Circuits.pdf",
-    "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
-    "Lecture/Slides/EE111-F25-Lec3-Circuit Theorem.pdf",
-    "Lecture/Slides/EE111-F25-Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
-    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Lecture/Slides/EE111-F25-Lec14-LaplaceTransformCircuit.pdf",
     "Paper/pi0.md",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/VLA-Adapter.md",
@@ -369,11 +325,6 @@
     "Knowledges/Wandb.md",
     "Knowledges/DCT.md",
     "Knowledges/Cosine Similarity.md",
-    "Knowledges/Cross-Entropy Loss.md",
-    "Paper/pi0.5.md",
-    "Lecture/Computer Architecture.md",
-    "Knowledges/Gtk-rs.md",
-    "Knowledges/Rust.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

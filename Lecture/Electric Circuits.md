@@ -306,6 +306,8 @@ $$-20+6i_1+10i_2+4i_2=0$$
 
 ## Superposition
 
+利用了[[Introduction to Control#Linear System|线性系统]]的可加性.
+
 1. 找一个需要分析的source
 2. 将其他的source归零("Turn off"), 电流源$\rightarrow0A$, 电压源$\rightarrow0V$
 3. 分析
@@ -743,7 +745,7 @@ $$v_L(t)=L\frac{di_L(t)}{dt}=L\cdot I_s\cdot(-\frac{R}{L})e^{-\frac{R}{L}t}=-I_s
 
 一个直流电源突然接入RC电路中.
 
-[[Introduction to Control#^1a68f2|阶跃相应]]:
+[[Introduction to Control#^1a68f2|阶跃响应]]:
 ![[EE111-F25-Lec5-1st-Order Circuits.pdf#page=35&rect=51,178,315,341|EE111-F25-Lec5-1st-Order Circuits, p.35]]
 
 在电路中, 可以认为是:

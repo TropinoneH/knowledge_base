@@ -368,12 +368,12 @@
                 }
               },
               {
-                "id": "6441cbf307b7c2f2",
+                "id": "860364988a2575c8",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/PyTorch Normalization.md",
+                    "file": "Develop/QueryTools.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -388,7 +388,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "PyTorch Normalization"
+                  "title": "QueryTools"
                 }
               }
             ],
@@ -532,7 +532,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/PyTorch Normalization.md",
+                    "file": "Develop/QueryTools.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -542,7 +542,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for PyTorch Normalization"
+                  "title": "Backlinks for QueryTools"
                 }
               },
               {
@@ -571,7 +571,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/PyTorch Normalization.md",
+                    "file": "Develop/QueryTools.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -599,7 +599,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of PyTorch Normalization"
+                  "title": "Graph of QueryTools"
                 }
               }
             ]
@@ -624,8 +624,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "6441cbf307b7c2f2",
-      "mtime": "2025-12-23T17:15:24+08:00"
+      "active": "860364988a2575c8",
+      "mtime": "2025-12-30T19:05:04+08:00"
     },
     "paper": {
       "main": {
@@ -1105,5 +1105,5 @@
       "mtime": "2025-12-24T00:00:50+08:00"
     }
   },
-  "active": "note"
+  "active": "lecture note"
 }
