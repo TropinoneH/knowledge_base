@@ -252,9 +252,13 @@ $$G(s)=\frac{\mathcal L\{\text{Output}\}(s)}{\mathcal L\{\text{Input}\}(s)}$$
 
 ## State Space Model
 
-State Space Model由两部分组成, 一个是状态$\overset{\cdot}{x}=\mathbf{A}x(t)+\mathbf{B}u(t)$, 一个是输出$y=\mathbf{C}x(t)+\mathbf{D}u(t)$
-E
-![[EE160-lec2.pdf#page=24&rect=329,277,468,392|EE160-lec2, p.22|132]]
+状态: $x$, 一个线性无关的向量
+
+SSM将整个系统的所有的方程, 整理成了两个部分:
+- 状态方程: $\overset{\cdot}{x}=\mathbf{A}x(t)+\mathbf{B}u(t)$
+	- 状态的变化速度 = 物理规律$\times$当前的状态$+$外部影响力$\times$外部输入
+- 输出: $y=\mathbf{C}x(t)+\mathbf{D}u(t)$
+	- 测量的结果 = 观测能力$\times$当前的状态$+$外部对测量值的影响力$\times$外部输入
 
 其中:
 - $x(t)$是状态向量
@@ -266,24 +270,48 @@ E
 - $\mathbf{C}$是输出矩阵
 - $\mathbf{D}$是前馈矩阵
 
-![[EE160-lec2.pdf#page=25&rect=20,271,477,437|EE160-lec2, p.23]]
+![[EE160-Lec2-MathModels.pdf#page=25&rect=16,299,410,445]]
 $$\overset{\cdot}{x}=\begin{bmatrix}\frac{1}{C_1}&\frac{1}{C_1}&-\frac{1}{C_1}\\-\frac{1}{L}&0&0\\\frac{1}{C_2}&0&-\frac{1}{C_2}\end{bmatrix}\cdot x+\begin{bmatrix}0\\1\\0\end{bmatrix}\cdot v_i(t)$$
 $$y=\begin{bmatrix}0&0&1\end{bmatrix}x$$
 
-![[EE160-lec2.pdf#page=25&rect=497,319,921,438|EE160-lec2, p.23]]
+![[EE160-Lec2-MathModels.pdf#page=25&rect=435,340,812,442]]
 $$\overset{\cdot}{z}=\begin{bmatrix}0&1&0&0&0&0\\-1&-1&0&1&0&0\\0&0&0&1&0&0\\0&1&-1&-1&1&0\\0&0&0&0&1&0\\0&0&1&0&-1&-1\end{bmatrix}\cdot z+\begin{bmatrix}0\\1\\0\\0\\0\\0\end{bmatrix}\cdot f(t)$$
 $$y=\begin{bmatrix}0&0&0&0&1&0\end{bmatrix}z$$
 $$\text{where: }z=\begin{bmatrix}x_1&\overset{\cdot}{x}_1&x_2&\overset{\cdot}{x}_2&x_3&\overset{\cdot}{x}_3&\end{bmatrix}^\top$$
 
+### O.D.E to State Space Model
+
+原始O.D.E方程:
+$$\frac{d^ny}{dt^n}+a_{n-1}\frac{d^{n-1}y}{dt^{n-1}}+\cdots+a_1\frac{dy}{dt}+a_0y=b_0u$$
+
+首先定义: $x_1=y$, $x_2=\frac{dy}{dt}$, $\cdots$, $x_n=\frac{d^{n-1}y}{dt^{n-1}}$
+
+有:
+
+则SSM: $\dot x=Ax+Bu$ 可以转换成:
+$$\begin{bmatrix}\dot x_1\\\dot x_2\\\vdots\\\dot x_n\end{bmatrix}=A\begin{bmatrix}x_1\\x_2\\\vdots\\x_n\end{bmatrix}+Bu$$
+
+由于$\dot x_1=x_2$, $\dot x_{m-1}=x_m$, 则A的上部分为:
+$$\begin{bmatrix}0&1&0&\cdots&0\\0&0&1&\cdots&0\\&&\vdots\\0&0&0&\cdots&1\\?&?&?&\cdots&?\end{bmatrix}$$
+根据原始的O.D.E, 有: $\dot x_n+a_{n-1}x_n+\cdots+a_0x_1=b_0u$, 因此$\dot x_n=-a_{n-1}x_n-\cdots-a_0x_1+b_0u$, 因此完整的$A$为:
+$$\begin{bmatrix}0&1&0&\cdots&0\\0&0&1&\cdots&0\\&&\vdots\\0&0&0&\cdots&0\\-a_0&-a_1&-a_2&\cdots&-a_{n-1}\end{bmatrix}$$
+完整的$B$为:
+$$\begin{bmatrix}0\\0\\\vdots\\b_0\end{bmatrix}$$
+
+因此, 状态方程为:
+![[EE160-Lec2-MathModels.pdf#page=26&rect=403,172,816,299|397]]
+
+输出为$y$, 就是$x_1$. 则最终的输出方程为:
+![[EE160-Lec2-MathModels.pdf#page=26&rect=437,87,583,171|215]]
+
 ### Transfer Function to State Space Model
 
-二级结论: 对于分母的幂次严格大于分子的转移函数, 有:
+首先, 将转移函数转换成O.D.E, 然后使用[[#O.D.E to State Space Model]].
 
-![[EE160-lec2.pdf#page=26&rect=457,28,943,274|EE160-lec2, p.24]]
+注意, 当分子和分母同幂的时候, $D$矩阵不再为全零的矩阵了.
 
 > [!example]+
-> ![[EE160-lec2.pdf#page=29&rect=41,369,787,455|EE160-lec2, p.27]]
-> $$$$
+> ![[EE160-Lec2-MathModels.pdf#page=27&rect=25,89,353,420]]
 
 ### State Space Model to Transfer Function
 
