@@ -306,7 +306,7 @@ $$-20+6i_1+10i_2+4i_2=0$$
 
 ## Superposition
 
-利用了[[Introduction to Control#Linear System|线性系统]]的可加性.
+利用了[[Introduction to Control#Linear Time Invariant System|线性系统]]的可加性.
 
 1. 找一个需要分析的source
 2. 将其他的source归零("Turn off"), 电流源$\rightarrow0A$, 电压源$\rightarrow0V$

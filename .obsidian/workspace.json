@@ -44,13 +44,29 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-                "page": 8,
-                "left": -14,
-                "top": 453,
-                "zoom": 1.0912556494082266
+                "page": 17,
+                "left": -27,
+                "top": 106,
+                "zoom": 1.06
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec2-MathModels"
+            }
+          },
+          {
+            "id": "e72fa9969e49c1f2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
+                "page": 17,
+                "left": -14,
+                "top": 153,
+                "zoom": 1.0912556494082266
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-Lec3-StabilityAndPerformance"
             }
           }
         ]
@@ -293,8 +309,8 @@
     "Lecture/Slides/EE160-Lec2-MathModels.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
     "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
+    "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
     "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
     "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
     "Lecture/Slides/EE160-Lec6-DisturbanceRejection.pdf",
