@@ -435,6 +435,47 @@ $$\dot x=Ax+Bu$$
 ## Poles and Zeros
 
 ![[EE160-Lec3-StabilityAndPerformance.pdf#page=3&rect=280,93,820,434]]
+
+响应:
+- 强迫响应([[EE160-Lec3-StabilityAndPerformance.pdf#page=4&selection=6,21,6,36|force response]]): 由于外界输入引起的响应 (输入函数的极点)
+- 自然响应([[EE160-Lec3-StabilityAndPerformance.pdf#page=4&selection=10,41,10,49|natural response]]): 由于系统本身的性质而产生的响应 (转移函数的极点)
+
+极点 $p = \sigma + j\omega$ 的位置决定了 $e^{(\sigma + j\omega)t} = e^{\sigma t} (\cos \omega t + j \sin \omega t)$ 的形态：
+
+| 极点的位置 (在 s 平面上) | 数学形式 ($p$)                | 自然响应的时间函数形式 ($e^{pt}$)                | 物理表现 (参考 [[EE160-Lec3-StabilityAndPerformance.pdf#page=8&rect=329,60,698,536\|Lecture 3, Page 8]]) |
+| :-------------- | :------------------------ | :------------------------------------ | :------------------------------------------------------------------------------------------------- |
+| **负实轴上** (左半平面) | $p = -\sigma$             | $e^{-\sigma t}$                       | **单调衰减**。系统受到冲击后平滑地回到零，不震荡（过阻尼）。                                                                   |
+| **原点**          | $p = 0$                   | $e^{0t} = 1$ (阶跃)                     | **常数/积分**。系统保持当前状态不恢复。                                                                             |
+| **正实轴上** (右半平面) | $p = +\sigma$             | $e^{+\sigma t}$                       | **单调发散**。系统不稳定，数值趋向无穷大。                                                                            |
+| **左半平面共轭复数**    | $p = -\sigma \pm j\omega$ | $e^{-\sigma t} \cos(\omega t + \phi)$ | **衰减震荡**。系统会震荡，但振幅随 $e^{-\sigma t}$ 逐渐减小，最终趋于稳定（欠阻尼）。                                              |
+| **虚轴上共轭复数**     | $p = 0 \pm j\omega$       | $\cos(\omega t + \phi)$               | **等幅震荡**。系统像永动机一样不停震荡，不衰减也不发散（临界稳定）。                                                               |
+| **右半平面共轭复数**    | $p = +\sigma \pm j\omega$ | $e^{+\sigma t} \cos(\omega t + \phi)$ | **发散震荡**。震荡幅度越来越大，系统不稳定。                                                                           |
+
+### Typical System
+
+一阶系统只有一个极点, 通常是一个实数.
+
+二阶系统有两个极点, 但是这两个极点不一定是什么, 可能是共轭的也可能是相同的.
+- Natural frequency $\omega_n$
+- Damping ratio $\zeta$
+- 假设传递函数为$G(s)=\frac{\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}$
+
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=9&rect=374,89,715,373]]
+
+#### Performance Metrics
+
+指示系统的性能指标.
+- 上升时间$T_r$: 指示反应速度
+- 峰值时间$T_p$: 上升到最大值的时间
+- 超调量$\%OS$ overshoot: 冲过头了多少
+- 调节时间$T_s$: 需要多久稳定下来
+
+$$T_p=\frac{pi}{\omega_n\sqrt{1-\zeta^2}}=\frac{\pi}{\omega_d}$$
+$$T_s=\frac{4}{\zeta\omega_n}=\frac{4}{\sigma_d}$$
+$$\%OS=e^{-(\frac{\zeta\pi}{\sqrt{1-\zeta^2}})}\times100\%$$
+
+
+
 ## Routh Table
 
 ![[EE160-Lec3-StabilityAndPerformance.pdf#page=19]]
