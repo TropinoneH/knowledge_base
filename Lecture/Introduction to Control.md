@@ -111,13 +111,13 @@ $$\Rightarrow Y=\frac{PC}{1+PC}R+\frac{P}{1+PC}D_1+\frac{1}{1+PC}D_2$$
 
 ## Linear Time Invariant System
 
-[[EE160-Lec2-MathModels.pdf#page=3&selection=28,0,28,11|齐次性]]: $\alpha h(x)=h(\alpha x)$
+[[EE160-Lec2-MathModels.pdf#page=3&selection=28,0,28,11|齐次性(homogenity)]]: $\alpha h(x)=h(\alpha x)$
 ![[EE160-Lec2-MathModels.pdf#page=3&rect=5,179,247,308|254]]
 
-[[EE160-Lec2-MathModels.pdf#page=3&selection=32,0,32,13|可加性]]: $h(x)+h(y)=h(x+y)$
+[[EE160-Lec2-MathModels.pdf#page=3&selection=32,0,32,13|可加性(superposition)]]: $h(x)+h(y)=h(x+y)$
 ![[EE160-Lec2-MathModels.pdf#page=3&rect=258,144,499,305|244]]
 
-[[EE160-Lec2-MathModels.pdf#page=3&selection=38,1,39,15|时不变性]]: $\matrix{x(t)\rightarrow\text{system}\rightarrow y(t)\\\Downarrow\\x(t+t_0)\rightarrow\text{system}\rightarrow y(t+t_0)}$
+[[EE160-Lec2-MathModels.pdf#page=3&selection=38,1,39,15|时不变性(time invariance)]]: $\matrix{x(t)\rightarrow\text{system}\rightarrow y(t)\\\Downarrow\\x(t+t_0)\rightarrow\text{system}\rightarrow y(t+t_0)}$
 ![[EE160-Lec2-MathModels.pdf#page=3&rect=503,146,839,306|254]]
 
 ### Linear Operator
@@ -308,17 +308,41 @@ $$\begin{bmatrix}0\\0\\\vdots\\b_0\end{bmatrix}$$
 
 首先, 将转移函数转换成O.D.E, 然后使用[[#O.D.E to State Space Model]].
 
-注意, 当分子和分母同幂的时候, $D$矩阵不再为全零的矩阵了.
+对于分子不是常数的转移函数, 引入中间变量.
 
-> [!example]+
+假设转移函数为$\frac{Y(s)}{U(s)}=\frac{b_{n-1}s^{n-1}+\cdots+b_1s+b_0}{s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0}$
+1. 引入中间变量$X(s)$, 使得$\frac{X(s)}{U(s)}=\frac{1}{s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0}$, $\frac{Y(s)}{X(s)}=b_{n-1}s^{n-1}+\cdots+b_1s+b_0$
+2. 构造$$A=\begin{bmatrix}0&1&0&\cdots&0\\0&0&1&\cdots&0\\&&\vdots\\0&0&0&\cdots&1\\-a_0&-a_1&-a_2&\cdots&-a_{n-1}\end{bmatrix},B=\begin{bmatrix}0\\0\\\vdots\\0\\1\end{bmatrix}$$
+3. 构造$C$矩阵. 频域的输出为$Y(s)=b_0\cdot X(s)+b_1\cdot sX(s)+\cdots+b_{n-1}\cdot s^{n-1}X(s)$. 因此, 构建矩阵$$C=\begin{bmatrix}b_0&b_1&\cdots&b_{n-1}\end{bmatrix}$$
+4. 矩阵$D$依然为0
+
+对于分子分母同幂次的转移方程, 需要构建矩阵$D$. 步骤为:
+1. 将转移函数写成如下形式:$$G(s)=\frac{Y(s)}{U(s)}=\beta+\frac{b_{n-1}s^{n-1}+\cdots+b_1s+b_0}{s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0}$$
+2. 对于后面的真分式, 使用前面的方法获取矩阵$A$, $B$, $C$:$$A=\begin{bmatrix}0&1&0&\cdots&0\\0&0&1&\cdots&0\\&&\vdots\\0&0&0&\cdots&1\\-a_0&-a_1&-a_2&\cdots&-a_{n-1}\end{bmatrix},B=\begin{bmatrix}0\\0\\\vdots\\0\\1\end{bmatrix},C=\begin{bmatrix}b_0&b_1&\cdots&b_{n-1}\end{bmatrix}$$
+3. 矩阵$D$为一个常数$D=\begin{bmatrix}\beta\end{bmatrix}$
+
+
+> [!example]-
 > ![[EE160-Lec2-MathModels.pdf#page=27&rect=25,89,353,420]]
 
 ### State Space Model to Transfer Function
 
-![[EE160-lec2.pdf#page=30&rect=634,207,906,295|EE160-lec2, p.28]]
+假设已知:
+$$\dot X=AX+BU,Y=CX+DU$$
+
+结论为: 转移函数为
+$$T(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D$$
+
+计算矩阵的逆的方法:
+$$(sI-A)^{-1}=\frac{\text{adj}(sI-A)}{\det(sI-A)}$$
+$\text{adj}$的结果仍然是一个矩阵, $\det$的结果是一个scalar. 最终的结果应该是一个矩阵, shape和$A$相同.
+
+$\text{adj(A)}$的算法为:
+![[EE160-Lec2-MathModels.pdf#page=31&rect=25,99,621,210]]
+
 
 > [!example]+ 
-> ![[EE160-lec2.pdf#page=32&rect=206,317,703,437|EE160-lec2, p.30]]
+> ![[EE160-Lec2-MathModels.pdf#page=32&rect=179,343,616,444]]
 > $$sI-A=\begin{bmatrix}s+4&1.5\\-4&s\end{bmatrix}$$
 > $$adj(sI-A)=\begin{bmatrix}s&-1.5\\4&s+4\end{bmatrix}$$
 > $$det(sI-A)=s(s+4)+6$$
@@ -327,58 +351,93 @@ $$\begin{bmatrix}0\\0\\\vdots\\b_0\end{bmatrix}$$
 
 ### Diagonal State Space Repr
 
-对角SSM表达:
-![[EE160-lec2.pdf#page=34|EE160-lec2, p.32]]
+> [!note] 引入: 变量的变换
+> 
+> 对于一个系统而言, SSM不是唯一的. 将变量通过Transform矩阵转换到另一个变量, SSM也会随之改变.
+> 
+> 如, 令$Z=PX$, 那么SSM变成了:
+> $$\dot z=P^{-1}APz+P^{-1}Bu$$
+> $$y=CPz+Du$$
+
+使用对角状态空间表达的原因是解耦和, 让变量对最终结果的输出相互独立.
+
+如果没有对角化, 那么$\dot x_1$可能依赖于$x_1,x_2,\cdots$. 对角化之后, $\dot z_1$只和$z_1$以及$u$有关
+
+> [!tip]- 矩阵对角化
+> 使用[[LinearAlgebra#Eigenvector|特征向量]]进行矩阵对角化处理:
+> $$\det(\lambda I-A)=0$$
+> 计算得到所有的特征值. 然后计算特征向量:
+> $$A\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}=\lambda_i\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}$$
+> 所有的特征向量组成特征矩阵:
+> $$P=\begin{bmatrix}x_{11}&\cdots&x_{1n}\\&\vdots\\x_{n1}&\cdots&x_{nn}\end{bmatrix}$$
+> 
+> 然后对角化矩阵$$\text{Diag}(A)=P^{-1}AP$$
 
 > [!example] 
-> ![[EE160-lec2.pdf#page=35&rect=15,327,579,441|EE160-lec2, p.33]]
+> ![[EE160-Lec2-MathModels.pdf#page=35&rect=9,349,501,445|443]]
 > 
 > Solution:
-> ![[EE160-lec2.pdf#page=35&rect=33,28,921,205|EE160-lec2, p.33]]
-> ![[EE160-lec2.pdf#page=35&rect=603,319,953,469|EE160-lec2, p.33|287]]
-> ![[EE160-lec2.pdf#page=35&rect=565,218,763,312|EE160-lec2, p.33|203]]
+> ![[EE160-Lec2-MathModels.pdf#page=35&rect=672,245,839,335|135]]
+> ![[EE160-Lec2-MathModels.pdf#page=35&rect=35,95,783,232|533]]
+> ![[EE160-Lec2-MathModels.pdf#page=35&rect=525,350,835,467|279]]
+> ![[EE160-Lec2-MathModels.pdf#page=35&rect=496,250,668,331|213]]
 > 使用[[#State Space Model to Transfer Function|之前]]的解法:
 > $$\begin{aligned}Y&=C(sI-A)^{-1}Bu\\&=\begin{bmatrix}2&3\end{bmatrix}\begin{bmatrix}s+3&-1\\-1&s+3\end{bmatrix}^{-1}\begin{bmatrix}1\\2\end{bmatrix}u\\&=\begin{bmatrix}2&3\end{bmatrix}\frac{\begin{bmatrix}s+3&1\\1&s+3\end{bmatrix}}{s^2+6s+8}\begin{bmatrix}1\\2\end{bmatrix}u\\&=\frac{8s+31}{s^2+6s+8}u=\left(\frac{}{s+2}+\frac{}{s+4}\right)u\end{aligned}$$
 > 
 
+> [!example]- 
+> ![[EE160-Lec2-MathModels.pdf#page=36&rect=45,208,410,468]]
+> ![[EE160-Lec2-MathModels.pdf#page=36&rect=433,341,820,470]]
+
 ## Solution of the State Space Model
 
-![[EE160-lec2.pdf#page=37&rect=89,439,213,473|EE160-lec2, p.37|184]]
-转化到频域:
-![[EE160-lec2.pdf#page=37&rect=22,354,285,389|EE160-lec2, p.37|355]]
+根据SSM的公式, 求解时域的表达式.
+
+假设SSM的状态方程为:
+$$\dot x=Ax+Bu$$
+
+最终的结果为:
+![[EE160-Lec2-MathModels.pdf#page=38&rect=321,177,767,361]]
+其中:
+![[EE160-Lec2-MathModels.pdf#page=38&rect=425,99,806,142]]
 
 ## Block Diagram
 
 框图:
-![[EE160-lec2.pdf#page=40|EE160-lec2, p.40]]
-
-信号都是在频域中的
+![[EE160-Lec2-MathModels.pdf#page=40&rect=56,294,572,482]]
+信号都是在频域中的.
+- 箭头指向某一个框(System), 然后得到输出, 这个过程是做了乘法(以上图中的b为例): $C(s)=R(s)G(s)$
+- 箭头指向一个圈(或者一个operator), 指的是按照符号进行相加减, 然后得到输出(如上图中的c)
 
 串联: 频域相乘:
-![[EE160-lec2.pdf#page=40&rect=157,44,485,159|EE160-lec2, p.40]]
+![[EE160-Lec2-MathModels.pdf#page=40&rect=141,94,425,202]]
 并联: 频域相加:
-![[EE160-lec2.pdf#page=40&rect=492,44,840,245|EE160-lec2, p.40]]
+![[EE160-Lec2-MathModels.pdf#page=40&rect=427,96,730,271]]
+反馈: 输出影响输入:
+![[EE160-Lec2-MathModels.pdf#page=41&rect=518,173,782,315]]
+等价于: ![[EE160-Lec2-MathModels.pdf#page=41&rect=581,105,720,150|135]]
+### 化简
 
-![[EE160-lec2.pdf#page=41&rect=609,49,887,286|EE160-lec2, p.41]]
 注意符号
-
-- 叠加原理: ![[EE160-lec2.pdf#page=42&rect=420,349,769,482|EE160-lec2, p.42]]
-- 齐次原理: ![[EE160-lec2.pdf#page=42&rect=223,46,504,272|EE160-lec2, p.42]]
+- [[#Linear Time Invariant System|叠加原理(superposition)]]: ![[EE160-Lec2-MathModels.pdf#page=42&rect=493,178,789,419]]
+- 齐次原理: ![[EE160-Lec2-MathModels.pdf#page=42&rect=145,219,397,418]]
 
 > [!example] 
-> ![[EE160-lec2.pdf#page=43&rect=328,162,943,476|EE160-lec2, p.43]]
+> ![[EE160-Lec2-MathModels.pdf#page=43&rect=286,209,828,478]]
 > 
 > Solution: 化简框图, 得:
-> ![[EE160-lec2.pdf#page=44&rect=292,59,639,476|EE160-lec2, p.44]]
+> ![[EE160-Lec2-MathModels.pdf#page=44&rect=256,98,541,474]]
 
 # Lecture 03
 > [!note]- slide
-> ![[EE160-lec3.pdf]]
+> ![[EE160-Lec3-StabilityAndPerformance.pdf]]
 
-![[EE160-lec3.pdf#page=3&rect=314,37,935,425|EE160-lec3, p.3]]
+## Poles and Zeros
 
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=3&rect=280,93,820,434]]
 ## Routh Table
-![[EE160-lec3.pdf#page=19|EE160-lec3, p.19]]
+
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=19]]
 
 ## Routh-Hurwitz Criterion
 劳斯判据
@@ -388,6 +447,6 @@ $$\begin{bmatrix}0\\0\\\vdots\\b_0\end{bmatrix}$$
 ## Steady State Error
 稳态误差($e_2(\infty)$)
 
-![[EE160-lec3.pdf#page=28&rect=613,45,943,460|EE160-lec3, p.28|278]]
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=28&rect=613,45,943,460|278]]
 
 

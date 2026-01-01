@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "Introduction to Control"
             }
+          },
+          {
+            "id": "2dce813dacd935bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Introduction to Control.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Introduction to Control"
+            }
           }
         ]
       },
@@ -44,10 +68,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-                "page": 26,
-                "left": -35,
-                "top": 220,
-                "zoom": 1.04
+                "page": 43,
+                "left": -24,
+                "top": 222,
+                "zoom": 0.62
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec2-MathModels"
@@ -60,16 +84,17 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
-                "page": 17,
-                "left": -14,
-                "top": 153,
-                "zoom": 1.0912556494082266
+                "page": 2,
+                "left": -2,
+                "top": 20,
+                "zoom": 0.6191205521132387
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec3-StabilityAndPerformance"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +171,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1a68f2",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -306,10 +331,10 @@
   },
   "active": "de7127bc402a7b85",
   "lastOpenFiles": [
-    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
+    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
     "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
     "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
