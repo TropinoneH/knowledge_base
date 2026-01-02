@@ -474,20 +474,48 @@ $$T_p=\frac{pi}{\omega_n\sqrt{1-\zeta^2}}=\frac{\pi}{\omega_d}$$
 $$T_s=\frac{4}{\zeta\omega_n}=\frac{4}{\sigma_d}$$
 $$\%OS=e^{-(\frac{\zeta\pi}{\sqrt{1-\zeta^2}})}\times100\%$$
 
+> [!example] 
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=14&rect=275,397,608,439|443]]![[EE160-Lec3-StabilityAndPerformance.pdf#page=14&rect=14,103,270,443|100]]
+> 
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=14&rect=274,111,697,377|400]]
 
+### Stability
+
+- Stable: 所有的极点都位于左半平面内
+- Unstable: 一个或多个极点位于右半平面内
+- Marginally Stable: 没有极点位于右半平面内, 但是有不重复的简单极点位于虚轴上
+	- "简单极点": 就是不重复的极点
+	- 如果在虚轴上的极点是重复的, 那么这个系统就是Unstable的
 
 ## Routh Table
 
-![[EE160-Lec3-StabilityAndPerformance.pdf#page=19]]
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=19&rect=9,92,836,545]]
 
-## Routh-Hurwitz Criterion
-劳斯判据
+特征方程: 传递函数的分母等于零的函数. 假设特征方程为$G(s)=\frac{N(s)}{D(s)}$, 特征方程为$D(s)=0$
 
-%% TODO %%
+Routh-Table:
 
-## Steady State Error
-稳态误差($e_2(\infty)$)
+假设$D(s)=a_ns^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0$
 
-![[EE160-Lec3-StabilityAndPerformance.pdf#page=28&rect=613,45,943,460|278]]
+首先建立Routh Table的初始行(前两行):
+- 第一行$s^n$, 填入$a_n, a_{n-2},a_{n-4},\cdots$ (从最高次项开始, 隔一个取一个)
+- 第二行$s^{n-1}$, 填入$a_{n-1},a_{n-3},\cdots$ (剩下的系数, 如果缺少则补0)
+
+从第三行开始, 每一行的元素都由上两行计算得出:
+$$
+\text{新元素} = \frac{(\text{左上} \times \text{右下}) - (\text{左下} \times \text{右上})}{\text{左上}}
+$$
+注意：这里指的“左上”是当前计算位置的**上一行第一列**元素. 对于最后一列, 右上和右下补零.
+
+然后一直计算到$s^0$, 观察第一列的符号变化:
+- 如果符号没有变化, 那么说明是稳定的
+- 如果符号有变化, 变化的次数就是不稳定极点的个数
+
+> [!example] 
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=20&rect=9,315,455,377]]
+> 
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=20&rect=465,90,833,482|300]]
+> 
+> 因此这个系统是不稳定的, 有两个不稳定极点
 
 

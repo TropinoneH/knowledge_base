@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de7127bc402a7b85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Introduction to Control.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
             "id": "2dce813dacd935bc",
             "type": "leaf",
             "state": {
@@ -84,10 +60,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
-                "page": 8,
-                "left": -24,
-                "top": 110,
-                "zoom": 0.6191205521132387
+                "page": 19,
+                "left": -14,
+                "top": 3,
+                "zoom": 1.0912556494082264
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec3-StabilityAndPerformance"
@@ -329,10 +305,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "de7127bc402a7b85",
+  "active": "2dce813dacd935bc",
   "lastOpenFiles": [
     "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
     "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/EE160-Lec2-MathModels.pdf",
     "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
@@ -342,7 +319,6 @@
     "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
     "Lecture/Slides/EE160-lec7.pdf",
     "Lecture/Slides/EE160-lec1.pdf",
-    "Lecture/Slides/EE160-lec2.pdf",
     "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",
     "Knowledges/Conda Config.md",
