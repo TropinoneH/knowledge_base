@@ -622,37 +622,107 @@ examples:
 - 副作用: 会完全改变[[#Root Locus]]
 - 解决方案: $a\to0$变成一个很小的数, 和原点处的极点组合来抵消对高频轨迹的影响
 
+设计方法:
+1. 确定要求, $\zeta$, $s_d$和对应的增益$K$
+2. 极点一定位于原点处
+3. 零点位于非常靠近原点的负实轴上
+4. 确定增益: $K\approx K_{\text{old}}$, 或者按照幅值条件微调
+
+
 延后补偿器(Lag Compensator): $\frac{s+z_c}{s+p_c}$或$K\frac{s+z_c}{s+p_c}$
 - 改善稳态精度 同时既可能保持原有的瞬态响应不变
 - 极点和零点都在非常靠近原点处
 - 对增益的提升倍数为$\alpha=\frac{z_c}{p_c}$
 	- 这个用于题目中有提到“improve the steady-state error by factor $\alpha$”这种说法
+	- $|z_c|>|p_c|$, 即零点的位置更靠左
+
+设计方法:
+1. 确定倍数$\alpha=\frac{z_c}{p_c}=\frac{K_{new}}{K_{old}}$
+2. 选择一个极点$p_c$, 尽可能靠近原点
+3. 计算零点$z_c=\alpha p_c$
+4. 增益应该和原始的增益近似: $K\approx K_{old}$, 最终的增益应该由Compensator进行调整
 
 ### Differentiation and Lead Compensation
 
 微分控制器(Derivative Compensator): 引入一个零点, $s+z_c$
 - 增加阻尼(Damping), 提前“刹车”, 防止过冲(允许让Gain开的比较大)
 - 只提供一个零点, 没有极点的干扰, 因此能够提供非常丰富的角度补偿
-- 计算:
-	- 首先
+- 根据需要的root去修改root locus
+	- 由于要求$\sum\text{零点到root与+x轴角度}-\sum\text{极点到root与+x轴的角度}=180^\circ$, 因此直接修改root locus是不可行的.
+	- 因此引入一个零点用于平衡
 
+设计方法:
+1. 根据设计指标($\zeta$, $T_s$等)确定$s_d$
+2. 计算当前极点零点对$\sigma_d$的角度: $\sum\angle\text{zeros}-\sum\angle\text{poles}$
+3. 根据角度和得到需要补偿的角度$\phi=-180^\circ-(\sum\angle\text{zeros}-\sum\angle\text{poles})$
+4. 利用几何关系计算零点$\angle(s_d+z_c)=\phi$
+   - $z_c=a+\frac{\omega_d}{\tan\phi}$, 其中$s_d=-a+j\omega_d$
+1. 利用条件$K=\frac{\prod\text{极点到}s_d\text{的距离}}{\prod\text{零点到}s_d\text{的距离}}$来计算新的增益$K$
 
+提前补偿器(Lead Compensator): $\frac{s+z_c}{s+p_c}$
+- Derivative Compensator通过引入零点提供更丰富的角度补偿, 但是会极大改变Transient Response
+- 因此这个提供一个极点一个零点, 来维持原始的Transient Response变化不大
 
+设计方法:
+1. 同PD的设计, 首先确定$s_d$, 然后确定$\phi$
+2. 设计零点和极点. 有两种方法:
+	1. 抵消法: 将一个零点放在一个极点上, 然后计算满足$\phi$的另一个极点
+	2. 角平分线法: 几何作图, 使得$s_d$与零极点连线的夹角平分线通过原点
+3. 根据$K=\frac{\prod\text{极点到}s_d\text{的距离}}{\prod\text{零点到}s_d\text{的距离}}$计算增益$K$
 
+### PID Control
 
+![[EE160-Lec4-CompensatorViaRootLocus.pdf#page=22&rect=19,84,370,302]]
+- 比例 P: $K_1$
+- 误差积分 I: $\frac{K_2}{s}$
+- 微分 D: $K_3s$
 
+设计方法:
+1. 确定目标极点:
+	1. 根据$\%OS$计算$\zeta$
+	2. 根据$T_s$计算$\sigma$
+	3. 在复平面上计算$s_d$
+2. 设计PD零点:
+	1. 计算角度亏空$\phi$
+	2. 利用PD控制器提供的角度, 计算PD零点位置
+	3. 此时控制器为$G_{PD}(s)=K(s+z_D)$
+3. 设计PI零点:
+	1. PI零点应该靠近原点 (任意选择一个零点)
+	2. 引入原点处的积分极点
+	3. 此时控制器为$G_{PID}(s)=K(s+z_D)\frac{s+z_I}{s}$
 
+### Lag-Lead Compensation
 
+通常采用先Lead再Lag的形式:
+$$G_c(s)=K\cdot\left(\frac{s+z_{lead}}{s+p_{lead}}\right)\cdot\left(\frac{s+z_{lag}}{s+p_{lag}}\right)$$
 
+计算方法:
+1. 确定$s_d$:
+	1. 根据$\%OS$确定$\zeta$
+	2. 根据$T_s$确定$\sigma$和$\omega_d$
+	3. $s_d=-\sigma+j\omega_d$
+2. 设计Lead部分:
+	1. 设计lead的零点(可以考虑放在一个极点上, 进行抵消)
+	2. 计算角度亏空$\phi$
+	3. 根据$\phi$计算$p_{lead}$必须提供的角度, 来设计$p_{lead}$
+	4. 利用幅值条件, 计算增益$K=\frac{\prod\text{极点到}s_d\text{的距离}}{\prod\text{零点到}s_d\text{的距离}}$
+3. 设计lag部分:
+	1. 基于Lead的增益, 计算提升倍数$\alpha=\frac{K_{target}}{K_{current}}$, 使用[[#Steady State Error]]计算$K_v$
+	2. 放置零点, 任意位置, 但是要靠近原点
+	3. $p_{lag}=\alpha\cdot z_{lag}$
 
+### Notch Filter
 
+在剧烈波动的峰值处放一个零点和极点, 抑制这个波动:
+$$G_c(s)=\frac{s^2+2\zeta_z\omega_ns+\omega_n^2}{s^2+2\zeta_p\omega_ns+\omega_n^2}$$
+- $\zeta_z$: 零点阻尼比, 确定限制强度(越小越强)
+- $\zeta_p$: 极点阻尼比, 确定限制范围
 
+### Summary
 
+![[EE160-Lec4-CompensatorViaRootLocus.pdf#page=36&rect=424,63,838,541]]
 
-
-
-
-
+## Feedback Compensation
 
 
 
