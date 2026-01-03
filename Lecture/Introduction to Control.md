@@ -518,4 +518,103 @@ $$
 > 
 > 因此这个系统是不稳定的, 有两个不稳定极点
 
+特殊情况:
+1. 如果第一列为0, 那么这个系统一定不是稳定的. 如果硬要算下去, 需要用无穷小量$\epsilon$代替0
+2. 如果一整行都为0, 那么存在关于原点对称的极点(如, $\pm j\omega$). 如果要继续算下去, 需要求解$\frac{d}{ds}P(s)$, 将系数替换. 这里的$P(s)$是将上一行的系数根据劳斯表该行的最高次幂和系数组合的. 如, 最高次幂为$s^k$, 系数为$c_k, c_{k-2},\cdots$, 那么$P(s)=c_ks^k+c_{k-2}s^{k-2}+\cdots$
+
+## Steady State Error
+
+为了衡量系统的精度, 引入指标稳态误差. 指的是时间趋于无穷大的时候(到达稳定之后), 系统实际输出和期望之间的差值.
+
+Final value theorem:
+$$\begin{aligned}E(s)&=R(s)[1-T(s)]\\e(\infty)&=\lim_{s\to0}sR(s)[1-T(s)]\end{aligned}$$
+
+常见的稳态误差函数:
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=30&rect=52,103,522,439]]
+
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=31&rect=30,196,770,400]]
+
+对于阶跃函数, Type 0的系统(上下幂次相同)有常数误差, Type 1,2误差为0; 对于Ramp函数, 由于有二阶输入, 因此Type 0无法跟住(误差为$\infty$); 类似的, 三阶输入需要至少Type 2的系统.
+
+> [!example] 通过误差的值计算传递函数
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=32&rect=140,95,813,443]]
+
+如果有“外部扰动” $D(s)$, 那么最终的输出的稳态误差会有区别:
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=34&rect=425,275,830,445]]
+在这个情况下, 最终的稳态误差为:
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=34&rect=53,372,407,434]]![[EE160-Lec3-StabilityAndPerformance.pdf#page=34&rect=47,175,563,250]]
+
+## Root Locus
+
+在一个系统中, 有一个“调节旋钮” 增益(Gain) $K$, 用于调节系统反应的速度. 如果增益太小, 那么系统的反应会慢; 如果增益太大, 那么系统会不稳定(明显的震荡).
+
+对于高阶系统而言, 极点难以计算. Root Locus的目的是随着$K$从$0\to\infty$, 得到poles的移动轨迹
+
+画圈表示开环极点(Poles), 画叉表示开环零点(Zeros). 
+
+### Vector Repr of Complex Numbers
+
+将复数转换成向量, 可以根据Poles和Zeros去直接根据几何求解函数:
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=39&rect=584,294,840,485|256]]
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=39&rect=639,86,832,218|252]]
+
+> [!example] 
+> ![[EE160-Lec3-StabilityAndPerformance.pdf#page=39&rect=7,87,585,454]]
+
+### Sketching Rules
+
+1. 根轨迹的数量等于开环极点的数量
+2. 所有轨迹从开环极点出发
+	1. 其中有m条轨迹会走进开环零点(一共有m个开环零点, n个开环极点. 通常$n\geq m$)
+	2. 剩下的n-m个轨迹会延伸到无穷远处
+3. 在实轴上的点, 如果右侧极点零点加起来为奇数, 那么当前这一段为root locus; 如果加起来是偶数, 那么当前这一段不为root locus
+	- e.g., $G(s)H(s)=\frac{K(s+3)}{s(s+1)(s+5)}$
+	- 此时数轴为:
+	  ```mermaid
+	  graph LR
+	  x1(0)
+	  x2(\-1)
+	  x3(\-5)
+	  z(\-3)
+	  \-infty-->x3-->z-->x2-->x1-->infty
+	  ```
+	- 按照从右往左的顺序
+		- 第一段$0\rightarrow\infty$不是(因为0个点)
+		- 第二段$-1\rightarrow0$是, 因为有一个极点
+		- 第三段$-3\rightarrow-1$不是, 因为有两个极点
+		- 第四段$-5\rightarrow-3$是, 因为有一个零点和两个极点
+		- 第五段$-\infty\rightarrow-5$不是, 因为有三个极点和一个零点
+	- 注意只有$-5\rightarrow-3$是一个线段. 因为$-1\rightarrow0$两个都是极点, 因此会发散到无穷远处
+4. 对于去无穷远处的root locus, 会沿着渐近线走向无穷远处.
+   - 所有的渐近线在实轴上交于一点, 这个点为$\sigma_a=\frac{\sum\text{Poles}-\sum\text{Zeros}}{n-m}$
+   - 每个渐近线的角度为$\theta_a=\frac{(2k+1)\times180^\circ}{n-m}$. 即如果$n-m=3$, 那么角度分别为$60^\circ,180^\circ,300^\circ$
+5. 当两条轨迹在实轴上相遇的时候, 会分开跑向复平面(e.g. 第三条的例子的$-5\rightarrow\leftarrow-3$)
+	- 分开的位置为: $\frac{dK}{ds}=0$求解得出.
+	- 一个简便算法: $\sum\frac{1}{s-p_i}=\sum\frac{1}{s-z_i}$
+		- $p_i$是极点的值, $z_i$是零点的值
+
+如何确定一个sketch是否是root locus:
+1. 对称性: 沿实轴对称
+2. 这个sketch如果右侧有偶数个点, 那么一定不是root locus
+3. 数量守恒: sketch的数量等于极点的数量
+4. 去无穷远处的数量一定等于$n-m$, 就是 极点个数-零点个数
+5. 起点一定是极点, 终点一定是零点或无穷远
+
+examples:
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=44&rect=522,102,838,387|200]]![[EE160-Lec3-StabilityAndPerformance.pdf#page=45&rect=175,182,463,441|200]]![[EE160-Lec3-StabilityAndPerformance.pdf#page=47&rect=570,63,837,418|200]]![[EE160-Lec3-StabilityAndPerformance.pdf#page=50&rect=364,41,708,456|200]]
+
+![[EE160-Lec3-StabilityAndPerformance.pdf#page=54&rect=27,88,829,479]]
+
+# Lecture 4
+> [!note]- slide
+> ![[EE160-Lec4-CompensatorViaRootLocus.pdf]]
+
+## Compensator
+
+常见串联在误差信号之后, 受控对象(Plant)之前. 数学上引入了额外的极点和零点到系统中(动态的补偿器)
+
+在[[#Root Locus]]中, 只调节了一个静态的常数增益$K$. 如果给Gain引入变量$s$, 让Gain和输入输出有关, 就得到了Dynamic Compensator. 引入动态补偿器的目的是, 如果受控对象的表现(如速度/精度/稳定性等)无法满足需求, 那么可以加入一个“大脑”(补偿器)来改变输入信号, 补偿硬件的缺陷
+
+### Integral and Lag Compensation
+
 

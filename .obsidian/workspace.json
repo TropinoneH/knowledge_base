@@ -38,39 +38,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3fe0989e7b52327c",
+            "id": "22046caf125f98b2",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-                "page": 43,
-                "left": -24,
-                "top": 222,
-                "zoom": 0.62
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-Lec2-MathModels"
-            }
-          },
-          {
-            "id": "e72fa9969e49c1f2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
-                "page": 19,
+                "file": "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
+                "page": 1,
                 "left": -14,
-                "top": 3,
-                "zoom": 1.0912556494082264
+                "top": 595,
+                "zoom": 1.0912556494082266
               },
               "icon": "lucide-file-text",
-              "title": "EE160-Lec3-StabilityAndPerformance"
+              "title": "EE160-Lec4-CompensatorViaRootLocus"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -307,6 +290,7 @@
   },
   "active": "2dce813dacd935bc",
   "lastOpenFiles": [
+    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
     "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
@@ -314,7 +298,6 @@
     "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
     "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
-    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
     "Lecture/Slides/EE160-Lec6-DisturbanceRejection.pdf",
     "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
     "Lecture/Slides/EE160-lec7.pdf",
