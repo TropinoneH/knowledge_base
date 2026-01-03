@@ -617,4 +617,46 @@ examples:
 
 ### Integral and Lag Compensation
 
+积分补偿器(Integral Compensator): 在原点$s=0$处有极点, 在$s=-a$处有零点的一个补偿器: $\frac{K(s+a)}{s}$
+- 作用: 消除[[#Steady State Error|稳态误差]]
+- 副作用: 会完全改变[[#Root Locus]]
+- 解决方案: $a\to0$变成一个很小的数, 和原点处的极点组合来抵消对高频轨迹的影响
+
+延后补偿器(Lag Compensator): $\frac{s+z_c}{s+p_c}$或$K\frac{s+z_c}{s+p_c}$
+- 改善稳态精度 同时既可能保持原有的瞬态响应不变
+- 极点和零点都在非常靠近原点处
+- 对增益的提升倍数为$\alpha=\frac{z_c}{p_c}$
+	- 这个用于题目中有提到“improve the steady-state error by factor $\alpha$”这种说法
+
+### Differentiation and Lead Compensation
+
+微分控制器(Derivative Compensator): 引入一个零点, $s+z_c$
+- 增加阻尼(Damping), 提前“刹车”, 防止过冲(允许让Gain开的比较大)
+- 只提供一个零点, 没有极点的干扰, 因此能够提供非常丰富的角度补偿
+- 计算:
+	- 首先
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

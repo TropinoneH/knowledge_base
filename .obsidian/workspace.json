@@ -44,10 +44,10 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
-                "page": 1,
+                "page": 17,
                 "left": -14,
-                "top": 595,
-                "zoom": 1.0912556494082266
+                "top": 569,
+                "zoom": 1.0912556494082264
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec4-CompensatorViaRootLocus"
@@ -288,20 +288,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2dce813dacd935bc",
+  "active": "22046caf125f98b2",
   "lastOpenFiles": [
-    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
-    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
+    "Lecture/Slides/slides.zip",
+    "Lecture/Slides/归档.zip",
     "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
     "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-    "Lecture/Electric Circuits.md",
     "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
     "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
     "Lecture/Slides/EE160-Lec6-DisturbanceRejection.pdf",
     "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
     "Lecture/Slides/EE160-lec7.pdf",
-    "Lecture/Slides/EE160-lec1.pdf",
     "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",
     "Knowledges/Conda Config.md",
