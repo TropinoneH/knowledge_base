@@ -276,7 +276,7 @@ Independent Loop 独立回路: 如果包含一条回路, 且这条回路不被�
 > 此时有两个mesh两个方程, 但是有三个未知数. 需要再找一个方程.
 > 
 > 考虑电流源的电流, 有:
-> $$i_12-i_1=6$$
+> $$i_1-i_1=6$$
 > 联立求解.
 
 Supermesh方法: 将多个mesh合成一个更大的mesh. 但是注意, 在一个supermesh之后, 里面还是有多个mesh current在转:
@@ -975,7 +975,7 @@ $$\frac{1}{Z_{eq}}=\frac{1}{Z_1}+\frac{1}{Z_2}+\cdots$$
 > [!example]- 使用Mesh Current求解phasor domain
 > 求$i_0(t)$: ![[EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf#page=20&rect=74,228,435,439]]
 > 
-> ![[EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf#page=21&rect=122,53,477,218
+> ![[EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf#page=21&rect=122,53,477,218]]
 
 可以使用[[#Superposition|叠加定理]]求解:
 > [!example]- superposition

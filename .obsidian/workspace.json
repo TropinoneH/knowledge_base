@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Introduction to Control"
             }
+          },
+          {
+            "id": "f1a510918deb44c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Electric Circuits.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Electric Circuits"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "13ca5ba620bd0960",
@@ -44,16 +69,67 @@
               "type": "pdf",
               "state": {
                 "file": "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
-                "page": 35,
+                "page": 38,
                 "left": -14,
-                "top": 202,
-                "zoom": 1.0912556494082264
+                "top": 557,
+                "zoom": 1.104617963482613
               },
               "icon": "lucide-file-text",
               "title": "EE160-Lec4-CompensatorViaRootLocus"
             }
+          },
+          {
+            "id": "bb38870963fac1dd",
+            "type": "leaf",
+            "dimension": 16.666666666666668,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+                "page": 11,
+                "left": -20,
+                "top": 224,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25-Lec10-ThreePhaseCircuits"
+            }
+          },
+          {
+            "id": "a018be61872ae8df",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
+                "page": 4,
+                "left": -20,
+                "top": 400,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "EE111-F25-Lec11-MagneticallyCoupledCircuits"
+            }
+          },
+          {
+            "id": "b514d5b48b3cada3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/EE160-Review.pdf",
+                "page": 7,
+                "left": -16,
+                "top": 484,
+                "zoom": 0.95703125
+              },
+              "icon": "lucide-file-text",
+              "title": "EE160-Review"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -288,20 +364,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2dce813dacd935bc",
+  "active": "f1a510918deb44c1",
   "lastOpenFiles": [
+    "Lecture/Slides/EE160-Review.pdf",
+    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
+    "Lecture/Electric Circuits.md",
+    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+    "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
+    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
+    "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
+    "Lecture/Slides/EE111-F25-Lec5-1st-Order Circuits.pdf",
+    "Knowledges/PyTorch Tensor.md",
+    "Lecture/Slides/EE111-F25-Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25-Lec2-Kirchhoff-and-Node_Mesh_analysis.pdf",
+    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
     "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
     "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
-    "Lecture/Slides/slides.zip",
-    "Lecture/Slides/归档.zip",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-    "Lecture/Slides/EE160-Lec1-Introduction2FeedbackControl.pdf",
-    "Lecture/Slides/EE160-Lec5-FrequencyResponse.pdf",
-    "Lecture/Slides/EE160-Lec6-DisturbanceRejection.pdf",
-    "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
     "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",
     "Knowledges/Conda Config.md",
@@ -324,7 +402,6 @@
     "Knowledges/AdaLN.md",
     "Knowledges/Wandb.md",
     "Knowledges/DCT.md",
-    "Knowledges/Cosine Similarity.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
