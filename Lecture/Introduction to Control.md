@@ -174,9 +174,7 @@ $$\mathcal L[f(t)]=F(s)=\int_{0^-}^{\infty}f(t)e^{-st}dt$$
 | $\mathscr{L}\left[\int_{0-}^{t} f(\tau)d\tau\right] = \frac{F(s)}{s}$                       | Integration theorem     |
 | $f(\infty) = \lim_{s \to 0} sF(s)$                                                          | Final value theorem     |
 | $f(0+) = \lim_{s \to \infty} sF(s)$                                                         | Initial value theorem   |
-| $\mathscr{L}\left[\frac{df}{dt}\right] = sF(s) - f(0-)$                                       | Differentiation theorem |
-| $\mathscr{L}\left[\frac{d^2f}{dt^2}\right] = s^2F(s) - sf(0-) - f'(0-)$                      | Differentiation theorem |
-| $\mathscr{L}\left[\frac{d^n f}{dt^n}\right] = s^n F(s) - \sum_{k=1}^{n} s^{n-k}f^{k-1}(0-)$      | Differentiation theorem |
+
 
 > [!example] 
 > 计算$e^{-3t}t\cdot u(t)$的Laplace Transform:
