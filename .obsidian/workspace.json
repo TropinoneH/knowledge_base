@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2dce813dacd935bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Introduction to Control.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Introduction to Control"
-            }
-          },
-          {
             "id": "f1a510918deb44c1",
             "type": "leaf",
             "state": {
@@ -62,89 +38,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "22046caf125f98b2",
+            "id": "6be6a0844831aa7d",
             "type": "leaf",
+            "dimension": 33.333333333333336,
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
-                "page": 37,
-                "left": -14,
-                "top": 105,
-                "zoom": 1.0912556494082266
+                "file": "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
+                "page": 6,
+                "left": -21,
+                "top": 249,
+                "zoom": 0.7239583333333334
               },
               "icon": "lucide-file-text",
-              "title": "EE160-Lec4-CompensatorViaRootLocus"
-            }
-          },
-          {
-            "id": "bb38870963fac1dd",
-            "type": "leaf",
-            "dimension": 16.666666666666668,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
-                "page": 11,
-                "left": -20,
-                "top": 224,
-                "zoom": 1.25
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25-Lec10-ThreePhaseCircuits"
-            }
-          },
-          {
-            "id": "a018be61872ae8df",
-            "type": "leaf",
-            "dimension": 50,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
-                "page": 4,
-                "left": -20,
-                "top": 400,
-                "zoom": 1.25
-              },
-              "icon": "lucide-file-text",
-              "title": "EE111-F25-Lec11-MagneticallyCoupledCircuits"
-            }
-          },
-          {
-            "id": "b514d5b48b3cada3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-Review.pdf",
-                "page": 8,
-                "left": -16,
-                "top": 470,
-                "zoom": 0.95703125
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-Review"
-            }
-          },
-          {
-            "id": "d04e23b4fb55f2a4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-                "page": 42,
-                "left": -14,
-                "top": 438,
-                "zoom": 1.0912556494082266
-              },
-              "icon": "lucide-file-text",
-              "title": "EE160-Lec2-MathModels"
+              "title": "EE111-F25-Lec4-Operational Amplifiers"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -379,21 +289,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2dce813dacd935bc",
+  "active": "6be6a0844831aa7d",
   "lastOpenFiles": [
-    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
-    "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
-    "Lecture/Introduction to Control.md",
-    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
-    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
-    "Lecture/Slides/EE160-Review.pdf",
     "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
-    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
-    "Lecture/Slides/EE111-F25-Lec9--ACPowerCalculation.pdf",
-    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
     "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
-    "Lecture/Slides/EE111-F25-Lec5-1st-Order Circuits.pdf",
+    "Lecture/Slides/EE111-F25-Lec3-Circuit Theorem.pdf",
+    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
+    "Lecture/Slides/EE160-Lec4-CompensatorViaRootLocus.pdf",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
+    "Lecture/Slides/EE160-Review.pdf",
+    "Lecture/Slides/EE160-Lec2-MathModels.pdf",
+    "Lecture/Slides/未命名文件夹",
+    "Lecture/Slides/EE160-Lec7-StateFeedback.pdf",
+    "Lecture/Slides/EE160-Lec3-StabilityAndPerformance.pdf",
     "Knowledges/PyTorch Tensor.md",
     "Develop/QueryTools.md",
     "Knowledges/PyTorch Normalization.md",

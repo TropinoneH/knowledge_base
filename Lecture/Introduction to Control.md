@@ -722,9 +722,22 @@ $$G_c(s)=\frac{s^2+2\zeta_z\omega_ns+\omega_n^2}{s^2+2\zeta_p\omega_ns+\omega_n^
 
 ## Feedback Compensation
 
+![[EE160-Lec4-CompensatorViaRootLocus.pdf#page=38&rect=6,83,833,533]]
 
+![[EE160-Lec4-CompensatorViaRootLocus.pdf#page=39&rect=8,89,829,543]]
 
+# Lecture 5
+> [!note]- slide
+> ![[EE160-Lec5-FrequencyResponse.pdf]]
 
+# Lecture 6
+> [!note]- slide
+> ![[EE160-Lec6-DisturbanceRejection.pdf]]
 
+# Lecture 7
+> [!note]- slide
+> ![[EE160-Lec7-StateFeedback.pdf]]
 
-
+# Review
+> [!note]- slide
+> ![[EE160-Review.pdf]]
