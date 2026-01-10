@@ -259,3 +259,49 @@ AppState判断权限(App主程序, MainModule, 其他Plugins), 然后按照权�
 1. 单例模式, 全局调用, 使用public static创建shared
 2. 实现函数进行权限申请
 3. 实现函数进行发送通知 (如果权限申请成功. 如果没有, 那么不发送)
+
+# App Entry
+
+程序的主入口提供窗口, 但是这个窗口不提供任何的展示, 所有需要展示的内容均通过Module的subview提供. 这两个窗口仅作为展示的框架:
+- 使用NSPanel, 无边框, 不存在标题栏, 使用.nonactivatingPanel
+- 当失去焦点的时候自动隐藏
+- 不获取窗口焦点, 或者说不改变原来窗口的焦点
+- 拦截Cmd+Q, 不会退出而是隐藏窗口(即, 当监测到app退出事件的时候, 拦截这次事件, 转换为隐藏窗口)
+- 打开的时候需要获取之前window的id(或者说, 句柄,引用, 等), 在window manager module中可能会使用
+- 在对应生命周期触发对应的事件(Notification)
+
+# Modules
+## MainModule
+
+这个主要用于搜索并跳转到其他的功能性module或者feature中.
+
+这个Module主要由两个Feature:
+1. 搜索所有的Features. 需要通过AppState读取ModuleList, 找到所有的enable的Modules, 然后找到所有的searchable的features.
+2. 搜索指定的Module的Feature. 搜索指定Module的所有的searchable=true的Features
+
+注意, 这里需要你修改ModuleProtocol里面的AppStateKeys, 去掉原来所有的example的Key, 加入allModuleLists. 这个list应该有两部分, 一个是Module的实例, 一个是Module是否enable(Bool类型)
+
+### UI设计
+
+第一个feature:
+- 最上方是一个输入框, 占满横行. 最右侧使用灰色的小字提示当前的Module Name. 这里可能需要使用localization
+- 下面是一个列表的展示. 按照Latest Recent Usage的顺序进行排列. 因此可能需要Default持久化维持每一个Item的权重作为排序标准
+- 一个list item表示一个module或者一个feature, 左侧展示icon, 然后展示name, 然后用方框框起来prefix(如果有); 中间空白; 右侧展示类型(是module还是feature)
+- 选中一个list item的时候高亮
+- 选中之后可以按下回车键, 执行select action:
+	- 如果是module, 跳转到自己MainModule的第二个feature的subview, 并对这个module进行搜索
+	- 如果是feature, 那么判断:
+		- 如果这个feature有subview, 那么跳转到feature的subview中
+		- 如果没有, 那么执行这个feature的第一个action
+- 鼠标可以点击, 单击是选中一个item, 双击是执行select action
+- 最下方是footer. 分为左右两部分, 中间空白:
+	- 左边展示MainModule的icon和name
+	- 右边展示一个action的上拉框, 里面按照第一个feature的action item进行排列
+
+第二个feature:
+- 接受一个module, 并在这个module中搜索所有的searchable的features
+- 其他的内容和第一个feature完全一致
+
+action items设计:
+- select action: 如果是module, 跳转到第二个feature; 如果是feature, 
+- 
