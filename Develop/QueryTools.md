@@ -262,13 +262,14 @@ AppState判断权限(App主程序, MainModule, 其他Plugins), 然后按照权�
 
 # App Entry
 
-程序的主入口提供窗口, 但是这个窗口不提供任何的展示, 所有需要展示的内容均通过Module的subview提供. 这两个窗口仅作为展示的框架:
+程序的主入口提供窗口, 但是这个窗口不提供任何的展示, 所有需要展示的内容均通过Module的subview提供. 这个窗口仅作为展示的框架:
 - 使用NSPanel, 无边框, 不存在标题栏, 使用.nonactivatingPanel
 - 当失去焦点的时候自动隐藏
 - 不获取窗口焦点, 或者说不改变原来窗口的焦点
 - 拦截Cmd+Q, 不会退出而是隐藏窗口(即, 当监测到app退出事件的时候, 拦截这次事件, 转换为隐藏窗口)
 - 打开的时候需要获取之前window的id(或者说, 句柄,引用, 等), 在window manager module中可能会使用
-- 在对应生命周期触发对应的事件(Notification)
+- 通过Bundle.load在指定文件夹中动态加载第三方Modules. 注意Release和Debug指定的路径是不同的, 但是他们都写死在代码中. Release是从默认的app的cache的位置加载, 并且可能会往指定路径中下载新的Modules的编译结果
+- 可能需要提供一个权限获取的设置, 需要获取全文件权限和辅助功能权限
 
 # Modules
 ## MainModule
