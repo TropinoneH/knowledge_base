@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15b8c037055b21f9",
+            "id": "f1a510918deb44c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Lecture/Physics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,55 +28,45 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
+              "title": "Physics"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b164db6a8a270aa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab47e9587a57ab3a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/PHYS1181-Lec8-Fluids.pdf",
+                "page": 6,
+                "left": -16,
+                "top": 385,
+                "zoom": 0.95703125
+              },
+              "icon": "lucide-file-text",
+              "title": "PHYS1181-Lec8-Fluids"
             }
           },
           {
-            "id": "860364988a2575c8",
+            "id": "29016865222246ee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Develop/QueryTools.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Lecture/Slides/PHYS1181-Lec9-PeriodicMotion.pdf",
+                "page": 14,
+                "left": -16,
+                "top": 328,
+                "zoom": 0.95703125
               },
-              "icon": "lucide-file",
-              "title": "QueryTools"
-            }
-          },
-          {
-            "id": "9440d7185aca7ee6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "PyTorch Tensor"
+              "icon": "lucide-file-text",
+              "title": "PHYS1181-Lec9-PeriodicMotion"
             }
           }
         ],
@@ -168,11 +158,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -206,12 +198,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -220,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +222,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for QueryTools"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -259,7 +251,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,19 +274,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of QueryTools"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -312,23 +305,24 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "860364988a2575c8",
+  "active": "f1a510918deb44c1",
   "lastOpenFiles": [
+    "Lecture/Slides/PHYS1181-Lec9-PeriodicMotion.pdf",
+    "Lecture/Physics.md",
+    "Lecture/Slides/PHYS1181-Lec8-Fluids.pdf",
+    "Lecture/Slides/PHYS1181-Lec7-stress.pdf",
+    "Lecture/Slides/PHYS1181-Lec2-Kinematics.pdf",
+    "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
+    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
+    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
+    "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
+    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
+    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
+    "Lecture/Introduction to Control.md",
+    "Lecture/Electric Circuits.md",
+    "Develop/QueryTools.md",
     "Knowledges/PyTorch Tensor.md",
     "Topic/PyTorch.md",
-    "Develop/QueryTools.md",
-    "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
-    "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Slides/EE111-F25-Lec9-ACPowerCalculation.pdf",
-    "Lecture/Slides/EE111-F25-Lec10-ThreePhaseCircuits.pdf",
-    "Lecture/Slides/EE111-F25-Lec11-MagneticallyCoupledCircuits.pdf",
-    "Lecture/Slides/EE111-F25-Lec12-FrequencyResponse.pdf",
-    "Lecture/Slides/EE111-F25-Lec14-LaplaceTransformCircuit.pdf",
-    "Lecture/Slides/EE111-F25-Lec13-LaplaceTransform.pdf",
-    "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
-    "Lecture/Slides/EE111-F25-Lec3-Circuit Theorem.pdf",
-    "Lecture/Introduction to Control.md",
     "Knowledges/PyTorch Normalization.md",
     "Knowledges/Conda Config.md",
     "Topic/Conda.md",
@@ -348,8 +342,6 @@
     "Lecture/Deep Learning.md",
     "Knowledges/Git Commit.md",
     "Knowledges/AdaLN.md",
-    "Knowledges/Wandb.md",
-    "Knowledges/DCT.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

@@ -5,7 +5,7 @@ tags:
   - electric
 teacher: 邹新波
 ClassID: EE111
-done: false
+done: true
 ---
 # Lecture 01
 > [!note]- slide

@@ -8,7 +8,7 @@ teacher:
   - 陈嘉豪
   - 李正浩
 ClassID: EE160
-done: false
+done: true
 ---
 # Preliminaries
 
