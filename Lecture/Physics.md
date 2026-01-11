@@ -116,4 +116,103 @@ $$\begin{aligned}F_x&=-F_{\text{向心力}}\cos\theta=-m\omega^2R\cdot\frac{x}{R
 
 ## 阻尼震动
 
+> [!tip] 
+> 可以参考[[Introduction to Control#Typical System]]里面对Damping的描述
+
+阻力: $f=-\gamma v=-\gamma\frac{dx}{dt}$
+
+新的动力学方程的形式:
+$$\frac{d^2x}{dt^2}+2\delta\frac{dx}{dt}+\omega_0^2x=0$$
+- 固有频率$\omega_0=\sqrt{\frac{k}{m}}$
+- 阻尼系数$\delta=\frac{\gamma}{2m}$
+
+此时, 位移的通解形式应该是:
+$$x(t)=A_0e^{-\delta t}\cos(\omega't+\phi)$$
+- 振幅会随着时间逐渐减小
+- 半衰期 $e^{-\delta t}=\frac{1}{2}$
+- 新的角频率 $\omega'=\sqrt{\omega_0^2-\delta^2}$
+
+通解:
+- 欠阻尼: $$e^{-\delta t}[A\cos\left(t\sqrt{\omega_0^2-\delta^2}\right)+B\sin\left(t\sqrt{\omega_0^2-\delta^2}\right)]$$
+  对于欠阻尼而言, 求解A,B两个常数(利于初值和求导计算):
+	- $A=x_0$
+	- $B=\frac{v_0+\delta x_0}{\omega_d}$
+- 临界阻尼: $$e^{-\delta t}(A+Bt)$$
+- 过阻尼: $$e^{-\delta t}[Ae^{t\sqrt{\delta^2-\omega_0^2}}+Be^{-t\sqrt{\delta^2-\omega_0^2}}]$$
+
+
+
+能量也会随着时间耗尽:
+$$E(t)=E_0e^{-2\delta t}$$
+摩擦力功率:
+$$P=fv=-2m\delta v^2$$
+
+
+为了定义一个指标指示“这东西能振多久”, 在$\delta$很小的情况下定义品质因素$Q$:
+$$Q\approx\frac{\omega_0}{2\delta}$$
+
+- 过阻尼 $\delta>\omega_0$ 在回到平衡点的过程中停下, 无法回到平衡点
+- 临界阻尼 $\delta=\omega_0$ 刚好回到平衡点, 平衡点处速度为0
+- 欠阻尼 $\delta<\omega_0$ 做减速周期运动, 在平衡点附近振动, 这个也是上面在求解的内容
+
+# Lecture 10
+> [!note]- slide
+> ![[PHYS1181-Lec10-PeriodicMotion-2.pdf]]
+
+## 受迫振动
+
+一个谐振子有自己的振动节奏叫做固有频率$\omega_0$. 这个时候有一个外力推动(驱动力$F$), 这个力产生的频率为驱动频率$\omega$
+
+最终的振动形式就是这两种力共同作用的结果:
+$$\frac{d^2x}{dt^2}+2\delta\frac{dx}{dt}+\omega_0^2x=\frac{F_0}{m}\cos(\omega t)$$
+其中, $F_0$是力的大小, $\omega$是力的频率, 组合起来是驱动力$F$
+
+这就变成了一个非齐次的线性微分方程.
+
+特解: $A\cos(\omega t+\phi)$
+- $A=\frac{F_0}{m\sqrt{4\omega^2\delta^2+(\omega^2-\delta^2)^2}}$
+- $\tan\phi=\frac{2\omega\delta}{\omega^2-\omega_0^2}$
+
+完整解:
+- 欠阻尼: $$e^{-\delta t}[A'\cos\left(t\sqrt{\omega_0^2-\delta^2}\right)+B'\sin\left(t\sqrt{\omega_0^2-\delta^2}\right)]+A\cos(\omega t+\phi)$$
+- 临界阻尼: $$e^{-\delta t}(A'+B't)+A\cos(\omega t+\phi)$$
+- 过阻尼: $$e^{-\delta t}[A'e^{t\sqrt{\delta^2-\omega_0^2}}+B'e^{-t\sqrt{\delta^2-\omega_0^2}}]+A\cos(\omega t+\phi)$$
+
+其中, 这里面的$A\cos(\omega t+\phi)$就是前面特解的结果. 一般而言求解特解即可(在没有提到初始值的时候)
+
+## 共振
+
+共振是[[PHYS1181-Lec10-PeriodicMotion-2.pdf#page=9&selection=3,0,9,7|当策动力的频率接近于固有频率时，受迫振动的振幅达到最大值的现象]].
+
+极大值应该在$\omega=\sqrt{\omega_0^2-2\delta^2}$的位置, 此时$A_{max}=\frac{F_0}{2m\delta\sqrt{\omega_0^2-\delta^2}}\approx\frac{F_0}{2m\delta\omega_0}$
+
+## 复杂振动的合成
+
+假设有:
+$$\left\{\begin{aligned}x_1&=A_1\cos(\omega t+\phi_1)\\x_2&=A_2\cos(\omega t+\phi_2)\end{aligned}\right.$$
+最终合成运动$x=x_1+x_2$
+
+对于相同频率的简谐振动:
+$$\left\{\begin{aligned}A&=\sqrt{A_1^2+A_2^2+2A_1A_2\cos(\phi_2-\phi_1)}\\\phi&=\arctan\frac{A_1\sin\phi_1+A_2\sin\phi_2}{A_1\cos\phi_1+A_2\cos\phi_2}\end{aligned}\right.$$
+
+对于不同频率的简谐振动:
+
+只关注同相位相同振幅且频率近似的两个简谐振动的叠加.
+
+定义“拍”的频率: $f=|f_2-f_1|=\frac{|\omega_2-\omega_1|}{2\pi}$
+
+这种情况下的合成方程为$x=2A\cos(2\pi\frac{f_2-f_1}{2}t)\cdot\cos(2\pi\frac{f_2+f_2}{2}t)$
+
+# Lecture 11
+> [!note]- slide
+> ![[PHYS1181-Lec11-MechanicalWave.pdf]]
+
+- 横波: 波的传递方向和振动方向是正交的
+- 纵波: 波的传递方向和振动方向是一致的
+
+- 行波: 波形一直在移动, 能看到波峰移动的方向
+- 驻波: 波形看上去仅仅在原地上下振动, 看不出来波峰的移动方向 (这个通常是由于两个完全一样的波相向而行撞到一起导致的)
+
+
+
 
