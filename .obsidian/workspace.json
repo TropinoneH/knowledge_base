@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "687474d967a72c60",
         "type": "tabs",
         "children": [
           {
@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Physics.md",
+                "file": "Lecture/General Physics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Physics"
+              "title": "General Physics"
             }
           }
         ]
@@ -38,96 +38,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df989e5acd8c5c85",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-                "page": 12,
-                "left": -414,
-                "top": 80,
-                "zoom": 0.5312500000000001
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec11-MechanicalWave"
-            }
-          },
-          {
-            "id": "cc58f640b29b35e1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
-                "page": 1,
-                "left": -30,
-                "top": 540,
-                "zoom": 0.53125
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec12-Thermodynamics1"
-            }
-          },
-          {
-            "id": "71f70d7addef38a6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
-                "page": 1,
-                "left": -30,
-                "top": 540,
-                "zoom": 0.53125
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec13-Thermodynamics2"
-            }
-          },
-          {
             "id": "0360576a6f80b76b",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
-                "page": 1,
-                "left": -30,
-                "top": 540,
-                "zoom": 0.53125
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec14-Thermodynamics3"
-            }
-          },
-          {
-            "id": "ee27b84b1df829ff",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
-                "page": 1,
-                "left": -16,
-                "top": 540,
-                "zoom": 0.9570312500000001
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec15-molecules"
-            }
-          },
-          {
-            "id": "3c60016d750ad2a2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
                 "file": "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
-                "page": 1,
-                "left": -30,
-                "top": 529,
-                "zoom": 0.53125
+                "page": 46,
+                "left": -21,
+                "top": 105,
+                "zoom": 0.7070312500000001
               },
               "icon": "lucide-file-text",
               "title": "PHYS1181-Lec16- Relativity"
@@ -368,11 +288,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "df989e5acd8c5c85",
+  "active": "93765cd2be38c65b",
   "lastOpenFiles": [
-    "Lecture/Physics.md",
-    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
+    "Lecture/General Physics.md",
+    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
     "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
     "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
