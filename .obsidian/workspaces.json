@@ -6,16 +6,16 @@
         "type": "split",
         "children": [
           {
-            "id": "b386e04b263030bf",
+            "id": "687474d967a72c60",
             "type": "tabs",
             "children": [
               {
-                "id": "f1a510918deb44c1",
+                "id": "93765cd2be38c65b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Lecture/Electric Circuits.md",
+                    "file": "Lecture/General Physics.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -30,66 +30,48 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Electric Circuits"
+                  "title": "General Physics"
                 }
               }
             ]
           },
           {
-            "id": "13ca5ba620bd0960",
+            "id": "b164db6a8a270aa2",
             "type": "tabs",
             "children": [
               {
-                "id": "6be6a0844831aa7d",
+                "id": "0360576a6f80b76b",
                 "type": "leaf",
-                "dimension": 33.333333333333336,
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25-Lec4-Operational Amplifiers.pdf",
-                    "page": 7,
-                    "left": -21,
-                    "top": 298,
-                    "zoom": 0.7083333333333334
+                    "file": "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
+                    "page": 14,
+                    "left": -29,
+                    "top": 6,
+                    "zoom": 0.54296875
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25-Lec4-Operational Amplifiers"
+                  "title": "PHYS1181-Lec15-molecules"
                 }
               },
               {
-                "id": "bc3ed1ce299040c2",
+                "id": "646baa7e715c1d9b",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/EE111-F25-Lec8-AC-SteadyStateAnalysis.pdf",
-                    "page": 24,
+                    "file": "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
+                    "page": 40,
                     "left": -16,
-                    "top": 540,
-                    "zoom": 0.9427083333333334
+                    "top": 105,
+                    "zoom": 0.95703125
                   },
                   "icon": "lucide-file-text",
-                  "title": "EE111-F25-Lec8-AC-SteadyStateAnalysis"
-                }
-              },
-              {
-                "id": "5ac20e6cbf4f2b1f",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Lecture/Slides/EE111-F25-Lec1-Introduction-&-Circuit-Terminology.pdf",
-                    "page": 8,
-                    "left": -17,
-                    "top": 535,
-                    "zoom": 0.9427083333333333
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "EE111-F25-Lec1-Introduction-&-Circuit-Terminology"
+                  "title": "PHYS1181-Lec11-MechanicalWave"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical"
@@ -324,8 +306,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "5ac20e6cbf4f2b1f",
-      "mtime": "2026-01-08T23:55:34+08:00"
+      "active": "0360576a6f80b76b",
+      "mtime": "2026-01-12T16:38:39+08:00"
     },
     "note": {
       "main": {
@@ -1122,5 +1104,5 @@
       "mtime": "2025-12-24T00:00:50+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "note"
 }

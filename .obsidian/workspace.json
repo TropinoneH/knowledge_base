@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "687474d967a72c60",
+        "id": "b386e04b263030bf",
         "type": "tabs",
         "children": [
           {
-            "id": "93765cd2be38c65b",
+            "id": "15b8c037055b21f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/General Physics.md",
+                "file": "Knowledges/Git Commit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,48 +28,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "General Physics"
-            }
-          }
-        ]
-      },
-      {
-        "id": "b164db6a8a270aa2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0360576a6f80b76b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
-                "page": 5,
-                "left": -16,
-                "top": 380,
-                "zoom": 0.9570312500000001
-              },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec15-molecules"
+              "title": "Git Commit"
             }
           },
           {
-            "id": "646baa7e715c1d9b",
+            "id": "860364988a2575c8",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-                "page": 40,
-                "left": -16,
-                "top": 105,
-                "zoom": 0.95703125
+                "file": "Develop/QueryTools.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec11-MechanicalWave"
+              "icon": "lucide-file",
+              "title": "QueryTools"
+            }
+          },
+          {
+            "id": "9440d7185aca7ee6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledges/PyTorch Tensor.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PyTorch Tensor"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -157,13 +168,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -197,12 +206,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from QueryTools"
+              "title": "Outgoing links from SSH Server"
             }
           },
           {
@@ -211,7 +220,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Knowledges/PyTorch Tensor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +230,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for PyTorch Tensor"
             }
           },
           {
@@ -250,7 +259,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Knowledges/PyTorch Tensor.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -273,20 +282,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 1.1539618883506355,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of PyTorch Tensor"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -304,12 +312,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0360576a6f80b76b",
+  "active": "9440d7185aca7ee6",
   "lastOpenFiles": [
+    "Develop/QueryTools.md",
+    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/General Physics.md",
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
     "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
-    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules_副本.pdf",
     "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3_副本.pdf",
     "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2_副本.pdf",
@@ -319,7 +328,6 @@
     "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
-    "Develop/QueryTools.md",
     "Knowledges/PyTorch Tensor.md",
     "Topic/PyTorch.md",
     "Knowledges/PyTorch Normalization.md",
