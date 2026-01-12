@@ -43,14 +43,30 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
-                "page": 46,
-                "left": -21,
-                "top": 105,
-                "zoom": 0.7070312500000001
+                "file": "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
+                "page": 5,
+                "left": -16,
+                "top": 380,
+                "zoom": 0.9570312500000001
               },
               "icon": "lucide-file-text",
-              "title": "PHYS1181-Lec16- Relativity"
+              "title": "PHYS1181-Lec15-molecules"
+            }
+          },
+          {
+            "id": "646baa7e715c1d9b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
+                "page": 40,
+                "left": -16,
+                "top": 105,
+                "zoom": 0.95703125
+              },
+              "icon": "lucide-file-text",
+              "title": "PHYS1181-Lec11-MechanicalWave"
             }
           }
         ]
@@ -288,20 +304,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "93765cd2be38c65b",
+  "active": "0360576a6f80b76b",
   "lastOpenFiles": [
-    "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
     "Lecture/General Physics.md",
-    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
-    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
-    "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
-    "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-    "Lecture/Slides/PHYS1181-Lec10-PeriodicMotion-2.pdf",
-    "Lecture/Slides/PHYS1181-Lec9-PeriodicMotion.pdf",
+    "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
+    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
+    "Lecture/Slides/PHYS1181-Lec15-molecules_副本.pdf",
+    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3_副本.pdf",
+    "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2_副本.pdf",
+    "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1_副本.pdf",
+    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
+    "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
+    "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
     "Lecture/Introduction to Control.md",
-    "Lecture/Slides/PHYS1181-Lec8-Fluids.pdf",
-    "Lecture/Slides/PHYS1181-Lec7-stress.pdf",
     "Lecture/Electric Circuits.md",
     "Develop/QueryTools.md",
     "Knowledges/PyTorch Tensor.md",

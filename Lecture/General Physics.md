@@ -231,7 +231,7 @@ $$y(x,t)=A\cos(\omega t-kx+\phi)$$
 
 微元法受力分析得到:
 $$\frac{\partial^2y}{\partial t^2}=\frac{F}{\mu}\frac{\partial^2y}{\partial t^2}$$
-$$\Rightarrow u=\sqrt{\frac{F}{u}}$$
+$$\Rightarrow u=\sqrt{\frac{F}{\mu}}$$
 
 波速只与介质(绳子)的材质以及张力有关, 与频率/振幅无关
 
@@ -425,7 +425,12 @@ $$TdS=dU+pdV$$
 
 分子的平均动能: $\bar\varepsilon_k=\frac{1}{2}m\bar{v^2}=\frac{3}{2}kT$, 考虑这里: [[#^e2447f]]
 
-因此, $\sqrt{\bar{v^2}}=\sqrt{\frac{3RT}{M}}$
+- 最概然速率: $v_p=\sqrt{\frac{2kT}{M}}$
+- 平均速率: $\bar v=\sqrt{\frac{8RT}{\pi M}}$
+- 均方根速率: $\sqrt{\bar{v_x^2}}=\sqrt{\frac{3kT}{M}}$
+
+
+
 
 # Lecture 16
 > [!note]- slide
