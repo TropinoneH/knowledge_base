@@ -152,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "3542dc07d0254323",
@@ -230,9 +230,9 @@
               "state": {
                 "file": "Paper/PDF/2410.24164v3.pdf",
                 "page": 1,
-                "left": -11,
+                "left": -22,
                 "top": 792,
-                "zoom": 1.3174019607843137
+                "zoom": 0.6678921568627452
               },
               "icon": "lucide-file-text",
               "title": "2410.24164v3"
@@ -472,8 +472,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "763b0d8676589318",
+  "active": "453d925494891402",
   "lastOpenFiles": [
+    "Paper/pi0.md",
     "Knowledges/PyTorch Tensor.md",
     "Develop/QueryTools.md",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
@@ -500,7 +501,6 @@
     "index.md",
     "Knowledges/Conda Activate.md",
     "Knowledges/Conda Environment.md",
-    "Paper/pi0.md",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/VLA-Adapter.md",
     "Paper/ViT.md",
