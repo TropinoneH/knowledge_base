@@ -391,7 +391,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -531,7 +531,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -541,7 +541,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for QueryTools"
+                  "title": "Backlinks for PyTorch Tensor"
                 }
               },
               {
@@ -570,7 +570,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Develop/QueryTools.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -598,7 +598,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of QueryTools"
+                  "title": "Graph of PyTorch Tensor"
                 }
               }
             ]
@@ -623,8 +623,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "860364988a2575c8",
-      "mtime": "2026-01-11T15:13:40+08:00"
+      "active": "9440d7185aca7ee6",
+      "mtime": "2026-01-14T14:28:37+08:00"
     },
     "paper": {
       "main": {
@@ -1104,5 +1104,5 @@
       "mtime": "2025-12-24T00:00:50+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
