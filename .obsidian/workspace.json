@@ -104,30 +104,6 @@
             }
           },
           {
-            "id": "453d925494891402",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/PDF/Masked AutoRegressive.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Masked AutoRegressive"
-            }
-          },
-          {
             "id": "763b0d8676589318",
             "type": "leaf",
             "state": {
@@ -150,9 +126,33 @@
               "icon": "lucide-file",
               "title": "pi0"
             }
+          },
+          {
+            "id": "453d925494891402",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/PDF/Masked AutoRegressive.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Masked AutoRegressive"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "3542dc07d0254323",
@@ -230,9 +230,9 @@
               "state": {
                 "file": "Paper/PDF/2410.24164v3.pdf",
                 "page": 1,
-                "left": -22,
+                "left": -11,
                 "top": 792,
-                "zoom": 0.6678921568627452
+                "zoom": 1.317401960784314
               },
               "icon": "lucide-file-text",
               "title": "2410.24164v3"
@@ -472,8 +472,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "453d925494891402",
+  "active": "cb48f77e050e7eca",
   "lastOpenFiles": [
+    "Paper/PDF/Masked AutoRegressive.md",
     "Paper/pi0.md",
     "Knowledges/PyTorch Tensor.md",
     "Develop/QueryTools.md",
@@ -501,7 +502,6 @@
     "index.md",
     "Knowledges/Conda Activate.md",
     "Knowledges/Conda Environment.md",
-    "Paper/PDF/Masked AutoRegressive.md",
     "Paper/VLA-Adapter.md",
     "Paper/ViT.md",
     "Knowledges/RMS.md",
