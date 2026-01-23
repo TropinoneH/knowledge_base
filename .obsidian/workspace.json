@@ -232,7 +232,7 @@
                 "page": 1,
                 "left": -11,
                 "top": 792,
-                "zoom": 1.317401960784314
+                "zoom": 1.3174019607843137
               },
               "icon": "lucide-file-text",
               "title": "2410.24164v3"
@@ -472,8 +472,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cb48f77e050e7eca",
+  "active": "453d925494891402",
   "lastOpenFiles": [
+    "Paper/PDF/2410.24164v3.pdf",
     "Paper/PDF/Masked AutoRegressive.md",
     "Paper/pi0.md",
     "Knowledges/PyTorch Tensor.md",
