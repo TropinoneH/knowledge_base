@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95ecdb37eb91446d",
+        "id": "b386e04b263030bf",
         "type": "tabs",
         "children": [
           {
-            "id": "bb2bee28062364f3",
+            "id": "15b8c037055b21f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/FreqPolicy.md",
+                "file": "Knowledges/Git Commit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FreqPolicy"
+              "title": "Git Commit"
             }
           },
           {
-            "id": "a8400570812e968c",
+            "id": "860364988a2575c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/Conditioning Matters.md",
+                "file": "Develop/QueryTools.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conditioning Matters"
+              "title": "QueryTools"
             }
           },
           {
-            "id": "db44ea357cbc58fb",
+            "id": "9440d7185aca7ee6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/pi0.6.md",
+                "file": "Knowledges/PyTorch Tensor.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "pi0.6"
+              "title": "PyTorch Tensor"
             }
           },
           {
-            "id": "50435f877883d59a",
+            "id": "9413012d7141dba6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/VLA-Adapter.md",
+                "file": "Knowledges/Linux File Permission.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,146 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "VLA-Adapter"
-            }
-          },
-          {
-            "id": "763b0d8676589318",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/pi0.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "pi0"
-            }
-          },
-          {
-            "id": "453d925494891402",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/PDF/Masked AutoRegressive.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Masked AutoRegressive"
+              "title": "Linux File Permission"
             }
           }
         ],
-        "currentTab": 5
-      },
-      {
-        "id": "3542dc07d0254323",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8dc5a4795f5e827d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/pistar06.pdf",
-                "page": 1,
-                "left": 0,
-                "top": 792,
-                "zoom": 1.31
-              },
-              "icon": "lucide-file-text",
-              "title": "pistar06"
-            }
-          },
-          {
-            "id": "44f72a560ca80d7e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/pi06.pdf",
-                "page": 2,
-                "left": -71,
-                "top": 787,
-                "zoom": 1.11
-              },
-              "icon": "lucide-file-text",
-              "title": "pi06"
-            }
-          },
-          {
-            "id": "403bdbee4581b325",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2406.11838v3.pdf",
-                "page": 7,
-                "left": 0,
-                "top": 770,
-                "zoom": 1.31
-              },
-              "icon": "lucide-file-text",
-              "title": "2406.11838v3"
-            }
-          },
-          {
-            "id": "bbf25e74124d1884",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2504.16054v1.pdf",
-                "page": 1,
-                "left": -89,
-                "top": 792,
-                "zoom": 1.06
-              },
-              "icon": "lucide-file-text",
-              "title": "2504.16054v1"
-            }
-          },
-          {
-            "id": "cb48f77e050e7eca",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2410.24164v3.pdf",
-                "page": 1,
-                "left": -22,
-                "top": 792,
-                "zoom": 0.6678921568627451
-              },
-              "icon": "lucide-file-text",
-              "title": "2410.24164v3"
-            }
-          }
-        ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -365,12 +230,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/QueryTools.md",
+                "file": "Lecture/Discrete Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from QueryTools"
+              "title": "Outgoing links from SSH Server"
             }
           },
           {
@@ -379,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/pi0.md",
+                "file": "Knowledges/Linux File Permission.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -389,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for pi0"
+              "title": "Backlinks for Linux File Permission"
             }
           },
           {
@@ -418,7 +283,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/pi0.md",
+                "file": "Knowledges/Linux File Permission.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -441,20 +306,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 0.6826227075497521,
+                  "scale": 1.1539618883506355,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of pi0"
+              "title": "Graph of Linux File Permission"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -472,12 +336,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "453d925494891402",
+  "active": "9413012d7141dba6",
   "lastOpenFiles": [
-    "Paper/PDF/2410.24164v3.pdf",
-    "Paper/PDF/Masked AutoRegressive.md",
-    "Paper/pi0.md",
+    "Knowledges/Conda Bugs.md",
     "Knowledges/PyTorch Tensor.md",
+    "Paper/PDF/Masked AutoRegressive.md",
+    "Paper/PDF/2410.24164v3.pdf",
+    "Paper/pi0.md",
     "Develop/QueryTools.md",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/General Physics.md",
@@ -489,7 +354,6 @@
     "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1_副本.pdf",
     "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
     "Lecture/Slides/PHYS1181-Lec16- Relativity.pdf",
-    "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
     "Topic/PyTorch.md",

@@ -304,3 +304,7 @@ sudo chgrp editors docs
    ```
 
 设置完成后，使用 `ls -l` 查看权限时，你会发现组权限的执行位变为了 `s`（例如 `drwxrwsr-x`）。这标志着该目录已配置为协作友好的共享空间。
+
+# Ownership
+
+
