@@ -19,7 +19,7 @@ topic:
 sudo chsh -s $(which <shell>)
 ```
 
-`<shell>`是终端的名字，如[[Shell#Zsh|zsh]],`sh`,`bash`,[[Shell#Fish Shell|fish]]等等
+`<shell>`是终端的名字，如[[Shell#Zsh|zsh]],[[Shell#SH|sh]],[[Shell#Bash|bash]],[[Shell#Fish Shell|fish]]等等
 
 在切换shell之后, 需要logout然后重新进入才能完成修改, 单纯关闭终端是没有用的.
 

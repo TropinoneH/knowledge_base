@@ -802,9 +802,33 @@
                   "icon": "lucide-file",
                   "title": "Masked AutoRegressive"
                 }
+              },
+              {
+                "id": "caca3b95c1bf5286",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Paper/OpenVLA.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "OpenVLA"
+                }
               }
             ],
-            "currentTab": 5
+            "currentTab": 4
           },
           {
             "id": "3542dc07d0254323",
@@ -881,13 +905,29 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2410.24164v3.pdf",
-                    "page": 1,
+                    "page": 5,
                     "left": -23,
-                    "top": 792,
+                    "top": 652,
                     "zoom": 0.6495098039215687
                   },
                   "icon": "lucide-file-text",
                   "title": "2410.24164v3"
+                }
+              },
+              {
+                "id": "eff916a4fb969ecc",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/2406.09246v3.pdf",
+                    "page": 23,
+                    "left": -11,
+                    "top": 467,
+                    "zoom": 1.3174019607843137
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "2406.09246v3"
                 }
               }
             ],
@@ -1124,9 +1164,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "453d925494891402",
-      "mtime": "2026-01-25T15:27:52+08:00"
+      "active": "763b0d8676589318",
+      "mtime": "2026-02-02T20:28:42+08:00"
     }
   },
-  "active": "paper"
+  "active": "note"
 }
