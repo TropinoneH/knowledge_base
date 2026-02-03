@@ -83,7 +83,7 @@ arch linux的安装是基于[[Pacman]]的, 包括`pacstrap`也是使用pacman进
 
 **换源**(加速):
 
-使用`nano`(因为启动盘中没有自带[[vim]])编辑`/etc/pacman.d/mirrorlist`, 添加两行(最上面):
+使用`nano`(因为启动盘中没有自带[[Vim]])编辑`/etc/pacman.d/mirrorlist`, 添加两行(最上面):
 ```
 Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch

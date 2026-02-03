@@ -1079,7 +1079,7 @@ impl Rectangle {
 }
 ```
 
-also, we can implement method for [[Variable#Enum|enum]]:
+also, we can implement method for [[#Variable#Enum|enum]]:
 ```rust
 enum Message {
     Quit,

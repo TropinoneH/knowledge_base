@@ -42,8 +42,8 @@ git branch -M <new_name>
 有两个可行操作:
 - 进入编辑器中解决冲突.
 	- 大部分编辑器提供了现代化的GUI界面可以通过点击的方式解决冲突
-	- [[neovim]]可以通过插件 [DiffView](https://github.com/sindrets/diffview.nvim) 打开GUI界面进行合并
-	- 纯文本的编辑器([[vim]], [[nano]]等)可能需要手动修改文字的方式进行合并. 纯文本的格式为:
+	- [[Neovim]]可以通过插件 [DiffView](https://github.com/sindrets/diffview.nvim) 打开GUI界面进行合并
+	- 纯文本的编辑器([[Vim]], [[Nano]]等)可能需要手动修改文字的方式进行合并. 纯文本的格式为:
 ```
 <<<<<<< HEAD  
 // Code from the current branch (HEAD)  
