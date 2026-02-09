@@ -32,36 +32,12 @@
             }
           },
           {
-            "id": "860364988a2575c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/QueryTools.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "QueryTools"
-            }
-          },
-          {
             "id": "9440d7185aca7ee6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Develop/Better-Link-Clicker.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PyTorch Tensor"
+              "title": "Better-Link-Clicker"
             }
           },
           {
@@ -103,8 +79,7 @@
               "title": "Neovim"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -244,7 +219,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Neovim.md",
+                "file": "Knowledges/Git Commit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +229,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Neovim"
+              "title": "Backlinks for Git Commit"
             }
           },
           {
@@ -283,7 +258,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Neovim.md",
+                "file": "Knowledges/Git Commit.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -311,7 +286,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Neovim"
+              "title": "Graph of Git Commit"
             }
           }
         ]
@@ -336,10 +311,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "9413012d7141dba6",
+  "active": "15b8c037055b21f9",
   "lastOpenFiles": [
-    "Knowledges/Vim.md",
     "Knowledges/Neovim.md",
+    "Develop/Better-Link-Clicker.md",
+    "Develop/VimSafari.md",
+    "Develop/Span Anything.md",
+    "Develop/QueryTools.md",
+    "Knowledges/Vim.md",
     "Knowledges/Git Branch.md",
     "neovim.md",
     "Knowledges/Rust.md",
@@ -353,7 +332,6 @@
     "Knowledges/Conda Bugs.md",
     "Knowledges/PyTorch Tensor.md",
     "Paper/PDF/2410.24164v3.pdf",
-    "Develop/QueryTools.md",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/General Physics.md",
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
@@ -371,9 +349,6 @@
     "Topic/Conda.md",
     "Knowledges/Conda Cache.md",
     "Topic/Coding.md",
-    "Knowledges/Conda Init.md",
-    "Knowledges/Conda Install.md",
-    "index.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
