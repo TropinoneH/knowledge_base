@@ -343,36 +343,12 @@
                 }
               },
               {
-                "id": "860364988a2575c8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Develop/QueryTools.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "QueryTools"
-                }
-              },
-              {
                 "id": "9440d7185aca7ee6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Develop/Better-Link-Clicker.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -387,7 +363,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "PyTorch Tensor"
+                  "title": "Better-Link-Clicker"
                 }
               },
               {
@@ -396,7 +372,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/Neovim.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -411,11 +387,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Linux File Permission"
+                  "title": "Neovim"
                 }
               }
-            ],
-            "currentTab": 3
+            ]
           }
         ],
         "direction": "vertical"
@@ -555,7 +530,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/Git Commit.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -565,7 +540,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Linux File Permission"
+                  "title": "Backlinks for Git Commit"
                 }
               },
               {
@@ -594,7 +569,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/Linux File Permission.md",
+                    "file": "Knowledges/Git Commit.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -622,7 +597,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Linux File Permission"
+                  "title": "Graph of Git Commit"
                 }
               }
             ]
@@ -647,8 +622,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "9413012d7141dba6",
-      "mtime": "2026-01-28T21:28:56+08:00"
+      "active": "15b8c037055b21f9",
+      "mtime": "2026-02-24T20:35:13+08:00"
     },
     "paper": {
       "main": {
@@ -1168,5 +1143,5 @@
       "mtime": "2026-02-02T20:28:42+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }

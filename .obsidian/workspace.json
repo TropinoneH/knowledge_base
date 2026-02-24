@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b386e04b263030bf",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "15b8c037055b21f9",
+            "id": "db44ea357cbc58fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Paper/pi0.6.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,55 +28,45 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git Commit"
+              "title": "pi0.6"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3542dc07d0254323",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8dc5a4795f5e827d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/pistar06.pdf",
+                "page": 1,
+                "left": 0,
+                "top": 792,
+                "zoom": 1.31
+              },
+              "icon": "lucide-file-text",
+              "title": "pistar06"
             }
           },
           {
-            "id": "9440d7185aca7ee6",
+            "id": "44f72a560ca80d7e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Develop/Better-Link-Clicker.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Paper/PDF/pi06.pdf",
+                "page": 1,
+                "left": 0,
+                "top": 398,
+                "zoom": 1.11
               },
-              "icon": "lucide-file",
-              "title": "Better-Link-Clicker"
-            }
-          },
-          {
-            "id": "9413012d7141dba6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Knowledges/Neovim.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Neovim"
+              "icon": "lucide-file-text",
+              "title": "pi06"
             }
           }
         ]
@@ -205,12 +195,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture/Discrete Mathematics.md",
+                "file": "Develop/QueryTools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SSH Server"
+              "title": "Outgoing links from QueryTools"
             }
           },
           {
@@ -219,7 +209,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Paper/pi0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,7 +219,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Commit"
+              "title": "Backlinks for pi0"
             }
           },
           {
@@ -258,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Git Commit.md",
+                "file": "Paper/pi0.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -281,19 +271,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.1539618883506355,
+                  "scale": 0.6826227075497521,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Git Commit"
+              "title": "Graph of pi0"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -311,8 +302,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "15b8c037055b21f9",
+  "active": "8dc5a4795f5e827d",
   "lastOpenFiles": [
+    "Paper/PDF/pi06.pdf",
+    "Paper/PDF/2406.09246v3.pdf",
+    "Paper/OpenVLA.md",
+    "Paper/pi0.6.md",
+    "Paper/Conditioning Matters.md",
+    "Paper/FreqPolicy.md",
+    "Paper/PDF/2504.16054v1.pdf",
+    "Paper/PDF/2406.11838v3.pdf",
+    "Paper/pi0.md",
+    "Knowledges/Git Commit.md",
     "Knowledges/Neovim.md",
     "Develop/Better-Link-Clicker.md",
     "Develop/VimSafari.md",
@@ -325,9 +326,6 @@
     "Knowledges/Shell.md",
     "Knowledges/Change Default Shell.md",
     "Knowledges/Linux File Permission.md",
-    "Paper/pi0.md",
-    "Paper/PDF/2406.09246v3.pdf",
-    "Paper/OpenVLA.md",
     "Paper/PDF/Masked AutoRegressive.md",
     "Knowledges/Conda Bugs.md",
     "Knowledges/PyTorch Tensor.md",
@@ -338,17 +336,9 @@
     "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules_副本.pdf",
     "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3_副本.pdf",
-    "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2_副本.pdf",
-    "Lecture/Slides/PHYS1181-Lec12-Thermodynamics1_副本.pdf",
-    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
     "Topic/PyTorch.md",
-    "Knowledges/PyTorch Normalization.md",
-    "Knowledges/Conda Config.md",
-    "Topic/Conda.md",
-    "Knowledges/Conda Cache.md",
-    "Topic/Coding.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
