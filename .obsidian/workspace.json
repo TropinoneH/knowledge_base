@@ -45,8 +45,8 @@
               "state": {
                 "file": "Paper/PDF/pistar06.pdf",
                 "page": 1,
-                "left": 0,
-                "top": 792,
+                "left": 160,
+                "top": 704,
                 "zoom": 1.31
               },
               "icon": "lucide-file-text",
@@ -302,8 +302,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8dc5a4795f5e827d",
+  "active": "db44ea357cbc58fb",
   "lastOpenFiles": [
+    "Paper/PDF/pistar06.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/OpenVLA.md",

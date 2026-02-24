@@ -29,7 +29,5 @@ Motivation: 之前的工作([[pi0]], [[pi0.5]])过度依赖特定任务的fine-t
 
 与[[pi0.5]]一样, 基于[[Flow Matching]]和[[FAST]], 同时有discrete和continuous的action loss. 但是VLM的backbone使用了Gemma 4B, Action Expert用了Gemma 860M, 扩大了参数.
 
- 
-
 
 
