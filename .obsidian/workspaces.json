@@ -635,60 +635,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "bb2bee28062364f3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/FreqPolicy.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "FreqPolicy"
-                }
-              },
-              {
-                "id": "a8400570812e968c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/Conditioning Matters.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Conditioning Matters"
-                }
-              },
-              {
                 "id": "db44ea357cbc58fb",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/pi0.6.md",
+                    "file": "Paper/DiffusionBridge.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -703,107 +655,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "pi0.6"
-                }
-              },
-              {
-                "id": "50435f877883d59a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/VLA-Adapter.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "VLA-Adapter"
-                }
-              },
-              {
-                "id": "763b0d8676589318",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/pi0.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "pi0"
-                }
-              },
-              {
-                "id": "453d925494891402",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/PDF/Masked AutoRegressive.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Masked AutoRegressive"
-                }
-              },
-              {
-                "id": "caca3b95c1bf5286",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/OpenVLA.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "OpenVLA"
+                  "title": "DiffusionBridge"
                 }
               }
-            ],
-            "currentTab": 4
+            ]
           },
           {
             "id": "3542dc07d0254323",
@@ -817,8 +672,8 @@
                   "state": {
                     "file": "Paper/PDF/pistar06.pdf",
                     "page": 1,
-                    "left": 0,
-                    "top": 792,
+                    "left": 160,
+                    "top": 616,
                     "zoom": 1.31
                   },
                   "icon": "lucide-file-text",
@@ -826,87 +681,23 @@
                 }
               },
               {
-                "id": "44f72a560ca80d7e",
+                "id": "c33060f0e563fd35",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/pi06.pdf",
-                    "page": 2,
-                    "left": -71,
-                    "top": 787,
-                    "zoom": 1.11
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "pi06"
-                }
-              },
-              {
-                "id": "403bdbee4581b325",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2406.11838v3.pdf",
-                    "page": 7,
-                    "left": 0,
-                    "top": 770,
-                    "zoom": 1.31
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2406.11838v3"
-                }
-              },
-              {
-                "id": "bbf25e74124d1884",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2504.16054v1.pdf",
+                    "file": "Paper/PDF/2510.23116v2.pdf",
                     "page": 1,
-                    "left": -89,
+                    "left": -18,
                     "top": 792,
-                    "zoom": 1.06
+                    "zoom": 0.8333333333333334
                   },
                   "icon": "lucide-file-text",
-                  "title": "2504.16054v1"
-                }
-              },
-              {
-                "id": "cb48f77e050e7eca",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2410.24164v3.pdf",
-                    "page": 5,
-                    "left": -23,
-                    "top": 652,
-                    "zoom": 0.6495098039215687
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2410.24164v3"
-                }
-              },
-              {
-                "id": "eff916a4fb969ecc",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Paper/PDF/2406.09246v3.pdf",
-                    "page": 23,
-                    "left": -11,
-                    "top": 467,
-                    "zoom": 1.3174019607843137
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "2406.09246v3"
+                  "title": "2510.23116v2"
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -998,7 +789,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 300
+        "width": 300,
+        "collapsed": true
       },
       "right": {
         "id": "989a8de35f3c6aa0",
@@ -1139,8 +931,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "763b0d8676589318",
-      "mtime": "2026-02-02T20:28:42+08:00"
+      "active": "db44ea357cbc58fb",
+      "mtime": "2026-02-27T20:28:04+08:00"
     }
   },
   "active": "paper"

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/pi0.6.md",
+                "file": "Paper/DiffusionBridge.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "pi0.6"
+              "title": "DiffusionBridge"
             }
           }
         ]
@@ -46,7 +46,7 @@
                 "file": "Paper/PDF/pistar06.pdf",
                 "page": 1,
                 "left": 160,
-                "top": 704,
+                "top": 616,
                 "zoom": 1.31
               },
               "icon": "lucide-file-text",
@@ -54,22 +54,23 @@
             }
           },
           {
-            "id": "44f72a560ca80d7e",
+            "id": "c33060f0e563fd35",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/pi06.pdf",
+                "file": "Paper/PDF/2510.23116v2.pdf",
                 "page": 1,
-                "left": 0,
-                "top": 398,
-                "zoom": 1.11
+                "left": -18,
+                "top": 792,
+                "zoom": 0.8333333333333334
               },
               "icon": "lucide-file-text",
-              "title": "pi06"
+              "title": "2510.23116v2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -304,11 +306,13 @@
   },
   "active": "db44ea357cbc58fb",
   "lastOpenFiles": [
+    "Paper/pi0.6.md",
+    "Paper/DiffusionBridge.md",
+    "Paper/PDF/2510.23116v2.pdf",
     "Paper/PDF/pistar06.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.09246v3.pdf",
     "Paper/OpenVLA.md",
-    "Paper/pi0.6.md",
     "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
     "Paper/PDF/2504.16054v1.pdf",
@@ -335,8 +339,6 @@
     "Lecture/General Physics.md",
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
     "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
-    "Lecture/Slides/PHYS1181-Lec15-molecules_副本.pdf",
-    "Lecture/Slides/PHYS1181-Lec14-Thermodynamics3_副本.pdf",
     "Lecture/Introduction to Control.md",
     "Lecture/Electric Circuits.md",
     "Topic/PyTorch.md",
