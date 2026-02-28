@@ -2,7 +2,6 @@
 type: paper
 tags:
   - algorithm
-  - code/python
   - ComputerVision
   - DeepLearning
   - Diffusion

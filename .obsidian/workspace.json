@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "DiffusionBridge"
             }
+          },
+          {
+            "id": "66e7da0f120c9f6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/FASTer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "FASTer"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3542dc07d0254323",
@@ -63,14 +88,31 @@
                 "page": 1,
                 "left": -18,
                 "top": 792,
-                "zoom": 0.8333333333333334
+                "zoom": 0.8517156862745098
               },
               "icon": "lucide-file-text",
               "title": "2510.23116v2"
             }
+          },
+          {
+            "id": "a4a9714c4969cbf2",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2512.04952v2.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 463,
+                "zoom": 0.8517156862745098
+              },
+              "icon": "lucide-file-text",
+              "title": "2512.04952v2"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -304,11 +346,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "db44ea357cbc58fb",
+  "active": "66e7da0f120c9f6f",
   "lastOpenFiles": [
-    "Paper/pi0.6.md",
-    "Paper/DiffusionBridge.md",
+    "Paper/PDF/2512.04952v2.pdf",
+    "Paper/FASTer.md",
     "Paper/PDF/2510.23116v2.pdf",
+    "Paper/DiffusionBridge.md",
+    "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.09246v3.pdf",
@@ -338,10 +382,7 @@
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/General Physics.md",
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-    "Lecture/Slides/PHYS1181-Lec13-Thermodynamics2.pdf",
     "Lecture/Introduction to Control.md",
-    "Lecture/Electric Circuits.md",
-    "Topic/PyTorch.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
