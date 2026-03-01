@@ -102,26 +102,16 @@
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
                 "page": 1,
-                "zoom": 1
+                "left": -18,
+                "top": 792,
+                "zoom": 0.8517156862745098
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
             }
-          },
-          {
-            "id": "cdcca838b705825c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.12.4"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -355,7 +345,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "cdcca838b705825c",
+  "active": "a4a9714c4969cbf2",
   "lastOpenFiles": [
     "Paper/FASTer.md",
     "Paper/PDF/2510.23116v2.pdf",
