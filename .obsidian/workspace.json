@@ -86,9 +86,9 @@
               "state": {
                 "file": "Paper/PDF/2510.23116v2.pdf",
                 "page": 1,
-                "left": -18,
+                "left": -10,
                 "top": 792,
-                "zoom": 0.8517156862745098
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "2510.23116v2"
@@ -97,22 +97,31 @@
           {
             "id": "a4a9714c4969cbf2",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
                 "page": 1,
-                "left": -18,
-                "top": 463,
-                "zoom": 0.8517156862745098
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
             }
+          },
+          {
+            "id": "cdcca838b705825c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.12.4"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -332,25 +341,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "bases:新建数据库": false,
       "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "workspaces:Manage workspace layouts": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "66e7da0f120c9f6f",
+  "active": "cdcca838b705825c",
   "lastOpenFiles": [
-    "Paper/PDF/2512.04952v2.pdf",
     "Paper/FASTer.md",
     "Paper/PDF/2510.23116v2.pdf",
+    "Paper/PDF/2512.04952v2.pdf",
     "Paper/DiffusionBridge.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
