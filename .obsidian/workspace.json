@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "66e7da0f120c9f6f",
+            "id": "6cf2c3a5dc64b6d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -95,16 +95,17 @@
             }
           },
           {
-            "id": "a4a9714c4969cbf2",
+            "id": "b8e8bb809b8a9e99",
             "type": "leaf",
+            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
                 "page": 1,
-                "left": -11,
-                "top": 792,
-                "zoom": 1.3174019607843137
+                "left": -18,
+                "top": 545,
+                "zoom": 0.8333333333333334
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -134,7 +135,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -165,7 +166,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "标签"
+              "title": "Tags"
             }
           },
           {
@@ -203,7 +204,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -330,43 +332,45 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "bases:新建数据库": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66e7da0f120c9f6f",
+  "active": "b8e8bb809b8a9e99",
   "lastOpenFiles": [
-    "Paper/RVQ.md",
-    "Paper/PDF/2412.10208v3.pdf",
     "Paper/FASTer.md",
     "Paper/PDF/2512.04952v2.pdf",
+    "Paper/DiffusionBridge.md",
+    "Develop/Better-Link-Clicker.md",
+    "Knowledges/Git Commit.md",
+    "Knowledges/Neovim.md",
+    "Knowledges/Obsidian.md",
+    "Paper/OpenVLA.md",
+    "Paper/Transformer.md",
+    "Paper/RVQ.md",
+    "Paper/PDF/2412.10208v3.pdf",
     "Knowledges/Git Push.md",
     "Knowledges/Shell.md",
     "Paper/PDF/2510.23116v2.pdf",
-    "Paper/DiffusionBridge.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.09246v3.pdf",
-    "Paper/OpenVLA.md",
     "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
     "Paper/PDF/2504.16054v1.pdf",
     "Paper/PDF/2406.11838v3.pdf",
     "Paper/pi0.md",
-    "Knowledges/Git Commit.md",
-    "Knowledges/Neovim.md",
-    "Develop/Better-Link-Clicker.md",
     "Develop/VimSafari.md",
     "Develop/Span Anything.md",
     "Develop/QueryTools.md",
@@ -377,8 +381,6 @@
     "Knowledges/Change Default Shell.md",
     "Knowledges/Linux File Permission.md",
     "Paper/PDF/Masked AutoRegressive.md",
-    "Knowledges/Conda Bugs.md",
-    "Knowledges/PyTorch Tensor.md",
     "Paper/PDF/2410.24164v3.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Assets/Pasted image 20250328215644.png",

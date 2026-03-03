@@ -8,6 +8,8 @@ rate: 🌟🌟🌟
 ---
 ## Better Link Clicker
 
+[git](https://github.com)
+
 使用[[Obsidian]]的[[Typescript]] API 进行开发, 使用[[Pnpm]]构建
 ### 环境搭建与项目初始化
 - [x] 确保已安装 `Node.js` 和 `npm`。
@@ -65,3 +67,37 @@ rate: 🌟🌟🌟
 	- [x] 遍历LinkCache, 根据pos判断点击的是否是Link, 是哪一个Link
 	- [x] 获取Link的原始信息
 	- [x] 根据原始信息解析需要创建的文件位置
+
+# Rebuild
+
+这个插件的核心在于拦截点击事件并根据配置决定跳转、创建或移动光标。大致逻辑可分为几个步骤：
+
+1. **监听点击**
+    
+    - 注册一个 `click` DOM 事件，捕获所有页面上的鼠标点击，并在处理函数 `handleLinkClick` 中执行后续逻辑。
+2. **定位链接**
+    
+    - 获取当前激活的 Markdown 视图和编辑器。
+    - 利用编辑器的 `posAtCoords` 方法把点击坐标转换成文档偏移，再转换为行/列位置。
+    - 从元数据缓存中检索所有链接和嵌入（`fileCache.links`、`fileCache.embeds`），循环检查被点击位置是否落在某个链接的范围内。
+3. **处理点击**
+    
+    - 分析按键修饰符（`Keymap.isModEvent`）决定打开目标的位置（新标签、窗口等）以及是否 “跳转”。
+    - 如果当前是实时预览模式并且光标已经在链接内，只更新光标位置而不跳转。
+    - 根据配置 `jumpOnlyWithModifier` 与平台按键决定是否允许跳转，否则仅将光标移到链接起点。
+4. **解析目标**
+    
+    - 提取链接的基本目标（去掉别名和锚点）。
+    - 尝试通过 `metadataCache.getFirstLinkpathDest` 查找已存在的文件。
+        - 若存在则直接调用 `workspace.openLinkText` 以合适的目标打开。
+    - 若目标文件不存在，则调用 `buildNewFilePath` 按 vault 的 `newFileLocation` 配置生成新路径。
+5. **创建 / 打开新文件**
+    
+    - 根据设置决定是否弹出确认模态框。
+    - 使用 `vault.create` 创建空文件，并在指定 leaf（标签/窗口）中打开。
+6. **辅助函数**
+    
+    - 若跳转被禁止或光标需调整，`moveCursorToLinkStart` 将编辑器光标置于链接起始位置。
+    - `isCursorInsideLink` 用于检测当前光标是否在链接范围内（查询后避免不必要跳转）。
+
+方法上主要用到的是 Obsidian 的 API（`app.workspace`、`metadataCache`、`vault` 等）、TypeScript 类型保护、字符串处理以及事件/键盘修饰符的判断，形成了一套点击链接时智能跳转或创建文件的功能流程。
