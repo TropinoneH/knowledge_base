@@ -102,9 +102,9 @@
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
                 "page": 1,
-                "left": -18,
+                "left": -11,
                 "top": 792,
-                "zoom": 0.8517156862745098
+                "zoom": 1.3174019607843137
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -134,7 +134,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -165,7 +165,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -203,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -345,11 +344,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a4a9714c4969cbf2",
+  "active": "66e7da0f120c9f6f",
   "lastOpenFiles": [
+    "Paper/RVQ.md",
+    "Paper/PDF/2412.10208v3.pdf",
     "Paper/FASTer.md",
-    "Paper/PDF/2510.23116v2.pdf",
     "Paper/PDF/2512.04952v2.pdf",
+    "Knowledges/Git Push.md",
+    "Knowledges/Shell.md",
+    "Paper/PDF/2510.23116v2.pdf",
     "Paper/DiffusionBridge.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
@@ -371,7 +374,6 @@
     "Knowledges/Git Branch.md",
     "neovim.md",
     "Knowledges/Rust.md",
-    "Knowledges/Shell.md",
     "Knowledges/Change Default Shell.md",
     "Knowledges/Linux File Permission.md",
     "Paper/PDF/Masked AutoRegressive.md",
@@ -379,9 +381,6 @@
     "Knowledges/PyTorch Tensor.md",
     "Paper/PDF/2410.24164v3.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
-    "Lecture/General Physics.md",
-    "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-    "Lecture/Introduction to Control.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
