@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/DiffusionBridge.md",
+                "file": "Paper/2510.23116.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DiffusionBridge"
+              "title": "2510.23116"
+            }
+          },
+          {
+            "id": "09d8da9978b4dd64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2512.04952.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2512.04952"
             }
           },
           {
@@ -37,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/FASTer.md",
+                "file": "Paper/2411.19842.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FASTer"
+              "title": "2411.19842"
             }
           },
           {
-            "id": "38562b094ade225b",
+            "id": "3ff807d6a596ea0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/RQ-VAE.md",
+                "file": "Paper/2203.01941.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,31 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "RQ-VAE"
-            }
-          },
-          {
-            "id": "40253777335a22c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/FSQ.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "FSQ"
+              "title": "2203.01941"
             }
           }
         ],
@@ -111,56 +111,40 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8dc5a4795f5e827d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/pistar06.pdf",
-                "page": 1,
-                "left": 160,
-                "top": 616,
-                "zoom": 1.31
-              },
-              "icon": "lucide-file-text",
-              "title": "pistar06"
-            }
-          },
-          {
-            "id": "c33060f0e563fd35",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2510.23116v2.pdf",
-                "page": 1,
-                "left": -10,
-                "top": 792,
-                "zoom": 1.5012254901960784
-              },
-              "icon": "lucide-file-text",
-              "title": "2510.23116v2"
-            }
-          },
-          {
             "id": "b8e8bb809b8a9e99",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2512.04952v2.pdf",
+                "page": 1,
+                "left": -37,
+                "top": 792,
+                "zoom": 1.22
+              },
+              "icon": "lucide-file-text",
+              "title": "2512.04952v2"
+            }
+          },
+          {
+            "id": "c635fe7ec6562a75",
             "type": "leaf",
             "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 22,
-                "left": -10,
-                "top": 767,
-                "zoom": 1.5012254901960784
+                "file": "Paper/PDF/2411.19842v1.pdf",
+                "page": 1,
+                "left": -11,
+                "top": 733,
+                "zoom": 1.3174019607843137
               },
               "icon": "lucide-file-text",
-              "title": "2512.04952v2"
+              "title": "2411.19842v1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,12 +232,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -394,43 +378,43 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "40253777335a22c3",
+  "active": "3ff807d6a596ea0a",
   "lastOpenFiles": [
-    "Paper/RQ-VAE.md",
-    "Paper/FSQ.md",
-    "Paper/PDF/2203.01941v2.pdf",
-    "Paper/PDF/  .pdf",
-    "Paper/PDF/2512.04952v2.pdf",
-    "Paper/PDF/2510.23116v2.pdf",
+    "Paper/2411.19842.md",
     "Paper/PDF/2411.19842v1.pdf",
-    "Paper/FASTer.md",
-    "Paper/DiffusionBridge.md",
-    "Develop/Better-Link-Clicker.md",
-    "Knowledges/Git Commit.md",
-    "Knowledges/Neovim.md",
-    "Knowledges/Obsidian.md",
-    "Paper/OpenVLA.md",
-    "Paper/Transformer.md",
-    "Paper/PDF/2412.10208v3.pdf",
-    "Knowledges/Git Push.md",
-    "Knowledges/Shell.md",
+    "Paper/PDF/2309.15505v2.pdf",
+    "Paper/2309.15505.md",
+    "Paper/PDF/Masked AutoRegressive.md",
+    "Paper/2203.01941.md",
+    "Paper/2510.23116.md",
+    "Paper/2512.04952.md",
+    "Paper/2509.09372.md",
+    "Paper/2508.21112.md",
+    "Paper/2506.01583.md",
+    "Paper/2505.11123.md",
+    "Paper/2504.16054.md",
+    "Paper/2502.13923.md",
+    "Paper/2410.24164.md",
+    "Paper/2406.09246.md",
+    "Paper/2403.09631.md",
+    "Paper/2303.04137.md",
+    "Paper/2210.02747.md",
+    "Paper/2111.06377.md",
+    "Paper/2010.11929.md",
+    "Paper/1709.07871.md",
+    "Paper/1706.03762.md",
     "Paper/pi0.6.md",
-    "Paper/PDF/pistar06.pdf",
+    "Paper/PDF/2403.09631v1.pdf",
+    "Paper/PDF/2512.04952v2.pdf",
+    "Paper/PDF/2203.01941v2.pdf",
+    "Paper/PDF/1706.03762v7.pdf",
+    "Paper/PDF/2010.11929v2.pdf",
+    "Paper/PDF/2509.09372v2.pdf",
+    "Paper/PDF/2502.13923v1.pdf",
     "Paper/PDF/pi06.pdf",
-    "Paper/PDF/2406.09246v3.pdf",
-    "Paper/Conditioning Matters.md",
-    "Paper/FreqPolicy.md",
-    "Paper/PDF/2504.16054v1.pdf",
-    "Paper/pi0.md",
-    "Develop/VimSafari.md",
-    "Develop/Span Anything.md",
-    "Develop/QueryTools.md",
-    "Knowledges/Vim.md",
-    "Knowledges/Git Branch.md",
-    "neovim.md",
-    "Knowledges/Rust.md",
-    "Knowledges/Change Default Shell.md",
-    "Knowledges/Linux File Permission.md",
+    "Paper/ModifiedFSQ.md",
+    "Templates/Paper Note Template.md",
+    "Paper/FSQ.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

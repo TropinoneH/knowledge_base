@@ -676,7 +676,7 @@ $$Attention(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 ### Transformer
 
-[[Transformer]] 是一个完全基于自注意力机制的模型架构，完全抛弃了循环和卷积结构。
+[[1706.03762]] 是一个完全基于自注意力机制的模型架构，完全抛弃了循环和卷积结构。
 
 #### Model Architecture
 Transformer 由一个 Encoder 堆栈和一个 Decoder 堆栈组成。
@@ -891,7 +891,7 @@ $$\mathbf{x}_{t-1} = \frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t - \frac{1-\alph
 
 #### Summary of Framework
 这些先进的文本到图像模型通常遵循一个通用的多模态框架：
-1.  **Text Encoder**: 一个强大的模块（通常是[[Transformer]]）将输入的文本提示编码为一个丰富的语义表示。
+1.  **Text Encoder**: 一个强大的模块（通常是[[1706.03762]]）将输入的文本提示编码为一个丰富的语义表示。
 2.  **Generation Model**: 一个生成模型（自回归、扩散模型等）以文本表示为条件，生成一个中间表示（如CLIP图像嵌入、潜码或低分辨率图像）。
 3.  **Image Decoder**: 一个解码器（扩散模型的超分辨率部分、VAE解码器等）将中间表示转换为最终的高分辨率图像。
 这个框架的成功依赖于大数据（如LAION-5B）、大模型和大量的计算资源。
@@ -925,7 +925,7 @@ iGPT是OpenAI将GPT模型应用于图像生成的早期尝试。
 
 DALL-E（第一代）是另一个将GPT思想用于视觉的力作。它将文本和图像都分词为离散的词元序列，然后训练一个巨大的自回归Transformer模型来联合建模这些序列。这使得模型能够从文本生成图像，并且还能进行零样本的图像到图像转换。
 
-### Vision Transformer ([[ViT]])
+### Vision Transformer ([[2010.11929]])
 
 ViT是Google提出的一个直接将Transformer架构应用于图像分类的模型，取得了巨大成功。
 - 核心思想: 不再依赖卷积。它将输入图像分割成一系列固定大小的图像块（patches），将每个图像块线性嵌入为一个向量，并添加位置编码，然后将这个向量序列输入到一个标准的Transformer编码器中进行处理。最后，使用一个特殊的 `[CLS]` 令牌的最终输出来进行分类。
