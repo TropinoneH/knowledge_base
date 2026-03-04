@@ -54,9 +54,57 @@
               "icon": "lucide-file",
               "title": "FASTer"
             }
+          },
+          {
+            "id": "38562b094ade225b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/RQ-VAE.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RQ-VAE"
+            }
+          },
+          {
+            "id": "40253777335a22c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/FSQ.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "FSQ"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "3542dc07d0254323",
@@ -102,10 +150,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 1,
-                "left": -18,
-                "top": 545,
-                "zoom": 0.8333333333333334
+                "page": 22,
+                "left": -10,
+                "top": 767,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -346,10 +394,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b8e8bb809b8a9e99",
+  "active": "40253777335a22c3",
   "lastOpenFiles": [
-    "Paper/FASTer.md",
+    "Paper/RQ-VAE.md",
+    "Paper/FSQ.md",
+    "Paper/PDF/2203.01941v2.pdf",
+    "Paper/PDF/  .pdf",
     "Paper/PDF/2512.04952v2.pdf",
+    "Paper/PDF/2510.23116v2.pdf",
+    "Paper/PDF/2411.19842v1.pdf",
+    "Paper/FASTer.md",
     "Paper/DiffusionBridge.md",
     "Develop/Better-Link-Clicker.md",
     "Knowledges/Git Commit.md",
@@ -357,11 +411,9 @@
     "Knowledges/Obsidian.md",
     "Paper/OpenVLA.md",
     "Paper/Transformer.md",
-    "Paper/RVQ.md",
     "Paper/PDF/2412.10208v3.pdf",
     "Knowledges/Git Push.md",
     "Knowledges/Shell.md",
-    "Paper/PDF/2510.23116v2.pdf",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "Paper/PDF/pi06.pdf",
@@ -369,7 +421,6 @@
     "Paper/Conditioning Matters.md",
     "Paper/FreqPolicy.md",
     "Paper/PDF/2504.16054v1.pdf",
-    "Paper/PDF/2406.11838v3.pdf",
     "Paper/pi0.md",
     "Develop/VimSafari.md",
     "Develop/Span Anything.md",
@@ -380,9 +431,6 @@
     "Knowledges/Rust.md",
     "Knowledges/Change Default Shell.md",
     "Knowledges/Linux File Permission.md",
-    "Paper/PDF/Masked AutoRegressive.md",
-    "Paper/PDF/2410.24164v3.pdf",
-    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

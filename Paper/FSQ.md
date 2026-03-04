@@ -1,0 +1,17 @@
+---
+type: paper
+tags:
+  - algorithm
+  - math
+  - DeepLearning
+  - ComputerVision
+publish: ICLR 2025
+pdf: "[[Paper/PDF/2411.19842v1.pdf]]"
+rate: 🌟🌟🌟
+done: false
+---
+> [!note]- paper
+![[Paper/PDF/2411.19842v1.pdf]]
+
+
+
