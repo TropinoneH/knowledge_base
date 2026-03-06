@@ -102,9 +102,46 @@
               "icon": "lucide-file",
               "title": "2203.01941"
             }
+          },
+          {
+            "id": "23228f074afeb627",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2406.11838.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2406.11838"
+            }
+          },
+          {
+            "id": "66c404498fc91aeb",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Bases/Paper.base",
+                "viewName": "All Papers"
+              },
+              "icon": "lucide-table",
+              "title": "Paper"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "3542dc07d0254323",
@@ -135,16 +172,50 @@
               "state": {
                 "file": "Paper/PDF/2411.19842v1.pdf",
                 "page": 1,
-                "left": -11,
+                "left": -22,
                 "top": 733,
-                "zoom": 1.3174019607843137
+                "zoom": 0.6678921568627452
               },
               "icon": "lucide-file-text",
               "title": "2411.19842v1"
             }
+          },
+          {
+            "id": "23ef9c3f2d5ce9c1",
+            "type": "leaf",
+            "dimension": 50,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/pi06.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 776,
+                "zoom": 0.8517156862745097
+              },
+              "icon": "lucide-file-text",
+              "title": "pi06"
+            }
+          },
+          {
+            "id": "e1245f0a7bf8b9ac",
+            "type": "leaf",
+            "dimension": 33.333333333333336,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2406.11838v3.pdf",
+                "page": 1,
+                "left": -18,
+                "top": 792,
+                "zoom": 0.8517156862745097
+              },
+              "icon": "lucide-file-text",
+              "title": "2406.11838v3"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -237,7 +308,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -378,21 +450,27 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3ff807d6a596ea0a",
+  "active": "23228f074afeb627",
   "lastOpenFiles": [
-    "Paper/2411.19842.md",
+    "Bases/Paper.base",
+    "Paper/2406.11838.md",
+    "Paper/PDF/2406.11838v3.pdf",
+    "Paper/2203.01941.md",
+    "Paper/2504.16054.md",
+    "Paper/pi0.6.md",
+    "Paper/PDF/pi06.pdf",
+    "Paper/PDF/pistar06.pdf",
+    "pistar0.6.md",
     "Paper/PDF/2411.19842v1.pdf",
+    "Paper/2411.19842.md",
     "Paper/PDF/2309.15505v2.pdf",
     "Paper/2309.15505.md",
-    "Paper/PDF/Masked AutoRegressive.md",
-    "Paper/2203.01941.md",
     "Paper/2510.23116.md",
     "Paper/2512.04952.md",
     "Paper/2509.09372.md",
     "Paper/2508.21112.md",
     "Paper/2506.01583.md",
     "Paper/2505.11123.md",
-    "Paper/2504.16054.md",
     "Paper/2502.13923.md",
     "Paper/2410.24164.md",
     "Paper/2406.09246.md",
@@ -403,18 +481,12 @@
     "Paper/2010.11929.md",
     "Paper/1709.07871.md",
     "Paper/1706.03762.md",
-    "Paper/pi0.6.md",
     "Paper/PDF/2403.09631v1.pdf",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/PDF/2203.01941v2.pdf",
     "Paper/PDF/1706.03762v7.pdf",
-    "Paper/PDF/2010.11929v2.pdf",
-    "Paper/PDF/2509.09372v2.pdf",
-    "Paper/PDF/2502.13923v1.pdf",
-    "Paper/PDF/pi06.pdf",
     "Paper/ModifiedFSQ.md",
     "Templates/Paper Note Template.md",
-    "Paper/FSQ.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

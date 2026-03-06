@@ -6,6 +6,7 @@ views:
   - type: table
     name: All Papers
     order:
+      - aliases
       - file.name
       - file.tags
       - publish
