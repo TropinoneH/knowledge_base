@@ -80,54 +80,6 @@
             }
           },
           {
-            "id": "3ff807d6a596ea0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/2203.01941.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2203.01941"
-            }
-          },
-          {
-            "id": "23228f074afeb627",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/2406.11838.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2406.11838"
-            }
-          },
-          {
             "id": "66c404498fc91aeb",
             "type": "leaf",
             "state": {
@@ -141,7 +93,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "3542dc07d0254323",
@@ -205,10 +157,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2406.11838v3.pdf",
-                "page": 1,
-                "left": -18,
-                "top": 792,
-                "zoom": 0.8517156862745097
+                "page": 3,
+                "left": -10,
+                "top": 173,
+                "zoom": 1.5012254901960786
               },
               "icon": "lucide-file-text",
               "title": "2406.11838v3"
@@ -450,19 +402,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "23228f074afeb627",
+  "active": "6cf2c3a5dc64b6d5",
   "lastOpenFiles": [
     "Bases/Paper.base",
+    "Paper/2203.01941.md",
+    "Paper/2411.19842.md",
     "Paper/2406.11838.md",
     "Paper/PDF/2406.11838v3.pdf",
-    "Paper/2203.01941.md",
     "Paper/2504.16054.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/pistar06.pdf",
     "pistar0.6.md",
     "Paper/PDF/2411.19842v1.pdf",
-    "Paper/2411.19842.md",
     "Paper/PDF/2309.15505v2.pdf",
     "Paper/2309.15505.md",
     "Paper/2510.23116.md",
