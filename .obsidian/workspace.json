@@ -158,9 +158,9 @@
               "state": {
                 "file": "Paper/PDF/2406.11838v3.pdf",
                 "page": 3,
-                "left": -10,
+                "left": -11,
                 "top": 173,
-                "zoom": 1.5012254901960786
+                "zoom": 1.317401960784314
               },
               "icon": "lucide-file-text",
               "title": "2406.11838v3"
@@ -260,8 +260,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
@@ -402,13 +401,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6cf2c3a5dc64b6d5",
+  "active": "e1245f0a7bf8b9ac",
   "lastOpenFiles": [
+    "Paper/2411.19842.md",
+    "Paper/PDF/2406.11838v3.pdf",
     "Bases/Paper.base",
     "Paper/2203.01941.md",
-    "Paper/2411.19842.md",
     "Paper/2406.11838.md",
-    "Paper/PDF/2406.11838v3.pdf",
     "Paper/2504.16054.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pi06.pdf",
