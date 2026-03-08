@@ -5,6 +5,9 @@ filters:
 views:
   - type: table
     name: All Papers
+    groupBy:
+      property: rate
+      direction: DESC
     order:
       - aliases
       - file.name
@@ -14,7 +17,7 @@ views:
       - done
       - pdf
     sort:
-      - property: pdf
+      - property: file.name
         direction: ASC
     columnSize:
       file.tags: 357
