@@ -56,7 +56,7 @@
             }
           },
           {
-            "id": "6cf2c3a5dc64b6d5",
+            "id": "f4be5f7c90e6af81",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,12 +93,12 @@
             }
           },
           {
-            "id": "17732f5313c3e85e",
+            "id": "bd073f7463656df3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/2203.01941.md",
+                "file": "Paper/1706.03762.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -113,35 +113,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2203.01941"
-            }
-          },
-          {
-            "id": "777e8ae7d69a6548",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/2309.15505.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2309.15505"
+              "title": "1706.03762"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       },
       {
         "id": "3542dc07d0254323",
@@ -166,15 +142,14 @@
           {
             "id": "c635fe7ec6562a75",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2411.19842v1.pdf",
                 "page": 5,
-                "left": -10,
-                "top": 196,
-                "zoom": 1.5012254901960786
+                "left": -13,
+                "top": 263,
+                "zoom": 1.150735294117647
               },
               "icon": "lucide-file-text",
               "title": "2411.19842v1"
@@ -183,7 +158,6 @@
           {
             "id": "23ef9c3f2d5ce9c1",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
@@ -433,38 +407,38 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6cf2c3a5dc64b6d5",
+  "active": "bd073f7463656df3",
   "lastOpenFiles": [
+    "Paper/2411.19842.md",
+    "Paper/1706.03762.md",
+    "Paper/2512.04952.md",
+    "Paper/2510.23116.md",
+    "Bases/Paper.base",
+    "Paper/2309.15505.md",
+    "Paper/2406.09246.md",
+    "Paper/2203.01941.md",
     "Paper/PDF/2411.19842v1.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.11838v3.pdf",
-    "Paper/2411.19842.md",
-    "Paper/2309.15505.md",
-    "Paper/2203.01941.md",
-    "Bases/Paper.base",
     "Paper/PDF/2410.24164v3.pdf",
     "Paper/2410.24164.md",
-    "Paper/2510.23116.md",
     "Paper/2406.11838.md",
     "Paper/2504.16054.md",
     "Paper/pi0.6.md",
     "Paper/PDF/pistar06.pdf",
     "pistar0.6.md",
     "Paper/PDF/2309.15505v2.pdf",
-    "Paper/2512.04952.md",
     "Paper/2509.09372.md",
     "Paper/2508.21112.md",
     "Paper/2506.01583.md",
     "Paper/2505.11123.md",
     "Paper/2502.13923.md",
-    "Paper/2406.09246.md",
     "Paper/2403.09631.md",
     "Paper/2303.04137.md",
     "Paper/2210.02747.md",
     "Paper/2111.06377.md",
     "Paper/2010.11929.md",
     "Paper/1709.07871.md",
-    "Paper/1706.03762.md",
     "Paper/PDF/2403.09631v1.pdf",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/PDF/2203.01941v2.pdf",
