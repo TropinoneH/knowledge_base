@@ -82,10 +82,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 2,
-                "left": -11,
-                "top": 202,
-                "zoom": 1.3517156862745099
+                "page": 3,
+                "left": -10,
+                "top": 162,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -344,16 +344,17 @@
   },
   "active": "09d8da9978b4dd64",
   "lastOpenFiles": [
-    "Bases/Paper.base",
+    "Paper/PDF/2512.04952v2.pdf",
+    "Paper/2512.04952.md",
     "Paper/2411.19842.md",
+    "Paper/PDF/2411.19842v1.pdf",
+    "Bases/Paper.base",
     "Paper/1706.03762.md",
     "Topic/PyTorch.md",
-    "Paper/2512.04952.md",
     "Paper/2510.23116.md",
     "Paper/2309.15505.md",
     "Paper/2406.09246.md",
     "Paper/2203.01941.md",
-    "Paper/PDF/2411.19842v1.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/PDF/2406.11838v3.pdf",
     "Paper/PDF/2410.24164v3.pdf",
@@ -376,7 +377,6 @@
     "Paper/2010.11929.md",
     "Paper/1709.07871.md",
     "Paper/PDF/2403.09631v1.pdf",
-    "Paper/PDF/2512.04952v2.pdf",
     "Paper/PDF/2203.01941v2.pdf",
     "Paper/ModifiedFSQ.md",
     "Assets/Pasted image 20250328215644.png",
