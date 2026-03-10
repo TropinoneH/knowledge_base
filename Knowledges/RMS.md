@@ -71,7 +71,7 @@ $$
 
 # RMSNorm in Deep Learning
 
-均方根归一化 (Root Mean Square Normalization, 简称 RMSNorm) 是一种专门用于[[Deep Learning#Neural Network Basics|深度神经网络]], 尤其是 [[1706.03762]] 架构中的归一化技术. RMSNorm 是广为人知的层归一化 (Layer Normalization, LayerNorm) 的一种变体.
+均方根归一化 (Root Mean Square Normalization, 简称 RMSNorm) 是一种专门用于[[Deep Learning#Neural Network Basics|深度神经网络]], 尤其是 [[1706.03762|Transformer]] 架构中的归一化技术. RMSNorm 是广为人知的层归一化 (Layer Normalization, LayerNorm) 的一种变体.
 
 与 LayerNorm 相比, RMSNorm 的核心理念在于简化计算过程. LayerNorm 的成功在很大程度上归功于其缩放不变性 (Rescaling Invariance), 而平移不变性 (Re-centering Invariance) 并不总是必须的. 因此, RMSNorm 舍弃了计算均值和平移 (Subtracting Mean) 的步骤, 仅保留了基于均方根的缩放操作. 这种简化使得 RMSNorm 在保持模型性能的同时, 显著减少了计算开销.
 
@@ -158,7 +158,11 @@ if __name__ == "__main__":
 
 RMSNorm 的主要优势在于计算效率.
 
-在深度学习模型中, LayerNorm 需要同时计算均值 (Mean) 和方差 (Variance). 均值的计算涉及到对输入向量所有元素的求和与除法, 随后还需要在计算方差前将每个元素减去该均值. RMSNorm 省略了这一步平移操作 (Re-centering), 直接计算均方根. 在大规模模型和长序列处理中, 这种计算量的减少能够转化为显著的训练和推理速度提升. 实验表明, 在某些 [[1706.03762]] 模型中, 使用 RMSNorm 可以带来 10% 到 40% 的速度提升.
+%%在深度学习模型中, LayerNorm 需要同时计算均值 (Mean) 和方差 (Variance). 均值的计算涉及到对输入向量所有元素的求和与除法, 随后还需要在计算方差前将每个元素减去该均值. RMSNorm 省略了这一步平移操作 (Re-centering), 直接计算均方根. 在大规模模型和长序列处理中, 这种计算量的减少能够转化为显著的训练和推理速度提升%%
+
+实验表明, 在某些 [[1706.03762|Transformer]] 模型中, 使用 RMSNorm 可以带来 10% 到 40% 的速度提升.
+
+但是实际上, RMSNorm节省计算时间更重要的原因是优化了GPU的缓存失效的问题. LayerNorm需要加载多次数据(首先计算均值$\mu$需要全部加载, 然后计算$(x_i-\mu)^2$再次加载); RMSNorm只需要计算一个平方和, 只需要一次加载.
 
 此外, RMSNorm 常常表现出更好的数值稳定性. 简化的公式减少了浮点运算的累积误差, 且其对权重的缩放不变性有助于梯度的稳定传播, 从而在某些情况下使得模型收敛得更加平稳.
 

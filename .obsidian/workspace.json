@@ -91,9 +91,33 @@
               "icon": "lucide-table",
               "title": "Paper"
             }
+          },
+          {
+            "id": "f73f6740be4b3777",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledges/RMS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RMS"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "3542dc07d0254323",
@@ -107,9 +131,9 @@
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
                 "page": 5,
-                "left": -10,
-                "top": 167,
-                "zoom": 1.5012254901960786
+                "left": -21,
+                "top": 169,
+                "zoom": 0.6985294117647058
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -366,11 +390,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "09d8da9978b4dd64",
+  "active": "f73f6740be4b3777",
   "lastOpenFiles": [
+    "Paper/2512.04952.md",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/2411.19842.md",
-    "Paper/2512.04952.md",
     "Bases/Paper.base",
     "Paper/PDF/2411.19842v1.pdf",
     "Paper/1706.03762.md",
