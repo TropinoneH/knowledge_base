@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "12de870ec959dc20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2411.19842.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2411.19842"
+            }
+          },
+          {
             "id": "66c404498fc91aeb",
             "type": "leaf",
             "state": {
@@ -82,10 +106,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 3,
+                "page": 5,
                 "left": -10,
-                "top": 162,
-                "zoom": 1.5012254901960784
+                "top": 167,
+                "zoom": 1.5012254901960786
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -345,10 +369,10 @@
   "active": "09d8da9978b4dd64",
   "lastOpenFiles": [
     "Paper/PDF/2512.04952v2.pdf",
-    "Paper/2512.04952.md",
     "Paper/2411.19842.md",
-    "Paper/PDF/2411.19842v1.pdf",
+    "Paper/2512.04952.md",
     "Bases/Paper.base",
+    "Paper/PDF/2411.19842v1.pdf",
     "Paper/1706.03762.md",
     "Topic/PyTorch.md",
     "Paper/2510.23116.md",
