@@ -6,11 +6,11 @@ tags:
   - code/python
   - system/linux
   - docker
-done: false
+done: true
 topic:
   - "[[System]]"
+  - "[[Coding]]"
 ---
-
 # Installation
 
 首先安装必要的依赖:
@@ -30,39 +30,34 @@ curl -sS https://starship.rs/install.sh | sh
 
 注意脚本会自动检测服务器架构. 请你记住, 后续会使用
 
-前往github的[btop仓库](https://github.com/aristocratos/btop). 找到右侧的Release, 点击进入. 部分架构的release包可能被隐藏.
-
-根据自己的服务器架构找到合适的release包. 
+前往github的[btop仓库](https://github.com/aristocratos/btop). 找到右侧的Release, 点击进入, 注意部分架构的release包可能被隐藏. 根据自己的服务器架构找到合适的release包. 使用wget进行下载. 下载之后进行解压:
 ```shell
 tar -xjf .tbz
 ```
 
-安装lazygit: github. 解压:
+找到解压后的二进制文件, 复制到`~/.local/bin`路径下. 注意可能需要手动新建这个文件夹.
+
+前往github的[lazygit仓库](https://github.com/jesseduffield/lazygit). 找到右侧的Release, 进入, 注意部分架构的release包可能被隐藏. 根据自己服务器架构找到合适的release包, 在wget下载后进行解压:
 ```shell
 tar -xvzf .tar.gz
 ```
 
-编程相关:
-conda:
-```shell
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-```
-
-
+解压之后出现三个文件. 将`lazygit`复制到`~/.local/bin`路径下. 其他两个文件可以删除
 
 # Configuration
 
-install zsh plugins:
+安装[[Shell#Zsh|zsh]]插件.
 
+提供语法高亮:
 ```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting .zsh/zsh-syntax-highlighting
 ```
-
+提供自动补全:
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions .zsh/zsh-autosuggestions
 ```
 
-zshrc:
+使用vim编辑zshrc配置文件. 将配置文件粘贴到`~/.zshrc`文件中
 ```
 export PATH="$HOME/.local/bin":$PATH
 
@@ -171,6 +166,30 @@ alias lg="lazygit"
 alias btop="btop --force-utf"
 ```
 
-dotfile: from github.com/eniverz/dotfiles
+使用[[Git Clone|git克隆]]我的[tmux配置仓库](https://github.com/eniverz/tmux-configuration):
+```shell
+git clone https://github.com/eniverz/tmux-configuration
+```
 
-将tmux文件夹, 和starship的toml移动到.config文件夹中
+将仓库复制并重命名到 `~/.config/tmux` 路径上. 注意, 如果在`~/.config`路径中已经存在`tmux`文件夹, 那么你应该先移动成备份:
+```shell
+mv ~/.config/tmux ~/.config/tmux-bak
+```
+然后将仓库复制同时重命名:
+```shell
+cp -r tmux-configuration ~/.config/tmux
+```
+
+# 编程相关
+
+下载并安装[[Conda Init|miniconda]]:
+```shell
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+
+可以通过这种方式来避免`conda init`导致zsh启动过慢:
+```
+alias base="source $HOME/miniconda3/bin/activate base"
+```
+
+重新刷新zsh配置文件之后直接通过执行base即可激活环境
