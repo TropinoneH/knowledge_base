@@ -389,9 +389,33 @@
                   "icon": "lucide-file",
                   "title": "Neovim"
                 }
+              },
+              {
+                "id": "390dd3e89550648e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Knowledges/Server Shell Setup.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Server Shell Setup"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -531,7 +555,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Develop/Better-Link-Clicker.md",
+                    "file": "Knowledges/Server Shell Setup.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -541,7 +565,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Better-Link-Clicker"
+                  "title": "Backlinks for Server Shell Setup"
                 }
               },
               {
@@ -570,7 +594,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Develop/Better-Link-Clicker.md",
+                    "file": "Knowledges/Server Shell Setup.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -598,7 +622,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Better-Link-Clicker"
+                  "title": "Graph of Server Shell Setup"
                 }
               }
             ]
@@ -623,8 +647,8 @@
           "pdf-plus:PDF++: Toggle auto-paste": false
         }
       },
-      "active": "9440d7185aca7ee6",
-      "mtime": "2026-03-03T19:37:14+08:00"
+      "active": "390dd3e89550648e",
+      "mtime": "2026-03-11T21:29:32+08:00"
     },
     "paper": {
       "main": {
@@ -998,5 +1022,5 @@
       "mtime": "2026-03-10T20:23:31+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
