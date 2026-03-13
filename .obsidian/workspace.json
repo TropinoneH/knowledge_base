@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "09d8da9978b4dd64",
+            "id": "66c404498fc91aeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/2512.04952.md",
+                "file": "Paper/2602.15397.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2512.04952"
+              "title": "2602.15397"
             }
           },
           {
-            "id": "66c404498fc91aeb",
+            "id": "cc8278de35a378c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2602.04215.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2602.04215"
+            }
+          },
+          {
+            "id": "a9aad8ac6abcb983",
             "type": "leaf",
             "state": {
               "type": "bases",
@@ -72,23 +96,23 @@
         "currentTab": 1
       },
       {
-        "id": "3542dc07d0254323",
+        "id": "85507088f08499dc",
         "type": "tabs",
         "children": [
           {
-            "id": "b8e8bb809b8a9e99",
+            "id": "1269e19bffa2efa2",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 5,
-                "left": 93,
-                "top": 115,
-                "zoom": 1.27
+                "file": "Paper/PDF/2602.15397v1.pdf",
+                "page": 1,
+                "left": -10,
+                "top": 370,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
-              "title": "2512.04952v2"
+              "title": "2602.15397v1"
             }
           }
         ]
@@ -168,7 +192,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nll",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -326,16 +350,26 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "09d8da9978b4dd64",
+  "active": "66c404498fc91aeb",
   "lastOpenFiles": [
+    "Paper/PDF/2602.15397v1.pdf",
+    "Paper/2602.15397.md",
+    "Paper/PDF/2603.08519v1.pdf",
+    "Paper/PDF/2512.04952v2.pdf",
+    "Paper/2510.23116.md",
+    "Paper/2602.04215.md",
+    "Paper/2406.09246.md",
     "Bases/Paper.base",
+    "Knowledges/Cross-Entropy Loss.md",
+    "Paper/2512.04952.md",
+    "Topic/Coding.md",
+    "Paper/2504.16054.md",
+    "Paper/PDF/2602.04215v1.pdf",
     "Paper/2203.01941.md",
     "Lecture/Deep Learning.md",
-    "Paper/PDF/2512.04952v2.pdf",
     "Paper/PDF/pi06.pdf",
     "Paper/2411.19842.md",
     "Paper/PDF/2411.19842v1.pdf",
-    "Paper/2512.04952.md",
     "Knowledges/Server Shell Setup.md",
     "Knowledges/Shell.md",
     "Tutorial",
@@ -343,26 +377,16 @@
     "Knowledges/RMS.md",
     "Paper/1706.03762.md",
     "Topic/PyTorch.md",
-    "Paper/2510.23116.md",
     "Paper/2309.15505.md",
-    "Paper/2406.09246.md",
     "Paper/PDF/2406.11838v3.pdf",
     "Paper/PDF/2410.24164v3.pdf",
     "Paper/2410.24164.md",
     "Paper/2406.11838.md",
-    "Paper/2504.16054.md",
     "Paper/pi0.6.md",
-    "Paper/PDF/pistar06.pdf",
     "pistar0.6.md",
-    "Paper/PDF/2309.15505v2.pdf",
     "Paper/2509.09372.md",
     "Paper/2508.21112.md",
     "Paper/2506.01583.md",
-    "Paper/2505.11123.md",
-    "Paper/2502.13923.md",
-    "Paper/2403.09631.md",
-    "Paper/2303.04137.md",
-    "Paper/PDF/2403.09631v1.pdf",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",

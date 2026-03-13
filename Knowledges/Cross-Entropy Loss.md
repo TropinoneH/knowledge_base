@@ -35,7 +35,7 @@ $$Loss = - \log(\hat{y}_t)$$
 
 这里 $\hat{y}_t$ 是模型预测该样本属于真实类别 $t$ 的概率. 从这个公式可以看出, 如果模型对正确类别的预测概率 $\hat{y}_t$ 越接近 1, $\log(\hat{y}_t)$ 就越接近 0, 损失也就越小. 反之, 如果 $\hat{y}_t$ 趋向于 0, 损失将趋向于无穷大.
 
-在实际应用中 (如 PyTorch), 为了数值稳定性, 通常直接将模型的原始输出 (Logits) 作为输入, 将 LogSoftmax 和 NLLLoss (负对数似然损失) 合并计算.
+在实际应用中 (如 PyTorch), 为了数值稳定性, 通常直接将模型的原始输出 (Logits) 作为输入, 将 LogSoftmax 和 NLL Loss (负对数似然损失) 合并计算.
 
 ## Expected Inputs and Outputs
 
