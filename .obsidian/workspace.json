@@ -352,6 +352,8 @@
   },
   "active": "cc8278de35a378c5",
   "lastOpenFiles": [
+    "Bases/Paper.base",
+    "Paper/2602.04215.md",
     "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
     "Lecture/Introduce to Computer Science.md",
@@ -361,9 +363,7 @@
     "Paper/PDF/2603.08519v1.pdf",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/2510.23116.md",
-    "Paper/2602.04215.md",
     "Paper/2406.09246.md",
-    "Bases/Paper.base",
     "Knowledges/Cross-Entropy Loss.md",
     "Paper/2512.04952.md",
     "Topic/Coding.md",
