@@ -93,14 +93,14 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
-        "id": "85507088f08499dc",
+        "id": "01b335386c100850",
         "type": "tabs",
         "children": [
           {
-            "id": "1269e19bffa2efa2",
+            "id": "489de805926e8aee",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -108,7 +108,7 @@
                 "file": "Paper/PDF/2602.15397v1.pdf",
                 "page": 5,
                 "left": -10,
-                "top": 558,
+                "top": 618,
                 "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
@@ -350,10 +350,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66c404498fc91aeb",
+  "active": "cc8278de35a378c5",
   "lastOpenFiles": [
     "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
+    "Lecture/Introduce to Computer Science.md",
+    "Lecture/General Physics.md",
+    "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
+    "Lecture/Computer Architecture.md",
     "Paper/PDF/2603.08519v1.pdf",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/2510.23116.md",
@@ -379,14 +383,10 @@
     "Topic/PyTorch.md",
     "Paper/2309.15505.md",
     "Paper/PDF/2406.11838v3.pdf",
-    "Paper/PDF/2410.24164v3.pdf",
     "Paper/2410.24164.md",
     "Paper/2406.11838.md",
     "Paper/pi0.6.md",
     "pistar0.6.md",
-    "Paper/2509.09372.md",
-    "Paper/2508.21112.md",
-    "Paper/2506.01583.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
