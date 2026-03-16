@@ -56,6 +56,19 @@
             }
           },
           {
+            "id": "a9aad8ac6abcb983",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Bases/Paper.base",
+                "viewName": "All Papers"
+              },
+              "icon": "lucide-table",
+              "title": "Paper"
+            }
+          },
+          {
             "id": "cc8278de35a378c5",
             "type": "leaf",
             "state": {
@@ -78,22 +91,9 @@
               "icon": "lucide-file",
               "title": "2602.04215"
             }
-          },
-          {
-            "id": "a9aad8ac6abcb983",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Bases/Paper.base",
-                "viewName": "All Papers"
-              },
-              "icon": "lucide-table",
-              "title": "Paper"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "01b335386c100850",
@@ -106,10 +106,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2602.15397v1.pdf",
-                "page": 5,
-                "left": -10,
-                "top": 618,
-                "zoom": 1.5012254901960784
+                "page": 3,
+                "left": -13,
+                "top": 403,
+                "zoom": 1.1507352941176472
               },
               "icon": "lucide-file-text",
               "title": "2602.15397v1"
@@ -352,9 +352,10 @@
   },
   "active": "cc8278de35a378c5",
   "lastOpenFiles": [
-    "Bases/Paper.base",
+    "Paper/2512.04952.md",
     "Paper/2602.04215.md",
     "Paper/PDF/2602.15397v1.pdf",
+    "Bases/Paper.base",
     "Paper/2602.15397.md",
     "Lecture/Introduce to Computer Science.md",
     "Lecture/General Physics.md",
@@ -365,7 +366,6 @@
     "Paper/2510.23116.md",
     "Paper/2406.09246.md",
     "Knowledges/Cross-Entropy Loss.md",
-    "Paper/2512.04952.md",
     "Topic/Coding.md",
     "Paper/2504.16054.md",
     "Paper/PDF/2602.04215v1.pdf",
