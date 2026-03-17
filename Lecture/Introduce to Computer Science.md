@@ -12,7 +12,7 @@ teacher:
   - 陆林燕
   - 刘闯
   - 张海鹏
-ClassID: SI100B
+aliases: SI100B
 done: true
 ---
 # CS

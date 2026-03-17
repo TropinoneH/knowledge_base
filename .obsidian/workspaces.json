@@ -733,6 +733,19 @@
                 }
               },
               {
+                "id": "a9aad8ac6abcb983",
+                "type": "leaf",
+                "state": {
+                  "type": "bases",
+                  "state": {
+                    "file": "Bases/Paper.base",
+                    "viewName": "All Papers"
+                  },
+                  "icon": "lucide-table",
+                  "title": "Paper"
+                }
+              },
+              {
                 "id": "cc8278de35a378c5",
                 "type": "leaf",
                 "state": {
@@ -755,38 +768,25 @@
                   "icon": "lucide-file",
                   "title": "2602.04215"
                 }
-              },
-              {
-                "id": "a9aad8ac6abcb983",
-                "type": "leaf",
-                "state": {
-                  "type": "bases",
-                  "state": {
-                    "file": "Bases/Paper.base",
-                    "viewName": "All Papers"
-                  },
-                  "icon": "lucide-table",
-                  "title": "Paper"
-                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           },
           {
-            "id": "85507088f08499dc",
+            "id": "01b335386c100850",
             "type": "tabs",
             "children": [
               {
-                "id": "1269e19bffa2efa2",
+                "id": "489de805926e8aee",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2602.15397v1.pdf",
-                    "page": 5,
+                    "page": 3,
                     "left": -18,
-                    "top": 558,
-                    "zoom": 0.8517156862745098
+                    "top": 403,
+                    "zoom": 0.85171568627451
                   },
                   "icon": "lucide-file-text",
                   "title": "2602.15397v1"
@@ -1027,9 +1027,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "66c404498fc91aeb",
-      "mtime": "2026-03-14T13:44:49+08:00"
+      "active": "cc8278de35a378c5",
+      "mtime": "2026-03-17T10:36:24+08:00"
     }
   },
-  "active": "paper"
+  "active": "lecture note"
 }

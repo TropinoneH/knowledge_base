@@ -10,7 +10,7 @@ tags:
   - math
 teacher:
   - 许岚
-ClassID: CS280
+aliases: CS280
 done: true
 ---
 > [!note]- Slides

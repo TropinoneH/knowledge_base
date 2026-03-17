@@ -4,7 +4,7 @@ tags:
   - lecture
   - electric
 teacher: 邹新波
-ClassID: EE111
+aliases: EE111
 done: true
 ---
 # Lecture 01

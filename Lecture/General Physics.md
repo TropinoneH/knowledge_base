@@ -5,7 +5,7 @@ tags:
   - math
 teacher:
   - 蒋易凡
-ClassID: PHYS1181
+aliases: PHYS1181
 done: true
 ---
 # Lecture 01

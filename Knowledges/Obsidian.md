@@ -51,7 +51,6 @@ the market is good.
 - Editor width slider
 - File Explorer Note Count
 - Git
-- ~~Global Proxy~~
 - Highlightr
 - Lapel
 - Live Background

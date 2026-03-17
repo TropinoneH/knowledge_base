@@ -7,7 +7,7 @@ tags:
 teacher:
   - 张良峰
   - 何旭明
-ClassID: SI120
+aliases: SI120
 done: true
 ---
 # 数理逻辑

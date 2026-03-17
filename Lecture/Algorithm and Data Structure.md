@@ -7,7 +7,7 @@ tags:
 teacher:
   - 赵登吉
   - 耿浩
-ClassID: CS101
+aliases: CS101
 done: true
 ---
 # CS101 算法与数据结构

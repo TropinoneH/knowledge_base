@@ -7,7 +7,7 @@ tags:
   - code/python
 teacher:
   - 任侃
-ClassID: CS181
+aliases: CS181
 done: true
 ---
 # Introduce

@@ -7,7 +7,7 @@ tags:
 teacher:
   - 陈嘉豪
   - 李正浩
-ClassID: EE160
+aliases: EE160
 done: true
 ---
 # Preliminaries

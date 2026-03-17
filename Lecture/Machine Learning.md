@@ -8,7 +8,7 @@ tags:
   - code/python
 teacher:
   - 孙露
-ClassID: CS182
+aliases: CS182
 done: true
 ---
 # Fit

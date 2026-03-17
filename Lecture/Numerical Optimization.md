@@ -6,7 +6,7 @@ tags:
   - algorithm
 teacher:
   - 石野
-ClassID: SI152
+aliases: SI152
 done: true
 ---
 # Preliminaries

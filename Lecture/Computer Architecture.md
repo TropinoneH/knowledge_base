@@ -9,7 +9,7 @@ tags:
 teacher:
   - 王春东
   - 刘思廷
-ClassID: CS110
+aliases: CS110
 done: true
 ---
 # Representation of number
