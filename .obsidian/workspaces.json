@@ -6,16 +6,16 @@
         "type": "split",
         "children": [
           {
-            "id": "687474d967a72c60",
+            "id": "4593e6d34ce1f275",
             "type": "tabs",
             "children": [
               {
-                "id": "93765cd2be38c65b",
+                "id": "16e886e8bf00aa45",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Lecture/General Physics.md",
+                    "file": "Lecture/Hands-On Large Model Engineering.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -30,70 +30,29 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "General Physics"
-                }
-              },
-              {
-                "id": "ea19b6b1ecae9d71",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Lecture/Introduce to Computer Science.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Introduce to Computer Science"
+                  "title": "Hands-On Large Model Engineering"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
-            "id": "b164db6a8a270aa2",
+            "id": "f3b63f2c315e9ffb",
             "type": "tabs",
             "children": [
               {
-                "id": "0360576a6f80b76b",
+                "id": "73a63393ef505ab3",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
-                    "page": 14,
-                    "left": -28,
-                    "top": 6,
-                    "zoom": 0.5312500000000001
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "PHYS1181-Lec15-molecules"
-                }
-              },
-              {
-                "id": "646baa7e715c1d9b",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
-                    "page": 40,
+                    "file": "Lecture/Slides/CS190C_Lec6.pdf",
+                    "page": 9,
                     "left": -16,
-                    "top": 105,
-                    "zoom": 0.95703125
+                    "top": 51,
+                    "zoom": 0.9570312500000001
                   },
                   "icon": "lucide-file-text",
-                  "title": "PHYS1181-Lec11-MechanicalWave"
+                  "title": "CS190C_Lec6"
                 }
               }
             ]
@@ -331,8 +290,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "ea19b6b1ecae9d71",
-      "mtime": "2026-03-14T19:17:13+08:00"
+      "active": "16e886e8bf00aa45",
+      "mtime": "2026-03-18T02:22:33+08:00"
     },
     "note": {
       "main": {
@@ -1031,5 +990,5 @@
       "mtime": "2026-03-17T10:36:24+08:00"
     }
   },
-  "active": "lecture note"
+  "active": "paper"
 }
