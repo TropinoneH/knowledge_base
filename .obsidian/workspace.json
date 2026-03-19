@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4593e6d34ce1f275",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "16e886e8bf00aa45",
+            "id": "db44ea357cbc58fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Deep Learning.md",
+                "file": "Paper/2510.23116.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deep Learning"
+              "title": "2510.23116"
             }
           },
           {
-            "id": "43f66090cf5b60c7",
+            "id": "66c404498fc91aeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hands-On Large Model Engineering.md",
+                "file": "Paper/2602.15397.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,30 +52,91 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hands-On Large Model Engineering"
+              "title": "2602.15397"
+            }
+          },
+          {
+            "id": "a9aad8ac6abcb983",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Bases/Paper.base",
+                "viewName": "All Papers"
+              },
+              "icon": "lucide-table",
+              "title": "Paper"
+            }
+          },
+          {
+            "id": "cc8278de35a378c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2602.04215.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2602.04215"
+            }
+          },
+          {
+            "id": "61b5d7240da0fe6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/2512.04952.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2512.04952"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
-        "id": "f3b63f2c315e9ffb",
+        "id": "01b335386c100850",
         "type": "tabs",
         "children": [
           {
-            "id": "73a63393ef505ab3",
+            "id": "489de805926e8aee",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/CS190C_Lec6.pdf",
-                "page": 53,
-                "left": -16,
-                "top": 7,
-                "zoom": 0.95703125
+                "file": "Paper/PDF/2602.15397v1.pdf",
+                "page": 3,
+                "left": 38,
+                "top": 201,
+                "zoom": 1.7
               },
               "icon": "lucide-file-text",
-              "title": "CS190C_Lec6"
+              "title": "2602.15397v1"
             }
           }
         ]
@@ -155,7 +216,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cosine ann",
+                "query": "nll",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -220,7 +281,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/pi0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +291,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for pi0"
             }
           },
           {
@@ -259,7 +320,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/pi0.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,12 +343,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 0.6826227075497521,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of pi0"
             }
           }
         ]
@@ -313,14 +374,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "43f66090cf5b60c7",
+  "active": "489de805926e8aee",
   "lastOpenFiles": [
-    "Lecture/Slides/CS190C_Lec6.pdf",
+    "Paper/2512.04952.md",
+    "Paper/2602.15397.md",
     "Lecture/Hands-On Large Model Engineering.md",
+    "Lecture/Slides/CS190C_Lec6.pdf",
     "Lecture/Deep Learning.md",
     "Knowledges/Cross-Entropy Loss.md",
     "Lecture/Machine Learning.md",
-    "Paper/2602.15397.md",
     "Paper/2602.04215.md",
     "Lecture/Slides/CS190C_Lec5.pdf",
     "Knowledges/Markdown.md",
@@ -345,7 +407,6 @@
     "Lecture/Algorithm and Data Structure.md",
     "Lecture/Slides/CS190C_Lec2.pdf",
     "Lecture/Slides/CS190C_Lec3.pdf",
-    "Paper/2512.04952.md",
     "Paper/PDF/2602.15397v1.pdf",
     "Bases/Paper.base",
     "Paper/2510.23116.md",
