@@ -154,3 +154,61 @@ d-->g
 使用`np.memmap`进行磁盘读取
 
 
+## AdamW Optimizer
+
+梯度下降: SGD: $\theta=\theta-\alpha\nabla L(\theta)$
+
+问题: 会有随机的震荡
+
+解决: AdamW:
+$$\begin{aligned}m_t&=\beta_1(m_{t-1}-g_t)+g_t=\beta_2 m_{t-1}+(1-\beta_2)g_t\\v_t&=\beta_2(v_{t-1}-g^2_t)+g_t^2=\beta_2v_{t-1}+(1-\beta_2)g_t^2\\\theta_t&=\theta_{t-1}-\alpha\frac{m_t}{\sqrt{v_t}+\epsilon}\end{aligned}$$
+其中:
+- $m_t$是first moment, 称作动量(momentum). 目的: 让更新变得平滑. 在更新的时候同时要考虑之前的梯度信息
+- $v_t$是second moment, 记录历史梯度波动信息. 目的: 使用$g_t^2$对于高频词的方差变大、低频词方差变小. 我们希望, 高频词在更新的梯度不要过大(尽可能不要有震荡), 对于低频词要尽快更新达到最优.
+- $g_t$表示当前step的梯度
+
+但是上述优化有个问题: 当t非常小时, 有:
+$$m_1=(1-\beta_1)g_1,m_2=\beta_1(1-\beta_1)g_1+(1-\beta_1)g_2\cdots\cdots$$
+假设梯度每次大致相同, 有:
+$$\begin{aligned}|m_t|&=(1-\beta_1^t)|g|\\|v_t|&=\sqrt{1-\beta_2^t}|g|\end{aligned}$$
+为了要有一个稳定的学习率, 定义:
+$$\alpha_t=\alpha\frac{\sqrt{1-\beta^t_2}}{1-\beta_1^t}$$
+如此, 有:
+$$\theta_t=\theta_{t-1}\alpha_t\frac{m_t}{\sqrt{v_t}+\epsilon}=\theta_{t-1}-\alpha\frac{\sqrt{1-\beta_2^t}}{1-\beta_1^t}\frac{m_t}{\sqrt{v_t}+\epsilon}$$
+
+## Cross-Entropy Loss
+
+[[Cross-Entropy Loss]]
+
+原理:
+ ![[Cross-Entropy Loss#Mathematical Formulation]]
+
+在训练初期, 可能会有问题: 初始时可能预测的结果非常差, 导致预测到的probability非常接近0, 导致$\mathcal L=-\log0$出现Nan.
+
+因此这样处理:
+$$\mathcal L=-\log\frac{\exp(s_i-s_{\max})}{\sum\exp(s_k-s_{\max})}=(s_i-s_{\max})-\log(\sum\exp(s_k-s_{\max}))$$
+
+这样能够确保, $(s_i-s_{\max})$不会有问题因为已经在log外面来, 后面的$\sum\exp...$也不会有问题因为一定会大于等于1(因为$s_k=s_{\max}$的时候$\exp(0)=1$)
+
+## Gradient Clipper
+
+当梯度非常大的时候, 使用AdamW可能会导致$v_t\to\infty$, 导致$\alpha_t\frac{m_t}{\sqrt{v_t}+\epsilon}\to0$, 导致优化器反常停止
+
+因此当梯度太大的时候需要将其映射到一个足够小的等级. 通过scale, 乘一个系数缩放所有的梯度:
+$$\begin{aligned}g&=\sqrt{\sum\|\nabla p_i\|_2^2}\\g_t'&=\frac{\text{max\_norm}}{g+\epsilon}\cdot g_t\end{aligned}$$
+- $g$是全局的梯度范数
+- max norm是一个预定义的参数, 表示可接受的最大的梯度的值
+
+通过缩放梯度让最终AdamW的$v_t$不要太大
+
+## Learning Rate Scheduler
+
+![[CS190C_Lec6.pdf#page=44&rect=205,30,771,373]]
+
+在前$10\%$左右设置学习率逐渐上升; 后续让学习率逐渐降低([[Deep Learning#Learning Rate Schedules|Cosine Annealing]], 线性衰减等)
+
+## Checkpoint
+
+保存:
+1. 模型参数
+2. 优化器状态(Optimizer, Scheduler)

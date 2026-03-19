@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95ecdb37eb91446d",
+        "id": "4593e6d34ce1f275",
         "type": "tabs",
         "children": [
           {
-            "id": "db44ea357cbc58fb",
+            "id": "16e886e8bf00aa45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/2510.23116.md",
+                "file": "Lecture/Deep Learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2510.23116"
+              "title": "Deep Learning"
             }
           },
           {
-            "id": "66c404498fc91aeb",
+            "id": "43f66090cf5b60c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/2602.15397.md",
+                "file": "Lecture/Hands-On Large Model Engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,67 +52,30 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2602.15397"
-            }
-          },
-          {
-            "id": "a9aad8ac6abcb983",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Bases/Paper.base",
-                "viewName": "All Papers"
-              },
-              "icon": "lucide-table",
-              "title": "Paper"
-            }
-          },
-          {
-            "id": "cc8278de35a378c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/2602.04215.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2602.04215"
+              "title": "Hands-On Large Model Engineering"
             }
           }
         ],
         "currentTab": 1
       },
       {
-        "id": "01b335386c100850",
+        "id": "f3b63f2c315e9ffb",
         "type": "tabs",
         "children": [
           {
-            "id": "489de805926e8aee",
+            "id": "73a63393ef505ab3",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Paper/PDF/2602.15397v1.pdf",
-                "page": 3,
-                "left": -251,
-                "top": 403,
-                "zoom": 0.85171568627451
+                "file": "Lecture/Slides/CS190C_Lec6.pdf",
+                "page": 53,
+                "left": -13,
+                "top": 6,
+                "zoom": 0.56
               },
               "icon": "lucide-file-text",
-              "title": "2602.15397v1"
+              "title": "CS190C_Lec6"
             }
           }
         ]
@@ -192,7 +155,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nll",
+                "query": "cosine ann",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -257,7 +220,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/pi0.md",
+                "file": "Lecture/Electric Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,7 +230,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for pi0"
+              "title": "Backlinks for Electric Circuits"
             }
           },
           {
@@ -296,7 +259,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Paper/pi0.md",
+                "file": "Lecture/Electric Circuits.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -319,12 +282,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 0.6826227075497521,
+                  "scale": 1.3925405856570754,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of pi0"
+              "title": "Graph of Electric Circuits"
             }
           }
         ]
@@ -350,11 +313,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66c404498fc91aeb",
+  "active": "43f66090cf5b60c7",
   "lastOpenFiles": [
-    "Paper/2602.04215.md",
-    "Lecture/Hands-On Large Model Engineering.md",
     "Lecture/Slides/CS190C_Lec6.pdf",
+    "Lecture/Hands-On Large Model Engineering.md",
+    "Lecture/Deep Learning.md",
+    "Knowledges/Cross-Entropy Loss.md",
+    "Lecture/Machine Learning.md",
+    "Paper/2602.15397.md",
+    "Paper/2602.04215.md",
     "Lecture/Slides/CS190C_Lec5.pdf",
     "Knowledges/Markdown.md",
     "Knowledges/Untitled.md",
@@ -367,13 +334,11 @@
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/Introduce to Computer Science.md",
-    "Lecture/Machine Learning.md",
     "Lecture/Numerical Optimization.md",
     "Lecture/Introduction to Control.md",
     "Lecture/General Physics.md",
     "Lecture/Electric Circuits.md",
     "Lecture/Discrete Mathematics.md",
-    "Lecture/Deep Learning.md",
     "Lecture/Computer Architecture.md",
     "Lecture/Biomedical Statistics.md",
     "Lecture/Artificial Intelligence.md",
@@ -383,10 +348,8 @@
     "Paper/2512.04952.md",
     "Paper/PDF/2602.15397v1.pdf",
     "Bases/Paper.base",
-    "Paper/2602.15397.md",
     "Paper/2510.23116.md",
     "Paper/2406.09246.md",
-    "Knowledges/Cross-Entropy Loss.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
