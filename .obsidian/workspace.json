@@ -117,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "01b335386c100850",
@@ -131,15 +131,32 @@
               "state": {
                 "file": "Paper/PDF/2602.15397v1.pdf",
                 "page": 3,
-                "left": 38,
-                "top": 201,
-                "zoom": 1.7
+                "left": -10,
+                "top": 146,
+                "zoom": 1.5
               },
               "icon": "lucide-file-text",
               "title": "2602.15397v1"
             }
+          },
+          {
+            "id": "1eab750fe139af9e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/2512.04952v2.pdf",
+                "page": 6,
+                "left": -10,
+                "top": 20,
+                "zoom": 1.5012254901960784
+              },
+              "icon": "lucide-file-text",
+              "title": "2512.04952v2"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -374,16 +391,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "489de805926e8aee",
+  "active": "66c404498fc91aeb",
   "lastOpenFiles": [
+    "Paper/2602.04215.md",
+    "Paper/PDF/2512.04952v2.pdf",
     "Paper/2512.04952.md",
+    "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
     "Lecture/Hands-On Large Model Engineering.md",
     "Lecture/Slides/CS190C_Lec6.pdf",
     "Lecture/Deep Learning.md",
     "Knowledges/Cross-Entropy Loss.md",
     "Lecture/Machine Learning.md",
-    "Paper/2602.04215.md",
     "Lecture/Slides/CS190C_Lec5.pdf",
     "Knowledges/Markdown.md",
     "Knowledges/Untitled.md",
@@ -407,8 +426,6 @@
     "Lecture/Algorithm and Data Structure.md",
     "Lecture/Slides/CS190C_Lec2.pdf",
     "Lecture/Slides/CS190C_Lec3.pdf",
-    "Paper/PDF/2602.15397v1.pdf",
-    "Bases/Paper.base",
     "Paper/2510.23116.md",
     "Paper/2406.09246.md",
     "Assets/Pasted image 20250328215644.png",
