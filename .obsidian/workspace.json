@@ -117,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "01b335386c100850",
@@ -146,10 +146,10 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 6,
+                "page": 5,
                 "left": -10,
-                "top": 20,
-                "zoom": 1.5012254901960784
+                "top": 15,
+                "zoom": 1.5012254901960782
               },
               "icon": "lucide-file-text",
               "title": "2512.04952v2"
@@ -391,13 +391,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66c404498fc91aeb",
+  "active": "61b5d7240da0fe6a",
   "lastOpenFiles": [
+    "Knowledges/PyTorch Tensor.md",
+    "Topic/PyTorch.md",
+    "Paper/2602.15397.md",
     "Paper/2602.04215.md",
     "Paper/PDF/2512.04952v2.pdf",
     "Paper/2512.04952.md",
     "Paper/PDF/2602.15397v1.pdf",
-    "Paper/2602.15397.md",
     "Lecture/Hands-On Large Model Engineering.md",
     "Lecture/Slides/CS190C_Lec6.pdf",
     "Lecture/Deep Learning.md",
@@ -427,7 +429,6 @@
     "Lecture/Slides/CS190C_Lec2.pdf",
     "Lecture/Slides/CS190C_Lec3.pdf",
     "Paper/2510.23116.md",
-    "Paper/2406.09246.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
