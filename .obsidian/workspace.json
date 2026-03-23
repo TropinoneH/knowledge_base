@@ -117,46 +117,29 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
-        "id": "01b335386c100850",
+        "id": "c30f0f85faf98106",
         "type": "tabs",
         "children": [
           {
-            "id": "489de805926e8aee",
+            "id": "f5f5659f1941d533",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/2602.15397v1.pdf",
-                "page": 3,
-                "left": -10,
-                "top": 146,
-                "zoom": 1.5
+                "page": 5,
+                "left": -18,
+                "top": 756,
+                "zoom": 0.8517156862745098
               },
               "icon": "lucide-file-text",
               "title": "2602.15397v1"
             }
-          },
-          {
-            "id": "1eab750fe139af9e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2512.04952v2.pdf",
-                "page": 5,
-                "left": -10,
-                "top": 15,
-                "zoom": 1.5012254901960782
-              },
-              "icon": "lucide-file-text",
-              "title": "2512.04952v2"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -391,15 +374,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "61b5d7240da0fe6a",
+  "active": "66c404498fc91aeb",
   "lastOpenFiles": [
-    "Knowledges/PyTorch Tensor.md",
-    "Topic/PyTorch.md",
+    "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
     "Paper/2602.04215.md",
-    "Paper/PDF/2512.04952v2.pdf",
     "Paper/2512.04952.md",
-    "Paper/PDF/2602.15397v1.pdf",
+    "Knowledges/PyTorch Tensor.md",
+    "Topic/PyTorch.md",
+    "Paper/PDF/2512.04952v2.pdf",
     "Lecture/Hands-On Large Model Engineering.md",
     "Lecture/Slides/CS190C_Lec6.pdf",
     "Lecture/Deep Learning.md",
@@ -428,7 +411,6 @@
     "Lecture/Algorithm and Data Structure.md",
     "Lecture/Slides/CS190C_Lec2.pdf",
     "Lecture/Slides/CS190C_Lec3.pdf",
-    "Paper/2510.23116.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
