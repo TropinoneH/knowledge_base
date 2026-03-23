@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "181b85798eb64d76",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
+          },
+          {
             "id": "a9aad8ac6abcb983",
             "type": "leaf",
             "state": {
@@ -117,7 +129,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "c30f0f85faf98106",
@@ -374,7 +386,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66c404498fc91aeb",
+  "active": "181b85798eb64d76",
   "lastOpenFiles": [
     "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
