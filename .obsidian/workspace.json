@@ -131,9 +131,9 @@
               "state": {
                 "file": "Paper/PDF/2602.15397v1.pdf",
                 "page": 5,
-                "left": -18,
-                "top": 756,
-                "zoom": 0.8517156862745098
+                "left": -11,
+                "top": 762,
+                "zoom": 1.317401960784314
               },
               "icon": "lucide-file-text",
               "title": "2602.15397v1"
@@ -232,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "989a8de35f3c6aa0",
