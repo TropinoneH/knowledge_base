@@ -126,9 +126,33 @@
               "icon": "lucide-file",
               "title": "PyTorch Tensor"
             }
+          },
+          {
+            "id": "2e6a72460aa5668d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledges/Linux MultiEnv.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Linux MultiEnv"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -268,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Knowledges/Linux MultiEnv.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -278,7 +302,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PyTorch Tensor"
+              "title": "Backlinks for Linux MultiEnv"
             }
           },
           {
@@ -307,7 +331,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/PyTorch Tensor.md",
+                "file": "Knowledges/Linux MultiEnv.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -335,7 +359,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PyTorch Tensor"
+              "title": "Graph of Linux MultiEnv"
             }
           }
         ]
@@ -360,10 +384,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a7fa13ccad2cffb9",
+  "active": "2e6a72460aa5668d",
   "lastOpenFiles": [
-    "Knowledges/Server Shell Setup.md",
     "Knowledges/PyTorch Tensor.md",
+    "Knowledges/Server Shell Setup.md",
     "Bases/Paper.base",
     "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
