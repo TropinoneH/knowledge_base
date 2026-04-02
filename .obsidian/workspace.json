@@ -150,9 +150,33 @@
               "icon": "lucide-file",
               "title": "Linux MultiEnv"
             }
+          },
+          {
+            "id": "de2341990155b7b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledges/Pacman.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Pacman"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -292,7 +316,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Linux MultiEnv.md",
+                "file": "Knowledges/Pacman.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -302,7 +326,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Linux MultiEnv"
+              "title": "Backlinks for Pacman"
             }
           },
           {
@@ -331,7 +355,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Linux MultiEnv.md",
+                "file": "Knowledges/Pacman.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -359,7 +383,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Linux MultiEnv"
+              "title": "Graph of Pacman"
             }
           }
         ]
@@ -384,8 +408,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2e6a72460aa5668d",
+  "active": "de2341990155b7b9",
   "lastOpenFiles": [
+    "Knowledges/Linux MultiEnv.md",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/Server Shell Setup.md",
     "Bases/Paper.base",
@@ -420,7 +445,6 @@
     "Lecture/Computer Architecture.md",
     "Lecture/Biomedical Statistics.md",
     "Lecture/Artificial Intelligence.md",
-    "Lecture/Algorithm and Data Structure.md",
     "Lecture/Slides/CS190C_Lec2.pdf",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
