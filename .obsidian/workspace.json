@@ -116,8 +116,7 @@
               "title": "1905.10650"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "c30f0f85faf98106",
@@ -138,8 +137,25 @@
               "icon": "lucide-file-text",
               "title": "2602.15397v1"
             }
+          },
+          {
+            "id": "d49b4ebbb8a1a2e4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Paper/PDF/1905.10650v3.pdf",
+                "page": 2,
+                "left": -10,
+                "top": 131,
+                "zoom": 1.5012254901960784
+              },
+              "icon": "lucide-file-text",
+              "title": "1905.10650v3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -374,19 +390,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "61b5d7240da0fe6a",
+  "active": "db44ea357cbc58fb",
   "lastOpenFiles": [
-    "Paper/2512.04952.md",
-    "Paper/1905.10650.md",
+    "Paper/2602.15397.md",
+    "Paper/2602.04215.md",
     "Bases/Paper.base",
-    "Knowledges/PyTorch Tensor.md",
+    "Paper/1905.10650.md",
+    "Paper/1706.03762.md",
+    "Paper/1709.07871.md",
     "Paper/PDF/1905.10650v3.pdf",
+    "Paper/2512.04952.md",
+    "Knowledges/PyTorch Tensor.md",
     "Knowledges/Linux MultiEnv.md",
     "Knowledges/Pacman.md",
     "Knowledges/Server Shell Setup.md",
     "Paper/PDF/2602.15397v1.pdf",
-    "Paper/2602.15397.md",
-    "Paper/2602.04215.md",
     "Topic/PyTorch.md",
     "Paper/PDF/2512.04952v2.pdf",
     "Lecture/Hands-On Large Model Engineering.md",
@@ -409,9 +427,6 @@
     "Lecture/Numerical Optimization.md",
     "Lecture/Introduction to Control.md",
     "Lecture/General Physics.md",
-    "Lecture/Electric Circuits.md",
-    "Lecture/Discrete Mathematics.md",
-    "Lecture/Computer Architecture.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
