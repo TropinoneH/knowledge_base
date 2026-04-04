@@ -422,9 +422,33 @@
                   "icon": "lucide-file",
                   "title": "Server Shell Setup"
                 }
+              },
+              {
+                "id": "a7fa13ccad2cffb9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Knowledges/PyTorch Tensor.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "PyTorch Tensor"
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -564,7 +588,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/Server Shell Setup.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -574,7 +598,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Server Shell Setup"
+                  "title": "Backlinks for PyTorch Tensor"
                 }
               },
               {
@@ -603,7 +627,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/Server Shell Setup.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -631,7 +655,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Server Shell Setup"
+                  "title": "Graph of PyTorch Tensor"
                 }
               }
             ]
@@ -656,8 +680,8 @@
           "pdf-plus:PDF++: Toggle auto-paste": false
         }
       },
-      "active": "390dd3e89550648e",
-      "mtime": "2026-03-11T21:29:32+08:00"
+      "active": "a7fa13ccad2cffb9",
+      "mtime": "2026-04-04T17:21:30+08:00"
     },
     "paper": {
       "main": {
@@ -1039,5 +1063,5 @@
       "mtime": "2026-03-28T17:44:38+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
