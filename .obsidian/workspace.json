@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/2510.23116.md",
+                "file": "Paper/2509.09372.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2510.23116"
+              "title": "2509.09372"
             }
           },
           {
@@ -147,8 +147,8 @@
                 "file": "Paper/PDF/1905.10650v3.pdf",
                 "page": 2,
                 "left": -10,
-                "top": 131,
-                "zoom": 1.5012254901960784
+                "top": 132,
+                "zoom": 1.5012254901960782
               },
               "icon": "lucide-file-text",
               "title": "1905.10650v3"
@@ -392,6 +392,7 @@
   },
   "active": "db44ea357cbc58fb",
   "lastOpenFiles": [
+    "Paper/2510.23116.md",
     "Paper/2602.15397.md",
     "Paper/2602.04215.md",
     "Bases/Paper.base",
