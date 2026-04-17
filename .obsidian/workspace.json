@@ -145,10 +145,8 @@
               "type": "pdf",
               "state": {
                 "file": "Paper/PDF/1905.10650v3.pdf",
-                "page": 2,
-                "left": -10,
-                "top": 132,
-                "zoom": 1.5012254901960782
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "1905.10650v3"
