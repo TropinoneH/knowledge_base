@@ -681,7 +681,7 @@
         }
       },
       "active": "a7fa13ccad2cffb9",
-      "mtime": "2026-04-04T17:21:30+08:00"
+      "mtime": "2026-05-06T00:09:47+08:00"
     },
     "paper": {
       "main": {
@@ -698,7 +698,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/2510.23116.md",
+                    "file": "Paper/2509.09372.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -713,7 +713,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2510.23116"
+                  "title": "2509.09372"
                 }
               },
               {
@@ -783,7 +783,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/2512.04952.md",
+                    "file": "Paper/1905.10650.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -798,11 +798,10 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2512.04952"
+                  "title": "1905.10650"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "c30f0f85faf98106",
@@ -815,16 +814,33 @@
                   "type": "pdf",
                   "state": {
                     "file": "Paper/PDF/2602.15397v1.pdf",
-                    "page": 5,
-                    "left": -18,
-                    "top": 773,
-                    "zoom": 0.8517156862745098
+                    "page": 1,
+                    "left": -10,
+                    "top": 792,
+                    "zoom": 1.5012254901960784
                   },
                   "icon": "lucide-file-text",
                   "title": "2602.15397v1"
                 }
+              },
+              {
+                "id": "d49b4ebbb8a1a2e4",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Paper/PDF/1905.10650v3.pdf",
+                    "page": 3,
+                    "left": -10,
+                    "top": 137,
+                    "zoom": 1.5012254901960784
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "1905.10650v3"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1059,8 +1075,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a9aad8ac6abcb983",
-      "mtime": "2026-03-28T17:44:38+08:00"
+      "active": "d49b4ebbb8a1a2e4",
+      "mtime": "2026-05-06T00:09:43+08:00"
     }
   },
   "active": "paper"

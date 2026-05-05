@@ -116,7 +116,8 @@
               "title": "1905.10650"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "c30f0f85faf98106",
@@ -146,7 +147,9 @@
               "state": {
                 "file": "Paper/PDF/1905.10650v3.pdf",
                 "page": 1,
-                "zoom": 1
+                "left": -10,
+                "top": 792,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "1905.10650v3"
@@ -230,7 +233,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nll",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -388,18 +391,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "db44ea357cbc58fb",
+  "active": "61b5d7240da0fe6a",
   "lastOpenFiles": [
-    "Paper/2510.23116.md",
-    "Paper/2602.15397.md",
-    "Paper/2602.04215.md",
     "Bases/Paper.base",
+    "Paper/2602.04215.md",
     "Paper/1905.10650.md",
+    "Paper/PDF/1905.10650v3.pdf",
+    "Paper/Untitled.md",
+    "Paper/2602.15397.md",
+    "Knowledges/PyTorch Tensor.md",
+    "Paper/2509.09372.md",
+    "Paper/2510.23116.md",
     "Paper/1706.03762.md",
     "Paper/1709.07871.md",
-    "Paper/PDF/1905.10650v3.pdf",
     "Paper/2512.04952.md",
-    "Knowledges/PyTorch Tensor.md",
     "Knowledges/Linux MultiEnv.md",
     "Knowledges/Pacman.md",
     "Knowledges/Server Shell Setup.md",
@@ -423,9 +428,6 @@
     "Lecture/Slides/PHYS1181-Lec11-MechanicalWave.pdf",
     "Lecture/Slides/PHYS1181-Lec15-molecules.pdf",
     "Lecture/Introduce to Computer Science.md",
-    "Lecture/Numerical Optimization.md",
-    "Lecture/Introduction to Control.md",
-    "Lecture/General Physics.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
