@@ -488,9 +488,33 @@
                   "icon": "lucide-file",
                   "title": "PyTorch Tensor"
                 }
+              },
+              {
+                "id": "7eb86a10e14e4f24",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Develop/FolderSlice.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "FolderSlice"
+                }
               }
             ],
-            "currentTab": 4
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -630,7 +654,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Develop/FolderSlice.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -640,7 +664,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for PyTorch Tensor"
+                  "title": "Backlinks for FolderSlice"
                 }
               },
               {
@@ -669,7 +693,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Knowledges/PyTorch Tensor.md",
+                    "file": "Develop/FolderSlice.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -697,7 +721,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of PyTorch Tensor"
+                  "title": "Graph of FolderSlice"
                 }
               }
             ]
@@ -722,8 +746,8 @@
           "pdf-plus:PDF++: Toggle auto-paste": false
         }
       },
-      "active": "a7fa13ccad2cffb9",
-      "mtime": "2026-05-06T00:09:47+08:00"
+      "active": "7eb86a10e14e4f24",
+      "mtime": "2026-05-13T00:12:29+08:00"
     },
     "paper": {
       "main": {
@@ -1122,5 +1146,5 @@
       "mtime": "2026-05-06T00:39:15+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
