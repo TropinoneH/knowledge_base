@@ -147,7 +147,9 @@
               "state": {
                 "file": "Paper/PDF/1905.10650v3.pdf",
                 "page": 1,
-                "zoom": 1
+                "left": -10,
+                "top": 367,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "1905.10650v3"
