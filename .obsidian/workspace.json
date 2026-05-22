@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/Neovim v0.12.2 Config Folder.md",
+                "file": "Knowledges/Neovim.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -148,11 +148,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Neovim v0.12.2 Config Folder"
+              "title": "Neovim"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -292,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledges/Neovim v0.12.2 Config Folder.md",
+                "file": "Knowledges/PyTorch Tensor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -302,7 +302,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Neovim v0.12.2 Config Folder"
+              "title": "Backlinks for PyTorch Tensor"
             }
           },
           {
@@ -331,7 +331,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Knowledges/Neovim v0.12.2 Config Folder.md",
+                "file": "Knowledges/PyTorch Tensor.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -359,7 +359,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Neovim v0.12.2 Config Folder"
+              "title": "Graph of PyTorch Tensor"
             }
           }
         ]
@@ -384,7 +384,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7eb86a10e14e4f24",
+  "active": "a7fa13ccad2cffb9",
   "lastOpenFiles": [
     "Knowledges/Neovim.md",
     "Knowledges/Neovim v0.12.2 Config Folder.md",
