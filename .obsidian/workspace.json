@@ -32,30 +32,6 @@
             }
           },
           {
-            "id": "66c404498fc91aeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/2602.15397.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2602.15397"
-            }
-          },
-          {
             "id": "a9aad8ac6abcb983",
             "type": "leaf",
             "state": {
@@ -93,44 +69,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "c30f0f85faf98106",
         "type": "tabs",
         "children": [
-          {
-            "id": "f5f5659f1941d533",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/2602.15397v1.pdf",
-                "page": 3,
-                "left": -10,
-                "top": 44,
-                "zoom": 1.5012254901960784
-              },
-              "icon": "lucide-file-text",
-              "title": "2602.15397v1"
-            }
-          },
-          {
-            "id": "d49b4ebbb8a1a2e4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Paper/PDF/1905.10650v3.pdf",
-                "page": 1,
-                "left": -10,
-                "top": 792,
-                "zoom": 1.5012254901960784
-              },
-              "icon": "lucide-file-text",
-              "title": "1905.10650v3"
-            }
-          },
           {
             "id": "65aac0bcbcf7f31b",
             "type": "leaf",
@@ -141,7 +85,7 @@
                 "file": "Paper/PDF/2602.04215v1.pdf",
                 "page": 1,
                 "left": -10,
-                "top": 792,
+                "top": 657,
                 "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
@@ -383,18 +327,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66c404498fc91aeb",
+  "active": "65aac0bcbcf7f31b",
   "lastOpenFiles": [
+    "Paper/2602.04215.md",
+    "Paper/PDF/2602.04215v1.pdf",
+    "Paper/PDF/1905.10650v3.pdf",
+    "Bases/Paper.base",
     "Paper/PDF/2602.15397v1.pdf",
     "Paper/2602.15397.md",
-    "Bases/Paper.base",
     "Paper/1706.03762.md",
     "Paper/1709.07871.md",
     "Lecture/Deep Learning.md",
-    "Paper/2602.04215.md",
-    "Paper/PDF/2602.04215v1.pdf",
     "Paper/2505.11123.md",
-    "Paper/PDF/1905.10650v3.pdf",
     "Knowledges/PyTorch Tensor.md",
     "Knowledges/Neovim.md",
     "Knowledges/Neovim v0.12.2 Config Folder.md",
