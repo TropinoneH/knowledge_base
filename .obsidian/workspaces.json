@@ -495,7 +495,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Develop/FolderSlice.md",
+                    "file": "Knowledges/Neovim.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -510,11 +510,11 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "FolderSlice"
+                  "title": "Neovim"
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -654,7 +654,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Develop/FolderSlice.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -664,7 +664,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for FolderSlice"
+                  "title": "Backlinks for PyTorch Tensor"
                 }
               },
               {
@@ -693,7 +693,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Develop/FolderSlice.md",
+                    "file": "Knowledges/PyTorch Tensor.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -721,7 +721,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of FolderSlice"
+                  "title": "Graph of PyTorch Tensor"
                 }
               }
             ]
@@ -746,8 +746,8 @@
           "pdf-plus:PDF++: Toggle auto-paste": false
         }
       },
-      "active": "7eb86a10e14e4f24",
-      "mtime": "2026-05-13T00:12:29+08:00"
+      "active": "a7fa13ccad2cffb9",
+      "mtime": "2026-05-23T22:12:00+08:00"
     },
     "paper": {
       "main": {
@@ -1146,5 +1146,5 @@
       "mtime": "2026-05-22T15:35:53+08:00"
     }
   },
-  "active": "note"
+  "active": "paper"
 }
