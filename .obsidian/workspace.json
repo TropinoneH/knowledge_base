@@ -78,7 +78,6 @@
           {
             "id": "65aac0bcbcf7f31b",
             "type": "leaf",
-            "dimension": 50,
             "state": {
               "type": "pdf",
               "state": {
@@ -86,7 +85,7 @@
                 "page": 1,
                 "left": -10,
                 "top": 489,
-                "zoom": 1.5012254901960786
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
               "title": "2602.04215v1"
