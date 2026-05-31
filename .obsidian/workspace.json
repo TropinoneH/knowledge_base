@@ -83,9 +83,9 @@
               "state": {
                 "file": "Paper/PDF/2602.04215v1.pdf",
                 "page": 1,
-                "left": -18,
-                "top": 535,
-                "zoom": 0.8517156862745098
+                "left": -10,
+                "top": 752,
+                "zoom": 1.5012254901960786
               },
               "icon": "lucide-file-text",
               "title": "2602.04215v1"
@@ -326,8 +326,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "65aac0bcbcf7f31b",
+  "active": "cc8278de35a378c5",
   "lastOpenFiles": [
+    "Paper/2406.09246.md",
     "Paper/2602.04215.md",
     "Paper/PDF/2602.04215v1.pdf",
     "Paper/PDF/1905.10650v3.pdf",
