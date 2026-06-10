@@ -29,7 +29,7 @@ Motivation: 之前的工作([[2410.24164|pi0]], [[2504.16054|pi0.5]])过度依�
 
 基于[[2504.16054|pi0.5]]进行构建: [[pi06.pdf#page=1&selection=30,1,43,69|有high-level的subtask的预测和low-level action的生成]]. 同时, 这个也是[[pistar0.6]]的base model.
 
-与[[2504.16054|pi0.5]]一样, 基于[[2210.02747|Flow Matching]]和[[FAST]], 同时有discrete和continuous的action loss. 但是VLM的backbone使用了Gemma 4B, Action Expert用了Gemma 860M, 扩大了参数.
+与[[2504.16054|pi0.5]]一样, 基于[[2210.02747|Flow Matching]]和[[2501.09747|FAST]], 同时有discrete和continuous的action loss. 但是VLM的backbone使用了Gemma 4B, Action Expert用了Gemma 860M, 扩大了参数.
 
 
 

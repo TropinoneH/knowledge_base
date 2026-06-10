@@ -34,7 +34,7 @@
                 }
               },
               {
-                "id": "43f66090cf5b60c7",
+                "id": "84ba175316aa7e0b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -56,34 +56,9 @@
                   "icon": "lucide-file",
                   "title": "Hands-On Large Model Engineering"
                 }
-              },
-              {
-                "id": "84ba175316aa7e0b",
-                "type": "leaf",
-                "dimension": 50,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Lecture/Artificial Intelligence.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Artificial Intelligence"
-                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "f3b63f2c315e9ffb",
@@ -358,7 +333,7 @@
         }
       },
       "active": "84ba175316aa7e0b",
-      "mtime": "2026-05-06T00:41:52+08:00"
+      "mtime": "2026-06-10T23:56:08+08:00"
     },
     "note": {
       "main": {
@@ -783,30 +758,6 @@
                 }
               },
               {
-                "id": "66c404498fc91aeb",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Paper/2602.15397.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "2602.15397"
-                }
-              },
-              {
                 "id": "a9aad8ac6abcb983",
                 "type": "leaf",
                 "state": {
@@ -844,12 +795,12 @@
                 }
               },
               {
-                "id": "61b5d7240da0fe6a",
+                "id": "5fa9fcd967345965",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Paper/2505.11123.md",
+                    "file": "Paper/2501.09747.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -864,46 +815,46 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2505.11123"
+                  "title": "2501.09747"
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 3
           },
           {
             "id": "c30f0f85faf98106",
             "type": "tabs",
             "children": [
               {
-                "id": "f5f5659f1941d533",
+                "id": "65aac0bcbcf7f31b",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/2602.15397v1.pdf",
-                    "page": 2,
+                    "file": "Paper/PDF/2602.04215v1.pdf",
+                    "page": 1,
                     "left": -10,
-                    "top": 347,
+                    "top": 792,
                     "zoom": 1.5012254901960784
                   },
                   "icon": "lucide-file-text",
-                  "title": "2602.15397v1"
+                  "title": "2602.04215v1"
                 }
               },
               {
-                "id": "d49b4ebbb8a1a2e4",
+                "id": "6312c41ad21af116",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Paper/PDF/1905.10650v3.pdf",
+                    "file": "Paper/PDF/2501.09747v1.pdf",
                     "page": 1,
                     "left": -10,
-                    "top": 338,
+                    "top": 747,
                     "zoom": 1.5012254901960784
                   },
                   "icon": "lucide-file-text",
-                  "title": "1905.10650v3"
+                  "title": "2501.09747v1"
                 }
               }
             ],
@@ -984,7 +935,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": "2501.09747",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -1142,9 +1093,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "61b5d7240da0fe6a",
-      "mtime": "2026-05-22T15:35:53+08:00"
+      "active": "5fa9fcd967345965",
+      "mtime": "2026-06-10T23:54:25+08:00"
     }
   },
-  "active": "paper"
+  "active": "lecture note"
 }
