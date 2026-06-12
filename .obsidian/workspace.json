@@ -4,78 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "4593e6d34ce1f275",
+        "id": "95ecdb37eb91446d",
         "type": "tabs",
         "children": [
           {
-            "id": "16e886e8bf00aa45",
+            "id": "1fa1e1d83093f658",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Lecture/Deep Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Bases/Paper.base",
+                "viewName": "All Papers"
               },
-              "icon": "lucide-file",
-              "title": "Deep Learning"
-            }
-          },
-          {
-            "id": "84ba175316aa7e0b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Hands-On Large Model Engineering.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Hands-On Large Model Engineering"
+              "icon": "lucide-table",
+              "title": "Paper"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "f3b63f2c315e9ffb",
+        "id": "c30f0f85faf98106",
         "type": "tabs",
         "children": [
           {
-            "id": "58580a5f52ae31b5",
+            "id": "c1f2d228f0afa4e7",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Lecture/Slides/CS190C_Lec4.pdf",
-                "page": 1,
-                "left": -16,
-                "top": 540,
-                "zoom": 0.95703125
+                "file": "Paper/PDF/2602.07322v2.pdf",
+                "page": 7,
+                "left": -10,
+                "top": 742,
+                "zoom": 1.5012254901960784
               },
               "icon": "lucide-file-text",
-              "title": "CS190C_Lec4"
+              "title": "2602.07322v2"
             }
           }
         ]
@@ -155,7 +119,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cosine ann",
+                "query": "2501.09747",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -220,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/pi0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +194,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Electric Circuits"
+              "title": "Backlinks for pi0"
             }
           },
           {
@@ -259,7 +223,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lecture/Electric Circuits.md",
+                "file": "Paper/pi0.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,12 +246,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 101,
-                  "scale": 1.3925405856570754,
+                  "scale": 0.6826227075497521,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Electric Circuits"
+              "title": "Graph of pi0"
             }
           }
         ]
@@ -313,25 +277,35 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "84ba175316aa7e0b",
+  "active": "1fa1e1d83093f658",
   "lastOpenFiles": [
-    "Lecture/Slides/CS190C_Lec4.pdf",
-    "Lecture/Slides/CS181-02-Search.pdf",
-    "Lecture/Hands-On Large Model Engineering.md",
-    "Paper/2501.09747.md",
-    "Lecture/Artificial Intelligence.md",
-    "Paper/PDF/2501.09747v1.pdf",
+    "Paper/2303.04137.md",
+    "Bases/Paper.base",
+    "Paper/2602.07322.md",
+    "Paper/PDF/2602.07322v2.pdf",
+    "Paper/PDF/2602.23408v2.pdf",
+    "Knowledges/PyTorch Normalization.md",
+    "Bases/Projects.base",
+    "Bases/Notes.base",
+    "Paper/2602.07322v2.pdf",
+    "Topic/2602.07322v2.pdf",
+    "Bases/Untitled.md",
+    "Paper/2210.02747.md",
+    "Paper/2602.23408.md",
     "Paper/PDF/2602.04215v1.pdf",
+    "Paper/2510.23116.md",
+    "Paper/2509.09372.md",
+    "Paper/2602.04215.md",
+    "Paper/2501.09747.md",
+    "Paper/PDF/2501.09747v1.pdf",
+    "Lecture/Hands-On Large Model Engineering.md",
+    "Lecture/Slides/CS190C_Lec4.pdf",
+    "Lecture/Artificial Intelligence.md",
     "Paper/pi0.6.md",
     "Paper/2602.15397.md",
-    "Paper/2602.04215.md",
     "Paper/2506.01583.md",
     "Paper/2504.16054.md",
-    "Paper/PDF/2501.09747v1_FAST.pdf",
     "Paper/2406.09246.md",
-    "Paper/PDF/1905.10650v3.pdf",
-    "Bases/Paper.base",
-    "Paper/PDF/2602.15397v1.pdf",
     "Paper/1706.03762.md",
     "Paper/1709.07871.md",
     "Lecture/Deep Learning.md",
@@ -340,16 +314,7 @@
     "Knowledges/Neovim.md",
     "Knowledges/Neovim v0.12.2 Config Folder.md",
     "Develop/FolderSlice.md",
-    "Paper/PDF/2410.24164v3.pdf",
     "Paper/2410.24164.md",
-    "Paper/PDF/2505.11123v1.pdf",
-    "Paper/2509.09372.md",
-    "Paper/1905.10650.md",
-    "Develop/Better-Link-Clicker.md",
-    "Develop/VimSafari.md",
-    "Develop/Span Anything.md",
-    "Paper/Untitled.md",
-    "Paper/2510.23116.md",
     "Assets/Pasted image 20250328215644.png",
     "Assets/Pasted image 20251209085217.jpeg",
     "Assets/Pasted image 20251209084923.jpeg",
